@@ -1,0 +1,111 @@
+{
+  "split_version": "1.1",
+  "state": "FROZEN_BY_AUTHOR",
+  "base": "original_CAL = registry indices 25912..28790",
+  "rule": {
+    "drop_tracks": "tracks shared with FIT/inner/outer",
+    "drop_time": "start < per-sequence FIT cutoff (max FIT end + 1)",
+    "per_sequence_cutoff": {
+      "students003": 258
+    }
+  },
+  "population": {
+    "original_CAL": {
+      "windows": 2879,
+      "change": 700,
+      "tracks": 111,
+      "change_tracks": 73
+    },
+    "cal_v11": {
+      "windows": 1620,
+      "change": 443,
+      "tracks": 77,
+      "change_tracks": 50
+    },
+    "dropped": {
+      "windows": 1259,
+      "change": 257,
+      "tracks": 32
+    },
+    "untouched": {
+      "FIT": {
+        "windows": 18909,
+        "change": 4725,
+        "tracks": 689
+      },
+      "inner": {
+        "windows": 1856,
+        "change": 497,
+        "tracks": 76
+      },
+      "outer": {
+        "windows": 1035,
+        "change": 253,
+        "tracks": 191
+      }
+    }
+  },
+  "checks": {
+    "C1_sample_id": {
+      "FIT": 0,
+      "inner": 0,
+      "outer": 0
+    },
+    "C2_track": {
+      "FIT": 0,
+      "inner": 0,
+      "outer": 0
+    },
+    "C3_interval": {
+      "FIT": 0,
+      "inner": 0,
+      "outer": 0
+    },
+    "C7_same_frame": {
+      "FIT": 0
+    },
+    "subset_of_original_CAL": true,
+    "unknown_time_windows": 0,
+    "duplicate_ids": 0
+  },
+  "unassigned_registry": {
+    "windows": 4112,
+    "change": 935,
+    "rule": "excluded from every train / eval population in v1.1"
+  },
+  "inputs_sha256": {
+    "REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES/results/cache/train_dev/eth_train.npz": "f8e6769c7e28b0d5ad4c108989246d6e724c078190102ae90443e62600d5a3ea",
+    "F16_OBSERVABLE_CUE_DIAGNOSIS_20261003/metadata.npz": "9e0e2f581d05487e4905fc2fe34c963458cace0254daf5289e12aaea9ac49591",
+    "GENERATION_GROUPED_TRANSFER_SERIES_20261006/identity_audit/splits.npz": "349659306a435a3a70e65d75d08d618a2aa8bc76fca38142c3433ab5678e12e7"
+  },
+  "outputs_sha256": {
+    "cal_v11_index.npy": "fee09cf79559af13b694b96c3c0aafcd87e8d6146b9ec491a89d6dea93aea590",
+    "cal_v11_windows.csv": "59dbfbcc39c46c9a1af77dc8d45605b8aaec3d01441bbd25e71f9e4f9b86e137",
+    "excluded_tracks.csv": "ec98eae2fabf90256b229e379b663327d1a1dd948c82debf59a69481568d8bac"
+  },
+  "script_sha256": "fe0a5cbb2059712077070b7ae65df4c86f7f9e7926b419975925574e443e53b2",
+  "inputs_unchanged": true,
+  "author_approval": {
+    "signed": true,
+    "signed_by": "author",
+    "at": "2026-10-20T05:20:05+00:00",
+    "statement": "我确认V1.1可以通过",
+    "scope": "the v1.1 CAL partition only; not the protocol and not the D-0 MDE",
+    "audit": {
+      "artifact": "qoder/artifacts/PREFLIGHT.json",
+      "sha256": "3a0ff912ccdf3fd26b2028860782c565fd72a5c6bba0a14224da4b138d08799b",
+      "status": "PASS",
+      "CAL_v1_1": {
+        "windows": 1620,
+        "change": 443,
+        "tracks": 77,
+        "unknown_time": 0
+      }
+    },
+    "outputs_sha256": {
+      "cal_v11_index.npy": "fee09cf79559af13b694b96c3c0aafcd87e8d6146b9ec491a89d6dea93aea590",
+      "cal_v11_windows.csv": "59dbfbcc39c46c9a1af77dc8d45605b8aaec3d01441bbd25e71f9e4f9b86e137",
+      "excluded_tracks.csv": "ec98eae2fabf90256b229e379b663327d1a1dd948c82debf59a69481568d8bac"
+    }
+  }
+}

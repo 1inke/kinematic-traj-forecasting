@@ -1,0 +1,19 @@
+{
+  "version":"decoder-three-direction-B-implementation-v1",
+  "status":"CODE_PREPARED_NOT_LAUNCHED",
+  "training":false,"model_forward":false,"library":"FIT18909 only, including causal completed histories",
+  "queries":"inner1856; primary change497/native_miss331",
+  "bins_per_axis":16,"extent_m":6.0,"explicit_overflow_bin":256,"total_bins":257,"alpha":0.1,
+  "cell_m":0.5,"heading_bins":8,"stationary_displacement_m":0.02,"support_strictly_greater_than":5,
+  "target_track_purge":"all records of query track at every level including shuffled donor",
+  "causal":"same sequence, verified source indices, record end<=query t0; cold fallback nonsequence FIT only",
+  "shuffle_static":"single default_rng20261023 mapping on sorted scene-heading supported FIT cells; whole histogram/support move together",
+  "shuffle_causal":"SHA256 canonical JSON [sample_id,20261023], first8 bytes little-endian uint64; no randomized Python hash",
+  "unverifiable_query":"marked and listed; causal-valid subset descriptive, cannot PASS full497 gate if any change time missing",
+  "arms":["M0_motion_iso","M1_heading_global","PRIOR_static","SHUF_static","XSCENE_static","PRIOR_causal","SHUF_causal","XSCENE_causal"],
+  "gates":{"relative_NLL_gain_strict_min":0.03,"prior_NLL_less_than_M1":true,"paired_track_CI_upper_strict_max":0,"shuffle_advantage_strict_min":0.5,"prior_NLL_less_than_XSCENE":true,"Opp4_strict_min":0.1,"Opp4_greater_than_SHUF":true},
+  "bootstrap":{"draws":20000,"seed":20261023,"target_tracks":true,"model_seed_replication":false},
+  "top4":"stable descending interior counts; flat-index ascending ties; overflow not a deployable endpoint",
+  "metadata":"explicit raw-world SHA + observed-past alignment + cached endpoint ID proof required, no guessed world/time",
+  "automatic_next":false,"endpoint_potential_is_full_trajectory_coverage":false
+}

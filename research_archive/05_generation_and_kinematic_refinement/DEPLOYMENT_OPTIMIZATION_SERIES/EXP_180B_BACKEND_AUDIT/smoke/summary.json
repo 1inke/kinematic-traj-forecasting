@@ -1,0 +1,112 @@
+{
+  "experiment": "EXP-180B",
+  "model": "EXP-173 final F16 Joint-V2",
+  "profiles": [
+    "sdd_n16"
+  ],
+  "warmup": 1,
+  "iterations": 2,
+  "accuracy_samples": 1,
+  "smoke": true,
+  "runtime": [
+    {
+      "latency_mean_ms": 12.769400000000001,
+      "latency_median_ms": 12.769400000000001,
+      "latency_p90_ms": 13.022120000000001,
+      "latency_p95_ms": 13.05371,
+      "latency_p99_ms": 13.078982,
+      "latency_std_ms": 0.4467500643536608,
+      "throughput_samples_s": 78.31221513931743,
+      "profile": "sdd_n16",
+      "backend": "B0_pytorch_fp32",
+      "verdict": "REFERENCE",
+      "median_improvement_pct": null,
+      "vram_peak_mb": 13.04345703125
+    },
+    {
+      "latency_mean_ms": 4.7859,
+      "latency_median_ms": 4.7859,
+      "latency_p90_ms": 4.8559,
+      "latency_p95_ms": 4.86465,
+      "latency_p99_ms": 4.87165,
+      "latency_std_ms": 0.12374368670764568,
+      "throughput_samples_s": 208.94711548507073,
+      "profile": "sdd_n16",
+      "backend": "B1_ort_cuda_fp32",
+      "initialization_s": 0.3248459999995248,
+      "median_improvement_pct": 62.520556956474074,
+      "throughput_improvement_pct": 166.81292964750622,
+      "vram_delta_mb": 29.0,
+      "verdict": "PASS"
+    },
+    {
+      "latency_mean_ms": 5.178100000000001,
+      "latency_median_ms": 5.178100000000001,
+      "latency_p90_ms": 5.33858,
+      "latency_p95_ms": 5.35864,
+      "latency_p99_ms": 5.374688,
+      "latency_std_ms": 0.28369124061204304,
+      "throughput_samples_s": 193.12102894884222,
+      "profile": "sdd_n16",
+      "backend": "B2_ort_cuda_fp16",
+      "initialization_s": 0.21373900000253343,
+      "median_improvement_pct": 59.44915187871004,
+      "throughput_improvement_pct": 146.6039667059346,
+      "vram_delta_mb": 30.0,
+      "verdict": "FAIL"
+    }
+  ],
+  "correctness": [
+    {
+      "samples": 1,
+      "candidate_max_abs": 0.004608154296875,
+      "candidate_mean_abs": 0.000670479261316359,
+      "logit_max_abs": 0.0010752677917480469,
+      "logit_mean_abs": 0.0002960011479444802,
+      "pytorch_minADE": 0.5337778925895691,
+      "backend_minADE": 0.5337082743644714,
+      "relative_minADE_pct": 0.01304254561010583,
+      "pytorch_minFDE": 1.3398847579956055,
+      "backend_minFDE": 1.3405624628067017,
+      "relative_minFDE_pct": 0.05057933580123718,
+      "pytorch_top1_ADE": 1.1301182508468628,
+      "backend_top1_ADE": 1.1305510997772217,
+      "relative_top1_ADE_pct": 0.03830120697851999,
+      "pytorch_top1_FDE": 2.652251720428467,
+      "backend_top1_FDE": 2.6541879177093506,
+      "relative_top1_FDE_pct": 0.07300201809543928,
+      "accuracy_pass": true,
+      "profile": "sdd_n16",
+      "backend": "B1_ort_cuda_fp32"
+    },
+    {
+      "samples": 1,
+      "candidate_max_abs": 0.013438224792480469,
+      "candidate_mean_abs": 0.0024796100333333015,
+      "logit_max_abs": 0.002719879150390625,
+      "logit_mean_abs": 0.0011251375544816256,
+      "pytorch_minADE": 0.5337778925895691,
+      "backend_minADE": 0.5314347147941589,
+      "relative_minADE_pct": 0.4389799255346578,
+      "pytorch_minFDE": 1.3398847579956055,
+      "backend_minFDE": 1.3352611064910889,
+      "relative_minFDE_pct": 0.3450782969897599,
+      "pytorch_top1_ADE": 1.1301182508468628,
+      "backend_top1_ADE": 1.1270593404769897,
+      "relative_top1_ADE_pct": 0.27067170781295047,
+      "pytorch_top1_FDE": 2.652251720428467,
+      "backend_top1_FDE": 2.6442675590515137,
+      "relative_top1_FDE_pct": 0.30103331880064904,
+      "accuracy_pass": false,
+      "profile": "sdd_n16",
+      "backend": "B2_ort_cuda_fp16"
+    }
+  ],
+  "failures": [],
+  "conclusion": "存在通过 EXP-180B 门槛的部署组合：sdd_n16/B1_ort_cuda_fp32。正式保留前需结合两个 profile 综合判断。",
+  "environment": {
+    "torch": "2.11.0+cu128",
+    "onnxruntime": "1.23.2",
+    "gpu": "NVIDIA GeForce RTX 5070 Laptop GPU"
+  }
+}

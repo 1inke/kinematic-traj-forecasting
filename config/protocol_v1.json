@@ -1,0 +1,12 @@
+{
+  "version":"1.0", "state":"DRAFT_NOT_FROZEN", "effective_for":"new_experiments_only",
+  "author_approved_guardrails":true, "author_signed_freeze":false,
+  "freeze_blockers":["C3_FIT_CAL_interval_overlap_requires_v1_1","C6_upstream_native_outer_exposure","C1_C6_audit_author_review","D0_MDE_author_decision","Holm_interval_convention","guardrail_seed_aggregation","A_B_S0_fields_and_teacher_training_provenance"],
+  "thresholds":{"ADE":0.2,"FDE":0.4,"dt":0.4,"K":20},
+  "guardrails":{"G1_motion_factor":1.01,"G2_overall_min":-0.01,"G2_overall_ci_low":-0.03,"G3_Q_winner_relative_harm":0.03,"G4_native_good_lost_max":0.1,"G5_parameters_max":305000},
+  "noninferior_margin":-0.02,
+  "bootstrap":{"draws":20000,"rng":"PCG64","seed":20261020,"order":"track_then_seed_per_draw","primary_tracks":"change_tracks_only","point":"window_weighted_within_seed_then_seed_mean","interval":"percentile95","multiplicity":"Holm adjusted p; no fictitious Holm percentile CI"},
+  "seeds":{"S2":[42],"S3":[42,43,44],"S4":[42,43,44,45,46]},
+  "MDE_pp":null,"data_manifest":"config/data_manifest.v1.json",
+  "review_needed":"G3/G4 aggregation across seeds and exact Holm CI interpretation are not specified by supplied prose; not silently resolved for S3. S4 requires human signature."
+}

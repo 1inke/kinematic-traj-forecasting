@@ -1,0 +1,82 @@
+{
+  "checked_at": "2026-10-26T15:22:50.6683184+09:00",
+  "task": "Trajectory-K20SingleEdit-E1-20261026",
+  "task_state": "Running",
+  "triggers": 0,
+  "processes": [
+    {
+      "ProcessId": 51780,
+      "ParentProcessId": 2804,
+      "CommandLine": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\K20_SINGLE_EDIT_COMPLEMENTARITY_EXEC_20261025\\E1_execution_20261026\\launch_worker.py\"",
+      "CreationDate": "2026-10-26T15:21:28.890385+09:00"
+    },
+    {
+      "ProcessId": 38840,
+      "ParentProcessId": 51780,
+      "CommandLine": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\K20_SINGLE_EDIT_COMPLEMENTARITY_EXEC_20261025\\E1_execution_20261026\\launch_worker.py\"",
+      "CreationDate": "2026-10-26T15:21:29.119559+09:00"
+    },
+    {
+      "ProcessId": 5576,
+      "ParentProcessId": 38840,
+      "CommandLine": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\K20_SINGLE_EDIT_COMPLEMENTARITY_EXEC_20261025\\E1_execution_20261026\\worker.py\"",
+      "CreationDate": "2026-10-26T15:21:29.177165+09:00"
+    },
+    {
+      "ProcessId": 17400,
+      "ParentProcessId": 5576,
+      "CommandLine": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\K20_SINGLE_EDIT_COMPLEMENTARITY_EXEC_20261025\\E1_execution_20261026\\worker.py\"",
+      "CreationDate": "2026-10-26T15:21:29.187163+09:00"
+    }
+  ],
+  "worker": {
+    "status": "RUNNING",
+    "pid": 17400,
+    "parent_pid": 5576,
+    "started_at": "2026-10-26T15:21:31.012885+09:00"
+  },
+  "exit": null,
+  "progress": {
+    "status": "RUNNING",
+    "stage": "E1_TRAIN",
+    "at": "2026-10-26T15:22:49.42697+09:00",
+    "arm": "I",
+    "seed": 44,
+    "epoch": 4,
+    "steps": 512
+  },
+  "histories": [
+    {
+      "arm": "I",
+      "seed": 42,
+      "epochs": 8
+    },
+    {
+      "arm": "S",
+      "seed": 42,
+      "epochs": 8
+    },
+    {
+      "arm": "I",
+      "seed": 43,
+      "epochs": 8
+    },
+    {
+      "arm": "S",
+      "seed": 43,
+      "epochs": 8
+    },
+    {
+      "arm": "I",
+      "seed": 44,
+      "epochs": 4
+    },
+    {
+      "arm": "S",
+      "seed": 44,
+      "epochs": 0
+    }
+  ],
+  "stderr_bytes": 0,
+  "result_present": false
+}

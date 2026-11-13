@@ -1,0 +1,15 @@
+{
+  "status": "EXPLICIT_REVIEW_MISSING_NEIGHBOR_ADAPTER",
+  "files": {
+    "<WORKSPACE_ROOT>\\qoder_work\\ENDPOINT_SUPPORT_FAILURE_ATTRIBUTION_EXEC_20261030\\review_saved.py": "8ca1cdd95a6f17afb011755c2f481bdbab33427b08d0aeda902ed178edb64f3d",
+    "<WORKSPACE_ROOT>\\qoder_work\\ENDPOINT_SUPPORT_FAILURE_ATTRIBUTION_EXEC_20261030\\review_saved_adapter.py": "44e53f1022974b3bec63b29d7ea04a2341757607ebeeebc996448b28dc018384"
+  },
+  "detected_before_reviewer_execution": true,
+  "issue": "60 candidate queries have only2 same-sequence reference tracks. Plain mean in second reviewer would discard their valid2-neighbor mean.",
+  "repair": "np.nanmean for missing padded neighbor ranks only; production already divides by actual finite count; no scientific exclusion or modified outputs.",
+  "exact_one_string_replacement": {
+    "old": "hm=ut['H_main_executed_gap'].mean(1).reshape(128,20).mean(1);hs=ut['hash_main_executed_gap'].mean(1).reshape(128,20).mean(1)",
+    "new": "hm=np.nanmean(ut['H_main_executed_gap'],axis=1).reshape(128,20).mean(1);hs=np.nanmean(ut['hash_main_executed_gap'],axis=1).reshape(128,20).mean(1)"
+  },
+  "old_source_preserved": true
+}

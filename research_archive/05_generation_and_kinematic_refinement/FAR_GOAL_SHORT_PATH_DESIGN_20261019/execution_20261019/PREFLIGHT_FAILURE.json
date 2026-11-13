@@ -1,0 +1,14 @@
+{
+  "at": "2026-10-19T21:42:51.557281+09:00",
+  "traceback": "Traceback (most recent call last):\n  File \"<WORKSPACE_ROOT>\\FAR_GOAL_SHORT_PATH_DESIGN_20261019\\execution_20261019\\preflight.py\", line 105, in <module>\n    try:main()\n  File \"<WORKSPACE_ROOT>\\FAR_GOAL_SHORT_PATH_DESIGN_20261019\\execution_20261019\\preflight.py\", line 86, in main\n    c.stage('H1_PREFLIGHT_GPU8_AND_REAL_RESUME',H=horizon);gpu.append(gpu_eight(stats,d,horizon));resume.append(tr.resume_test(stats,d,horizon))\n  File \"<WORKSPACE_ROOT>\\FAR_GOAL_SHORT_PATH_DESIGN_20261019\\execution_20261019\\training.py\", line 53, in resume_test\n    exact(full,snapshot(b,bo,gg,bh,2,6,contract))\n  File \"<WORKSPACE_ROOT>\\FAR_GOAL_SHORT_PATH_DESIGN_20261019\\execution_20261019\\training.py\", line 18, in exact\n    for k in a:exact(a[k],b[k])\n  File \"<WORKSPACE_ROOT>\\FAR_GOAL_SHORT_PATH_DESIGN_20261019\\execution_20261019\\training.py\", line 18, in exact\n    for k in a:exact(a[k],b[k])\n  File \"<WORKSPACE_ROOT>\\FAR_GOAL_SHORT_PATH_DESIGN_20261019\\execution_20261019\\training.py\", line 18, in exact\n    for k in a:exact(a[k],b[k])\n  [Previous line repeated 1 more time]\n  File \"<WORKSPACE_ROOT>\\FAR_GOAL_SHORT_PATH_DESIGN_20261019\\execution_20261019\\training.py\", line 14, in exact\n    if isinstance(a,torch.Tensor):assert isinstance(b,torch.Tensor) and a.dtype==b.dtype and a.shape==b.shape and torch.equal(a,b)\nRuntimeError: Expected all tensors to be on the same device, but got other is on cuda:0, different from other tensors on cpu (when checking argument in method wrapper_CUDA__equal)\n",
+  "resource": {
+    "checks": 119,
+    "peak_private_bytes": 2892099584,
+    "peak_RSS_bytes": 1937670144,
+    "min_physical_bytes": 15403835392,
+    "min_commit_bytes": 19460452352,
+    "estimated_peak_bytes": 5700000000,
+    "safety_factor": 1.3,
+    "retained_lifetime_peaks": true
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "scope": "T2_C_velocity_L0_fresh3_vs_immutable_T1_A_position_L0_reused",
+  "human_authorization": "2026-10-16 根据目录继续推进; latest继续按照之前的规划进行/继续进行",
+  "cells": {
+    "A": "T1 position L0 reused; no training",
+    "C": "fresh velocity L0; no keep loss"
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "epochs": 25,
+  "batch": 256,
+  "FIT": 18909,
+  "outer": 1035,
+  "inner": 1856,
+  "original_CAL": 2879,
+  "unique_IDs": 24679,
+  "parameters": 25304,
+  "representation": "velocity_C; immutable_position_A_reference",
+  "kernel": "U0_integrated_acceleration",
+  "only_factor": "native24 position-to-velocity reversible representation plus own registered FIT-only candidate statistics",
+  "base_loss": "fullK20 hard same-slot ADE+0.5FDE min firstphysicaltie +0.05 mean190pairs relu(.3-meanpathdistance)^2",
+  "keep_component_tie": "ADE-first",
+  "keep_candidate_tie": "firstphysical",
+  "ReLU_at_zero_derivative": 0,
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-8,
+    "foreach": false
+  },
+  "fixed_coordinate_diagnostic": {
+    "FIT": "first256 original FIT order",
+    "epochs": [
+      1,
+      13,
+      25
+    ],
+    "space": "output_coordinates",
+    "not_adaptive": true
+  },
+  "primary": "outer_change_final_epoch25",
+  "bootstrap": {
+    "draws": 20000,
+    "generator": "PCG64",
+    "seed": 20261016,
+    "block": 128,
+    "draw_order": "all modelseeds then common outer tracks per block",
+    "family": 24,
+    "no_family_shrink": true,
+    "absolute_error_family": 9,
+    "absolute_coverage_family": 3,
+    "zero_denominator_invalid_no_resample": true,
+    "minimum_valid": 19000
+  },
+  "major_success": "Original >=5pp coverage eachseed plus family3 lower>0; >=5percent ADE/FDE eachseed plus family9 upper<0; all protected errors/native-success loss/five pooled motion <=1percent harm; correlation review",
+  "resource_policy": "task_memory_1p3_peak_v2",
+  "planning_minutes_limit": 30,
+  "no_model_GT_forward": true,
+  "old_F16_not_loaded_or_forwarded": true,
+  "no_physics_fallback_projection": true,
+  "T2": "CURRENT C-only three fresh25epoch; certified A immutable reuse",
+  "T3": "NOT_TRIGGERED_T1_RETENTION_SIGNAL_FALSE",
+  "no_sweep_no_new_data_no_old_decoder_scorer_training": true,
+  "review": "ARS inline same assistant not external peer review",
+  "retention_signal_historical_T1": {
+    "lost_mean_reduction": 0.03,
+    "allseed_lost_decrease": true,
+    "lost_family24_upper_below": 0,
+    "rescue_mean_no_decrease": true,
+    "rescue_family24_lower_at_least": -0.02,
+    "coverage_allseed_nondecrease": true
+  },
+  "transfer_signal": {
+    "coverage_mean_gain_at_least": 0.02,
+    "coverage_each_seed_nondecrease": true,
+    "coverage_family24_lower_positive": true,
+    "rescue_mean_increase": true,
+    "lost_mean_no_increase": true,
+    "lost_family24_upper_at_most": 0.02,
+    "fixed_j0_actual_deltaJ_each_seed_improve": true,
+    "fixed_j0_family24_upper_negative": true
+  },
+  "new_training_runs": 3,
+  "reused_A_runs": 3,
+  "T1_resource_deviation_preserved": true,
+  "protocol_repair": "descriptive metadata only; prior preflight and sources immutable"
+}

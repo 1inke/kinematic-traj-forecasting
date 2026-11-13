@@ -1,0 +1,12 @@
+{
+  "stage":"S0","human_request":"启动新的实验，启动后退出对话",
+  "guide":"../EXPERIMENT_GUIDE.md","training":false,"optimizer":false,
+  "ports":["native20","safe4","safe20"],"K":20,"dt":0.4,
+  "radius":"0.20*(t/12)^2","margin":1.01,"interior":"1-2^-20",
+  "constraints_per_candidate":33,"literal_candidate_native_fallback":true,
+  "FIT_change_n":4725,"native_good":1937,"gate":"100*(safe20_good-1937)>=5*4725",
+  "arithmetic_tolerance":2e-12,"scientific_epsilon":0,
+  "stop":"STOP_SAFE_OPPORTUNITY_UNDER_REGISTERED_MAP",
+  "planning_max_minutes":30,"process_GiB":6,"system_physical_commit_reserve_each_GiB":6,
+  "seeds":null,"new_formal_count":0,"S1_requires_own_preflight":true
+}

@@ -1,0 +1,15 @@
+{
+  "state": "DRAFT_NOT_FROZEN",
+  "experiment_id": "A_scene_prior_K20",
+  "protocol_version": "1.0-DRAFT",
+  "hypothesis": "Other-track scene-conditioned endpoint priors improve held-track K20 coverage",
+  "primary": "delta_cov_outer_change",
+  "control": "fresh same-batch native20",
+  "treatment": ["A-prior", "A-shuf"],
+  "budget": {"max_runs": 0, "gpu_hours": 0, "scope": "S1 components and data audit only; training budget must be separately registered before S2"},
+  "expected_effect_pp": null,
+  "stage": "S0_PENDING_AUTHOR_AND_SPLIT_REPAIR",
+  "components_implemented": ["leave-target-track-out histogram", "same-recording causal eligibility", "explicit support fallback", "stable top4 modes"],
+  "not_implemented_or_not_validated": ["raw-world fragment extraction and reserved-time purge", "same-scene SHUF and XSCENE actual A0", "NLL and endpoint opportunity gates", "native query injection and exact parameter accounting", "actual GPU pipeline and full RNG resume"],
+  "author_input_needed": ["v1.1 track-exclusive data contract after C3", "A0 frozen hyperparameters and causal global fallback scope", "native adapter and parameter budget", "MDE and multiplicity convention"]
+}

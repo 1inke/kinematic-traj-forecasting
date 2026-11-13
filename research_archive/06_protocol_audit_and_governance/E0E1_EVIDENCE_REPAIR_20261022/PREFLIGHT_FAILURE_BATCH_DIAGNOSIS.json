@@ -1,0 +1,9 @@
+{
+  "reason": "fixed float32 GEMM shape changes numerical rounding across batch sizes",
+  "seed": 42,
+  "arm": "A",
+  "batch128_vs32_maxdiff": 4.291534423828125e-06,
+  "path_absmax": 10.135148048400879,
+  "scientific_thresholds_changed": false,
+  "proposed_fix": "constant256 padded inference to stabilize GEMM shape, no tolerance relaxation"
+}

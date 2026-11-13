@@ -1,0 +1,92 @@
+{
+  "phase": "long",
+  "variant": "BASE_REF",
+  "seed": 42,
+  "cfg": {
+    "epochs": 32,
+    "v_max_scale": 0.995,
+    "a_max_scale": 0.9,
+    "motion_w": 0.0
+  },
+  "clamp": {
+    "v_max": 1.2695118306495283,
+    "a_max": 0.5708307769262527,
+    "v_max_scale": 0.995,
+    "a_max_scale": 0.9
+  },
+  "motion_w": 0.0,
+  "fit_native_motion": {
+    "speed_p95": 1.275891287084953,
+    "accel_mean": 0.08841134779618323,
+    "accel_p95": 0.6342564188069475,
+    "jerk_mean": 0.48625995264266336,
+    "jerk_p95": 2.8001470056822306
+  },
+  "splits": {
+    "BASE": {
+      "FIT": {
+        "coverage": 0.5707335131418901,
+        "minADE": 0.18376992202826553,
+        "minFDE": 0.3245618423848679,
+        "native_coverage": 0.5742239145380507,
+        "motion": "FAIL",
+        "fails": [
+          "accel_mean"
+        ],
+        "accel_ratio": 1.106571730211067,
+        "speed_ratio": 0.9950948638242825,
+        "rescue": 2024,
+        "lost": 2090
+      },
+      "outer": {
+        "coverage": 0.5739130434782609,
+        "minADE": 0.1909215603884337,
+        "minFDE": 0.3349489520550347,
+        "native_coverage": 0.6038647342995169,
+        "motion": "FAIL",
+        "fails": [
+          "accel_mean"
+        ],
+        "accel_ratio": 1.1204170987321729,
+        "speed_ratio": 0.9974883643589268,
+        "rescue": 106,
+        "lost": 137
+      },
+      "inner": {
+        "coverage": 0.5107758620689655,
+        "minADE": 0.21153915632417428,
+        "minFDE": 0.38230874866554143,
+        "native_coverage": 0.5021551724137931,
+        "motion": "FAIL",
+        "fails": [
+          "accel_mean"
+        ],
+        "accel_ratio": 1.1118373515988018,
+        "speed_ratio": 0.9908580524846596,
+        "rescue": 210,
+        "lost": 194
+      },
+      "original_CAL": {
+        "coverage": 0.5098992705800626,
+        "minADE": 0.18818752827973012,
+        "minFDE": 0.32310768234283194,
+        "native_coverage": 0.5175408127822161,
+        "motion": "FAIL",
+        "fails": [
+          "accel_mean"
+        ],
+        "accel_ratio": 1.066715995065319,
+        "speed_ratio": 0.9988459977423584,
+        "rescue": 280,
+        "lost": 302
+      },
+      "migration": {
+        "FIT_minus_outer_cov_pp": -0.31795303363707506,
+        "abs_gap_le_3pp": true
+      }
+    }
+  },
+  "decision": {},
+  "BASE_params": 57432,
+  "BASE_elapsed_sec": 16.70906400680542
+}

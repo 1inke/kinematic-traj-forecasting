@@ -1,0 +1,353 @@
+{
+  "status": "PASS",
+  "scope": "ACTUAL_GPU8_SUBSET2EPOCH_SAVED128",
+  "package": "C2",
+  "source_digest": "93995c22a76df32cb49f6c43bee2a0b55bc44acfb6b7b0767fce11df129615d0",
+  "execution_inputs": {
+    "statistics.npz": "17e60fe86136beb3e6617ef24d345dd9ca7d176886c9c167fa2658bec6b40bfd",
+    "split_ids.npz": "e0c0b5802b8f821b656ed698249fab9ed7a9227c73ea356109acfe3ef4fdcbab",
+    "protocol.json": "8c9b1cef625d350e23a4a3eefe8c6bd2cef7ced2de1e3ef79c9f6eda40e2699c"
+  },
+  "reports": {
+    "C2_isomlp": {
+      "gradient_all_parameters": {
+        "queries": true,
+        "trunk.0.weight": true,
+        "trunk.0.bias": true,
+        "trunk.2.weight": true,
+        "trunk.2.bias": true,
+        "fuse.0.weight": true,
+        "fuse.0.bias": true,
+        "fuse.2.weight": true,
+        "fuse.2.bias": true,
+        "head.weight": true,
+        "head.bias": true,
+        "mix1.weight": true,
+        "mix1.bias": true,
+        "mix2.weight": true,
+        "mix2.bias": true
+      },
+      "resume": "EXACT_ALL_STATE",
+      "saved128_audit": {
+        "status": "PASS",
+        "max_abs_diff": 2.220446049250313e-15,
+        "n_fields": 284,
+        "mismatches": []
+      }
+    },
+    "C2_setmix": {
+      "gradient_all_parameters": {
+        "queries": true,
+        "trunk.0.weight": true,
+        "trunk.0.bias": true,
+        "trunk.2.weight": true,
+        "trunk.2.bias": true,
+        "fuse.0.weight": true,
+        "fuse.0.bias": true,
+        "fuse.2.weight": true,
+        "fuse.2.bias": true,
+        "head.weight": true,
+        "head.bias": true,
+        "mix1.weight": true,
+        "mix1.bias": true,
+        "mix2.weight": true,
+        "mix2.bias": true
+      },
+      "resume": "EXACT_ALL_STATE",
+      "saved128_audit": {
+        "status": "PASS",
+        "max_abs_diff": 2.6645352591003757e-15,
+        "n_fields": 284,
+        "mismatches": []
+      }
+    }
+  },
+  "kernel_tests": {
+    "status": "PASS_SYNTHETIC_ONLY",
+    "test_groups": 18,
+    "actual_GPU_preflight": false,
+    "production_started": false
+  },
+  "full_pipeline_profile_SHA": "3271efa484b2bdcdaf0915a858792017f4b6c3d404a9ca91d88a1f3f000ee60f",
+  "benchmark_step_seconds": {
+    "C2_isomlp": 0.00662210625159787,
+    "C2_setmix": 0.006551868747919798
+  },
+  "estimate_bytes": 6442450944,
+  "resource_observations": [
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 8375186227.200001,
+      "required_commit": 8375186227.200001,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 19109904384,
+        "commit": 18156425216,
+        "rss": 628101120,
+        "private": 2630320128,
+        "peak_rss": 628101120,
+        "peak_private": 2630320128
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 7281211392.0,
+      "required_commit": 4553896755.2,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 19062517760,
+        "commit": 17949843456,
+        "rss": 841519104,
+        "private": 2939453440,
+        "peak_rss": 881639424,
+        "peak_private": 2966228992
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 6028946227.2,
+      "required_commit": 2940828467.2000003,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18107817984,
+        "commit": 16710926336,
+        "rss": 1804800000,
+        "private": 4180275200,
+        "peak_rss": 1804800000,
+        "peak_private": 4180275200
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 6028648038.400001,
+      "required_commit": 2940546252.8,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18099019776,
+        "commit": 16710914048,
+        "rss": 1805029376,
+        "private": 4180492288,
+        "peak_rss": 1805029376,
+        "peak_private": 4180492288
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 6028648038.400001,
+      "required_commit": 2940546252.8,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18100228096,
+        "commit": 16710905856,
+        "rss": 1805029376,
+        "private": 4180492288,
+        "peak_rss": 1805029376,
+        "peak_private": 4180492288
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 6028648038.400001,
+      "required_commit": 2940546252.8,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18102104064,
+        "commit": 16710905856,
+        "rss": 1805029376,
+        "private": 4180492288,
+        "peak_rss": 1805029376,
+        "peak_private": 4180492288
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 6028648038.400001,
+      "required_commit": 2940546252.8,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18103808000,
+        "commit": 16709615616,
+        "rss": 1805029376,
+        "private": 4180492288,
+        "peak_rss": 1805029376,
+        "peak_private": 4180492288
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 6028648038.400001,
+      "required_commit": 2940546252.8,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18098151424,
+        "commit": 16710365184,
+        "rss": 1805029376,
+        "private": 4180492288,
+        "peak_rss": 1805029376,
+        "peak_private": 4180492288
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 6028642713.6,
+      "required_commit": 2940546252.8,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18098339840,
+        "commit": 16711409664,
+        "rss": 1805033472,
+        "private": 4180492288,
+        "peak_rss": 1805033472,
+        "peak_private": 4180492288
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5988179558.400001,
+      "required_commit": 2885083136.0,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18187808768,
+        "commit": 16792506368,
+        "rss": 1836158976,
+        "private": 4223156224,
+        "peak_rss": 1836158976,
+        "peak_private": 4223156224
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5965069926.400001,
+      "required_commit": 2842133299.2000003,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18169864192,
+        "commit": 16651759616,
+        "rss": 1853935616,
+        "private": 4256194560,
+        "peak_rss": 1853935616,
+        "peak_private": 4256194560
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5965069926.400001,
+      "required_commit": 2842133299.2000003,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18163458048,
+        "commit": 16652771328,
+        "rss": 1853935616,
+        "private": 4256194560,
+        "peak_rss": 1853935616,
+        "peak_private": 4256194560
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5965069926.400001,
+      "required_commit": 2842133299.2000003,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18152185856,
+        "commit": 16651698176,
+        "rss": 1853935616,
+        "private": 4256194560,
+        "peak_rss": 1853935616,
+        "peak_private": 4256194560
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5965069926.400001,
+      "required_commit": 2842133299.2000003,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18148343808,
+        "commit": 16652754944,
+        "rss": 1853935616,
+        "private": 4256194560,
+        "peak_rss": 1853935616,
+        "peak_private": 4256194560
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5965069926.400001,
+      "required_commit": 2842133299.2000003,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18136879104,
+        "commit": 16652726272,
+        "rss": 1853935616,
+        "private": 4256194560,
+        "peak_rss": 1853935616,
+        "peak_private": 4256194560
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5965069926.400001,
+      "required_commit": 2842133299.2000003,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18133540864,
+        "commit": 16651743232,
+        "rss": 1853935616,
+        "private": 4256194560,
+        "peak_rss": 1853935616,
+        "peak_private": 4256194560
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5965069926.400001,
+      "required_commit": 2842133299.2000003,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18128031744,
+        "commit": 16652009472,
+        "rss": 1853935616,
+        "private": 4256194560,
+        "peak_rss": 1853935616,
+        "peak_private": 4256194560
+      }
+    }
+  ],
+  "full_FIT_twice_replayed": false,
+  "production_started": false
+}

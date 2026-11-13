@@ -1,0 +1,20 @@
+{
+  "version": "feasible-rs-v1",
+  "authorization": "human 2026-10-31 execute cited design",
+  "population": "frozen original tiny128 / 97 tracks only",
+  "seeds": [42,43,44],
+  "scientific_proposals_per_seed": 256,
+  "alphas": [1,0.5,0.25,0.125,0.0625,0.03125,0.015625,0.0078125],
+  "loss": "read-only original RS MSE+LR+LS coeff1/1",
+  "optimizer": "original AdamW lr.001 wd.0001 defaults clip5 batch32",
+  "acceptance": "first feasible bitwise-nonzero global affine parameter trial; full proposed Adam moments retained",
+  "rejection": "restore parameters/Adam; consume batch and retain post-proposal RNG; no retry",
+  "motion": "original candidate guard + all group pooled5 and junction literal1.01",
+  "errors": "S overall/stable/transition <=1.01Native, change<=Native",
+  "support": "all old-good windows C original-support minJ<=1 and S coverage",
+  "savepoints": [0,64,128,192,256],
+  "U2": "all12 fixed snapshots; output interpolation same alphas +0; first local-support passing; GT_DIAGNOSTIC_ONLY",
+  "budget_admission_seconds": 1800,
+  "resource": "warning_first_remaining_v3; no OS mutation, memory lock, userkill or deletion",
+  "held_formal": "NOT_AUTHORIZED_IN_THIS_DIAGNOSIS"
+}

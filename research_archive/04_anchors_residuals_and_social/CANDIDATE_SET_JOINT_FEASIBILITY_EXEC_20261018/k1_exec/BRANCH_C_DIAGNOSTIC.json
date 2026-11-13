@@ -1,0 +1,161 @@
+{
+  "created_at": "2026-10-19T03:08:41+09:00",
+  "timezone": "Asia/Tokyo",
+  "branch": "C",
+  "branch_title": "策略oracle成功，学习器失败",
+  "GO_K2": false,
+  "start_K2": false,
+  "breakthrough": false,
+  "findings": [
+    "K0 outer三seed pool+K0-C 均达 W；学习臂 I/S 均未达 W，GO_K2=false。",
+    "S 相对 I：change 误差明显更好（minADE/FDE/J 的 Bonferroni CI 上界均<0），但 change 覆盖 CI 跨0；S 非全面优于 I。",
+    "S 相对 native：覆盖略升但 change ADE/FDE/J 点估计均恶化，且未过 +5% ADE/FDE 改善门；保护/lost/副集多项失败。",
+    "S 近保守：outer 平均约2.5次替换，约28–30%窗口0次；I 约8.5–9.8次。S 的 pred_gate 拒绝量约为 I 的2.4倍，motion 拒绝远少于 I。",
+    "与 K0-C 差距大：K0-C change_good 126–133 vs S 111–113；精度上 K0-C 改善 native，S 反而略伤 native。",
+    "按04§5C：结束本次I/S对照；不换树深/状态/标签权重凑PASS；不启动K2；不重训generator。"
+  ],
+  "outer_table": [
+    {
+      "seed": 42,
+      "k0c_change_good": 126,
+      "k0c_change_minADE": 0.23664530545170753,
+      "k0c_change_minFDE": 0.3907952146171078,
+      "k0c_W": true,
+      "k0c_swaps_mean": 0.3748792270531401,
+      "k0c_swaps_zero_frac": 0.6251207729468599,
+      "S_swaps_mean": 2.641545893719807,
+      "S_zero_frac": 0.3033816425120773,
+      "I_swaps_mean": 9.829951690821256,
+      "S_rejects": {
+        "motion": 2513,
+        "pred_gate": 300450,
+        "no_candidate": 55
+      },
+      "I_rejects": {
+        "motion": 18076,
+        "pred_gate": 116198,
+        "no_candidate": 0
+      },
+      "S": {
+        "change_good": 113,
+        "change_minADE": 0.25287,
+        "change_minFDE": 0.45105
+      },
+      "I": {
+        "change_good": 107,
+        "change_minADE": 0.34727,
+        "change_minFDE": 0.69745
+      },
+      "native": {
+        "change_good": 110,
+        "change_minADE": 0.24915,
+        "change_minFDE": 0.42938
+      },
+      "gap_S_to_k0c_change_good": 13,
+      "gap_S_to_k0c_ADE": 0.01622469454829245,
+      "gap_S_to_native_ADE": 0.0037199999999999733
+    },
+    {
+      "seed": 43,
+      "k0c_change_good": 133,
+      "k0c_change_minADE": 0.23243657541691962,
+      "k0c_change_minFDE": 0.3845334811735341,
+      "k0c_W": true,
+      "k0c_swaps_mean": 0.43285024154589374,
+      "k0c_swaps_zero_frac": 0.5671497584541063,
+      "S_swaps_mean": 2.4521739130434783,
+      "S_zero_frac": 0.2821256038647343,
+      "I_swaps_mean": 8.564251207729468,
+      "S_rejects": {
+        "motion": 1917,
+        "pred_gate": 310011,
+        "no_candidate": 42
+      },
+      "I_rejects": {
+        "motion": 22999,
+        "pred_gate": 142574,
+        "no_candidate": 3
+      },
+      "S": {
+        "change_good": 113,
+        "change_minADE": 0.25852,
+        "change_minFDE": 0.46613
+      },
+      "I": {
+        "change_good": 120,
+        "change_minADE": 0.317,
+        "change_minFDE": 0.60982
+      },
+      "native": {
+        "change_good": 110,
+        "change_minADE": 0.24915,
+        "change_minFDE": 0.42938
+      },
+      "gap_S_to_k0c_change_good": 20,
+      "gap_S_to_k0c_ADE": 0.02608342458308041,
+      "gap_S_to_native_ADE": 0.009370000000000017
+    },
+    {
+      "seed": 44,
+      "k0c_change_good": 127,
+      "k0c_change_minADE": 0.23109289210337167,
+      "k0c_change_minFDE": 0.3915086382901264,
+      "k0c_W": true,
+      "k0c_swaps_mean": 0.37874396135265703,
+      "k0c_swaps_zero_frac": 0.621256038647343,
+      "S_swaps_mean": 2.6164251207729468,
+      "S_zero_frac": 0.2898550724637681,
+      "I_swaps_mean": 9.332367149758454,
+      "S_rejects": {
+        "motion": 2824,
+        "pred_gate": 293002,
+        "no_candidate": 78
+      },
+      "I_rejects": {
+        "motion": 26633,
+        "pred_gate": 123905,
+        "no_candidate": 2
+      },
+      "S": {
+        "change_good": 111,
+        "change_minADE": 0.25603,
+        "change_minFDE": 0.45709
+      },
+      "I": {
+        "change_good": 107,
+        "change_minADE": 0.33344,
+        "change_minFDE": 0.65607
+      },
+      "native": {
+        "change_good": 110,
+        "change_minADE": 0.24915,
+        "change_minFDE": 0.42938
+      },
+      "gap_S_to_k0c_change_good": 16,
+      "gap_S_to_k0c_ADE": 0.024937107896628313,
+      "gap_S_to_native_ADE": 0.0068799999999999695
+    }
+  ],
+  "reject_outer_sum": {
+    "I": {
+      "motion": 67708,
+      "pred_gate": 382677,
+      "no_candidate": 5
+    },
+    "S": {
+      "motion": 7254,
+      "pred_gate": 903463,
+      "no_candidate": 175
+    }
+  },
+  "next_allowed": [
+    "GT-free 动作预测假阳/假阴与训练-部署状态偏移分析（只读诊断）",
+    "另立研究登记后再做选择器因素单改或生成方向（本夜不自动启动）"
+  ],
+  "next_forbidden": [
+    "K2 显式历史消融",
+    "HGB 超参/配额/阈值扫描凑门",
+    "重训 KIN/generator",
+    "把 K0 oracle 当 teacher 混入"
+  ]
+}

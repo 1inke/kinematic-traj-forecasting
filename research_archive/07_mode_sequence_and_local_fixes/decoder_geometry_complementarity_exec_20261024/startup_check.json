@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-10-24T12:25:09.5438699+09:00",
+  "task": "Trajectory-DecoderGeometry-Q0-20261024",
+  "task_state": "Running",
+  "triggers": 0,
+  "processes": [
+    {
+      "ProcessId": 12096,
+      "ParentProcessId": 2804,
+      "CreationDate": "2026-10-24T12:24:53.692098+09:00",
+      "CommandLine": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\DECODER_GEOMETRY_COMPLEMENTARITY_EXEC_20261024\\launch_worker.py\""
+    },
+    {
+      "ProcessId": 44052,
+      "ParentProcessId": 12096,
+      "CreationDate": "2026-10-24T12:24:54.120331+09:00",
+      "CommandLine": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\DECODER_GEOMETRY_COMPLEMENTARITY_EXEC_20261024\\launch_worker.py\""
+    },
+    {
+      "ProcessId": 33672,
+      "ParentProcessId": 44052,
+      "CreationDate": "2026-10-24T12:24:54.173082+09:00",
+      "CommandLine": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\decoder_geometry_complementarity_exec_20261024\\worker.py\""
+    },
+    {
+      "ProcessId": 11116,
+      "ParentProcessId": 33672,
+      "CreationDate": "2026-10-24T12:24:54.192189+09:00",
+      "CommandLine": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\decoder_geometry_complementarity_exec_20261024\\worker.py\""
+    }
+  ],
+  "worker": {
+    "status": "RUNNING",
+    "pid": 11116,
+    "parent_pid": 33672,
+    "started_at": "2026-10-24T12:24:54.366236+09:00"
+  },
+  "exit": null,
+  "progress": {
+    "status": "RUNNING",
+    "active_worker": true,
+    "started_at": "2026-10-24T12:24:54.366236+09:00",
+    "stage": "Q0_SAVED_ATTRIBUTION",
+    "first_progress_query_done": false,
+    "first_progress_query_count": 0,
+    "query_at": "2026-10-24T12:28:25.032533+09:00",
+    "analysis_deadline": "2026-10-24T12:31:55.69883+09:00"
+  },
+  "stderr_bytes": 0,
+  "result_present": false,
+  "identity_supplement": {
+    "reason": "Windows canonical lower-case path omitted by original case-sensitive monitor; targeted actual worker and redirector query only; worker was running",
+    "worker_actual": 11116,
+    "worker_redirector": 33672,
+    "launcher_actual": 44052,
+    "launcher_redirector": 12096,
+    "service_ancestor": 2804,
+    "scientific_source_changed": false,
+    "new_checker": "check_once_casefold.ps1"
+  }
+}

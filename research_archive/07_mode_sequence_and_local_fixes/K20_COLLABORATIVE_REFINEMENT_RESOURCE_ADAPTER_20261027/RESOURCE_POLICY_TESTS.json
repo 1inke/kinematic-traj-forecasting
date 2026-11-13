@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "policy": "warning_first_remaining_v3",
+  "checks": [
+    "below1p3_but_fits_actual_new_allocation_warn_not_false_block",
+    "real_admission_shortfall_blocks",
+    "runtime_subtracts_already_owned_memory",
+    "historical_peak_not_current_memory_lock",
+    "estimate_undershoot_healthy_task_warns_without_inflation",
+    "transient_pressure_resets_not_failed",
+    "persistent10s_three_observations_stop_at_check",
+    "emergency64MiB_stops",
+    "runtime_check_throttled_without_sleep_or_extra_sampling",
+    "invalid_telemetry_not_silently_passed"
+  ],
+  "one_live_snapshot": {
+    "physical": 15459377152,
+    "commit": 7110791168,
+    "physical_total": 33943089152,
+    "commit_total": 35959103488,
+    "commit_limit": 43069894656,
+    "rss": 35819520,
+    "private": 21266432,
+    "peak_rss": 35819520,
+    "peak_private": 21266432
+  },
+  "live_admission": {
+    "status": "PASS",
+    "severity": "NORMAL",
+    "policy": "warning_first_remaining_v3",
+    "mode": "startup",
+    "estimate": 3562103808,
+    "factor": 1.3,
+    "remaining_physical": 3562103808,
+    "remaining_commit": 3562103808,
+    "warning_physical": 4630734950.400001,
+    "warning_commit": 4630734950.400001,
+    "admission_physical": 3901534699,
+    "admission_commit": 3901534699,
+    "adaptive_system_reserve": 339430891,
+    "pressure": false,
+    "emergency": false,
+    "warnings": [],
+    "snapshot": {
+      "physical": 15459377152,
+      "commit": 7110791168,
+      "physical_total": 33943089152,
+      "commit_total": 35959103488,
+      "commit_limit": 43069894656,
+      "rss": 35819520,
+      "private": 21266432,
+      "peak_rss": 35819520,
+      "peak_private": 21266432
+    }
+  },
+  "old_reports_and_science_untouched": true,
+  "no_OS_pagefile_user_process_changes": true
+}

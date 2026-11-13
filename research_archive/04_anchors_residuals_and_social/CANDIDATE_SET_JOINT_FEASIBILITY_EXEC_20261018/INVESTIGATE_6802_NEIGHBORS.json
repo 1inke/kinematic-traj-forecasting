@@ -1,0 +1,67 @@
+{
+  "sample_id": 6802,
+  "sequence": "crowds_zara02",
+  "pedestrian_id": 130,
+  "start_frame": 759,
+  "obs_frames": "759-766",
+  "pred_frames": "767-778",
+  "num_valid_agents": 9,
+  "viz_num_valid": 9,
+  "stored_agent_ped_ids": [
+    130,
+    148,
+    131,
+    146,
+    147,
+    144,
+    145,
+    70,
+    111
+  ],
+  "neighbor_ped_ids": [
+    148,
+    131,
+    146,
+    147,
+    144,
+    145,
+    70,
+    111
+  ],
+  "selection_rule": {
+    "source": "ASTRA/data/process_eth.py",
+    "concurrent": "same scene timestep; agent must exist in ALL past_length=8 AND future_length=12 frames (get_valid_id)",
+    "distance_frame": "last observation frame only (loc[:,-1])",
+    "distance_threshold_m": 5,
+    "max_agents_including_target": 9,
+    "tie_break": "argsort distance; keep closest total_num"
+  },
+  "viz_export": "build_overnight_visual.py takes coordinates[sid, 1:num_valid, :8] — same as training raw, not recomputed",
+  "missing_oncoming": {
+    "ped_id": 143,
+    "why": [
+      "incomplete future: last label frame 777, sample needs through 778 -> excluded from concurrent valid_id",
+      "even with full window, dist at last_obs 766 is 6.22m > thres 5m"
+    ],
+    "obs_distances_m": {
+      "759": 1.71,
+      "762": 3.56,
+      "766": 6.22
+    },
+    "motion": "strong -x (oncoming vs target +x)"
+  },
+  "dropped_by_cap_within_5m": [
+    {
+      "ped_id": 69,
+      "dist_766": 4.071,
+      "note": "stationary, behind"
+    },
+    {
+      "ped_id": 112,
+      "dist_766": 4.387,
+      "note": "stationary, behind"
+    }
+  ],
+  "verdict": "design_limit_not_viz_bug",
+  "mark_png": "<WORKSPACE_ROOT>\\CANDIDATE_SET_JOINT_FEASIBILITY_EXEC_20261018\\mark_6802_neighbors.png"
+}

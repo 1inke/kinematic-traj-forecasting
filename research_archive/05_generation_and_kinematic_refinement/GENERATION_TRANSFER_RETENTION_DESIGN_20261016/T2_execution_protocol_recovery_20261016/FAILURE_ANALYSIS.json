@@ -1,0 +1,59 @@
+{
+  "status": "STOP_PRETRAIN_INFRASTRUCTURE",
+  "halfway_checked_at": "2026-10-16T17:50:04.5230397+09:00",
+  "worker_and_exit": "FAILURE",
+  "finished_at": "2026-10-16T17:44:00.569583+09:00",
+  "actual_PID_historical_only": 2884,
+  "error": "FileNotFoundError statistics_position.npz",
+  "location": "train.py main manifest construction line 23",
+  "actual_loaded_statistics": "statistics_velocity.npz",
+  "scientific_training_steps": 0,
+  "scientific_new_C_jobs": 0,
+  "reused_A_and_native_jobs": 16,
+  "three_histories": [
+    {
+      "seed": 42,
+      "epochs": 0,
+      "cell": "C"
+    },
+    {
+      "seed": 43,
+      "epochs": 0,
+      "cell": "C"
+    },
+    {
+      "seed": 44,
+      "epochs": 0,
+      "cell": "C"
+    }
+  ],
+  "model_performance_conclusion": "NOT_AVAILABLE_NO_C_TRAINING",
+  "resource_failure": false,
+  "resource_recorded_in_FAILURE": {
+    "peak_private_bytes": 1208098816,
+    "peak_RSS_bytes": 815865856,
+    "min_available_physical_bytes": 19825291264,
+    "min_available_commit_bytes": 27650498560,
+    "estimated_total_peak_bytes": 4916164516,
+    "limit_bytes": 6391013870.8
+  },
+  "resource_not_complete_production_peak": true,
+  "cause": "Copied production manifest retained a second position-statistics filename after data-loading path was changed to velocity. Numerical preflight and subset-resume tests did not exercise this production manifest construction path.",
+  "evidence": [
+    "worker_stderr.log",
+    "FAILURE.json",
+    "failures/1792143840539557100",
+    "train.py",
+    "halfway_check.json"
+  ],
+  "source_final_audit_completed": false,
+  "old_sources_results_not_modified": true,
+  "no_retry_or_retraining_performed": true,
+  "T3": "NOT_TRIGGERED_T1_GATE_FALSE",
+  "proposed_recovery_requires_direct_human_decision": [
+    "New versioned execution folder; preserve failed folder and all source hashes",
+    "Correct only production manifest statistics reference to registered velocity statistics",
+    "Test actual production manifest construction and assert representation/statistics/source/split contract before worker launch",
+    "Full current-source/preflight/resume/resources/throughput review before one new independent worker; no science or thresholds changed"
+  ]
+}

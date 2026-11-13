@@ -1,0 +1,144 @@
+{
+  "document": "GO_K1_REGISTER",
+  "created_at": "2026-10-18T23:32:00+09:00",
+  "timezone": "Asia/Tokyo",
+  "exec_dir": "<WORKSPACE_ROOT>\\CANDIDATE_SET_JOINT_FEASIBILITY_EXEC_20261018",
+  "design_ref": "CANDIDATE_SET_JOINT_FEASIBILITY_DESIGN_20261018 §5",
+  "GO_K1": true,
+  "reason": "outer_3seed_pool_and_K0C_W",
+  "reason_detail": "outer 三 seed（42/43/44）均 pool_joint_witness=true 且 K0-C（及 k0a、k0b_R）W_pass=true；按设计 01§5 分流：池见证 ∧ K0-C 达 W → GO_K1=是。",
+  "tag": "ORACLE_DIAGNOSTIC_ONLY",
+  "tag_meaning": "K0 见证与策略 oracle 仅作可达性诊断；不构成可部署选择器，也不授权重训生成器。",
+  "gate_evidence": {
+    "outer_seeds": [
+      42,
+      43,
+      44
+    ],
+    "all_pool_joint_witness": true,
+    "all_policy_oracle_witness": true,
+    "all_relaxation_certificate_status": "R_INCUMBENT_VERIFIED_W",
+    "all_quality_upper_bound_negation": false,
+    "k0a_W_pass_all_outer": true,
+    "k0b_R_W_pass_all_outer": true,
+    "k0c_W_pass_all_outer": true,
+    "baselines_W_pass_all_outer": {
+      "native20": false,
+      "kin20": false,
+      "v1_cond_boost_11_9": false
+    }
+  },
+  "outer_k0c_snapshot": [
+    {
+      "seed": 42,
+      "change_good": 126,
+      "change_minADE": 0.23664530545170753,
+      "change_minFDE": 0.3907952146171078,
+      "native_change_good": 110,
+      "v1_change_good": 116
+    },
+    {
+      "seed": 43,
+      "change_good": 133,
+      "change_minADE": 0.23243657541691962,
+      "change_minFDE": 0.3845334811735341,
+      "native_change_good": 110,
+      "v1_change_good": 119
+    },
+    {
+      "seed": 44,
+      "change_good": 127,
+      "change_minADE": 0.23109289210337167,
+      "change_minFDE": 0.3915086382901264,
+      "native_change_good": 110,
+      "v1_change_good": 110
+    }
+  ],
+  "secondary_splits": {
+    "FIT_cal": {
+      "seed42": {
+        "pool": true,
+        "policy": true,
+        "cert": "R_INCUMBENT_VERIFIED_W",
+        "k0c_W": true,
+        "change_good": 301
+      },
+      "seed43": {
+        "pool": true,
+        "policy": true,
+        "cert": "R_INCUMBENT_VERIFIED_W",
+        "k0c_W": true,
+        "change_good": 296
+      },
+      "seed44": {
+        "pool": true,
+        "policy": true,
+        "cert": "R_INCUMBENT_VERIFIED_W",
+        "k0c_W": true,
+        "change_good": 295
+      }
+    },
+    "inner": {
+      "seed42": {
+        "pool": true,
+        "policy": true,
+        "cert": "R_INCUMBENT_VERIFIED_W",
+        "k0c_W": true,
+        "change_good": 207
+      },
+      "seed43": {
+        "pool": true,
+        "policy": true,
+        "cert": "R_INCUMBENT_VERIFIED_W",
+        "k0c_W": true,
+        "change_good": 211
+      },
+      "seed44": {
+        "pool": true,
+        "policy": true,
+        "cert": "R_INCUMBENT_VERIFIED_W",
+        "k0c_W": true,
+        "change_good": 203
+      }
+    },
+    "outer": {
+      "seed42": {
+        "pool": true,
+        "policy": true,
+        "cert": "R_INCUMBENT_VERIFIED_W",
+        "k0c_W": true,
+        "change_good": 126
+      },
+      "seed43": {
+        "pool": true,
+        "policy": true,
+        "cert": "R_INCUMBENT_VERIFIED_W",
+        "k0c_W": true,
+        "change_good": 133
+      },
+      "seed44": {
+        "pool": true,
+        "policy": true,
+        "cert": "R_INCUMBENT_VERIFIED_W",
+        "k0c_W": true,
+        "change_good": 127
+      }
+    }
+  },
+  "union40_caveat": {
+    "seed43_outer_union_W_pass": false,
+    "seed43_inner_union_W_pass": false,
+    "seed43_FIT_cal_union_W_pass": false,
+    "explanation": "seed43 部分 split 上 union40（全池40条合并）W_pass=false，原因为 change_motion=FAIL；但同一 split 上从池中选出的 K20（k0a/k0b_R/k0c）仍 W_pass=true。说明「全池40条一并评估运动学」≠「所选K20的联合可行性」。quality_upper_bound_negation 仍为 false，不能据此否定池质量上界。",
+    "not_quality_upper_bound_negation": true
+  },
+  "next_actions": {
+    "enter_K1": true,
+    "train_generator": false,
+    "K1_scope": "实现/训练集合边际质量选择器（集合级）；生成器冻结；K0 oracle 仅作诊断对照。",
+    "auto_train_started": false
+  },
+  "author": "tosaka_executor",
+  "secondary_splits_updated_at": "2026-10-19T00:53:16+09:00",
+  "FIT_cal_seed44": "DONE"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "KINEMATIC_DECODER_EXPLICIT_INTEGRATION",
+  "date": "2026-10-18",
+  "arms": ["BASE", "KIN"],
+  "K": 20,
+  "H": 12,
+  "dt": 0.4,
+  "quality_ADE_FDE": [0.2, 0.4],
+  "motion_factor": 1.01,
+  "smoke": {"epochs": 2, "subset": 2048, "batch": 128, "seed": 42},
+  "short": {"epochs": 8, "subset": null, "batch": 256, "seed": 42},
+  "loss": {"winner": "ADE+0.5FDE", "diversity_w": 0.05, "consistency_w": 0.1},
+  "not_in_scope": ["P1_resume", "P2", "lambda_sweep", "mode_preservation_claim"]
+}

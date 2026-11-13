@@ -1,0 +1,119 @@
+{
+  "name": "E2E_DGEO_V2_FACTORIAL_20261103",
+  "authorization": "Direct user execute supplied two direction documents; resolve protocol conflicts in favour of prior actual confirmed settings",
+  "original_design": "e71190b0b8c207880e8c08e5f87f01eb0209d11c6ad63c85158d904f81a1d2ce",
+  "prior_reviewed_analysis": "3b5bfde73a697c04dcedc0ff2122e4876ad9547d7dbd6e5bcd9587e27ec306a9",
+  "taylor_matrix": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      2,
+      1,
+      1
+    ],
+    [
+      3,
+      3,
+      0
+    ]
+  ],
+  "taylor_coefficients": [
+    0.16,
+    0.14,
+    0.04
+  ],
+  "zero_jerk_screen_note": "proposed <=1pp rate tolerance is not zero count; strict zero flag separate",
+  "actual_alignment": "9f0a39c5c9bdf55b4200d8e819244ef80fd6735ca4e26894ba5095f1ea188972",
+  "original_B0_invariants": {
+    "optimizer": {
+      "name": "AdamW",
+      "lr": 0.00025,
+      "weight_decay": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "foreach": false
+    },
+    "scheduler": "monotonic cosine; warmup1epoch(340updates); total2720; per-update step",
+    "EMA": 0.995,
+    "clip": 5.0,
+    "drop_last": false,
+    "selection": "FIXED_FINAL_EPOCH8_EMA; no dev best checkpoint or earlystop",
+    "normalization": "Past-only focal heading lag3 speed>.03 else[1,0], peragent eight-observation mean; no fitted input stats",
+    "data_neighbor": "Full8 observed only, closest t0 stableID tie, focal+8, no neighbor future-life mask",
+    "augmentation": {
+      "reflection": true,
+      "rotation": false,
+      "speed": [
+        0.9,
+        1.1
+      ],
+      "probability": 0.5,
+      "curvature": 0
+    },
+    "base_loss": "Existing locked ModeQueryLoss smoothL1 exp weights1..2, winner ADE+.25FDE, classification.5*(softCE temp.5 gapscale>=.05+.25hardCE), endpoint.25, endpoint190pair relu(.4-distance)linear*.05, shortfirst2smoothL1*.2",
+    "oracle_coverage": {
+      "weight": 0.2,
+      "responsibility": "detach softmax(-(ADE+.25FDE)/.10)",
+      "normalized": false,
+      "warmup": 0
+    },
+    "additional_auxiliary_losses": 0,
+    "GT_in_prediction_forward": false
+  },
+  "arms": [
+    "DK-CenterDiff",
+    "DK-ManeuverDiff",
+    "DK-KinTaylorDiff",
+    "DK-FullDiff"
+  ],
+  "seed": 42,
+  "batch": 64,
+  "epochs_per_model": 8,
+  "updates_per_model": 2720,
+  "total_updates": 10880,
+  "fit": 21719,
+  "dev": 4753,
+  "context_dim": 64,
+  "mode_dim": 64,
+  "proj_dim": 16,
+  "heads": 4,
+  "coord_output_gain": 0.1,
+  "architecture": "Fixed centered differential coordinator all4. A Maneuver12D/no geometry; B original scaled independent residual/metric Taylor. Common coordinator tensors paired all4; no scorer residual.",
+  "geometry_units": "Maneuver displacement/sample, causal past4 trend, smooth scalar interaction; Taylor .16/.14/.04 metric residual and unchanged LINEAR interpolation, not safety guarantee. float64 dt.4 evaluation unchanged",
+  "initial": "Fresh seed42 original weights/buffers EXACT B0; new constructor fork_rng seed20261103+seed, original RNG restored",
+  "paired": "Every epoch all RNG states and full batchID order EXACT against B0",
+  "model_parameters": {
+    "DK-CenterDiff": 303970,
+    "DK-ManeuverDiff": 304802,
+    "DK-KinTaylorDiff": 303970,
+    "DK-FullDiff": 304802
+  },
+  "gradient_gate": "Actual initial exactness and finite connected active new tensors and all6 proposal channels by third backward, actual step recorded; no norm/cos target.",
+  "comparator": "Existing matched B0 outputs only, no old trained warmstart or test effects",
+  "screening": "Reuse exact old compare_ud.pilot_screen: overall/changeADE and protectedFDE plus all-group allK20 five tails, zero-positive-excess or small-track NOT_ESTIMABLE, no floor; new allgroupADE/estimable-tail summaries are diagnostic only",
+  "mechanism_gain_rules": {
+    "A": "mean of maneuver-center and full-kin",
+    "B": "mean of kin-center and full-maneuver",
+    "interaction": "full-maneuver-kin+center"
+  },
+  "promotion": "No automatic promotion or more seeds; original strict and new separately labeled estimable/rate diagnostics; request-only after human review",
+  "empirical_causality": "Factor B bundles basis envelope and scale; V1 module seed differs. No single-seed significance or unique root. Source diagnosis not proved. Signed attention not probability/intent.",
+  "evaluation_contract": "f5db8a47ce38b89c919fb266377f38c9d646fe1f9046f9a8c7cf4762aafd98c9",
+  "mechanism_contract": "0c435026394aab556ba05e74201f666bd8d68388c3d8cacfe4f73b3b1e0c99d1",
+  "full_workflow_planning_budget_seconds": 2700,
+  "updated_planning": "45min scheduling target with measured-overrun disclosure, not a scientific stop; exact finite4 unchanged; see SCHEDULING_CLARIFICATION",
+  "resource": "warning_first_remaining_v3; 1.3remaining warning, current low-reserve persistent emergency checkpoint stop",
+  "no_delete": true,
+  "old_PAUSED_untouched": true,
+  "no_following_seeds_V_F": true,
+  "runtime": {
+    "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+    "torch": "2.11.0+cu128"
+  }
+}

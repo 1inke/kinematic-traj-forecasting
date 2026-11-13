@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "source_count": 5712,
+  "source_digest": "b730804c0d4d9fb82cd2fd29105f6f8798b3bc6dcb8cec539a46599a302791f5",
+  "elapsed_seconds": 161.22737120000238,
+  "solver": {
+    "status": "READY",
+    "cvxpy": "1.7.3",
+    "clarabel": "0.11.1",
+    "templates": 20
+  },
+  "fixtures": [
+    {
+      "kind": "zero_native_mean_known_feasible",
+      "status": "optimal",
+      "wall": 0.016998199993395247,
+      "objective": 0.0
+    },
+    {
+      "kind": "known_far_infeasible",
+      "status": "infeasible"
+    },
+    {
+      "kind": "two_second_owned_child_watchdog",
+      "status": "WATCHDOG_TIMEOUT",
+      "wall": 2.0130848999979207
+    }
+  ],
+  "registered_first4_benchmark": [
+    {
+      "window": 0,
+      "slot": 0,
+      "seconds": 2.2193416000081925,
+      "status": "infeasible",
+      "valid_witness": false,
+      "not_independent_production_attempt": true
+    },
+    {
+      "window": 0,
+      "slot": 1,
+      "seconds": 0.08892750000813976,
+      "status": "infeasible",
+      "valid_witness": false,
+      "not_independent_production_attempt": true
+    },
+    {
+      "window": 1,
+      "slot": 0,
+      "seconds": 0.05608360000769608,
+      "status": "infeasible",
+      "valid_witness": false,
+      "not_independent_production_attempt": true
+    },
+    {
+      "window": 1,
+      "slot": 1,
+      "seconds": 0.05259900000237394,
+      "status": "infeasible",
+      "valid_witness": false,
+      "not_independent_production_attempt": true
+    }
+  ],
+  "actual128_full_pipeline_seconds": 1.0438114999997197,
+  "planning_minutes": 33.89154617596341,
+  "ETA_minutes": [
+    23.724082323174386,
+    50.83731926394512
+  ],
+  "no30min_veto": true,
+  "resource": {
+    "estimated_total_peak_bytes": 4916164516,
+    "factor": 1.3,
+    "checks": 913,
+    "aggregate_current_max_private": 1839915008,
+    "aggregate_current_max_RSS": 1217138688,
+    "parent_peak_private": 1844211712,
+    "parent_peak_RSS": 1221406720,
+    "child_max_peak_private": 868352,
+    "child_max_peak_RSS": 4517888,
+    "min_physical": 14382354432,
+    "min_commit": 16340279296
+  },
+  "not_optimizer_or_training": true,
+  "old_U0_kernel_EXACT": true,
+  "raw_actual_Torch_and_independent_recurrence": true,
+  "source_and_environment_lock_PASS": true,
+  "no_real_problem_wall_time_cap": true,
+  "structured_string_reasons_regression_PASS": true
+}

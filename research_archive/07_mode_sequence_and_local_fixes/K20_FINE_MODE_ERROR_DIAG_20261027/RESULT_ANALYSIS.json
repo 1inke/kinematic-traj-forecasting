@@ -1,0 +1,109 @@
+{
+  "status": "ANALYZED_FINE_MODE_ERROR_DIAG_COMPLETE",
+  "no_training": true,
+  "new_formal_training": 0,
+  "unique_windows": 9777,
+  "source_count": 4411,
+  "source_digest": "3d290077f3c033bce338b12368ab4ff10d4dd1d6469961264251e61d8a4b4a2e",
+  "variants": 12,
+  "main": {
+    "population": "hold",
+    "group": "change",
+    "N": 1023,
+    "tracks": 74,
+    "native_good": 340,
+    "native_fail": 683,
+    "old_straight_candidate_N": 11420,
+    "old_straight_entry_turn": 2753,
+    "window_any_old_straight_entry_turn": 631,
+    "mutually_exclusive_failure": {
+      "undefined_boundary": 183,
+      "entry_absent": 3,
+      "onset_missing": 112,
+      "speed_missing": 144,
+      "refined_present_inaccurate": 241,
+      "partial": 0
+    },
+    "common_valid": 500,
+    "common_present": {
+      "old": 500,
+      "entry": 497,
+      "entry_onset": 385,
+      "refined": 241
+    },
+    "unconditional_present": {
+      "entry": 679,
+      "onset": 584,
+      "speed": 559,
+      "entry_onset": 511,
+      "refined": 323
+    },
+    "oracle": {
+      "END02": {
+        "good": 354,
+        "rescue": 17,
+        "lost": 3
+      },
+      "END04": {
+        "good": 446,
+        "rescue": 120,
+        "lost": 14
+      },
+      "END_unbounded": {
+        "good": 840,
+        "rescue": 502,
+        "lost": 2
+      },
+      "TIME": {
+        "good": 400,
+        "rescue": 60,
+        "lost": 0
+      }
+    },
+    "END04_TIME_overlap": {
+      "end_only": 76,
+      "time_only": 16,
+      "both": 44,
+      "neither": 547
+    },
+    "TIME_unrescuable_allFDEabove04": 464,
+    "TIME_motion_ratio": [
+      1.0720697716031364,
+      1.4961380310510928,
+      1.2777559693541045,
+      1.3680872704641835,
+      0.9929612664825239
+    ]
+  },
+  "inner_failure_partition": [
+    105,
+    2,
+    49,
+    56,
+    119,
+    0
+  ],
+  "audit": {
+    "status": "PASS_COMPLETE_SAVED_CPU_REVIEW",
+    "candidate_time_reconstructions": 195540,
+    "tuple_decision_variant_windows": 117324,
+    "actual20000_bootstrap_blocks": 40,
+    "bootstrap_maxerror": 1.3877787807814457e-16,
+    "quality_maxerror": 3.552713678800501e-15,
+    "scope_not_external_review_or_model_replay": true,
+    "all_sources_preserved": true
+  },
+  "scope": {
+    "TIME": "exact finite441 predeclared action grid, not full continuous oracle",
+    "oracle_not_new_model_gain": true,
+    "junction_motion_supplement_not_gate_change": true,
+    "zero_length_phase_erratum": true,
+    "explicit_bootstrap_frame_vs_group_tracks": true
+  },
+  "conclusion": "Mixed process-representation mismatch and continuous spatial errors. Entry absence alone rare; GT privileged endpoint/time witnesses do not establish learnability or safety.",
+  "no_delete": true,
+  "old_PAUSED_untouched": true,
+  "no_automatic_next_training": true,
+  "baseline_promoted": false,
+  "report": "RESULT_ANALYSIS.md"
+}

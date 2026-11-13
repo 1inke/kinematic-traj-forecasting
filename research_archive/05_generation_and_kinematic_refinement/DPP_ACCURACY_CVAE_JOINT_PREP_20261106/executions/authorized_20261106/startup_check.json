@@ -1,0 +1,29 @@
+{
+  "status": "PASS_ONE_REAL_STARTUP_NOT_COMPLETION",
+  "checked_at": "2026-11-06T20:26:03.7523932+09:00",
+  "task_name": "Trajectory-DPPAccuracy-CVAEJoint-20261106",
+  "task_state": "Running",
+  "XML_trigger_count": 0,
+  "actual_python": 3860,
+  "actual_creation": "2026-11-06T20:25:33.9524170+09:00",
+  "worker_start": "2026-11-06T20:25:34.221408+09:00",
+  "actual_commandline": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\DPP_ACCURACY_CVAE_JOINT_PREP_20261106\\launch_infrastructure_20261106\\worker_authorized.py\" --root \"<WORKSPACE_ROOT>\\qoder_work\\DPP_ACCURACY_CVAE_JOINT_PREP_20261106\\executions\\authorized_20261106\"",
+  "parent_chain_verified": [
+    {"pid":3860,"parent":38980,"name":"python.exe","role":"actual worker; full CLI/create verified"},
+    {"pid":38980,"parent":28532,"name":"python.exe","role":"worker venv redirector; full CLI/create verified"},
+    {"pid":28532,"parent":39352,"name":"python.exe","role":"actual pre-Popen admission launcher; full CLI/create verified"},
+    {"pid":39352,"parent":27344,"name":"python.exe","role":"admission venv redirector; full CLI/create verified"},
+    {"pid":27344,"parent":2828,"name":"powershell.exe","role":"task action; full CLI/create verified"},
+    {"pid":2828,"parent":2004,"name":"svchost.exe","role":"Windows service ancestor; CIM commandline/executable null, not invented"}
+  ],
+  "observed_actual_progress": {
+    "stage":"TRAIN","at":"2026-11-06T20:25:58.959381+09:00",
+    "run":"existing_accuracy_only_seed42","actual_epoch":1,"actual_updates":679,"loss":0.3376934463566549
+  },
+  "stderr_bytes": 0,
+  "new_failure_files": [],
+  "worker_exit": null,
+  "startup_count": 1,
+  "not_all_runs_complete": true,
+  "no_repeated_startup": true
+}

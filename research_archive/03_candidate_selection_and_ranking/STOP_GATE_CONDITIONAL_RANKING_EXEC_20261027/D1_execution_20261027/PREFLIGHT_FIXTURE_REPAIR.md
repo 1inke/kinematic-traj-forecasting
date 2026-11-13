@@ -1,0 +1,7 @@
+# 首次CPU预检夹具修复（生产启动前）
+
+首次GPU预检59.329秒通过；首次CPU预检在GT改写夹具的精确特征比较失败，原代码/FAILURE/trace已由failure_cpu时间戳目录逐文件保留。生产未启动，无正式模型或旧源变更。
+
+该夹具一侧采用旧保存production motion，另一侧采用独立重构motion；两条算术实现原本仅注册2e-12数值一致，不是float64 bitwise协议。GT改写后独立motion和eligible本身EXACT不变，因而失败不是GT流入特征。修复仅让干预前后均使用同一独立算术motion，隔离真正的GT变量；原保存motion/质量2e-12容差、旧缓存float32输入EXACT、全部literal masks/labels EXACT仍原样保留。没有增大容差或改生产数学。
+
+生产代码与训练目标未变；候选源清单旧digest在candidate_provenance保留，新digest重建后完整GPU+CPU重跑，通过后才允许锁源及OSworker。

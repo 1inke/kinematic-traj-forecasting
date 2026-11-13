@@ -1,0 +1,5 @@
+# 未锁源实施阶段的资源/输出适配扩展
+
+admission运行使用最初core.py；其原SHA仍保留在FEATURE_PROVENANCE.json，原内容重建于admission_runtime_snapshot/core_exact.py并以旧SHA实际核验。core.py为多两个捕获末尾空行的早期副本，也保留。随后为逐字节复用父saved几何/聚簇/运动学审核函数增加CPU stage别名、resource_report接受目录并增加progress mark函数。这三项只影响资源/输出基础设施，不改特征、邻居选择、坐标、统计或任何评价方程。source_audit逐函数AST验证除guard/resource_report/mark外所有函数和顶层来源常量不变。原admission收据不覆盖，生产候选锁同时包括原快照与现core。
+
+另第一次admission因原label含Pedestrian文字列、全列float读取失败，失败代码与原因保留failures/admission1_mixed_label_columns；修正为与原metadata一致的dtype=str后只取0/1/13/15数值列，完整全人口重跑才产生当前准入收据。没有科学阈值、原文件或训练改变。

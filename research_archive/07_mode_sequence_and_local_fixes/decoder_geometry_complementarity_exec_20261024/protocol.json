@@ -1,0 +1,17 @@
+{
+  "series":"DECODER_GEOMETRY_COMPLEMENTARITY_20261024",
+  "authorization":"2026-10-24 按指定目录继续执行，覆盖设计阶段未授权状态；所有科学条件门不变",
+  "sequence":["Q0_SAVED_ATTRIBUTION","Q1A_MAP_ADMISSION","Q1_IF_MAPS_PASS","Q2_IF_Q1_ALL_PASS"],
+  "FIT":18909,"inner":1856,"inner_change":497,"inner_change_tracks":35,
+  "seeds":[42,43,44],"K":20,"T":12,"dt":0.4,
+  "good":{"ADE_max":0.2,"FDE_max":0.4,"same_candidate":true},
+  "clustering":{"method":"complete","D":"max(meanpath/.10,endpoint/.20)","cut":1,"uses_GT":false},
+  "Q0":{"pvalues":false,"full_supplements_max":1,"four_cells":["both_good","iso_only","mix_only","both_bad"],"positive_contribution_denominator":"sum(max(signed_contribution,0)); zero -> null, never negative denominator","native_and_paired_references_separate":true},
+  "Q1":{"grid_metres":0.1,"SHIFT_world":[2,2],"fit_control_points_min":6,"independent_holdout_points_min":5,"holdout_RMS_max":0.1,"holdout_max_max":0.2,"full_primary_known_min":0.9,"AUC_valid_windows_min":100,"AUC_tracks_min":20,"TRUE_AUC_min":0.6,"TRUE_minus_SHIFT_min":0.05,"good_obstacle_max":0.01,"bad_obstacle_min":0.1},
+  "Q2":{"arms":["TRUE","SHIFT","NULL"],"only_if_Q1_all_pass":true,"adapter_parameters":7224,"fresh_runs":9,"epochs":8,"steps_each":592,"whole_parameters":356391,"deployment_budget":305000,"automatic_variants":false},
+  "bootstrap":{"draws":20000,"seed":20261024,"main_family_per_stage":2,"simultaneous_each_two_sided_percentiles":[1.25,98.75],"zero_effective_draw":"invalid_no_redraw","max_invalid_fraction":0.01},
+  "five_motion_max_native_ratio":1.01,"epsilon_or_floor":false,
+  "estimated_CPU_peak_bytes":3221225472,"memory_factor":1.3,
+  "no_outer_CAL_test":true,"no_new_map_download":true,"no_future_derived_obstacles":true,
+  "old_baseline_historycycle11_unfinishedgoal_unchanged":true
+}

@@ -1,0 +1,1318 @@
+{
+  "status": "PASS_ALL4_ACTUAL_GEO_PREFLIGHT",
+  "at": "2026-11-03T11:10:24.143416+09:00",
+  "reports": {
+    "DK-CenterDiff": {
+      "status": "PASS_ACTUAL_GEO_GPU_MATH_RESUME_SAVED",
+      "parameters": 303970,
+      "initial_B0_all_original_weights_buffers_RNG_paths_logits_exact": true,
+      "initial_actual_diagnostics": {
+        "negative_fraction": 0.38999998569488525,
+        "off_diag_cos_mean": -0.05244160443544388,
+        "gate_mean": 0.513417661190033
+      },
+      "actual_first3_batchIDs_exact": true,
+      "phased_gradients": [
+        {
+          "step": 1,
+          "norms": {
+            "proposal_delta.weight": 0.5853346586227417,
+            "proposal_delta.bias": 0.27225667238235474,
+            "coordinator.qk_norm.weight": 0.0,
+            "coordinator.qk_norm.bias": 0.0,
+            "coordinator.v_norm.weight": 0.0,
+            "coordinator.v_norm.bias": 0.0,
+            "coordinator.q1.weight": 0.0,
+            "coordinator.k1.weight": 0.0,
+            "coordinator.value.weight": 0.0,
+            "coordinator.q2.weight": 0.0,
+            "coordinator.k2.weight": 0.0,
+            "coordinator.gate.weight": 0.0,
+            "coordinator.gate.bias": 0.0,
+            "coordinator.onorm.weight": 0.0,
+            "coordinator.onorm.bias": 0.0,
+            "coordinator.out_delta.weight": 0.0
+          },
+          "proposal_delta_rows": [
+            0.21300522983074188,
+            0.007649128790944815,
+            0.3521614968776703,
+            0.011172144673764706,
+            0.41574499011039734,
+            0.014159204438328743
+          ]
+        },
+        {
+          "step": 2,
+          "norms": {
+            "proposal_delta.weight": 0.6373465061187744,
+            "proposal_delta.bias": 0.29677140712738037,
+            "coordinator.qk_norm.weight": 6.814671138499762e-08,
+            "coordinator.qk_norm.bias": 7.645436994607735e-08,
+            "coordinator.v_norm.weight": 1.5496127048209019e-07,
+            "coordinator.v_norm.bias": 1.7311984379375644e-07,
+            "coordinator.q1.weight": 1.9227245218189637e-07,
+            "coordinator.k1.weight": 1.7820805453538924e-07,
+            "coordinator.value.weight": 1.0173174587180256e-06,
+            "coordinator.q2.weight": 4.792711649770354e-08,
+            "coordinator.k2.weight": 2.663645837230888e-08,
+            "coordinator.gate.weight": 5.704675345441501e-07,
+            "coordinator.gate.bias": 7.697234138959175e-08,
+            "coordinator.onorm.weight": 2.607846454338869e-07,
+            "coordinator.onorm.bias": 1.7586657463652955e-07,
+            "coordinator.out_delta.weight": 1.3906516869610641e-05
+          },
+          "proposal_delta_rows": [
+            0.28021755814552307,
+            0.012609442695975304,
+            0.4012351930141449,
+            0.024290498346090317,
+            0.4065384268760681,
+            0.02600872702896595
+          ]
+        },
+        {
+          "step": 3,
+          "norms": {
+            "proposal_delta.weight": 0.6133376955986023,
+            "proposal_delta.bias": 0.28630608320236206,
+            "coordinator.qk_norm.weight": 1.8352865538417973e-07,
+            "coordinator.qk_norm.bias": 2.2111856878836988e-07,
+            "coordinator.v_norm.weight": 5.010048198528239e-07,
+            "coordinator.v_norm.bias": 5.463491561386036e-07,
+            "coordinator.q1.weight": 5.356410497370234e-07,
+            "coordinator.k1.weight": 4.885725388703577e-07,
+            "coordinator.value.weight": 3.1826039048610255e-06,
+            "coordinator.q2.weight": 1.3443624879982963e-07,
+            "coordinator.k2.weight": 7.788315770085319e-08,
+            "coordinator.gate.weight": 1.4600767599404207e-06,
+            "coordinator.gate.bias": 2.2075025185586128e-07,
+            "coordinator.onorm.weight": 7.420907195410109e-07,
+            "coordinator.onorm.bias": 5.266667244541168e-07,
+            "coordinator.out_delta.weight": 3.9340775401797146e-05
+          },
+          "proposal_delta_rows": [
+            0.27764376997947693,
+            0.022175991907715797,
+            0.37789058685302734,
+            0.04263836517930031,
+            0.38754186034202576,
+            0.06162228435277939
+          ]
+        }
+      ],
+      "first_all_new_tensor_positive_step": 2,
+      "advertised_numeric_gradient_targets_not_hard_gates": true,
+      "independent_maths": {
+        "coordinator": {
+          "numpy64_value_error": 7.216449660063518e-15,
+          "functional_allparameter_gradient_error": 0.0,
+          "fixed_two_epsilon_FD": [
+            {
+              "direction": 0,
+              "eps": 0.0001,
+              "error": 1.298681146888296e-13
+            },
+            {
+              "direction": 0,
+              "eps": 1e-05,
+              "error": 1.1013132612358416e-12
+            },
+            {
+              "direction": 1,
+              "eps": 0.0001,
+              "error": 4.608265808878076e-15
+            },
+            {
+              "direction": 1,
+              "eps": 1e-05,
+              "error": 5.597197713451928e-13
+            }
+          ],
+          "permutation_error": 1.1102230246251565e-15
+        }
+      },
+      "inherited_full_loss_error": 6.938893903907228e-18,
+      "arbitrary_future_forward_independence": true,
+      "actual_resume": {
+        "windows": 513,
+        "epochs": 2,
+        "updates": 18,
+        "interrupt_after": 11,
+        "all_states_exact": true,
+        "not_full_fit_two_epochs": true
+      },
+      "bad_source_split_stats_ID_arm_output_readers_reject": true,
+      "saved128_original_fullK20_complete_link_pdist_quality_pooled_junction": "PASS"
+    },
+    "DK-ManeuverDiff": {
+      "status": "PASS_ACTUAL_GEO_GPU_MATH_RESUME_SAVED",
+      "parameters": 304802,
+      "initial_B0_all_original_weights_buffers_RNG_paths_logits_exact": true,
+      "initial_actual_diagnostics": {
+        "negative_fraction": 0.4373437464237213,
+        "off_diag_cos_mean": -0.04407507926225662,
+        "gate_mean": 0.5169720649719238
+      },
+      "actual_first3_batchIDs_exact": true,
+      "phased_gradients": [
+        {
+          "step": 1,
+          "norms": {
+            "proposal_delta.weight": 0.5490461587905884,
+            "proposal_delta.bias": 0.27225667238235474,
+            "coordinator.qk_norm.weight": 0.0,
+            "coordinator.qk_norm.bias": 0.0,
+            "coordinator.v_norm.weight": 0.0,
+            "coordinator.v_norm.bias": 0.0,
+            "coordinator.q1.weight": 0.0,
+            "coordinator.k1.weight": 0.0,
+            "coordinator.value.weight": 0.0,
+            "coordinator.q2.weight": 0.0,
+            "coordinator.k2.weight": 0.0,
+            "coordinator.gate.weight": 0.0,
+            "coordinator.gate.bias": 0.0,
+            "coordinator.onorm.weight": 0.0,
+            "coordinator.onorm.bias": 0.0,
+            "coordinator.out_delta.weight": 0.0,
+            "coordinator.geo_proj.weight": 0.0,
+            "coordinator.geo_proj.bias": 0.0
+          },
+          "proposal_delta_rows": [
+            0.19956383109092712,
+            0.00676102377474308,
+            0.3300238847732544,
+            0.009347323328256607,
+            0.3903893530368805,
+            0.013162934221327305
+          ]
+        },
+        {
+          "step": 2,
+          "norms": {
+            "proposal_delta.weight": 0.5960733294487,
+            "proposal_delta.bias": 0.29677149653434753,
+            "coordinator.qk_norm.weight": 7.584339556387931e-08,
+            "coordinator.qk_norm.bias": 6.452502532283688e-08,
+            "coordinator.v_norm.weight": 1.0582240150824873e-07,
+            "coordinator.v_norm.bias": 8.105941873282063e-08,
+            "coordinator.q1.weight": 1.9807576734365284e-07,
+            "coordinator.k1.weight": 3.3335714988425025e-07,
+            "coordinator.value.weight": 5.876113391423132e-07,
+            "coordinator.q2.weight": 2.0916138510074234e-07,
+            "coordinator.k2.weight": 1.3365730922032526e-07,
+            "coordinator.gate.weight": 3.005505107012141e-07,
+            "coordinator.gate.bias": 3.95543686693145e-08,
+            "coordinator.onorm.weight": 1.0278321838086413e-07,
+            "coordinator.onorm.bias": 1.3941641441306274e-07,
+            "coordinator.out_delta.weight": 1.2881457223556936e-05,
+            "coordinator.geo_proj.weight": 7.117114364518784e-07,
+            "coordinator.geo_proj.bias": 1.85757485837712e-07
+          },
+          "proposal_delta_rows": [
+            0.26217734813690186,
+            0.012008732184767723,
+            0.37547188997268677,
+            0.020578695461153984,
+            0.3801947236061096,
+            0.021716170012950897
+          ]
+        },
+        {
+          "step": 3,
+          "norms": {
+            "proposal_delta.weight": 0.5811029076576233,
+            "proposal_delta.bias": 0.28630635142326355,
+            "coordinator.qk_norm.weight": 2.0993655880374718e-07,
+            "coordinator.qk_norm.bias": 1.629506556355409e-07,
+            "coordinator.v_norm.weight": 3.175274798650207e-07,
+            "coordinator.v_norm.bias": 2.1835563757122145e-07,
+            "coordinator.q1.weight": 4.586726447541878e-07,
+            "coordinator.k1.weight": 8.375078550670878e-07,
+            "coordinator.value.weight": 1.6176711596926907e-06,
+            "coordinator.q2.weight": 5.87198144330614e-07,
+            "coordinator.k2.weight": 3.735356131073786e-07,
+            "coordinator.gate.weight": 7.939182751215412e-07,
+            "coordinator.gate.bias": 1.0472031419794803e-07,
+            "coordinator.onorm.weight": 2.780455758966127e-07,
+            "coordinator.onorm.bias": 3.6778448020413634e-07,
+            "coordinator.out_delta.weight": 3.658518471638672e-05,
+            "coordinator.geo_proj.weight": 1.9266440176579636e-06,
+            "coordinator.geo_proj.bias": 4.696730968589691e-07
+          },
+          "proposal_delta_rows": [
+            0.2630431056022644,
+            0.021357927471399307,
+            0.3578472435474396,
+            0.041138906031847,
+            0.3669293522834778,
+            0.0604030042886734
+          ]
+        }
+      ],
+      "first_all_new_tensor_positive_step": 2,
+      "advertised_numeric_gradient_targets_not_hard_gates": true,
+      "independent_maths": {
+        "coordinator": {
+          "numpy64_value_error": 1.5543122344752192e-15,
+          "functional_allparameter_gradient_error": 0.0,
+          "fixed_two_epsilon_FD": [
+            {
+              "direction": 0,
+              "eps": 0.0001,
+              "error": 7.678167319611837e-14
+            },
+            {
+              "direction": 0,
+              "eps": 1e-05,
+              "error": 3.395519678145789e-13
+            },
+            {
+              "direction": 1,
+              "eps": 0.0001,
+              "error": 5.665787121151428e-14
+            },
+            {
+              "direction": 1,
+              "eps": 1e-05,
+              "error": 9.147872753354977e-13
+            }
+          ],
+          "permutation_error": 2.1094237467877974e-15
+        }
+      },
+      "inherited_full_loss_error": 1.0408340855860843e-17,
+      "arbitrary_future_forward_independence": true,
+      "actual_resume": {
+        "windows": 513,
+        "epochs": 2,
+        "updates": 18,
+        "interrupt_after": 11,
+        "all_states_exact": true,
+        "not_full_fit_two_epochs": true
+      },
+      "bad_source_split_stats_ID_arm_output_readers_reject": true,
+      "saved128_original_fullK20_complete_link_pdist_quality_pooled_junction": "PASS"
+    },
+    "DK-KinTaylorDiff": {
+      "status": "PASS_ACTUAL_GEO_GPU_MATH_RESUME_SAVED",
+      "parameters": 303970,
+      "initial_B0_all_original_weights_buffers_RNG_paths_logits_exact": true,
+      "initial_actual_diagnostics": {
+        "negative_fraction": 0.38999998569488525,
+        "off_diag_cos_mean": -0.05244160443544388,
+        "gate_mean": 0.513417661190033
+      },
+      "actual_first3_batchIDs_exact": true,
+      "phased_gradients": [
+        {
+          "step": 1,
+          "norms": {
+            "proposal_delta.weight": 0.5504129528999329,
+            "proposal_delta.bias": 0.2563033699989319,
+            "coordinator.qk_norm.weight": 0.0,
+            "coordinator.qk_norm.bias": 0.0,
+            "coordinator.v_norm.weight": 0.0,
+            "coordinator.v_norm.bias": 0.0,
+            "coordinator.q1.weight": 0.0,
+            "coordinator.k1.weight": 0.0,
+            "coordinator.value.weight": 0.0,
+            "coordinator.q2.weight": 0.0,
+            "coordinator.k2.weight": 0.0,
+            "coordinator.gate.weight": 0.0,
+            "coordinator.gate.bias": 0.0,
+            "coordinator.onorm.weight": 0.0,
+            "coordinator.onorm.bias": 0.0,
+            "coordinator.out_delta.weight": 0.0
+          },
+          "proposal_delta_rows": [
+            0.4617006480693817,
+            0.014630943536758423,
+            0.298534095287323,
+            0.009857190772891045,
+            0.01878194510936737,
+            0.0005958477850072086
+          ]
+        },
+        {
+          "step": 2,
+          "norms": {
+            "proposal_delta.weight": 0.5782673954963684,
+            "proposal_delta.bias": 0.26934733986854553,
+            "coordinator.qk_norm.weight": 5.2965820174222245e-08,
+            "coordinator.qk_norm.bias": 5.7207724779573255e-08,
+            "coordinator.v_norm.weight": 1.1634343621835797e-07,
+            "coordinator.v_norm.bias": 1.298408278671559e-07,
+            "coordinator.q1.weight": 1.4594833430692233e-07,
+            "coordinator.k1.weight": 1.3559207445723587e-07,
+            "coordinator.value.weight": 7.643603225915285e-07,
+            "coordinator.q2.weight": 3.671627624157736e-08,
+            "coordinator.k2.weight": 2.0406046630228047e-08,
+            "coordinator.gate.weight": 4.377305060643266e-07,
+            "coordinator.gate.bias": 5.750635878598587e-08,
+            "coordinator.onorm.weight": 1.9534094519713108e-07,
+            "coordinator.onorm.bias": 1.317553142143879e-07,
+            "coordinator.out_delta.weight": 1.0486731298442464e-05
+          },
+          "proposal_delta_rows": [
+            0.491102010011673,
+            0.029299728572368622,
+            0.30254292488098145,
+            0.019019044935703278,
+            0.02139919251203537,
+            0.001295490306802094
+          ]
+        },
+        {
+          "step": 3,
+          "norms": {
+            "proposal_delta.weight": 0.5551081299781799,
+            "proposal_delta.bias": 0.2590659558773041,
+            "coordinator.qk_norm.weight": 1.415092043544064e-07,
+            "coordinator.qk_norm.bias": 1.6313195771999744e-07,
+            "coordinator.v_norm.weight": 3.7439204447764496e-07,
+            "coordinator.v_norm.bias": 4.0883824681259284e-07,
+            "coordinator.q1.weight": 4.0714766669225355e-07,
+            "coordinator.k1.weight": 3.706689710725186e-07,
+            "coordinator.value.weight": 2.379618081249646e-06,
+            "coordinator.q2.weight": 1.0426506236171917e-07,
+            "coordinator.k2.weight": 5.916065504152357e-08,
+            "coordinator.gate.weight": 1.1061815712309908e-06,
+            "coordinator.gate.bias": 1.625726326892618e-07,
+            "coordinator.onorm.weight": 5.504167575054453e-07,
+            "coordinator.onorm.bias": 3.917935202935041e-07,
+            "coordinator.out_delta.weight": 2.9591110433102585e-05
+          },
+          "proposal_delta_rows": [
+            0.46841007471084595,
+            0.0621316060423851,
+            0.2875177264213562,
+            0.04241522401571274,
+            0.020151551812887192,
+            0.002273720921948552
+          ]
+        }
+      ],
+      "first_all_new_tensor_positive_step": 2,
+      "advertised_numeric_gradient_targets_not_hard_gates": true,
+      "independent_maths": {
+        "coordinator": {
+          "numpy64_value_error": 7.216449660063518e-15,
+          "functional_allparameter_gradient_error": 0.0,
+          "fixed_two_epsilon_FD": [
+            {
+              "direction": 0,
+              "eps": 0.0001,
+              "error": 1.2562633631930595e-14
+            },
+            {
+              "direction": 0,
+              "eps": 1e-05,
+              "error": 5.682630540714169e-14
+            },
+            {
+              "direction": 1,
+              "eps": 0.0001,
+              "error": 7.024598730389492e-14
+            },
+            {
+              "direction": 1,
+              "eps": 1e-05,
+              "error": 9.723022015880982e-13
+            }
+          ],
+          "permutation_error": 9.992007221626409e-16
+        }
+      },
+      "inherited_full_loss_error": 6.938893903907228e-18,
+      "arbitrary_future_forward_independence": true,
+      "actual_resume": {
+        "windows": 513,
+        "epochs": 2,
+        "updates": 18,
+        "interrupt_after": 11,
+        "all_states_exact": true,
+        "not_full_fit_two_epochs": true
+      },
+      "bad_source_split_stats_ID_arm_output_readers_reject": true,
+      "saved128_original_fullK20_complete_link_pdist_quality_pooled_junction": "PASS"
+    },
+    "DK-FullDiff": {
+      "status": "PASS_ACTUAL_GEO_GPU_MATH_RESUME_SAVED",
+      "parameters": 304802,
+      "initial_B0_all_original_weights_buffers_RNG_paths_logits_exact": true,
+      "initial_actual_diagnostics": {
+        "negative_fraction": 0.4373437464237213,
+        "off_diag_cos_mean": -0.04407507926225662,
+        "gate_mean": 0.5169720649719238
+      },
+      "actual_first3_batchIDs_exact": true,
+      "phased_gradients": [
+        {
+          "step": 1,
+          "norms": {
+            "proposal_delta.weight": 0.5164293646812439,
+            "proposal_delta.bias": 0.2563033699989319,
+            "coordinator.qk_norm.weight": 0.0,
+            "coordinator.qk_norm.bias": 0.0,
+            "coordinator.v_norm.weight": 0.0,
+            "coordinator.v_norm.bias": 0.0,
+            "coordinator.q1.weight": 0.0,
+            "coordinator.k1.weight": 0.0,
+            "coordinator.value.weight": 0.0,
+            "coordinator.q2.weight": 0.0,
+            "coordinator.k2.weight": 0.0,
+            "coordinator.gate.weight": 0.0,
+            "coordinator.gate.bias": 0.0,
+            "coordinator.onorm.weight": 0.0,
+            "coordinator.onorm.bias": 0.0,
+            "coordinator.out_delta.weight": 0.0,
+            "coordinator.geo_proj.weight": 0.0,
+            "coordinator.geo_proj.bias": 0.0
+          },
+          "proposal_delta_rows": [
+            0.4331591725349426,
+            0.013011906296014786,
+            0.28020179271698,
+            0.00894393865019083,
+            0.017601272091269493,
+            0.0004985238774679601
+          ]
+        },
+        {
+          "step": 2,
+          "norms": {
+            "proposal_delta.weight": 0.5407094955444336,
+            "proposal_delta.bias": 0.2693473994731903,
+            "coordinator.qk_norm.weight": 5.9391840778744154e-08,
+            "coordinator.qk_norm.bias": 4.986692658803804e-08,
+            "coordinator.v_norm.weight": 8.049871524917762e-08,
+            "coordinator.v_norm.bias": 6.109318917424389e-08,
+            "coordinator.q1.weight": 1.5968356592566124e-07,
+            "coordinator.k1.weight": 2.609152431887196e-07,
+            "coordinator.value.weight": 4.4477340566118073e-07,
+            "coordinator.q2.weight": 1.6630411892037955e-07,
+            "coordinator.k2.weight": 9.801377132134803e-08,
+            "coordinator.gate.weight": 2.3200142607038288e-07,
+            "coordinator.gate.bias": 3.030476847243335e-08,
+            "coordinator.onorm.weight": 7.699199500166287e-08,
+            "coordinator.onorm.bias": 1.0420389884302494e-07,
+            "coordinator.out_delta.weight": 9.740325367602054e-06,
+            "coordinator.geo_proj.weight": 5.513315954885911e-07,
+            "coordinator.geo_proj.bias": 1.429959297638561e-07
+          },
+          "proposal_delta_rows": [
+            0.45938780903816223,
+            0.02450726367533207,
+            0.28297924995422363,
+            0.015795543789863586,
+            0.02002515085041523,
+            0.001097530242986977
+          ]
+        },
+        {
+          "step": 3,
+          "norms": {
+            "proposal_delta.weight": 0.5258402824401855,
+            "proposal_delta.bias": 0.2590661942958832,
+            "coordinator.qk_norm.weight": 1.4351900290421327e-07,
+            "coordinator.qk_norm.bias": 1.1662728383043941e-07,
+            "coordinator.v_norm.weight": 2.3728038911485783e-07,
+            "coordinator.v_norm.bias": 1.5774010364566493e-07,
+            "coordinator.q1.weight": 3.2650186199134623e-07,
+            "coordinator.k1.weight": 5.532208433578489e-07,
+            "coordinator.value.weight": 1.18679884053563e-06,
+            "coordinator.q2.weight": 4.084980105290015e-07,
+            "coordinator.k2.weight": 2.478986687037832e-07,
+            "coordinator.gate.weight": 6.096297511248849e-07,
+            "coordinator.gate.bias": 7.933934398351994e-08,
+            "coordinator.onorm.weight": 2.0404709744070715e-07,
+            "coordinator.onorm.bias": 2.6349175641371403e-07,
+            "coordinator.out_delta.weight": 2.798034438455943e-05,
+            "coordinator.geo_proj.weight": 1.3896799373469548e-06,
+            "coordinator.geo_proj.bias": 3.4192041198366496e-07
+          },
+          "proposal_delta_rows": [
+            0.4434947073459625,
+            0.06025330722332001,
+            0.27222082018852234,
+            0.04143555462360382,
+            0.01908227428793907,
+            0.0021937352139502764
+          ]
+        }
+      ],
+      "first_all_new_tensor_positive_step": 2,
+      "advertised_numeric_gradient_targets_not_hard_gates": true,
+      "independent_maths": {
+        "coordinator": {
+          "numpy64_value_error": 1.609823385706477e-15,
+          "functional_allparameter_gradient_error": 0.0,
+          "fixed_two_epsilon_FD": [
+            {
+              "direction": 0,
+              "eps": 0.0001,
+              "error": 4.4656884798117275e-14
+            },
+            {
+              "direction": 0,
+              "eps": 1e-05,
+              "error": 1.0161020245688657e-12
+            },
+            {
+              "direction": 1,
+              "eps": 0.0001,
+              "error": 1.1531099968105363e-14
+            },
+            {
+              "direction": 1,
+              "eps": 1e-05,
+              "error": 5.785783907096692e-14
+            }
+          ],
+          "permutation_error": 1.4432899320127035e-15
+        }
+      },
+      "inherited_full_loss_error": 4.440892098500626e-16,
+      "arbitrary_future_forward_independence": true,
+      "actual_resume": {
+        "windows": 513,
+        "epochs": 2,
+        "updates": 18,
+        "interrupt_after": 11,
+        "all_states_exact": true,
+        "not_full_fit_two_epochs": true
+      },
+      "bad_source_split_stats_ID_arm_output_readers_reject": true,
+      "saved128_original_fullK20_complete_link_pdist_quality_pooled_junction": "PASS"
+    }
+  },
+  "additional_checks": {
+    "status": "PASS_V2_CAUSAL_GEOMETRY_TAYLOR_INDEPENDENT_AND_PAIRED_COMMON_INIT",
+    "geometry_value_error": 5.551115123125783e-17,
+    "geometry_all_coordinate_gradient_error": 0.0,
+    "permutation_error": 0.0,
+    "taylor_value_error": 2.220446049250313e-16,
+    "taylor_all_channel_gradient_error": 1.1102230246251565e-16,
+    "taylor_fixed_FD": [
+      {
+        "direction": 0,
+        "eps": 0.0001,
+        "error": 1.0694112262399358e-11
+      },
+      {
+        "direction": 0,
+        "eps": 1e-05,
+        "error": 6.253220163898732e-12
+      },
+      {
+        "direction": 1,
+        "eps": 0.0001,
+        "error": 1.1896261753463477e-11
+      },
+      {
+        "direction": 1,
+        "eps": 1e-05,
+        "error": 2.8071545088437233e-11
+      }
+    ],
+    "taylor_matrix_det": -3.0000000000000004,
+    "residual_bounds_per_coordinate": {
+      "anchor_abs": [
+        0.16,
+        0.5,
+        0.9
+      ],
+      "segment_diff_abs": [
+        0.16,
+        0.33999999999999997,
+        0.48
+      ],
+      "hinge_abs": [
+        0.18000000000000002,
+        0.22000000000000006
+      ]
+    },
+    "common_coord_parameters_all4_exact": true,
+    "zero_negative_axis_finite": true,
+    "residual_bounds_not_whole_trajectory_safety": true,
+    "piecewise_linear_interpolation_unchanged": true
+  },
+  "benchmark": {
+    "DK-CenterDiff": {
+      "batch": 64,
+      "warmup": 4,
+      "measured": 32,
+      "mean_seconds": 0.1411388968845131,
+      "max_seconds": 0.151495199999772,
+      "saved128_and_independent_arithmetic_seconds": 0.1934222000418231
+    },
+    "DK-ManeuverDiff": {
+      "batch": 64,
+      "warmup": 4,
+      "measured": 32,
+      "mean_seconds": 0.14690756561685703,
+      "max_seconds": 0.16968869999982417,
+      "saved128_and_independent_arithmetic_seconds": 0.20600300002843142
+    },
+    "DK-KinTaylorDiff": {
+      "batch": 64,
+      "warmup": 4,
+      "measured": 32,
+      "mean_seconds": 0.14347647188333212,
+      "max_seconds": 0.1714961000252515,
+      "saved128_and_independent_arithmetic_seconds": 0.11337219993583858
+    },
+    "DK-FullDiff": {
+      "batch": 64,
+      "warmup": 4,
+      "measured": 32,
+      "mean_seconds": 0.1467745312511397,
+      "max_seconds": 0.15893270005472004,
+      "saved128_and_independent_arithmetic_seconds": 0.18314350000582635
+    }
+  },
+  "elapsed_seconds": 57.35597700008657,
+  "resource": [
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 4777955544,
+      "remaining_commit": 2836668632,
+      "warning_physical": 6211342207.2,
+      "warning_commit": 3687669221.6,
+      "admission_physical": 5117386435,
+      "admission_commit": 3176099523,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 17224425472,
+        "commit": 11106328576,
+        "physical_total": 33943089152,
+        "commit_total": 25252679680,
+        "commit_limit": 36359008256,
+        "rss": 551948288,
+        "private": 2493235200,
+        "peak_rss": 551989248,
+        "peak_private": 2494181376
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3169239256,
+      "remaining_commit": 510206168,
+      "warning_physical": 4120011032.8,
+      "warning_commit": 663268018.4,
+      "admission_physical": 3508670147,
+      "admission_commit": 849637059,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15514779648,
+        "commit": 8741961728,
+        "physical_total": 33943089152,
+        "commit_total": 27617046528,
+        "commit_limit": 36359008256,
+        "rss": 2160664576,
+        "private": 4819697664,
+        "peak_rss": 2166423552,
+        "peak_private": 4819697664
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3155337432,
+      "remaining_commit": 488181976,
+      "warning_physical": 4101938661.6,
+      "warning_commit": 634636568.8000001,
+      "admission_physical": 3494768323,
+      "admission_commit": 827612867,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15513956352,
+        "commit": 8734863360,
+        "physical_total": 33943089152,
+        "commit_total": 27624144896,
+        "commit_limit": 36359008256,
+        "rss": 2174566400,
+        "private": 4841721856,
+        "peak_rss": 2174566400,
+        "peak_private": 4841918464
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3142119640,
+      "remaining_commit": 468578520,
+      "warning_physical": 4084755532.0,
+      "warning_commit": 609152076.0,
+      "admission_physical": 3481550531,
+      "admission_commit": 808009411,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15502307328,
+        "commit": 8708026368,
+        "physical_total": 33943089152,
+        "commit_total": 27650981888,
+        "commit_limit": 36359008256,
+        "rss": 2187784192,
+        "private": 4861325312,
+        "peak_rss": 2187784192,
+        "peak_private": 4861509632
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3138863320,
+      "remaining_commit": 458150104,
+      "warning_physical": 4080522316.0,
+      "warning_commit": 595595135.2,
+      "admission_physical": 3478294211,
+      "admission_commit": 797580995,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15437557760,
+        "commit": 8613974016,
+        "physical_total": 33943089152,
+        "commit_total": 27745034240,
+        "commit_limit": 36359008256,
+        "rss": 2191040512,
+        "private": 4871753728,
+        "peak_rss": 2198331392,
+        "peak_private": 4871753728
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3138765016,
+      "remaining_commit": 458150104,
+      "warning_physical": 4080394520.8,
+      "warning_commit": 595595135.2,
+      "admission_physical": 3478195907,
+      "admission_commit": 797580995,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15273377792,
+        "commit": 8532299776,
+        "physical_total": 33943089152,
+        "commit_total": 27826708480,
+        "commit_limit": 36359008256,
+        "rss": 2191138816,
+        "private": 4871753728,
+        "peak_rss": 2198331392,
+        "peak_private": 4871753728
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3139932376,
+      "remaining_commit": 459133144,
+      "warning_physical": 4081912088.8,
+      "warning_commit": 596873087.2,
+      "admission_physical": 3479363267,
+      "admission_commit": 798564035,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15392075776,
+        "commit": 8525197312,
+        "physical_total": 33943089152,
+        "commit_total": 27833810944,
+        "commit_limit": 36359008256,
+        "rss": 2189971456,
+        "private": 4870770688,
+        "peak_rss": 2199179264,
+        "peak_private": 4879417344
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3136270552,
+      "remaining_commit": 454602968,
+      "warning_physical": 4077151717.6,
+      "warning_commit": 590983858.4,
+      "admission_physical": 3475701443,
+      "admission_commit": 794033859,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15277547520,
+        "commit": 8474161152,
+        "physical_total": 33943089152,
+        "commit_total": 27884847104,
+        "commit_limit": 36359008256,
+        "rss": 2193633280,
+        "private": 4875300864,
+        "peak_rss": 2199179264,
+        "peak_private": 4879417344
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3135783128,
+      "remaining_commit": 455389400,
+      "warning_physical": 4076518066.4,
+      "warning_commit": 592006220.0,
+      "admission_physical": 3475214019,
+      "admission_commit": 794820291,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15176495104,
+        "commit": 8482635776,
+        "physical_total": 33943089152,
+        "commit_total": 27876372480,
+        "commit_limit": 36359008256,
+        "rss": 2194120704,
+        "private": 4874514432,
+        "peak_rss": 2199179264,
+        "peak_private": 4879417344
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3138891992,
+      "remaining_commit": 458268888,
+      "warning_physical": 4080559589.6,
+      "warning_commit": 595749554.4,
+      "admission_physical": 3478322883,
+      "admission_commit": 797699779,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15256473600,
+        "commit": 8386899968,
+        "physical_total": 33943089152,
+        "commit_total": 27972108288,
+        "commit_limit": 36359008256,
+        "rss": 2191011840,
+        "private": 4871634944,
+        "peak_rss": 2199744512,
+        "peak_private": 4881592320
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3138085080,
+      "remaining_commit": 457122008,
+      "warning_physical": 4079510604.0,
+      "warning_commit": 594258610.4,
+      "admission_physical": 3477515971,
+      "admission_commit": 796552899,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15196983296,
+        "commit": 8443789312,
+        "physical_total": 33943089152,
+        "commit_total": 27915218944,
+        "commit_limit": 36359008256,
+        "rss": 2191818752,
+        "private": 4872781824,
+        "peak_rss": 2199744512,
+        "peak_private": 4881592320
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3137917144,
+      "remaining_commit": 457318616,
+      "warning_physical": 4079292287.2000003,
+      "warning_commit": 594514200.8000001,
+      "admission_physical": 3477348035,
+      "admission_commit": 796749507,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15305875456,
+        "commit": 8498520064,
+        "physical_total": 33943089152,
+        "commit_total": 27860488192,
+        "commit_limit": 36359008256,
+        "rss": 2191986688,
+        "private": 4872585216,
+        "peak_rss": 2200301568,
+        "peak_private": 4881592320
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3134931160,
+      "remaining_commit": 453710040,
+      "warning_physical": 4075410508.0,
+      "warning_commit": 589823052.0,
+      "admission_physical": 3474362051,
+      "admission_commit": 793140931,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15217897472,
+        "commit": 8421912576,
+        "physical_total": 33943089152,
+        "commit_total": 27937095680,
+        "commit_limit": 36359008256,
+        "rss": 2194972672,
+        "private": 4876193792,
+        "peak_rss": 2200301568,
+        "peak_private": 4881592320
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3134136536,
+      "remaining_commit": 453251288,
+      "warning_physical": 4074377496.8,
+      "warning_commit": 589226674.4,
+      "admission_physical": 3473567427,
+      "admission_commit": 792682179,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15096934400,
+        "commit": 8399663104,
+        "physical_total": 33943089152,
+        "commit_total": 27959345152,
+        "commit_limit": 36359008256,
+        "rss": 2195767296,
+        "private": 4876652544,
+        "peak_rss": 2200301568,
+        "peak_private": 4881592320
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3135647960,
+      "remaining_commit": 455020760,
+      "warning_physical": 4076342348.0,
+      "warning_commit": 591526988.0,
+      "admission_physical": 3475078851,
+      "admission_commit": 794451651,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15239319552,
+        "commit": 8432291840,
+        "physical_total": 33943089152,
+        "commit_total": 27926716416,
+        "commit_limit": 36359008256,
+        "rss": 2194255872,
+        "private": 4874883072,
+        "peak_rss": 2201677824,
+        "peak_private": 4882620416
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3135557848,
+      "remaining_commit": 455020760,
+      "warning_physical": 4076225202.4,
+      "warning_commit": 591526988.0,
+      "admission_physical": 3474988739,
+      "admission_commit": 794451651,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15150112768,
+        "commit": 8412508160,
+        "physical_total": 33943089152,
+        "commit_total": 27946500096,
+        "commit_limit": 36359008256,
+        "rss": 2194345984,
+        "private": 4874883072,
+        "peak_rss": 2201677824,
+        "peak_private": 4882620416
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3136159960,
+      "remaining_commit": 455413976,
+      "warning_physical": 4077007948.0,
+      "warning_commit": 592038168.8000001,
+      "admission_physical": 3475590851,
+      "admission_commit": 794844867,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15317831680,
+        "commit": 8438099968,
+        "physical_total": 33943089152,
+        "commit_total": 27920908288,
+        "commit_limit": 36359008256,
+        "rss": 2193743872,
+        "private": 4874489856,
+        "peak_rss": 2204020736,
+        "peak_private": 4884606976
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3133386968,
+      "remaining_commit": 452530392,
+      "warning_physical": 4073403058.4,
+      "warning_commit": 588289509.6,
+      "admission_physical": 3472817859,
+      "admission_commit": 791961283,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15243816960,
+        "commit": 8442241024,
+        "physical_total": 33943089152,
+        "commit_total": 27916767232,
+        "commit_limit": 36359008256,
+        "rss": 2196516864,
+        "private": 4877373440,
+        "peak_rss": 2204020736,
+        "peak_private": 4884606976
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3133157592,
+      "remaining_commit": 451858648,
+      "warning_physical": 4073104869.6,
+      "warning_commit": 587416242.4,
+      "admission_physical": 3472588483,
+      "admission_commit": 791289539,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15086792704,
+        "commit": 8396435456,
+        "physical_total": 33943089152,
+        "commit_total": 27962572800,
+        "commit_limit": 36359008256,
+        "rss": 2196746240,
+        "private": 4878045184,
+        "peak_rss": 2204020736,
+        "peak_private": 4884606976
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3136798936,
+      "remaining_commit": 456151256,
+      "warning_physical": 4077838616.8,
+      "warning_commit": 592996632.8000001,
+      "admission_physical": 3476229827,
+      "admission_commit": 795582147,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15254089728,
+        "commit": 8428130304,
+        "physical_total": 33943089152,
+        "commit_total": 27930877952,
+        "commit_limit": 36359008256,
+        "rss": 2193104896,
+        "private": 4873752576,
+        "peak_rss": 2204020736,
+        "peak_private": 4884606976
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3136717016,
+      "remaining_commit": 456151256,
+      "warning_physical": 4077732120.8,
+      "warning_commit": 592996632.8000001,
+      "admission_physical": 3476147907,
+      "admission_commit": 795582147,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15114174464,
+        "commit": 8397758464,
+        "physical_total": 33943089152,
+        "commit_total": 27961249792,
+        "commit_limit": 36359008256,
+        "rss": 2193186816,
+        "private": 4873752576,
+        "peak_rss": 2204020736,
+        "peak_private": 4884606976
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3141501144,
+      "remaining_commit": 461463768,
+      "warning_physical": 4083951487.2000003,
+      "warning_commit": 599902898.4,
+      "admission_physical": 3480932035,
+      "admission_commit": 800894659,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15036743680,
+        "commit": 8346107904,
+        "physical_total": 33943089152,
+        "commit_total": 28012900352,
+        "commit_limit": 36359008256,
+        "rss": 2188402688,
+        "private": 4868440064,
+        "peak_rss": 2204020736,
+        "peak_private": 4884606976
+      }
+    }
+  ],
+  "no_scientific_pilots": true,
+  "same_assistant_not_external": true
+}

@@ -1,0 +1,8 @@
+from core import *
+import shutil
+def main():
+    g=guard(True);h=verify();a=read_json(HERE/'PREFLIGHT_GPU.json');b=read_json(HERE/'PREFLIGHT_CPU.json');assert a['status']==b['status']=='PASS' and a['source']==b['source']==h
+    for p in HERE.glob('*.py'):ast.parse(p.read_text(encoding='utf-8'))
+    steps=a['steps_per_run'];train=sum(a['benchmark'][arm]['mean_seconds']*steps*3 for arm in ARMS);perwindow=(a['saved128_GPU_seconds']+b['actual_CPU_seconds'])/128;population=3*(4096+3825+1856)*perwindow;planning=1.3*(train+population)+240;free=shutil.disk_usage(HERE).free;assert free>=1.3*2*1024**3
+    write_json(HERE/'PRELAUNCH_REVIEW.json',dict(status='PASS',source=h,source_count=len(read_json(HERE/'source_manifest.json')['files']),planning_seconds=planning,ETA_seconds=[.7*planning,1.5*planning],training_seconds=train,full_save_independent_audit_allowance=population,actual_smallbatch_only_not_production_guarantee=True,parameters=a['parameters'],models=6,epochs=48,updates=steps*6,disk_free=free,conservative_new_bytes=2*1024**3,DA1_same_assistant_not_external=dict(verdict='PASS_LIMITED_MECHANISM_TEST',risks=['B1 QK inactive same nominal not effective capacity','softmin duplication shortcut','old U0 fit gain not transfer','F16seen repeated held exploration','cost module not raw end-to-end']),no_old_D1_resume=True,no_delete=True));resource(HERE/'PRELAUNCH_RESOURCE.json',g);assert verify()==h;write_json(HERE/'PRODUCTION_SOURCE_LOCK.json',dict(source=h,at=now(),count=len(read_json(HERE/'source_manifest.json')['files'])));print('PASS PRELAUNCH seconds',planning,flush=True)
+if __name__=='__main__':main()

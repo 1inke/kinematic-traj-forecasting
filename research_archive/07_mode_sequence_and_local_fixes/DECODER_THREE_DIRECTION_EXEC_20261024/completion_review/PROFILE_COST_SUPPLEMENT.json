@@ -1,0 +1,983 @@
+{
+  "status": "PASS_PROFILE_ONLY_CORRECTION",
+  "original_profile_SHA": "3271efa484b2bdcdaf0915a858792017f4b6c3d404a9ca91d88a1f3f000ee60f",
+  "original_MAC_count_incomplete": true,
+  "original_failure": "old unsupported-op filter checked mm/convolution/attention but omitted linear,matmul,fused Transformer; fused Transformer unregistered in standard counter",
+  "repaired_counter": "single top-level TorchDispatchMode counts linear and fused Transformer QKV/O/FFN/attention products without nested double count",
+  "formula_fused": "B*(4*S*D^2+2*S^2*D+2*S*D*Dff)",
+  "pointwise_nonMAC_ops_excluded": true,
+  "model_forward": true,
+  "optimizer_or_training": false,
+  "checkpoint_retraining": false,
+  "old_decoder_scorer_forward_calls": 0,
+  "old_whole_weights_buffers_exact": true,
+  "arms": {
+    "C2_isomlp": {
+      "whole_parameters": 365711,
+      "MAC_per_window": 17203766,
+      "FMA_FLOPs": 34407532,
+      "operator_MAC": {
+        "aten.linear": 11738912,
+        "aten.matmul": 4374,
+        "aten._transformer_encoder_layer_fwd": 5419008,
+        "aten.bmm": 41472
+      },
+      "operator_calls": {
+        "aten.linear": 36,
+        "aten.matmul": 6,
+        "aten._transformer_encoder_layer_fwd": 1,
+        "aten.bmm": 2
+      },
+      "shapes": [
+        {
+          "operator": "aten.linear",
+          "MAC": 9216,
+          "input_shape": [
+            1,
+            8,
+            9,
+            2
+          ]
+        },
+        {
+          "operator": "aten.matmul",
+          "MAC": 729,
+          "input_shape": [
+            1,
+            9,
+            9
+          ]
+        },
+        {
+          "operator": "aten.matmul",
+          "MAC": 729,
+          "input_shape": [
+            1,
+            9,
+            9
+          ]
+        },
+        {
+          "operator": "aten.matmul",
+          "MAC": 729,
+          "input_shape": [
+            1,
+            9,
+            9
+          ]
+        },
+        {
+          "operator": "aten.matmul",
+          "MAC": 729,
+          "input_shape": [
+            1,
+            9,
+            9
+          ]
+        },
+        {
+          "operator": "aten.matmul",
+          "MAC": 729,
+          "input_shape": [
+            1,
+            9,
+            9
+          ]
+        },
+        {
+          "operator": "aten.matmul",
+          "MAC": 729,
+          "input_shape": [
+            1,
+            9,
+            9
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 217728,
+          "input_shape": [
+            1,
+            9,
+            9,
+            84
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 10368,
+          "input_shape": [
+            1,
+            9,
+            9,
+            32
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 50688,
+          "input_shape": [
+            1,
+            9,
+            8,
+            11
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 442368,
+          "input_shape": [
+            1,
+            9,
+            8,
+            64
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 25344,
+          "input_shape": [
+            1,
+            9,
+            8,
+            11
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 2304,
+          "input_shape": [
+            1,
+            9,
+            8,
+            32
+          ]
+        },
+        {
+          "operator": "aten._transformer_encoder_layer_fwd",
+          "MAC": 5419008,
+          "input_shape": [
+            9,
+            8,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 82944,
+          "input_shape": [
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 82944,
+          "input_shape": [
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 82944,
+          "input_shape": [
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 248832,
+          "input_shape": [
+            3,
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 1327104,
+          "input_shape": [
+            8,
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.bmm",
+          "MAC": 20736,
+          "input_shape": [
+            36,
+            3,
+            24
+          ]
+        },
+        {
+          "operator": "aten.bmm",
+          "MAC": 20736,
+          "input_shape": [
+            36,
+            3,
+            8
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 248832,
+          "input_shape": [
+            27,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 2592,
+          "input_shape": [
+            9,
+            3,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 1327104,
+          "input_shape": [
+            9,
+            8,
+            192
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 6912,
+          "input_shape": [
+            9,
+            8,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 663552,
+          "input_shape": [
+            9,
+            8,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 248832,
+          "input_shape": [
+            1,
+            9,
+            9,
+            8,
+            8
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 2985984,
+          "input_shape": [
+            1,
+            9,
+            9,
+            8,
+            48
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 23328,
+          "input_shape": [
+            1,
+            9,
+            9,
+            3,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 82944,
+          "input_shape": [
+            1,
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 663552,
+          "input_shape": [
+            1,
+            9,
+            8,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 663552,
+          "input_shape": [
+            1,
+            9,
+            8,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 31104,
+          "input_shape": [
+            1,
+            9,
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 746496,
+          "input_shape": [
+            1,
+            9,
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 82944,
+          "input_shape": [
+            1,
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 165888,
+          "input_shape": [
+            1,
+            9,
+            192
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 864,
+          "input_shape": [
+            1,
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 82944,
+          "input_shape": [
+            1,
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 26880,
+          "input_shape": [
+            1,
+            210
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 16384,
+          "input_shape": [
+            1,
+            128
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 368640,
+          "input_shape": [
+            1,
+            20,
+            144
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 327680,
+          "input_shape": [
+            1,
+            20,
+            128
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 245760,
+          "input_shape": [
+            1,
+            20,
+            384
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 81920,
+          "input_shape": [
+            1,
+            20,
+            32
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 61440,
+          "input_shape": [
+            1,
+            20,
+            128
+          ]
+        }
+      ],
+      "unsupported": [],
+      "latency": {
+        "1": {
+          "seconds_per_batch": 0.010170781250053551,
+          "GPU_peak_allocated_bytes": 12648448,
+          "GPU_peak_reserved_bytes": 369098752
+        },
+        "256": {
+          "seconds_per_batch": 0.01526929999818094,
+          "GPU_peak_allocated_bytes": 254488576,
+          "GPU_peak_reserved_bytes": 371195904
+        }
+      },
+      "encoder_cache_maxerror": 4.76837158203125e-07,
+      "new_weights_buffers_exact": true
+    },
+    "C2_setmix": {
+      "whole_parameters": 365711,
+      "MAC_per_window": 17203766,
+      "FMA_FLOPs": 34407532,
+      "operator_MAC": {
+        "aten.linear": 11738912,
+        "aten.matmul": 4374,
+        "aten._transformer_encoder_layer_fwd": 5419008,
+        "aten.bmm": 41472
+      },
+      "operator_calls": {
+        "aten.linear": 36,
+        "aten.matmul": 6,
+        "aten._transformer_encoder_layer_fwd": 1,
+        "aten.bmm": 2
+      },
+      "shapes": [
+        {
+          "operator": "aten.linear",
+          "MAC": 9216,
+          "input_shape": [
+            1,
+            8,
+            9,
+            2
+          ]
+        },
+        {
+          "operator": "aten.matmul",
+          "MAC": 729,
+          "input_shape": [
+            1,
+            9,
+            9
+          ]
+        },
+        {
+          "operator": "aten.matmul",
+          "MAC": 729,
+          "input_shape": [
+            1,
+            9,
+            9
+          ]
+        },
+        {
+          "operator": "aten.matmul",
+          "MAC": 729,
+          "input_shape": [
+            1,
+            9,
+            9
+          ]
+        },
+        {
+          "operator": "aten.matmul",
+          "MAC": 729,
+          "input_shape": [
+            1,
+            9,
+            9
+          ]
+        },
+        {
+          "operator": "aten.matmul",
+          "MAC": 729,
+          "input_shape": [
+            1,
+            9,
+            9
+          ]
+        },
+        {
+          "operator": "aten.matmul",
+          "MAC": 729,
+          "input_shape": [
+            1,
+            9,
+            9
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 217728,
+          "input_shape": [
+            1,
+            9,
+            9,
+            84
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 10368,
+          "input_shape": [
+            1,
+            9,
+            9,
+            32
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 50688,
+          "input_shape": [
+            1,
+            9,
+            8,
+            11
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 442368,
+          "input_shape": [
+            1,
+            9,
+            8,
+            64
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 25344,
+          "input_shape": [
+            1,
+            9,
+            8,
+            11
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 2304,
+          "input_shape": [
+            1,
+            9,
+            8,
+            32
+          ]
+        },
+        {
+          "operator": "aten._transformer_encoder_layer_fwd",
+          "MAC": 5419008,
+          "input_shape": [
+            9,
+            8,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 82944,
+          "input_shape": [
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 82944,
+          "input_shape": [
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 82944,
+          "input_shape": [
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 248832,
+          "input_shape": [
+            3,
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 1327104,
+          "input_shape": [
+            8,
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.bmm",
+          "MAC": 20736,
+          "input_shape": [
+            36,
+            3,
+            24
+          ]
+        },
+        {
+          "operator": "aten.bmm",
+          "MAC": 20736,
+          "input_shape": [
+            36,
+            3,
+            8
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 248832,
+          "input_shape": [
+            27,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 2592,
+          "input_shape": [
+            9,
+            3,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 1327104,
+          "input_shape": [
+            9,
+            8,
+            192
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 6912,
+          "input_shape": [
+            9,
+            8,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 663552,
+          "input_shape": [
+            9,
+            8,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 248832,
+          "input_shape": [
+            1,
+            9,
+            9,
+            8,
+            8
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 2985984,
+          "input_shape": [
+            1,
+            9,
+            9,
+            8,
+            48
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 23328,
+          "input_shape": [
+            1,
+            9,
+            9,
+            3,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 82944,
+          "input_shape": [
+            1,
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 663552,
+          "input_shape": [
+            1,
+            9,
+            8,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 663552,
+          "input_shape": [
+            1,
+            9,
+            8,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 31104,
+          "input_shape": [
+            1,
+            9,
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 746496,
+          "input_shape": [
+            1,
+            9,
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 82944,
+          "input_shape": [
+            1,
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 165888,
+          "input_shape": [
+            1,
+            9,
+            192
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 864,
+          "input_shape": [
+            1,
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 82944,
+          "input_shape": [
+            1,
+            9,
+            96
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 26880,
+          "input_shape": [
+            1,
+            210
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 16384,
+          "input_shape": [
+            1,
+            128
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 368640,
+          "input_shape": [
+            1,
+            20,
+            144
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 327680,
+          "input_shape": [
+            1,
+            20,
+            128
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 245760,
+          "input_shape": [
+            1,
+            20,
+            384
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 81920,
+          "input_shape": [
+            1,
+            20,
+            32
+          ]
+        },
+        {
+          "operator": "aten.linear",
+          "MAC": 61440,
+          "input_shape": [
+            1,
+            20,
+            128
+          ]
+        }
+      ],
+      "unsupported": [],
+      "latency": {
+        "1": {
+          "seconds_per_batch": 0.01104990000021644,
+          "GPU_peak_allocated_bytes": 12648448,
+          "GPU_peak_reserved_bytes": 371195904
+        },
+        "256": {
+          "seconds_per_batch": 0.01417999375553336,
+          "GPU_peak_allocated_bytes": 254488576,
+          "GPU_peak_reserved_bytes": 371195904
+        }
+      },
+      "encoder_cache_maxerror": 4.76837158203125e-07,
+      "new_weights_buffers_exact": true
+    }
+  },
+  "helper_SHA": "c7e8f83f830299ddcd3fa141b73f705df65986b2213d9eb124f7135c52bd8f10",
+  "resource_observations": [
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 8375186227.200001,
+      "required_commit": 8375186227.200001,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18975293440,
+        "commit": 20074979328,
+        "rss": 529326080,
+        "private": 2471424000,
+        "peak_rss": 529326080,
+        "peak_private": 2471424000
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5889260748.8,
+      "required_commit": 2420276019.2000003,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 17602154496,
+        "commit": 17959792640,
+        "rss": 1912250368,
+        "private": 4580700160,
+        "peak_rss": 1912250368,
+        "peak_private": 4580700160
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5888259686.400001,
+      "required_commit": 2266591641.6,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 17536815104,
+        "commit": 17849159680,
+        "rss": 1913020416,
+        "private": 4698918912,
+        "peak_rss": 1913020416,
+        "peak_private": 4698918912
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5888131891.2,
+      "required_commit": 2492102246.4,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 17537945600,
+        "commit": 18027151360,
+        "rss": 1913118720,
+        "private": 4525449216,
+        "peak_rss": 1914183680,
+        "peak_private": 4698918912
+      }
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+"""Mode-diverse kinematic decode."""

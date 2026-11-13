@@ -1,0 +1,580 @@
+{
+  "overall": {
+    "n": 4096,
+    "B_nonempty": 2310,
+    "rescue_opportunities": 396,
+    "original_failures": 1681,
+    "eligible_edit_windows": 4096,
+    "margin_quantiles": [
+      -5.680222754434175,
+      -4.15667523171767,
+      -4.033627909619377,
+      -3.917368371907338,
+      -2.9671749316260208,
+      -1.262059689902912,
+      0.17086106770712917
+    ],
+    "events": {
+      "BAD_INTERNAL": 1684,
+      "BLOCKED_GOOD": 612,
+      "PASS_GOOD": 14,
+      "STOP_CORRECT_NOB": 1786
+    },
+    "margin_by_event": {
+      "BAD_INTERNAL": [
+        -4.600878673538503,
+        -4.110694364220726,
+        -4.033974809240865,
+        -3.927715081783673,
+        -3.692278089147237,
+        -1.373313459700177,
+        0.17086106770712917
+      ],
+      "BLOCKED_GOOD": [
+        -4.4784787304900995,
+        -4.07410849744494,
+        -3.8943332173021634,
+        -1.9355648289408305,
+        -1.3314376852736265,
+        -0.5875930633579063,
+        -0.06289511985084362
+      ],
+      "PASS_GOOD": [
+        0.06593602704450463,
+        0.06593602704450463,
+        0.06593602704450463,
+        0.06593602704450463,
+        0.17086106770712917,
+        0.17086106770712917,
+        0.17086106770712917
+      ],
+      "STOP_CORRECT_NOB": [
+        -5.680222754434175,
+        -4.2327408424888615,
+        -4.064726062610871,
+        -3.921057888780288,
+        -2.9671749316260208,
+        -1.373313459700177,
+        -0.06289511985084362
+      ]
+    },
+    "native_good": 2415,
+    "actual_good": 2415,
+    "actual_rescue": 0,
+    "actual_lost": 0,
+    "actual_executed": 16,
+    "actual_harmful": 2,
+    "actual_ineffective": 0,
+    "best_B": 626,
+    "best_rescue": 19,
+    "blocked_good": 612,
+    "blocked_rescue": 19,
+    "internal_bad": 1684,
+    "STOP_tie": 0,
+    "all_eligible_equal": 0,
+    "best_B_conditional": 0.270995670995671,
+    "best_B_unconditional": 0.15283203125,
+    "best_rescue_conditional_opportunity": 0.047979797979797977,
+    "best_rescue_among_native_failure": 0.011302795954788817,
+    "MRR_B": 0.3226222516046579,
+    "MRR_rescue": 0.08499238602821284,
+    "rank_B_quantiles": [
+      1.0,
+      1.0,
+      1.0,
+      23.0,
+      87.0,
+      181.0,
+      313.0
+    ],
+    "rank_rescue_quantiles": [
+      1.0,
+      2.0,
+      25.0,
+      80.0,
+      133.0,
+      203.0,
+      273.0
+    ],
+    "best_edit_multiple_tie_windows": 3404,
+    "top1_B": {
+      "hit_count": 626,
+      "conditional_hit": 0.270995670995671,
+      "unconditional_hit": 0.15283203125,
+      "recall_fraction": 0.0169622667881835,
+      "random_hit_reference": 0.08338201719667303,
+      "physical_action_order_hit": 0.23203463203463204
+    },
+    "top1_Rescue": {
+      "hit_count": 19,
+      "conditional_hit": 0.047979797979797977,
+      "unconditional_hit": 0.004638671875,
+      "recall_fraction": 0.003790341399990523,
+      "random_hit_reference": 0.07235779957764643,
+      "physical_action_order_hit": 0.09090909090909091
+    },
+    "top5_B": {
+      "hit_count": 817,
+      "conditional_hit": 0.3536796536796537,
+      "unconditional_hit": 0.199462890625,
+      "recall_fraction": 0.08112712119934991,
+      "random_hit_reference": 0.3384764258901107,
+      "physical_action_order_hit": 0.522077922077922
+    },
+    "top5_Rescue": {
+      "hit_count": 37,
+      "conditional_hit": 0.09343434343434344,
+      "unconditional_hit": 0.009033203125,
+      "recall_fraction": 0.019931254873263974,
+      "random_hit_reference": 0.30623232294444314,
+      "physical_action_order_hit": 0.3207070707070707
+    },
+    "top10_B": {
+      "hit_count": 910,
+      "conditional_hit": 0.3939393939393939,
+      "unconditional_hit": 0.22216796875,
+      "recall_fraction": 0.15797403973156451,
+      "random_hit_reference": 0.5431034441406051,
+      "physical_action_order_hit": 0.7194805194805195
+    },
+    "top10_Rescue": {
+      "hit_count": 51,
+      "conditional_hit": 0.12878787878787878,
+      "unconditional_hit": 0.012451171875,
+      "recall_fraction": 0.03662083503385455,
+      "random_hit_reference": 0.5072798271831074,
+      "physical_action_order_hit": 0.6616161616161617
+    }
+  },
+  "stable": {
+    "n": 2405,
+    "B_nonempty": 1404,
+    "rescue_opportunities": 223,
+    "original_failures": 722,
+    "eligible_edit_windows": 2405,
+    "margin_quantiles": [
+      -4.711702536103305,
+      -4.191579986930341,
+      -4.041050930102473,
+      -3.9059357898201554,
+      -2.567596957710184,
+      -1.249049608907236,
+      0.17086106770712917
+    ],
+    "events": {
+      "BAD_INTERNAL": 896,
+      "BLOCKED_GOOD": 495,
+      "PASS_GOOD": 13,
+      "STOP_CORRECT_NOB": 1001
+    },
+    "margin_by_event": {
+      "BAD_INTERNAL": [
+        -4.339439495759989,
+        -4.123663907171276,
+        -4.049827837484996,
+        -3.9481960825388804,
+        -3.8781332894365455,
+        -1.386680100857362,
+        0.17086106770712917
+      ],
+      "BLOCKED_GOOD": [
+        -4.357785749633993,
+        -4.073397084221956,
+        -3.669537432480393,
+        -1.6751206457502672,
+        -1.3066737017813501,
+        -0.5183471867934109,
+        -0.06289511985084362
+      ],
+      "PASS_GOOD": [
+        0.06593602704450463,
+        0.06593602704450463,
+        0.06593602704450463,
+        0.06593602704450463,
+        0.17086106770712917,
+        0.17086106770712917,
+        0.17086106770712917
+      ],
+      "STOP_CORRECT_NOB": [
+        -4.711702536103305,
+        -4.336651747776012,
+        -4.070930878404498,
+        -3.917368371907338,
+        -2.8315075329690886,
+        -1.3314376852736265,
+        -1.0113720896752665
+      ]
+    },
+    "native_good": 1683,
+    "actual_good": 1683,
+    "actual_rescue": 0,
+    "actual_lost": 0,
+    "actual_executed": 14,
+    "actual_harmful": 1,
+    "actual_ineffective": 0,
+    "best_B": 508,
+    "best_rescue": 11,
+    "blocked_good": 495,
+    "blocked_rescue": 11,
+    "internal_bad": 896,
+    "STOP_tie": 0,
+    "all_eligible_equal": 0,
+    "best_B_conditional": 0.36182336182336183,
+    "best_B_unconditional": 0.21122661122661124,
+    "best_rescue_conditional_opportunity": 0.04932735426008968,
+    "best_rescue_among_native_failure": 0.015235457063711912,
+    "MRR_B": 0.4246904891187589,
+    "MRR_rescue": 0.09432196717927016,
+    "rank_B_quantiles": [
+      1.0,
+      1.0,
+      1.0,
+      9.0,
+      49.25,
+      146.0,
+      256.0
+    ],
+    "rank_rescue_quantiles": [
+      1.0,
+      2.0,
+      23.5,
+      75.0,
+      125.0,
+      179.29999999999984,
+      256.0
+    ],
+    "best_edit_multiple_tie_windows": 1993,
+    "top1_B": {
+      "hit_count": 508,
+      "conditional_hit": 0.36182336182336183,
+      "unconditional_hit": 0.21122661122661124,
+      "recall_fraction": 0.018265412869341077,
+      "random_hit_reference": 0.09243379086861606,
+      "physical_action_order_hit": 0.3418803418803419
+    },
+    "top1_Rescue": {
+      "hit_count": 11,
+      "conditional_hit": 0.04932735426008968,
+      "unconditional_hit": 0.004573804573804574,
+      "recall_fraction": 0.002024183432019165,
+      "random_hit_reference": 0.08480442239704963,
+      "physical_action_order_hit": 0.14349775784753363
+    },
+    "top5_B": {
+      "hit_count": 660,
+      "conditional_hit": 0.4700854700854701,
+      "unconditional_hit": 0.27442827442827444,
+      "recall_fraction": 0.10067413222561475,
+      "random_hit_reference": 0.37144717017953843,
+      "physical_action_order_hit": 0.6111111111111112
+    },
+    "top5_Rescue": {
+      "hit_count": 25,
+      "conditional_hit": 0.11210762331838565,
+      "unconditional_hit": 0.010395010395010396,
+      "recall_fraction": 0.013443402239408016,
+      "random_hit_reference": 0.3526625139418372,
+      "physical_action_order_hit": 0.3273542600896861
+    },
+    "top10_B": {
+      "hit_count": 723,
+      "conditional_hit": 0.5149572649572649,
+      "unconditional_hit": 0.30062370062370064,
+      "recall_fraction": 0.20258867306114178,
+      "random_hit_reference": 0.5897957542452632,
+      "physical_action_order_hit": 0.8297720797720798
+    },
+    "top10_Rescue": {
+      "hit_count": 34,
+      "conditional_hit": 0.15246636771300448,
+      "unconditional_hit": 0.014137214137214138,
+      "recall_fraction": 0.02490660834088481,
+      "random_hit_reference": 0.5731102735063076,
+      "physical_action_order_hit": 0.757847533632287
+    }
+  },
+  "transition": {
+    "n": 714,
+    "B_nonempty": 392,
+    "rescue_opportunities": 71,
+    "original_failures": 378,
+    "eligible_edit_windows": 714,
+    "margin_quantiles": [
+      -4.5789173688422915,
+      -4.110694364220726,
+      -4.048662489380216,
+      -3.9545556990653203,
+      -3.752315780641361,
+      -1.4870973507577656,
+      0.12791343664365895
+    ],
+    "events": {
+      "BAD_INTERNAL": 349,
+      "BLOCKED_GOOD": 43,
+      "STOP_CORRECT_NOB": 322
+    },
+    "margin_by_event": {
+      "BAD_INTERNAL": [
+        -4.5789173688422915,
+        -4.093868602406764,
+        -4.041050930102473,
+        -3.9591182748321656,
+        -3.8947269250637397,
+        -3.4315389723111522,
+        0.12791343664365895
+      ],
+      "BLOCKED_GOOD": [
+        -4.410760130950958,
+        -4.0802429172932,
+        -3.8362637242674813,
+        -2.334392528029475,
+        -1.4111612692990838,
+        -1.2400339438625232,
+        -0.06289511985084362
+      ],
+      "STOP_CORRECT_NOB": [
+        -4.37347186296847,
+        -4.11654758221001,
+        -4.064726062610871,
+        -3.9569697368271273,
+        -3.680675516629245,
+        -1.4680797365531038,
+        -1.0452405039195547
+      ]
+    },
+    "native_good": 336,
+    "actual_good": 336,
+    "actual_rescue": 0,
+    "actual_lost": 0,
+    "actual_executed": 1,
+    "actual_harmful": 1,
+    "actual_ineffective": 0,
+    "best_B": 43,
+    "best_rescue": 0,
+    "blocked_good": 43,
+    "blocked_rescue": 0,
+    "internal_bad": 349,
+    "STOP_tie": 0,
+    "all_eligible_equal": 0,
+    "best_B_conditional": 0.1096938775510204,
+    "best_B_unconditional": 0.06022408963585434,
+    "best_rescue_conditional_opportunity": 0.0,
+    "best_rescue_among_native_failure": 0.0,
+    "MRR_B": 0.15328077796330747,
+    "MRR_rescue": 0.0386122969473301,
+    "rank_B_quantiles": [
+      1.0,
+      1.0,
+      15.0,
+      50.0,
+      121.0,
+      198.45,
+      269.0
+    ],
+    "rank_rescue_quantiles": [
+      2.0,
+      6.0,
+      33.0,
+      81.0,
+      151.0,
+      192.0,
+      257.0
+    ],
+    "best_edit_multiple_tie_windows": 598,
+    "top1_B": {
+      "hit_count": 43,
+      "conditional_hit": 0.1096938775510204,
+      "unconditional_hit": 0.06022408963585434,
+      "recall_fraction": 0.008859512175771042,
+      "random_hit_reference": 0.0797770719172334,
+      "physical_action_order_hit": 0.09183673469387756
+    },
+    "top1_Rescue": {
+      "hit_count": 0,
+      "conditional_hit": 0.0,
+      "unconditional_hit": 0.0,
+      "recall_fraction": 0.0,
+      "random_hit_reference": 0.065247784329141,
+      "physical_action_order_hit": 0.028169014084507043
+    },
+    "top5_B": {
+      "hit_count": 68,
+      "conditional_hit": 0.17346938775510204,
+      "unconditional_hit": 0.09523809523809523,
+      "recall_fraction": 0.03671912343592937,
+      "random_hit_reference": 0.3225235717047689,
+      "physical_action_order_hit": 0.5408163265306123
+    },
+    "top5_Rescue": {
+      "hit_count": 3,
+      "conditional_hit": 0.04225352112676056,
+      "unconditional_hit": 0.004201680672268907,
+      "recall_fraction": 0.003027735792746912,
+      "random_hit_reference": 0.279267095836346,
+      "physical_action_order_hit": 0.43661971830985913
+    },
+    "top10_B": {
+      "hit_count": 88,
+      "conditional_hit": 0.22448979591836735,
+      "unconditional_hit": 0.12324929971988796,
+      "recall_fraction": 0.0777709314442353,
+      "random_hit_reference": 0.5165880891238173,
+      "physical_action_order_hit": 0.7423469387755102
+    },
+    "top10_Rescue": {
+      "hit_count": 8,
+      "conditional_hit": 0.11267605633802817,
+      "unconditional_hit": 0.011204481792717087,
+      "recall_fraction": 0.034319888748005435,
+      "random_hit_reference": 0.4673625908522103,
+      "physical_action_order_hit": 0.7746478873239436
+    }
+  },
+  "change": {
+    "n": 977,
+    "B_nonempty": 514,
+    "rescue_opportunities": 102,
+    "original_failures": 581,
+    "eligible_edit_windows": 977,
+    "margin_quantiles": [
+      -5.680222754434175,
+      -4.1037709081933125,
+      -3.971107224735282,
+      -3.90116844404172,
+      -3.432598685996286,
+      -1.3039354643294625,
+      0.17086106770712917
+    ],
+    "events": {
+      "BAD_INTERNAL": 439,
+      "BLOCKED_GOOD": 74,
+      "PASS_GOOD": 1,
+      "STOP_CORRECT_NOB": 463
+    },
+    "margin_by_event": {
+      "BAD_INTERNAL": [
+        -4.600878673538503,
+        -4.104175803751004,
+        -3.9549072968696635,
+        -3.8781332894365455,
+        -2.360160978340954,
+        -1.262059689902912,
+        -0.06289511985084362
+      ],
+      "BLOCKED_GOOD": [
+        -4.4784787304900995,
+        -4.058747356060058,
+        -3.927715081783673,
+        -3.8999125814000624,
+        -3.4532491996533072,
+        -1.249049608907236,
+        -1.1221473339506205
+      ],
+      "PASS_GOOD": [
+        0.17086106770712917,
+        0.17086106770712917,
+        0.17086106770712917,
+        0.17086106770712917,
+        0.17086106770712917,
+        0.17086106770712917,
+        0.17086106770712917
+      ],
+      "STOP_CORRECT_NOB": [
+        -5.680222754434175,
+        -4.107072642827648,
+        -3.982709797253274,
+        -3.917368371907338,
+        -3.5508750823741333,
+        -1.373313459700177,
+        -0.06289511985084362
+      ]
+    },
+    "native_good": 396,
+    "actual_good": 396,
+    "actual_rescue": 0,
+    "actual_lost": 0,
+    "actual_executed": 1,
+    "actual_harmful": 0,
+    "actual_ineffective": 0,
+    "best_B": 75,
+    "best_rescue": 8,
+    "blocked_good": 74,
+    "blocked_rescue": 8,
+    "internal_bad": 439,
+    "STOP_tie": 0,
+    "all_eligible_equal": 0,
+    "best_B_conditional": 0.14591439688715954,
+    "best_B_unconditional": 0.0767656090071648,
+    "best_rescue_conditional_opportunity": 0.0784313725490196,
+    "best_rescue_among_native_failure": 0.013769363166953529,
+    "MRR_B": 0.17296865665837693,
+    "MRR_rescue": 0.09687954022484906,
+    "rank_B_quantiles": [
+      1.0,
+      1.0,
+      20.0,
+      66.5,
+      127.0,
+      227.0999999999998,
+      313.0
+    ],
+    "rank_rescue_quantiles": [
+      1.0,
+      1.0,
+      38.0,
+      88.0,
+      140.75,
+      244.95,
+      273.0
+    ],
+    "best_edit_multiple_tie_windows": 813,
+    "top1_B": {
+      "hit_count": 75,
+      "conditional_hit": 0.14591439688715954,
+      "unconditional_hit": 0.0767656090071648,
+      "recall_fraction": 0.019582233150285535,
+      "random_hit_reference": 0.061406235706658076,
+      "physical_action_order_hit": 0.038910505836575876
+    },
+    "top1_Rescue": {
+      "hit_count": 8,
+      "conditional_hit": 0.0784313725490196,
+      "unconditional_hit": 0.008188331627430911,
+      "recall_fraction": 0.010290022441725229,
+      "random_hit_reference": 0.050095193635655975,
+      "physical_action_order_hit": 0.0196078431372549
+    },
+    "top5_B": {
+      "hit_count": 89,
+      "conditional_hit": 0.17315175097276264,
+      "unconditional_hit": 0.09109518935516889,
+      "recall_fraction": 0.06160169637908735,
+      "random_hit_reference": 0.26058263962220674,
+      "physical_action_order_hit": 0.26459143968871596
+    },
+    "top5_Rescue": {
+      "hit_count": 9,
+      "conditional_hit": 0.08823529411764706,
+      "unconditional_hit": 0.009211873080859774,
+      "recall_fraction": 0.04588165675626976,
+      "random_hit_reference": 0.22349309286852156,
+      "physical_action_order_hit": 0.22549019607843138
+    },
+    "top10_B": {
+      "hit_count": 99,
+      "conditional_hit": 0.1926070038910506,
+      "unconditional_hit": 0.10133060388945753,
+      "recall_fraction": 0.09727496045900913,
+      "random_hit_reference": 0.43578440869243545,
+      "physical_action_order_hit": 0.40077821011673154
+    },
+    "top10_Rescue": {
+      "hit_count": 9,
+      "conditional_hit": 0.08823529411764706,
+      "unconditional_hit": 0.009211873080859774,
+      "recall_fraction": 0.06383298933608532,
+      "random_hit_reference": 0.39114192766761735,
+      "physical_action_order_hit": 0.37254901960784315
+    }
+  }
+}

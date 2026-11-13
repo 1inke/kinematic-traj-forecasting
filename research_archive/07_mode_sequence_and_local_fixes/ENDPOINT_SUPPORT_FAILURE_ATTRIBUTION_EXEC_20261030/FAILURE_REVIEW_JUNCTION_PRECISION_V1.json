@@ -1,0 +1,16 @@
+{
+  "status": "PRESERVED_IMPLEMENTATION_PRECISION_MISMATCH_NOT_SOURCE_DATA_FAILURE",
+  "actual_origin": "review_group_adapter.py -> review_group_supplement.py line30 junction assertion",
+  "source_files": {
+    "<WORKSPACE_ROOT>\\qoder_work\\ENDPOINT_SUPPORT_FAILURE_ATTRIBUTION_EXEC_20261030\\attribution_core.py": "52d42ee0d54c3306758227c871fabb98a925c9eecd298311a10ee6266cefa7ec",
+    "<WORKSPACE_ROOT>\\qoder_work\\ENDPOINT_SUPPORT_FAILURE_ATTRIBUTION_EXEC_20261030\\review_group_supplement.py": "76afa7695c0516633ccc755573b83591bdf76111f3fd4b52d2c0c0bc99972dc8",
+    "<WORKSPACE_ROOT>\\qoder_work\\ENDPOINT_SUPPORT_FAILURE_ATTRIBUTION_EXEC_20261030\\review_saved.py": "8ca1cdd95a6f17afb011755c2f481bdbab33427b08d0aeda902ed178edb64f3d"
+  },
+  "trace": "AssertionError at abs(saved_junction - review_float32_junction) <=2e-12",
+  "diagnosis": "Registered motion_guard.junction casts observed past to float64 BEFORE subtracting/dividing. New counterfactual helper and its second reviewer used float32 past subtraction; five-port group production used original float64 helper and was correct.",
+  "observed_max_group_junction_difference": 1.334953609877232e-07,
+  "no_tolerance_change": true,
+  "no_original_experiment_change": true,
+  "scope": "v1 counterfactual junction mean/p95 only; original coverage/paths/quality/clusters/five future-motion unchanged",
+  "v1_review_pass_scope": "v1 full reviewer matched v1 counterfactual arithmetic, not corrected float64 junction; superseded by full v2 reviewer"
+}

@@ -1,0 +1,143 @@
+{
+  "status": "PASS",
+  "scope": "CPU_SAVED_OUTPUT_DIAGNOSIS_NO_MODEL",
+  "source_count": 2164,
+  "inherited_sources": 2092,
+  "source_digest": "684887b8ffa80d47c5525c13d1da0c04eccd75091c19b29f8b26e624f7c96f2a",
+  "estimate_peak_bytes": 2990688880,
+  "startup_resource": {
+    "status": "PASS",
+    "mode": "startup",
+    "factor": 1.3,
+    "estimated_total_peak_bytes": 2990688880,
+    "estimated_remaining_physical_bytes": 2990688880,
+    "estimated_remaining_commit_bytes": 2990688880,
+    "required_available_physical_bytes": 3887895544.0,
+    "required_available_commit_bytes": 3887895544.0,
+    "dynamic_process_limit_bytes": 3887895544.0,
+    "reasons": [],
+    "snapshot": {
+      "at": "2026-10-15T22:52:55.158380+09:00",
+      "physical_available_bytes": 18683465728,
+      "commit_available_bytes": 22630961152,
+      "private_bytes": 796835840,
+      "RSS_bytes": 37867520,
+      "peak_private_bytes": 796835840,
+      "peak_RSS_bytes": 37867520
+    },
+    "fixed6GiB_rule": false
+  },
+  "fixtures": "FIXTURES.json",
+  "actual_saved_records": [
+    {
+      "arm": "free_position",
+      "n": 128,
+      "review": {
+        "status": "PASS",
+        "max_error": 0.0,
+        "candidate_slots": 2560,
+        "windows": 128,
+        "independent_point_and_slot_direction_formulas": true,
+        "bracket80_literal_checked": true,
+        "all_summary_counts_denominators_and_signed_accel_contributions_checked": true
+      },
+      "contract": {
+        "status": "PASS",
+        "completed_analysis_SHA_skip_compatible": true,
+        "bad_ID_slot_source_output_rejected": true,
+        "not_training_RNG_resume": true
+      },
+      "outputs_SHA": {
+        "<WORKSPACE_ROOT>\\U0_DIRECTION_RETENTION_AUDIT_DESIGN_20261015\\execution_20261015\\preflight_smoke\\free_position_candidate.npz": "a67a193300437cab3583d9f060eb07ed4a1294621bffb1594115907005f6c008",
+        "<WORKSPACE_ROOT>\\U0_DIRECTION_RETENTION_AUDIT_DESIGN_20261015\\execution_20261015\\preflight_smoke\\free_position_window.npz": "7e3bc33ca60822e333638862921591be457259f625924f46c0af13a0b4e050a6",
+        "<WORKSPACE_ROOT>\\U0_DIRECTION_RETENTION_AUDIT_DESIGN_20261015\\execution_20261015\\preflight_smoke\\free_position_summary.json": "4b2562beccc2e2b820ae9b39de4ec02e4918c30f79a6c428a16db3907ec6b056"
+      }
+    },
+    {
+      "arm": "integrated_acceleration",
+      "n": 128,
+      "review": {
+        "status": "PASS",
+        "max_error": 0.0,
+        "candidate_slots": 2560,
+        "windows": 128,
+        "independent_point_and_slot_direction_formulas": true,
+        "bracket80_literal_checked": true,
+        "all_summary_counts_denominators_and_signed_accel_contributions_checked": true
+      },
+      "contract": {
+        "status": "PASS",
+        "completed_analysis_SHA_skip_compatible": true,
+        "bad_ID_slot_source_output_rejected": true,
+        "not_training_RNG_resume": true
+      },
+      "outputs_SHA": {
+        "<WORKSPACE_ROOT>\\U0_DIRECTION_RETENTION_AUDIT_DESIGN_20261015\\execution_20261015\\preflight_smoke\\integrated_acceleration_candidate.npz": "5fcd45c90e0ec74859138dcf7eacd2d2aa51d1dad3f5806d724327c3bfed07ba",
+        "<WORKSPACE_ROOT>\\U0_DIRECTION_RETENTION_AUDIT_DESIGN_20261015\\execution_20261015\\preflight_smoke\\integrated_acceleration_window.npz": "c17f6b593ed4cb59a362f8f8433bfb39263894aa2dfa0dd2d3b628de8a57dfc6",
+        "<WORKSPACE_ROOT>\\U0_DIRECTION_RETENTION_AUDIT_DESIGN_20261015\\execution_20261015\\preflight_smoke\\integrated_acceleration_summary.json": "727dce939509febb88ee2561d360b74aa6aa67d64f672fc1b2ac9ffdebd8159c"
+      }
+    }
+  ],
+  "benchmark": [
+    {
+      "arm": "free_position",
+      "blocks": 8,
+      "n": 1024,
+      "production_plus_independent_review_seconds_per_window": [
+        0.0015773992190588615,
+        0.0007795843748681364,
+        0.0007272937500601984,
+        0.0008268671872428968,
+        0.0007704898434894858,
+        0.0008826843750284752,
+        0.0008493843743053731,
+        0.0009202609371641302
+      ],
+      "mean": 0.0009167455076521946,
+      "max": 0.0015773992190588615,
+      "input_decompression_seconds": 1.7127917999168858,
+      "input_compressed_bytes": 325397356
+    },
+    {
+      "arm": "integrated_acceleration",
+      "blocks": 8,
+      "n": 1024,
+      "production_plus_independent_review_seconds_per_window": [
+        0.001596225781213434,
+        0.0008079562494458514,
+        0.0007497726555811823,
+        0.0008242359381256392,
+        0.0007461218747266685,
+        0.0008795945313977427,
+        0.0008800828127277782,
+        0.000915000000532018
+      ],
+      "mean": 0.0009248737304687893,
+      "max": 0.001596225781213434,
+      "input_decompression_seconds": 1.6455618999898434,
+      "input_compressed_bytes": 327571711
+    }
+  ],
+  "scientific_window_rows": 148074,
+  "compute_seconds": 236.35953632739802,
+  "input_IO_seconds": 26.933512202207805,
+  "source_hash_measure_seconds": 6.822176799993031,
+  "planning_minutes": 8.423435053239796,
+  "ETA_minutes": [
+    5.896404537267857,
+    12.635152579859694
+  ],
+  "disk_free_bytes": 27520962560,
+  "conservative_disk_need_bytes": 2609840360,
+  "new_training": false,
+  "no_torch_import": true,
+  "original_source_and_outputs_SHA_initial_final": true,
+  "elapsed_seconds": 21.682684500003234,
+  "resource": {
+    "peak_private_bytes": 1353560064,
+    "peak_RSS_bytes": 593547264,
+    "min_available_physical_bytes": 17999286272,
+    "min_available_commit_bytes": 21985124352,
+    "checks": 658
+  }
+}

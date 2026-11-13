@@ -1,0 +1,30 @@
+{
+  "stage": "F0_SAFE_REACHABILITY",
+  "formal": false,
+  "selected_population": "FIT18909_change4725",
+  "native_failure_tracks": 32,
+  "native_success_identity_tracks": 16,
+  "all20_slots_each_failure": 20,
+  "total_attempts": 640,
+  "per_problem_dispatch_wall_seconds": null,
+  "whole_stage_time_veto": null,
+  "human_amendment": "../EXECUTION_AUTHORIZATION_20261017.md",
+  "closed_unit_disk_controls": true,
+  "integral_unit": 0.001388888888888889,
+  "objective": "sum_all20x11_acceleration_norms",
+  "constraints": [
+    "same_target_slot_ADE<=.2_FDE<=.4",
+    "ALL20_window_accel_mean<=native*1.01",
+    "ALL20_window_jerk_mean<=native*1.01",
+    "all_control_norm<=1",
+    "position_norm<=.20*(t/12)^2"
+  ],
+  "postcheck": "actualfloat32tanh-double-normalize-double-integral; literal_quality_bounds_and_all_five_window_motion",
+  "fixed_primal_shrink": 0.9999990463256836,
+  "no_search_shrink": true,
+  "wholeFIT_portfolio_allfourgroups": true,
+  "nonzero_rescue_and_fullfit_fivemotion_required": true,
+  "no_teacher_optimizer_model_data_expansion": true,
+  "resource": "aggregate_parent_ownedsolver_child task_need1.3 retainedpeaks nofixed6",
+  "human_runtime_budget_clarification": "../EXECUTION_RUNTIME_BUDGET_CLARIFICATION_20261017.md"
+}

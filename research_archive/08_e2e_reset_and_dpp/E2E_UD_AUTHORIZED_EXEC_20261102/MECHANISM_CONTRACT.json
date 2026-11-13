@@ -1,0 +1,17 @@
+{
+  "status": "LOCKED_FIT_PAST_ONLY_BEFORE_PILOTS",
+  "turn_threshold": 0.22734533194281306,
+  "speed_change_threshold": 0.1337285559742559,
+  "criterion": "last3 consecutive observed velocity transitions; greater than fit-only linear75% quantile; no future calibration",
+  "dev_hash": "ud-mechanism-v1",
+  "windows": 128,
+  "perturbation_m": 0.05,
+  "perturbation": "Target last world observation +/- .05 lateral to unperturbed last velocity (fallback x heading), keep causal neighbor identities/coordinates fixed, recompute heading normalization; sensitivity only, not full reranked deployment",
+  "main_candidates": [
+    "U-Delta",
+    "D-DiffGate"
+  ],
+  "subjective_clear_mechanism_clause": "No automatic promotion based on subjective mechanism narrative; full objective pilot screen is computed. Borderline mechanism evidence requires explicit prospective next-stage review, not threshold search.",
+  "zero_positive_excess_p95": "NOT_ESTIMABLE_NO_FLOOR; cannot declare relative tail noninferiority or automatic screen pass",
+  "physical_slots": "Not semantic intent identities; signed difference attention is not probability or causal proof"
+}

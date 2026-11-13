@@ -1,0 +1,16 @@
+{
+  "status": "EXPLICIT_COMPLETE_REVIEW_PRECISION_ADAPTER",
+  "files": {
+    "<WORKSPACE_ROOT>\\qoder_work\\ENDPOINT_SUPPORT_FAILURE_ATTRIBUTION_EXEC_20261030\\review_saved.py": "8ca1cdd95a6f17afb011755c2f481bdbab33427b08d0aeda902ed178edb64f3d",
+    "<WORKSPACE_ROOT>\\qoder_work\\ENDPOINT_SUPPORT_FAILURE_ATTRIBUTION_EXEC_20261030\\review_saved_v2_adapter.py": "130297d62f580ef08bfb1d09ef3a1f05929aa74f88eacb46b35bf44607c3c491"
+  },
+  "exact_replacements": {
+    "hm=ut['H_main_executed_gap'].mean(1).reshape(128,20).mean(1);hs=ut['hash_main_executed_gap'].mean(1).reshape(128,20).mean(1)": "hm=np.nanmean(ut['H_main_executed_gap'],axis=1).reshape(128,20).mean(1);hs=np.nanmean(ut['hash_main_executed_gap'],axis=1).reshape(128,20).mean(1)",
+    "def physics(p,past):\n": "def physics(p,past):\n    past=np.asarray(past,dtype=np.float64)\n",
+    "vo0=(z['past'][i,-1]-z['past'][i,-2])/.4": "vo0=(z['past'][i,-1].astype(float)-z['past'][i,-2].astype(float))/.4",
+    "'counterfactual_metrics.npz'": "'counterfactual_metrics_v2.npz'",
+    "out=c.ROOT/'completion_review'": "out=c.ROOT/'completion_review_v2'"
+  },
+  "no_tolerance_or_scientific_rule_change": true,
+  "all_original_sources_preserved": true
+}

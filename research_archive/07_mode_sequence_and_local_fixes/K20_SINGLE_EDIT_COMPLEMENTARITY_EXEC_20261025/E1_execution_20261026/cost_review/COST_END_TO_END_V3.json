@@ -1,0 +1,1167 @@
+{
+  "status": "MEASURED_RAW_COST_CACHE_PARITY_BLOCKED",
+  "timing": [
+    {
+      "device": "cpu",
+      "batch": 1,
+      "CPU_threads": 1,
+      "warm": 50,
+      "measure": 500,
+      "mean_seconds": 0.012927412000950426,
+      "p50_seconds": 0.012786250037606806,
+      "p95_seconds": 0.013949275040067731,
+      "scope": "real raw memory-map observation slice+existing neighbor valid sidecar+normalization+fullF16+KIN+400physicalchecks+324features+CPU/GPUtransfers+editor+chosenK20",
+      "disk_cold_start_excluded": true
+    },
+    {
+      "device": "cuda",
+      "batch": 1,
+      "CPU_threads": 1,
+      "warm": 50,
+      "measure": 500,
+      "mean_seconds": 0.026445555600570516,
+      "p50_seconds": 0.02458955004112795,
+      "p95_seconds": 0.03816783993970603,
+      "scope": "real raw memory-map observation slice+existing neighbor valid sidecar+normalization+fullF16+KIN+400physicalchecks+324features+CPU/GPUtransfers+editor+chosenK20",
+      "disk_cold_start_excluded": true
+    }
+  ],
+  "parameter_counts": {
+    "F16": 321988,
+    "KIN": 63624,
+    "editor": 11488
+  },
+  "total_unique_parameters": 397100,
+  "parameter_budget": 305000,
+  "budget_pass": false,
+  "allweights_buffers_exact": true,
+  "no_backward_optimizer": true,
+  "no_GT_forward": true,
+  "identity32_each_device": [
+    {
+      "device": "cpu",
+      "sample_id": 16381,
+      "errors": {
+        "native": 0.00012040138244628906,
+        "kin": 2.384185791015625e-07,
+        "tokens": 0.0005844235420227051,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 24451,
+      "errors": {
+        "native": 0.0002598762512207031,
+        "kin": 4.76837158203125e-07,
+        "tokens": 0.0007379353046417236,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 24739,
+      "errors": {
+        "native": 0.00027441978454589844,
+        "kin": 7.152557373046875e-07,
+        "tokens": 0.0006677806377410889,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 19719,
+      "errors": {
+        "native": 0.00038319826126098633,
+        "kin": 4.76837158203125e-07,
+        "tokens": 0.0004754066467285156,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 10731,
+      "errors": {
+        "native": 0.0002651214599609375,
+        "kin": 7.152557373046875e-07,
+        "tokens": 0.0004673004150390625,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 19860,
+      "errors": {
+        "native": 0.00047266483306884766,
+        "kin": 5.960464477539062e-07,
+        "tokens": 0.0005931854248046875,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 11382,
+      "errors": {
+        "native": 0.0003037452697753906,
+        "kin": 1.0728836059570312e-06,
+        "tokens": 0.0005546808242797852,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 26298,
+      "errors": {
+        "native": 0.00019276142120361328,
+        "kin": 7.152557373046875e-07,
+        "tokens": 0.0006667375564575195,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 5159,
+      "errors": {
+        "native": 0.00035762786865234375,
+        "kin": 9.5367431640625e-07,
+        "tokens": 0.00046962499618530273,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 9681,
+      "errors": {
+        "native": 0.00016021728515625,
+        "kin": 5.960464477539062e-07,
+        "tokens": 0.0005710721015930176,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 16103,
+      "errors": {
+        "native": 0.00035953521728515625,
+        "kin": 7.152557373046875e-07,
+        "tokens": 0.0006447136402130127,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 3777,
+      "errors": {
+        "native": 0.00010061264038085938,
+        "kin": 3.5762786865234375e-07,
+        "tokens": 0.0003147125244140625,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 25383,
+      "errors": {
+        "native": 0.0004334449768066406,
+        "kin": 9.5367431640625e-07,
+        "tokens": 0.0005838274955749512,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 8244,
+      "errors": {
+        "native": 0.0004241466522216797,
+        "kin": 7.152557373046875e-07,
+        "tokens": 0.0005033016204833984,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 13912,
+      "errors": {
+        "native": 2.5272369384765625e-05,
+        "kin": 3.5762786865234375e-07,
+        "tokens": 0.00020392239093780518,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 19399,
+      "errors": {
+        "native": 0.0002448558807373047,
+        "kin": 9.5367431640625e-07,
+        "tokens": 0.0006330013275146484,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 10679,
+      "errors": {
+        "native": 0.0001888275146484375,
+        "kin": 4.76837158203125e-07,
+        "tokens": 0.0005649328231811523,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 10304,
+      "errors": {
+        "native": 0.0002810359001159668,
+        "kin": 3.5762786865234375e-07,
+        "tokens": 0.0004980564117431641,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 18637,
+      "errors": {
+        "native": 0.0003612041473388672,
+        "kin": 1.1920928955078125e-06,
+        "tokens": 0.0004928112030029297,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 4327,
+      "errors": {
+        "native": 0.0005409717559814453,
+        "kin": 1.9073486328125e-06,
+        "tokens": 0.0004840642213821411,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 25287,
+      "errors": {
+        "native": 0.00036525726318359375,
+        "kin": 9.5367431640625e-07,
+        "tokens": 0.0005722641944885254,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 3019,
+      "errors": {
+        "native": 0.0002720355987548828,
+        "kin": 1.9073486328125e-06,
+        "tokens": 0.0005540549755096436,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 15083,
+      "errors": {
+        "native": 0.0005056858062744141,
+        "kin": 4.76837158203125e-07,
+        "tokens": 0.0008262991905212402,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 8304,
+      "errors": {
+        "native": 0.00038123130798339844,
+        "kin": 9.5367431640625e-07,
+        "tokens": 0.0004683583974838257,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 15609,
+      "errors": {
+        "native": 0.0002269744873046875,
+        "kin": 4.76837158203125e-07,
+        "tokens": 0.0006718635559082031,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 25793,
+      "errors": {
+        "native": 7.2479248046875e-05,
+        "kin": 3.5762786865234375e-07,
+        "tokens": 0.00025194883346557617,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 1206,
+      "errors": {
+        "native": 0.0005164146423339844,
+        "kin": 7.152557373046875e-07,
+        "tokens": 0.0006500482559204102,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 15218,
+      "errors": {
+        "native": 0.000453948974609375,
+        "kin": 7.152557373046875e-07,
+        "tokens": 0.0007058382034301758,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 21513,
+      "errors": {
+        "native": 0.0002894401550292969,
+        "kin": 7.152557373046875e-07,
+        "tokens": 0.00046831369400024414,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 23450,
+      "errors": {
+        "native": 0.000316619873046875,
+        "kin": 9.5367431640625e-07,
+        "tokens": 0.0004880279302597046,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 3169,
+      "errors": {
+        "native": 0.00039124488830566406,
+        "kin": 9.5367431640625e-07,
+        "tokens": 0.00042623281478881836,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 10975,
+      "errors": {
+        "native": 0.0003819465637207031,
+        "kin": 9.5367431640625e-07,
+        "tokens": 0.00044405460357666016,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cuda",
+      "sample_id": 16381,
+      "errors": {
+        "native": 2.384185791015625e-07,
+        "kin": 3.5762786865234375e-07,
+        "tokens": 9.5367431640625e-07,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 24451,
+      "errors": {
+        "native": 4.76837158203125e-07,
+        "kin": 2.682209014892578e-07,
+        "tokens": 9.5367431640625e-07,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 24739,
+      "errors": {
+        "native": 7.152557373046875e-07,
+        "kin": 4.470348358154297e-07,
+        "tokens": 9.5367431640625e-07,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 19719,
+      "errors": {
+        "native": 4.76837158203125e-07,
+        "kin": 4.76837158203125e-07,
+        "tokens": 9.5367431640625e-07,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 10731,
+      "errors": {
+        "native": 4.76837158203125e-07,
+        "kin": 9.5367431640625e-07,
+        "tokens": 9.5367431640625e-07,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 19860,
+      "errors": {
+        "native": 1.1920928955078125e-06,
+        "kin": 2.384185791015625e-07,
+        "tokens": 1.1920928955078125e-06,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 11382,
+      "errors": {
+        "native": 4.76837158203125e-07,
+        "kin": 8.344650268554688e-07,
+        "tokens": 1.1920928955078125e-06,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 26298,
+      "errors": {
+        "native": 4.76837158203125e-07,
+        "kin": 2.384185791015625e-07,
+        "tokens": 8.344650268554688e-07,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 5159,
+      "errors": {
+        "native": 9.5367431640625e-07,
+        "kin": 9.5367431640625e-07,
+        "tokens": 9.5367431640625e-07,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 9681,
+      "errors": {
+        "native": 7.152557373046875e-07,
+        "kin": 4.76837158203125e-07,
+        "tokens": 7.748603820800781e-07,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 16103,
+      "errors": {
+        "native": 4.76837158203125e-07,
+        "kin": 5.960464477539062e-07,
+        "tokens": 8.344650268554688e-07,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 3777,
+      "errors": {
+        "native": 4.76837158203125e-07,
+        "kin": 2.384185791015625e-07,
+        "tokens": 1.0728836059570312e-06,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 25383,
+      "errors": {
+        "native": 9.5367431640625e-07,
+        "kin": 4.76837158203125e-07,
+        "tokens": 7.748603820800781e-07,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 8244,
+      "errors": {
+        "native": 9.5367431640625e-07,
+        "kin": 7.152557373046875e-07,
+        "tokens": 1.0132789611816406e-06,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 13912,
+      "errors": {
+        "native": 7.152557373046875e-07,
+        "kin": 3.5762786865234375e-07,
+        "tokens": 8.344650268554688e-07,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 19399,
+      "errors": {
+        "native": 2.384185791015625e-07,
+        "kin": 4.76837158203125e-07,
+        "tokens": 9.5367431640625e-07,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 10679,
+      "errors": {
+        "native": 3.5762786865234375e-07,
+        "kin": 4.76837158203125e-07,
+        "tokens": 1.1920928955078125e-06,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 10304,
+      "errors": {
+        "native": 4.76837158203125e-07,
+        "kin": 3.5762786865234375e-07,
+        "tokens": 1.1920928955078125e-06,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 18637,
+      "errors": {
+        "native": 5.960464477539062e-07,
+        "kin": 4.76837158203125e-07,
+        "tokens": 8.940696716308594e-07,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 4327,
+      "errors": {
+        "native": 9.5367431640625e-07,
+        "kin": 1.9073486328125e-06,
+        "tokens": 1.1920928955078125e-06,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 25287,
+      "errors": {
+        "native": 4.76837158203125e-07,
+        "kin": 9.5367431640625e-07,
+        "tokens": 8.344650268554688e-07,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 3019,
+      "errors": {
+        "native": 9.5367431640625e-07,
+        "kin": 1.9073486328125e-06,
+        "tokens": 1.6391277313232422e-06,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 15083,
+      "errors": {
+        "native": 9.5367431640625e-07,
+        "kin": 4.76837158203125e-07,
+        "tokens": 1.0728836059570312e-06,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 8304,
+      "errors": {
+        "native": 9.5367431640625e-07,
+        "kin": 9.5367431640625e-07,
+        "tokens": 1.1324882507324219e-06,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 15609,
+      "errors": {
+        "native": 9.5367431640625e-07,
+        "kin": 4.76837158203125e-07,
+        "tokens": 1.430511474609375e-06,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 25793,
+      "errors": {
+        "native": 5.960464477539062e-07,
+        "kin": 2.384185791015625e-07,
+        "tokens": 8.940696716308594e-07,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 1206,
+      "errors": {
+        "native": 7.152557373046875e-07,
+        "kin": 7.152557373046875e-07,
+        "tokens": 1.0728836059570312e-06,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 15218,
+      "errors": {
+        "native": 4.76837158203125e-07,
+        "kin": 7.152557373046875e-07,
+        "tokens": 1.1324882507324219e-06,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 21513,
+      "errors": {
+        "native": 9.5367431640625e-07,
+        "kin": 4.76837158203125e-07,
+        "tokens": 9.5367431640625e-07,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 23450,
+      "errors": {
+        "native": 9.5367431640625e-07,
+        "kin": 9.5367431640625e-07,
+        "tokens": 1.1920928955078125e-06,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 3169,
+      "errors": {
+        "native": 1.9073486328125e-06,
+        "kin": 9.5367431640625e-07,
+        "tokens": 1.6689300537109375e-06,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    },
+    {
+      "device": "cuda",
+      "sample_id": 10975,
+      "errors": {
+        "native": 9.5367431640625e-07,
+        "kin": 4.76837158203125e-07,
+        "tokens": 9.5367431640625e-07,
+        "past": 0.0
+      },
+      "cache_parity_PASS": true
+    }
+  ],
+  "source_files_before_after": {
+    "<WORKSPACE_ROOT>\\REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES\\run_formal_regime_selection.py": "8e736fba86629bfd3670f73e549519a8ff51a5cb41a7733e1926a1e1471b5360",
+    "<WORKSPACE_ROOT>\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\motif_rbf_official_4p8.yaml": "d0a826f632b728110dd22c16a7449d97dd153ba60f219a01548d1482da4cdfd3",
+    "<WORKSPACE_ROOT>\\KINEMATIC_DECODER_SPEED_CLAMP_20261018\\results\\short\\KIN_seed42.pt": "029fda98741cbbd57c7867bc6ca40b573e58c4dd4d109bbaef9cc9e07fe88e20",
+    "<WORKSPACE_ROOT>\\qoder_work\\K20_SINGLE_EDIT_COMPLEMENTARITY_EXEC_20261025\\E1_execution_20261026\\runs\\S_seed42\\checkpoint.pt": "803d2ec192855003926bdd79f38912d7787167f611559ef1ae8890e6cabe7144",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\eth_data_train.npy": "43e2fc02e8a9d42496697fdcf3c1a51c54362a73ce7f4e02e0b784df9b7301f5",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\eth_num_train.npy": "9df5b73eb575722f289079f3050117dc4e76ffc4f01dbe4020df2e63ae860ddf",
+    "<WORKSPACE_ROOT>\\GENERATION_NATIVE_DECODER_SERIES\\train_encoder.npz": "f6c232e4b05e4e8db2a01c7fd0880beecd835b59352b81ba08132c8b610e87f0",
+    "<WORKSPACE_ROOT>\\qoder_work\\K20_SINGLE_EDIT_COMPLEMENTARITY_EXEC_20261025\\E1_execution_20261026\\cost_review\\benchmark_raw_v3.py": "da914e3a64f9cd6fa9424dfd55bfe426b3bcbbb3edd3539aff8fe4ddc12aaa0a",
+    "<WORKSPACE_ROOT>\\qoder_work\\K20_SINGLE_EDIT_COMPLEMENTARITY_EXEC_20261025\\E1_execution_20261026\\feature_builder.py": "dd95026d6147a60fa4e41d0f713c169afd5ef392692ff5b4d7c4bc2d69beb0ff",
+    "<WORKSPACE_ROOT>\\qoder_work\\K20_SINGLE_EDIT_COMPLEMENTARITY_EXEC_20261025\\E0_execution_20261025\\space.py": "203374f7966c8ca69f1724cc9c3ff865e7aa4a4b281e375f30186c6b7a7a9eb0",
+    "<WORKSPACE_ROOT>\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\eth\\h3\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth": "8fee24d0bd7b009e6e6ee280a0eee4e0e6c345d750733754741192f3adf0bb57",
+    "<WORKSPACE_ROOT>\\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES\\EXP_156B_FOLD_LOCAL_CURRENT_DECODER\\results\\eth\\v2\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\best_selected.pth": "f245c1ba7277b9b843c891f7f3902a66f3c4005108fe1f729a74be3c7167bc43"
+  },
+  "actual_imported_sources": {
+    "<WORKSPACE_ROOT>\\qoder_work\\K20_SINGLE_EDIT_COMPLEMENTARITY_EXEC_20261025\\E1_execution_20261026\\cost_review\\benchmark_raw_v3.py": "da914e3a64f9cd6fa9424dfd55bfe426b3bcbbb3edd3539aff8fe4ddc12aaa0a",
+    "<WORKSPACE_ROOT>\\.venv-governance\\Lib\\site-packages\\_distutils_hack\\__init__.py": "df81e6bcba34ee3e3952f776551fb669143b9490fdd6c4caeb32609f97e985b4",
+    "<WORKSPACE_ROOT>\\src\\f16\\__init__.py": "dc967f6359c07137953076cfce18d726ec74d3a8901dd36c1d8c68bbecfdbdeb",
+    "<WORKSPACE_ROOT>\\src\\f16\\io.py": "fe9e3507951101d92146d534ddbfcf58a899cf223f7fb9e7b7063c5bf2640011",
+    "<WORKSPACE_ROOT>\\src\\f16\\resource.py": "63173efcb715d583f13a7f4af6f13d75bfb4d8aa776d00c8df520b97f10a1988",
+    "<WORKSPACE_ROOT>\\src\\f16\\checkpoint.py": "90fd78dab50f85ad3857c105cac8220d93abb607f0bfb98ce1b26ba6f7400ef9",
+    "<WORKSPACE_ROOT>\\qoder_work\\K20_SINGLE_EDIT_COMPLEMENTARITY_EXEC_20261025\\E0_execution_20261025\\common.py": "a0c411974be1ad8ac4d68edffd13a516c47246d166a0da7ad8a9ccc6bf97607f",
+    "<WORKSPACE_ROOT>\\qoder_work\\K20_SINGLE_EDIT_COMPLEMENTARITY_EXEC_20261025\\E0_execution_20261025\\space.py": "203374f7966c8ca69f1724cc9c3ff865e7aa4a4b281e375f30186c6b7a7a9eb0",
+    "<WORKSPACE_ROOT>\\qoder_work\\K20_SINGLE_EDIT_COMPLEMENTARITY_EXEC_20261025\\E1_execution_20261026\\env.py": "1374aa8afe6a841d3f04185ef91910e59542ec93ffde15f14eedecd4bb9473b4",
+    "<WORKSPACE_ROOT>\\qoder_work\\K20_SINGLE_EDIT_COMPLEMENTARITY_EXEC_20261025\\E1_execution_20261026\\feature_builder.py": "dd95026d6147a60fa4e41d0f713c169afd5ef392692ff5b4d7c4bc2d69beb0ff",
+    "<WORKSPACE_ROOT>\\qoder_work\\K20_SINGLE_EDIT_COMPLEMENTARITY_EXEC_20261025\\E1_execution_20261026\\editor.py": "7e078858118b8afb09916ca844fa79652cb8e7e416d4214c7436548939ee5049",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\sitecustomize.py": "2f9872d417cc1059b8c1362c3fa892a3db81807b1d5eb337032ea4faa6589f88",
+    "<WORKSPACE_ROOT>\\FRONT_ENCODER_SERIES\\experiment_config.py": "79f1dd9bac2939d4f999efefbbc268b0b3506a390ca491d6c721e61f6c686d5c",
+    "<WORKSPACE_ROOT>\\FRONT_ENCODER_SERIES\\front_encoder_models.py": "2d270336a40704c13a8d127e70898ac091715a276114d07776733f814d8a5949",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\models\\vae.py": "df9761bf51c9778f404442902a0fda0c73102d917b8a7ee37994d65365b4517f",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\models\\stage1_graph.py": "391f8452091ab30b1dacaabcbf43666cc09c4236f44ee8441f007087be5ff105",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\models\\drse.py": "90c769e4f571e37f90860ad6911077225d2ca38d4b5c7f51c0e9c5adaca212b8",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\models\\edge_drwse.py": "fba3f939e5a36ccd6122f0095d424c0e89cccd72f16c7240b3f5bafdc1856436",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\models\\trajectory_decoder.py": "9b8bb7e805b1939852dd2b41733278b705cb6938fbf4e8fb8ed80b15abb9d6b6",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\models\\astra_model.py": "ec60c0c737448e139b9fe54430eb8dfddaa7e73d64c550321168c41f172aba19",
+    "<WORKSPACE_ROOT>\\FRONT_ENCODER_SERIES\\train_front_variant.py": "8bd583d8b4b6972babebaabc939d61848133e082bd9d72aa02a148674ee9058a",
+    "<WORKSPACE_ROOT>\\E2_F16_END_TO_END_COMPARISON_SERIES\\joint_v2_adapter.py": "0ddceb3149add6b02353184ac85f002c8375d238f67c673029bf6aa7c134bd76",
+    "<WORKSPACE_ROOT>\\KINEMATIC_DECODER_SPEED_CLAMP_20261018\\kdec\\__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "<WORKSPACE_ROOT>\\KINEMATIC_DECODER_SPEED_CLAMP_20261018\\kdec\\integrate.py": "54e828c7d04f8be19e4b166a7cfb03b45e693e746835a2476c9b021c59663db1",
+    "<WORKSPACE_ROOT>\\KINEMATIC_DECODER_SPEED_CLAMP_20261018\\kdec\\models.py": "1bbcd8bca607b733a00c2d50e32b4ae58cf5a5734dd01296fee204fefab106eb"
+  },
+  "resource": {
+    "status": "PASS",
+    "estimate": 6442450944,
+    "factor": 1.3,
+    "required_physical": 5945442713.6,
+    "required_commit": 3873579008.0,
+    "retained_peak_limit": 8375186227.200001,
+    "snapshot": {
+      "physical": 14987005952,
+      "commit": 12754235392,
+      "rss": 1869033472,
+      "private": 3462774784,
+      "peak_rss": 1871134720,
+      "peak_private": 3491885056
+    }
+  },
+  "limitations": [
+    "only fixed seed42 S representative cost, no model selection",
+    "CPU one thread and GPU batch1; not cache-only, not cold disk latency",
+    "existing neighbor num sidecar may encode future-availability curation; no future trajectory passed to pipeline",
+    "component identity <=2e-5 does not claim raw-pipeline argmax bitwise across devices or replace saved scientific evaluation"
+  ],
+  "no_delete": true,
+  "cache_parity_tolerance": 2e-05,
+  "cache_parity_failures": [
+    {
+      "device": "cpu",
+      "sample_id": 16381,
+      "errors": {
+        "native": 0.00012040138244628906,
+        "kin": 2.384185791015625e-07,
+        "tokens": 0.0005844235420227051,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 24451,
+      "errors": {
+        "native": 0.0002598762512207031,
+        "kin": 4.76837158203125e-07,
+        "tokens": 0.0007379353046417236,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 24739,
+      "errors": {
+        "native": 0.00027441978454589844,
+        "kin": 7.152557373046875e-07,
+        "tokens": 0.0006677806377410889,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 19719,
+      "errors": {
+        "native": 0.00038319826126098633,
+        "kin": 4.76837158203125e-07,
+        "tokens": 0.0004754066467285156,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 10731,
+      "errors": {
+        "native": 0.0002651214599609375,
+        "kin": 7.152557373046875e-07,
+        "tokens": 0.0004673004150390625,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 19860,
+      "errors": {
+        "native": 0.00047266483306884766,
+        "kin": 5.960464477539062e-07,
+        "tokens": 0.0005931854248046875,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 11382,
+      "errors": {
+        "native": 0.0003037452697753906,
+        "kin": 1.0728836059570312e-06,
+        "tokens": 0.0005546808242797852,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 26298,
+      "errors": {
+        "native": 0.00019276142120361328,
+        "kin": 7.152557373046875e-07,
+        "tokens": 0.0006667375564575195,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 5159,
+      "errors": {
+        "native": 0.00035762786865234375,
+        "kin": 9.5367431640625e-07,
+        "tokens": 0.00046962499618530273,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 9681,
+      "errors": {
+        "native": 0.00016021728515625,
+        "kin": 5.960464477539062e-07,
+        "tokens": 0.0005710721015930176,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 16103,
+      "errors": {
+        "native": 0.00035953521728515625,
+        "kin": 7.152557373046875e-07,
+        "tokens": 0.0006447136402130127,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 3777,
+      "errors": {
+        "native": 0.00010061264038085938,
+        "kin": 3.5762786865234375e-07,
+        "tokens": 0.0003147125244140625,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 25383,
+      "errors": {
+        "native": 0.0004334449768066406,
+        "kin": 9.5367431640625e-07,
+        "tokens": 0.0005838274955749512,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 8244,
+      "errors": {
+        "native": 0.0004241466522216797,
+        "kin": 7.152557373046875e-07,
+        "tokens": 0.0005033016204833984,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 13912,
+      "errors": {
+        "native": 2.5272369384765625e-05,
+        "kin": 3.5762786865234375e-07,
+        "tokens": 0.00020392239093780518,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 19399,
+      "errors": {
+        "native": 0.0002448558807373047,
+        "kin": 9.5367431640625e-07,
+        "tokens": 0.0006330013275146484,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 10679,
+      "errors": {
+        "native": 0.0001888275146484375,
+        "kin": 4.76837158203125e-07,
+        "tokens": 0.0005649328231811523,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 10304,
+      "errors": {
+        "native": 0.0002810359001159668,
+        "kin": 3.5762786865234375e-07,
+        "tokens": 0.0004980564117431641,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 18637,
+      "errors": {
+        "native": 0.0003612041473388672,
+        "kin": 1.1920928955078125e-06,
+        "tokens": 0.0004928112030029297,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 4327,
+      "errors": {
+        "native": 0.0005409717559814453,
+        "kin": 1.9073486328125e-06,
+        "tokens": 0.0004840642213821411,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 25287,
+      "errors": {
+        "native": 0.00036525726318359375,
+        "kin": 9.5367431640625e-07,
+        "tokens": 0.0005722641944885254,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 3019,
+      "errors": {
+        "native": 0.0002720355987548828,
+        "kin": 1.9073486328125e-06,
+        "tokens": 0.0005540549755096436,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 15083,
+      "errors": {
+        "native": 0.0005056858062744141,
+        "kin": 4.76837158203125e-07,
+        "tokens": 0.0008262991905212402,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 8304,
+      "errors": {
+        "native": 0.00038123130798339844,
+        "kin": 9.5367431640625e-07,
+        "tokens": 0.0004683583974838257,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 15609,
+      "errors": {
+        "native": 0.0002269744873046875,
+        "kin": 4.76837158203125e-07,
+        "tokens": 0.0006718635559082031,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 25793,
+      "errors": {
+        "native": 7.2479248046875e-05,
+        "kin": 3.5762786865234375e-07,
+        "tokens": 0.00025194883346557617,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 1206,
+      "errors": {
+        "native": 0.0005164146423339844,
+        "kin": 7.152557373046875e-07,
+        "tokens": 0.0006500482559204102,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 15218,
+      "errors": {
+        "native": 0.000453948974609375,
+        "kin": 7.152557373046875e-07,
+        "tokens": 0.0007058382034301758,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 21513,
+      "errors": {
+        "native": 0.0002894401550292969,
+        "kin": 7.152557373046875e-07,
+        "tokens": 0.00046831369400024414,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 23450,
+      "errors": {
+        "native": 0.000316619873046875,
+        "kin": 9.5367431640625e-07,
+        "tokens": 0.0004880279302597046,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 3169,
+      "errors": {
+        "native": 0.00039124488830566406,
+        "kin": 9.5367431640625e-07,
+        "tokens": 0.00042623281478881836,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    },
+    {
+      "device": "cpu",
+      "sample_id": 10975,
+      "errors": {
+        "native": 0.0003819465637207031,
+        "kin": 9.5367431640625e-07,
+        "tokens": 0.00044405460357666016,
+        "past": 0.0
+      },
+      "cache_parity_PASS": false
+    }
+  ],
+  "original_failure_preserved": true,
+  "device_adapter": "legacy plain net.device and cfg.device updated together with Module.to; no weights/equations changed"
+}

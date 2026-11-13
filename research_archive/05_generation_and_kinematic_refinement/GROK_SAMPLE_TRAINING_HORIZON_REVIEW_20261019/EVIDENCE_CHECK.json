@@ -1,0 +1,338 @@
+{
+  "scope": "aggregate arithmetic, split identity and scene/time/focal path overlap, selected-case longer-label availability; NO prediction/model replay",
+  "aggregate_checks": {
+    "retrained_scheme1": {
+      "n": 34161,
+      "base_good": 19103,
+      "new_good": 19032,
+      "rescue": 1756,
+      "lost": 1827,
+      "delta_pp": -0.20783934896519424,
+      "lost_over_base_good_pct": 9.563942836203738
+    },
+    "frozen_scheme1": {
+      "n": 34161,
+      "base_good": 19103,
+      "new_good": 19250,
+      "rescue": 1233,
+      "lost": 1086,
+      "delta_pp": 0.4303152718011768,
+      "lost_over_base_good_pct": 5.68497094697168
+    },
+    "retrained_scheme3": {
+      "n": 34161,
+      "base_good": 19103,
+      "new_good": 19063,
+      "rescue": 1784,
+      "lost": 1824,
+      "delta_pp": -0.1170925909663066,
+      "lost_over_base_good_pct": 9.54823849657122
+    },
+    "frozen_scheme3": {
+      "n": 34161,
+      "base_good": 19103,
+      "new_good": 19246,
+      "rescue": 1348,
+      "lost": 1205,
+      "delta_pp": 0.4186060127045461,
+      "lost_over_base_good_pct": 6.307909752394912
+    }
+  },
+  "split_checks": {
+    "scheme1_conflict_gated": {
+      "indices_exact": {
+        "train": true,
+        "validation": true
+      },
+      "contract_differences": {
+        "encoder_experiment": [
+          "none",
+          "scheme1_conflict_gated"
+        ]
+      },
+      "epochs": 12,
+      "seconds": 216.27290150002227,
+      "val_score_by_epoch": {
+        "3": 0.34034600853919983,
+        "6": 0.339665025472641,
+        "9": 0.33955197036266327,
+        "12": 0.33952492475509644
+      }
+    },
+    "scheme3_coadaptation": {
+      "indices_exact": {
+        "train": true,
+        "validation": true
+      },
+      "contract_differences": {
+        "encoder_experiment": [
+          "none",
+          "scheme3_coadaptation"
+        ]
+      },
+      "epochs": 12,
+      "seconds": 355.00951140001416,
+      "val_score_by_epoch": {
+        "3": 0.3382931649684906,
+        "6": 0.3393077701330185,
+        "9": 0.33954155445098877,
+        "12": 0.33903470635414124
+      }
+    }
+  },
+  "focal_exact_overlap": {
+    "eth": {
+      "n": 364,
+      "in_training_pool": 0,
+      "in_actual_fit": 0,
+      "in_validation": 0
+    },
+    "hotel": {
+      "n": 1197,
+      "in_training_pool": 877,
+      "in_actual_fit": 833,
+      "in_validation": 44
+    },
+    "univ": {
+      "n": 24334,
+      "in_training_pool": 20679,
+      "in_actual_fit": 19644,
+      "in_validation": 1035
+    },
+    "zara01": {
+      "n": 2356,
+      "in_training_pool": 1976,
+      "in_actual_fit": 1886,
+      "in_validation": 90
+    },
+    "zara02": {
+      "n": 5910,
+      "in_training_pool": 4477,
+      "in_actual_fit": 4253,
+      "in_validation": 224
+    }
+  },
+  "horizon_selected_cases": [
+    {
+      "id": 24102,
+      "sequence": "students003",
+      "ped": 102,
+      "start": 144,
+      "old20_label_match_max_abs": 4.524413288464757e-07,
+      "consecutive_future_available_capped60": 22,
+      "full8plus20_present": true,
+      "full8plus24_present": false
+    },
+    {
+      "id": 24063,
+      "sequence": "students003",
+      "ped": 51,
+      "start": 142,
+      "old20_label_match_max_abs": 4.535495889967933e-07,
+      "consecutive_future_available_capped60": 36,
+      "full8plus20_present": true,
+      "full8plus24_present": true
+    },
+    {
+      "id": 20242,
+      "sequence": "students001",
+      "ped": 211,
+      "start": 319,
+      "old20_label_match_max_abs": 4.7069310582514845e-07,
+      "consecutive_future_available_capped60": 33,
+      "full8plus20_present": true,
+      "full8plus24_present": true
+    },
+    {
+      "id": 9433,
+      "sequence": "students001",
+      "ped": 43,
+      "start": 6,
+      "old20_label_match_max_abs": 4.767939447702929e-07,
+      "consecutive_future_available_capped60": 24,
+      "full8plus20_present": true,
+      "full8plus24_present": true
+    },
+    {
+      "id": 24563,
+      "sequence": "students003",
+      "ped": 62,
+      "start": 166,
+      "old20_label_match_max_abs": 4.732707026278149e-07,
+      "consecutive_future_available_capped60": 12,
+      "full8plus20_present": false,
+      "full8plus24_present": false
+    },
+    {
+      "id": 25936,
+      "sequence": "students003",
+      "ped": 377,
+      "start": 224,
+      "old20_label_match_max_abs": 4.450342974138266e-07,
+      "consecutive_future_available_capped60": 17,
+      "full8plus20_present": false,
+      "full8plus24_present": false
+    },
+    {
+      "id": 23454,
+      "sequence": "students003",
+      "ped": 228,
+      "start": 111,
+      "old20_label_match_max_abs": 4.152882819852266e-07,
+      "consecutive_future_available_capped60": 15,
+      "full8plus20_present": false,
+      "full8plus24_present": false
+    },
+    {
+      "id": 21477,
+      "sequence": "students003",
+      "ped": 76,
+      "start": 30,
+      "old20_label_match_max_abs": 4.4634298745904744e-07,
+      "consecutive_future_available_capped60": 31,
+      "full8plus20_present": true,
+      "full8plus24_present": true
+    },
+    {
+      "id": 20275,
+      "sequence": "students001",
+      "ped": 211,
+      "start": 320,
+      "old20_label_match_max_abs": 4.7069310582514845e-07,
+      "consecutive_future_available_capped60": 32,
+      "full8plus20_present": true,
+      "full8plus24_present": true
+    },
+    {
+      "id": 20013,
+      "sequence": "students001",
+      "ped": 307,
+      "start": 312,
+      "old20_label_match_max_abs": 4.529650396989382e-07,
+      "consecutive_future_available_capped60": 60,
+      "full8plus20_present": true,
+      "full8plus24_present": true
+    },
+    {
+      "id": 9332,
+      "sequence": "students001",
+      "ped": 43,
+      "start": 4,
+      "old20_label_match_max_abs": 4.767939447702929e-07,
+      "consecutive_future_available_capped60": 26,
+      "full8plus20_present": true,
+      "full8plus24_present": true
+    },
+    {
+      "id": 2923,
+      "sequence": "crowds_zara02",
+      "ped": 7,
+      "start": 44,
+      "old20_label_match_max_abs": 3.992132029395634e-07,
+      "consecutive_future_available_capped60": 17,
+      "full8plus20_present": false,
+      "full8plus24_present": false
+    },
+    {
+      "id": 8558,
+      "error": "ambiguous full label source",
+      "paths": []
+    },
+    {
+      "id": 1560,
+      "sequence": "crowds_zara01",
+      "ped": 34,
+      "start": 199,
+      "old20_label_match_max_abs": 2.367480567144753e-07,
+      "consecutive_future_available_capped60": 36,
+      "full8plus20_present": true,
+      "full8plus24_present": true
+    },
+    {
+      "id": 6445,
+      "sequence": "crowds_zara02",
+      "ped": 140,
+      "start": 721,
+      "old20_label_match_max_abs": 4.563442388416661e-07,
+      "consecutive_future_available_capped60": 37,
+      "full8plus20_present": true,
+      "full8plus24_present": true
+    },
+    {
+      "id": 8538,
+      "error": "ambiguous full label source",
+      "paths": []
+    },
+    {
+      "id": 6802,
+      "sequence": "crowds_zara02",
+      "ped": 130,
+      "start": 759,
+      "old20_label_match_max_abs": 4.236085544562229e-07,
+      "consecutive_future_available_capped60": 12,
+      "full8plus20_present": false,
+      "full8plus24_present": false
+    },
+    {
+      "id": 5840,
+      "sequence": "crowds_zara02",
+      "ped": 71,
+      "start": 630,
+      "old20_label_match_max_abs": 4.391317975915854e-07,
+      "consecutive_future_available_capped60": 17,
+      "full8plus20_present": false,
+      "full8plus24_present": false
+    },
+    {
+      "id": 5831,
+      "sequence": "crowds_zara02",
+      "ped": 71,
+      "start": 629,
+      "old20_label_match_max_abs": 4.391317975915854e-07,
+      "consecutive_future_available_capped60": 18,
+      "full8plus20_present": false,
+      "full8plus24_present": false
+    }
+  ],
+  "training_raw_shape": [
+    30307,
+    9,
+    20,
+    6
+  ],
+  "source_sha_before": {
+    "<WORKSPACE_ROOT>\\RETRAIN_SCHEMES_20261019\\run_all_retrain.py": "38d732c572c4e447f3d5612a57ec997ba48b84c72ba0a38a9c6c1153cc82b79e",
+    "<WORKSPACE_ROOT>\\RETRAIN_SCHEMES_20261019\\scheme_encoder_adapter.py": "c73c5f7c882836dfe4db77539ef62c783951d26414460a1121066d5b14534bbb",
+    "<WORKSPACE_ROOT>\\INTERACTION_RESIDUAL_SUPERVISION_SERIES\\current_baseline_adapter.py": "dfcc649f104e26391c95f2838b97a2a3523ff70204bfa9e5bd89310d32ee0a2b",
+    "<WORKSPACE_ROOT>\\FRONT_ENCODER_SERIES\\train_front_variant.py": "8bd583d8b4b6972babebaabc939d61848133e082bd9d72aa02a148674ee9058a",
+    "<WORKSPACE_ROOT>\\MODE_TEMPLATE_GROUP_SERIES\\grouped_mode_template_models.py": "d00a30e071a43204ca59c8b42e9a7664461a1ccc3794203537de4e5b8e4bd9e8",
+    "<WORKSPACE_ROOT>\\MULTI_DATASET_GRAPH_NEIGHBOR_BENCHMARK_20261019\\eval_scheme2_neighbor.py": "eec94903e177a2a48fdce3db7e84d21ad5eb755016acff249f2677a8f31008ad",
+    "<WORKSPACE_ROOT>\\MULTI_DATASET_GRAPH_NEIGHBOR_BENCHMARK_20261019\\audit_route_b_rescue_lost.py": "99825b1a7a7f70affdb176681158c5c0da5d5e4c8d6e240b8b4c7b74ff7f6bfe",
+    "<WORKSPACE_ROOT>\\MULTI_DATASET_GRAPH_NEIGHBOR_BENCHMARK_20261019\\SCHEME3_COADAPTATION_RESULTS.json": "6e477b33ea8553bbc584b6feeea6827732804674ef7a568146f2f00a9a75ab0b",
+    "<WORKSPACE_ROOT>\\CANDIDATE_SET_JOINT_FEASIBILITY_EXEC_20261018\\SAMPLE_REVIEW_DIGEST_20261019.md": "f6c15dc14ca22f6593e1b1212ed86853e29b2518bfc1ac123a2f6db29570bbb1",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\models\\stage1_graph.py": "391f8452091ab30b1dacaabcbf43666cc09c4236f44ee8441f007087be5ff105",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\data\\eth_preprocessor.py": "3d2ae5678cd5738fe89282a0182ff89738dcca23f010bccf427cd8846fde76bd",
+    "<WORKSPACE_ROOT>\\RETRAIN_SCHEMES_20261019\\RETRAINED_SCHEMES_BENCHMARK_RESULTS.json": "140857ea45ba9b390e097d28730a60d7c9c3b1d697590f923304bca93eeab9e6",
+    "<WORKSPACE_ROOT>\\MULTI_DATASET_GRAPH_NEIGHBOR_BENCHMARK_20261019\\ROUTE_B_AUDIT_RESULTS.json": "96753e3a3d9bd26d83b7448c74a82bb52a6aa660d3c9276dbd5076b7bee0145b",
+    "<WORKSPACE_ROOT>\\INTERACTION_RESIDUAL_SUPERVISION_SERIES\\results\\general\\baseline\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\metrics.json": "5e6a6e2bdd4d0e3448042dada011ad718285e666877ea23167a074648841d109",
+    "<WORKSPACE_ROOT>\\INTERACTION_RESIDUAL_SUPERVISION_SERIES\\results\\general\\baseline\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\split_indices.npz": "330aa9fe4e688da2e2b10212fa003286fa1a982d2a9e98e9b3a236fae0a5d873",
+    "<WORKSPACE_ROOT>\\RETRAIN_SCHEMES_20261019\\results\\general\\scheme1_conflict_gated\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\metrics.json": "011ccd3b73af3907acd6c52fc251febef7c141ff2d41378de4e1d48a9e1350cc",
+    "<WORKSPACE_ROOT>\\RETRAIN_SCHEMES_20261019\\results\\general\\scheme1_conflict_gated\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\split_indices.npz": "330aa9fe4e688da2e2b10212fa003286fa1a982d2a9e98e9b3a236fae0a5d873",
+    "<WORKSPACE_ROOT>\\RETRAIN_SCHEMES_20261019\\results\\general\\scheme1_conflict_gated\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\history.csv": "365df91f2ef7f1b83b05c1f3d0a22e780f126a135fc66f84c728d54d84f97d9a",
+    "<WORKSPACE_ROOT>\\RETRAIN_SCHEMES_20261019\\results\\general\\scheme3_coadaptation\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\metrics.json": "49906427bf7da531ddc014efa07d098d51563d7c8bba239d240bf66a9e350f88",
+    "<WORKSPACE_ROOT>\\RETRAIN_SCHEMES_20261019\\results\\general\\scheme3_coadaptation\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\split_indices.npz": "330aa9fe4e688da2e2b10212fa003286fa1a982d2a9e98e9b3a236fae0a5d873",
+    "<WORKSPACE_ROOT>\\RETRAIN_SCHEMES_20261019\\results\\general\\scheme3_coadaptation\\f16_temporal_social_cross\\seed_1\\val_scene_-1\\history.csv": "992ff3aae993e9adf778b987c714885fdc4cc4cdfddccceb41b859b01912fe66",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\eth_data_train.npy": "43e2fc02e8a9d42496697fdcf3c1a51c54362a73ce7f4e02e0b784df9b7301f5",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\eth_data_test.npy": "f2b8d3bc65c2ca0f2a0db1541abe4f4e55c92c353323dd30a5698fa3a78975d8",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\hotel_data_test.npy": "6bd3f321fd48ace1c1a296c464601548efcccccfc807ea05f021375dc6c6ad07",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\univ_data_test.npy": "44f765c0e76fe21806f975230957b2f462b6d315b1078f916489419d6a45770e",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\zara01_data_test.npy": "1b9509a9247410a2cb89cdeebfec9bedc4a5b7698551f0f0df2b3e2f777323ef",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\processed_data_diverse\\zara02_data_test.npy": "c5006d1cbabef57321c32bd2d9935fc2e71f260ea1e352e7f9537d91cc51e55f",
+    "<WORKSPACE_ROOT>\\CANDIDATE_SET_JOINT_FEASIBILITY_EXEC_20261018\\ENDPOINT_HORIZON_IDEA_SIMILAR_SAMPLES_24102.json": "e2e3a2b78f3a45c08b59505b12269f4084421d01576e3d5853afabdc3fe186b1",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\labels\\univ\\students003.txt": "3a46399a7c5dc27b95e69c8cc75fa824494e69c0c317c0790a69bca5d5ee3a14",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\labels\\univ\\students001.txt": "4071b40e8d23b485efc8376f697c66753df102903e2923092ab17694c0183249",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\labels\\zara02\\crowds_zara02.txt": "d085bffb646ff89afe5af7964feade56834a81197ba04f567db5a02fd607d4cf",
+    "<LOCAL_DESKTOP>\\DRSE\\ASTRA_ACCURACY_Q20\\datasets\\eth_ucy\\labels\\zara01\\crowds_zara01.txt": "7d2c9a70e33594dbaf3142ec97ade2bc07f41ea681cf0e399057c8fa1da0f5f8"
+  },
+  "source_sha_after_unchanged": true
+}

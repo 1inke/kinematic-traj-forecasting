@@ -1,0 +1,70 @@
+{
+  "version": "decoder-three-direction-A-implementation-v1",
+  "design": "docs/解码端三方向单因素实验设计合同_20261023.md",
+  "status": "PREPARED_NOT_PREFLIGHTED",
+  "splits": {
+    "FIT": 18909,
+    "inner": 1856
+  },
+  "forbidden_splits": [
+    "outer",
+    "original_CAL",
+    "cal_v11",
+    "test"
+  ],
+  "bases": [
+    "knot3_t4_8_12",
+    "FIT_noncentered_svd4_endpoint_positive_sign"
+  ],
+  "screen_gate": {
+    "inner_change_GT_good_min": 0.98,
+    "per_seed_old_positive_netgain_retention_min": 0.8,
+    "ratio_seedmean_accel_max": 0.85
+  },
+  "basis_selection": "largest sum three-seed inner-change postprojection good among passing bases; exact tie knot3 first",
+  "train_arms": [
+    "A_cv_free",
+    "A_cv_basis"
+  ],
+  "parameters_per_arm": 82008,
+  "train_gate": {
+    "coverage_native_min_ratio": 0.99,
+    "positive_netgain_retention_vs_max_control_old_min": 0.9,
+    "accel_each_seed_max_ratio": 0.8,
+    "accel_CI_upper_max": 0.0,
+    "control_ADE_FDE_max_ratio": 1.01
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "epochs": 8,
+  "batch_size": 256,
+  "optimizer_steps_each": 592,
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "clip_norm": 5.0
+  },
+  "loss": "hard same-slot ADE+.5FDE + .05 mean190pairs relu(.3-endpoint_distance), linear hinge",
+  "GT_in_prediction_forward": false,
+  "automatic_training": false,
+  "requires_separate_human_authorization": true,
+  "bootstrap": {
+    "draws": 20000,
+    "seed": 20261023,
+    "paired_model_seeds_and_target_tracks": true,
+    "CI": 0.95
+  },
+  "interpretation": "exploratory fixed-encoder/reused-inner mechanism comparison; L2 screen not infeasibility proof",
+  "selected_basis": "svd4",
+  "screen_RESULT_SHA": "767f9e0e7c3ca9330176b9da00a3b48b73accb6ba3fcf692e4772950fe8306f2",
+  "package": "A",
+  "arms": [
+    "A_cv_free",
+    "A_cv_basis"
+  ],
+  "steps_each": 592
+}

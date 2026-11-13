@@ -1,0 +1,3 @@
+# T2 velocity-coordinate execution
+
+Implementation in progress, no production worker until actual preflight/current source/budget PASS. Read runtime_state.json for current status. C uses reversible native24 velocity features, original integrated output and L0; three fresh runs (42,43,44), 25 epochs. A is reused read-only from certified T1; no T1 retraining or source edits. D NOT_TRIGGERED because T1 retention gate failed. Existing F16 is not loaded or forwarded. All new artifacts only here; new resource guard includes retained lifetime peaks. See REPAIR_DESIGN.md and the six parent design documents. Same-assistant ARS architecture and adversarial checks, not external review.

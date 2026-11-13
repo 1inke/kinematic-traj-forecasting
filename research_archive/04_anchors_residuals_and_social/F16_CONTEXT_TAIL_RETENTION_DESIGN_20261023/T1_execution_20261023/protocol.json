@@ -1,0 +1,200 @@
+{
+  "version": "f16-context-tail-retention-v1-20261023",
+  "status": "EXECUTION_ACTUAL_PREFLIGHT_COMPLETE",
+  "execution_authorized_by_this_document": false,
+  "root_prior_execution": "qoder_work/F16_CONTEXT_COMPLEMENTARITY_DESIGN_20261022/execution_20261022",
+  "stages": [
+    "D0_saved_error_attribution",
+    "D1_saved_motion_alignment",
+    "T1_conditional_paired_training",
+    "R_audit_and_report"
+  ],
+  "splits": {
+    "FIT": 18909,
+    "inner": 1856
+  },
+  "forbidden_evaluation": [
+    "outer",
+    "original_CAL",
+    "cal_v11",
+    "external_test"
+  ],
+  "D0_D1": {
+    "prior_model_split_jobs": 6,
+    "native_reference_jobs": 2,
+    "new_model_forward": false,
+    "train": false,
+    "shared_saved_data_scan": true,
+    "same_path_slot": "min_J_first_original_slot_exact_ties",
+    "tail_positive_delta_top_fractions": [
+      0.01,
+      0.05,
+      0.1
+    ],
+    "observation_speed_bins_mps": [
+      0.0,
+      0.1,
+      0.5,
+      1.0,
+      "infinity"
+    ],
+    "endpoint_angle_min_norm_m": 0.2,
+    "velocity_angle_min_norm_mps": 0.05,
+    "train_entry": "all_three_inner_change_neither_contributions_positive_for_ADE_or_FDE_and_mean_largest_positive_component_for_at_least_one_metric",
+    "motion_diagnostic_does_not_modify_gate": true
+  },
+  "training": {
+    "arms": [
+      "A_replay",
+      "P_relative"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "max_fresh_runs": 6,
+    "epochs": 8,
+    "max_total_epochs": 48,
+    "batch_size": 256,
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "grad_clip_norm": 5.0,
+    "checkpoint": "fixed_epoch8",
+    "K": 20,
+    "input_dimension": 210,
+    "trainable_parameters": 82008,
+    "input": "past16+last_observed_velocity2+last_token96+mean8tokens96",
+    "base": "mean(min20(ADE+0.5FDE))+0.05*mean190(endpoint_linear_hinge_0.3)",
+    "relative": "0.2*mean(relu(min20(max(ADE/0.2,FDE/0.4))-detach(native_min20_J)))",
+    "relative_lambda": 1.0,
+    "relative_in_control": false,
+    "native_reference_training_dtype": "float32",
+    "evaluation_dtype": "float64",
+    "GT_native_reference_in_forward": false,
+    "teacher_coordinate_distillation": false,
+    "same_initial_states_statistics_orders": true,
+    "warmstart_prior_final_model": false,
+    "automatic_hyperparameter_search": false
+  },
+  "primary": {
+    "split": "inner",
+    "group": "change",
+    "metric": "mean_positive_J_excess_over_native",
+    "contrast": "P_relative_minus_A_replay",
+    "relative_reduction_min": 0.2,
+    "all_seeds_improve": true,
+    "paired_track_seed_CI_upper_lt_zero": true,
+    "fixed_seed_track_sensitivity_upper_lt_zero": true
+  },
+  "mechanism_guards": {
+    "groups": [
+      "overall",
+      "change"
+    ],
+    "split": "inner",
+    "all_seeds": true,
+    "positive_control_coverage_gain_required": true,
+    "coverage_net_gain_over_native_retained_fraction": 0.9,
+    "native_success_lost_rate_no_worse_than_control": true,
+    "ADE_FDE_control_ratio_max": 1.01,
+    "does_not_replace_baseline_gate": true
+  },
+  "baseline_gate": {
+    "splits": [
+      "FIT",
+      "inner"
+    ],
+    "groups": [
+      "overall",
+      "stable",
+      "transition",
+      "change"
+    ],
+    "all_seeds": true,
+    "coverage_native_ratio_min": 0.99,
+    "ADE_FDE_native_ratio_max": 1.01,
+    "all_five_pooled_motion_native_ratio_max": 1.01,
+    "evaluation_epsilon": 0,
+    "dt": 0.4,
+    "motion_lengths": [
+      12,
+      11,
+      10
+    ],
+    "quantile_method": "linear",
+    "major_original_gate_preserved": true
+  },
+  "bootstrap": {
+    "draws": 20000,
+    "rng_seed": 20261023,
+    "unit": "sequence_plus_target_track",
+    "track_population": "all_inner_tracks",
+    "shared_track_draw_all_arms_seeds_groups": true,
+    "paired_seed_resampling": true,
+    "window_weighted_then_seed_mean": true,
+    "primary_limits": [
+      0.025,
+      0.975
+    ],
+    "secondary_family_count": 16,
+    "secondary_comparisons": [
+      "P_minus_A",
+      "P_minus_native"
+    ],
+    "secondary_groups": [
+      "overall",
+      "change"
+    ],
+    "secondary_metrics": [
+      "coverage",
+      "minADE",
+      "minFDE",
+      "reference_success_lost_rate"
+    ],
+    "secondary_limits": [
+      0.0015625,
+      0.9984375
+    ],
+    "minimum_group_tracks": 20,
+    "maximum_invalid_denominator_fraction": 0.05,
+    "interpretation": "exploratory_reused_inner_not_independent_scene_generalization"
+  },
+  "runtime_fields_required_before_launch": {
+    "source_manifest_digest": null,
+    "source_extension_digest": null,
+    "preflight_status": null,
+    "memory_estimate_E_bytes": null,
+    "actual_benchmark_seconds": null,
+    "actual_eta_seconds": null
+  },
+  "startup_fields_required_after_launch": {
+    "sole_worker_identity": null,
+    "actual_start_time": null,
+    "query_at": null,
+    "completion_at": null
+  },
+  "resource": {
+    "policy": "task_inventory_E_dynamic_remaining_physical_commit_retained_Windows_peak",
+    "factor": 1.3,
+    "no_fixed_obsolete_30min_6GiB_6hour_rule": true,
+    "change_OS_pagefile_or_kill_user_programs": false
+  },
+  "completion": {
+    "requires_worker_and_exit_success": true,
+    "saved_independent_audit": true,
+    "automatic_B_Ebal_training": false,
+    "automatic_scorer_training": false,
+    "automatic_fourth_variant": false,
+    "baseline_upgrade_by_local_primary": false
+  },
+  "execution_authorized_by_user": "2026-10-23 按照原计划执行",
+  "implementation": "T1_execution_20261023",
+  "actual_stages": [
+    "T1_A_replay_P_relative",
+    "R"
+  ],
+  "D0_D1_entry": "prior independently audited ALLOW_T1_ACTUAL_PREFLIGHT",
+  "secondary_lost_rate_interpretation": "For P-A, P lost among A successes / A successes (A self-reference0); P-native analogous. Engineering native-success lost P vs A separately evaluated."
+}

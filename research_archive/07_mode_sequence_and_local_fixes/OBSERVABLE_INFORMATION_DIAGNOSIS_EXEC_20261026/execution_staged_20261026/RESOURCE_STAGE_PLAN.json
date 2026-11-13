@@ -1,0 +1,21 @@
+{
+  "version": "serial_bounded_processes_v1",
+  "factor": 1.3,
+  "old_6GiB_estimate_and_STOP_preserved": true,
+  "not_a_change_to_scientific_protocol": true,
+  "execution": "one subprocess at a time; child exits before next stage; no persistent all-feature or GPU process while CPU trees run",
+  "estimates_bytes": {"source_prepare": 1073741824, "MLP": 3758096384, "TREE": 2147483648, "AUDIT": 2147483648},
+  "inventory": {
+    "source_prepare": "single-thread numpy/stdlib + hash buffers + bounded128 feature chunks and labels, <=1GiB estimate",
+    "MLP": "torch/CUDA baseline2.50GiB + at most128 raw windows(.062GiB)/batch32 activations and gradients(.20GiB) + metadata/checkpoint(.10GiB) + allocator/IO/supervisor(.638GiB); total3.5GiB",
+    "TREE": "no Torch import: sampled float32 rows<=.159GiB, sklearn float64copy<=.317GiB, bins/hist/grad/workcopies<=.80GiB, runtime/IO/supervisor reserve<=.724GiB; total2GiB",
+    "AUDIT": "no Torch import or GPU; one arm/population at a time; bounded saved arrays/complete-link/pooled stats and trackdraw scratch;2GiB"
+  },
+  "startup": "both available physical and commit>=1.3 stageE, parent supervisor allowance included in inventory",
+  "runtime": "physical>=1.3max(stageE-currentRSS,0), commit>=1.3max(stageE-currentprivate,0), current+Windows retained peaks<=1.3stageE; collect actual stage peak, STOP if underestimated; never silently increase E",
+  "require_actual_stage_preflight_before_production": true,
+  "threads": {"OMP": 1, "OPENBLAS": 1, "MKL": 1, "torch_CPU": 1},
+  "disk_planning_bytes": 2147483648,
+  "disk_factor": 1.3,
+  "no_deletion_OS_pagefile_userkill": true
+}

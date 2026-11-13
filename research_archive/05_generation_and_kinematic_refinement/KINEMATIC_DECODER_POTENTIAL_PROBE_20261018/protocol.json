@@ -1,0 +1,21 @@
+﻿{
+  "name": "KINEMATIC_DECODER_POTENTIAL_PROBE",
+  "date": "2026-10-18",
+  "parent": "KINEMATIC_DECODER_SPEED_CLAMP_20261018",
+  "focus": "KIN+clamp longer train; beat native coverage?",
+  "variants": {
+    "LONG": {"epochs": 32, "v_max_scale": 0.995, "a_max_scale": 0.90, "motion_w": 0.05},
+    "LONG_RELAX": {"epochs": 32, "v_max_scale": 1.00, "a_max_scale": 0.95, "motion_w": 0.05}
+  },
+  "optional_BASE_ref": {"epochs": 32, "seeds": [42]},
+  "seeds": [42, 43, 44],
+  "batch": 256,
+  "quality_ADE_FDE": [0.2, 0.4],
+  "motion_factor": 1.01,
+  "gates": {
+    "A_seed": "cov>=native AND motion PASS on >=2/3 seeds",
+    "B_mean": "mean cov >= native",
+    "C_migration": "report FIT-outer gap; migration_ok if abs(gap)<=0.03 when outer gate relevant"
+  },
+  "not_in_scope": ["P1", "P2", "MODE_PRESERVING", "lambda_grid"]
+}

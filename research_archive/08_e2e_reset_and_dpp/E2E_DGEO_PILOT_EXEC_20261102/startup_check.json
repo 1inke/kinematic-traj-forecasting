@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-11-03T00:35:58.9058044+09:00",
+  "actual_pid": 54228,
+  "process_chain": [
+    {
+      "ProcessId": 54228,
+      "ParentProcessId": 13520,
+      "CreationDate": "/Date(1793637351745)/",
+      "ExecutablePath": "<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe",
+      "CommandLine": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B \"<WORKSPACE_ROOT>\\qoder_work\\E2E_DGEO_PILOT_EXEC_20261102\\worker.py\""
+    },
+    {
+      "ProcessId": 13520,
+      "ParentProcessId": 3184,
+      "CreationDate": "/Date(1793637351291)/",
+      "ExecutablePath": "<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe",
+      "CommandLine": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B \"<WORKSPACE_ROOT>\\qoder_work\\E2E_DGEO_PILOT_EXEC_20261102\\worker.py\""
+    },
+    {
+      "ProcessId": 3184,
+      "ParentProcessId": 2136,
+      "CreationDate": "/Date(1793108203162)/",
+      "ExecutablePath": null,
+      "CommandLine": null
+    }
+  ],
+  "task_state": "Running",
+  "XML_trigger_count": 0,
+  "worker": {
+    "at": "2026-11-03T00:35:52.411329+09:00",
+    "status": "RUNNING",
+    "stage": "DG-Base",
+    "child_pid": 47240,
+    "child_command": [
+      "<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe",
+      "-B",
+      "<WORKSPACE_ROOT>\\qoder_work\\E2E_DGEO_PILOT_EXEC_20261102\\train_arm.py",
+      "--arm",
+      "DG-Base"
+    ]
+  },
+  "exit": null,
+  "progress": null,
+  "stderr": [
+    {
+      "Name": "DG-Base_stderr.log",
+      "Length": 0
+    }
+  ],
+  "status": "PASS_ONE_STARTUP_ACTUAL_WORKER_CLI_CREATE_PARENT_TASK0"
+}

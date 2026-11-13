@@ -1,0 +1,112 @@
+{
+  "experiment": "EXP-183A-R2-V",
+  "dataset": "SDD",
+  "smoke": true,
+  "trajectory_model": "EXP-175S0 seed1 frozen",
+  "scene_backbone": "DINOv2-small frozen offline",
+  "selection_stage": "linear",
+  "validation_selected_scene_variant": "Q2_crop_centered",
+  "samples": {
+    "train": 32,
+    "validation": 32,
+    "test": 32
+  },
+  "variants": [
+    {
+      "stage": "linear",
+      "variant": "Native",
+      "validation_video_macro_spearman": 0.8300386382623225,
+      "test_video_macro_spearman": 0.7005940175113108,
+      "samples": 32,
+      "spearman": 0.7079417293233083,
+      "top1_hit": 0.125,
+      "top3_recall": 0.25,
+      "top5_recall": 0.53125,
+      "mean_regret_px": 20.003074645996094,
+      "p95_regret_px": 58.98096218109131
+    },
+    {
+      "stage": "linear",
+      "variant": "Q0_model_only",
+      "validation_video_macro_spearman": 0.775704887218045,
+      "test_video_macro_spearman": 0.7216772450607037,
+      "samples": 32,
+      "spearman": 0.6715225563909775,
+      "top1_hit": 0.125,
+      "top3_recall": 0.40625,
+      "top5_recall": 0.53125,
+      "mean_regret_px": 18.7797794342041,
+      "p95_regret_px": 58.98096218109131
+    },
+    {
+      "stage": "linear",
+      "variant": "Q1_spatial_raw",
+      "validation_video_macro_spearman": 0.6575605680868839,
+      "test_video_macro_spearman": 0.6634612505289197,
+      "samples": 32,
+      "spearman": 0.6524436090225564,
+      "top1_hit": 0.125,
+      "top3_recall": 0.34375,
+      "top5_recall": 0.4375,
+      "mean_regret_px": 22.93345069885254,
+      "p95_regret_px": 68.58072357177734
+    },
+    {
+      "stage": "linear",
+      "variant": "Q2_crop_centered",
+      "validation_video_macro_spearman": 0.7460421888053467,
+      "test_video_macro_spearman": 0.6709654005142727,
+      "samples": 32,
+      "spearman": 0.6607142857142857,
+      "top1_hit": 0.09375,
+      "top3_recall": 0.4375,
+      "top5_recall": 0.5625,
+      "mean_regret_px": 22.682369232177734,
+      "p95_regret_px": 72.97798500061035
+    },
+    {
+      "stage": "linear",
+      "variant": "Q3_video_centered",
+      "validation_video_macro_spearman": 0.6776211361737677,
+      "test_video_macro_spearman": 0.6709855808352049,
+      "samples": 32,
+      "spearman": 0.63171992481203,
+      "top1_hit": 0.0625,
+      "top3_recall": 0.3125,
+      "top5_recall": 0.46875,
+      "mean_regret_px": 26.734617233276367,
+      "p95_regret_px": 83.81969718933105
+    }
+  ],
+  "video_id_diagnostic": [
+    {
+      "variant": "V0_pooled_DINO",
+      "train_holdout_video_id_accuracy": 0.7
+    },
+    {
+      "variant": "Q1_spatial_raw",
+      "train_holdout_video_id_accuracy": 0.65
+    },
+    {
+      "variant": "Q2_crop_centered",
+      "train_holdout_video_id_accuracy": 0.65
+    },
+    {
+      "variant": "Q3_video_centered",
+      "train_holdout_video_id_accuracy": 0.65
+    }
+  ],
+  "gates": {
+    "spearman_gain": -0.05071184454643107,
+    "spearman_gain_ge_0p05": false,
+    "top5_gain_pp": 3.125,
+    "top5_gain_ge_5pp": false,
+    "positive_videos": 3,
+    "positive_videos_ge_12_of_17": false,
+    "mean_regret_gain_pct": -20.780807419206138,
+    "mean_regret_gain_ge_5pct": false,
+    "p95_regret_change_pct": 23.731425025830344,
+    "p95_regret_safe": false
+  },
+  "decision": "STOP_SCENE_VISUAL_BRANCH"
+}

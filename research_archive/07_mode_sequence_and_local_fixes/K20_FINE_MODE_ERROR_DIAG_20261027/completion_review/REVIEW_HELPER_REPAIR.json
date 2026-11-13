@@ -1,0 +1,11 @@
+{
+  "old_script": "review_saved.py",
+  "old_failure": "independent entry angle assertion",
+  "cause": "reviewer subtracted float32 cached past before casting, unlike preregistered float64 arithmetic",
+  "current_script": "review_saved_v2.py",
+  "change": "cast history to float64 before independent history3 subtraction",
+  "actual_full_opt_direction_maxerror_after_fix": 0.0,
+  "production_scientific_sources_or_outputs_changed": false,
+  "old_failed_code_retained": true,
+  "tolerance_unchanged": 2e-12
+}

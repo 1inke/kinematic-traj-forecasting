@@ -1,0 +1,67 @@
+{
+  "checked_at": "2026-10-22T23:23:03.0319636+09:00",
+  "task": "Trajectory-F16ContextComplementarity-S1-20261022",
+  "task_state": "Running",
+  "triggers": 0,
+  "processes": [
+    {
+      "ProcessId": 27040,
+      "ParentProcessId": 2804,
+      "CreationDate": "2026-10-22T23:16:15.134193+09:00",
+      "CommandLine": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\F16_CONTEXT_COMPLEMENTARITY_DESIGN_20261022\\execution_20261022\\independent_worker.py\""
+    },
+    {
+      "ProcessId": 21420,
+      "ParentProcessId": 27040,
+      "CreationDate": "2026-10-22T23:16:15.565073+09:00",
+      "CommandLine": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\F16_CONTEXT_COMPLEMENTARITY_DESIGN_20261022\\execution_20261022\\independent_worker.py\""
+    }
+  ],
+  "worker": {
+    "status": "RUNNING",
+    "pid": 21420,
+    "parent": 27040,
+    "started_at": "2026-10-22T23:16:17.528975+09:00",
+    "stage": "IMPORT_S1"
+  },
+  "exit": null,
+  "progress": {
+    "stage": "EVALUATE_SAVE_AUDIT",
+    "at": "2026-10-22T23:21:08.140378+09:00",
+    "status": "RUNNING",
+    "active_worker": true,
+    "split": "FIT",
+    "arm": "A",
+    "seed": 43,
+    "epoch": 7
+  },
+  "stderr_bytes": 0,
+  "histories": [
+    {
+      "arm": "A",
+      "seed": 42,
+      "epochs": 8
+    },
+    {
+      "arm": "A",
+      "seed": 43,
+      "epochs": 8
+    },
+    {
+      "arm": "A",
+      "seed": 44,
+      "epochs": 0
+    }
+  ],
+  "completed_scientific_jobs": 2,
+  "check_kind": "ONE_EXPECTED_ELAPSED_50PCT",
+  "first_progress_query_done": true,
+  "first_progress_query_count": 1,
+  "scheduled_query_at": "2026-10-22T23:22:28.265856+09:00",
+  "remaining_minutes_estimate": [
+    3,
+    5
+  ],
+  "next_completion_query": "2026-10-22T23:28:40+09:00",
+  "interpretation": "Actual two completed8epoch trainings, two independently audited scientific model-population outputs; stage EVALUATE_SAVE_AUDIT A43 FIT. Initial worker envelope IMPORT_S1 and runtime epoch7 are stale envelope fields, not training counters. Only histories establish completed8epochs. No scientific completion."
+}

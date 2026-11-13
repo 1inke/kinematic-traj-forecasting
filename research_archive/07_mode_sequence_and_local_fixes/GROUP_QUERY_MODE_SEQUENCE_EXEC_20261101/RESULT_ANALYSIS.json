@@ -1,0 +1,103 @@
+{
+  "result": {
+    "status": "ANALYZED_SKIPPED_BUDGET_BEFORE_PRODUCTION",
+    "authorization": "human2026-11-01 execute directory",
+    "stage": "Q",
+    "numerical_preflight": "PASS",
+    "production_budget": "SKIPPED_BUDGET",
+    "registered_seconds_limit": 1800,
+    "nominal_seconds": 3060.684004452808,
+    "conservative_seconds": 3672.8208053433696,
+    "scientific_models": 0,
+    "scientific_epochs": 0,
+    "scientific_updates": 0,
+    "fixture_AdamW_updates": 112,
+    "Q1_parameters_actual": 82008,
+    "Q3_parameters_actual": 82648,
+    "export_parameters_actual": 82008,
+    "main_K": 20,
+    "source_count": 6042,
+    "GPU_memory_not_blocker": true,
+    "M": "NOT_TRIGGERED_Q_NOT_RUN",
+    "E": "NOT_TRIGGERED_Q_M_NOT_RUN",
+    "OS_task_created": false,
+    "new_automation_created": false,
+    "no_old_PID_task_log_queries": true,
+    "no_delete": true,
+    "old_PAUSED_untouched": true,
+    "baseline_promoted": false,
+    "historycycle11_unchanged": true,
+    "long_term_goal_not_claimed_complete": true,
+    "next_action": "No science launch under registered30min; retain all implementation, fixtures and timings. A changed runtime budget needs explicit amendment, not fewer audits/epochs/seeds/windows."
+  },
+  "benchmark": {
+    "status": "SKIPPED_BUDGET",
+    "training_seconds": 187.42079161372385,
+    "saved_population_seconds": 1230.321740119573,
+    "independent_completion_seconds": 1230.321740119573,
+    "source_hash_seconds": 292.6490567999426,
+    "one_source_pass_seconds": 73.16226419998566,
+    "bootstrap_twice_seconds": 29.97067579999566,
+    "IO_export_diagnostics_margin": 90.0,
+    "nominal_seconds": 3060.684004452808,
+    "conservative_full_seconds": 3672.8208053433696,
+    "ETA_seconds": [
+      2570.9745637403585,
+      5509.231208015054
+    ],
+    "real_pipeline": [
+      {
+        "N": 128,
+        "seconds": 1.08342460001586
+      },
+      {
+        "N": 512,
+        "seconds": 3.310053399996832
+      },
+      {
+        "N": 1024,
+        "seconds": 6.706629399966914
+      }
+    ],
+    "real_bootstrap_seconds": 14.98533789999783,
+    "real_bootstrap_independent_error": 0.0,
+    "scientific_windows_main_including_native": 145355.0,
+    "rate_upper_envelope": 0.008464254687623907,
+    "throughput": {
+      "Q1": {
+        "warmup": 4,
+        "measured": 32,
+        "mean": 0.03853183124920179,
+        "max": 0.048218199983239174,
+        "parameter_count": 82008
+      },
+      "Q3": {
+        "warmup": 4,
+        "measured": 32,
+        "mean": 0.0669978937585256,
+        "max": 0.08506280003348365,
+        "parameter_count": 82648
+      }
+    },
+    "implementation_person_time_not_runtime": true
+  },
+  "research_review": {
+    "status": "BUDGET_GATE_STOP_NOT_SCIENTIFIC_FAILURE",
+    "same_assistant_inline_not_external": true,
+    "DA1": {
+      "verdict": "PASS_FINITE_DESIGN_WITH_LIMITS",
+      "issue": "Additional640 parameters and triple decoder training confound pure supervision interpretation",
+      "mitigation": "Disclose cost; bound-query fixture verifies no spurious loss scaling; native safety remains separate"
+    },
+    "DA2": {
+      "verdict": "PASS_BUDGET_STOP",
+      "issue": "Small pipeline timings include IO and review fixed costs; linear extrapolation is a conservative bound, not measured full runtime",
+      "mitigation": "Report128/512/1024 all timings and budget components; do not call61min observed science or mathematical impossibility"
+    },
+    "DA3": {
+      "verdict": "PASS_NO_EFFICACY_CLAIM",
+      "issue": "GPU/FD/resume passing proves implementation fixtures, not full training efficacy or native protection",
+      "mitigation": "Report scientific models0; M/E nottriggered; no baseline promotion or information insufficiency conclusion"
+    }
+  }
+}

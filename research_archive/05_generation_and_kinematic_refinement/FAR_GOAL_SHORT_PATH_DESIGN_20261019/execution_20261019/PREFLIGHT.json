@@ -1,0 +1,251 @@
+{
+  "status": "PASS",
+  "at": "2026-10-19T21:45:26.152087+09:00",
+  "elapsed_seconds": 80.26392769999802,
+  "H0_independent": {
+    "status": "PASS",
+    "old8plus12_reconstruction_max_error": 0.0,
+    "valid_FIT_new_held_overlap": 0,
+    "all_ids": 28791,
+    "training": 18909,
+    "primary_outer": 1035,
+    "actual_output_SHA_PASS": true
+  },
+  "fixtures": {
+    "status": "PASS",
+    "paired_all_weights_buffers": true,
+    "initial_paths_exact": true,
+    "not_native_identity": true,
+    "GT_API_isolated": true,
+    "geometry_max_error": 0.0,
+    "p12_is_z_plus_a": true,
+    "loss_scalar": [
+      {
+        "H": 12,
+        "loss_error": 0.0
+      },
+      {
+        "H": 20,
+        "loss_error": 0.0
+      }
+    ],
+    "empty_mask_NaN_safe": true,
+    "first_tie_same_slot": true
+  },
+  "FD": {
+    "status": "PASS",
+    "float64_copy_not_float32_quantization_proof": true,
+    "results": [
+      {
+        "eps": 0.0001,
+        "automatic": 0.36555592835824535,
+        "finite_difference": 0.36555589625821006,
+        "error": 3.210003529652283e-08,
+        "tolerance": 3.7555592835824534e-05,
+        "activities_unchanged": true
+      },
+      {
+        "eps": 1e-05,
+        "automatic": 0.36555592835824535,
+        "finite_difference": 0.3655559280377196,
+        "error": 3.2052577259022996e-10,
+        "tolerance": 3.7555592835824534e-05,
+        "activities_unchanged": true
+      }
+    ]
+  },
+  "GPU8": [
+    {
+      "status": "PASS",
+      "H": 12,
+      "first_gradnorm": {
+        "query": 0.0,
+        "context.0.weight": 0.0,
+        "context.0.bias": 0.0,
+        "context.2.weight": 0.0,
+        "context.2.bias": 0.0,
+        "goal_head.0.weight": 0.0,
+        "goal_head.0.bias": 0.0,
+        "goal_head.2.weight": 0.11702782295331955,
+        "goal_head.2.bias": 0.3628975208212184,
+        "process_head.0.weight": 0.0,
+        "process_head.0.bias": 0.0,
+        "process_head.2.weight": 0.16511540931789814,
+        "process_head.2.bias": 0.3200484497424909
+      },
+      "max_over8_gradnorm": {
+        "query": 0.0006445033360931672,
+        "context.0.weight": 0.0041355027260487716,
+        "context.0.bias": 0.0003095688667430242,
+        "context.2.weight": 0.003399664035257284,
+        "context.2.bias": 0.0007233898009621151,
+        "goal_head.0.weight": 0.0017282147387630833,
+        "goal_head.0.bias": 0.0018700943658921043,
+        "goal_head.2.weight": 0.11702782295331955,
+        "goal_head.2.bias": 0.3628975208212184,
+        "process_head.0.weight": 0.003673757202347379,
+        "process_head.0.bias": 0.0014764686960597124,
+        "process_head.2.weight": 0.16511540931789814,
+        "process_head.2.bias": 0.3200484497424909
+      },
+      "zero_last_phases_reported": true,
+      "saved128_independent_quality_clusters_motion_PASS": true,
+      "reconstruction_max_error": 0.0,
+      "eval_all_weights_buffers_exact": true,
+      "H2_actual_frozen_overrides": [
+        {
+          "condition": "CV",
+          "override_EXACT": true,
+          "endpoint_z_plus_a": true
+        },
+        {
+          "condition": "cross_track",
+          "override_EXACT": true,
+          "endpoint_z_plus_a": true
+        },
+        {
+          "condition": "GT_local_only_m20",
+          "n": 67,
+          "override_EXACT": true
+        }
+      ],
+      "saved128_full_pipeline_seconds": 0.6615200999949593,
+      "FIT256_step_mean_seconds": 0.015121449998332537,
+      "warmup": 4,
+      "measured": 32
+    },
+    {
+      "status": "PASS",
+      "H": 20,
+      "first_gradnorm": {
+        "query": 0.0,
+        "context.0.weight": 0.0,
+        "context.0.bias": 0.0,
+        "context.2.weight": 0.0,
+        "context.2.bias": 0.0,
+        "goal_head.0.weight": 0.0,
+        "goal_head.0.bias": 0.0,
+        "goal_head.2.weight": 0.11905485590445349,
+        "goal_head.2.bias": 0.36608139570509884,
+        "process_head.0.weight": 0.0,
+        "process_head.0.bias": 0.0,
+        "process_head.2.weight": 0.16511540931789814,
+        "process_head.2.bias": 0.3200484497424909
+      },
+      "max_over8_gradnorm": {
+        "query": 0.0006229618762210377,
+        "context.0.weight": 0.004083361999698947,
+        "context.0.bias": 0.0003672357878444003,
+        "context.2.weight": 0.003356667046815959,
+        "context.2.bias": 0.0008688016010286053,
+        "goal_head.0.weight": 0.0016966515406791633,
+        "goal_head.0.bias": 0.0023105442219547865,
+        "goal_head.2.weight": 0.11905485590445349,
+        "goal_head.2.bias": 0.36608139570509884,
+        "process_head.0.weight": 0.0036735704860794225,
+        "process_head.0.bias": 0.0014764688473288578,
+        "process_head.2.weight": 0.16511540931789814,
+        "process_head.2.bias": 0.3200484497424909
+      },
+      "zero_last_phases_reported": true,
+      "saved128_independent_quality_clusters_motion_PASS": true,
+      "reconstruction_max_error": 0.0,
+      "eval_all_weights_buffers_exact": true,
+      "H2_actual_frozen_overrides": [
+        {
+          "condition": "CV",
+          "override_EXACT": true,
+          "endpoint_z_plus_a": true
+        },
+        {
+          "condition": "cross_track",
+          "override_EXACT": true,
+          "endpoint_z_plus_a": true
+        },
+        {
+          "condition": "GT_local_only_m20",
+          "n": 67,
+          "override_EXACT": true
+        }
+      ],
+      "saved128_full_pipeline_seconds": 0.7177932000195142,
+      "FIT256_step_mean_seconds": 0.013826696870637534,
+      "warmup": 4,
+      "measured": 32
+    }
+  ],
+  "real_subset_resume": [
+    {
+      "status": "PASS_EXACT",
+      "horizon": 12,
+      "FIT": 513,
+      "inner": 12,
+      "epochs": 2,
+      "steps": 6,
+      "all_params_buffers_optimizer_all_RNG_history_exact": true,
+      "serialized_checkpoint_sha": "eb289c0d5233f035ec926798d38c3040c9c5fa12e5d423107d0f7c17747e7982"
+    },
+    {
+      "status": "PASS_EXACT",
+      "horizon": 20,
+      "FIT": 513,
+      "inner": 12,
+      "epochs": 2,
+      "steps": 6,
+      "all_params_buffers_optimizer_all_RNG_history_exact": true,
+      "serialized_checkpoint_sha": "9162da9db3808cc37ae96ba21884bbc2575cc4ffeaeafb636203fe77fe4d62fc"
+    }
+  ],
+  "bad_contracts": {
+    "status": "PASS",
+    "completed_SHA_skip": true,
+    "rejected": [
+      "source",
+      "representation",
+      "output"
+    ]
+  },
+  "bootstrap_fixture": {
+    "status": "PASS",
+    "draws": 20000,
+    "family": 16,
+    "max_error": 4.440892098500626e-16,
+    "independent_track_loop": true
+  },
+  "shared_stat_independent_max_errors": {
+    "p2": 5.10702591327572e-15,
+    "v": 2.7755575615628914e-16,
+    "z": 2.6645352591003757e-15
+  },
+  "parameters": 32136,
+  "source_count": 7505,
+  "source_digest": "a6d884ce72115dd17a6c971eb490305f3d032e4e77f22d088aa6ef13e44719e3",
+  "planning_seconds": 2297.2830406683397,
+  "ETA_seconds": [
+    1608.0981284678378,
+    3445.9245610025096
+  ],
+  "ETA_basis": {
+    "training_steps": 11100,
+    "training_seconds": 160.6622151227839,
+    "total_normal_plus_H2_rows_conservative": 251934,
+    "actual_measured_saved_audit_per_row": 0.005607759375152455,
+    "metric_IO_multiplier": 1.3,
+    "CI_compression_source_seconds": 300
+  },
+  "disk_free_bytes": 14275534848,
+  "uncompressed_path_bytes": 967426560,
+  "conservative_storage_bytes": 6017189888,
+  "resource": {
+    "checks": 734,
+    "peak_private_bytes": 2875514880,
+    "peak_RSS_bytes": 1966477312,
+    "min_physical_bytes": 15140384768,
+    "min_commit_bytes": 19198500864,
+    "estimated_peak_bytes": 5700000000,
+    "safety_factor": 1.3,
+    "retained_lifetime_peaks": true
+  },
+  "old_modules_not_forwarded_or_updated": true,
+  "not_external_review": true
+}

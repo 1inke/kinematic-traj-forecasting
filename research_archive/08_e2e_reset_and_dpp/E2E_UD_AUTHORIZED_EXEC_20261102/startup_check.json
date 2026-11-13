@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-11-02T19:13:03.9292366+09:00",
+  "actual_pid": 48200,
+  "process_chain": [
+    {
+      "ProcessId": 48200,
+      "ParentProcessId": 9912,
+      "CreationDate": "/Date(1793617981117)/",
+      "ExecutablePath": "<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe",
+      "CommandLine": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B \"<WORKSPACE_ROOT>\\qoder_work\\E2E_UD_AUTHORIZED_EXEC_20261102\\worker.py\""
+    },
+    {
+      "ProcessId": 9912,
+      "ParentProcessId": 3184,
+      "CreationDate": "/Date(1793617980958)/",
+      "ExecutablePath": "<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe",
+      "CommandLine": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B \"<WORKSPACE_ROOT>\\qoder_work\\E2E_UD_AUTHORIZED_EXEC_20261102\\worker.py\""
+    },
+    {
+      "ProcessId": 3184,
+      "ParentProcessId": 2136,
+      "CreationDate": "/Date(1793108203162)/",
+      "ExecutablePath": null,
+      "CommandLine": null
+    }
+  ],
+  "task_state": "Running",
+  "XML_trigger_count": 0,
+  "worker": {
+    "at": "2026-11-02T19:13:01.735446+09:00",
+    "status": "RUNNING",
+    "stage": "U-GRU",
+    "child_pid": 16408,
+    "child_command": [
+      "<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe",
+      "-B",
+      "<WORKSPACE_ROOT>\\qoder_work\\E2E_UD_AUTHORIZED_EXEC_20261102\\train_arm.py",
+      "--arm",
+      "U-GRU"
+    ]
+  },
+  "exit": null,
+  "progress": null,
+  "stderr": [
+    {
+      "Name": "U-GRU_stderr.log",
+      "Length": 0
+    }
+  ],
+  "status": "PASS_ONE_STARTUP_ACTUAL_WORKER_CLI_CREATE_PARENT_TASK0"
+}

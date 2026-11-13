@@ -1,0 +1,21 @@
+# Fresh E2E motion reset: C0 then B0
+
+User execution authorization: 2026-11-02, execute the supplied next-stage design and continue. The original DESIGN_ONLY documents remain unchanged historical snapshots.
+
+Current finite scope: C0 source/calibration and one fresh B0 seed42 / eight fixed epochs / batch64. No U, D, V or 60-model formal study automatically launched. Old Q FAIL and old scientific gates unchanged. No files deleted or old tasks queried/restarted.
+
+C0 reconstructs the official ETH TRAIN target pool from seven recording labels. All 30,307 target windows match the old processed focal path multiset exactly; old neighbors are not reused because their eligibility required future existence. New neighbors use only full eight observed times and nearest-last-position stable ID ranking, max nine including focal. Real recording IDs replace collapsed legacy family IDs. Fit21,719 / dev4,753; 1,473 boundary windows and 2,362 fit windows sharing dev targets retained in the registry as purged, not deleted from source data. Within-recording time/target disjointness is verified. Sister recording physical footage independence remains unverified, not claimed as blind whole-scene generalization.
+
+`C0/EVALUATION_CONTRACT.json` seals same-slot quality, complete-link K20, raw future12v/11a/10j and junction, fit GT p99.5 empirical tails and old LEGACY_SHADOW not-comparable status before new B0 scientific outputs. Fixed1cm past-noise sensitivity is evaluation-only, not input augmentation. Real labels' sample indices are not asserted to be original video frames.
+
+B0 uses existing F16 temporal/social encoder and h3 learned4/8/12 anchors without refiner. All active weights are fresh; no F16/h3/v2/m2 checkpoint or cached token load. A temporary linear constructor head is discarded before any forward to avoid reading an unrelated fitted PCA asset. Actual h3 and F16 operators are unchanged. Registered but unused legacy parameters remain counted; gradient connectivity is reported rather than fabricated.
+
+Full resolved recipe is in protocol.json and RESOLVED_CONFIG.json: exact existing ModeQueryLoss plus detached-responsibility .20 coverage, AdamW.00025/wd.0005, one-epoch warmup cosine, reflection + .9..1.1 speed augmentation probability.5, past-only heading and observation mean, EMA.995, clip5. Final epoch8 EMA, no dev selection. Initial/every-epoch/final checkpoints include Adam/scheduler/EMA and all RNG/order state.
+
+Actual preflight: GPU8 phased gradients, GT-independent forward, independent full objective path/logit gradients and fixed two-eps directions; 513 real fit windows, two epochs18updates, interrupted after11 with all states exact; 128 saved outputs and complete second quality/cluster/motion implementation. First preflight broadcasting interface failure retained under failures/preflight_v1 and preflight/, repaired before production with complete v2 rerun. Cost report GraphStats serialization failure retained under failures/cost_v1; math/graph unchanged.
+
+Windows sole on-demand XML0 task runs train_pilot.py then CPU completion_review.py. Source/config/raw/split/calibration/checkpoint/output digests bind the actual dependencies only, not thousands of unrelated historical artifacts. Numerical saved auditing is done once by two implementations inside the save pipeline; final CPU review checks all receipts, SHAs, state metadata and epoch accounting, not a second full-save estimate.
+
+Resource warning-first v3: no memory reservation, no fixed6GiB gate, no OS/pagefile or user-program actions. E from measured preflight peak + explicit payload/reserve. Startup physical and real system commit need E+adaptive reserve; 1.3 shortfall/old peaks warn only. Sustained current pressure or <64MiB emergency stops safely. Full conservative B0 pilot admission <=30min remains in force.
+
+Outputs: populations/{fit,dev}/ includes full K20 paths/logits/IDs, same-slot metrics, original complete-link+pdist independent audit, all groups five motion/junction, allK/top1/oracle tails and worst cases. Old native predictions have no same-ID source contract here: NOT_COMPARABLE, not a silent PASS and not relabelled CV. Single-seed result is only a development baseline and learning trend. No baseline/historycycle11/long-term goal reset.

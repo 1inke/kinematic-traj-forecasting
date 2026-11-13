@@ -1,0 +1,12 @@
+{
+  "status": "ANALYZED",
+  "experiment": "grouped_scene_family",
+  "primary_verdict": "zara_exposure_distribution_shift_signal_no_baseline_upgrade",
+  "training": {"random_zara_windows": 4154, "grouped_zara_windows": 0, "train_windows_each": 16337, "common_statistics": 12183, "outer_windows": 1561, "tracks": 309, "recordings": 3, "seeds": 3},
+  "outer_final_coverage_mean": {"native_overall": 0.66624, "random_overall": 0.68759, "grouped_overall": 0.66581, "native_change": 0.38863, "random_change": 0.38067, "grouped_change": 0.33965},
+  "target_track_bootstrap_grouped_minus_random": {"minADE_delta_m": 0.01186717060396769, "minADE_ci": [0.00851401403965765, 0.015729593739520074], "minFDE_delta_m": 0.025996501257269503, "minFDE_ci": [0.017651302552718996, 0.03470341068956788], "J_delta": 0.06291561478139858, "J_ci": [0.043390261758899346, 0.08438990444194597], "coverage_delta": -0.021780909673286355, "coverage_ci": [-0.03671226371116239, -0.006907861445833108], "exploratory": true},
+  "cal_final_good_mean": {"native_overall": 1490, "random_overall": 1484.3333333333333, "grouped_overall": 1487, "native_change": 243, "random_change": 219.66666666666666, "grouped_change": 231.66666666666666},
+  "motion": {"preregistered_one_percent_gate_uniformly_passed": false, "interpretation": "some outer speed-p95 groups exceed the 1% protection limit; mean acceleration alone is insufficient"},
+  "audits": {"worker_exit": "PASS", "histories": "6x80", "arithmetic": "PASS", "frozen": "PASS", "preservation": "PASS", "current_sources": 589, "inherited_files": 34351},
+  "limitations": ["new-head-only", "F16-already-seen", "three-recordings", "three-model-seeds-not-three-datasets", "finite-composition-and-optimization-confound", "CAL-is-secondary-posthoc"]
+}

@@ -1,0 +1,124 @@
+{
+  "status": "PASS_ACTUAL_VISUAL_AND_STATIC_QA",
+  "at": "2026-10-27T23:25:05.738287+09:00",
+  "validators": [
+    {
+      "script": "plot_figures_v2.py",
+      "SHA256": "774cd619d03404005aa9cf5f829b3611ce6677cbef30e32f4353e5a0cf4740d4",
+      "summary": {
+        "ready": true,
+        "strict": false,
+        "counts": {
+          "PASS": 12,
+          "WARN": 2,
+          "FAIL": 0
+        }
+      }
+    },
+    {
+      "script": "plot_components.py",
+      "SHA256": "3e17f07ecb3bebe78cfca1559caf468aa60f6e760b4c4e5f8d1129fb6f4d4974",
+      "summary": {
+        "ready": true,
+        "strict": false,
+        "counts": {
+          "PASS": 12,
+          "WARN": 2,
+          "FAIL": 0
+        }
+      }
+    }
+  ],
+  "images": [
+    {
+      "figure": "fine_mode_crosswalk",
+      "width_pixels": 4322,
+      "height_pixels": 1748,
+      "dpi": 599.9988,
+      "actual_width_mm": 182.96503259673187,
+      "SHA256": {
+        "svg": "b5d4816a9a66108bc1d6bcb00f36f12cea1b1709a8576ec3cb9e5d38b9351e0d",
+        "pdf": "f178c9b9d1a52c36f2ac431826a4bce83a5f2fb7e0e08fed16573ac77c2eb846",
+        "png": "04e65f28c3d7f5b6b40da8b10de6b2cc62c7373dc74602cea744cd1a5573f744"
+      }
+    },
+    {
+      "figure": "absence_funnel",
+      "width_pixels": 4322,
+      "height_pixels": 1842,
+      "dpi": 599.9988,
+      "actual_width_mm": 182.96503259673187,
+      "SHA256": {
+        "svg": "992792bddf11be011ffcea8272d120bac9771863c7de3aac56413c2b1349c325",
+        "pdf": "793879662e46f02f6d21d5a8aceb73fc14c697d5f121c4f42ce4ad590e8dc8e7",
+        "png": "25be6049d28bf2fac9540c2ec407c6601081c9c9d20287b172f9554b4839a2c0"
+      }
+    },
+    {
+      "figure": "error_profiles",
+      "width_pixels": 4322,
+      "height_pixels": 2480,
+      "dpi": 599.9988,
+      "actual_width_mm": 182.96503259673187,
+      "SHA256": {
+        "svg": "6fd0528146e879117abc1c46ffba36e33a300efc972631ffc2e93dd07dc4ad4b",
+        "pdf": "a3ceb21a6a8b34e04c34c18bcd1c75dc7a85e677dca4319b4ce2fa38089f4b6a",
+        "png": "f3946c549b7c72a325bc63cbfdeec8f00b1c7fc9684631b39c937afb5e1ff43f"
+      }
+    },
+    {
+      "figure": "error_components",
+      "width_pixels": 4322,
+      "height_pixels": 2551,
+      "dpi": 599.9988,
+      "actual_width_mm": 182.96503259673187,
+      "SHA256": {
+        "svg": "d19f1271b9b5863372d0056f7dad81e68f4f901fb606c0521b50af185fc026fb",
+        "pdf": "b0cfedbdaea27c01d58c864ab2670f6b601d54842d23f135e0a2533f939192b9",
+        "png": "4e4c84e69fbddf11a12a166e266ec21917e4d19a612d27f662fa9eaacfbf9917"
+      }
+    },
+    {
+      "figure": "oracle_gain_overlap",
+      "width_pixels": 4322,
+      "height_pixels": 1889,
+      "dpi": 599.9988,
+      "actual_width_mm": 182.96503259673187,
+      "SHA256": {
+        "svg": "bb7a4cea6712996867f697d7f9d890e03b5f096a2c1d21a60b7413b1007d8ace",
+        "pdf": "6d2b72351da9df0997ea402cf7f093e329428e41ed786ba0f7c1c549198ccdde",
+        "png": "329c491a0d1f65ed190cfaeb5f0642b09160a5d2735869262f9eddb9c664a861"
+      }
+    },
+    {
+      "figure": "diagnostic_cases",
+      "width_pixels": 4322,
+      "height_pixels": 4842,
+      "dpi": 599.9988,
+      "actual_width_mm": 182.96503259673187,
+      "SHA256": {
+        "svg": "696eb36b7a6ca75f58bf762c5eb715cb412af4fa2431d0e9a7870fc21d39a932",
+        "pdf": "8b383dac4b17bdb5b3f7e293f7800781a1d61d3cdb3e71a9b2f9ceb23ba0fe2d",
+        "png": "d0e575da4c507a4f9aad24c37d268dc517ff5cae42a1ace5b2c995c786d31944"
+      }
+    }
+  ],
+  "backend": "python",
+  "six_families_reviewed": true,
+  "visual_method": "v1 four unchanged PNGs directly inspected and identical byte-SHA to finalv2; finalv2 error_profiles and error_components directly inspected",
+  "checks": [
+    "units and explicit counts visible",
+    "no clipped labels or overlapping legend",
+    "all6 SVG/PDF editable text",
+    "cases have all4 registered categories and explicit counterexamples",
+    "all quantitative observations retained; only boxplot fliers marks omitted",
+    "common-valid500 vs all683 clearly separated",
+    "oracle GT privilege and overlap not summation labelled",
+    "kJ and kMode labels explicit"
+  ],
+  "acceptable_static_warnings": {
+    "FINAL_WIDTH": "validator reads183 from expression183/25.4 as inches; actualPNG width/dpi independently183mm within0.2mm",
+    "EXPORT_RASTER": "600dpiPNG with SVG/PDF for research report, not journal TIFF submission"
+  },
+  "no_external_peer_review": true
+}

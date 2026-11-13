@@ -1,0 +1,149 @@
+{
+  "status": "PASS_ACTUAL_GEO_GPU_MATH_RESUME_SAVED",
+  "parameters": 304802,
+  "initial_B0_all_original_weights_buffers_RNG_paths_logits_exact": true,
+  "initial_actual_diagnostics": {
+    "negative_fraction": 0.4373437464237213,
+    "off_diag_cos_mean": -0.04407507926225662,
+    "gate_mean": 0.5169720649719238
+  },
+  "actual_first3_batchIDs_exact": true,
+  "phased_gradients": [
+    {
+      "step": 1,
+      "norms": {
+        "proposal_delta.weight": 0.5164293646812439,
+        "proposal_delta.bias": 0.2563033699989319,
+        "coordinator.qk_norm.weight": 0.0,
+        "coordinator.qk_norm.bias": 0.0,
+        "coordinator.v_norm.weight": 0.0,
+        "coordinator.v_norm.bias": 0.0,
+        "coordinator.q1.weight": 0.0,
+        "coordinator.k1.weight": 0.0,
+        "coordinator.value.weight": 0.0,
+        "coordinator.q2.weight": 0.0,
+        "coordinator.k2.weight": 0.0,
+        "coordinator.gate.weight": 0.0,
+        "coordinator.gate.bias": 0.0,
+        "coordinator.onorm.weight": 0.0,
+        "coordinator.onorm.bias": 0.0,
+        "coordinator.out_delta.weight": 0.0,
+        "coordinator.geo_proj.weight": 0.0,
+        "coordinator.geo_proj.bias": 0.0
+      },
+      "proposal_delta_rows": [
+        0.4331591725349426,
+        0.013011906296014786,
+        0.28020179271698,
+        0.00894393865019083,
+        0.017601272091269493,
+        0.0004985238774679601
+      ]
+    },
+    {
+      "step": 2,
+      "norms": {
+        "proposal_delta.weight": 0.5407094955444336,
+        "proposal_delta.bias": 0.2693473994731903,
+        "coordinator.qk_norm.weight": 5.9391840778744154e-08,
+        "coordinator.qk_norm.bias": 4.986692658803804e-08,
+        "coordinator.v_norm.weight": 8.049871524917762e-08,
+        "coordinator.v_norm.bias": 6.109318917424389e-08,
+        "coordinator.q1.weight": 1.5968356592566124e-07,
+        "coordinator.k1.weight": 2.609152431887196e-07,
+        "coordinator.value.weight": 4.4477340566118073e-07,
+        "coordinator.q2.weight": 1.6630411892037955e-07,
+        "coordinator.k2.weight": 9.801377132134803e-08,
+        "coordinator.gate.weight": 2.3200142607038288e-07,
+        "coordinator.gate.bias": 3.030476847243335e-08,
+        "coordinator.onorm.weight": 7.699199500166287e-08,
+        "coordinator.onorm.bias": 1.0420389884302494e-07,
+        "coordinator.out_delta.weight": 9.740325367602054e-06,
+        "coordinator.geo_proj.weight": 5.513315954885911e-07,
+        "coordinator.geo_proj.bias": 1.429959297638561e-07
+      },
+      "proposal_delta_rows": [
+        0.45938780903816223,
+        0.02450726367533207,
+        0.28297924995422363,
+        0.015795543789863586,
+        0.02002515085041523,
+        0.001097530242986977
+      ]
+    },
+    {
+      "step": 3,
+      "norms": {
+        "proposal_delta.weight": 0.5258402824401855,
+        "proposal_delta.bias": 0.2590661942958832,
+        "coordinator.qk_norm.weight": 1.4351900290421327e-07,
+        "coordinator.qk_norm.bias": 1.1662728383043941e-07,
+        "coordinator.v_norm.weight": 2.3728038911485783e-07,
+        "coordinator.v_norm.bias": 1.5774010364566493e-07,
+        "coordinator.q1.weight": 3.2650186199134623e-07,
+        "coordinator.k1.weight": 5.532208433578489e-07,
+        "coordinator.value.weight": 1.18679884053563e-06,
+        "coordinator.q2.weight": 4.084980105290015e-07,
+        "coordinator.k2.weight": 2.478986687037832e-07,
+        "coordinator.gate.weight": 6.096297511248849e-07,
+        "coordinator.gate.bias": 7.933934398351994e-08,
+        "coordinator.onorm.weight": 2.0404709744070715e-07,
+        "coordinator.onorm.bias": 2.6349175641371403e-07,
+        "coordinator.out_delta.weight": 2.798034438455943e-05,
+        "coordinator.geo_proj.weight": 1.3896799373469548e-06,
+        "coordinator.geo_proj.bias": 3.4192041198366496e-07
+      },
+      "proposal_delta_rows": [
+        0.4434947073459625,
+        0.06025330722332001,
+        0.27222082018852234,
+        0.04143555462360382,
+        0.01908227428793907,
+        0.0021937352139502764
+      ]
+    }
+  ],
+  "first_all_new_tensor_positive_step": 2,
+  "advertised_numeric_gradient_targets_not_hard_gates": true,
+  "independent_maths": {
+    "coordinator": {
+      "numpy64_value_error": 1.609823385706477e-15,
+      "functional_allparameter_gradient_error": 0.0,
+      "fixed_two_epsilon_FD": [
+        {
+          "direction": 0,
+          "eps": 0.0001,
+          "error": 4.4656884798117275e-14
+        },
+        {
+          "direction": 0,
+          "eps": 1e-05,
+          "error": 1.0161020245688657e-12
+        },
+        {
+          "direction": 1,
+          "eps": 0.0001,
+          "error": 1.1531099968105363e-14
+        },
+        {
+          "direction": 1,
+          "eps": 1e-05,
+          "error": 5.785783907096692e-14
+        }
+      ],
+      "permutation_error": 1.4432899320127035e-15
+    }
+  },
+  "inherited_full_loss_error": 4.440892098500626e-16,
+  "arbitrary_future_forward_independence": true,
+  "actual_resume": {
+    "windows": 513,
+    "epochs": 2,
+    "updates": 18,
+    "interrupt_after": 11,
+    "all_states_exact": true,
+    "not_full_fit_two_epochs": true
+  },
+  "bad_source_split_stats_ID_arm_output_readers_reject": true,
+  "saved128_original_fullK20_complete_link_pdist_quality_pooled_junction": "PASS"
+}

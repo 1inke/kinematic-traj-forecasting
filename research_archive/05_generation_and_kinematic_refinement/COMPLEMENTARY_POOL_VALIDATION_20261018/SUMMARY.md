@@ -1,0 +1,11 @@
+# SUMMARY
+- V0: ORIGINAL_SELECTOR_REPLAY_UNAVAILABLE
+- V1 label: 覆盖—误差折中
+- outer lift: +4.41pp (native 0.6039 → primary 0.6480)
+- ADE/FDE worsen vs native: True/True (+11.1% / +18.8%)
+- motion all seed×group: True
+- improve FIT_cal chosen: kinsafe_11_9
+- quota FIT_cal chosen (exploratory): boost_14_6 outer cov=0.6393 ade=0.1842 lost=6.3
+- adaptive FIT_cal chosen: kinsafe_11_9
+- V2 outer cond-geo cov delta: +0.52pp
+- status: DESIGN_COMPLETE + SELF_IMPROVE_DONE

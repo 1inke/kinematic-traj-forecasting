@@ -1,0 +1,215 @@
+{
+  "phase": "smoke",
+  "round": "r1",
+  "seed": 42,
+  "cfg": {
+    "epochs": 2,
+    "batch": 128,
+    "subset": 2048,
+    "seed": 42
+  },
+  "a_res_max": 0.25,
+  "res_w": 0.1,
+  "motion_w": 0.05,
+  "clamp": {
+    "v_max": 1.2695118306495283,
+    "a_max": 0.5708307769262527
+  },
+  "fit_native_motion": {
+    "speed_p95": 1.275891287084953,
+    "accel_mean": 0.08841134779618323,
+    "accel_p95": 0.6342564188069475,
+    "jerk_mean": 0.48625995264266336,
+    "jerk_p95": 2.8001470056822306
+  },
+  "ID_outer": {
+    "overall": {
+      "N": 1035,
+      "coverage": 0.6038647342995169,
+      "native_coverage": 0.6038647342995169,
+      "minADE": 0.17547758517828596,
+      "minFDE": 0.2966327368653397,
+      "native_minADE": 0.17547758517828596,
+      "native_minFDE": 0.2966327368653397,
+      "rescue": 0,
+      "lost": 0,
+      "good_count": 625,
+      "native_good_count": 625
+    },
+    "stable": {
+      "N": 604,
+      "coverage": 0.7185430463576159,
+      "native_coverage": 0.7185430463576159,
+      "minADE": 0.13488642078914104,
+      "minFDE": 0.22770019089959204,
+      "native_minADE": 0.13488642078914104,
+      "native_minFDE": 0.22770019089959204,
+      "rescue": 0,
+      "lost": 0,
+      "good_count": 434,
+      "native_good_count": 434
+    },
+    "transition": {
+      "N": 178,
+      "coverage": 0.4550561797752809,
+      "native_coverage": 0.4550561797752809,
+      "minADE": 0.20850453879234426,
+      "minFDE": 0.34186100018216914,
+      "native_minADE": 0.20850453879234426,
+      "native_minFDE": 0.34186100018216914,
+      "rescue": 0,
+      "lost": 0,
+      "good_count": 81,
+      "native_good_count": 81
+    },
+    "change": {
+      "N": 253,
+      "coverage": 0.43478260869565216,
+      "native_coverage": 0.43478260869565216,
+      "minADE": 0.24914661896382423,
+      "minFDE": 0.4293782977069047,
+      "native_minADE": 0.24914661896382423,
+      "native_minFDE": 0.4293782977069047,
+      "rescue": 0,
+      "lost": 0,
+      "good_count": 110,
+      "native_good_count": 110
+    },
+    "_motion": {
+      "pred": {
+        "speed_p95": 1.3093463769152214,
+        "accel_mean": 0.08778207124571084,
+        "accel_p95": 0.6205093723030161,
+        "jerk_mean": 0.4827988968119614,
+        "jerk_p95": 2.7770934544973604
+      },
+      "native": {
+        "speed_p95": 1.3093463769152214,
+        "accel_mean": 0.08778207124571084,
+        "accel_p95": 0.6205093723030161,
+        "jerk_mean": 0.4827988968119614,
+        "jerk_p95": 2.7770934544973604
+      },
+      "gate": {
+        "status": "PASS",
+        "fails": [],
+        "ratios": {
+          "speed_p95": 1.0,
+          "accel_mean": 1.0,
+          "accel_p95": 1.0,
+          "jerk_mean": 1.0,
+          "jerk_p95": 1.0
+        }
+      }
+    }
+  },
+  "RES_outer": {
+    "overall": {
+      "N": 1035,
+      "coverage": 0.5980676328502416,
+      "native_coverage": 0.6038647342995169,
+      "minADE": 0.17527583387365528,
+      "minFDE": 0.2958746237168957,
+      "native_minADE": 0.17547758517828596,
+      "native_minFDE": 0.2966327368653397,
+      "rescue": 10,
+      "lost": 16,
+      "good_count": 619,
+      "native_good_count": 625
+    },
+    "stable": {
+      "N": 604,
+      "coverage": 0.7102649006622517,
+      "native_coverage": 0.7185430463576159,
+      "minADE": 0.1346565307624416,
+      "minFDE": 0.2270103730148466,
+      "native_minADE": 0.13488642078914104,
+      "native_minFDE": 0.22770019089959204,
+      "rescue": 8,
+      "lost": 13,
+      "good_count": 429,
+      "native_good_count": 434
+    },
+    "transition": {
+      "N": 178,
+      "coverage": 0.4550561797752809,
+      "native_coverage": 0.4550561797752809,
+      "minADE": 0.208392235252763,
+      "minFDE": 0.34021967800421415,
+      "native_minADE": 0.20850453879234426,
+      "native_minFDE": 0.34186100018216914,
+      "rescue": 1,
+      "lost": 1,
+      "good_count": 81,
+      "native_good_count": 81
+    },
+    "change": {
+      "N": 253,
+      "coverage": 0.4308300395256917,
+      "native_coverage": 0.43478260869565216,
+      "minADE": 0.24894911305820816,
+      "minFDE": 0.42907852791015627,
+      "native_minADE": 0.24914661896382423,
+      "native_minFDE": 0.4293782977069047,
+      "rescue": 1,
+      "lost": 2,
+      "good_count": 109,
+      "native_good_count": 110
+    },
+    "_motion": {
+      "pred": {
+        "speed_p95": 1.3040289507789045,
+        "accel_mean": 0.08819605832837152,
+        "accel_p95": 0.6185982417299324,
+        "jerk_mean": 0.4818221695039162,
+        "jerk_p95": 2.774584097183409
+      },
+      "native": {
+        "speed_p95": 1.3093463769152214,
+        "accel_mean": 0.08778207124571084,
+        "accel_p95": 0.6205093723030161,
+        "jerk_mean": 0.4827988968119614,
+        "jerk_p95": 2.7770934544973604
+      },
+      "gate": {
+        "status": "PASS",
+        "fails": [],
+        "ratios": {
+          "speed_p95": 0.9959388697826127,
+          "accel_mean": 1.0047160778594741,
+          "accel_p95": 0.9969200617131849,
+          "jerk_mean": 0.9979769479290553,
+          "jerk_p95": 0.9990964087615101
+        }
+      }
+    }
+  },
+  "RES_FIT_overall": {
+    "N": 2048,
+    "coverage": 0.65234375,
+    "native_coverage": 0.654296875,
+    "minADE": 0.1591887629880652,
+    "minFDE": 0.2736971592371509,
+    "native_minADE": 0.1593727410251177,
+    "native_minFDE": 0.2744104810568597,
+    "rescue": 34,
+    "lost": 38,
+    "good_count": 1336,
+    "native_good_count": 1340
+  },
+  "RES_params": 126552,
+  "decision": {
+    "beat_native": false,
+    "beat_kin_ceiling": true,
+    "motion": "PASS",
+    "coverage": 0.5980676328502416,
+    "native_coverage": 0.6038647342995169,
+    "gap_vs_native_pp": -0.5797101449275366,
+    "minADE": 0.17527583387365528,
+    "rescue": 10,
+    "lost": 16,
+    "retain_ok": true,
+    "weak_positive": false,
+    "KIN_CEILING": 0.5646
+  }
+}

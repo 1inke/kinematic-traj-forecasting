@@ -1,0 +1,181 @@
+{
+  "status": "ANALYZED_ALL4_FINITE_SERIES_COMPLETE",
+  "at": "2026-10-27T02:57:00.2835610+09:00",
+  "authority": "EXECUTION_AUTHORIZATION_20261027.md",
+  "steps_authorized_and_completed": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "blocked_components_not_negative": [
+    "Step2 T_perm all3 strict cyclicshift blocked",
+    "Step3 C_neighbor/C_both blocked at71 observed-time ambiguous IDs"
+  ],
+  "diagnostic_fits": {
+    "tiny_neural": 6,
+    "step2_MLP": 3,
+    "step2_tree": 6,
+    "step3_MLP": 6,
+    "total": 21,
+    "total_neural_updates": 12288,
+    "tree_iterations_each": 64,
+    "step4_training": 0
+  },
+  "step1": {
+    "status": "ANALYZED_TINY_S_PASS_I_FAIL",
+    "population": 128,
+    "pool": 42,
+    "initialization_seeds": [
+      42,
+      43,
+      44
+    ],
+    "native_good": 82,
+    "S_good": [
+      90,
+      90,
+      90
+    ],
+    "S_rescues": [
+      8,
+      8,
+      8
+    ],
+    "S_lost": [
+      0,
+      0,
+      0
+    ],
+    "I_good": [
+      82,
+      82,
+      82
+    ],
+    "not_held_generalization": true,
+    "report": "execution_peak_measured_20261026/RESULT_ANALYSIS.md"
+  },
+  "step2": {
+    "status": "ANALYZED_NO_HOLD_COVERAGE_GAIN",
+    "hold_total": 3825,
+    "hold_native_good": 1971,
+    "hold_change_total": 1023,
+    "hold_change_good": 340,
+    "all_9_hold_fits_STOP": true,
+    "available_primary_differences_per_seed": [
+      0,
+      0,
+      0
+    ],
+    "family6_CI": [
+      0,
+      0
+    ],
+    "T_perm": "BLOCKED_NOT_NEGATIVE",
+    "report": "execution_peak_measured_20261026/RESULT_ANALYSIS.md"
+  },
+  "step3": {
+    "status": "ANALYZED_NO_TOKEN_GAIN",
+    "all_18_populations_all_STOP": true,
+    "repeated_model_windows": 58662,
+    "hold_change_difference_per_seed": [
+      0,
+      0,
+      0
+    ],
+    "family6_CI": [
+      0,
+      0
+    ],
+    "neighbor_both": "BLOCKED_INPUT_PROVENANCE_NOT_NEGATIVE",
+    "report": "step3_execution_20261027/RESULT_ANALYSIS.md"
+  },
+  "step4": {
+    "status": "UNDERPOWERED_CONDITIONAL_AMBIGUITY_UNRESOLVED",
+    "scientific_assignment_problems": 48702,
+    "calibration_each": 128,
+    "query_tracks_each": 128,
+    "supported_each": 34,
+    "change_supported_each": 10,
+    "both_positive_query_tracks": [
+      10,
+      12,
+      12
+    ],
+    "both_positive_change_tracks": [
+      4,
+      2,
+      2
+    ],
+    "selected_pair_counts": [
+      82,
+      84,
+      83
+    ],
+    "conflict_counts": [
+      9,
+      20,
+      17
+    ],
+    "both_positive_pair_denominators": [
+      14,
+      30,
+      24
+    ],
+    "all_selected_both_rescue_opportunities": 0,
+    "conflicts_zero_J_regret": [
+      5,
+      6,
+      10
+    ],
+    "numerical_or_reverse_sensitivity_on_selected": 0,
+    "report": "step4_execution_20261027/RESULT_ANALYSIS.md"
+  },
+  "conclusions": {
+    "finite_tiny_optimization_possible_under_S": true,
+    "current_large_probes_found_transfer_signal": false,
+    "token_increment_under_current_BCE_protocol": false,
+    "neighbor_increment": "UNRESOLVED_PROVENANCE_BLOCKED",
+    "observation_increment": "UNRESOLVED_NEGATIVE_CONTROL_BLOCKED",
+    "conditional_ambiguity": "UNDERPOWERED_NOT_PROVED",
+    "unique_root_cause_identified": false,
+    "information_theoretic_impossibility": false,
+    "baseline_promoted": false
+  },
+  "erratum": {
+    "old_steps12_inner_change_opportunities": [
+      41,
+      46,
+      38
+    ],
+    "correct_saved_current_B": [
+      41,
+      45,
+      37
+    ],
+    "old_locked_report_retained": true,
+    "documented_in_step3": true
+  },
+  "scientific_gates_unchanged": [
+    "major A/F5%",
+    "nativegood lost1%",
+    "protectederror1%",
+    "five pooled motion1%",
+    "family6 unchanged",
+    "samecandidate coverage"
+  ],
+  "limitations": [
+    "F16 may have seen hold/inner",
+    "repeated hold/inner development",
+    "target disjoint not context independent",
+    "three seeds not independent datasets",
+    "same structure not equal effective capacity",
+    "B labels include continuous micro-improvements"
+  ],
+  "ARS_inline_same_assistant_not_external": true,
+  "finite_followup": "Stop only automation-3 schedule retaining record; no old PAUSED changes",
+  "no_deletion": true,
+  "automation": {"id":"automation-3","status":"PAUSED_FINITE_SERIES_COMPLETE_RECORD_RETAINED","host_TOML_verified":true,"old_PAUSED_untouched":true},
+  "no_baseline_historycycle11_or_long_goal_reset": true,
+  "no_new_experiment_authorized": true
+}

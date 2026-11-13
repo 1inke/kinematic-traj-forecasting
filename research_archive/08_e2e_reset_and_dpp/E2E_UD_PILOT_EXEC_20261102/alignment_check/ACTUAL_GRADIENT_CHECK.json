@@ -1,0 +1,385 @@
+{
+  "status": "CONTRACT_GATE_NOT_MET_NO_PRODUCTION",
+  "at": "2026-11-02T18:49:27.299630+09:00",
+  "rows": {
+    "U-GRU": {
+      "actual_dimensions": {
+        "context_input": 199,
+        "actual_context_output": 64,
+        "mode_feature": 64
+      },
+      "original_state_exact": true,
+      "initial_paths_and_logits_exact": true,
+      "total_parameters": 301618,
+      "added_parameters": 6144,
+      "new_trainable_parameters": 6144,
+      "fits305000": true,
+      "steps": [
+        {
+          "step": 1,
+          "loss": 3.3223583698272705,
+          "gradient_norms": {
+            "init.weight": 0.0,
+            "cell.weight_ih": 0.0,
+            "cell.weight_hh": 0.0,
+            "cell.bias_ih": 0.0,
+            "cell.bias_hh": 0.0,
+            "norm.weight": 0.0,
+            "norm.bias": 0.0,
+            "out.weight": 0.0
+          },
+          "out_gradient_positive": false,
+          "all_internal_gradients_positive": false
+        },
+        {
+          "step": 2,
+          "loss": 3.304062843322754,
+          "gradient_norms": {
+            "init.weight": 0.0,
+            "cell.weight_ih": 0.0,
+            "cell.weight_hh": 0.0,
+            "cell.bias_ih": 0.0,
+            "cell.bias_hh": 0.0,
+            "norm.weight": 0.0,
+            "norm.bias": 0.0,
+            "out.weight": 5.367975609260611e-05
+          },
+          "out_gradient_positive": true,
+          "all_internal_gradients_positive": false
+        },
+        {
+          "step": 3,
+          "loss": 3.3478755950927734,
+          "gradient_norms": {
+            "init.weight": 1.6235836008959836e-09,
+            "cell.weight_ih": 1.6298956628801875e-09,
+            "cell.weight_hh": 6.66592780973474e-10,
+            "cell.bias_ih": 1.2250034320260283e-09,
+            "cell.bias_hh": 6.309106570512313e-10,
+            "norm.weight": 7.819078717830052e-10,
+            "norm.bias": 7.190497641751392e-10,
+            "out.weight": 0.00011786675167968497
+          },
+          "out_gradient_positive": true,
+          "all_internal_gradients_positive": true
+        }
+      ],
+      "literal_supplied_two_step_gate": false,
+      "diagnostic_only_updates": 3
+    },
+    "U-Delta": {
+      "actual_dimensions": {
+        "context_input": 199,
+        "actual_context_output": 64,
+        "mode_feature": 64
+      },
+      "original_state_exact": true,
+      "initial_paths_and_logits_exact": true,
+      "total_parameters": 302514,
+      "added_parameters": 7040,
+      "new_trainable_parameters": 7040,
+      "fits305000": true,
+      "steps": [
+        {
+          "step": 1,
+          "loss": 3.3223583698272705,
+          "gradient_norms": {
+            "init.weight": 0.0,
+            "u.weight": 0.0,
+            "predict.weight": 0.0,
+            "error.weight": 0.0,
+            "alpha.weight": 0.0,
+            "alpha.bias": 0.0,
+            "beta.weight": 0.0,
+            "beta.bias": 0.0,
+            "norm.weight": 0.0,
+            "norm.bias": 0.0,
+            "out.weight": 0.0
+          },
+          "out_gradient_positive": false,
+          "all_internal_gradients_positive": false
+        },
+        {
+          "step": 2,
+          "loss": 3.304062843322754,
+          "gradient_norms": {
+            "init.weight": 0.0,
+            "u.weight": 0.0,
+            "predict.weight": 0.0,
+            "error.weight": 0.0,
+            "alpha.weight": 0.0,
+            "alpha.bias": 0.0,
+            "beta.weight": 0.0,
+            "beta.bias": 0.0,
+            "norm.weight": 0.0,
+            "norm.bias": 0.0,
+            "out.weight": 5.272201815387234e-05
+          },
+          "out_gradient_positive": true,
+          "all_internal_gradients_positive": false
+        },
+        {
+          "step": 3,
+          "loss": 3.3478755950927734,
+          "gradient_norms": {
+            "init.weight": 1.6496428667522878e-09,
+            "u.weight": 3.137055948343459e-09,
+            "predict.weight": 4.353629012854299e-09,
+            "error.weight": 6.976565547489599e-09,
+            "alpha.weight": 1.1317079495754001e-09,
+            "alpha.bias": 3.9194331113989733e-10,
+            "beta.weight": 1.0006716566479668e-09,
+            "beta.bias": 3.48060663624139e-10,
+            "norm.weight": 7.759773379412138e-10,
+            "norm.bias": 7.453905825904883e-10,
+            "out.weight": 0.00011678269947879016
+          },
+          "out_gradient_positive": true,
+          "all_internal_gradients_positive": true
+        }
+      ],
+      "literal_supplied_two_step_gate": false,
+      "diagnostic_only_updates": 3
+    },
+    "D-Gate": {
+      "actual_dimensions": {
+        "context_input": 199,
+        "actual_context_output": 64,
+        "mode_feature": 64
+      },
+      "original_state_exact": true,
+      "initial_paths_and_logits_exact": true,
+      "total_parameters": 307986,
+      "added_parameters": 12512,
+      "new_trainable_parameters": 12512,
+      "fits305000": false,
+      "steps": [
+        {
+          "step": 1,
+          "loss": 3.3223583698272705,
+          "gradient_norms": {
+            "norm.weight": 0.0,
+            "norm.bias": 0.0,
+            "q1.weight": 0.0,
+            "k1.weight": 0.0,
+            "value.weight": 0.0,
+            "gate.weight": 0.0,
+            "gate.bias": 0.0,
+            "onorm.weight": 0.0,
+            "onorm.bias": 0.0,
+            "out.weight": 0.0
+          },
+          "out_gradient_positive": false,
+          "all_internal_gradients_positive": false
+        },
+        {
+          "step": 2,
+          "loss": 3.304062843322754,
+          "gradient_norms": {
+            "norm.weight": 0.0,
+            "norm.bias": 0.0,
+            "q1.weight": 0.0,
+            "k1.weight": 0.0,
+            "value.weight": 0.0,
+            "gate.weight": 0.0,
+            "gate.bias": 0.0,
+            "onorm.weight": 0.0,
+            "onorm.bias": 0.0,
+            "out.weight": 2.554812454036437e-05
+          },
+          "out_gradient_positive": true,
+          "all_internal_gradients_positive": false
+        },
+        {
+          "step": 3,
+          "loss": 3.3478755950927734,
+          "gradient_norms": {
+            "norm.weight": 1.4529030756271766e-10,
+            "norm.bias": 1.8333851103946586e-10,
+            "q1.weight": 6.53502339048595e-12,
+            "k1.weight": 5.798504471715704e-12,
+            "value.weight": 1.278849359742651e-09,
+            "gate.weight": 1.1074097194807564e-09,
+            "gate.bias": 1.382874370570164e-10,
+            "onorm.weight": 3.1496089070159883e-10,
+            "onorm.bias": 3.1676719580708834e-10,
+            "out.weight": 4.699500641436316e-05
+          },
+          "out_gradient_positive": true,
+          "all_internal_gradients_positive": true
+        }
+      ],
+      "literal_supplied_two_step_gate": false,
+      "diagnostic_only_updates": 3
+    },
+    "D-DiffGate": {
+      "actual_dimensions": {
+        "context_input": 199,
+        "actual_context_output": 64,
+        "mode_feature": 64
+      },
+      "original_state_exact": true,
+      "initial_paths_and_logits_exact": true,
+      "total_parameters": 312082,
+      "added_parameters": 16608,
+      "new_trainable_parameters": 16608,
+      "fits305000": false,
+      "steps": [
+        {
+          "step": 1,
+          "loss": 3.3223583698272705,
+          "gradient_norms": {
+            "norm.weight": 0.0,
+            "norm.bias": 0.0,
+            "q1.weight": 0.0,
+            "k1.weight": 0.0,
+            "value.weight": 0.0,
+            "q2.weight": 0.0,
+            "k2.weight": 0.0,
+            "gate.weight": 0.0,
+            "gate.bias": 0.0,
+            "onorm.weight": 0.0,
+            "onorm.bias": 0.0,
+            "out.weight": 0.0
+          },
+          "out_gradient_positive": false,
+          "all_internal_gradients_positive": false
+        },
+        {
+          "step": 2,
+          "loss": 3.304062843322754,
+          "gradient_norms": {
+            "norm.weight": 0.0,
+            "norm.bias": 0.0,
+            "q1.weight": 0.0,
+            "k1.weight": 0.0,
+            "value.weight": 0.0,
+            "q2.weight": 0.0,
+            "k2.weight": 0.0,
+            "gate.weight": 0.0,
+            "gate.bias": 0.0,
+            "onorm.weight": 0.0,
+            "onorm.bias": 0.0,
+            "out.weight": 2.7860189220518805e-05
+          },
+          "out_gradient_positive": true,
+          "all_internal_gradients_positive": false
+        },
+        {
+          "step": 3,
+          "loss": 3.3478755950927734,
+          "gradient_norms": {
+            "norm.weight": 2.716554203807675e-10,
+            "norm.bias": 2.761275375018357e-10,
+            "q1.weight": 1.1659487611503927e-11,
+            "k1.weight": 1.3833490776493651e-11,
+            "value.weight": 1.5436063538487588e-09,
+            "q2.weight": 9.46257308620524e-12,
+            "k2.weight": 7.852374132866213e-12,
+            "gate.weight": 1.080505684925015e-09,
+            "gate.bias": 1.3492852668495203e-10,
+            "onorm.weight": 3.60006496835652e-10,
+            "onorm.bias": 3.4646208124655686e-10,
+            "out.weight": 5.363920354284346e-05
+          },
+          "out_gradient_positive": true,
+          "all_internal_gradients_positive": true
+        }
+      ],
+      "literal_supplied_two_step_gate": false,
+      "diagnostic_only_updates": 3
+    }
+  },
+  "fixture_ids": [
+    "crowds_zara02|44|420",
+    "uni_examples|26|139",
+    "crowds_zara02|5|21",
+    "students003|340|87",
+    "crowds_zara02|43|270",
+    "students003|71|190",
+    "crowds_zara01|46|320",
+    "students003|422|178"
+  ],
+  "diagnostic_updates": 12,
+  "formal_models": 0,
+  "pilot_epochs": 0,
+  "GT_used_only_as_loss": true,
+  "actual_B0_clip": 5,
+  "document_clip": 1,
+  "resource_estimate": 5487911128,
+  "resource": [
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "startup",
+      "estimate": 5487911128,
+      "factor": 1.3,
+      "remaining_physical": 5487911128,
+      "remaining_commit": 5487911128,
+      "warning_physical": 7134284466.400001,
+      "warning_commit": 7134284466.400001,
+      "admission_physical": 5827342019,
+      "admission_commit": 5827342019,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 14199910400,
+        "commit": 9838452736,
+        "physical_total": 33943089152,
+        "commit_total": 26520555520,
+        "commit_limit": 36359008256,
+        "rss": 23498752,
+        "private": 11042816,
+        "peak_rss": 26836992,
+        "peak_private": 17227776
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5487911128,
+      "factor": 1.3,
+      "remaining_physical": 3366072536,
+      "remaining_commit": 1699942616,
+      "warning_physical": 4375894296.8,
+      "warning_commit": 2209925400.8,
+      "admission_physical": 3705503427,
+      "admission_commit": 2039373507,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 12297134080,
+        "commit": 6106136576,
+        "physical_total": 33943089152,
+        "commit_total": 30252871680,
+        "commit_limit": 36359008256,
+        "rss": 2121838592,
+        "private": 3787968512,
+        "peak_rss": 2121838592,
+        "peak_private": 3787968512
+      }
+    }
+  ],
+  "elapsed_seconds": 8.397178800019901,
+  "source_before_after_unchanged": {
+    "<LOCAL_DESKTOP>\\新调研任务\\下一阶段U与D单因素实验设计文档_20261102.md": "addc05633f9aba1768c2a57552dbbbb96f3af07ac5d7d75465dadb6e9add3a7d",
+    "<WORKSPACE_ROOT>\\qoder_work\\E2E_UD_PILOT_EXEC_20261102\\contract_alignment_check.py": "0e2a34730faf2c386738cd23da58c6adb59c33982e8f2594bd85596ec90080f6",
+    "<WORKSPACE_ROOT>\\qoder_work\\E2E_UD_PILOT_EXEC_20261102\\decoder_adapter.py": "b9f5b87266885ea9cd1281b38577a327d465bee1a1c30b0436544d592123ad2a",
+    "<WORKSPACE_ROOT>\\qoder_work\\E2E_UD_PILOT_EXEC_20261102\\mode_interaction.py": "a6456b69b359da264ba0d64109b5415df5b201ef10624914969f3b506b1d1e2c",
+    "<WORKSPACE_ROOT>\\qoder_work\\E2E_UD_PILOT_EXEC_20261102\\motion_state_update.py": "3376b5ea4bbde662cf5eda9eade9f03bee546c97290eb8b1523652f3d981649f",
+    "<WORKSPACE_ROOT>\\qoder_work\\E2E_UD_PILOT_EXEC_20261102\\ud_common.py": "b89374c3260c43495fcc241554f5132363fccea290ff30754e427497d68ee8fe",
+    "<WORKSPACE_ROOT>\\qoder_work\\E2E_MOTION_RESEARCH_RESET_EXEC_20261102\\source_manifest.json": "82c7392e30a5c6eafb5d35aa93d6f9185fef7f5b56d2172456a8b37015249e52",
+    "<WORKSPACE_ROOT>\\qoder_work\\E2E_MOTION_RESEARCH_RESET_EXEC_20261102\\protocol.json": "7e25c8ea404cc5459ea3fad867659fbf43c72455c9c4d7b40736388d4bc9bd4a",
+    "<WORKSPACE_ROOT>\\qoder_work\\E2E_MOTION_RESEARCH_RESET_EXEC_20261102\\B0_seed42\\initial.pt": "a34a682726f3507f60c286ad73839c65ea587b2de4308dc53b469ee08e63019b",
+    "<WORKSPACE_ROOT>\\qoder_work\\E2E_MOTION_RESEARCH_RESET_EXEC_20261102\\B0_seed42\\final.pt": "2cd94ab5f98cb8a0318d98a20e58aba8bba538e798236a5d1725adfccfdb8a5d",
+    "<WORKSPACE_ROOT>\\qoder_work\\E2E_MOTION_RESEARCH_RESET_EXEC_20261102\\C0\\fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5"
+  },
+  "old_64_sources_unchanged": true
+}

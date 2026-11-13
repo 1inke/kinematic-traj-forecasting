@@ -1,0 +1,85 @@
+{
+  "seed": 42,
+  "split": "outer",
+  "ckpt": "<WORKSPACE_ROOT>\\KINEMATIC_DECODER_SPEED_CLAMP_20261018\\results\\short\\KIN_seed42.pt",
+  "complementarity": {
+    "N": 1035,
+    "native_only": 136,
+    "kin_only": 96,
+    "both": 489,
+    "neither": 314,
+    "kin_redundancy_among_kin_covered": 0.8358974358974359,
+    "union_coverage": 0.6966183574879227,
+    "native_coverage": 0.6038647342995169,
+    "kin_coverage": 0.5652173913043478,
+    "lift_vs_native_pp": 9.275362318840575,
+    "lift_vs_kin_pp": 13.14009661835749
+  },
+  "KIN_overall": {
+    "N": 1035,
+    "coverage": 0.5652173913043478,
+    "native_coverage": 0.6038647342995169,
+    "minADE": 0.2103394004711209,
+    "minFDE": 0.3694491847965488,
+    "native_minADE": 0.17547758517828596,
+    "native_minFDE": 0.2966327368653397,
+    "rescue": 96,
+    "lost": 136,
+    "good_count": 585,
+    "native_good_count": 625
+  },
+  "UNION_overall": {
+    "N": 1035,
+    "coverage": 0.6966183574879227,
+    "native_coverage": 0.6038647342995169,
+    "minADE": 0.1556321436866533,
+    "minFDE": 0.24100320777626372,
+    "native_minADE": 0.17547758517828596,
+    "native_minFDE": 0.2966327368653397,
+    "rescue": 96,
+    "lost": 0,
+    "good_count": 721,
+    "native_good_count": 625
+  },
+  "KIN_motion": {
+    "pred": {
+      "speed_p95": 1.2695115426187635,
+      "accel_mean": 0.08012332403741892,
+      "accel_p95": 0.2517379203670058,
+      "jerk_mean": 0.049325193004574094,
+      "jerk_p95": 0.12223852474787815
+    },
+    "native": {
+      "speed_p95": 1.3093463769152214,
+      "accel_mean": 0.08778207124571084,
+      "accel_p95": 0.6205093723030161,
+      "jerk_mean": 0.4827988968119614,
+      "jerk_p95": 2.7770934544973604
+    },
+    "gate": {
+      "status": "PASS",
+      "fails": [],
+      "ratios": {
+        "speed_p95": 0.9695765497970771,
+        "accel_mean": 0.9127527170456674,
+        "accel_p95": 0.4056955972037656,
+        "jerk_mean": 0.10216509053827659,
+        "jerk_p95": 0.044016712707280026
+      }
+    }
+  },
+  "decision": {
+    "union_beats_native": true,
+    "union_beats_either": true,
+    "lift_vs_native_pp": 9.275362318840575,
+    "kin_only_rescues": 96,
+    "kin_motion": "PASS",
+    "strong_complement": true,
+    "weak_complement": true,
+    "union_coverage": 0.6966183574879227,
+    "native_coverage": 0.6038647342995169,
+    "kin_coverage": 0.5652173913043478,
+    "beats_kin_ceiling_as_union": true,
+    "beats_native_as_union": true
+  }
+}

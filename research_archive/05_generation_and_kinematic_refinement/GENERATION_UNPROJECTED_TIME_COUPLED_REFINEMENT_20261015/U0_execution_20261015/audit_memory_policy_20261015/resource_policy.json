@@ -1,0 +1,16 @@
+{
+  "version": "task_memory_1p3_v1",
+  "authorized_by": "2026-10-15 human: compare remaining memory with estimated task requirement times1.3 instead of fixed6GiB",
+  "safety_factor": 1.3,
+  "estimate_file": "MEMORY_ESTIMATE.json",
+  "startup": "physical_available and commit_available each >= 1.3 * estimated_total_peak",
+  "runtime_physical": "physical_available >= 1.3 * max(estimated_peak - current_process_RSS, 0)",
+  "runtime_commit": "commit_available >= 1.3 * max(estimated_peak - current_process_private, 0)",
+  "estimate_overrun": "stop if max(process_private, process_RSS) > 1.3 * estimated_peak; no silent estimate inflation",
+  "fixed_process_6GiB_cap": false,
+  "fixed_system_6GiB_reserve": false,
+  "estimate_basis": "max(observed completed-stage lifecycle peak, measured baseline plus four largest saved-job resident payloads)",
+  "scope": "new U0 saved-output audit recovery only, no training/forward/optimizer",
+  "scientific_protocol_change": false,
+  "auto_resume": false
+}

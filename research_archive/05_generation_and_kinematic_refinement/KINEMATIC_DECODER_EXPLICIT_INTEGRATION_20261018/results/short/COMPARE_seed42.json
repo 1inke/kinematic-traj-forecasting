@@ -1,0 +1,242 @@
+{
+  "phase": "short",
+  "cfg": {
+    "epochs": 8,
+    "batch": 256,
+    "subset": null,
+    "seed": 42
+  },
+  "BASE_params": 57432,
+  "KIN_params": 63624,
+  "param_ratio_KIN_over_BASE": 1.1078144588382783,
+  "BASE_outer": {
+    "overall": {
+      "N": 1035,
+      "coverage": 0.4270531400966184,
+      "native_coverage": 0.6038647342995169,
+      "minADE": 0.314259365250781,
+      "minFDE": 0.6245057024561438,
+      "native_minADE": 0.17547758517828596,
+      "native_minFDE": 0.2966327368653397,
+      "meanADE_winner": 0.32000903377792533,
+      "meanFDE_winner": 0.6421261418579607,
+      "rescue": 41,
+      "lost": 224,
+      "good_count": 442,
+      "native_good_count": 625
+    },
+    "stable": {
+      "N": 604,
+      "coverage": 0.5182119205298014,
+      "native_coverage": 0.7185430463576159,
+      "minADE": 0.25177625245135926,
+      "minFDE": 0.5016786200085098,
+      "native_minADE": 0.13488642078914104,
+      "native_minFDE": 0.22770019089959204,
+      "meanADE_winner": 0.25633931393594517,
+      "meanFDE_winner": 0.5117742255916126,
+      "rescue": 17,
+      "lost": 138,
+      "good_count": 313,
+      "native_good_count": 434
+    },
+    "transition": {
+      "N": 178,
+      "coverage": 0.3146067415730337,
+      "native_coverage": 0.4550561797752809,
+      "minADE": 0.3624036354852237,
+      "minFDE": 0.7005526009544879,
+      "native_minADE": 0.20850453879234426,
+      "native_minFDE": 0.34186100018216914,
+      "meanADE_winner": 0.36852922969681073,
+      "meanFDE_winner": 0.730657891214639,
+      "rescue": 10,
+      "lost": 35,
+      "good_count": 56,
+      "native_good_count": 81
+    },
+    "change": {
+      "N": 253,
+      "coverage": 0.2885375494071146,
+      "native_coverage": 0.43478260869565216,
+      "minADE": 0.4295562823619273,
+      "minFDE": 0.8642338046919764,
+      "native_minADE": 0.24914661896382423,
+      "native_minFDE": 0.4293782977069047,
+      "meanADE_winner": 0.43787431405853594,
+      "meanFDE_winner": 0.8910348613812237,
+      "rescue": 14,
+      "lost": 51,
+      "good_count": 73,
+      "native_good_count": 110
+    },
+    "_motion": {
+      "pred": {
+        "speed_p95": 1.3454875185121997,
+        "accel_mean": 0.1581076903526013,
+        "accel_p95": 0.6172353032285196,
+        "jerk_mean": 0.4902581122388465,
+        "jerk_p95": 2.0960908065094976
+      },
+      "native": {
+        "speed_p95": 1.3093463769152214,
+        "accel_mean": 0.08778207124571084,
+        "accel_p95": 0.6205093723030161,
+        "jerk_mean": 0.4827988968119614,
+        "jerk_p95": 2.7770934544973604
+      },
+      "gate": {
+        "status": "FAIL",
+        "fails": [
+          "speed_p95",
+          "accel_mean",
+          "jerk_mean"
+        ],
+        "ratios": {
+          "speed_p95": 1.0276024299102013,
+          "accel_mean": 1.8011387531520187,
+          "accel_p95": 0.9947235783686155,
+          "jerk_mean": 1.0154499429806905,
+          "jerk_p95": 0.7547786348763258
+        }
+      }
+    }
+  },
+  "KIN_outer": {
+    "overall": {
+      "N": 1035,
+      "coverage": 0.5951690821256038,
+      "native_coverage": 0.6038647342995169,
+      "minADE": 0.19619136626081846,
+      "minFDE": 0.35134865217112615,
+      "native_minADE": 0.17547758517828596,
+      "native_minFDE": 0.2966327368653397,
+      "meanADE_winner": 0.20311404411367903,
+      "meanFDE_winner": 0.36976112263228267,
+      "rescue": 109,
+      "lost": 118,
+      "good_count": 616,
+      "native_good_count": 625
+    },
+    "stable": {
+      "N": 604,
+      "coverage": 0.7152317880794702,
+      "native_coverage": 0.7185430463576159,
+      "minADE": 0.13939683511767648,
+      "minFDE": 0.2384370925700751,
+      "native_minADE": 0.13488642078914104,
+      "native_minFDE": 0.22770019089959204,
+      "meanADE_winner": 0.1443935090692585,
+      "meanFDE_winner": 0.2580732526466705,
+      "rescue": 58,
+      "lost": 60,
+      "good_count": 432,
+      "native_good_count": 434
+    },
+    "transition": {
+      "N": 178,
+      "coverage": 0.43820224719101125,
+      "native_coverage": 0.4550561797752809,
+      "minADE": 0.220028973834832,
+      "minFDE": 0.38136010370823087,
+      "native_minADE": 0.20850453879234426,
+      "native_minFDE": 0.34186100018216914,
+      "meanADE_winner": 0.23044475635948392,
+      "meanFDE_winner": 0.39985173108120586,
+      "rescue": 21,
+      "lost": 24,
+      "good_count": 78,
+      "native_good_count": 81
+    },
+    "change": {
+      "N": 253,
+      "coverage": 0.4189723320158103,
+      "native_coverage": 0.43478260869565216,
+      "minADE": 0.31500876808802547,
+      "minFDE": 0.5997934886352773,
+      "native_minADE": 0.24914661896382423,
+      "native_minFDE": 0.4293782977069047,
+      "meanADE_winner": 0.3240718954459981,
+      "meanFDE_winner": 0.6152288900923674,
+      "rescue": 30,
+      "lost": 34,
+      "good_count": 106,
+      "native_good_count": 110
+    },
+    "_motion": {
+      "pred": {
+        "speed_p95": 1.4012835631386826,
+        "accel_mean": 0.08451146034022725,
+        "accel_p95": 0.23238385128712566,
+        "jerk_mean": 0.03892301706656926,
+        "jerk_p95": 0.0993796439122981
+      },
+      "native": {
+        "speed_p95": 1.3093463769152214,
+        "accel_mean": 0.08778207124571084,
+        "accel_p95": 0.6205093723030161,
+        "jerk_mean": 0.4827988968119614,
+        "jerk_p95": 2.7770934544973604
+      },
+      "gate": {
+        "status": "FAIL",
+        "fails": [
+          "speed_p95"
+        ],
+        "ratios": {
+          "speed_p95": 1.0702160924293098,
+          "accel_mean": 0.9627416981728669,
+          "accel_p95": 0.37450498197091636,
+          "jerk_mean": 0.08061952362274938,
+          "jerk_p95": 0.03578548779169022
+        }
+      }
+    }
+  },
+  "BASE_FIT_overall": {
+    "N": 18909,
+    "coverage": 0.42720397694219686,
+    "native_coverage": 0.5742239145380507,
+    "minADE": 0.3070112246060239,
+    "minFDE": 0.6198623714140975,
+    "native_minADE": 0.17297438272903798,
+    "native_minFDE": 0.2992296137084065,
+    "meanADE_winner": 0.31318833147505,
+    "meanFDE_winner": 0.6375764487421358,
+    "rescue": 1078,
+    "lost": 3858,
+    "good_count": 8078,
+    "native_good_count": 10858
+  },
+  "KIN_FIT_overall": {
+    "N": 18909,
+    "coverage": 0.5824739542017029,
+    "native_coverage": 0.5742239145380507,
+    "minADE": 0.19326014322480786,
+    "minFDE": 0.3466561938288636,
+    "native_minADE": 0.17297438272903798,
+    "native_minFDE": 0.2992296137084065,
+    "meanADE_winner": 0.2000108766284958,
+    "meanFDE_winner": 0.3631973899468212,
+    "rescue": 2107,
+    "lost": 1951,
+    "good_count": 11014,
+    "native_good_count": 10858
+  },
+  "decision": {
+    "weak_positive": false,
+    "motion_better": false,
+    "cov_ok": true,
+    "ade_ok": true,
+    "BASE_motion": "FAIL",
+    "KIN_motion": "FAIL",
+    "BASE_coverage": 0.4270531400966184,
+    "KIN_coverage": 0.5951690821256038,
+    "BASE_minADE": 0.314259365250781,
+    "KIN_minADE": 0.19619136626081846,
+    "BASE_accel_ratio": 1.8011387531520187,
+    "KIN_accel_ratio": 0.9627416981728669,
+    "note": "弱阳性只支持结构假设；不自动升级覆盖/迁移结论。阴性则停止，不扫参。"
+  },
+  "seed": 42
+}

@@ -1,0 +1,195 @@
+{
+  "arm": "MDK",
+  "seed": 42,
+  "epochs": 2,
+  "subset": 2048,
+  "params": 76216,
+  "elapsed_sec": 2.4670779705047607,
+  "history": [
+    {
+      "task": 0.8597022481262684,
+      "div": 0.4759956616908312,
+      "motion": 1.825392246246338e-07,
+      "total": 0.9073018133640289,
+      "epoch": 1,
+      "gradnorm": 0.6154999076388776
+    },
+    {
+      "task": 0.6372472494840622,
+      "div": 0.09656884025025647,
+      "motion": 0.06139388680458069,
+      "total": 0.6499738208949566,
+      "epoch": 2,
+      "gradnorm": 0.6664307322353125
+    }
+  ],
+  "metrics": {
+    "FIT": {
+      "overall": {
+        "N": 2048,
+        "coverage": 0.55517578125,
+        "native_coverage": 0.654296875,
+        "minADE": 0.25882409391775385,
+        "minFDE": 0.4916726507137369,
+        "native_minADE": 0.1593727410251177,
+        "native_minFDE": 0.2744104810568597,
+        "rescue": 167,
+        "lost": 370,
+        "good_count": 1137,
+        "native_good_count": 1340
+      },
+      "stable": {
+        "N": 1532,
+        "coverage": 0.6357702349869452,
+        "native_coverage": 0.7036553524804178,
+        "minADE": 0.20605496207275023,
+        "minFDE": 0.3673401299956742,
+        "native_minADE": 0.141849772300689,
+        "native_minFDE": 0.2439488590622377,
+        "rescue": 150,
+        "lost": 254,
+        "good_count": 974,
+        "native_good_count": 1078
+      },
+      "transition": {
+        "N": 226,
+        "coverage": 0.3407079646017699,
+        "native_coverage": 0.4690265486725664,
+        "minADE": 0.3191186091166667,
+        "minFDE": 0.6251516334549883,
+        "native_minADE": 0.21332828990615096,
+        "native_minFDE": 0.3797314359663053,
+        "rescue": 10,
+        "lost": 39,
+        "good_count": 77,
+        "native_good_count": 106
+      },
+      "change": {
+        "N": 290,
+        "coverage": 0.296551724137931,
+        "native_coverage": 0.5379310344827586,
+        "minADE": 0.49060254064737907,
+        "minFDE": 1.0444697943018377,
+        "native_minADE": 0.20989423771032895,
+        "native_minFDE": 0.3532541675610882,
+        "rescue": 7,
+        "lost": 77,
+        "good_count": 86,
+        "native_good_count": 156
+      },
+      "_motion": {
+        "pred": {
+          "speed_p95": 1.269512028769328,
+          "accel_mean": 0.11377592674167426,
+          "accel_p95": 0.2546653353806732,
+          "jerk_mean": 0.014418673313890424,
+          "jerk_p95": 0.04537485953495293
+        },
+        "native": {
+          "speed_p95": 1.420818747326826,
+          "accel_mean": 0.09473675098232269,
+          "accel_p95": 0.6586883296488724,
+          "jerk_mean": 0.5210489226059858,
+          "jerk_p95": 3.0820345030352594
+        },
+        "gate": {
+          "status": "FAIL",
+          "fails": [
+            "accel_mean"
+          ],
+          "ratios": {
+            "speed_p95": 0.8935073746442527,
+            "accel_mean": 1.2009692707627706,
+            "accel_p95": 0.38662493916725066,
+            "jerk_mean": 0.02767239828800825,
+            "jerk_p95": 0.014722372345366904
+          }
+        }
+      }
+    },
+    "outer": {
+      "overall": {
+        "N": 1035,
+        "coverage": 0.49371980676328503,
+        "native_coverage": 0.6038647342995169,
+        "minADE": 0.2901446970614331,
+        "minFDE": 0.5555245550382709,
+        "native_minADE": 0.17547758517828596,
+        "native_minFDE": 0.2966327368653397,
+        "rescue": 68,
+        "lost": 182,
+        "good_count": 511,
+        "native_good_count": 625
+      },
+      "stable": {
+        "N": 604,
+        "coverage": 0.6572847682119205,
+        "native_coverage": 0.7185430463576159,
+        "minADE": 0.19636889850345113,
+        "minFDE": 0.3477974574292512,
+        "native_minADE": 0.13488642078914104,
+        "native_minFDE": 0.22770019089959204,
+        "rescue": 45,
+        "lost": 82,
+        "good_count": 397,
+        "native_good_count": 434
+      },
+      "transition": {
+        "N": 178,
+        "coverage": 0.34269662921348315,
+        "native_coverage": 0.4550561797752809,
+        "minADE": 0.3167899803876579,
+        "minFDE": 0.5913162888951572,
+        "native_minADE": 0.20850453879234426,
+        "native_minFDE": 0.34186100018216914,
+        "rescue": 13,
+        "lost": 33,
+        "good_count": 61,
+        "native_good_count": 81
+      },
+      "change": {
+        "N": 253,
+        "coverage": 0.20948616600790515,
+        "native_coverage": 0.43478260869565216,
+        "minADE": 0.4952740326225125,
+        "minFDE": 1.026260674917015,
+        "native_minADE": 0.24914661896382423,
+        "native_minFDE": 0.4293782977069047,
+        "rescue": 10,
+        "lost": 67,
+        "good_count": 53,
+        "native_good_count": 110
+      },
+      "_motion": {
+        "pred": {
+          "speed_p95": 1.2695119189302269,
+          "accel_mean": 0.11783217091331816,
+          "accel_p95": 0.2607376904514171,
+          "jerk_mean": 0.011972133483764968,
+          "jerk_p95": 0.0395173263112799
+        },
+        "native": {
+          "speed_p95": 1.3093463769152214,
+          "accel_mean": 0.08778207124571084,
+          "accel_p95": 0.6205093723030161,
+          "jerk_mean": 0.4827988968119614,
+          "jerk_p95": 2.7770934544973604
+        },
+        "gate": {
+          "status": "FAIL",
+          "fails": [
+            "accel_mean"
+          ],
+          "ratios": {
+            "speed_p95": 0.969576837201136,
+            "accel_mean": 1.3423261634314148,
+            "accel_p95": 0.4201994395083688,
+            "jerk_mean": 0.024797350538329474,
+            "jerk_p95": 0.014229743060062893
+          }
+        }
+      }
+    }
+  },
+  "device": "cuda:0"
+}

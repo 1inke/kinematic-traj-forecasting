@@ -1,0 +1,44 @@
+{
+  "status": "CACHED_ONLY_NOT_END_TO_END",
+  "rows": [
+    {
+      "device": "cpu",
+      "batch": 1,
+      "warm50_measure500": true,
+      "seconds_mean": 0.0003042620010674,
+      "seconds_p50": 0.0002369499416090548,
+      "scope": "cached observable401action features -> editor scores only",
+      "CPU_threads": 1
+    },
+    {
+      "device": "cuda",
+      "batch": 1,
+      "warm50_measure500": true,
+      "seconds_mean": 0.0002481911983340979,
+      "seconds_p50": 0.0002432999899610877,
+      "scope": "cached observable401action features -> editor scores only",
+      "CPU_threads": 1
+    },
+    {
+      "device": "cuda",
+      "batch": 32,
+      "warm50_measure500": true,
+      "seconds_mean": 0.0003165332041680813,
+      "seconds_p50": 0.00030910002533346415,
+      "scope": "cached observable401action features -> editor scores only",
+      "CPU_threads": 1
+    }
+  ],
+  "editor_parameters": 11488,
+  "total_unique_parameters": "PENDING_REAL_F16_KIN_INVENTORY",
+  "budget": 305000,
+  "budget_pass": false,
+  "real_end_to_end_status": "PENDING_EXPLICIT_RAW_OBSERVATION_PIPELINE_BENCHMARK",
+  "real_end_to_end_required_components": [
+    "F16 encoder/decoder including neighbours and normalization",
+    "KIN generation",
+    "400 GT-free motion checks and features",
+    "transfer and editor"
+  ],
+  "no_claim_of_deployability": true
+}

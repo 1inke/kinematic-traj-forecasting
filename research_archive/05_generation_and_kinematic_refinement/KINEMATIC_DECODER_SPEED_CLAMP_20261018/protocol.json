@@ -1,0 +1,14 @@
+{
+  "name": "KINEMATIC_DECODER_SPEED_CLAMP",
+  "date": "2026-10-18",
+  "parent": "KINEMATIC_DECODER_EXPLICIT_INTEGRATION_20261018",
+  "arms": ["BASE", "KIN"],
+  "round": 1,
+  "clamp": {"v_max_scale_of_native_speed_p95": 0.995, "a_max_scale_of_native_accel_p95": 0.90},
+  "motion_w": 0.05,
+  "motion_target_ratio": 0.995,
+  "motion_factor": 1.01,
+  "smoke": {"epochs": 2, "subset": 2048, "batch": 128},
+  "short": {"epochs": 8, "batch": 256, "seeds": [42, 43, 44]},
+  "quality_ADE_FDE": [0.2, 0.4]
+}

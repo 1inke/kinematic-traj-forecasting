@@ -1,0 +1,344 @@
+{
+  "document": "RESULT_ANALYSIS",
+  "created_at": "2026-10-18T23:33:00+09:00",
+  "timezone": "Asia/Tokyo",
+  "exec_dir": "<WORKSPACE_ROOT>\\CANDIDATE_SET_JOINT_FEASIBILITY_EXEC_20261018",
+  "tag": "ORACLE_DIAGNOSTIC_ONLY",
+  "GO_K1": true,
+  "GO_K1_reason": "outer_3seed_pool_and_K0C_W",
+  "summary": {
+    "headline": "outer 三 seed 池联合见证与 K0-C 策略 oracle 均达 W；native/kin/V1 基线均未达 W。按设计进入 K1（集合边际选择），生成器冻结。",
+    "key_findings": [
+      "池本身足以组成同时满足覆盖、精度保护、运动学的 K20（pool_joint_witness=true，三 seed）。",
+      "策略 oracle（K0-C）亦达 W，说明存在可选的 K20 组合，而不必同时保留全部 40 条。",
+      "V1 条件提升选择器未达 W：覆盖有升但变化组 ADE/FDE 恶化，未能通过联合门槛。",
+      "seed43 上 union40 因 change_motion FAIL 导致 W_pass=false，但所选 K20（k0a/k0b/k0c）仍通过——全池合并运动学 ≠ 所选子集联合可行性；非质量上界否定。",
+      "所有见证均标记 ORACLE_DIAGNOSTIC_ONLY，不可当作可部署选择器。"
+    ]
+  },
+  "outer": {
+    "N": 1035,
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "common_flags": {
+      "pool_joint_witness": true,
+      "policy_oracle_witness": true,
+      "relaxation_certificate_status": "R_INCUMBENT_VERIFIED_W",
+      "quality_upper_bound_negation": false
+    },
+    "by_seed": {
+      "42": {
+        "union_W_pass": true,
+        "portfolios": {
+          "native20": {
+            "W_pass": false,
+            "overall_good": 625,
+            "change_good": 110,
+            "change_minADE": 0.24914661896382423,
+            "change_minFDE": 0.4293782977069047,
+            "overall_motion": "PASS",
+            "change_motion": "PASS"
+          },
+          "kin20": {
+            "W_pass": false,
+            "overall_good": 585,
+            "change_good": 85,
+            "change_minADE": 0.3062915908569582,
+            "change_minFDE": 0.5645881686550107,
+            "overall_motion": "PASS",
+            "change_motion": "FAIL"
+          },
+          "union40": {
+            "W_pass": true,
+            "overall_good": 721,
+            "change_good": 128,
+            "change_minADE": 0.22948680048057865,
+            "change_minFDE": 0.36788758141631495,
+            "overall_motion": "PASS",
+            "change_motion": "PASS"
+          },
+          "v1_cond_boost_11_9": {
+            "W_pass": false,
+            "overall_good": 667,
+            "change_good": 116,
+            "change_minADE": 0.3209116139319278,
+            "change_minFDE": 0.634290020443257,
+            "overall_motion": "PASS",
+            "change_motion": "PASS"
+          },
+          "k0a": {
+            "W_pass": true,
+            "overall_good": 721,
+            "change_good": 128,
+            "change_minADE": 0.22948680048057865,
+            "change_minFDE": 0.36788758141631495,
+            "overall_motion": "PASS",
+            "change_motion": "PASS"
+          },
+          "k0b_R": {
+            "W_pass": true,
+            "overall_good": 701,
+            "change_good": 128,
+            "change_minADE": 0.23533116230121653,
+            "change_minFDE": 0.39154909840614416,
+            "overall_motion": "PASS",
+            "change_motion": "PASS"
+          },
+          "k0c": {
+            "W_pass": true,
+            "overall_good": 716,
+            "change_good": 126,
+            "change_minADE": 0.23664530545170753,
+            "change_minFDE": 0.3907952146171078,
+            "overall_motion": "PASS",
+            "change_motion": "PASS"
+          }
+        }
+      },
+      "43": {
+        "union_W_pass": false,
+        "portfolios": {
+          "native20": {
+            "W_pass": false,
+            "overall_good": 625,
+            "change_good": 110,
+            "change_minADE": 0.24914661896382423,
+            "change_minFDE": 0.4293782977069047,
+            "overall_motion": "PASS",
+            "change_motion": "PASS"
+          },
+          "kin20": {
+            "W_pass": false,
+            "overall_good": 585,
+            "change_good": 100,
+            "change_minADE": 0.2867388591596827,
+            "change_minFDE": 0.5255331980434635,
+            "overall_motion": "PASS",
+            "change_motion": "FAIL"
+          },
+          "union40": {
+            "W_pass": false,
+            "overall_good": 723,
+            "change_good": 135,
+            "change_minADE": 0.22655124854788805,
+            "change_minFDE": 0.36693235064149865,
+            "overall_motion": "PASS",
+            "change_motion": "FAIL"
+          },
+          "v1_cond_boost_11_9": {
+            "W_pass": false,
+            "overall_good": 674,
+            "change_good": 119,
+            "change_minADE": 0.317906626661751,
+            "change_minFDE": 0.6195238372737318,
+            "overall_motion": "PASS",
+            "change_motion": "PASS"
+          },
+          "k0a": {
+            "W_pass": true,
+            "overall_good": 723,
+            "change_good": 135,
+            "change_minADE": 0.22655124854788805,
+            "change_minFDE": 0.36693235064149865,
+            "overall_motion": "PASS",
+            "change_motion": "PASS"
+          },
+          "k0b_R": {
+            "W_pass": true,
+            "overall_good": 704,
+            "change_good": 135,
+            "change_minADE": 0.23486941802121725,
+            "change_minFDE": 0.3945294357526642,
+            "overall_motion": "PASS",
+            "change_motion": "PASS"
+          },
+          "k0c": {
+            "W_pass": true,
+            "overall_good": 717,
+            "change_good": 133,
+            "change_minADE": 0.23243657541691962,
+            "change_minFDE": 0.3845334811735341,
+            "overall_motion": "PASS",
+            "change_motion": "PASS"
+          }
+        }
+      },
+      "44": {
+        "union_W_pass": true,
+        "portfolios": {
+          "native20": {
+            "W_pass": false,
+            "overall_good": 625,
+            "change_good": 110,
+            "change_minADE": 0.24914661896382423,
+            "change_minFDE": 0.4293782977069047,
+            "overall_motion": "PASS",
+            "change_motion": "PASS"
+          },
+          "kin20": {
+            "W_pass": false,
+            "overall_good": 583,
+            "change_good": 92,
+            "change_minADE": 0.2998445421137067,
+            "change_minFDE": 0.5544074262065211,
+            "overall_motion": "PASS",
+            "change_motion": "PASS"
+          },
+          "union40": {
+            "W_pass": true,
+            "overall_good": 724,
+            "change_good": 129,
+            "change_minADE": 0.2258293090308787,
+            "change_minFDE": 0.36426605579319293,
+            "overall_motion": "PASS",
+            "change_motion": "PASS"
+          },
+          "v1_cond_boost_11_9": {
+            "W_pass": false,
+            "overall_good": 671,
+            "change_good": 110,
+            "change_minADE": 0.3166486933781599,
+            "change_minFDE": 0.623940046619975,
+            "overall_motion": "PASS",
+            "change_motion": "PASS"
+          },
+          "k0a": {
+            "W_pass": true,
+            "overall_good": 724,
+            "change_good": 129,
+            "change_minADE": 0.2258293090308787,
+            "change_minFDE": 0.36426605579319293,
+            "overall_motion": "PASS",
+            "change_motion": "PASS"
+          },
+          "k0b_R": {
+            "W_pass": true,
+            "overall_good": 713,
+            "change_good": 129,
+            "change_minADE": 0.23390761870393048,
+            "change_minFDE": 0.3909731851564904,
+            "overall_motion": "PASS",
+            "change_motion": "PASS"
+          },
+          "k0c": {
+            "W_pass": true,
+            "overall_good": 720,
+            "change_good": 127,
+            "change_minADE": 0.23109289210337167,
+            "change_minFDE": 0.3915086382901264,
+            "overall_motion": "PASS",
+            "change_motion": "PASS"
+          }
+        }
+      }
+    },
+    "comparison_table_change_good": {
+      "native20": [
+        110,
+        110,
+        110
+      ],
+      "v1_cond_boost_11_9": [
+        116,
+        119,
+        110
+      ],
+      "k0c": [
+        126,
+        133,
+        127
+      ],
+      "k0a": [
+        128,
+        135,
+        129
+      ],
+      "note": "order seeds 42/43/44"
+    },
+    "vs_native_k0c_ADE_FDE": {
+      "native_change_ADE_FDE": [
+        0.24915,
+        0.42938
+      ],
+      "k0c_change_ADE": [
+        0.23665,
+        0.23244,
+        0.23109
+      ],
+      "k0c_change_FDE": [
+        0.3908,
+        0.38453,
+        0.39151
+      ],
+      "note": "K0-C oracle 在三 seed 上变化组 ADE/FDE 均优于 native；V1 则显著恶化。"
+    }
+  },
+  "secondary_splits": {
+    "inner": {
+      "N": 1856,
+      "seed42": "DONE_pool_and_K0C_W",
+      "seed43": "DONE_pool_and_K0C_W_union40_motion_FAIL",
+      "seed44": "IN_PROGRESS_OR_PENDING",
+      "blocks_GO_K1": false
+    },
+    "FIT_cal": {
+      "N": 2958,
+      "seed42": "DONE_pool_and_K0C_W",
+      "seed43": "DONE_pool_and_K0C_W_union40_motion_FAIL",
+      "seed44": "NOT_DONE",
+      "blocks_GO_K1": false
+    },
+    "original_CAL": {
+      "status": "NOT_DONE",
+      "blocks_GO_K1": false,
+      "note": "原 CAL 迁移问题本轮未验证。"
+    }
+  },
+  "inner_FIT_available_snapshot": {
+    "seed42_inner_k0c": {
+      "overall_good": 1150,
+      "change_good": 207,
+      "change_minADE": 0.24309235705623497,
+      "change_minFDE": 0.41013691038776123,
+      "W_pass": true
+    },
+    "seed42_FIT_cal_k0c": {
+      "overall_good": 1944,
+      "change_good": 301,
+      "change_minADE": 0.26637986205528813,
+      "change_minFDE": 0.4398269810005079,
+      "W_pass": true
+    },
+    "seed43_inner_k0c": {
+      "overall_good": 1142,
+      "change_good": 211,
+      "change_minADE": 0.24128042167741406,
+      "change_minFDE": 0.4070558760399247,
+      "W_pass": true
+    },
+    "seed43_FIT_cal_k0c": {
+      "overall_good": 1940,
+      "change_good": 296,
+      "change_minADE": 0.26599937244064875,
+      "change_minFDE": 0.4375511866744952,
+      "W_pass": true
+    }
+  },
+  "branch_decision": {
+    "decision": "ENTER_K1",
+    "do_not_train_generator": true,
+    "K1_focus": "集合边际质量选择（替代单候选 good 概率排序 + 固定配额）",
+    "K1_training_authorized_by_user_series": true,
+    "K1_training_started_this_turn": false,
+    "priority_this_deliverable": "RESULT_ANALYSIS + GO_K1_REGISTER"
+  },
+  "caveats": [
+    "ORACLE_DIAGNOSTIC_ONLY：MIP/贪心 oracle 使用未来标签/全池信息，不可直接部署。",
+    "seed43 union40 change_motion FAIL 不否定所选 K20 的可行性。",
+    "副 split（seed44 inner/FIT_cal、original_CAL）未齐不挡 GO_K1。",
+    "未重训生成器；池为既有 native+KIN。"
+  ]
+}

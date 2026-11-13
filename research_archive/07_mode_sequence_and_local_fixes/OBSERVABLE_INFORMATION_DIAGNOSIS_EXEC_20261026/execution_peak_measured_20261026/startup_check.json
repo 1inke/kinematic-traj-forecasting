@@ -1,0 +1,127 @@
+{
+  "check": {
+    "at": "2026-10-27T00:53:30.5325739+09:00",
+    "taskstate": "Running",
+    "triggercount": 0,
+    "processes": [
+      {
+        "ProcessId": 22868,
+        "ParentProcessId": 2804,
+        "CreationDate": "2026-10-27T00:52:08.177363+09:00",
+        "ExecutablePath": "<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe",
+        "CommandLine": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\OBSERVABLE_INFORMATION_DIAGNOSIS_EXEC_20261026\\execution_peak_measured_20261026\\launch_worker.py\""
+      },
+      {
+        "ProcessId": 42020,
+        "ParentProcessId": 22868,
+        "CreationDate": "2026-10-27T00:52:08.652016+09:00",
+        "ExecutablePath": "<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe",
+        "CommandLine": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\OBSERVABLE_INFORMATION_DIAGNOSIS_EXEC_20261026\\execution_peak_measured_20261026\\launch_worker.py\""
+      },
+      {
+        "ProcessId": 35712,
+        "ParentProcessId": 42020,
+        "CreationDate": "2026-10-27T00:52:08.705664+09:00",
+        "ExecutablePath": "<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe",
+        "CommandLine": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\OBSERVABLE_INFORMATION_DIAGNOSIS_EXEC_20261026\\execution_peak_measured_20261026\\worker.py\""
+      },
+      {
+        "ProcessId": 13100,
+        "ParentProcessId": 35712,
+        "CreationDate": "2026-10-27T00:52:08.726138+09:00",
+        "ExecutablePath": "<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe",
+        "CommandLine": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\OBSERVABLE_INFORMATION_DIAGNOSIS_EXEC_20261026\\execution_peak_measured_20261026\\worker.py\""
+      }
+    ],
+    "files": {
+      "worker_state.json": {
+        "status": "RUNNING",
+        "pid": 13100,
+        "parent_pid": 35712,
+        "started_at": "2026-10-27T00:52:08.927061+09:00"
+      },
+      "current_child.json": {
+        "tag": "tinyaudit_S_43_32",
+        "pid": 7828,
+        "started_at": "2026-10-27T00:53:30.185203+09:00",
+        "args": [
+          "evaluate_saved.py",
+          "tiny",
+          "S",
+          "43",
+          "tiny",
+          "32"
+        ]
+      },
+      "progress.json": {
+        "stage": "tinyaudit_S_43_32",
+        "at": "2026-10-27T00:53:30.175121+09:00",
+        "arguments": [
+          "evaluate_saved.py",
+          "tiny",
+          "S",
+          "43",
+          "tiny",
+          "32"
+        ]
+      }
+    },
+    "worker_stderr_bytes": 0
+  },
+  "outside_parents": [
+    {
+      "ProcessId": 2804,
+      "ParentProcessId": 1920,
+      "Name": "svchost.exe",
+      "CommandLine": null
+    }
+  ],
+  "startup_only_supplement": {
+    "at": "2026-10-27T00:54:54.8468003+09:00",
+    "only_startup_supplement_no_PID_task_requery": true,
+    "tiny_complete": [
+      {
+        "run": "I_seed42",
+        "updates": 512,
+        "history_updates": 512,
+        "source": "a0ea98694ab4fd94dc87a0b1680842a48706afd3360da3551c01da8dba57ff5e",
+        "done_sha": "DACBAFA06AEA714E608C1C69933A01E8CBA23DAFE62202BC77C6B7845C93A831"
+      },
+      {
+        "run": "I_seed43",
+        "updates": 512,
+        "history_updates": 512,
+        "source": "a0ea98694ab4fd94dc87a0b1680842a48706afd3360da3551c01da8dba57ff5e",
+        "done_sha": "A8654D71483B7085F81E1B4CB6507A6C1E8F468140BE8899A7D9C571147A0BAF"
+      },
+      {
+        "run": "I_seed44",
+        "updates": 512,
+        "history_updates": 512,
+        "source": "a0ea98694ab4fd94dc87a0b1680842a48706afd3360da3551c01da8dba57ff5e",
+        "done_sha": "BA614E8E5B418EB906EDCDA18E40C3A33CE1C515F201760CBECD10284048F200"
+      },
+      {
+        "run": "S_seed42",
+        "updates": 512,
+        "history_updates": 512,
+        "source": "a0ea98694ab4fd94dc87a0b1680842a48706afd3360da3551c01da8dba57ff5e",
+        "done_sha": "C6528EBAF68CFB1FB3A13736D9A737FB03F95AC25DA3AF950A6ECE8B002CA84B"
+      },
+      {
+        "run": "S_seed43",
+        "updates": 512,
+        "history_updates": 512,
+        "source": "a0ea98694ab4fd94dc87a0b1680842a48706afd3360da3551c01da8dba57ff5e",
+        "done_sha": "B830065306EB1AB4B177C034AD24ACFD448556C5884FA94EBC979570AB6F40E6"
+      },
+      {
+        "run": "S_seed44",
+        "updates": 512,
+        "history_updates": 512,
+        "source": "a0ea98694ab4fd94dc87a0b1680842a48706afd3360da3551c01da8dba57ff5e",
+        "done_sha": "7C14BCEDFB6B6AD233570369327BB9A4E59F5EF14B108C8A663084A028F4D9CB"
+      }
+    ]
+  }
+}

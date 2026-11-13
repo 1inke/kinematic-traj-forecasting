@@ -1,0 +1,153 @@
+build_script=<WORKSPACE_ROOT>\CANDIDATE_SET_JOINT_FEASIBILITY_EXEC_20261018\visual_review_overnight\build_overnight_visual.py
+build:5:from pathlib import Path
+build:10:HERE = Path(__file__).resolve().parent
+build:16:def sha(path: Path) -> str:
+build:18:with path.open("rb") as f:
+build:23:def write_js(path: Path, assignment: str, value) -> None:
+build:28:path.write_text(assignment + "=" + text + ";\n", encoding="utf-8")
+build:30:def gather_paths(pool: np.ndarray, indices: np.ndarray) -> np.ndarray:
+build:43:train_cache = ROOT / "REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES/results/cache/train_dev/eth_train.npz"
+build:44:labels_path = ROOT / "F16_OBSERVABLE_CUE_DIAGNOSIS_20261003/labels/train.npz"
+build:45:encoder_path = ROOT / "GENERATION_NATIVE_DECODER_SERIES/train_encoder.npz"
+build:46:kin_path = ROOT / f"UNION_SELECTOR_K40_TO_K20_20261018/results/cache_pred/kin_{SPLIT}_seed{SEED}.npy"
+build:47:bundle_path = ROOT / f"COMPLEMENTARY_POOL_VALIDATION_20261018/artifacts/v1/{SPLIT}_seed{SEED}_bundle.npz"
+build:49:k0c_idx_path = EXEC / f"results/seed{SEED}/{SPLIT}/k0c_indices.npy"
+build:57:with np.load(labels_path, allow_pickle=False) as z:
+build:60:with np.load(encoder_path, allow_pickle=False) as z:
+build:64:bundle = np.load(bundle_path, allow_pickle=False)
+build:69:k0c_idx = np.load(k0c_idx_path)
+build:70:kin = np.load(kin_path)
+build:83:native_paths = train_cand[trows, :, :24].reshape(n, 20, 12, 2).astype(np.float32)
+build:84:pool = np.concatenate([native_paths, kin.astype(np.float32)], axis=1)  # (N,40,12,2)
+build:94:np.linalg.norm(native_paths.astype(np.float64) - future[:, None], axis=-1).mean(-1)
+build:105:("native", "原生 K20 · logits argmax", native_paths, train_logits[trows].astype(np.float64),
+build:107:("v1", "V1 并集选组 · 继承 scores40", gather_paths(pool, bundle["selected_pool_indices"]),
+build:109:("k1_I", "K1-I 学习选择器 · outer", gather_paths(pool, I_idx), gather_scores(scores40, I_idx),
+build:111:("k1_S", "K1-S 学习选择器 · outer（过夜主线）", gather_paths(pool, S_idx), gather_scores(scores40, S_idx),
+build:113:("k0c", "K0-C 池可达 oracle · 事后参考", gather_paths(pool, k0c_idx), gather_scores(scores40, k0c_idx),
+build:115:("deploy_A", "DEPLOY A · K1-S 锁门", gather_paths(pool, deploy_A), gather_scores(scores40, deploy_A),
+build:117:("deploy_B", "DEPLOY B · 去 pred_gate + S 运动学", gather_paths(pool, deploy_B), gather_scores(scores40, deploy_B),
+build:136:for key, label, paths, scores, sem in models:
+build:138:assert paths.shape == (n, 20, 12, 2) and scores.shape == (n, 20)
+build:139:assert np.isfinite(paths).all() and np.isfinite(scores).all()
+build:140:d, ade, fde = diagnose(paths, future, scores)
+build:141:precise[key] = paths
+build:166:p=np.round(paths.astype(np.float64), 5), a=ade, f=fde, d=model_rows,
+build:169:sources = [train_cache, labels_path, encoder_path, kin_path, bundle_path,
+build:170:k1_dir / "I_indices.npy", k1_dir / "S_indices.npy", k0c_idx_path,
+build:176:neighbors=[[] for _ in range(n)],
+build:184:HERE / "data" / "arrays.npz",
+build:223:f"- 样本：ETH outer seed{SEED}，N={n}，每例 K20（从 native+KIN 的 K40 池选出）",
+=== manifest ===
+{
+  "tag": "freeze_inputs",
+  "created_at": "2026-10-19T00:05:33+09:00",
+  "timezone_label": "Asia/Tokyo",
+  "status": "OK",
+  "errors": [],
+  "files": {
+    "eth_train.npz": {
+      "path": "<WORKSPACE_ROOT>\\REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES\\results\\cache\\train_dev\\eth_train.npz",
+      "exists": true,
+      "sha256": "f8e6769c7e28b0d5ad4c108989246d6e724c078190102ae90443e62600d5a3ea",
+      "size": 87254814
+    },
+    "labels_train.npz": {
+      "path": "<WORKSPACE_ROOT>\\F16_OBSERVABLE_CUE_DIAGNOSIS_20261003\\labels\\train.npz",
+      "exists": true,
+      "sha256": "01c8226f6bc3e7103c61f52294ac109ad2d585be2500a25d1601e08efe487efc",
+      "size": 4222064
+    },
+    "splits.npz": {
+      "path": "<WORKSPACE_ROOT>\\GENERATION_GROUPED_TRANSFER_SERIES_20261006\\identity_audit\\splits.npz",
+      "exists": true,
+      "sha256": "349659306a435a3a70e65d75d08d618a2aa8bc76fca38142c3433ab5678e12e7",
+      "size": 240544
+    },
+    "train_encoder.npz": {
+      "path": "<WORKSPACE_ROOT>\\GENERATION_NATIVE_DECODER_SERIES\\train_encoder.npz",
+      "exists": true,
+      "sha256": "f6c232e4b05e4e8db2a01c7fd0880beecd835b59352b81ba08132c8b610e87f0",
+      "size": 83228717
+    },
+    "FIT_CAL_SPLIT.json": {
+      "path": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\results\\v1\\FIT_CAL_SPLIT.json",
+      "exists": true,
+      "sha256": "687f19e7ca2f67d26cd99e24fde27d6ac3fd31dc0d78bad1d12ca8cff8473930",
+      "size": 274
+    },
+    "KIN_seed42.pt": {
+      "path": "<WORKSPACE_ROOT>\\KINEMATIC_DECODER_SPEED_CLAMP_20261018\\results\\short\\KIN_seed42.pt",
+      "exists": true,
+      "sha256": "029fda98741cbbd57c7867bc6ca40b573e58c4dd4d109bbaef9cc9e07fe88e20",
+      "size": 259381
+    },
+    "kin_FIT_seed42.npy": {
+      "path": "<WORKSPACE_ROOT>\\UNION_SELECTOR_K40_TO_K20_20261018\\results\\cache_pred\\kin_FIT_seed42.npy",
+      "exists": true,
+      "sha256": "795ce65f440dc2506f14daa8c2f5dc3a33eb24cd4c9cfae0062f364eaaa70351",
+      "size": 36305408
+    },
+    "kin_outer_seed42.npy": {
+      "path": "<WORKSPACE_ROOT>\\UNION_SELECTOR_K40_TO_K20_20261018\\results\\cache_pred\\kin_outer_seed42.npy",
+      "exists": true,
+      "sha256": "c49a508e3be59371eadc735e025c0e5aea7ef7806c5505c6ea9f843e985a82bc",
+     
+=== eth-ish dirs ===
+<WORKSPACE_ROOT>\av2_dataset
+<WORKSPACE_ROOT>\ETH_UCY_FULL_CROSSVAL_SERIES
+<WORKSPACE_ROOT>\GENERATION_GROUPED_TRANSFER_SERIES_20261006
+<WORKSPACE_ROOT>\GROUPED_TRANSFER_DISTRIBUTION_DIAGNOSIS_20261015
+<WORKSPACE_ROOT>\interaction-dataset-master
+<WORKSPACE_ROOT>\INTERACTION_DATASET_SERIES
+<WORKSPACE_ROOT>\OFFICIAL_ETH_UCY_CURRENT_DECODER_SERIES
+<WORKSPACE_ROOT>\OFFICIAL_ETH_UCY_FINAL_3SEED_SERIES
+<WORKSPACE_ROOT>\PED_FOUR_DIRECTION_SERIES_20261011
+<WORKSPACE_ROOT>\PED_MOTION_UNDERSTANDING_SERIES_20261009
+<WORKSPACE_ROOT>\PED_REPAIRABLE_ANCHOR_SERIES_20261011
+<WORKSPACE_ROOT>\SCENE_METHOD_DEEP_SURVEY_2026
+<WORKSPACE_ROOT>\TARGETED_ETH_SERIES
+<WORKSPACE_ROOT>\kinematic-traj-forecasting
+<WORKSPACE_ROOT>\TRAJECTORY_RESEARCH_PROGRESS_REPORT_20261005
+<WORKSPACE_ROOT>\TRAJECTORY_SELECTION_VISUAL_REVIEW_20261003
+<WORKSPACE_ROOT>\TRAJECTORY_SEVEN_DAY_REPORT_20261008
+dir: <WORKSPACE_ROOT>\ETH_UCY_FULL_CROSSVAL_SERIES
+dir: <WORKSPACE_ROOT>\CANDIDATE_SELECTION_AUDIT_SERIES\EXP_186A_CANDIDATE_SELECTION_FEATURE_AUDIT\cache\eth
+dir: <WORKSPACE_ROOT>\CANDIDATE_SELECTION_AUDIT_SERIES\EXP_186A_CANDIDATE_SELECTION_FEATURE_AUDIT\cache\hotel
+dir: <WORKSPACE_ROOT>\CANDIDATE_SELECTION_AUDIT_SERIES\EXP_186A_CANDIDATE_SELECTION_FEATURE_AUDIT\cache\zara01
+dir: <WORKSPACE_ROOT>\CANDIDATE_SELECTION_AUDIT_SERIES\EXP_186A_CANDIDATE_SELECTION_FEATURE_AUDIT\cache\zara02
+dir: <WORKSPACE_ROOT>\CANDIDATE_SELECTION_AUDIT_SERIES\EXP_186A_CANDIDATE_SELECTION_FEATURE_AUDIT\preflight\cache\eth
+dir: <WORKSPACE_ROOT>\CANDIDATE_SELECTION_AUDIT_SERIES\EXP_186A_CANDIDATE_SELECTION_FEATURE_AUDIT\preflight\cache\hotel
+dir: <WORKSPACE_ROOT>\CANDIDATE_SELECTION_AUDIT_SERIES\EXP_186A_CANDIDATE_SELECTION_FEATURE_AUDIT\preflight\cache\zara01
+dir: <WORKSPACE_ROOT>\CANDIDATE_SELECTION_AUDIT_SERIES\EXP_186A_CANDIDATE_SELECTION_FEATURE_AUDIT\preflight\cache\zara02
+dir: <WORKSPACE_ROOT>\E2_F16_END_TO_END_COMPARISON_SERIES\EXP_173_E2_F16_END_TO_END\results\eth
+dir: <WORKSPACE_ROOT>\E2_F16_END_TO_END_COMPARISON_SERIES\EXP_173_E2_F16_END_TO_END\results\hotel
+dir: <WORKSPACE_ROOT>\E2_F16_END_TO_END_COMPARISON_SERIES\EXP_173_E2_F16_END_TO_END\results\zara01
+dir: <WORKSPACE_ROOT>\E2_F16_END_TO_END_COMPARISON_SERIES\EXP_173_E2_F16_END_TO_END\results\zara02
+dir: <WORKSPACE_ROOT>\ETH_UCY_FULL_CROSSVAL_SERIES\EXP_133_CURRENT_MODEL_FULL_ETH_UCY\results\eth
+dir: <WORKSPACE_ROOT>\ETH_UCY_FULL_CROSSVAL_SERIES\EXP_133_CURRENT_MODEL_FULL_ETH_UCY\results\hotel
+dir: <WORKSPACE_ROOT>\ETH_UCY_FULL_CROSSVAL_SERIES\EXP_133_CURRENT_MODEL_FULL_ETH_UCY\results\zara01
+dir: <WORKSPACE_ROOT>\ETH_UCY_FULL_CROSSVAL_SERIES\EXP_133_CURRENT_MODEL_FULL_ETH_UCY\results\zara02
+dir: <WORKSPACE_ROOT>\EXPLICIT_ENDPOINT_PROTOTYPE_SERIES\EXP_163_EXPLICIT_ENDPOINT_PROTOTYPE_K20\results\eth
+dir: <WORKSPACE_ROOT>\EXPLICIT_ENDPOINT_PROTOTYPE_SERIES\EXP_163_EXPLICIT_ENDPOINT_PROTOTYPE_K20\results\hotel
+dir: <WORKSPACE_ROOT>\EXPLICIT_ENDPOINT_PROTOTYPE_SERIES\EXP_163_EXPLICIT_ENDPOINT_PROTOTYPE_K20\results\zara01
+dir: <WORKSPACE_ROOT>\EXPLICIT_ENDPOINT_PROTOTYPE_SERIES\EXP_163_EXPLICIT_ENDPOINT_PROTOTYPE_K20\results\zara02
+dir: <WORKSPACE_ROOT>\FINAL_END_TO_END_ENCODER_ABLATION_SERIES\EXP_187A_END_TO_END_ENCODER_ABLATION\results\eth
+dir: <WORKSPACE_ROOT>\FINAL_END_TO_END_ENCODER_ABLATION_SERIES\EXP_187A_END_TO_END_ENCODER_ABLATION\results\hotel
+dir: <WORKSPACE_ROOT>\FINAL_END_TO_END_ENCODER_ABLATION_SERIES\EXP_187A_END_TO_END_ENCODER_ABLATION\results\zara01
+dir: <WORKSPACE_ROOT>\FINAL_END_TO_END_ENCODER_ABLATION_SERIES\EXP_187A_END_TO_END_ENCODER_ABLATION\results\zara02
+dir: <WORKSPACE_ROOT>\FOLD_STAGE_ATTRIBUTION_SERIES\EXP_157B_MATCHED_K20\results\eth
+dir: <WORKSPACE_ROOT>\FOLD_STAGE_ATTRIBUTION_SERIES\EXP_157B_MATCHED_K20\results\hotel
+dir: <WORKSPACE_ROOT>\FOLD_STAGE_ATTRIBUTION_SERIES\EXP_157B_MATCHED_K20\results\zara01
+dir: <WORKSPACE_ROOT>\FOLD_STAGE_ATTRIBUTION_SERIES\EXP_157B_MATCHED_K20\results\zara02
+dir: <WORKSPACE_ROOT>\HORIZON_RESOLVED_MOTION_CONDITIONING_SERIES\results\c1\eth
+dir: <WORKSPACE_ROOT>\HORIZON_RESOLVED_MOTION_CONDITIONING_SERIES\results\c1\hotel
+dir: <WORKSPACE_ROOT>\HORIZON_RESOLVED_MOTION_CONDITIONING_SERIES\results\c1\zara01
+dir: <WORKSPACE_ROOT>\HORIZON_RESOLVED_MOTION_CONDITIONING_SERIES\results\c1\zara02
+dir: <WORKSPACE_ROOT>\HORIZON_RESOLVED_MOTION_CONDITIONING_SERIES\results\p1\eth
+dir: <WORKSPACE_ROOT>\HORIZON_RESOLVED_MOTION_CONDITIONING_SERIES\results\p1\hotel
+dir: <WORKSPACE_ROOT>\HORIZON_RESOLVED_MOTION_CONDITIONING_SERIES\results\p1\zara01
+dir: <WORKSPACE_ROOT>\HORIZON_RESOLVED_MOTION_CONDITIONING_SERIES\results\p1\zara02
+dir: <WORKSPACE_ROOT>\JOINT_HYBRID_GENERATOR_SERIES\EXP_168A_HYBRID_K20_10_10\results\eth
+dir: <WORKSPACE_ROOT>\JOINT_HYBRID_GENERATOR_SERIES\EXP_168A_HYBRID_K20_10_10\results\hotel
+dir: <WORKSPACE_ROOT>\JOINT_HYBRID_GENERATOR_SERIES\EXP_168A_HYBRID_K20_10_10\results\zara01

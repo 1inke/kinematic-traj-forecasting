@@ -1,0 +1,5 @@
+{
+  "status": "FAILURE",
+  "at": "2026-10-23T13:58:17.423467+09:00",
+  "traceback": "Traceback (most recent call last):\n  File \"<WORKSPACE_ROOT>\\qoder_work\\F16_CONTEXT_TAIL_RETENTION_DESIGN_20261023\\T1_execution_20261023\\preflight.py\", line 150, in <module>\n    try:main()\n  File \"<WORKSPACE_ROOT>\\qoder_work\\F16_CONTEXT_TAIL_RETENTION_DESIGN_20261023\\T1_execution_20261023\\preflight.py\", line 129, in main\n    data=load_data();prepare(data);sf=stats_fixture(data);fx=fixtures(data);res={arm:resume_fixture(data,arm) for arm in ARMS};bench=benchmark(data,guard)\n  File \"<WORKSPACE_ROOT>\\qoder_work\\F16_CONTEXT_TAIL_RETENTION_DESIGN_20261023\\T1_execution_20261023\\preflight.py\", line 105, in benchmark\n    start=time.perf_counter();save_evaluate(path,'FIT',pred,sub,guard);smokes[arm]=time.perf_counter()-start\n  File \"<WORKSPACE_ROOT>\\qoder_work\\F16_CONTEXT_TAIL_RETENTION_DESIGN_20261023\\T1_execution_20261023\\evaluate_saved.py\", line 39, in save_evaluate\n    seed=int(run.name.split('seed')[-1]);fixed={}\nValueError: invalid literal for int() with base 10: 'P_relative'\n"
+}

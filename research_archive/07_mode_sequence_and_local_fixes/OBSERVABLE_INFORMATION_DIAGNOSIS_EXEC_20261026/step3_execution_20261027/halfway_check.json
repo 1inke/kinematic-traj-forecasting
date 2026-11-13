@@ -1,0 +1,160 @@
+{
+  "at": "2026-10-27T02:10:00.4770440+09:00",
+  "task": "Trajectory-ObservableInformation-Step3-20261027",
+  "task_state": "Ready",
+  "triggers": 0,
+  "processes": [],
+  "parents": [],
+  "worker": {
+    "status": "SUCCESS",
+    "pid": 51984,
+    "started": "2026-10-27T01:54:59.375306+09:00",
+    "finished": "2026-10-27T02:02:14.870964+09:00"
+  },
+  "exit": {
+    "status": "SUCCESS",
+    "pid": 51984,
+    "started": "2026-10-27T01:54:59.375306+09:00",
+    "finished": "2026-10-27T02:02:14.870964+09:00"
+  },
+  "stage": {
+    "stage": "STEP3_FINAL_SOURCE_OUTPUT_SHA",
+    "at": "2026-10-27T02:02:04.629398+09:00"
+  },
+  "child": {
+    "pid": 13584,
+    "stage": "primary_bootstrap_20000",
+    "exit_code": 0,
+    "finished": "2026-10-27T02:02:04.621713+09:00"
+  },
+  "histories": [
+    {
+      "run": "C_base_seed42",
+      "updates": 1024,
+      "done": true
+    },
+    {
+      "run": "C_base_seed43",
+      "updates": 1024,
+      "done": true
+    },
+    {
+      "run": "C_base_seed44",
+      "updates": 1024,
+      "done": true
+    },
+    {
+      "run": "C_token_seed42",
+      "updates": 1024,
+      "done": true
+    },
+    {
+      "run": "C_token_seed43",
+      "updates": 1024,
+      "done": true
+    },
+    {
+      "run": "C_token_seed44",
+      "updates": 1024,
+      "done": true
+    }
+  ],
+  "result": {
+    "status": "SUCCESS_STEP3_REVIEW_REQUIRED",
+    "runs": 6,
+    "updates": 6144,
+    "epochs": 48,
+    "blocked_arms": [
+      "C_neighbor",
+      "C_both"
+    ],
+    "primary": {
+      "family_fixed": 6,
+      "records": {
+        "Ctoken_minus_Cbase": {
+          "point_per_seed": [
+            0,
+            0,
+            0
+          ],
+          "mean": 0,
+          "valid": 20000,
+          "invalid": 0,
+          "change_tracks": 74,
+          "status": "ESTIMABLE",
+          "CI95": [
+            0,
+            0
+          ],
+          "CI_family6": [
+            0,
+            0
+          ],
+          "fixed_seed_CI_family6": [
+            0,
+            0
+          ],
+          "positive_gate": false
+        },
+        "C_base_minus_native": {
+          "point_per_seed": [
+            0,
+            0,
+            0
+          ],
+          "mean": 0,
+          "valid": 20000,
+          "invalid": 0,
+          "change_tracks": 74,
+          "status": "ESTIMABLE",
+          "CI95": [
+            0,
+            0
+          ],
+          "CI_family6": [
+            0,
+            0
+          ],
+          "fixed_seed_CI_family6": [
+            0,
+            0
+          ],
+          "positive_gate": false
+        },
+        "C_token_minus_native": {
+          "point_per_seed": [
+            0,
+            0,
+            0
+          ],
+          "mean": 0,
+          "valid": 20000,
+          "invalid": 0,
+          "change_tracks": 74,
+          "status": "ESTIMABLE",
+          "CI95": [
+            0,
+            0
+          ],
+          "CI_family6": [
+            0,
+            0
+          ],
+          "fixed_seed_CI_family6": [
+            0,
+            0
+          ],
+          "positive_gate": false
+        }
+      },
+      "same_step2_track_seed_order_EXACT": true,
+      "absent_comparisons": "BLOCKED_INPUT_PROVENANCE_NOT_NEGATIVE",
+      "step2_primary_SHA": "f8266a368c1f27a9b589639ffd72facb3dcee3f2403ef037b3dd6f5319f40c01",
+      "all_20000_independent": true,
+      "token_information_signal": false
+    },
+    "step4": "AUTHORIZED_AFTER_COMPLETE_STEP3_ANALYSIS_NOT_RUN",
+    "source": "a1782a95d8ce5d13038cec741df1fd6f79f9d08fba03b76791b4d5934072d4ce"
+  },
+  "stderr_bytes": 0
+}

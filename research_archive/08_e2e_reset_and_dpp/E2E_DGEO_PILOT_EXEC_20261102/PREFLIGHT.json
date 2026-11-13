@@ -1,0 +1,945 @@
+{
+  "status": "PASS_ALL4_ACTUAL_GEO_PREFLIGHT",
+  "at": "2026-11-02T23:55:58.526860+09:00",
+  "reports": {
+    "DG-Base": {
+      "status": "PASS_ACTUAL_GEO_GPU_MATH_RESUME_SAVED",
+      "parameters": 301922,
+      "initial_B0_all_original_weights_buffers_RNG_paths_logits_exact": true,
+      "initial_actual_diagnostics": {
+        "negative_fraction": 0.0,
+        "off_diag_cos_mean": 0.9867169260978699,
+        "gate_mean": 0.4816577136516571
+      },
+      "actual_first3_batchIDs_exact": true,
+      "phased_gradients": [
+        {
+          "step": 1,
+          "norms": {
+            "coordinator.qk_norm.weight": 0.0,
+            "coordinator.qk_norm.bias": 0.0,
+            "coordinator.v_norm.weight": 0.0,
+            "coordinator.v_norm.bias": 0.0,
+            "coordinator.q1.weight": 0.0,
+            "coordinator.k1.weight": 0.0,
+            "coordinator.value.weight": 0.0,
+            "coordinator.gate.weight": 0.0,
+            "coordinator.gate.bias": 0.0,
+            "coordinator.onorm.weight": 0.0,
+            "coordinator.onorm.bias": 0.0,
+            "coordinator.out_delta.weight": 0.0
+          }
+        },
+        {
+          "step": 2,
+          "norms": {
+            "coordinator.qk_norm.weight": 8.933417916523467e-08,
+            "coordinator.qk_norm.bias": 7.837702042934325e-08,
+            "coordinator.v_norm.weight": 1.6923183920880547e-07,
+            "coordinator.v_norm.bias": 1.8011022007158317e-07,
+            "coordinator.q1.weight": 4.951064447311637e-09,
+            "coordinator.k1.weight": 6.433960031415609e-09,
+            "coordinator.value.weight": 9.978555226552999e-07,
+            "coordinator.gate.weight": 6.29937289886584e-07,
+            "coordinator.gate.bias": 7.988681005599574e-08,
+            "coordinator.onorm.weight": 2.3240460222950787e-07,
+            "coordinator.onorm.bias": 1.51818852600627e-07,
+            "coordinator.out_delta.weight": 1.2215913557156455e-05
+          }
+        },
+        {
+          "step": 3,
+          "norms": {
+            "coordinator.qk_norm.weight": 3.005467874572787e-07,
+            "coordinator.qk_norm.bias": 2.6161981736549933e-07,
+            "coordinator.v_norm.weight": 5.19008665378351e-07,
+            "coordinator.v_norm.bias": 5.457621909954469e-07,
+            "coordinator.q1.weight": 1.5199805858401305e-08,
+            "coordinator.k1.weight": 2.03250358765672e-08,
+            "coordinator.value.weight": 3.055607294299989e-06,
+            "coordinator.gate.weight": 2.0962272628821665e-06,
+            "coordinator.gate.bias": 2.644647452143545e-07,
+            "coordinator.onorm.weight": 7.964745236677118e-07,
+            "coordinator.onorm.bias": 4.7036539285727486e-07,
+            "coordinator.out_delta.weight": 3.488392394501716e-05
+          }
+        }
+      ],
+      "first_all_new_tensor_positive_step": 2,
+      "advertised_numeric_gradient_targets_not_hard_gates": true,
+      "independent_maths": {
+        "coordinator": {
+          "numpy64_value_error": 1.687538997430238e-14,
+          "functional_allparameter_gradient_error": 0.0,
+          "fixed_two_epsilon_FD": [
+            {
+              "direction": 0,
+              "eps": 0.0001,
+              "error": 5.759329374088046e-15
+            },
+            {
+              "direction": 0,
+              "eps": 1e-05,
+              "error": 8.384265944548237e-13
+            },
+            {
+              "direction": 1,
+              "eps": 0.0001,
+              "error": 1.2428006215293996e-13
+            },
+            {
+              "direction": 1,
+              "eps": 1e-05,
+              "error": 7.777761453549997e-13
+            }
+          ],
+          "permutation_error": 1.1102230246251565e-16
+        }
+      },
+      "inherited_full_loss_error": 6.938893903907228e-18,
+      "arbitrary_future_forward_independence": true,
+      "actual_resume": {
+        "windows": 513,
+        "epochs": 2,
+        "updates": 18,
+        "interrupt_after": 11,
+        "all_states_exact": true,
+        "not_full_fit_two_epochs": true
+      },
+      "bad_source_split_stats_ID_arm_output_readers_reject": true,
+      "saved128_original_fullK20_complete_link_pdist_quality_pooled_junction": "PASS"
+    },
+    "DG-GeoGate": {
+      "status": "PASS_ACTUAL_GEO_GPU_MATH_RESUME_SAVED",
+      "parameters": 302754,
+      "initial_B0_all_original_weights_buffers_RNG_paths_logits_exact": true,
+      "initial_actual_diagnostics": {
+        "negative_fraction": 0.0,
+        "off_diag_cos_mean": -0.046616848558187485,
+        "gate_mean": 0.4885396957397461
+      },
+      "actual_first3_batchIDs_exact": true,
+      "phased_gradients": [
+        {
+          "step": 1,
+          "norms": {
+            "coordinator.geo_proj.weight": 0.0,
+            "coordinator.geo_proj.bias": 0.0,
+            "coordinator.qk_norm.weight": 0.0,
+            "coordinator.qk_norm.bias": 0.0,
+            "coordinator.v_norm.weight": 0.0,
+            "coordinator.v_norm.bias": 0.0,
+            "coordinator.q1.weight": 0.0,
+            "coordinator.k1.weight": 0.0,
+            "coordinator.value.weight": 0.0,
+            "coordinator.gate.weight": 0.0,
+            "coordinator.gate.bias": 0.0,
+            "coordinator.onorm.weight": 0.0,
+            "coordinator.onorm.bias": 0.0,
+            "coordinator.out_delta.weight": 0.0
+          }
+        },
+        {
+          "step": 2,
+          "norms": {
+            "coordinator.geo_proj.weight": 1.0075902991957264e-06,
+            "coordinator.geo_proj.bias": 6.421515195143002e-07,
+            "coordinator.qk_norm.weight": 5.28005053013203e-08,
+            "coordinator.qk_norm.bias": 5.1586290794602974e-08,
+            "coordinator.v_norm.weight": 1.9074335000368592e-07,
+            "coordinator.v_norm.bias": 2.258269802268842e-07,
+            "coordinator.q1.weight": 1.4567217476724181e-07,
+            "coordinator.k1.weight": 1.2030008633701073e-07,
+            "coordinator.value.weight": 1.2792123698091018e-06,
+            "coordinator.gate.weight": 5.022557161282748e-07,
+            "coordinator.gate.bias": 6.41606590079391e-08,
+            "coordinator.onorm.weight": 1.669456253239332e-07,
+            "coordinator.onorm.bias": 2.013016313640037e-07,
+            "coordinator.out_delta.weight": 1.0435858712298796e-05
+          }
+        },
+        {
+          "step": 3,
+          "norms": {
+            "coordinator.geo_proj.weight": 2.9452596663759323e-06,
+            "coordinator.geo_proj.bias": 1.891618580884824e-06,
+            "coordinator.qk_norm.weight": 1.5706503120327397e-07,
+            "coordinator.qk_norm.bias": 1.3049140079601784e-07,
+            "coordinator.v_norm.weight": 5.141760652804805e-07,
+            "coordinator.v_norm.bias": 6.735394890711177e-07,
+            "coordinator.q1.weight": 4.058661886574555e-07,
+            "coordinator.k1.weight": 3.691617678214243e-07,
+            "coordinator.value.weight": 3.50462300957588e-06,
+            "coordinator.gate.weight": 1.4075775425226311e-06,
+            "coordinator.gate.bias": 1.5823844989881763e-07,
+            "coordinator.onorm.weight": 4.3302046037752007e-07,
+            "coordinator.onorm.bias": 5.172296937416831e-07,
+            "coordinator.out_delta.weight": 3.0144647098495625e-05
+          }
+        }
+      ],
+      "first_all_new_tensor_positive_step": 2,
+      "advertised_numeric_gradient_targets_not_hard_gates": true,
+      "independent_maths": {
+        "coordinator": {
+          "numpy64_value_error": 1.887379141862766e-15,
+          "functional_allparameter_gradient_error": 0.0,
+          "fixed_two_epsilon_FD": [
+            {
+              "direction": 0,
+              "eps": 0.0001,
+              "error": 1.5815528140589175e-14
+            },
+            {
+              "direction": 0,
+              "eps": 1e-05,
+              "error": 1.0944075235896217e-12
+            },
+            {
+              "direction": 1,
+              "eps": 0.0001,
+              "error": 1.327323667643654e-14
+            },
+            {
+              "direction": 1,
+              "eps": 1e-05,
+              "error": 1.513283449288208e-12
+            }
+          ],
+          "permutation_error": 1.7763568394002505e-15
+        }
+      },
+      "inherited_full_loss_error": 6.938893903907228e-18,
+      "arbitrary_future_forward_independence": true,
+      "actual_resume": {
+        "windows": 513,
+        "epochs": 2,
+        "updates": 18,
+        "interrupt_after": 11,
+        "all_states_exact": true,
+        "not_full_fit_two_epochs": true
+      },
+      "bad_source_split_stats_ID_arm_output_readers_reject": true,
+      "saved128_original_fullK20_complete_link_pdist_quality_pooled_junction": "PASS"
+    },
+    "DG-GeoDiff": {
+      "status": "PASS_ACTUAL_GEO_GPU_MATH_RESUME_SAVED",
+      "parameters": 304802,
+      "initial_B0_all_original_weights_buffers_RNG_paths_logits_exact": true,
+      "initial_actual_diagnostics": {
+        "negative_fraction": 0.41874998807907104,
+        "off_diag_cos_mean": -0.045917581766843796,
+        "gate_mean": 0.5229745507240295
+      },
+      "actual_first3_batchIDs_exact": true,
+      "phased_gradients": [
+        {
+          "step": 1,
+          "norms": {
+            "coordinator.geo_proj.weight": 0.0,
+            "coordinator.geo_proj.bias": 0.0,
+            "coordinator.qk_norm.weight": 0.0,
+            "coordinator.qk_norm.bias": 0.0,
+            "coordinator.v_norm.weight": 0.0,
+            "coordinator.v_norm.bias": 0.0,
+            "coordinator.q1.weight": 0.0,
+            "coordinator.k1.weight": 0.0,
+            "coordinator.value.weight": 0.0,
+            "coordinator.q2.weight": 0.0,
+            "coordinator.k2.weight": 0.0,
+            "coordinator.gate.weight": 0.0,
+            "coordinator.gate.bias": 0.0,
+            "coordinator.onorm.weight": 0.0,
+            "coordinator.onorm.bias": 0.0,
+            "coordinator.out_delta.weight": 0.0
+          }
+        },
+        {
+          "step": 2,
+          "norms": {
+            "coordinator.geo_proj.weight": 1.0475336011950276e-06,
+            "coordinator.geo_proj.bias": 4.52525398486614e-07,
+            "coordinator.qk_norm.weight": 1.1968285207331064e-07,
+            "coordinator.qk_norm.bias": 1.0114872139865838e-07,
+            "coordinator.v_norm.weight": 1.6504252187132806e-07,
+            "coordinator.v_norm.bias": 1.6629905985610094e-07,
+            "coordinator.q1.weight": 5.177122943678114e-07,
+            "coordinator.k1.weight": 5.153292477189098e-07,
+            "coordinator.value.weight": 1.0727509334174101e-06,
+            "coordinator.q2.weight": 1.4442007056914008e-07,
+            "coordinator.k2.weight": 1.220924445988203e-07,
+            "coordinator.gate.weight": 4.466311054329708e-07,
+            "coordinator.gate.bias": 5.4854218944910826e-08,
+            "coordinator.onorm.weight": 1.2673416449615615e-07,
+            "coordinator.onorm.bias": 1.9440425091943325e-07,
+            "coordinator.out_delta.weight": 8.57993472891394e-06
+          }
+        },
+        {
+          "step": 3,
+          "norms": {
+            "coordinator.geo_proj.weight": 3.1377542200061725e-06,
+            "coordinator.geo_proj.bias": 1.2950149539392442e-06,
+            "coordinator.qk_norm.weight": 3.659833396341128e-07,
+            "coordinator.qk_norm.bias": 2.840073420884437e-07,
+            "coordinator.v_norm.weight": 4.841907639274723e-07,
+            "coordinator.v_norm.bias": 4.681998575506441e-07,
+            "coordinator.q1.weight": 1.5315906694013393e-06,
+            "coordinator.k1.weight": 1.55296095272206e-06,
+            "coordinator.value.weight": 3.1131148716667667e-06,
+            "coordinator.q2.weight": 4.484809608129581e-07,
+            "coordinator.k2.weight": 3.70121369996923e-07,
+            "coordinator.gate.weight": 1.368357857245428e-06,
+            "coordinator.gate.bias": 1.7860112677681172e-07,
+            "coordinator.onorm.weight": 3.974419371388649e-07,
+            "coordinator.onorm.bias": 5.291761908665649e-07,
+            "coordinator.out_delta.weight": 2.615157609398011e-05
+          }
+        }
+      ],
+      "first_all_new_tensor_positive_step": 2,
+      "advertised_numeric_gradient_targets_not_hard_gates": true,
+      "independent_maths": {
+        "coordinator": {
+          "numpy64_value_error": 1.3877787807814457e-15,
+          "functional_allparameter_gradient_error": 0.0,
+          "fixed_two_epsilon_FD": [
+            {
+              "direction": 0,
+              "eps": 0.0001,
+              "error": 1.1490144231039723e-14
+            },
+            {
+              "direction": 0,
+              "eps": 1e-05,
+              "error": 1.3068997042875972e-12
+            },
+            {
+              "direction": 1,
+              "eps": 0.0001,
+              "error": 1.420811371658469e-13
+            },
+            {
+              "direction": 1,
+              "eps": 1e-05,
+              "error": 5.518082600011395e-13
+            }
+          ],
+          "permutation_error": 1.2212453270876722e-15
+        }
+      },
+      "inherited_full_loss_error": 4.440892098500626e-16,
+      "arbitrary_future_forward_independence": true,
+      "actual_resume": {
+        "windows": 513,
+        "epochs": 2,
+        "updates": 18,
+        "interrupt_after": 11,
+        "all_states_exact": true,
+        "not_full_fit_two_epochs": true
+      },
+      "bad_source_split_stats_ID_arm_output_readers_reject": true,
+      "saved128_original_fullK20_complete_link_pdist_quality_pooled_junction": "PASS"
+    },
+    "DG-GeoScore": {
+      "status": "PASS_ACTUAL_GEO_GPU_MATH_RESUME_SAVED",
+      "parameters": 304172,
+      "initial_B0_all_original_weights_buffers_RNG_paths_logits_exact": true,
+      "initial_actual_diagnostics": {
+        "negative_fraction": 0.0,
+        "off_diag_cos_mean": -0.046616848558187485,
+        "gate_mean": 0.4885396957397461
+      },
+      "actual_first3_batchIDs_exact": true,
+      "phased_gradients": [
+        {
+          "step": 1,
+          "norms": {
+            "coordinator.geo_proj.weight": 0.0,
+            "coordinator.geo_proj.bias": 0.0,
+            "coordinator.qk_norm.weight": 0.0,
+            "coordinator.qk_norm.bias": 0.0,
+            "coordinator.v_norm.weight": 0.0,
+            "coordinator.v_norm.bias": 0.0,
+            "coordinator.q1.weight": 0.0,
+            "coordinator.k1.weight": 0.0,
+            "coordinator.value.weight": 0.0,
+            "coordinator.gate.weight": 0.0,
+            "coordinator.gate.bias": 0.0,
+            "coordinator.onorm.weight": 0.0,
+            "coordinator.onorm.bias": 0.0,
+            "coordinator.out_delta.weight": 0.0,
+            "rel_scorer.norm.weight": 0.0,
+            "rel_scorer.norm.bias": 0.0,
+            "rel_scorer.proj.weight": 0.0,
+            "rel_scorer.proj.bias": 0.0,
+            "rel_scorer.out_logit.weight": 0.42360344529151917
+          }
+        },
+        {
+          "step": 2,
+          "norms": {
+            "coordinator.geo_proj.weight": 1.0075902991957264e-06,
+            "coordinator.geo_proj.bias": 6.421515195143002e-07,
+            "coordinator.qk_norm.weight": 5.280056214473916e-08,
+            "coordinator.qk_norm.bias": 5.15862694783209e-08,
+            "coordinator.v_norm.weight": 1.9074336421454063e-07,
+            "coordinator.v_norm.bias": 2.2582695180517476e-07,
+            "coordinator.q1.weight": 1.456723452974984e-07,
+            "coordinator.k1.weight": 1.2030021423470316e-07,
+            "coordinator.value.weight": 1.2792124834959395e-06,
+            "coordinator.gate.weight": 5.022562277190445e-07,
+            "coordinator.gate.bias": 6.416063058622967e-08,
+            "coordinator.onorm.weight": 1.6694556848051434e-07,
+            "coordinator.onorm.bias": 2.0130161715314898e-07,
+            "coordinator.out_delta.weight": 1.0435857802804094e-05,
+            "rel_scorer.norm.weight": 5.101486522107734e-07,
+            "rel_scorer.norm.bias": 1.948419736663709e-07,
+            "rel_scorer.proj.weight": 3.683358045236673e-06,
+            "rel_scorer.proj.bias": 1.597376524387073e-07,
+            "rel_scorer.out_logit.weight": 0.41785985231399536
+          }
+        },
+        {
+          "step": 3,
+          "norms": {
+            "coordinator.geo_proj.weight": 2.9443563107633963e-06,
+            "coordinator.geo_proj.bias": 1.89037632480904e-06,
+            "coordinator.qk_norm.weight": 1.5708910439116153e-07,
+            "coordinator.qk_norm.bias": 1.304930492551648e-07,
+            "coordinator.v_norm.weight": 5.139551717547874e-07,
+            "coordinator.v_norm.bias": 6.732028055012051e-07,
+            "coordinator.q1.weight": 4.055714555306622e-07,
+            "coordinator.k1.weight": 3.689604284318193e-07,
+            "coordinator.value.weight": 3.503211701172404e-06,
+            "coordinator.gate.weight": 1.408117100254458e-06,
+            "coordinator.gate.bias": 1.5830352140255854e-07,
+            "coordinator.onorm.weight": 4.3320721943018725e-07,
+            "coordinator.onorm.bias": 5.171588099983637e-07,
+            "coordinator.out_delta.weight": 3.0137656722217798e-05,
+            "rel_scorer.norm.weight": 1.0758353710116353e-06,
+            "rel_scorer.norm.bias": 4.663041011099267e-07,
+            "rel_scorer.proj.weight": 7.797566468070727e-06,
+            "rel_scorer.proj.bias": 3.841841191842832e-07,
+            "rel_scorer.out_logit.weight": 0.28598207235336304
+          }
+        }
+      ],
+      "first_all_new_tensor_positive_step": 2,
+      "advertised_numeric_gradient_targets_not_hard_gates": true,
+      "independent_maths": {
+        "coordinator": {
+          "numpy64_value_error": 1.9984014443252818e-15,
+          "functional_allparameter_gradient_error": 0.0,
+          "fixed_two_epsilon_FD": [
+            {
+              "direction": 0,
+              "eps": 0.0001,
+              "error": 1.5946182633889971e-13
+            },
+            {
+              "direction": 0,
+              "eps": 1e-05,
+              "error": 1.575261622532853e-12
+            },
+            {
+              "direction": 1,
+              "eps": 0.0001,
+              "error": 6.176537146324046e-15
+            },
+            {
+              "direction": 1,
+              "eps": 1e-05,
+              "error": 1.5897690336472842e-12
+            }
+          ],
+          "permutation_error": 1.2212453270876722e-15
+        },
+        "scorer": {
+          "numpy64_value_error": 3.3306690738754696e-16,
+          "functional_allparameter_gradient_error": 5.551115123125783e-17,
+          "fixed_two_epsilon_FD": [
+            {
+              "direction": 0,
+              "eps": 0.0001,
+              "error": 1.9816145252482542e-12
+            },
+            {
+              "direction": 0,
+              "eps": 1e-05,
+              "error": 6.551668929599685e-13
+            },
+            {
+              "direction": 1,
+              "eps": 0.0001,
+              "error": 7.355598768965521e-12
+            },
+            {
+              "direction": 1,
+              "eps": 1e-05,
+              "error": 1.5269244202364973e-12
+            }
+          ],
+          "permutation_error": 2.220446049250313e-16
+        }
+      },
+      "inherited_full_loss_error": 4.440892098500626e-16,
+      "arbitrary_future_forward_independence": true,
+      "actual_resume": {
+        "windows": 513,
+        "epochs": 2,
+        "updates": 18,
+        "interrupt_after": 11,
+        "all_states_exact": true,
+        "not_full_fit_two_epochs": true
+      },
+      "bad_source_split_stats_ID_arm_output_readers_reject": true,
+      "saved128_original_fullK20_complete_link_pdist_quality_pooled_junction": "PASS"
+    }
+  },
+  "benchmark": {
+    "DG-Base": {
+      "batch": 64,
+      "warmup": 4,
+      "measured": 32,
+      "mean_seconds": 0.08288325939065544,
+      "max_seconds": 0.14353340002708137,
+      "saved128_and_independent_arithmetic_seconds": 0.16198570001870394
+    },
+    "DG-GeoGate": {
+      "batch": 64,
+      "warmup": 4,
+      "measured": 32,
+      "mean_seconds": 0.08423561562449322,
+      "max_seconds": 0.14055450004525483,
+      "saved128_and_independent_arithmetic_seconds": 0.09925539989490062
+    },
+    "DG-GeoDiff": {
+      "batch": 64,
+      "warmup": 4,
+      "measured": 32,
+      "mean_seconds": 0.08963526561637991,
+      "max_seconds": 0.14735959994141012,
+      "saved128_and_independent_arithmetic_seconds": 0.0967670000391081
+    },
+    "DG-GeoScore": {
+      "batch": 64,
+      "warmup": 4,
+      "measured": 32,
+      "mean_seconds": 0.08436310625984333,
+      "max_seconds": 0.13151060009840876,
+      "saved128_and_independent_arithmetic_seconds": 0.09497860004194081
+    }
+  },
+  "elapsed_seconds": 31.24821900005918,
+  "resource": [
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 4776906968,
+      "remaining_commit": 2835894488,
+      "warning_physical": 6209979058.400001,
+      "warning_commit": 3686662834.4,
+      "admission_physical": 5116337859,
+      "admission_commit": 3175325379,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 19123466240,
+        "commit": 11842117632,
+        "physical_total": 33943089152,
+        "commit_total": 24516890624,
+        "commit_limit": 36359008256,
+        "rss": 552996864,
+        "private": 2494009344,
+        "peak_rss": 553025536,
+        "peak_private": 2494959616
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3171664088,
+      "remaining_commit": 515748056,
+      "warning_physical": 4123163314.4,
+      "warning_commit": 670472472.8000001,
+      "admission_physical": 3511094979,
+      "admission_commit": 855178947,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 17129164800,
+        "commit": 9262723072,
+        "physical_total": 33943089152,
+        "commit_total": 27096285184,
+        "commit_limit": 36359008256,
+        "rss": 2158239744,
+        "private": 4814155776,
+        "peak_rss": 2164396032,
+        "peak_private": 4828131328
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3144511704,
+      "remaining_commit": 477241560,
+      "warning_physical": 4087865215.2000003,
+      "warning_commit": 620414028.0,
+      "admission_physical": 3483942595,
+      "admission_commit": 816672451,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 17540419584,
+        "commit": 9631232000,
+        "physical_total": 33943089152,
+        "commit_total": 26727776256,
+        "commit_limit": 36359008256,
+        "rss": 2185392128,
+        "private": 4852662272,
+        "peak_rss": 2185392128,
+        "peak_private": 4853407744
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3140534488,
+      "remaining_commit": 466682072,
+      "warning_physical": 4082694834.4,
+      "warning_commit": 606686693.6,
+      "admission_physical": 3479965379,
+      "admission_commit": 806112963,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 17490952192,
+        "commit": 9553408000,
+        "physical_total": 33943089152,
+        "commit_total": 26805600256,
+        "commit_limit": 36359008256,
+        "rss": 2189369344,
+        "private": 4863221760,
+        "peak_rss": 2196623360,
+        "peak_private": 4863606784
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3141357784,
+      "remaining_commit": 465096920,
+      "warning_physical": 4083765119.2000003,
+      "warning_commit": 604625996.0,
+      "admission_physical": 3480788675,
+      "admission_commit": 804527811,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 17238130688,
+        "commit": 9420976128,
+        "physical_total": 33943089152,
+        "commit_total": 26938032128,
+        "commit_limit": 36359008256,
+        "rss": 2188546048,
+        "private": 4864806912,
+        "peak_rss": 2196832256,
+        "peak_private": 4872482816
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3137708248,
+      "remaining_commit": 462270680,
+      "warning_physical": 4079020722.4,
+      "warning_commit": 600951884.0,
+      "admission_physical": 3477139139,
+      "admission_commit": 801701571,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 17210167296,
+        "commit": 9308479488,
+        "physical_total": 33943089152,
+        "commit_total": 27050528768,
+        "commit_limit": 36359008256,
+        "rss": 2192195584,
+        "private": 4867633152,
+        "peak_rss": 2196832256,
+        "peak_private": 4872482816
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3138855128,
+      "remaining_commit": 463130840,
+      "warning_physical": 4080511666.4,
+      "warning_commit": 602070092.0,
+      "admission_physical": 3478286019,
+      "admission_commit": 802561731,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 17246326784,
+        "commit": 9371742208,
+        "physical_total": 33943089152,
+        "commit_total": 26987266048,
+        "commit_limit": 36359008256,
+        "rss": 2191048704,
+        "private": 4866772992,
+        "peak_rss": 2199056384,
+        "peak_private": 4874457088
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3139227864,
+      "remaining_commit": 463524056,
+      "warning_physical": 4080996223.2000003,
+      "warning_commit": 602581272.8000001,
+      "admission_physical": 3478658755,
+      "admission_commit": 802954947,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 17239183360,
+        "commit": 9459060736,
+        "physical_total": 33943089152,
+        "commit_total": 26899947520,
+        "commit_limit": 36359008256,
+        "rss": 2190675968,
+        "private": 4866379776,
+        "peak_rss": 2199212032,
+        "peak_private": 4875710464
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3135987928,
+      "remaining_commit": 460767448,
+      "warning_physical": 4076784306.4,
+      "warning_commit": 598997682.4,
+      "admission_physical": 3475418819,
+      "admission_commit": 800198339,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 17469157376,
+        "commit": 9539686400,
+        "physical_total": 33943089152,
+        "commit_total": 26819321856,
+        "commit_limit": 36359008256,
+        "rss": 2193915904,
+        "private": 4869136384,
+        "peak_rss": 2199212032,
+        "peak_private": 4875710464
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3138998488,
+      "remaining_commit": 460611800,
+      "warning_physical": 4080698034.4,
+      "warning_commit": 598795340.0,
+      "admission_physical": 3478429379,
+      "admission_commit": 800042691,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 17300246528,
+        "commit": 9421148160,
+        "physical_total": 33943089152,
+        "commit_total": 26937860096,
+        "commit_limit": 36359008256,
+        "rss": 2190905344,
+        "private": 4869292032,
+        "peak_rss": 2199535616,
+        "peak_private": 4875710464
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3137708248,
+      "remaining_commit": 458711256,
+      "warning_physical": 4079020722.4,
+      "warning_commit": 596324632.8000001,
+      "admission_physical": 3477139139,
+      "admission_commit": 798142147,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 17243172864,
+        "commit": 9456328704,
+        "physical_total": 33943089152,
+        "commit_total": 26902679552,
+        "commit_limit": 36359008256,
+        "rss": 2192195584,
+        "private": 4871192576,
+        "peak_rss": 2201763840,
+        "peak_private": 4880158720
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3135185112,
+      "remaining_commit": 457134296,
+      "warning_physical": 4075740645.6,
+      "warning_commit": 594274584.8000001,
+      "admission_physical": 3474616003,
+      "admission_commit": 796565187,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 17352052736,
+        "commit": 9387229184,
+        "physical_total": 33943089152,
+        "commit_total": 26971779072,
+        "commit_limit": 36359008256,
+        "rss": 2194718720,
+        "private": 4872769536,
+        "peak_rss": 2201763840,
+        "peak_private": 4880158720
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3138212056,
+      "remaining_commit": 460304600,
+      "warning_physical": 4079675672.8,
+      "warning_commit": 598395980.0,
+      "admission_physical": 3477642947,
+      "admission_commit": 799735491,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 17282027520,
+        "commit": 9436782592,
+        "physical_total": 33943089152,
+        "commit_total": 26922225664,
+        "commit_limit": 36359008256,
+        "rss": 2191691776,
+        "private": 4869599232,
+        "peak_rss": 2201763840,
+        "peak_private": 4880158720
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 5329903832,
+      "factor": 1.3,
+      "remaining_physical": 3141177560,
+      "remaining_commit": 463450328,
+      "warning_physical": 4083530828.0,
+      "warning_commit": 602485426.4,
+      "admission_physical": 3480608451,
+      "admission_commit": 802881219,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 17263980544,
+        "commit": 9477455872,
+        "physical_total": 33943089152,
+        "commit_total": 26881552384,
+        "commit_limit": 36359008256,
+        "rss": 2188726272,
+        "private": 4866453504,
+        "peak_rss": 2201763840,
+        "peak_private": 4880158720
+      }
+    }
+  ],
+  "no_scientific_pilots": true,
+  "same_assistant_not_external": true
+}

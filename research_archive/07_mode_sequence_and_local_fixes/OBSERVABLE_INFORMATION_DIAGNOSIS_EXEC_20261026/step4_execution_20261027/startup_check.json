@@ -1,0 +1,84 @@
+{
+  "at": "2026-10-27T02:38:13.5179550+09:00",
+  "task": "Trajectory-ObservableInformation-Step4-20261027",
+  "task_state": "Running",
+  "triggers": 0,
+  "processes": [
+    {
+      "pid": 29464,
+      "parent": 2804,
+      "created": "2026-10-27T02:38:00.6206720+09:00",
+      "commandline": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\OBSERVABLE_INFORMATION_DIAGNOSIS_EXEC_20261026\\step4_execution_20261027\\launch_worker.py\""
+    },
+    {
+      "pid": 50248,
+      "parent": 29464,
+      "created": "2026-10-27T02:38:01.0601850+09:00",
+      "commandline": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\OBSERVABLE_INFORMATION_DIAGNOSIS_EXEC_20261026\\step4_execution_20261027\\launch_worker.py\""
+    },
+    {
+      "pid": 47528,
+      "parent": 50248,
+      "created": "2026-10-27T02:38:01.1138760+09:00",
+      "commandline": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\OBSERVABLE_INFORMATION_DIAGNOSIS_EXEC_20261026\\step4_execution_20261027\\worker.py\""
+    },
+    {
+      "pid": 10616,
+      "parent": 47528,
+      "created": "2026-10-27T02:38:01.1340680+09:00",
+      "commandline": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\OBSERVABLE_INFORMATION_DIAGNOSIS_EXEC_20261026\\step4_execution_20261027\\worker.py\""
+    }
+  ],
+  "parents": [
+    {
+      "ProcessId": 2804,
+      "ParentProcessId": 1920,
+      "Name": "svchost.exe",
+      "CommandLine": null
+    },
+    {
+      "ProcessId": 29464,
+      "ParentProcessId": 2804,
+      "Name": "python.exe",
+      "CommandLine": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\OBSERVABLE_INFORMATION_DIAGNOSIS_EXEC_20261026\\step4_execution_20261027\\launch_worker.py\""
+    },
+    {
+      "ProcessId": 47528,
+      "ParentProcessId": 50248,
+      "Name": "python.exe",
+      "CommandLine": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\OBSERVABLE_INFORMATION_DIAGNOSIS_EXEC_20261026\\step4_execution_20261027\\worker.py\""
+    },
+    {
+      "ProcessId": 50248,
+      "ParentProcessId": 29464,
+      "Name": "python.exe",
+      "CommandLine": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\OBSERVABLE_INFORMATION_DIAGNOSIS_EXEC_20261026\\step4_execution_20261027\\launch_worker.py\""
+    }
+  ],
+  "worker": {
+    "status": "RUNNING",
+    "pid": 10616,
+    "started": "2026-10-27T02:38:01.322529+09:00"
+  },
+  "exit": null,
+  "stage": {
+    "stage": "STEP4_GT_FREE_MATCHING",
+    "at": "2026-10-27T02:38:13.5272+09:00",
+    "seed": 42,
+    "population": "opt",
+    "reference_position": 57,
+    "pairs": 1818
+  },
+  "child": {
+    "pid": 31332,
+    "stage": "geometry_and_independent_audit_42",
+    "started": "2026-10-27T02:38:11.640206+09:00",
+    "arguments": [
+      "select_and_audit.py",
+      42
+    ]
+  },
+  "selections": [],
+  "result": null,
+  "stderr_bytes": 0
+}

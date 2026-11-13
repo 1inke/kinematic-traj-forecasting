@@ -1,0 +1,6 @@
+{
+  "type": "MemoryError",
+  "message": "{'status': 'STOP_RESOURCE', 'estimate': 3221225472, 'factor': 1.3, 'required_physical': 4058525286.4, 'required_commit': 2073258803.2, 'retained_peak_limit': 4187593113.6000004, 'snapshot': {'physical': 2669408256, 'commit': 19159171072, 'rss': 99282944, 'private': 1626411008, 'peak_rss': 381444096, 'peak_private': 1873199104}}",
+  "at": "2026-10-25T19:49:35.386152+09:00",
+  "traceback": "Traceback (most recent call last):\n  File \"<WORKSPACE_ROOT>\\qoder_work\\K20_SINGLE_EDIT_COMPLEMENTARITY_EXEC_20261025\\E0_audit_recovery_20261025\\recovery.py\", line 118, in <module>\n    {'prepare':prepare,'preflight':preflight,'worker':worker}[sys.argv[1]]()\n  File \"<WORKSPACE_ROOT>\\qoder_work\\K20_SINGLE_EDIT_COMPLEMENTARITY_EXEC_20261025\\E0_audit_recovery_20261025\\recovery.py\", line 71, in preflight\n    guard.check()\n  File \"<WORKSPACE_ROOT>\\src\\f16\\resource.py\", line 26, in check\n    if value['status']!='PASS':raise MemoryError(str(value))\nMemoryError: {'status': 'STOP_RESOURCE', 'estimate': 3221225472, 'factor': 1.3, 'required_physical': 4058525286.4, 'required_commit': 2073258803.2, 'retained_peak_limit': 4187593113.6000004, 'snapshot': {'physical': 2669408256, 'commit': 19159171072, 'rss': 99282944, 'private': 1626411008, 'peak_rss': 381444096, 'peak_private': 1873199104}}\n"
+}

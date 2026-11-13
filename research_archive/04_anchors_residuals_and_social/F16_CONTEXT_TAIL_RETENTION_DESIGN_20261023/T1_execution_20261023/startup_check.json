@@ -1,0 +1,90 @@
+{
+  "checked_at": "2026-10-23T14:06:13.7797009+09:00",
+  "task": "Trajectory-F16ContextTail-T1-20261023",
+  "task_state": "Running",
+  "triggers": 0,
+  "processes": [
+    {
+      "ProcessId": 29624,
+      "ParentProcessId": 2804,
+      "CreationDate": "2026-10-23T14:05:49.36778+09:00",
+      "CommandLine": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\F16_CONTEXT_TAIL_RETENTION_DESIGN_20261023\\T1_execution_20261023\\worker.py\""
+    },
+    {
+      "ProcessId": 47824,
+      "ParentProcessId": 29624,
+      "CreationDate": "2026-10-23T14:05:49.787331+09:00",
+      "CommandLine": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\F16_CONTEXT_TAIL_RETENTION_DESIGN_20261023\\T1_execution_20261023\\worker.py\""
+    }
+  ],
+  "worker": {
+    "status": "RUNNING",
+    "pid": 47824,
+    "parent": 29624,
+    "started_at": "2026-10-23T14:05:49.945917+09:00",
+    "stage": "IMPORT_T1"
+  },
+  "exit": null,
+  "progress": {
+    "stage": "EVALUATE_SAVE_AUDIT",
+    "at": "2026-10-23T14:06:01.015781+09:00",
+    "status": "RUNNING",
+    "active_worker": true,
+    "completed_scientific_jobs": 0,
+    "arm": "A_replay",
+    "seed": 42,
+    "epoch": 7,
+    "split": "FIT"
+  },
+  "stderr_bytes": 0,
+  "completed_runs": 0,
+  "histories": [
+    {
+      "epochs": 8,
+      "arm": "A_replay",
+      "seed": 42
+    },
+    {
+      "epochs": 0,
+      "arm": "A_replay",
+      "seed": 43
+    },
+    {
+      "epochs": 0,
+      "arm": "A_replay",
+      "seed": 44
+    },
+    {
+      "epochs": 0,
+      "arm": "P_relative",
+      "seed": 42
+    },
+    {
+      "epochs": 0,
+      "arm": "P_relative",
+      "seed": 43
+    },
+    {
+      "epochs": 0,
+      "arm": "P_relative",
+      "seed": 44
+    }
+  ],
+  "actual_python": {
+    "ProcessId": 47824,
+    "ParentProcessId": 29624,
+    "CreationDate": "2026-10-23T14:05:49.787331+09:00",
+    "CommandLine": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\F16_CONTEXT_TAIL_RETENTION_DESIGN_20261023\\T1_execution_20261023\\worker.py\""
+  },
+  "redirector_or_parent": {
+    "ProcessId": 29624,
+    "ParentProcessId": 2804,
+    "CreationDate": "2026-10-23T14:05:49.36778+09:00",
+    "CommandLine": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\F16_CONTEXT_TAIL_RETENTION_DESIGN_20261023\\T1_execution_20261023\\worker.py\""
+  },
+  "service_ancestor": {
+    "ProcessId": 2804,
+    "ParentProcessId": 1920,
+    "Name": "svchost.exe"
+  }
+}

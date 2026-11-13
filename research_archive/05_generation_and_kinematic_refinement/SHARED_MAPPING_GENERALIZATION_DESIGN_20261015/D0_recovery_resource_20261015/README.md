@@ -1,0 +1,7 @@
+# D0 same-protocol resource recovery
+
+Direct human 2026-10-15 继续进行 authorizes a resource re-evaluation and same-protocol D0 recovery, not U1 without D0 gates. Sibling D0_execution_20261015 failure and all original source/model/results remain immutable. Science/model/selection/gradient/optimizer/loss/gates/numeric tolerances are unchanged. First production failed at its initial resource guard before loading data or optimizer creation; no scientific result or training state exists to resume. Start D0 from original immutable checkpoints, not resume or retrain completed production.
+
+Infrastructure-only changes from the failed version: unique new task/output folder, inherit all1557 previous source digests and preserve failed logs/exit/SHA artifacts, persist exact resource readings on any guard failure. The original process6GiB and system physical/commit each6GiB reserve are unchanged. No future GT/group/ID forward, new loss/scorer/decoder training or U1 automatic bypass.
+
+Original preflight must be rerun in this directory including three exact oldmodel replay/NoUpdate, bothGPU8 grouped-direct gradients, saved-quality complete-link/motion, both513FIT+12inner subset2epoch allparams/buffers/optimizer/ALLRNG/history exact, source rejection, actual benchmark/disk/RAM and<=30min planning. All219 saved scientific jobs and independent audit/source SHA/doubleSUCCESS required for completion. Runtime and sole worker establish actual state.

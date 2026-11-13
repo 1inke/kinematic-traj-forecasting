@@ -1,0 +1,67 @@
+{
+  "version": "fixed_native_mode_audit_v1",
+  "dt": 0.4,
+  "slow_floor": 0.006982410783134709,
+  "empirical_history_speed_Q05": 0.006982410783134709,
+  "numerical_speed_floor": 2.384185791015625e-06,
+  "slow_floor_is_operational_proxy_not_sensor_noise": true,
+  "feature_names": [
+    "endpoint_x",
+    "endpoint_y",
+    "sin_turn",
+    "cos_turn",
+    "mean_speed",
+    "delta_speed",
+    "straightness",
+    "turn_defined"
+  ],
+  "phi_mean": [
+    2.483584957193237,
+    -0.00035368207090617,
+    0.0084490497810131,
+    0.8409077893786524,
+    0.626940885529303,
+    0.030899923609944084,
+    0.9709575887253399,
+    0.9898485336770867
+  ],
+  "phi_std": [
+    1.9272220127257438,
+    1.3021706566075357,
+    0.4174493862768564,
+    0.3292221846933542,
+    0.3490335810584275,
+    0.3203516578861578,
+    0.07416461313879437,
+    0.10024177798909398
+  ],
+  "near_morphology_tau": 0.9251733313131612,
+  "turn_degrees": 20,
+  "sensitivity_turn": [
+    15,
+    30
+  ],
+  "slow_multipliers": [
+    0.5,
+    2
+  ],
+  "clustering_multipliers": [
+    0.5,
+    1,
+    2
+  ],
+  "quality_ADE": 0.2,
+  "quality_FDE": 0.4,
+  "delete_numeric_tolerance": 2e-12,
+  "bootstrap": 20000,
+  "bootstrap_seed": 20261027,
+  "no_GT_used_to_fit": true,
+  "train_windows": 3103,
+  "val_windows": 993,
+  "train_track_count": 407,
+  "primary_population": "hold",
+  "secondary": "inner",
+  "primary_categories": "coarse20",
+  "sample_independence": "native once; whole sequence|target track, not slots or copied seeds",
+  "val_sanity_finite_no_retuning": true
+}

@@ -1,0 +1,14 @@
+{
+  "status": "API_PRESENT_NO_INSTALL_NO_TRAINING",
+  "python": "existing .venv-governance redirector to astra2",
+  "sklearn": "1.4.1.post1",
+  "torch": "2.11.0+cu128",
+  "numpy": "1.25.2",
+  "scipy": "1.12.0",
+  "CUDA_available": true,
+  "fixed_tree_parameters_supported_in_inspected_signature": ["loss", "learning_rate", "max_iter", "max_leaf_nodes", "max_depth", "min_samples_leaf", "l2_regularization", "max_bins", "early_stopping", "categorical_features", "random_state"],
+  "official_API": "https://scikit-learn.org/stable/modules/generated/sklearn.ensemble.HistGradientBoostingClassifier.html",
+  "first_dependency_check": "import sklearn before torch raised WinError1114 loading torch/lib/c10.dll; exact command and failure retained in failures/dependency_import1/REPORT.json",
+  "resolved_diagnostic": "existing environment unchanged; fresh process import torch before sklearn succeeded and inspected HGB signature; no dependency upgrade/install",
+  "not_actual_GPU_gradient_preflight": true
+}

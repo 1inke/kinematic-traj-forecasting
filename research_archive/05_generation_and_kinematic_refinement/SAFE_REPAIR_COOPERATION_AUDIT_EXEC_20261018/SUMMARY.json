@@ -1,0 +1,104 @@
+{
+  "status": "ANALYZED",
+  "wall_seconds": 52.48913836479187,
+  "finished_at": "2026-10-18T18:16:39.633421+09:00",
+  "facts": {
+    "primary_n": 13,
+    "primary_J_and_T_motion_pass": 6,
+    "primary_J_pass_T_fail": 7,
+    "primary_J_pass_T_fail_with_mean_budget": 7,
+    "primary_J_pass_T_fail_p95_only": 0,
+    "primary_any_ADD_motion_pass": 9,
+    "primary_all_ADD_motion_fail": 4,
+    "primary_all_DROP_motion_pass": 13,
+    "heterogeneity_primary_depends_secondary_T_ok": [],
+    "negative_case": {
+      "J_window_motion_pass": false,
+      "T_window_motion_pass": false,
+      "O_window_motion_pass": true,
+      "J_target_good": true,
+      "T_target_good": true,
+      "J_set_good": true,
+      "T_set_good": true,
+      "O_set_good": false,
+      "N_set_good": false,
+      "n_DROP_motion_fail": 19,
+      "n_ADD_motion_pass": 0,
+      "all_ADD_motion_fail": true,
+      "all_DROP_motion_pass": false,
+      "T_fails_mean_accel": true,
+      "T_fails_mean_jerk": false,
+      "T_fails_any_p95": true,
+      "failing_motion_keys_T": [
+        "accel_mean",
+        "accel_p95"
+      ],
+      "failing_motion_keys_J": [
+        "accel_p95"
+      ]
+    },
+    "secondary_T_pass": 2,
+    "secondary_n": 4,
+    "FIT_T_overall_motion_pass": true,
+    "FIT_J_overall_motion_pass": true,
+    "FIT_T_windows13_motion_pass": true,
+    "FIT_T_overall_rescue": 13,
+    "FIT_J_overall_rescue": 13,
+    "cd_objective_stats": [
+      {
+        "cell": "C",
+        "config": "J",
+        "n": 13,
+        "deltaL_gt0": 1,
+        "deltaL_lt0": 12,
+        "deltaL_~0": 0
+      },
+      {
+        "cell": "C",
+        "config": "T",
+        "n": 13,
+        "deltaL_gt0": 1,
+        "deltaL_lt0": 12,
+        "deltaL_~0": 0
+      },
+      {
+        "cell": "D",
+        "config": "J",
+        "n": 13,
+        "deltaL_gt0": 2,
+        "deltaL_lt0": 11,
+        "deltaL_~0": 0
+      },
+      {
+        "cell": "D",
+        "config": "T",
+        "n": 13,
+        "deltaL_gt0": 2,
+        "deltaL_lt0": 11,
+        "deltaL_~0": 0
+      }
+    ],
+    "n_dual_mismatches": 0,
+    "n_config_rows": 756,
+    "n_obj_rows": 288
+  },
+  "inference": {
+    "lean": "heterogeneous",
+    "one_liner_zh": "主窗口内同时存在「T可独立保留」与「T失败需非目标」两类保存方案 → 保留异质性，不强行宣布唯一结构根因。",
+    "not_proven": [
+      "不能证明所有安全解都必须协同",
+      "不能证明学习型模型必须采用set attention",
+      "不能证明不存在另一条target-only安全解",
+      "GT见证不可作teacher/部署owner"
+    ]
+  },
+  "completeness": {
+    "n_jobs_indexed": 640,
+    "n_actual_paths": 18,
+    "n_counterfactual_records": 756,
+    "n_objective_records": 288,
+    "n_portfolios": 4,
+    "full_756_completed": true,
+    "independent_cpu_dual": true
+  }
+}

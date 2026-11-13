@@ -1,0 +1,37 @@
+{
+  "experiment_id": "D1_TIMED_MULTI_HORIZON_PLAN_20261020",
+  "branch": "D1",
+  "created_at": "2026-10-20T01:13:00+09:00",
+  "arms": ["A", "B"],
+  "arm_descriptions": {
+    "A": "FarRepeated control: 4 plan slots supervised with [0.6*y20, 0.6*y20, 0.6*y20, 0.6*y20]",
+    "B": "TimedPlan treatment: 4 plan slots supervised with [3.0*y4, 1.5*y8, 1.0*y12, 0.6*y20]"
+  },
+  "seeds": [42, 43, 44],
+  "epochs": 25,
+  "batch_size": 256,
+  "optimizer": {
+    "type": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "betas": [0.9, 0.999],
+    "eps": 1e-8,
+    "foreach": false
+  },
+  "loss_weights": {
+    "path": 1.0,
+    "plan": 0.5,
+    "diversity": 0.05
+  },
+  "diversity_threshold": 0.30,
+  "trainable_parameters": 32910,
+  "splits": {
+    "FIT": 18909,
+    "outer": 1035,
+    "inner": 1856,
+    "original_CAL": 2879
+  },
+  "primary_population": "outer_change",
+  "bootstrap_draws": 20000,
+  "bootstrap_seed": 20261019
+}

@@ -1,0 +1,697 @@
+{
+  "entries": [
+    {
+      "role": "cache",
+      "artifact_path": "<WORKSPACE_ROOT>\\REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES\\results\\cache\\train_dev\\eth_train.npz",
+      "file_sha256_now": "f8e6769c7e28b0d5ad4c108989246d6e724c078190102ae90443e62600d5a3ea",
+      "arrays": {
+        "motion": {
+          "shape": [
+            28791,
+            76
+          ],
+          "dtype": "float32"
+        },
+        "social": {
+          "shape": [
+            28791,
+            96
+          ],
+          "dtype": "float32"
+        },
+        "candidate": {
+          "shape": [
+            28791,
+            20,
+            31
+          ],
+          "dtype": "float32"
+        },
+        "logits": {
+          "shape": [
+            28791,
+            20
+          ],
+          "dtype": "float32"
+        },
+        "ade": {
+          "shape": [
+            28791,
+            20
+          ],
+          "dtype": "float32"
+        },
+        "fde": {
+          "shape": [
+            28791,
+            20
+          ],
+          "dtype": "float32"
+        },
+        "change_score": {
+          "shape": [
+            28791
+          ],
+          "dtype": "float32"
+        },
+        "change_group": {
+          "shape": [
+            28791
+          ],
+          "dtype": "int64"
+        },
+        "sample_id": {
+          "shape": [
+            28791
+          ],
+          "dtype": "int64"
+        }
+      },
+      "producer_checkpoint_sha256": null,
+      "producer_training_ids_sha256": null,
+      "historical_source_binding": "UNKNOWN",
+      "evidence_kind": "POSTHOC_RECONSTRUCTION",
+      "replay_verified": false,
+      "coordinate": "focal-local last observed point zero",
+      "time_unit": "0.4s sample interval; source indices not verified video frames"
+    },
+    {
+      "role": "labels",
+      "artifact_path": "<WORKSPACE_ROOT>\\F16_OBSERVABLE_CUE_DIAGNOSIS_20261003\\labels\\train.npz",
+      "file_sha256_now": "01c8226f6bc3e7103c61f52294ac109ad2d585be2500a25d1601e08efe487efc",
+      "arrays": {
+        "y": {
+          "shape": [
+            28791
+          ],
+          "dtype": "int64"
+        },
+        "uncertain": {
+          "shape": [
+            28791
+          ],
+          "dtype": "bool"
+        },
+        "event_types": {
+          "shape": [
+            28791,
+            4
+          ],
+          "dtype": "int8"
+        },
+        "kind": {
+          "shape": [
+            28791
+          ],
+          "dtype": "int64"
+        },
+        "onset_step": {
+          "shape": [
+            28791
+          ],
+          "dtype": "int32"
+        },
+        "onset_bin": {
+          "shape": [
+            28791
+          ],
+          "dtype": "int32"
+        },
+        "direction": {
+          "shape": [
+            28791
+          ],
+          "dtype": "int64"
+        },
+        "refspeed": {
+          "shape": [
+            28791
+          ],
+          "dtype": "float32"
+        },
+        "future_speed": {
+          "shape": [
+            28791,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "signed_angle": {
+          "shape": [
+            28791,
+            12
+          ],
+          "dtype": "float32"
+        },
+        "y_factor_0.75": {
+          "shape": [
+            28791
+          ],
+          "dtype": "int64"
+        },
+        "uncertain_factor_0.75": {
+          "shape": [
+            28791
+          ],
+          "dtype": "bool"
+        },
+        "y_factor_1.25": {
+          "shape": [
+            28791
+          ],
+          "dtype": "int64"
+        },
+        "uncertain_factor_1.25": {
+          "shape": [
+            28791
+          ],
+          "dtype": "bool"
+        },
+        "sample_id": {
+          "shape": [
+            28791
+          ],
+          "dtype": "int64"
+        },
+        "future": {
+          "shape": [
+            28791,
+            12,
+            2
+          ],
+          "dtype": "float32"
+        }
+      },
+      "producer_checkpoint_sha256": null,
+      "producer_training_ids_sha256": null,
+      "historical_source_binding": "UNKNOWN",
+      "evidence_kind": "POSTHOC_RECONSTRUCTION",
+      "replay_verified": false,
+      "coordinate": "focal-local last observed point zero",
+      "time_unit": "0.4s sample interval; source indices not verified video frames"
+    },
+    {
+      "role": "encoder",
+      "artifact_path": "<WORKSPACE_ROOT>\\GENERATION_NATIVE_DECODER_SERIES\\train_encoder.npz",
+      "file_sha256_now": "f6c232e4b05e4e8db2a01c7fd0880beecd835b59352b81ba08132c8b610e87f0",
+      "arrays": {
+        "sample_id": {
+          "shape": [
+            28791
+          ],
+          "dtype": "int64"
+        },
+        "tokens": {
+          "shape": [
+            28791,
+            8,
+            96
+          ],
+          "dtype": "float32"
+        },
+        "past": {
+          "shape": [
+            28791,
+            8,
+            2
+          ],
+          "dtype": "float32"
+        }
+      },
+      "producer_checkpoint_sha256": null,
+      "producer_training_ids_sha256": null,
+      "historical_source_binding": "UNKNOWN",
+      "evidence_kind": "POSTHOC_RECONSTRUCTION",
+      "replay_verified": false,
+      "coordinate": "focal-local last observed point zero",
+      "time_unit": "0.4s sample interval; source indices not verified video frames"
+    },
+    {
+      "role": "splits",
+      "artifact_path": "<WORKSPACE_ROOT>\\GENERATION_GROUPED_TRANSFER_SERIES_20261006\\identity_audit\\splits.npz",
+      "file_sha256_now": "349659306a435a3a70e65d75d08d618a2aa8bc76fca38142c3433ab5678e12e7",
+      "arrays": {
+        "sample_id": {
+          "shape": [
+            25912
+          ],
+          "dtype": "int64"
+        },
+        "sequence": {
+          "shape": [
+            25912
+          ],
+          "dtype": "<U13"
+        },
+        "pedestrian_id": {
+          "shape": [
+            25912
+          ],
+          "dtype": "int32"
+        },
+        "scene_family": {
+          "shape": [
+            25912
+          ],
+          "dtype": "<U10"
+        },
+        "start_frame": {
+          "shape": [
+            25912
+          ],
+          "dtype": "int32"
+        },
+        "ambiguous_track_time": {
+          "shape": [
+            25912
+          ],
+          "dtype": "bool"
+        },
+        "loss_change_group": {
+          "shape": [
+            25912
+          ],
+          "dtype": "int64"
+        },
+        "outer_eval_index": {
+          "shape": [
+            1035
+          ],
+          "dtype": "int64"
+        },
+        "inner_cal_index": {
+          "shape": [
+            1856
+          ],
+          "dtype": "int64"
+        },
+        "grouped_train_index": {
+          "shape": [
+            18909
+          ],
+          "dtype": "int64"
+        },
+        "random_train_index": {
+          "shape": [
+            18909
+          ],
+          "dtype": "int64"
+        },
+        "common_statistics_index": {
+          "shape": [
+            15572
+          ],
+          "dtype": "int64"
+        },
+        "outer_eval_ids": {
+          "shape": [
+            1035
+          ],
+          "dtype": "int64"
+        },
+        "inner_cal_ids": {
+          "shape": [
+            1856
+          ],
+          "dtype": "int64"
+        },
+        "grouped_train_ids": {
+          "shape": [
+            18909
+          ],
+          "dtype": "int64"
+        },
+        "random_train_ids": {
+          "shape": [
+            18909
+          ],
+          "dtype": "int64"
+        },
+        "common_statistics_ids": {
+          "shape": [
+            15572
+          ],
+          "dtype": "int64"
+        }
+      },
+      "producer_checkpoint_sha256": null,
+      "producer_training_ids_sha256": null,
+      "historical_source_binding": "UNKNOWN",
+      "evidence_kind": "POSTHOC_RECONSTRUCTION",
+      "replay_verified": false,
+      "coordinate": "metadata / index",
+      "time_unit": "0.4s sample interval; source indices not verified video frames"
+    },
+    {
+      "role": "metadata",
+      "artifact_path": "<WORKSPACE_ROOT>\\F16_OBSERVABLE_CUE_DIAGNOSIS_20261003\\metadata.npz",
+      "file_sha256_now": "9e0e2f581d05487e4905fc2fe34c963458cace0254daf5289e12aaea9ac49591",
+      "arrays": {
+        "sample_id": {
+          "shape": [
+            30307
+          ],
+          "dtype": "int32"
+        },
+        "scene_family": {
+          "shape": [
+            30307
+          ],
+          "dtype": "<U10"
+        },
+        "sequence": {
+          "shape": [
+            30307
+          ],
+          "dtype": "<U13"
+        },
+        "pedestrian_id": {
+          "shape": [
+            30307
+          ],
+          "dtype": "int32"
+        },
+        "start_frame": {
+          "shape": [
+            30307
+          ],
+          "dtype": "int32"
+        },
+        "ambiguous_track_time": {
+          "shape": [
+            30307
+          ],
+          "dtype": "bool"
+        },
+        "matching_source_windows": {
+          "shape": [
+            30307
+          ],
+          "dtype": "int32"
+        }
+      },
+      "producer_checkpoint_sha256": null,
+      "producer_training_ids_sha256": null,
+      "historical_source_binding": "UNKNOWN",
+      "evidence_kind": "POSTHOC_RECONSTRUCTION",
+      "replay_verified": false,
+      "coordinate": "metadata / index",
+      "time_unit": "0.4s sample interval; source indices not verified video frames"
+    },
+    {
+      "role": "E1_KIN_FIT_seed42",
+      "artifact_path": "<WORKSPACE_ROOT>\\UNION_SELECTOR_K40_TO_K20_20261018\\results\\cache_pred\\kin_FIT_seed42.npy",
+      "file_sha256_now": "795ce65f440dc2506f14daa8c2f5dc3a33eb24cd4c9cfae0062f364eaaa70351",
+      "array_sha256_now": "fe301b7109acf2a79bd04e1f914bf74cdf4c1efd463c8811f53014bec672034d",
+      "shape": [
+        18909,
+        20,
+        12,
+        2
+      ],
+      "dtype": "float32",
+      "ID_row_mapping": "producer loops data.split indices in current source; full numeric checkpoint-row replay required in preflight",
+      "mapping_ids_sha256": "3706e538198bbe4e04fd2f9ebeb23752c1d5b3257deff85c52024236e0b09c6d",
+      "producer_checkpoint": "<WORKSPACE_ROOT>\\KINEMATIC_DECODER_SPEED_CLAMP_20261018\\results\\short\\KIN_seed42.pt",
+      "producer_checkpoint_sha256": "029fda98741cbbd57c7867bc6ca40b573e58c4dd4d109bbaef9cc9e07fe88e20",
+      "producer_training_ids_sha256": null,
+      "historical_source_binding": "UNKNOWN",
+      "evidence_kind": "POSTHOC_RECONSTRUCTION",
+      "replay_verified": true,
+      "upstream_exposure_status": "SOURCE_RECIPE_FIT_NOT_PER_CHECKPOINT_MANIFEST",
+      "numeric_row_mapping_evidence": {
+        "seed": 42,
+        "split": "FIT",
+        "n": 18909,
+        "path": "<WORKSPACE_ROOT>\\UNION_SELECTOR_K40_TO_K20_20261018\\results\\cache_pred\\kin_FIT_seed42.npy",
+        "file_sha256": "795ce65f440dc2506f14daa8c2f5dc3a33eb24cd4c9cfae0062f364eaaa70351",
+        "registered_IDs_sha256": "3706e538198bbe4e04fd2f9ebeb23752c1d5b3257deff85c52024236e0b09c6d",
+        "numeric_full_row_replay_maxdiff": 1.430511474609375e-06,
+        "producer_state_sha": "029fda98741cbbd57c7867bc6ca40b573e58c4dd4d109bbaef9cc9e07fe88e20",
+        "historical_lock_still_unknown": true
+      },
+      "original_historical_lock_not_repaired": true
+    },
+    {
+      "role": "E1_KIN_inner_seed42",
+      "artifact_path": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_inner_seed42.npy",
+      "file_sha256_now": "5e8e2b3b69f3bffef4e93fa64aff6e576e51d4fa72c91459d433218633973915",
+      "array_sha256_now": "c879839a7ff0950416e1e2fea614393ae6387476eef59804b2e77744bd18cf5e",
+      "shape": [
+        1856,
+        20,
+        12,
+        2
+      ],
+      "dtype": "float32",
+      "ID_row_mapping": "producer loops data.split indices in current source; full numeric checkpoint-row replay required in preflight",
+      "mapping_ids_sha256": "641fee6005fa9ada76b7c764b415bf1177cb25519c5694fefa062b4917a879e5",
+      "producer_checkpoint": "<WORKSPACE_ROOT>\\KINEMATIC_DECODER_SPEED_CLAMP_20261018\\results\\short\\KIN_seed42.pt",
+      "producer_checkpoint_sha256": "029fda98741cbbd57c7867bc6ca40b573e58c4dd4d109bbaef9cc9e07fe88e20",
+      "producer_training_ids_sha256": null,
+      "historical_source_binding": "UNKNOWN",
+      "evidence_kind": "POSTHOC_RECONSTRUCTION",
+      "replay_verified": true,
+      "upstream_exposure_status": "SOURCE_RECIPE_FIT_NOT_PER_CHECKPOINT_MANIFEST",
+      "numeric_row_mapping_evidence": {
+        "seed": 42,
+        "split": "inner",
+        "n": 1856,
+        "path": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_inner_seed42.npy",
+        "file_sha256": "5e8e2b3b69f3bffef4e93fa64aff6e576e51d4fa72c91459d433218633973915",
+        "registered_IDs_sha256": "641fee6005fa9ada76b7c764b415bf1177cb25519c5694fefa062b4917a879e5",
+        "numeric_full_row_replay_maxdiff": 9.5367431640625e-07,
+        "producer_state_sha": "029fda98741cbbd57c7867bc6ca40b573e58c4dd4d109bbaef9cc9e07fe88e20",
+        "historical_lock_still_unknown": true
+      },
+      "original_historical_lock_not_repaired": true
+    },
+    {
+      "role": "E0_actual_KIN_CAL_seed42",
+      "artifact_path": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_original_CAL_seed42.npy",
+      "file_sha256_now": "5f9a91b99e4ffbc9f897425d97fb44062d0c288b30370d9662191485b4122e0b",
+      "array_sha256_now": "4da3d161734ac7a3d98d5de41d5e7964301ab2bd90163bc1f1783e14871b5842",
+      "array_sha_matches_original_record": true,
+      "original_file_manifest_paths": [
+        "UNION_SELECTOR_K40_TO_K20_20261018\\results\\cache_pred\\kin_original_CAL_seed42.npy"
+      ],
+      "actual_file_in_original_manifest": false,
+      "evidence_kind": "POSTHOC_RECONSTRUCTION",
+      "historical_source_binding": "ACTUAL_ARRAY_HASH_PRESENT_FILE_PATH_LOCK_MISMATCH",
+      "producer_checkpoint_sha256": "029fda98741cbbd57c7867bc6ca40b573e58c4dd4d109bbaef9cc9e07fe88e20",
+      "producer_training_ids_sha256": null,
+      "ID_row_mapping": "original_CAL registry indices25912..28790, numeric replay verification pending",
+      "upstream_exposure_status": "UNKNOWN_RUNTIME_BINDING",
+      "replay_verified": true,
+      "numeric_row_mapping_evidence": {
+        "seed": 42,
+        "split": "E0_original_CAL_cache_rows",
+        "n": 2879,
+        "path": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_original_CAL_seed42.npy",
+        "file_sha256": "5f9a91b99e4ffbc9f897425d97fb44062d0c288b30370d9662191485b4122e0b",
+        "registered_IDs_sha256": "7b54febf705722ceae18b269fd5321e4f199b617bcef5ab0ae2cf691ff761199",
+        "numeric_full_row_replay_maxdiff": 2.384185791015625e-06,
+        "producer_state_sha": "029fda98741cbbd57c7867bc6ca40b573e58c4dd4d109bbaef9cc9e07fe88e20",
+        "historical_lock_still_unknown": true
+      },
+      "original_historical_lock_not_repaired": true
+    },
+    {
+      "role": "E1_KIN_FIT_seed43",
+      "artifact_path": "<WORKSPACE_ROOT>\\UNION_SELECTOR_K40_TO_K20_20261018\\results\\cache_pred\\kin_FIT_seed43.npy",
+      "file_sha256_now": "b518e051d19ea08165b8e723852b00dac142ec28dd45894bdc6fe2eab6507292",
+      "array_sha256_now": "e69fc284fc588b0e8ef32d88da7166595d4a8951a6ea9ea51c369fbc6ce0fd3f",
+      "shape": [
+        18909,
+        20,
+        12,
+        2
+      ],
+      "dtype": "float32",
+      "ID_row_mapping": "producer loops data.split indices in current source; full numeric checkpoint-row replay required in preflight",
+      "mapping_ids_sha256": "3706e538198bbe4e04fd2f9ebeb23752c1d5b3257deff85c52024236e0b09c6d",
+      "producer_checkpoint": "<WORKSPACE_ROOT>\\KINEMATIC_DECODER_SPEED_CLAMP_20261018\\results\\short\\KIN_seed43.pt",
+      "producer_checkpoint_sha256": "acd3d051e355c8c9b3e34f0998db42412343d0dbf2b07d3fde602811d133f31b",
+      "producer_training_ids_sha256": null,
+      "historical_source_binding": "UNKNOWN",
+      "evidence_kind": "POSTHOC_RECONSTRUCTION",
+      "replay_verified": true,
+      "upstream_exposure_status": "SOURCE_RECIPE_FIT_NOT_PER_CHECKPOINT_MANIFEST",
+      "numeric_row_mapping_evidence": {
+        "seed": 43,
+        "split": "FIT",
+        "n": 18909,
+        "path": "<WORKSPACE_ROOT>\\UNION_SELECTOR_K40_TO_K20_20261018\\results\\cache_pred\\kin_FIT_seed43.npy",
+        "file_sha256": "b518e051d19ea08165b8e723852b00dac142ec28dd45894bdc6fe2eab6507292",
+        "registered_IDs_sha256": "3706e538198bbe4e04fd2f9ebeb23752c1d5b3257deff85c52024236e0b09c6d",
+        "numeric_full_row_replay_maxdiff": 1.430511474609375e-06,
+        "producer_state_sha": "acd3d051e355c8c9b3e34f0998db42412343d0dbf2b07d3fde602811d133f31b",
+        "historical_lock_still_unknown": true
+      },
+      "original_historical_lock_not_repaired": true
+    },
+    {
+      "role": "E1_KIN_inner_seed43",
+      "artifact_path": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_inner_seed43.npy",
+      "file_sha256_now": "39c190a7b27f065134876a79dd1d7f65ceacc127771aa46c208b34060260bd54",
+      "array_sha256_now": "a2059a1ebe41bf74d884a2b5ebfb35e43206b955259b9cfc0aab12f3017ffbd0",
+      "shape": [
+        1856,
+        20,
+        12,
+        2
+      ],
+      "dtype": "float32",
+      "ID_row_mapping": "producer loops data.split indices in current source; full numeric checkpoint-row replay required in preflight",
+      "mapping_ids_sha256": "641fee6005fa9ada76b7c764b415bf1177cb25519c5694fefa062b4917a879e5",
+      "producer_checkpoint": "<WORKSPACE_ROOT>\\KINEMATIC_DECODER_SPEED_CLAMP_20261018\\results\\short\\KIN_seed43.pt",
+      "producer_checkpoint_sha256": "acd3d051e355c8c9b3e34f0998db42412343d0dbf2b07d3fde602811d133f31b",
+      "producer_training_ids_sha256": null,
+      "historical_source_binding": "UNKNOWN",
+      "evidence_kind": "POSTHOC_RECONSTRUCTION",
+      "replay_verified": true,
+      "upstream_exposure_status": "SOURCE_RECIPE_FIT_NOT_PER_CHECKPOINT_MANIFEST",
+      "numeric_row_mapping_evidence": {
+        "seed": 43,
+        "split": "inner",
+        "n": 1856,
+        "path": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_inner_seed43.npy",
+        "file_sha256": "39c190a7b27f065134876a79dd1d7f65ceacc127771aa46c208b34060260bd54",
+        "registered_IDs_sha256": "641fee6005fa9ada76b7c764b415bf1177cb25519c5694fefa062b4917a879e5",
+        "numeric_full_row_replay_maxdiff": 1.1920928955078125e-06,
+        "producer_state_sha": "acd3d051e355c8c9b3e34f0998db42412343d0dbf2b07d3fde602811d133f31b",
+        "historical_lock_still_unknown": true
+      },
+      "original_historical_lock_not_repaired": true
+    },
+    {
+      "role": "E0_actual_KIN_CAL_seed43",
+      "artifact_path": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_original_CAL_seed43.npy",
+      "file_sha256_now": "9f570eccbd196be84dd8a61817ce2aabd640309b8e7272c59dd30b97deb1d01e",
+      "array_sha256_now": "3de273ec5422244287bb85030df459aec71ba5b02189d1a712913db6d5941fc0",
+      "array_sha_matches_original_record": true,
+      "original_file_manifest_paths": [
+        "UNION_SELECTOR_K40_TO_K20_20261018\\results\\cache_pred\\kin_original_CAL_seed43.npy"
+      ],
+      "actual_file_in_original_manifest": false,
+      "evidence_kind": "POSTHOC_RECONSTRUCTION",
+      "historical_source_binding": "ACTUAL_ARRAY_HASH_PRESENT_FILE_PATH_LOCK_MISMATCH",
+      "producer_checkpoint_sha256": "acd3d051e355c8c9b3e34f0998db42412343d0dbf2b07d3fde602811d133f31b",
+      "producer_training_ids_sha256": null,
+      "ID_row_mapping": "original_CAL registry indices25912..28790, numeric replay verification pending",
+      "upstream_exposure_status": "UNKNOWN_RUNTIME_BINDING",
+      "replay_verified": true,
+      "numeric_row_mapping_evidence": {
+        "seed": 43,
+        "split": "E0_original_CAL_cache_rows",
+        "n": 2879,
+        "path": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_original_CAL_seed43.npy",
+        "file_sha256": "9f570eccbd196be84dd8a61817ce2aabd640309b8e7272c59dd30b97deb1d01e",
+        "registered_IDs_sha256": "7b54febf705722ceae18b269fd5321e4f199b617bcef5ab0ae2cf691ff761199",
+        "numeric_full_row_replay_maxdiff": 2.384185791015625e-06,
+        "producer_state_sha": "acd3d051e355c8c9b3e34f0998db42412343d0dbf2b07d3fde602811d133f31b",
+        "historical_lock_still_unknown": true
+      },
+      "original_historical_lock_not_repaired": true
+    },
+    {
+      "role": "E1_KIN_FIT_seed44",
+      "artifact_path": "<WORKSPACE_ROOT>\\UNION_SELECTOR_K40_TO_K20_20261018\\results\\cache_pred\\kin_FIT_seed44.npy",
+      "file_sha256_now": "deef585429d9d46014debdf5f94f7a38df8d1e44de89e889961eaa4138a2644f",
+      "array_sha256_now": "496bb1d06753fa10a88195d06f85831db415406c885a24058cc1c3f7032c3b99",
+      "shape": [
+        18909,
+        20,
+        12,
+        2
+      ],
+      "dtype": "float32",
+      "ID_row_mapping": "producer loops data.split indices in current source; full numeric checkpoint-row replay required in preflight",
+      "mapping_ids_sha256": "3706e538198bbe4e04fd2f9ebeb23752c1d5b3257deff85c52024236e0b09c6d",
+      "producer_checkpoint": "<WORKSPACE_ROOT>\\KINEMATIC_DECODER_SPEED_CLAMP_20261018\\results\\short\\KIN_seed44.pt",
+      "producer_checkpoint_sha256": "78305212770cd47b0af33d8e1b2def703c1d0ab362eb1d83487e58634261461a",
+      "producer_training_ids_sha256": null,
+      "historical_source_binding": "UNKNOWN",
+      "evidence_kind": "POSTHOC_RECONSTRUCTION",
+      "replay_verified": true,
+      "upstream_exposure_status": "SOURCE_RECIPE_FIT_NOT_PER_CHECKPOINT_MANIFEST",
+      "numeric_row_mapping_evidence": {
+        "seed": 44,
+        "split": "FIT",
+        "n": 18909,
+        "path": "<WORKSPACE_ROOT>\\UNION_SELECTOR_K40_TO_K20_20261018\\results\\cache_pred\\kin_FIT_seed44.npy",
+        "file_sha256": "deef585429d9d46014debdf5f94f7a38df8d1e44de89e889961eaa4138a2644f",
+        "registered_IDs_sha256": "3706e538198bbe4e04fd2f9ebeb23752c1d5b3257deff85c52024236e0b09c6d",
+        "numeric_full_row_replay_maxdiff": 1.9073486328125e-06,
+        "producer_state_sha": "78305212770cd47b0af33d8e1b2def703c1d0ab362eb1d83487e58634261461a",
+        "historical_lock_still_unknown": true
+      },
+      "original_historical_lock_not_repaired": true
+    },
+    {
+      "role": "E1_KIN_inner_seed44",
+      "artifact_path": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_inner_seed44.npy",
+      "file_sha256_now": "39a4ce4a1369025b9b78392064debb9e986d7e73e4bd135599b1f647b7bcb13c",
+      "array_sha256_now": "4926ad9c726ab530ada9f10c7294ee9f6b37035ecc837f3210d21c750992bdfb",
+      "shape": [
+        1856,
+        20,
+        12,
+        2
+      ],
+      "dtype": "float32",
+      "ID_row_mapping": "producer loops data.split indices in current source; full numeric checkpoint-row replay required in preflight",
+      "mapping_ids_sha256": "641fee6005fa9ada76b7c764b415bf1177cb25519c5694fefa062b4917a879e5",
+      "producer_checkpoint": "<WORKSPACE_ROOT>\\KINEMATIC_DECODER_SPEED_CLAMP_20261018\\results\\short\\KIN_seed44.pt",
+      "producer_checkpoint_sha256": "78305212770cd47b0af33d8e1b2def703c1d0ab362eb1d83487e58634261461a",
+      "producer_training_ids_sha256": null,
+      "historical_source_binding": "UNKNOWN",
+      "evidence_kind": "POSTHOC_RECONSTRUCTION",
+      "replay_verified": true,
+      "upstream_exposure_status": "SOURCE_RECIPE_FIT_NOT_PER_CHECKPOINT_MANIFEST",
+      "numeric_row_mapping_evidence": {
+        "seed": 44,
+        "split": "inner",
+        "n": 1856,
+        "path": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_inner_seed44.npy",
+        "file_sha256": "39a4ce4a1369025b9b78392064debb9e986d7e73e4bd135599b1f647b7bcb13c",
+        "registered_IDs_sha256": "641fee6005fa9ada76b7c764b415bf1177cb25519c5694fefa062b4917a879e5",
+        "numeric_full_row_replay_maxdiff": 9.5367431640625e-07,
+        "producer_state_sha": "78305212770cd47b0af33d8e1b2def703c1d0ab362eb1d83487e58634261461a",
+        "historical_lock_still_unknown": true
+      },
+      "original_historical_lock_not_repaired": true
+    },
+    {
+      "role": "E0_actual_KIN_CAL_seed44",
+      "artifact_path": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_original_CAL_seed44.npy",
+      "file_sha256_now": "d43b2878fd0a84c461649dad0d72d4f4db5c35e8260bd90628693fbddf5069bf",
+      "array_sha256_now": "c615e23364f14489dab5ae75a152e27a646b872a254ff8a210fc2133fa2c7c7a",
+      "array_sha_matches_original_record": true,
+      "original_file_manifest_paths": [
+        "UNION_SELECTOR_K40_TO_K20_20261018\\results\\cache_pred\\kin_original_CAL_seed44.npy"
+      ],
+      "actual_file_in_original_manifest": false,
+      "evidence_kind": "POSTHOC_RECONSTRUCTION",
+      "historical_source_binding": "ACTUAL_ARRAY_HASH_PRESENT_FILE_PATH_LOCK_MISMATCH",
+      "producer_checkpoint_sha256": "78305212770cd47b0af33d8e1b2def703c1d0ab362eb1d83487e58634261461a",
+      "producer_training_ids_sha256": null,
+      "ID_row_mapping": "original_CAL registry indices25912..28790, numeric replay verification pending",
+      "upstream_exposure_status": "UNKNOWN_RUNTIME_BINDING",
+      "replay_verified": true,
+      "numeric_row_mapping_evidence": {
+        "seed": 44,
+        "split": "E0_original_CAL_cache_rows",
+        "n": 2879,
+        "path": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_original_CAL_seed44.npy",
+        "file_sha256": "d43b2878fd0a84c461649dad0d72d4f4db5c35e8260bd90628693fbddf5069bf",
+        "registered_IDs_sha256": "7b54febf705722ceae18b269fd5321e4f199b617bcef5ab0ae2cf691ff761199",
+        "numeric_full_row_replay_maxdiff": 2.86102294921875e-06,
+        "producer_state_sha": "78305212770cd47b0af33d8e1b2def703c1d0ab362eb1d83487e58634261461a",
+        "historical_lock_still_unknown": true
+      },
+      "original_historical_lock_not_repaired": true
+    }
+  ],
+  "note": "Current hash does not backdate a training-time lock; no old source changed."
+}

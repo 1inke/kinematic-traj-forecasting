@@ -1,0 +1,38 @@
+{
+  "version": "serial_measured_peak_v2",
+  "factor": 1.3,
+  "old_6GiB_estimate_and_STOP_preserved": true,
+  "not_a_change_to_scientific_protocol": true,
+  "execution": "one subprocess at a time; child exits before next stage; no persistent all-feature or GPU process while CPU trees run",
+  "estimates_bytes": {
+    "source_prepare": 1073741824,
+    "MLP": 3263987712,
+    "TREE": 2147483648,
+    "AUDIT": 2147483648
+  },
+  "inventory": {
+    "source_prepare": "single-thread numpy/stdlib + hash buffers + bounded128 feature chunks and labels, <=1GiB estimate",
+    "MLP": "Actual current-parent full GPU preflight Windows retained private peak2995552256bytes + production increment allowance16MiB(action tables,1024step history,checkpoint copies) +240MiB reserve. Original3.5GiB analytical estimate and failed startup preserved, factor1.3 unchanged. Actual production uses one model not concurrent preflight engines.",
+    "TREE": "no Torch import: sampled float32 rows<=.159GiB, sklearn float64copy<=.317GiB, bins/hist/grad/workcopies<=.80GiB, runtime/IO/supervisor reserve<=.724GiB; total2GiB",
+    "AUDIT": "no Torch import or GPU; one arm/population at a time; bounded saved arrays/complete-link/pooled stats and trackdraw scratch;2GiB"
+  },
+  "startup": "both available physical and commit>=1.3 stageE, parent supervisor allowance included in inventory",
+  "runtime": "physical>=1.3max(stageE-currentRSS,0), commit>=1.3max(stageE-currentprivate,0), current+Windows retained peaks<=1.3stageE; collect actual stage peak, STOP if underestimated; never silently increase E",
+  "require_actual_stage_preflight_before_production": true,
+  "threads": {
+    "OMP": 1,
+    "OPENBLAS": 1,
+    "MKL": 1,
+    "torch_CPU": 1
+  },
+  "disk_planning_bytes": 2147483648,
+  "disk_factor": 1.3,
+  "no_deletion_OS_pagefile_userkill": true,
+  "measured_peak_source": "qoder_work/OBSERVABLE_INFORMATION_DIAGNOSIS_EXEC_20261026/execution_staged_20261026/PREFLIGHT_MLP.json",
+  "estimate_MLP_bytes_arithmetic": {
+    "measured_peak": 2995552256,
+    "production_metadata_allowance": 16777216,
+    "additional_reserve": 251658240,
+    "sum": 3263987712
+  }
+}

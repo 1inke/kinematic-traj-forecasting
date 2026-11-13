@@ -1,0 +1,131 @@
+{
+  "variant": "f16_temporal_social_cross",
+  "decoder_experiment": "r2_frozen_full_context_all20",
+  "seed": 1,
+  "validation_scene_id": -1,
+  "epochs": 1,
+  "scheduler": "monotonic_cosine",
+  "elapsed_seconds": 32.91169770003762,
+  "split": {
+    "strategy": "stratified_random_holdout_within_training_scenes",
+    "validation_fraction": 0.01,
+    "validation_seed": 20260825,
+    "scene_counts": {
+      "1": 877,
+      "2": 21217,
+      "3": 3736,
+      "4": 4477
+    },
+    "train_samples": 30004,
+    "validation_samples": 303,
+    "target_test_accessed": false,
+    "data_path": "<LOCAL_DESKTOP>\\DRSE\\ASTRA\\datasets\\eth_ucy\\processed_data_diverse\\eth_data_train.npy",
+    "num_path": "<LOCAL_DESKTOP>\\DRSE\\ASTRA\\datasets\\eth_ucy\\processed_data_diverse\\eth_num_train.npy"
+  },
+  "locked_backend": {
+    "decoder_class": "FrozenFullContextAll20Decoder",
+    "decoder_fingerprint": "52de006ca4902080",
+    "num_modes": 20,
+    "decoder_experiment": "r2_frozen_full_context_all20",
+    "encoder_experiment": "none",
+    "classification_weight": 0.5,
+    "loss_class": "ModeQueryLoss",
+    "fusion_alpha": 0.3,
+    "oracle_coverage_weight": 0.2,
+    "oracle_coverage_temperature": 0.1,
+    "oracle_coverage_fde_weight": 0.25,
+    "oracle_coverage_warmup_epochs": 0.0,
+    "oracle_coverage_normalized": false,
+    "scene_sampling": "none",
+    "motion_difficulty_sampling": false,
+    "motion_difficulty_strength": 0.8,
+    "ema_decay": 0.995,
+    "augmentation": {
+      "rotation": false,
+      "reflection": true,
+      "speed_min": 0.9,
+      "speed_max": 1.1,
+      "probability": 0.5,
+      "curvature_max": 0.0
+    },
+    "future_difficulty_weight": 0.0,
+    "focal_heading_normalize": true,
+    "velocity_loss_weight": 0.0,
+    "acceleration_loss_weight": 0.0,
+    "masked_history_weight": 0.0,
+    "masked_history_probability": 0.15,
+    "equivariance_weight": 0.0,
+    "training_only_auxiliary_parameters": 0,
+    "checkpoint_criterion": "oracle_combo",
+    "hierarchical_decoder": {
+      "cv_reference": false,
+      "anchor_steps": [
+        4,
+        8,
+        12
+      ],
+      "top_m": 20,
+      "use_refiner": true
+    },
+    "parameter_counts": {
+      "total": 337845,
+      "trainable": 42371,
+      "decoder": 70686
+    }
+  },
+  "verifier_checkpoint": null,
+  "evaluation": {
+    "samples": 303,
+    "original": {
+      "ade": 0.4578655958175659,
+      "fde": 1.0038162469863892,
+      "hit_best_ade": 0.1782178217821782,
+      "regret": 0.28396496176719666,
+      "regret_p95": 0.8607272088527675,
+      "active_modes": 6
+    },
+    "oracle": {
+      "min_ade_20": 0.17390064895153046,
+      "same_path_fde": 0.3486294746398926,
+      "min_fde_20": 0.3035011291503906
+    },
+    "fusion_alpha": 0.3,
+    "fused": null,
+    "proposal_diagnostics": {
+      "coarse_min_ade_20": 0.1739271581172943,
+      "coarse_same_path_fde": 0.344148725271225,
+      "coarse_min_fde_20": 0.3035011291503906,
+      "refinement_min_ade_delta": -2.650916576385498e-05,
+      "refinement_min_fde_delta": 0.0,
+      "top_m_coarse_oracle_ade_recall": 1.0
+    }
+  },
+  "evaluation_best_selected": {
+    "samples": 303,
+    "original": {
+      "ade": 0.4578655958175659,
+      "fde": 1.0038162469863892,
+      "hit_best_ade": 0.1782178217821782,
+      "regret": 0.28396496176719666,
+      "regret_p95": 0.8607272088527675,
+      "active_modes": 6
+    },
+    "oracle": {
+      "min_ade_20": 0.17390064895153046,
+      "same_path_fde": 0.3486294746398926,
+      "min_fde_20": 0.3035011291503906
+    },
+    "fusion_alpha": 0.3,
+    "fused": null,
+    "proposal_diagnostics": {
+      "coarse_min_ade_20": 0.1739271581172943,
+      "coarse_same_path_fde": 0.344148725271225,
+      "coarse_min_fde_20": 0.3035011291503906,
+      "refinement_min_ade_delta": -2.650916576385498e-05,
+      "refinement_min_fde_delta": 0.0,
+      "top_m_coarse_oracle_ade_recall": 1.0
+    }
+  },
+  "evaluation_test_best_selected": null,
+  "best_checkpoint_score": 0.32565121352672577
+}

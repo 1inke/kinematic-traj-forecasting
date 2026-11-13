@@ -1,0 +1,64 @@
+{
+  "tag": "q0_branch_decision",
+  "branch": "TRAINING_EXPOSURE_OVERFIT",
+  "explanation": "C_seen has signal, but C_same and calibration cohorts lack signal. Strong training exposure dependency; inspect fitting mechanisms.",
+  "rank_signals": {
+    "C_seen": {
+      "has_rank_signal": true,
+      "valid_draws_ok": true,
+      "min_positive_tracks_ok": true,
+      "ap_bonferroni_positive": true,
+      "rank_bonferroni_positive": true,
+      "ap_point_positive": true,
+      "rank_point_positive": true,
+      "min_pos_tracks_by_seed": [
+        44,
+        53,
+        50
+      ]
+    },
+    "C_same": {
+      "has_rank_signal": false,
+      "valid_draws_ok": true,
+      "min_positive_tracks_ok": true,
+      "ap_bonferroni_positive": false,
+      "rank_bonferroni_positive": false,
+      "ap_point_positive": true,
+      "rank_point_positive": false,
+      "min_pos_tracks_by_seed": [
+        54,
+        49,
+        44
+      ]
+    },
+    "C_calA": {
+      "has_rank_signal": false,
+      "valid_draws_ok": true,
+      "min_positive_tracks_ok": true,
+      "ap_bonferroni_positive": false,
+      "rank_bonferroni_positive": false,
+      "ap_point_positive": true,
+      "rank_point_positive": false,
+      "min_pos_tracks_by_seed": [
+        32,
+        35,
+        29
+      ]
+    },
+    "C_calB": {
+      "has_rank_signal": false,
+      "valid_draws_ok": true,
+      "min_positive_tracks_ok": true,
+      "ap_bonferroni_positive": false,
+      "rank_bonferroni_positive": false,
+      "ap_point_positive": false,
+      "rank_point_positive": false,
+      "min_pos_tracks_by_seed": [
+        29,
+        25,
+        31
+      ]
+    }
+  },
+  "execution_wall_seconds": 141.45589369998197
+}

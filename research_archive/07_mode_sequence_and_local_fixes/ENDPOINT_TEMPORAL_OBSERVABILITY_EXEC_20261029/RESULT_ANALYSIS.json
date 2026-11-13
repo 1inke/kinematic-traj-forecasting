@@ -1,0 +1,292 @@
+{
+  "status": "ANALYZED_P0_END_TINY_SAMPLING_PROTOCOL_STOP_TIME_OPPORTUNITY_STOP",
+  "P0": {
+    "unique_opt_windows": 4096,
+    "branch_population_rows": 8192,
+    "actions_reviewed": 40140800,
+    "oracle_group_rows": 48,
+    "decisions": {
+      "END": {
+        "train": {
+          "stages": {
+            "geometry": {
+              "change_N": 721,
+              "native_good": 283,
+              "good": 550,
+              "rescue": 267,
+              "rescue_tracks": 114,
+              "lost": 0
+            },
+            "motion": {
+              "change_N": 721,
+              "native_good": 283,
+              "good": 510,
+              "rescue": 227,
+              "rescue_tracks": 104,
+              "lost": 0
+            },
+            "safe": {
+              "change_N": 721,
+              "native_good": 283,
+              "good": 417,
+              "rescue": 134,
+              "rescue_tracks": 78,
+              "lost": 0
+            }
+          },
+          "opportunity_pass": true,
+          "authorized_population_for_gate": true,
+          "nonidentity_candidates": 50087,
+          "candidate_denominator": 62060,
+          "nonidentity_windows": 3103,
+          "exact_ties_over_one": 0,
+          "near_ties_over_one": 0,
+          "safe_count_mean": 12.737753786658073,
+          "failures_among_geometry_legal": [
+            1410595,
+            0,
+            0,
+            0,
+            0,
+            1845010,
+            0
+          ],
+          "motion_and_junction_order_is_descriptive_not_causal": true
+        },
+        "val": {
+          "stages": {
+            "geometry": {
+              "change_N": 256,
+              "native_good": 113,
+              "good": 195,
+              "rescue": 82,
+              "rescue_tracks": 30,
+              "lost": 0
+            },
+            "motion": {
+              "change_N": 256,
+              "native_good": 113,
+              "good": 183,
+              "rescue": 70,
+              "rescue_tracks": 30,
+              "lost": 0
+            },
+            "safe": {
+              "change_N": 256,
+              "native_good": 113,
+              "good": 157,
+              "rescue": 44,
+              "rescue_tracks": 23,
+              "lost": 0
+            }
+          },
+          "opportunity_pass": true,
+          "authorized_population_for_gate": false,
+          "nonidentity_candidates": 15901,
+          "candidate_denominator": 19860,
+          "nonidentity_windows": 993,
+          "exact_ties_over_one": 0,
+          "near_ties_over_one": 0,
+          "safe_count_mean": 13.20226586102719,
+          "failures_among_geometry_legal": [
+            465300,
+            0,
+            0,
+            0,
+            0,
+            614083,
+            0
+          ],
+          "motion_and_junction_order_is_descriptive_not_causal": true
+        },
+        "next_stage": "OWN_GPU_RESUME_TINY_PREFLIGHT_REQUIRED"
+      },
+      "TIME": {
+        "train": {
+          "stages": {
+            "geometry": {
+              "change_N": 721,
+              "native_good": 283,
+              "good": 333,
+              "rescue": 50,
+              "rescue_tracks": 39,
+              "lost": 0
+            },
+            "motion": {
+              "change_N": 721,
+              "native_good": 283,
+              "good": 307,
+              "rescue": 24,
+              "rescue_tracks": 23,
+              "lost": 0
+            },
+            "safe": {
+              "change_N": 721,
+              "native_good": 283,
+              "good": 288,
+              "rescue": 5,
+              "rescue_tracks": 5,
+              "lost": 0
+            }
+          },
+          "opportunity_pass": false,
+          "authorized_population_for_gate": true,
+          "nonidentity_candidates": 6594,
+          "candidate_denominator": 62060,
+          "nonidentity_windows": 2353,
+          "exact_ties_over_one": 30945,
+          "near_ties_over_one": 30950,
+          "safe_count_mean": 8.639639058975185,
+          "failures_among_geometry_legal": [
+            13740074,
+            15781978,
+            12980999,
+            13430373,
+            9893289,
+            11121061,
+            0
+          ],
+          "motion_and_junction_order_is_descriptive_not_causal": true
+        },
+        "val": {
+          "stages": {
+            "geometry": {
+              "change_N": 256,
+              "native_good": 113,
+              "good": 130,
+              "rescue": 17,
+              "rescue_tracks": 12,
+              "lost": 0
+            },
+            "motion": {
+              "change_N": 256,
+              "native_good": 113,
+              "good": 120,
+              "rescue": 7,
+              "rescue_tracks": 6,
+              "lost": 0
+            },
+            "safe": {
+              "change_N": 256,
+              "native_good": 113,
+              "good": 113,
+              "rescue": 0,
+              "rescue_tracks": 0,
+              "lost": 0
+            }
+          },
+          "opportunity_pass": false,
+          "authorized_population_for_gate": false,
+          "nonidentity_candidates": 1920,
+          "candidate_denominator": 19860,
+          "nonidentity_windows": 793,
+          "exact_ties_over_one": 9564,
+          "near_ties_over_one": 9568,
+          "safe_count_mean": 10.577039274924472,
+          "failures_among_geometry_legal": [
+            4604941,
+            5306172,
+            4272884,
+            4479434,
+            3266483,
+            3632629,
+            0
+          ],
+          "motion_and_junction_order_is_descriptive_not_causal": true
+        },
+        "next_stage": "STOP_LOW_SAFE_OPPORTUNITY_IN_THIS_ACTION_CLASS"
+      }
+    },
+    "independent_review_status": "PASS_INDEPENDENT_SAVED_P0_ALL_ACTIONS_AND_ORACLES",
+    "all_diameter_errors_zero": true
+  },
+  "actual_GPU_preflight": {
+    "status": "PASS_ACTUAL_GPU8_PAIRED_PHASED_AND_ALL_PARAMETER_GRADIENTS",
+    "max_double_gradient_error": 5.551115123125783e-17,
+    "both_real513_12_resume": "PASS_BOTH_REAL513_12_SUBSET_ALL_RNG_EXACT",
+    "new_MLP_only": true
+  },
+  "tiny": {
+    "status": "STOP_TINY_STRATUM_INSUFFICIENT",
+    "strata": {
+      "END": {
+        "train": {
+          "windows": 3103,
+          "active_windows": 3103,
+          "inactive_windows": 0,
+          "active_candidates": 50087,
+          "candidate_denominator": 62060
+        },
+        "val": {
+          "windows": 993,
+          "active_windows": 993,
+          "inactive_windows": 0,
+          "active_candidates": 15901,
+          "candidate_denominator": 19860
+        }
+      },
+      "TIME": {
+        "train": {
+          "windows": 3103,
+          "active_windows": 2353,
+          "inactive_windows": 750,
+          "active_candidates": 6594,
+          "candidate_denominator": 62060
+        },
+        "val": {
+          "windows": 993,
+          "active_windows": 793,
+          "inactive_windows": 200,
+          "active_candidates": 1920,
+          "candidate_denominator": 19860
+        }
+      }
+    },
+    "updates": 0,
+    "MSE_drop_test_executed": false,
+    "interpretation": "The window-level inactive stratum is empty. This is sampling-contract feasibility, NOT a fit failure or evidence of unobservability."
+  },
+  "formal_models": 0,
+  "held_GT_opened": false,
+  "P3": "NOT_TRIGGERED_TIME_P0_FAILED_INDEPENDENTLY",
+  "primary_hold_CI": "NOT_EXECUTED_NO_FORMAL_FINALS",
+  "resource": {
+    "P0_review": {
+      "checks_retained": 128,
+      "estimate_bytes": 2147483648,
+      "peak_private": 1753432064,
+      "peak_RSS": 221765632,
+      "min_physical": 20536184832,
+      "min_commit": 13343469568,
+      "warnings": [],
+      "all_recorded_status_PASS": true,
+      "observation_window_not_all_system_lifetime": true
+    },
+    "END_actual_GPU_preflight": {
+      "checks_retained": 3,
+      "estimate_bytes": 3422300000,
+      "peak_private": 4030148608,
+      "peak_RSS": 1681207296,
+      "min_physical": 19064991744,
+      "min_commit": 12763533312,
+      "warnings": [],
+      "all_recorded_status_PASS": true,
+      "observation_window_not_all_system_lifetime": true
+    }
+  },
+  "decision_required": {
+    "proposed_only_not_executed": "Clarify the second tiny group as 64 distinct remaining training windows, allowing active windows, selected by the unchanged fixed hash; retain 256 updates and the 90% gate.",
+    "scientific_thresholds_unchanged": true,
+    "requires_human_confirmation": true
+  },
+  "limits": [
+    "Privileged GT oracle is not a learned improvement.",
+    "Zero-lost safe oracle is structural.",
+    "TIME stop applies only to this fixed action and safety class.",
+    "All native trajectories already contain frozen history conditioning.",
+    "No held/inner generalization, major improvement or baseline upgrade is established."
+  ],
+  "same_assistant_not_external": true,
+  "no_model_gradient_replay_in_completion": true,
+  "no_deletion": true
+}

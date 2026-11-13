@@ -1,0 +1,85 @@
+{
+  "scope": "T1_A_vs_B_fresh_only",
+  "human_authorization": "2026-10-16 根据目录下的内容，继续推进实验",
+  "cells": {
+    "A": "T1 position L0 reused certified immutable",
+    "C": "fresh velocity L0"
+  },
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "epochs": 25,
+  "batch": 256,
+  "FIT": 18909,
+  "outer": 1035,
+  "inner": 1856,
+  "original_CAL": 2879,
+  "unique_IDs": 24679,
+  "parameters": 25304,
+  "representation": "position",
+  "kernel": "U0_integrated_acceleration",
+  "only_factor": "native24 reversible velocity representation with own FIT-only statistics",
+  "base_loss": "fullK20 hard same-slot ADE+0.5FDE min firstphysicaltie +0.05 mean190pairs relu(.3-meanpathdistance)^2",
+  "keep_component_tie": "ADE-first",
+  "keep_candidate_tie": "firstphysical",
+  "ReLU_at_zero_derivative": 0,
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-8,
+    "foreach": false
+  },
+  "fixed_coordinate_diagnostic": {
+    "FIT": "first256 original FIT order",
+    "epochs": [
+      1,
+      13,
+      25
+    ],
+    "space": "output_coordinates",
+    "not_adaptive": true
+  },
+  "primary": "outer_change_final_epoch25",
+  "bootstrap": {
+    "draws": 20000,
+    "generator": "PCG64",
+    "seed": 20261016,
+    "block": 128,
+    "draw_order": "all modelseeds then common outer tracks per block",
+    "family": 24,
+    "no_family_shrink": true,
+    "absolute_error_family": 9,
+    "absolute_coverage_family": 3,
+    "zero_denominator_invalid_no_resample": true,
+    "minimum_valid": 19000
+  },
+  "retention_signal": {
+    "lost_mean_reduction": 0.03,
+    "allseed_lost_decrease": true,
+    "lost_family24_upper_below": 0,
+    "rescue_mean_no_decrease": true,
+    "rescue_family24_lower_at_least": -0.02,
+    "coverage_allseed_nondecrease": true
+  },
+  "major_success": "Original >=5pp coverage eachseed plus family3 lower>0; >=5percent ADE/FDE eachseed plus family9 upper<0; all protected errors/native-success loss/five pooled motion <=1percent harm; correlation review",
+  "resource_policy": "task_memory_1p3_v1",
+  "planning_minutes_limit": 30,
+  "no_model_GT_forward": true,
+  "old_F16_not_loaded_or_forwarded": true,
+  "no_physics_fallback_projection": true,
+  "T2": "separate actual preflight C only after T1 evidence review; source-compatible A reused not retrained",
+  "T3": "NOT_TRIGGERED_T1_RETENTION_SIGNAL_FALSE",
+  "no_sweep_no_new_data_no_old_decoder_scorer_training": true,
+  "review": "ARS inline same assistant not external peer review",
+  "stage": "T2_MOTION_COORDINATE_TRANSFER",
+  "new_training_runs": 3,
+  "reused_A_runs": 3,
+  "T1_resource_deviation_preserved": true
+}

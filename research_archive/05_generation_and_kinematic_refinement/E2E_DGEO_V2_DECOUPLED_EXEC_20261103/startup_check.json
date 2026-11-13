@@ -1,0 +1,51 @@
+{
+  "checked_at": "2026-11-03T11:18:21.4942503+09:00",
+  "actual_pid": 30996,
+  "process_chain": [
+    {
+      "ProcessId": 30996,
+      "ParentProcessId": 39260,
+      "CreationDate": "/Date(1793675898856)/",
+      "ExecutablePath": "<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe",
+      "CommandLine": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B \"<WORKSPACE_ROOT>\\qoder_work\\E2E_DGEO_V2_DECOUPLED_EXEC_20261103\\worker.py\""
+    },
+    {
+      "ProcessId": 39260,
+      "ParentProcessId": 3184,
+      "CreationDate": "/Date(1793675898249)/",
+      "ExecutablePath": "<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe",
+      "CommandLine": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B \"<WORKSPACE_ROOT>\\qoder_work\\E2E_DGEO_V2_DECOUPLED_EXEC_20261103\\worker.py\""
+    },
+    {
+      "ProcessId": 3184,
+      "ParentProcessId": 2136,
+      "CreationDate": "/Date(1793108203162)/",
+      "ExecutablePath": null,
+      "CommandLine": null
+    }
+  ],
+  "task_state": "Running",
+  "XML_trigger_count": 0,
+  "worker": {
+    "at": "2026-11-03T11:18:19.671945+09:00",
+    "status": "RUNNING",
+    "stage": "DK-CenterDiff",
+    "child_pid": 47956,
+    "child_command": [
+      "<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe",
+      "-B",
+      "<WORKSPACE_ROOT>\\qoder_work\\E2E_DGEO_V2_DECOUPLED_EXEC_20261103\\train_arm.py",
+      "--arm",
+      "DK-CenterDiff"
+    ]
+  },
+  "exit": null,
+  "progress": null,
+  "stderr": [
+    {
+      "Name": "DK-CenterDiff_stderr.log",
+      "Length": 0
+    }
+  ],
+  "status": "PASS_ONE_STARTUP_ACTUAL_WORKER_CLI_CREATE_PARENT_TASK0"
+}

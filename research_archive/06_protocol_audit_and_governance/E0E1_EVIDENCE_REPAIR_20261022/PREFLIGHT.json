@@ -1,0 +1,943 @@
+{
+  "status": "PASS_FROZEN_EVALUATION_ONLY",
+  "seconds": 8.811999999976251,
+  "device": "cuda:0",
+  "student_dtype": "float32",
+  "students": [
+    {
+      "seed": 42,
+      "arm": "A",
+      "strict_load": true,
+      "param_buffer_exact": true,
+      "batch128_vs32_maxdiff": 0.0,
+      "finite_K20": true
+    },
+    {
+      "seed": 42,
+      "arm": "B",
+      "strict_load": true,
+      "param_buffer_exact": true,
+      "batch128_vs32_maxdiff": 0.0,
+      "finite_K20": true
+    },
+    {
+      "seed": 42,
+      "arm": "C",
+      "strict_load": true,
+      "param_buffer_exact": true,
+      "batch128_vs32_maxdiff": 0.0,
+      "finite_K20": true
+    },
+    {
+      "seed": 42,
+      "arm": "D",
+      "strict_load": true,
+      "param_buffer_exact": true,
+      "batch128_vs32_maxdiff": 0.0,
+      "finite_K20": true
+    },
+    {
+      "seed": 42,
+      "arm": "E",
+      "strict_load": true,
+      "param_buffer_exact": true,
+      "batch128_vs32_maxdiff": 0.0,
+      "finite_K20": true
+    },
+    {
+      "seed": 43,
+      "arm": "A",
+      "strict_load": true,
+      "param_buffer_exact": true,
+      "batch128_vs32_maxdiff": 0.0,
+      "finite_K20": true
+    },
+    {
+      "seed": 43,
+      "arm": "B",
+      "strict_load": true,
+      "param_buffer_exact": true,
+      "batch128_vs32_maxdiff": 0.0,
+      "finite_K20": true
+    },
+    {
+      "seed": 43,
+      "arm": "E",
+      "strict_load": true,
+      "param_buffer_exact": true,
+      "batch128_vs32_maxdiff": 0.0,
+      "finite_K20": true
+    },
+    {
+      "seed": 44,
+      "arm": "A",
+      "strict_load": true,
+      "param_buffer_exact": true,
+      "batch128_vs32_maxdiff": 0.0,
+      "finite_K20": true
+    },
+    {
+      "seed": 44,
+      "arm": "B",
+      "strict_load": true,
+      "param_buffer_exact": true,
+      "batch128_vs32_maxdiff": 0.0,
+      "finite_K20": true
+    },
+    {
+      "seed": 44,
+      "arm": "E",
+      "strict_load": true,
+      "param_buffer_exact": true,
+      "batch128_vs32_maxdiff": 0.0,
+      "finite_K20": true
+    }
+  ],
+  "A42_complete_inner_reconciliation": {
+    "status": "RECONCILED",
+    "fields": [
+      {
+        "group": "overall",
+        "field": "N",
+        "old": 1856,
+        "replay": 1856,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "overall",
+        "field": "good_count",
+        "old": 693,
+        "replay": 693,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "overall",
+        "field": "native_good_count",
+        "old": 932,
+        "replay": 932,
+        "old_value_provenance": "DERIVED_IDENTITY_good_minus_rescue_plus_lost_NOT_STORED",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "overall",
+        "field": "coverage",
+        "old": 0.3733836206896552,
+        "replay": 0.3733836206896552,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 2e-06
+      },
+      {
+        "group": "overall",
+        "field": "rescue",
+        "old": 117,
+        "replay": 117,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "overall",
+        "field": "lost",
+        "old": 356,
+        "replay": 356,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "overall",
+        "field": "minADE",
+        "old": 0.3384906325541786,
+        "replay": 0.33849063264400353,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 8.982492527565e-11,
+        "pass_": true,
+        "tolerance": 2e-06
+      },
+      {
+        "group": "overall",
+        "field": "minFDE",
+        "old": 0.6871322009287091,
+        "replay": 0.6871322008409613,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 8.77478090188788e-11,
+        "pass_": true,
+        "tolerance": 2e-06
+      },
+      {
+        "group": "overall",
+        "field": "motion_gate",
+        "old": "FAIL",
+        "replay": "FAIL",
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "stable",
+        "field": "N",
+        "old": 978,
+        "replay": 978,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "stable",
+        "field": "good_count",
+        "old": 426,
+        "replay": 426,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "stable",
+        "field": "native_good_count",
+        "old": 601,
+        "replay": 601,
+        "old_value_provenance": "DERIVED_IDENTITY_good_minus_rescue_plus_lost_NOT_STORED",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "stable",
+        "field": "coverage",
+        "old": 0.43558282208588955,
+        "replay": 0.43558282208588955,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 2e-06
+      },
+      {
+        "group": "stable",
+        "field": "rescue",
+        "old": 44,
+        "replay": 44,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "stable",
+        "field": "lost",
+        "old": 219,
+        "replay": 219,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "stable",
+        "field": "minADE",
+        "old": 0.28661095851451585,
+        "replay": 0.28661095840519457,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 1.0932127425533622e-10,
+        "pass_": true,
+        "tolerance": 2e-06
+      },
+      {
+        "group": "stable",
+        "field": "minFDE",
+        "old": 0.5992952099403516,
+        "replay": 0.599295210577998,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 6.376463801416321e-10,
+        "pass_": true,
+        "tolerance": 2e-06
+      },
+      {
+        "group": "stable",
+        "field": "motion_gate",
+        "old": "FAIL",
+        "replay": "FAIL",
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "transition",
+        "field": "N",
+        "old": 381,
+        "replay": 381,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "transition",
+        "field": "good_count",
+        "old": 127,
+        "replay": 127,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "transition",
+        "field": "native_good_count",
+        "old": 165,
+        "replay": 165,
+        "old_value_provenance": "DERIVED_IDENTITY_good_minus_rescue_plus_lost_NOT_STORED",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "transition",
+        "field": "coverage",
+        "old": 0.3333333333333333,
+        "replay": 0.3333333333333333,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 2e-06
+      },
+      {
+        "group": "transition",
+        "field": "rescue",
+        "old": 36,
+        "replay": 36,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "transition",
+        "field": "lost",
+        "old": 74,
+        "replay": 74,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "transition",
+        "field": "minADE",
+        "old": 0.37496274908450866,
+        "replay": 0.374962749661322,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 5.768133193306824e-10,
+        "pass_": true,
+        "tolerance": 2e-06
+      },
+      {
+        "group": "transition",
+        "field": "minFDE",
+        "old": 0.7514646470301131,
+        "replay": 0.7514646464616195,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 5.684935855398976e-10,
+        "pass_": true,
+        "tolerance": 2e-06
+      },
+      {
+        "group": "transition",
+        "field": "motion_gate",
+        "old": "FAIL",
+        "replay": "FAIL",
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "change",
+        "field": "N",
+        "old": 497,
+        "replay": 497,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "change",
+        "field": "good_count",
+        "old": 140,
+        "replay": 140,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "change",
+        "field": "native_good_count",
+        "old": 166,
+        "replay": 166,
+        "old_value_provenance": "DERIVED_IDENTITY_good_minus_rescue_plus_lost_NOT_STORED",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "change",
+        "field": "coverage",
+        "old": 0.28169014084507044,
+        "replay": 0.28169014084507044,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 2e-06
+      },
+      {
+        "group": "change",
+        "field": "rescue",
+        "old": 37,
+        "replay": 37,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "change",
+        "field": "lost",
+        "old": 63,
+        "replay": 63,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      },
+      {
+        "group": "change",
+        "field": "minADE",
+        "old": 0.4126203001854349,
+        "replay": 0.412620300293816,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 1.0838113739808364e-10,
+        "pass_": true,
+        "tolerance": 2e-06
+      },
+      {
+        "group": "change",
+        "field": "minFDE",
+        "old": 0.8106612053994909,
+        "replay": 0.8106612042528469,
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 1.1466440019702873e-09,
+        "pass_": true,
+        "tolerance": 2e-06
+      },
+      {
+        "group": "change",
+        "field": "motion_gate",
+        "old": "FAIL",
+        "replay": "FAIL",
+        "old_value_provenance": "STORED_OLD_FIELD",
+        "abs_diff": 0,
+        "pass_": true,
+        "tolerance": 0
+      }
+    ]
+  },
+  "KIN_complete_cache_row_replay": [
+    {
+      "seed": 42,
+      "split": "FIT",
+      "n": 18909,
+      "path": "<WORKSPACE_ROOT>\\UNION_SELECTOR_K40_TO_K20_20261018\\results\\cache_pred\\kin_FIT_seed42.npy",
+      "file_sha256": "795ce65f440dc2506f14daa8c2f5dc3a33eb24cd4c9cfae0062f364eaaa70351",
+      "registered_IDs_sha256": "3706e538198bbe4e04fd2f9ebeb23752c1d5b3257deff85c52024236e0b09c6d",
+      "numeric_full_row_replay_maxdiff": 1.430511474609375e-06,
+      "producer_state_sha": "029fda98741cbbd57c7867bc6ca40b573e58c4dd4d109bbaef9cc9e07fe88e20",
+      "historical_lock_still_unknown": true
+    },
+    {
+      "seed": 42,
+      "split": "inner",
+      "n": 1856,
+      "path": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_inner_seed42.npy",
+      "file_sha256": "5e8e2b3b69f3bffef4e93fa64aff6e576e51d4fa72c91459d433218633973915",
+      "registered_IDs_sha256": "641fee6005fa9ada76b7c764b415bf1177cb25519c5694fefa062b4917a879e5",
+      "numeric_full_row_replay_maxdiff": 9.5367431640625e-07,
+      "producer_state_sha": "029fda98741cbbd57c7867bc6ca40b573e58c4dd4d109bbaef9cc9e07fe88e20",
+      "historical_lock_still_unknown": true
+    },
+    {
+      "seed": 42,
+      "split": "E0_original_CAL_cache_rows",
+      "n": 2879,
+      "path": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_original_CAL_seed42.npy",
+      "file_sha256": "5f9a91b99e4ffbc9f897425d97fb44062d0c288b30370d9662191485b4122e0b",
+      "registered_IDs_sha256": "7b54febf705722ceae18b269fd5321e4f199b617bcef5ab0ae2cf691ff761199",
+      "numeric_full_row_replay_maxdiff": 2.384185791015625e-06,
+      "producer_state_sha": "029fda98741cbbd57c7867bc6ca40b573e58c4dd4d109bbaef9cc9e07fe88e20",
+      "historical_lock_still_unknown": true
+    },
+    {
+      "seed": 43,
+      "split": "FIT",
+      "n": 18909,
+      "path": "<WORKSPACE_ROOT>\\UNION_SELECTOR_K40_TO_K20_20261018\\results\\cache_pred\\kin_FIT_seed43.npy",
+      "file_sha256": "b518e051d19ea08165b8e723852b00dac142ec28dd45894bdc6fe2eab6507292",
+      "registered_IDs_sha256": "3706e538198bbe4e04fd2f9ebeb23752c1d5b3257deff85c52024236e0b09c6d",
+      "numeric_full_row_replay_maxdiff": 1.430511474609375e-06,
+      "producer_state_sha": "acd3d051e355c8c9b3e34f0998db42412343d0dbf2b07d3fde602811d133f31b",
+      "historical_lock_still_unknown": true
+    },
+    {
+      "seed": 43,
+      "split": "inner",
+      "n": 1856,
+      "path": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_inner_seed43.npy",
+      "file_sha256": "39c190a7b27f065134876a79dd1d7f65ceacc127771aa46c208b34060260bd54",
+      "registered_IDs_sha256": "641fee6005fa9ada76b7c764b415bf1177cb25519c5694fefa062b4917a879e5",
+      "numeric_full_row_replay_maxdiff": 1.1920928955078125e-06,
+      "producer_state_sha": "acd3d051e355c8c9b3e34f0998db42412343d0dbf2b07d3fde602811d133f31b",
+      "historical_lock_still_unknown": true
+    },
+    {
+      "seed": 43,
+      "split": "E0_original_CAL_cache_rows",
+      "n": 2879,
+      "path": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_original_CAL_seed43.npy",
+      "file_sha256": "9f570eccbd196be84dd8a61817ce2aabd640309b8e7272c59dd30b97deb1d01e",
+      "registered_IDs_sha256": "7b54febf705722ceae18b269fd5321e4f199b617bcef5ab0ae2cf691ff761199",
+      "numeric_full_row_replay_maxdiff": 2.384185791015625e-06,
+      "producer_state_sha": "acd3d051e355c8c9b3e34f0998db42412343d0dbf2b07d3fde602811d133f31b",
+      "historical_lock_still_unknown": true
+    },
+    {
+      "seed": 44,
+      "split": "FIT",
+      "n": 18909,
+      "path": "<WORKSPACE_ROOT>\\UNION_SELECTOR_K40_TO_K20_20261018\\results\\cache_pred\\kin_FIT_seed44.npy",
+      "file_sha256": "deef585429d9d46014debdf5f94f7a38df8d1e44de89e889961eaa4138a2644f",
+      "registered_IDs_sha256": "3706e538198bbe4e04fd2f9ebeb23752c1d5b3257deff85c52024236e0b09c6d",
+      "numeric_full_row_replay_maxdiff": 1.9073486328125e-06,
+      "producer_state_sha": "78305212770cd47b0af33d8e1b2def703c1d0ab362eb1d83487e58634261461a",
+      "historical_lock_still_unknown": true
+    },
+    {
+      "seed": 44,
+      "split": "inner",
+      "n": 1856,
+      "path": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_inner_seed44.npy",
+      "file_sha256": "39a4ce4a1369025b9b78392064debb9e986d7e73e4bd135599b1f647b7bcb13c",
+      "registered_IDs_sha256": "641fee6005fa9ada76b7c764b415bf1177cb25519c5694fefa062b4917a879e5",
+      "numeric_full_row_replay_maxdiff": 9.5367431640625e-07,
+      "producer_state_sha": "78305212770cd47b0af33d8e1b2def703c1d0ab362eb1d83487e58634261461a",
+      "historical_lock_still_unknown": true
+    },
+    {
+      "seed": 44,
+      "split": "E0_original_CAL_cache_rows",
+      "n": 2879,
+      "path": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_original_CAL_seed44.npy",
+      "file_sha256": "d43b2878fd0a84c461649dad0d72d4f4db5c35e8260bd90628693fbddf5069bf",
+      "registered_IDs_sha256": "7b54febf705722ceae18b269fd5321e4f199b617bcef5ab0ae2cf691ff761199",
+      "numeric_full_row_replay_maxdiff": 2.86102294921875e-06,
+      "producer_state_sha": "78305212770cd47b0af33d8e1b2def703c1d0ab362eb1d83487e58634261461a",
+      "historical_lock_still_unknown": true
+    }
+  ],
+  "actual_saved128_independent_audit": {
+    "status": "PASS",
+    "max_abs_diff": 4.440892098500626e-16,
+    "n_fields": 198,
+    "mismatches": [],
+    "inputs_sha": {
+      "qoder_work/E0E1_EVIDENCE_REPAIR_20261022/preflight_smoke/saved.npz": "4a77de4af2c553c45dcf0bd7eb9a7bc7efecfd693b14bd01cb9ab49e2bd6f58f",
+      "qoder_work/E0E1_EVIDENCE_REPAIR_20261022/preflight_smoke/metrics.json": "428b242708891924eb1132f0ec1d20b6fe3fb1391184810c007dc545bbd1201a",
+      "REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES/results/cache/train_dev/eth_train.npz": "f8e6769c7e28b0d5ad4c108989246d6e724c078190102ae90443e62600d5a3ea",
+      "F16_OBSERVABLE_CUE_DIAGNOSIS_20261003/labels/train.npz": "01c8226f6bc3e7103c61f52294ac109ad2d585be2500a25d1601e08efe487efc",
+      "F16_OBSERVABLE_CUE_DIAGNOSIS_20261003/metadata.npz": "9e0e2f581d05487e4905fc2fe34c963458cace0254daf5289e12aaea9ac49591"
+    },
+    "script_sha": "b9af7b2b778139bf6d28827e28477ba588116c4b40e64d377f6716761a3aca45",
+    "tolerance": 2e-12,
+    "independent_implementation": true,
+    "frozen_labels_verified": true
+  },
+  "algebra_fixture": "ALGEBRA_IDENTITY_FIXTURE.json",
+  "resource": [
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 5583457484.8,
+      "required_commit": 5583457484.8,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 18518228992,
+        "commit": 20030795776,
+        "rss": 52346880,
+        "private": 100003840,
+        "peak_rss": 52817920,
+        "peak_private": 100593664
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4727224320.0,
+      "required_commit": 4134201344.0,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17588457472,
+        "commit": 18838253568,
+        "rss": 658640896,
+        "private": 1114812416,
+        "peak_rss": 659689472,
+        "peak_private": 1115860992
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4264520499.2000003,
+      "required_commit": 3364027596.8,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17233645568,
+        "commit": 18250559488,
+        "rss": 1014566912,
+        "private": 1707253760,
+        "peak_rss": 1014566912,
+        "peak_private": 1707253760
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4263578009.6000004,
+      "required_commit": 3363287449.6,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17230299136,
+        "commit": 18250301440,
+        "rss": 1015291904,
+        "private": 1707823104,
+        "peak_rss": 1015291904,
+        "peak_private": 1707823104
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4263210598.4,
+      "required_commit": 3362962636.8,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17220902912,
+        "commit": 18250170368,
+        "rss": 1015574528,
+        "private": 1708072960,
+        "peak_rss": 1015574528,
+        "peak_private": 1708072960
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4263210598.4,
+      "required_commit": 3362962636.8,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17217757184,
+        "commit": 18250170368,
+        "rss": 1015574528,
+        "private": 1708072960,
+        "peak_rss": 1015574528,
+        "peak_private": 1708072960
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4263194624.0,
+      "required_commit": 3362962636.8,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17216880640,
+        "commit": 18250170368,
+        "rss": 1015586816,
+        "private": 1708072960,
+        "peak_rss": 1015586816,
+        "peak_private": 1708072960
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4263194624.0,
+      "required_commit": 3362962636.8,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17216249856,
+        "commit": 18250170368,
+        "rss": 1015586816,
+        "private": 1708072960,
+        "peak_rss": 1015586816,
+        "peak_private": 1708072960
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4263194624.0,
+      "required_commit": 3362962636.8,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17215107072,
+        "commit": 18250170368,
+        "rss": 1015586816,
+        "private": 1708072960,
+        "peak_rss": 1015586816,
+        "peak_private": 1708072960
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4263194624.0,
+      "required_commit": 3362962636.8,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17231650816,
+        "commit": 18269319168,
+        "rss": 1015586816,
+        "private": 1708072960,
+        "peak_rss": 1015586816,
+        "peak_private": 1708072960
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4263183974.4,
+      "required_commit": 3362962636.8,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17223024640,
+        "commit": 18260393984,
+        "rss": 1015595008,
+        "private": 1708072960,
+        "peak_rss": 1015595008,
+        "peak_private": 1708072960
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4263183974.4,
+      "required_commit": 3362962636.8,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17227259904,
+        "commit": 18266189824,
+        "rss": 1015595008,
+        "private": 1708072960,
+        "peak_rss": 1015595008,
+        "peak_private": 1708072960
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4237220249.6000004,
+      "required_commit": 3341434470.4,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17484206080,
+        "commit": 18417618944,
+        "rss": 1035567104,
+        "private": 1724633088,
+        "peak_rss": 1498468352,
+        "peak_private": 2188492800
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4036869324.8,
+      "required_commit": 3119853568.0,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17365262336,
+        "commit": 18285875200,
+        "rss": 1189683200,
+        "private": 1895079936,
+        "peak_rss": 1509093376,
+        "peak_private": 2215489536
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4031091916.8,
+      "required_commit": 3113905766.4,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17370972160,
+        "commit": 18288648192,
+        "rss": 1194127360,
+        "private": 1899655168,
+        "peak_rss": 1509093376,
+        "peak_private": 2215489536
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4028211200.0,
+      "required_commit": 3111003750.4,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17365188608,
+        "commit": 18288476160,
+        "rss": 1196343296,
+        "private": 1901887488,
+        "peak_rss": 1509093376,
+        "peak_private": 2215489536
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4035703193.6,
+      "required_commit": 3119709798.4,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17382760448,
+        "commit": 18303832064,
+        "rss": 1190580224,
+        "private": 1895190528,
+        "peak_rss": 1511309312,
+        "peak_private": 2216603648
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4029776691.2000003,
+      "required_commit": 3113767321.6,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17382449152,
+        "commit": 18303172608,
+        "rss": 1195139072,
+        "private": 1899761664,
+        "peak_rss": 1511309312,
+        "peak_private": 2216603648
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4027050393.6,
+      "required_commit": 3111035699.2000003,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17378672640,
+        "commit": 18301849600,
+        "rss": 1197236224,
+        "private": 1901862912,
+        "peak_rss": 1511309312,
+        "peak_private": 2216603648
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4034547712.0,
+      "required_commit": 3122302976.0,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17387655168,
+        "commit": 18312052736,
+        "rss": 1191469056,
+        "private": 1893195776,
+        "peak_rss": 1511776256,
+        "peak_private": 2216603648
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4029861888.0,
+      "required_commit": 3117521305.6,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17403756544,
+        "commit": 18310184960,
+        "rss": 1195073536,
+        "private": 1896873984,
+        "peak_rss": 1511776256,
+        "peak_private": 2216603648
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "required_physical": 4021193113.6,
+      "required_commit": 3111275315.2000003,
+      "retained_peak_limit": 5583457484.8,
+      "snapshot": {
+        "physical": 17321725952,
+        "commit": 18193022976,
+        "rss": 1201741824,
+        "private": 1901678592,
+        "peak_rss": 1511776256,
+        "peak_private": 2216603648
+      }
+    }
+  ],
+  "disk_conservative_bytes": 4327093760,
+  "disk_free_bytes": 15629774848,
+  "estimated_22_job_minutes_range": [
+    3,
+    12
+  ],
+  "estimate_kind": "conservative engineering range, not production benchmark guarantee",
+  "no_optimizer_or_student_backward": true,
+  "no_new_training": true
+}

@@ -1,0 +1,75 @@
+{
+  "status": "COST_NOT_DEPLOYABLE_PARAMETER_BUDGET_AND_CPU_PARITY",
+  "actual_benchmark": "MEASURED_RAW_COST_CACHE_PARITY_BLOCKED",
+  "parameter_counts": {
+    "F16": 321988,
+    "KIN": 63624,
+    "editor": 11488
+  },
+  "total_unique_parameters": 397100,
+  "budget": 305000,
+  "budget_pass": false,
+  "timing": [
+    {
+      "device": "cpu",
+      "batch": 1,
+      "CPU_threads": 1,
+      "warm": 50,
+      "measure": 500,
+      "mean_seconds": 0.012927412000950426,
+      "p50_seconds": 0.012786250037606806,
+      "p95_seconds": 0.013949275040067731,
+      "scope": "real raw memory-map observation slice+existing neighbor valid sidecar+normalization+fullF16+KIN+400physicalchecks+324features+CPU/GPUtransfers+editor+chosenK20",
+      "disk_cold_start_excluded": true
+    },
+    {
+      "device": "cuda",
+      "batch": 1,
+      "CPU_threads": 1,
+      "warm": 50,
+      "measure": 500,
+      "mean_seconds": 0.026445555600570516,
+      "p50_seconds": 0.02458955004112795,
+      "p95_seconds": 0.03816783993970603,
+      "scope": "real raw memory-map observation slice+existing neighbor valid sidecar+normalization+fullF16+KIN+400physicalchecks+324features+CPU/GPUtransfers+editor+chosenK20",
+      "disk_cold_start_excluded": true
+    }
+  ],
+  "per_device_parity": {
+    "cpu": {
+      "n": 32,
+      "failures": 32,
+      "tolerance": 2e-05,
+      "max_errors": {
+        "past": 0.0,
+        "tokens": 0.0008262991905212402,
+        "native": 0.0005409717559814453,
+        "kin": 1.9073486328125e-06
+      }
+    },
+    "cuda": {
+      "n": 32,
+      "failures": 0,
+      "tolerance": 2e-05,
+      "max_errors": {
+        "past": 0.0,
+        "tokens": 1.6689300537109375e-06,
+        "native": 1.9073486328125e-06,
+        "kin": 1.9073486328125e-06
+      }
+    }
+  },
+  "source_SHA": {
+    "benchmark_raw.py": "95ec9b77e807cf9fb225d6bf6e71da7e7c638ba808625e0f585798568ba1a64c",
+    "benchmark_raw_v2.py": "5e8e6b250e30de56644a077d527ad793e0c4b7cdfbdc77d725e4d2d638ef23b7",
+    "benchmark_raw_v3.py": "da914e3a64f9cd6fa9424dfd55bfe426b3bcbbb3edd3539aff8fe4ddc12aaa0a",
+    "COST_END_TO_END_V3.json": "5f814d802dc40f52a2b021daf8c703b28f1c48fed1f2a0c3468422eb792c1c5a",
+    "FAILURE_1793000280747120000.json": "97e5e6787471e3e15d9104d7a023dce207158724cad548533eef70d939a14894",
+    "FAILURE_1793000344443293900.json": "b9a2a64e816d4570dea34265cad58fbdea673f71c1e145f6daac7ae5964d245f",
+    "REPAIR_DESIGN.md": "6b68e63fee9144c86f3d89a7daad3e29d9b99d1f26e66473eb1e764be20b497e"
+  },
+  "all_old_weights_bool_buffers_exact": true,
+  "no_backward_optimizer": true,
+  "CPU_numerical_gate_not_relaxed": true,
+  "source_changes": "new helper versions only; V2 descriptive parity failure retained, V3 device attribute adapter; no old model source/equation/cache change"
+}

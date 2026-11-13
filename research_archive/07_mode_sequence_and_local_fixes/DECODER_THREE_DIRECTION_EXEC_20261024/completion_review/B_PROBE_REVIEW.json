@@ -1,0 +1,559 @@
+{
+  "status": "PASS",
+  "eligible_queries": 14846,
+  "invalid_queries": 2,
+  "full_eligibility_independent_vectorized": true,
+  "all_memberships_counts_NLL_Opp4_exact": true,
+  "bootstrap": {
+    "static": {
+      "point": 1.067621819596199,
+      "CI95": [
+        0.6631660889631978,
+        1.3704061305584823
+      ],
+      "valid": 20000,
+      "tracks": 35
+    },
+    "causal": {
+      "point": 0.9917725832487118,
+      "CI95": [
+        0.45579559847897855,
+        1.3176942433602634
+      ],
+      "valid": 20000,
+      "tracks": 35
+    }
+  },
+  "original_result": {
+    "status": "COMPLETED",
+    "decisions": {
+      "static": {
+        "passed": false,
+        "gates": {
+          "B1": false,
+          "B2": false,
+          "B3": false
+        },
+        "relative_gain": -0.2630922628210451,
+        "advantage_ratio": null,
+        "no_gain_over_M0": true,
+        "paired_track_CI": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": 1.067621819596199,
+          "CI95": [
+            0.6631660889631978,
+            1.3704061305584814
+          ],
+          "resample_seeds": true,
+          "seed": 20261023
+        }
+      },
+      "causal": {
+        "passed": false,
+        "gates": {
+          "B1": false,
+          "B2": false,
+          "B3": false
+        },
+        "relative_gain": -0.24440086212313122,
+        "advantage_ratio": null,
+        "no_gain_over_M0": true,
+        "paired_track_CI": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": 0.9917725832487118,
+          "CI95": [
+            0.45579559847897855,
+            1.3176942433602647
+          ],
+          "resample_seeds": true,
+          "seed": 20261023
+        }
+      }
+    },
+    "populations": {
+      "static": {
+        "n": 497,
+        "miss": 331,
+        "NLL": {
+          "M0_motion_iso": 4.057974978619548,
+          "M1_heading_global": 4.183997671148493,
+          "PRIOR_static": 5.125596798215747,
+          "SHUF_static": 5.1232716102574365,
+          "XSCENE_static": 4.935974987426684,
+          "PRIOR_causal": 5.04974756186826,
+          "SHUF_causal": 4.973554298772114,
+          "XSCENE_causal": 4.935974987426684
+        },
+        "Opp4": {
+          "M0_motion_iso": 0.1148036253776435,
+          "M1_heading_global": 0.12084592145015106,
+          "PRIOR_static": 0.10574018126888217,
+          "SHUF_static": 0.12386706948640483,
+          "XSCENE_static": 0.0755287009063444,
+          "PRIOR_causal": 0.10574018126888217,
+          "SHUF_causal": 0.11178247734138973,
+          "XSCENE_causal": 0.0755287009063444
+        }
+      },
+      "causal": {
+        "n": 497,
+        "miss": 331,
+        "NLL": {
+          "M0_motion_iso": 4.057974978619548,
+          "M1_heading_global": 4.183997671148493,
+          "PRIOR_static": 5.125596798215747,
+          "SHUF_static": 5.1232716102574365,
+          "XSCENE_static": 4.935974987426684,
+          "PRIOR_causal": 5.04974756186826,
+          "SHUF_causal": 4.973554298772114,
+          "XSCENE_causal": 4.935974987426684
+        },
+        "Opp4": {
+          "M0_motion_iso": 0.1148036253776435,
+          "M1_heading_global": 0.12084592145015106,
+          "PRIOR_static": 0.10574018126888217,
+          "SHUF_static": 0.12386706948640483,
+          "XSCENE_static": 0.0755287009063444,
+          "PRIOR_causal": 0.10574018126888217,
+          "SHUF_causal": 0.11178247734138973,
+          "XSCENE_causal": 0.0755287009063444
+        }
+      }
+    },
+    "records_SHA": "57c7c4a8558277f76947aa3693a4b97a33039c6872f57f4a85a318818d6b1d52",
+    "arrays_SHA": "0eaa4f5f595e56d7af998f53ea74b9c84aa87e209df97da7e1a891728d94fc48",
+    "source_digest": "96a5c99f3501d81b60d7d81823eb9b448c4bef9d77f943a9352a0d9eacec40f0",
+    "conclusion": "SCENE_HISTOGRAM_PRIOR_FALSIFIED",
+    "all_groups": {
+      "M0_motion_iso": {
+        "overall": {
+          "n_original": 1856,
+          "n_valid": 1856,
+          "n_native_miss": 924,
+          "NLL": 3.9132366110054315,
+          "Opp4": 0.047619047619047616,
+          "cold_start": 0,
+          "levels": {
+            "M0": 1856
+          }
+        },
+        "stable": {
+          "n_original": 978,
+          "n_valid": 978,
+          "n_native_miss": 377,
+          "NLL": 3.775030067577476,
+          "Opp4": 0.0,
+          "cold_start": 0,
+          "levels": {
+            "M0": 978
+          }
+        },
+        "transition": {
+          "n_original": 381,
+          "n_valid": 381,
+          "n_native_miss": 216,
+          "NLL": 4.079197321683448,
+          "Opp4": 0.027777777777777776,
+          "cold_start": 0,
+          "levels": {
+            "M0": 381
+          }
+        },
+        "change": {
+          "n_original": 497,
+          "n_valid": 497,
+          "n_native_miss": 331,
+          "NLL": 4.057974978619548,
+          "Opp4": 0.1148036253776435,
+          "cold_start": 0,
+          "levels": {
+            "M0": 497
+          }
+        }
+      },
+      "M1_heading_global": {
+        "overall": {
+          "n_original": 1856,
+          "n_valid": 1856,
+          "n_native_miss": 924,
+          "NLL": 3.816153791773124,
+          "Opp4": 0.09307359307359307,
+          "cold_start": 0,
+          "levels": {
+            "M0": 98,
+            "scene_heading": 1758
+          }
+        },
+        "stable": {
+          "n_original": 978,
+          "n_valid": 978,
+          "n_native_miss": 377,
+          "NLL": 3.5809016382330436,
+          "Opp4": 0.08222811671087533,
+          "cold_start": 0,
+          "levels": {
+            "M0": 75,
+            "scene_heading": 903
+          }
+        },
+        "transition": {
+          "n_original": 381,
+          "n_valid": 381,
+          "n_native_miss": 216,
+          "NLL": 3.940191057160632,
+          "Opp4": 0.06944444444444445,
+          "cold_start": 0,
+          "levels": {
+            "scene_heading": 381
+          }
+        },
+        "change": {
+          "n_original": 497,
+          "n_valid": 497,
+          "n_native_miss": 331,
+          "NLL": 4.183997671148493,
+          "Opp4": 0.12084592145015106,
+          "cold_start": 0,
+          "levels": {
+            "M0": 23,
+            "scene_heading": 474
+          }
+        }
+      },
+      "PRIOR_static": {
+        "overall": {
+          "n_original": 1856,
+          "n_valid": 1856,
+          "n_native_miss": 924,
+          "NLL": 4.559233646039179,
+          "Opp4": 0.11038961038961038,
+          "cold_start": 0,
+          "levels": {
+            "M0": 1,
+            "cell": 996,
+            "cell_heading": 601,
+            "scene_heading": 258
+          }
+        },
+        "stable": {
+          "n_original": 978,
+          "n_valid": 978,
+          "n_native_miss": 377,
+          "NLL": 4.22948586532356,
+          "Opp4": 0.11671087533156499,
+          "cold_start": 0,
+          "levels": {
+            "M0": 1,
+            "cell": 524,
+            "cell_heading": 335,
+            "scene_heading": 118
+          }
+        },
+        "transition": {
+          "n_original": 381,
+          "n_valid": 381,
+          "n_native_miss": 216,
+          "NLL": 4.666873653672044,
+          "Opp4": 0.10648148148148148,
+          "cold_start": 0,
+          "levels": {
+            "cell": 214,
+            "cell_heading": 132,
+            "scene_heading": 35
+          }
+        },
+        "change": {
+          "n_original": 497,
+          "n_valid": 497,
+          "n_native_miss": 331,
+          "NLL": 5.125596798215747,
+          "Opp4": 0.10574018126888217,
+          "cold_start": 0,
+          "levels": {
+            "cell": 258,
+            "cell_heading": 134,
+            "scene_heading": 105
+          }
+        }
+      },
+      "SHUF_static": {
+        "overall": {
+          "n_original": 1856,
+          "n_valid": 1856,
+          "n_native_miss": 924,
+          "NLL": 4.694065873050109,
+          "Opp4": 0.09956709956709957,
+          "cold_start": 0,
+          "levels": {
+            "M0": 1,
+            "cell": 996,
+            "cell_heading": 601,
+            "scene_heading": 258
+          }
+        },
+        "stable": {
+          "n_original": 978,
+          "n_valid": 978,
+          "n_native_miss": 377,
+          "NLL": 4.404499407493536,
+          "Opp4": 0.08753315649867374,
+          "cold_start": 0,
+          "levels": {
+            "M0": 1,
+            "cell": 524,
+            "cell_heading": 335,
+            "scene_heading": 118
+          }
+        },
+        "transition": {
+          "n_original": 381,
+          "n_valid": 381,
+          "n_native_miss": 216,
+          "NLL": 4.87747992009023,
+          "Opp4": 0.08333333333333333,
+          "cold_start": 0,
+          "levels": {
+            "cell": 214,
+            "cell_heading": 132,
+            "scene_heading": 35
+          }
+        },
+        "change": {
+          "n_original": 497,
+          "n_valid": 497,
+          "n_native_miss": 331,
+          "NLL": 5.1232716102574365,
+          "Opp4": 0.12386706948640483,
+          "cold_start": 0,
+          "levels": {
+            "cell": 258,
+            "cell_heading": 134,
+            "scene_heading": 105
+          }
+        }
+      },
+      "XSCENE_static": {
+        "overall": {
+          "n_original": 1856,
+          "n_valid": 1856,
+          "n_native_miss": 924,
+          "NLL": 4.7421152445696295,
+          "Opp4": 0.048701298701298704,
+          "cold_start": 0,
+          "levels": {
+            "cross_scene_heading": 1758,
+            "cross_scene_no_heading": 98
+          }
+        },
+        "stable": {
+          "n_original": 978,
+          "n_valid": 978,
+          "n_native_miss": 377,
+          "NLL": 4.547926742052911,
+          "Opp4": 0.03183023872679045,
+          "cold_start": 0,
+          "levels": {
+            "cross_scene_heading": 903,
+            "cross_scene_no_heading": 75
+          }
+        },
+        "transition": {
+          "n_original": 381,
+          "n_valid": 381,
+          "n_native_miss": 216,
+          "NLL": 4.987700712447304,
+          "Opp4": 0.037037037037037035,
+          "cold_start": 0,
+          "levels": {
+            "cross_scene_heading": 381
+          }
+        },
+        "change": {
+          "n_original": 497,
+          "n_valid": 497,
+          "n_native_miss": 331,
+          "NLL": 4.935974987426684,
+          "Opp4": 0.0755287009063444,
+          "cold_start": 0,
+          "levels": {
+            "cross_scene_heading": 474,
+            "cross_scene_no_heading": 23
+          }
+        }
+      },
+      "PRIOR_causal": {
+        "overall": {
+          "n_original": 1856,
+          "n_valid": 1855,
+          "n_native_miss": 924,
+          "NLL": 4.721652135249846,
+          "Opp4": 0.08874458874458875,
+          "cold_start": 155,
+          "levels": {
+            "M0_nonsequence": 155,
+            "cell": 669,
+            "cell_heading": 117,
+            "scene_heading": 914
+          }
+        },
+        "stable": {
+          "n_original": 978,
+          "n_valid": 977,
+          "n_native_miss": 377,
+          "NLL": 4.490613894186509,
+          "Opp4": 0.09283819628647215,
+          "cold_start": 104,
+          "levels": {
+            "M0_nonsequence": 104,
+            "cell": 313,
+            "cell_heading": 49,
+            "scene_heading": 511
+          }
+        },
+        "transition": {
+          "n_original": 381,
+          "n_valid": 381,
+          "n_native_miss": 216,
+          "NLL": 4.886116530235487,
+          "Opp4": 0.05555555555555555,
+          "cold_start": 12,
+          "levels": {
+            "M0_nonsequence": 12,
+            "cell": 184,
+            "cell_heading": 25,
+            "scene_heading": 160
+          }
+        },
+        "change": {
+          "n_original": 497,
+          "n_valid": 497,
+          "n_native_miss": 331,
+          "NLL": 5.04974756186826,
+          "Opp4": 0.10574018126888217,
+          "cold_start": 39,
+          "levels": {
+            "M0_nonsequence": 39,
+            "cell": 172,
+            "cell_heading": 43,
+            "scene_heading": 243
+          }
+        }
+      },
+      "SHUF_causal": {
+        "overall": {
+          "n_original": 1856,
+          "n_valid": 1855,
+          "n_native_miss": 924,
+          "NLL": 4.771886549861878,
+          "Opp4": 0.08333333333333333,
+          "cold_start": 155,
+          "levels": {
+            "M0_nonsequence": 155,
+            "cell": 636,
+            "cell_heading": 92,
+            "scene_heading": 972
+          }
+        },
+        "stable": {
+          "n_original": 978,
+          "n_valid": 977,
+          "n_native_miss": 377,
+          "NLL": 4.606610123685819,
+          "Opp4": 0.06896551724137931,
+          "cold_start": 104,
+          "levels": {
+            "M0_nonsequence": 104,
+            "cell": 300,
+            "cell_heading": 58,
+            "scene_heading": 515
+          }
+        },
+        "transition": {
+          "n_original": 381,
+          "n_valid": 381,
+          "n_native_miss": 216,
+          "NLL": 4.932637723524929,
+          "Opp4": 0.06481481481481481,
+          "cold_start": 12,
+          "levels": {
+            "M0_nonsequence": 12,
+            "cell": 179,
+            "cell_heading": 18,
+            "scene_heading": 172
+          }
+        },
+        "change": {
+          "n_original": 497,
+          "n_valid": 497,
+          "n_native_miss": 331,
+          "NLL": 4.973554298772114,
+          "Opp4": 0.11178247734138973,
+          "cold_start": 39,
+          "levels": {
+            "M0_nonsequence": 39,
+            "cell": 157,
+            "cell_heading": 16,
+            "scene_heading": 285
+          }
+        }
+      },
+      "XSCENE_causal": {
+        "overall": {
+          "n_original": 1856,
+          "n_valid": 1856,
+          "n_native_miss": 924,
+          "NLL": 4.7421152445696295,
+          "Opp4": 0.048701298701298704,
+          "cold_start": 0,
+          "levels": {
+            "cross_scene_heading": 1758,
+            "cross_scene_no_heading": 98
+          }
+        },
+        "stable": {
+          "n_original": 978,
+          "n_valid": 978,
+          "n_native_miss": 377,
+          "NLL": 4.547926742052911,
+          "Opp4": 0.03183023872679045,
+          "cold_start": 0,
+          "levels": {
+            "cross_scene_heading": 903,
+            "cross_scene_no_heading": 75
+          }
+        },
+        "transition": {
+          "n_original": 381,
+          "n_valid": 381,
+          "n_native_miss": 216,
+          "NLL": 4.987700712447304,
+          "Opp4": 0.037037037037037035,
+          "cold_start": 0,
+          "levels": {
+            "cross_scene_heading": 381
+          }
+        },
+        "change": {
+          "n_original": 497,
+          "n_valid": 497,
+          "n_native_miss": 331,
+          "NLL": 4.935974987426684,
+          "Opp4": 0.0755287009063444,
+          "cold_start": 0,
+          "levels": {
+            "cross_scene_heading": 474,
+            "cross_scene_no_heading": 23
+          }
+        }
+      }
+    },
+    "causal_time_unverifiable_IDs": [
+      827
+    ],
+    "endpoint_opportunity_is_not_full_path_coverage": true
+  }
+}

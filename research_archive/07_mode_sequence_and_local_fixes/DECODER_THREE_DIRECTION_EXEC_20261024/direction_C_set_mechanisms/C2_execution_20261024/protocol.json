@@ -1,0 +1,85 @@
+{
+  "version": "decoder-three-direction-C-implementation-v1",
+  "status": "PREPARED_NOT_PREFLIGHTED",
+  "packages_separate": [
+    "C1",
+    "C2"
+  ],
+  "never_stack": true,
+  "C1": {
+    "arms": [
+      "C1_hard",
+      "C1_awta"
+    ],
+    "parameters_each": 82008,
+    "temperature": ".20 * .10 ** ((step-1)/591), step1..592, meters",
+    "weights": "softmax(-Q/tau).detach(), dtask/dQ=weight/B>=0",
+    "gates": {
+      "positive_control_netgain_retention": 0.95,
+      "native_coverage_CI_lower_strict_min": 0,
+      "mean_lost_count_decrease": true,
+      "per_seed_lost_count_harm_max": 2,
+      "ADE_FDE_all_seed_strictly_better_than_control": true,
+      "ADE_FDE_CI_upper_strict_max": 0
+    }
+  },
+  "C2": {
+    "arms": [
+      "C2_isomlp",
+      "C2_setmix"
+    ],
+    "parameters_each": 98552,
+    "frozen_encoder_parameters": 267159,
+    "whole_parameters": 365711,
+    "base_parameters": 82008,
+    "additional_parameters": 16544,
+    "block": "384->32 GELU->128 residual, last layer zero",
+    "control_input": "self,self,self",
+    "test_input": "self,mean20,torch.amax20 (standard tie-split gradient)",
+    "gates": {
+      "mean_inner_change_coverage_gain_pp_min": 2,
+      "all_seed_positive": true,
+      "paired_and_fixed_seed_CI_lower_strict_min": 0,
+      "each_seed_coverage_ge_old_A": true,
+      "mean_effective_good_clusters_increase": true,
+      "inner_overall_change_ADE_FDE_max_control_ratio": 1.01,
+      "native_lost_not_worse": true
+    },
+    "budget": "explicitly above305000, mechanism exploration only",
+    "required_profile": "full-model MAC plus GPU batch1/256 latency and memory; decoder-only profile cannot replace full model"
+  },
+  "shared": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "epochs": 8,
+    "batch_size": 256,
+    "optimizer_steps_each": 592,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "clip_norm": 5.0,
+    "loss_diversity": "same190 endpoint pairs, mean linear relu(.3-distance)*.05",
+    "train": "FIT18909 only",
+    "evaluate": "FIT and inner1856 only",
+    "forward": "same210 past/vobs/last96/mean96 only"
+  },
+  "bootstrap": {
+    "draws": 20000,
+    "seed": 20261023,
+    "tracks_and_paired_model_seeds": true,
+    "CI": 0.95,
+    "fixed_seed_sensitivity": true
+  },
+  "G_base": "all24 seed/split/group coverage>=.99native, ADE/FDE and all5 motion<=1.01native, no epsilon",
+  "automatic_training": false,
+  "requires_separate_human_authorization_per_package": true,
+  "package": "C2",
+  "arms": [
+    "C2_isomlp",
+    "C2_setmix"
+  ],
+  "epochs": 8,
+  "steps_each": 592
+}

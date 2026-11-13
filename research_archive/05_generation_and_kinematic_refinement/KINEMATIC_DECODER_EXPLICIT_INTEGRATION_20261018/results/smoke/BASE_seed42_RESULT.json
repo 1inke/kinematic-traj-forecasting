@@ -1,0 +1,219 @@
+{
+  "arm": "BASE",
+  "seed": 42,
+  "epochs": 2,
+  "subset": 2048,
+  "params": 57432,
+  "elapsed_sec": 1.0049974918365479,
+  "history": [
+    {
+      "epoch": 1,
+      "task": 3.750259056687355,
+      "div": 0.29918238148093224,
+      "cons": 0.0,
+      "total": 3.765218198299408,
+      "gradnorm": 0.8961553666740656
+    },
+    {
+      "epoch": 2,
+      "task": 1.8423546180129051,
+      "div": 0.27524363063275814,
+      "cons": 0.0,
+      "total": 1.8561168015003204,
+      "gradnorm": 6.355762615799904
+    }
+  ],
+  "metrics": {
+    "FIT": {
+      "overall": {
+        "N": 2048,
+        "coverage": 0.19580078125,
+        "native_coverage": 0.654296875,
+        "minADE": 0.5724266269875344,
+        "minFDE": 1.1232118916779488,
+        "native_minADE": 0.1593727410251177,
+        "native_minFDE": 0.2744104810568597,
+        "meanADE_winner": 0.5726143900211429,
+        "meanFDE_winner": 1.1238647903051158,
+        "rescue": 10,
+        "lost": 949,
+        "good_count": 401,
+        "native_good_count": 1340
+      },
+      "stable": {
+        "N": 1532,
+        "coverage": 0.1814621409921671,
+        "native_coverage": 0.7036553524804178,
+        "minADE": 0.5588743617427652,
+        "minFDE": 1.0682363282656073,
+        "native_minADE": 0.141849772300689,
+        "native_minFDE": 0.2439488590622377,
+        "meanADE_winner": 0.5589722167492964,
+        "meanFDE_winner": 1.0686515583429719,
+        "rescue": 5,
+        "lost": 805,
+        "good_count": 278,
+        "native_good_count": 1078
+      },
+      "transition": {
+        "N": 226,
+        "coverage": 0.24336283185840707,
+        "native_coverage": 0.4690265486725664,
+        "minADE": 0.5572531092735269,
+        "minFDE": 1.0904195150633718,
+        "native_minADE": 0.21332828990615096,
+        "native_minFDE": 0.3797314359663053,
+        "meanADE_winner": 0.5578214622722054,
+        "meanFDE_winner": 1.092544903288354,
+        "rescue": 5,
+        "lost": 56,
+        "good_count": 55,
+        "native_good_count": 106
+      },
+      "change": {
+        "N": 290,
+        "coverage": 0.23448275862068965,
+        "native_coverage": 0.5379310344827586,
+        "minADE": 0.6558448523611624,
+        "minFDE": 1.4391899615489887,
+        "native_minADE": 0.20989423771032895,
+        "native_minFDE": 0.3532541675610882,
+        "meanADE_winner": 0.6562109801029661,
+        "meanFDE_winner": 1.4399508793802622,
+        "rescue": 0,
+        "lost": 88,
+        "good_count": 68,
+        "native_good_count": 156
+      },
+      "_motion": {
+        "pred": {
+          "speed_p95": 1.6120627727192007,
+          "accel_mean": 0.5795821339345933,
+          "accel_p95": 3.155250258791131,
+          "jerk_mean": 1.836260053243902,
+          "jerk_p95": 9.2142555565118
+        },
+        "native": {
+          "speed_p95": 1.420818747326826,
+          "accel_mean": 0.09473675098232269,
+          "accel_p95": 0.6586883296488724,
+          "jerk_mean": 0.5210489226059858,
+          "jerk_p95": 3.0820345030352594
+        },
+        "gate": {
+          "status": "FAIL",
+          "fails": [
+            "speed_p95",
+            "accel_mean",
+            "accel_p95",
+            "jerk_mean",
+            "jerk_p95"
+          ],
+          "ratios": {
+            "speed_p95": 1.1346012823607428,
+            "accel_mean": 6.117817298196556,
+            "accel_p95": 4.79020215899848,
+            "jerk_mean": 3.5241605415092114,
+            "jerk_p95": 2.989666581421261
+          }
+        }
+      }
+    },
+    "outer": {
+      "overall": {
+        "N": 1035,
+        "coverage": 0.22415458937198068,
+        "native_coverage": 0.6038647342995169,
+        "minADE": 0.5637889854529889,
+        "minFDE": 1.1011047315732712,
+        "native_minADE": 0.17547758517828596,
+        "native_minFDE": 0.2966327368653397,
+        "meanADE_winner": 0.5643821206297797,
+        "meanFDE_winner": 1.1025827482243773,
+        "rescue": 3,
+        "lost": 396,
+        "good_count": 232,
+        "native_good_count": 625
+      },
+      "stable": {
+        "N": 604,
+        "coverage": 0.31125827814569534,
+        "native_coverage": 0.7185430463576159,
+        "minADE": 0.47879611320524224,
+        "minFDE": 0.8835015487846671,
+        "native_minADE": 0.13488642078914104,
+        "native_minFDE": 0.22770019089959204,
+        "meanADE_winner": 0.47902814393653365,
+        "meanFDE_winner": 0.8849701698875092,
+        "rescue": 2,
+        "lost": 248,
+        "good_count": 188,
+        "native_good_count": 434
+      },
+      "transition": {
+        "N": 178,
+        "coverage": 0.12359550561797752,
+        "native_coverage": 0.4550561797752809,
+        "minADE": 0.6206034091669244,
+        "minFDE": 1.1887381146269527,
+        "native_minADE": 0.20850453879234426,
+        "native_minFDE": 0.34186100018216914,
+        "meanADE_winner": 0.621493437224724,
+        "meanFDE_winner": 1.191460498231136,
+        "rescue": 1,
+        "lost": 60,
+        "good_count": 22,
+        "native_good_count": 81
+      },
+      "change": {
+        "N": 253,
+        "coverage": 0.08695652173913043,
+        "native_coverage": 0.43478260869565216,
+        "minADE": 0.7267246669413623,
+        "minFDE": 1.5589449695999964,
+        "native_minADE": 0.24914661896382423,
+        "native_minFDE": 0.4293782977069047,
+        "meanADE_winner": 0.7279710043010066,
+        "meanFDE_winner": 1.5595699332609991,
+        "rescue": 0,
+        "lost": 88,
+        "good_count": 22,
+        "native_good_count": 110
+      },
+      "_motion": {
+        "pred": {
+          "speed_p95": 1.3768760605098154,
+          "accel_mean": 0.4334935376436906,
+          "accel_p95": 1.6256066790965815,
+          "jerk_mean": 1.3566515467760056,
+          "jerk_p95": 5.134789839702839
+        },
+        "native": {
+          "speed_p95": 1.3093463769152214,
+          "accel_mean": 0.08778207124571084,
+          "accel_p95": 0.6205093723030161,
+          "jerk_mean": 0.4827988968119614,
+          "jerk_p95": 2.7770934544973604
+        },
+        "gate": {
+          "status": "FAIL",
+          "fails": [
+            "speed_p95",
+            "accel_mean",
+            "accel_p95",
+            "jerk_mean",
+            "jerk_p95"
+          ],
+          "ratios": {
+            "speed_p95": 1.0515751101352506,
+            "accel_mean": 4.93829242682482,
+            "accel_p95": 2.6197939171541504,
+            "jerk_mean": 2.8099723419715867,
+            "jerk_p95": 1.8489798502773864
+          }
+        }
+      }
+    }
+  },
+  "device": "cuda:0"
+}

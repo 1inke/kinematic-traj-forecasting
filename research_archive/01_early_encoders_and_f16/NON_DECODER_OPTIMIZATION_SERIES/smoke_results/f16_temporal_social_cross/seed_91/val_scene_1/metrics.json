@@ -1,0 +1,90 @@
+{
+  "variant": "f16_temporal_social_cross",
+  "decoder_experiment": "kinematic_k20",
+  "seed": 91,
+  "validation_scene_id": 1,
+  "epochs": 1,
+  "scheduler": "warm_restarts",
+  "elapsed_seconds": 57.36233010000433,
+  "split": {
+    "strategy": "leave_one_complete_training_scene_out",
+    "validation_scene_id": 1,
+    "scene_counts": {
+      "0": 246,
+      "1": 877,
+      "2": 538,
+      "3": 3736,
+      "4": 4477
+    },
+    "train_samples": 8997,
+    "validation_samples": 877,
+    "target_test_accessed": false
+  },
+  "locked_backend": {
+    "decoder_class": "KinematicAnchorDecoder",
+    "decoder_fingerprint": "49e563b0bba12533",
+    "num_modes": 20,
+    "decoder_experiment": "kinematic_k20",
+    "classification_weight": 0.5,
+    "loss_class": "ModeQueryLoss",
+    "fusion_alpha": 0.3,
+    "oracle_coverage_weight": 0.2,
+    "oracle_coverage_temperature": 0.1,
+    "oracle_coverage_warmup_epochs": 0.0,
+    "oracle_coverage_normalized": false,
+    "scene_sampling": "sqrt_scene",
+    "ema_decay": 0.995,
+    "augmentation": {
+      "rotation": true,
+      "reflection": true,
+      "speed_min": 0.9,
+      "speed_max": 1.1
+    },
+    "velocity_loss_weight": 0.1,
+    "acceleration_loss_weight": 0.02,
+    "checkpoint_criterion": "oracle_combo",
+    "parameter_counts": {
+      "total": 284642,
+      "trainable": 284065,
+      "decoder": 17483
+    }
+  },
+  "verifier_checkpoint": null,
+  "evaluation": {
+    "samples": 877,
+    "original": {
+      "ade": 0.31792980432510376,
+      "fde": 0.6187475323677063,
+      "hit_best_ade": 0.4378563283922463,
+      "regret": 0.16490206122398376,
+      "regret_p95": 0.588831496238708,
+      "active_modes": 1
+    },
+    "oracle": {
+      "min_ade_20": 0.15302777290344238,
+      "same_path_fde": 0.2930039167404175,
+      "min_fde_20": 0.2686458230018616
+    },
+    "fusion_alpha": 0.3,
+    "fused": null
+  },
+  "evaluation_best_selected": {
+    "samples": 877,
+    "original": {
+      "ade": 0.31792980432510376,
+      "fde": 0.6187475323677063,
+      "hit_best_ade": 0.4378563283922463,
+      "regret": 0.16490206122398376,
+      "regret_p95": 0.588831496238708,
+      "active_modes": 1
+    },
+    "oracle": {
+      "min_ade_20": 0.15302777290344238,
+      "same_path_fde": 0.2930039167404175,
+      "min_fde_20": 0.2686458230018616
+    },
+    "fusion_alpha": 0.3,
+    "fused": null
+  },
+  "best_checkpoint_score": 0.28735068440437317
+}

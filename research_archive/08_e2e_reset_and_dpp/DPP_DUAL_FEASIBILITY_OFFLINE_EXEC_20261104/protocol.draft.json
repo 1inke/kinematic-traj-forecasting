@@ -1,0 +1,64 @@
+{
+  "status": "DRAFT_IMPLEMENTATION_CHOICES_NOT_EXECUTED_NOT_PRODUCTION_LOCKED",
+  "stage": "A_OFFLINE_SAVED_K20_QUALITY_DIAGNOSIS",
+  "model_sources": ["fresh-B0", "DK-CenterDiff", "DK-ManeuverDiff", "DK-KinTaylorDiff", "DK-FullDiff"],
+  "model_source_note": "Five fixed candidate sources, all seed42; NOT five DPP trained arms or five independent seeds",
+  "K": 20,
+  "T": 12,
+  "dt_seconds": 0.4,
+  "splits": ["fit", "dev"],
+  "quality": "same physical candidate ADE<=.2 and FDE<=.4",
+  "calibration": {
+    "population": "C0 fit GT21719 only; no dev-derived threshold",
+    "vmax": "linear99.5% of FIT GT12 speeds",
+    "amax": "linear99.5% of FIT GT12 accelerations INCLUDING junction",
+    "joinmax": "linear99.5% of FIT GT first predicted velocity minus observed-last velocity",
+    "sigma": "FIT GT IQR for each corresponding reading; nonpositive IQR blocks instead of injecting a floor",
+    "alpha_k": 1,
+    "lambda_v": 1,
+    "lambda_a": 1,
+    "lambda_join": 1,
+    "junction_double_count_note": "a mean includes a1 plus a separate join penalty; document permits this, report explicitly",
+    "parameters_are_empirical_not_universal_physiological_bounds": true
+  },
+  "dpp": {
+    "S": "exp(-k * sum over12x2 squared coordinate difference)",
+    "k": "1/median squared pair distance on fixed hash128 FIT fresh-B0 predictions only,190 pairs each",
+    "k_note": "fixed before diagnostics; this is a stageA scale calibration, not claimed original paper experiment hyperparameter reproduction",
+    "epsilon_q": 0.000001,
+    "epsilon_note": "fixed implementation choice, NO validation sweep; raw/logq always saved; not a quality/motion threshold floor",
+    "r": "sqrt(epsilon_q+(1-epsilon_q)*q)",
+    "EC": "trace(I-solve(I+L,I)); spectral independent audit; no jitter, no explicit inverse",
+    "offline_arms": ["uniform_r1_B4_like", "kinematic_quality_B2_like"],
+    "blocked_arms": ["paper_B0_latent_radius", "B1_scene", "B3_scene_times_kinematic"],
+    "no_candidate_subset_selection_or_candidate_change": true
+  },
+  "turning": {
+    "straight": "angle<15deg",
+    "moderate": "15<=angle<60deg",
+    "large": "angle>=60deg",
+    "undefined": "zero observation or future displacement; retained and separately counted",
+    "note": "fixed descriptive bins, not replacement for C0 stable/transition/change and not tuned on dev"
+  },
+  "scene": {
+    "required": "independent pedestrian free/obstacle/unknown map + metric SDF and validated coordinate transform",
+    "map_registry": "map_registry.template.json",
+    "max_along_segment_spacing_m": 0.05,
+    "d_safe_m": 0.1,
+    "tau_s_m": 0.1,
+    "alpha_s": 1,
+    "current_real_scene_branch": "BLOCKED_NO_ADMITTED_MAP",
+    "unknown_policy": "null/NaN with coverage denominator, never automatically q=1 or q=0",
+    "mapless_branch_must_not_be_reported_joint_feasible": true
+  },
+  "stageB": {
+    "status": "BLOCKED_MISSING_VALIDATED_DSF_LATENT_GENERATOR_ADAPTER_AND_MAP_ADMISSION",
+    "no_fabricated_h3_mode_embedding_as_Gaussian_latent": true,
+    "no_automatic_new_generator_or_original_model_training": true
+  },
+  "acceptance": "Stage A diagnostic only; no vague significance gate invented, no automatic stageB; missing qscene means H1/H3/H4 unresolved",
+  "old_scientific_gates_and_baseline_unchanged": true,
+  "no_delete": true,
+  "no_new_data_download": true,
+  "source_paper": "https://arxiv.org/html/1907.04967"
+}

@@ -1,0 +1,132 @@
+{
+  "experiment": "EXP-180A",
+  "formal_protocol": false,
+  "training": false,
+  "processes": 2,
+  "warmup": 2,
+  "iterations": 5,
+  "batch_sizes": [
+    1,
+    4
+  ],
+  "precision": "FP32 eager",
+  "device": "NVIDIA GeForce RTX 5070 Laptop GPU",
+  "checkpoint_protocol": "EXP173 F16 seed1 ETH vs separately-trained EXP174D Q3KV seed1 ETH",
+  "gate_rule": "each B1 and B64: mean P95 improvement >=15% and >=4/5 processes positive",
+  "gates": [
+    {
+      "batch_size": 1,
+      "p95_improvement_cross_process_mean": -0.07900875635680352,
+      "p95_improvement_cross_process_std": 0.13444813320787516,
+      "positive_processes": 1,
+      "p95_at_least_15_percent": false,
+      "at_least_4_of_5_positive": false,
+      "passed": false,
+      "per_process_p95_improvement": [
+        0.016060430352357276,
+        -0.1740779430659643
+      ]
+    },
+    {
+      "batch_size": 4,
+      "p95_improvement_cross_process_mean": 0.08665705223271686,
+      "p95_improvement_cross_process_std": 0.07200596073616676,
+      "positive_processes": 2,
+      "p95_at_least_15_percent": false,
+      "at_least_4_of_5_positive": false,
+      "passed": false,
+      "per_process_p95_improvement": [
+        0.13757295535511266,
+        0.03574114911032105
+      ]
+    }
+  ],
+  "accepted": false,
+  "decision": "SMOKE_COMPLETE_NO_DECISION",
+  "aggregate": [
+    {
+      "variant": "F16_baseline",
+      "batch_size": 1,
+      "processes": 2,
+      "latency_mean_ms_cross_process_mean": 10.61015,
+      "latency_mean_ms_cross_process_std": 0.030108606742923864,
+      "latency_median_ms_cross_process_mean": 10.5063,
+      "latency_median_ms_cross_process_std": 0.013293607486307514,
+      "latency_p90_ms_cross_process_mean": 11.04738,
+      "latency_p90_ms_cross_process_std": 0.0908773635180938,
+      "latency_p95_ms_cross_process_mean": 11.15154,
+      "latency_p95_ms_cross_process_std": 0.22907431283319366,
+      "latency_p99_ms_cross_process_mean": 11.234867999999999,
+      "latency_p99_ms_cross_process_std": 0.33963187228527275,
+      "latency_std_ms_cross_process_mean": 0.4397190630818189,
+      "latency_std_ms_cross_process_std": 0.09016721757321174,
+      "throughput_samples_s_cross_process_mean": 94.24975389943506,
+      "throughput_samples_s_cross_process_std": 0.26745416188983245,
+      "peak_vram_mib_cross_process_mean": 12.6669921875,
+      "peak_vram_mib_cross_process_std": 0.04419417382415922
+    },
+    {
+      "variant": "Q3KV",
+      "batch_size": 1,
+      "processes": 2,
+      "latency_mean_ms_cross_process_mean": 11.57687,
+      "latency_mean_ms_cross_process_std": 1.1914324998924621,
+      "latency_median_ms_cross_process_mean": 11.7673,
+      "latency_median_ms_cross_process_std": 0.940027754909396,
+      "latency_p90_ms_cross_process_mean": 11.98472,
+      "latency_p90_ms_cross_process_std": 1.2130841095323934,
+      "latency_p95_ms_cross_process_mean": 12.017209999999999,
+      "latency_p95_ms_cross_process_std": 1.252130545989515,
+      "latency_p99_ms_cross_process_mean": 12.043202,
+      "latency_p99_ms_cross_process_std": 1.2833676951552118,
+      "latency_std_ms_cross_process_mean": 0.47035123462735184,
+      "latency_std_ms_cross_process_std": 0.07634520396889281,
+      "throughput_samples_s_cross_process_mean": 86.83901030302124,
+      "throughput_samples_s_cross_process_std": 8.937028672993298,
+      "peak_vram_mib_cross_process_mean": 12.6064453125,
+      "peak_vram_mib_cross_process_std": 0.04419417382415922
+    },
+    {
+      "variant": "F16_baseline",
+      "batch_size": 4,
+      "processes": 2,
+      "latency_mean_ms_cross_process_mean": 10.688490000000002,
+      "latency_mean_ms_cross_process_std": 1.2817724622568558,
+      "latency_median_ms_cross_process_mean": 10.740649999999999,
+      "latency_median_ms_cross_process_std": 1.5288355716034348,
+      "latency_p90_ms_cross_process_mean": 11.18479,
+      "latency_p90_ms_cross_process_std": 1.614395492127006,
+      "latency_p95_ms_cross_process_mean": 11.266020000000001,
+      "latency_p95_ms_cross_process_std": 1.6056980787184116,
+      "latency_p99_ms_cross_process_mean": 11.331004,
+      "latency_p99_ms_cross_process_std": 1.598740147991537,
+      "latency_std_ms_cross_process_mean": 0.5425434940882928,
+      "latency_std_ms_cross_process_std": 0.41055437525976174,
+      "throughput_samples_s_cross_process_mean": 376.9447617200933,
+      "throughput_samples_s_cross_process_std": 45.203524105349544,
+      "peak_vram_mib_cross_process_mean": 15.618408203125,
+      "peak_vram_mib_cross_process_std": 0.11704550723742169
+    },
+    {
+      "variant": "Q3KV",
+      "batch_size": 4,
+      "processes": 2,
+      "latency_mean_ms_cross_process_mean": 10.021460000000001,
+      "latency_mean_ms_cross_process_std": 0.6285047913898509,
+      "latency_median_ms_cross_process_mean": 9.9295,
+      "latency_median_ms_cross_process_std": 0.636396103067893,
+      "latency_p90_ms_cross_process_mean": 10.21686,
+      "latency_p90_ms_cross_process_std": 0.6366506615091193,
+      "latency_p95_ms_cross_process_mean": 10.231929999999998,
+      "latency_p95_ms_cross_process_std": 0.6553324226680678,
+      "latency_p99_ms_cross_process_mean": 10.243986,
+      "latency_p99_ms_cross_process_std": 0.6702778315952269,
+      "latency_std_ms_cross_process_mean": 0.1773063086051621,
+      "latency_std_ms_cross_process_std": 0.0030151049106288937,
+      "throughput_samples_s_cross_process_mean": 399.92995702494386,
+      "throughput_samples_s_cross_process_std": 25.081963527321783,
+      "peak_vram_mib_cross_process_mean": 15.376708984375,
+      "peak_vram_mib_cross_process_std": 0.11704550723742169
+    }
+  ]
+}

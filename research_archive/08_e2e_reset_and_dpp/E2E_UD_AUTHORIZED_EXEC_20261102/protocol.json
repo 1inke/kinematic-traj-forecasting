@@ -1,0 +1,93 @@
+{
+  "name": "E2E_UD_AUTHORIZED_V1_20261102",
+  "authorization": "Latest direct human agrees ARS narrow amendments, consistent with actual B0",
+  "approved_amendment": "2fc8cee99ddb790b21e101e55a7336eac8785eb4d8e2c2614a2dafc05795bc52",
+  "original_design": "addc05633f9aba1768c2a57552dbbbb96f3af07ac5d7d75465dadb6e9add3a7d",
+  "arms": [
+    "U-GRU",
+    "U-Delta",
+    "D-Gate",
+    "D-DiffGate"
+  ],
+  "seed": 42,
+  "epochs_per_model": 8,
+  "steps_per_model": 2720,
+  "total_scientific_updates": 10880,
+  "fit": 21719,
+  "dev": 4753,
+  "context_dimension": 64,
+  "mode_dimension": 64,
+  "batch": 64,
+  "inherited_B0_invariants": {
+    "optimizer": {
+      "name": "AdamW",
+      "lr": 0.00025,
+      "weight_decay": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "foreach": false
+    },
+    "scheduler": "monotonic cosine; warmup1epoch(340updates); total2720; per-update step",
+    "EMA": 0.995,
+    "clip": 5.0,
+    "drop_last": false,
+    "selection": "FIXED_FINAL_EPOCH8_EMA; no dev best checkpoint or earlystop",
+    "normalization": "Past-only focal heading lag3 speed>.03 else[1,0], peragent eight-observation mean; no fitted input stats",
+    "data_neighbor": "Full8 observed only, closest t0 stableID tie, focal+8, no neighbor future-life mask",
+    "augmentation": {
+      "reflection": true,
+      "rotation": false,
+      "speed": [
+        0.9,
+        1.1
+      ],
+      "probability": 0.5,
+      "curvature": 0
+    },
+    "base_loss": "Existing locked ModeQueryLoss smoothL1 exp weights1..2, winner ADE+.25FDE, classification.5*(softCE temp.5 gapscale>=.05+.25hardCE), endpoint.25, endpoint190pair relu(.4-distance)linear*.05, shortfirst2smoothL1*.2",
+    "oracle_coverage": {
+      "weight": 0.2,
+      "responsibility": "detach softmax(-(ADE+.25FDE)/.10)",
+      "normalized": false,
+      "warmup": 0
+    },
+    "additional_auxiliary_losses": 0,
+    "GT_in_prediction_forward": false
+  },
+  "new_module_init_RNG": "fork_rng seed20261102+seed, restores all original RNG; whole-model fresh B0 seed42 shared params EXACT",
+  "shared_random_stream": "Every epoch original Torch CPU/CUDA/Python/NumPy/loader RNG and all batchIDs checked against saved B0; no old trained warmstart",
+  "updated_gradient_gate": "Initial exact paths/score; Step2 output projection gradient>0; Step3 every internal parameter tensor gradient>0; actual Step1 zero recorded",
+  "model_parameters": {
+    "U-GRU": 301618,
+    "U-Delta": 302514,
+    "D-Gate": 307986,
+    "D-DiffGate": 312082
+  },
+  "D_over305000": "Approved explicit cost-target overage; do not shrink architecture",
+  "U": "target observed8 6D v/a/unitheading; 32D GRU vs gated innovation, LN(m8-m1), zero 32->64 output",
+  "D": "all original agent contexts + K20 embeddings before shared original mode_mlp; 32D4head single vs A1-.5A2; same gate and zero32->64 output",
+  "main_candidates": [
+    "U-Delta",
+    "D-DiffGate"
+  ],
+  "no_U_D_stacking": true,
+  "no_new_loss_or_scorer": true,
+  "evaluation_contract": "f5db8a47ce38b89c919fb266377f38c9d646fe1f9046f9a8c7cf4762aafd98c9",
+  "mechanism_contract": "a24e51624e89accb45d57b665684bafb8e92728c8b667437e3f1ad4c96c59365",
+  "screening": "Exact full-precision B0 comparator; overall or change ADE decrease and other<=1%harm, protected overall/stable/transition FDE<=1%harm, full all-group five allK tail +1pp/risk magnitude<=1%; zero/lowtrack reference NOT_ESTIMABLE_NO_FLOOR",
+  "support_audit": "Every rescue/lost ID, original-good denominator and Jmargin damage, conditional score recall; loss scalar not same as final-population metric",
+  "single_seed_no_CI": true,
+  "conditional_next": "Own objective gate/preflight/budget review. No subjective fallback or autoV/F by this worker.",
+  "resource": "warning_first_remaining_v3",
+  "no_delete": true,
+  "old_PAUSED_untouched": true,
+  "full_conservative_budget_seconds": 1800,
+  "baseline_historycycle11_goal_unchanged": true,
+  "runtime": {
+    "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+    "torch": "2.11.0+cu128"
+  }
+}

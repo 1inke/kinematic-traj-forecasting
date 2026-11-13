@@ -1,0 +1,52 @@
+{
+  "dino_total_tokens": 257,
+  "dino_patch_tokens_after_prefix_removal": 256,
+  "dino_grid": [
+    16,
+    16
+  ],
+  "prefix_tokens_removed": 1,
+  "crop_centered_pre_layernorm_max_abs_spatial_mean": 3.3527612686157227e-07,
+  "heading_crop": "up_is_focal_forward",
+  "anchor_source": "frozen_H3_source_anchors_not_GT",
+  "query": "bilinear_plus_3x3_gaussian_sigma_1_patch",
+  "video_prototype": "reference.jpg deterministic 4x4 tiles; no trajectory labels",
+  "pca": "fit on train-video queries only; 32D per horizon",
+  "pca_dimensions": {
+    "Q1_spatial_raw": [
+      32,
+      32,
+      32
+    ],
+    "Q2_crop_centered": [
+      32,
+      32,
+      32
+    ],
+    "Q3_video_centered": [
+      32,
+      32,
+      32
+    ]
+  },
+  "probe_input_dimension": 170,
+  "q0_and_scene_input_dimensions_equal": true,
+  "future_usage": "ADE/FDE quality label only",
+  "in_bounds": {
+    "train": {
+      "t4_in_bounds_ratio": 0.9984375238418579,
+      "t8_in_bounds_ratio": 0.807812511920929,
+      "t12_in_bounds_ratio": 0.6109374761581421
+    },
+    "validation": {
+      "t4_in_bounds_ratio": 0.96875,
+      "t8_in_bounds_ratio": 0.8453124761581421,
+      "t12_in_bounds_ratio": 0.620312511920929
+    },
+    "test": {
+      "t4_in_bounds_ratio": 0.996874988079071,
+      "t8_in_bounds_ratio": 0.731249988079071,
+      "t12_in_bounds_ratio": 0.550000011920929
+    }
+  }
+}

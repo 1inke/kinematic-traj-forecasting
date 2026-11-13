@@ -1,0 +1,14 @@
+{
+  "experiment_id": "D0_engineering_calibration_20261020",
+  "state": "CPU_ONLY_POSTHOC_PRECISION_CALIBRATION",
+  "contrasts_fixed": ["A-native", "B-native", "B-A"],
+  "historical_source": "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL",
+  "population": "outer change only for bootstrap; complete outer for saved metrics audit",
+  "seeds": [42,43,44],
+  "bootstrap": {"draws":20000,"rng":"PCG64","seed":20261020,"order":"track_then_seed","paired":true},
+  "audit_tolerance": 2e-12,
+  "budget": {"formal_training_runs":0,"gpu_hours":0},
+  "no_CAL_metric_access": true,
+  "author_MDE_decision": "OPEN",
+  "not_new_S3": true
+}

@@ -1,0 +1,16 @@
+{
+  "authorization": "human 2026-10-29 execute full finite endpoint-temporal design",
+  "design": "docs/ENDPOINT_TEMPORAL_OBSERVABILITY_DESIGN_20261028",
+  "date": "2026-10-29",
+  "branches": ["END", "TIME"],
+  "train_windows": 3103, "train_change": 721, "val_windows": 993,
+  "train_change_gate": {"rescues_at_least": 15, "rescue_tracks_at_least": 5},
+  "held_GT_release": "all executable branches final-sealed or evidence-backed STOP",
+  "GT_free_guard": {"future_five_motion_ratio": 1.01, "junction_ratio": 1.01, "epsilon": 0, "floor": 0},
+  "learning": {"parameters": 4770, "arms": ["G", "H"], "seeds": [42,43,44], "epochs": 8, "batch_windows": 32},
+  "tiny": {"active_windows":64,"other_windows":64,"updates":256,"active_candidate_MSE_drop_at_least":0.9},
+  "bootstrap": {"draws":20000,"seed":20261028,"family":6},
+  "cpu_inventory_bytes": 2147483648,
+  "resource_policy": "warning_first_remaining_v3",
+  "no_deletion": true, "no_old_worker_query": true
+}

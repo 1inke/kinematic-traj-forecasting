@@ -1,0 +1,102 @@
+{
+  "experiment": "EXP-149 fixed-K20 scale-family allocation audit",
+  "rule": "All variants preserve exactly 20 candidates. Rank-family uses only predicted endpoint radius; gated version additionally uses observed history speed.",
+  "variants": {
+    "base": {
+      "samples": 2679,
+      "candidate_count": 20,
+      "minADE20_px": 7.6283299922943115,
+      "minFDE20_px": 12.348378896713257,
+      "same_path_FDE_px": 14.383947849273682,
+      "top1_ADE_px": 17.79525399208069,
+      "top1_FDE_px": 35.67016363143921,
+      "little": {
+        "samples": 518,
+        "minADE20_px": 11.185778379440308,
+        "minFDE20_px": 18.50491166114807,
+        "same_path_FDE_px": 21.69168710708618,
+        "top1_ADE_px": 26.83772325515747,
+        "top1_FDE_px": 54.177188873291016
+      },
+      "non_little": {
+        "samples": 2161,
+        "minADE20_px": 6.7755961418151855,
+        "minFDE20_px": 10.872633457183838,
+        "same_path_FDE_px": 12.632254362106323,
+        "top1_ADE_px": 15.627738237380981,
+        "top1_FDE_px": 31.233956813812256
+      },
+      "relative_to_base_pct": {
+        "minADE20_px": 0.0,
+        "minFDE20_px": 0.0,
+        "same_path_FDE_px": 0.0,
+        "top1_ADE_px": 0.0,
+        "top1_FDE_px": 0.0
+      }
+    },
+    "rank_family": {
+      "samples": 2679,
+      "candidate_count": 20,
+      "minADE20_px": 9.60392713546753,
+      "minFDE20_px": 16.593968868255615,
+      "same_path_FDE_px": 18.39111089706421,
+      "top1_ADE_px": 24.095547199249268,
+      "top1_FDE_px": 47.41217613220215,
+      "little": {
+        "samples": 518,
+        "minADE20_px": 13.632423877716064,
+        "minFDE20_px": 23.348007202148438,
+        "same_path_FDE_px": 26.01421594619751,
+        "top1_ADE_px": 32.14814901351929,
+        "top1_FDE_px": 63.738603591918945
+      },
+      "non_little": {
+        "samples": 2161,
+        "minADE20_px": 8.638280630111694,
+        "minFDE20_px": 14.975000619888306,
+        "same_path_FDE_px": 16.56382441520691,
+        "top1_ADE_px": 22.165307998657227,
+        "top1_FDE_px": 43.4986686706543
+      },
+      "relative_to_base_pct": {
+        "minADE20_px": 25.898160477704145,
+        "minFDE20_px": 34.381759800652034,
+        "same_path_FDE_px": 27.858576030591408,
+        "top1_ADE_px": 35.404345506798386,
+        "top1_FDE_px": 32.91830287656343
+      }
+    },
+    "history_gated_rank_family": {
+      "samples": 2679,
+      "candidate_count": 20,
+      "minADE20_px": 9.212585687637329,
+      "minFDE20_px": 15.76958179473877,
+      "same_path_FDE_px": 17.613600492477417,
+      "top1_ADE_px": 22.55065679550171,
+      "top1_FDE_px": 44.577646255493164,
+      "little": {
+        "samples": 518,
+        "minADE20_px": 13.10936689376831,
+        "minFDE20_px": 22.406251430511475,
+        "same_path_FDE_px": 25.423872470855713,
+        "top1_ADE_px": 29.190590381622314,
+        "top1_FDE_px": 58.66067409515381
+      },
+      "non_little": {
+        "samples": 2161,
+        "minADE20_px": 8.278512954711914,
+        "minFDE20_px": 14.178746938705444,
+        "same_path_FDE_px": 15.74144721031189,
+        "top1_ADE_px": 20.959038734436035,
+        "top1_FDE_px": 41.20189189910889
+      },
+      "relative_to_base_pct": {
+        "minADE20_px": 20.76805404254063,
+        "minFDE20_px": 27.70568450030415,
+        "same_path_FDE_px": 22.45317264110365,
+        "top1_ADE_px": 26.722871196653266,
+        "top1_FDE_px": 24.971801968979523
+      }
+    }
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "dataset_root": "<DATASET_ROOT>\\Stanford_Drone\\stanford_campus_dataset",
+  "videos": [
+    "bookstore/video0",
+    "bookstore/video1",
+    "bookstore/video2"
+  ],
+  "validation_scene_id": 2,
+  "frame_step": 12,
+  "sampling_hz_assuming_30fps": 2.5,
+  "obs_steps": 8,
+  "pred_steps": 12,
+  "window_stride_steps": 4,
+  "max_agents": 16,
+  "pixel_scale": 20.0,
+  "max_samples_per_video": 600,
+  "total_samples": 1800,
+  "data_shape": [
+    1800,
+    16,
+    20,
+    6
+  ],
+  "data_path": "<WORKSPACE_ROOT>\\SDD_LOW_COST_SERIES\\processed_data\\sdd_bookstore_lowcost_data.npy",
+  "num_path": "<WORKSPACE_ROOT>\\SDD_LOW_COST_SERIES\\processed_data\\sdd_bookstore_lowcost_num.npy",
+  "video_stats": [
+    {
+      "tracks": 116,
+      "eligible_windows_before_limit": 3649,
+      "samples": 600,
+      "mean_agents": 13.613333333333333,
+      "max_agents_observed": 16,
+      "sampled_step_pixels": {
+        "median": 2.5,
+        "p90": 15.435349464416504,
+        "p99": 20.155643463134766
+      },
+      "scene_id": 0,
+      "video": "bookstore/video0"
+    },
+    {
+      "tracks": 167,
+      "eligible_windows_before_limit": 2376,
+      "samples": 600,
+      "mean_agents": 9.628333333333334,
+      "max_agents_observed": 16,
+      "sampled_step_pixels": {
+        "median": 2.0,
+        "p90": 14.534441947937012,
+        "p99": 19.091882705688477
+      },
+      "scene_id": 1,
+      "video": "bookstore/video1"
+    },
+    {
+      "tracks": 144,
+      "eligible_windows_before_limit": 1750,
+      "samples": 600,
+      "mean_agents": 6.388333333333334,
+      "max_agents_observed": 11,
+      "sampled_step_pixels": {
+        "median": 10.307764053344727,
+        "p90": 15.5,
+        "p99": 27.973201751708984
+      },
+      "scene_id": 2,
+      "video": "bookstore/video2"
+    }
+  ],
+  "scope_warning": "Low-cost same-location video split; not the official SDD benchmark split. Metrics are normalized units and pixel equivalents, not meter errors."
+}

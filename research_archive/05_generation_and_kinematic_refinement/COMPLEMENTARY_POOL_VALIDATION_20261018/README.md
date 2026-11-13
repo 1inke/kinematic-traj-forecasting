@@ -1,0 +1,10 @@
+# 互补候选池验证执行（2026-10-18）
+
+依据：
+- `GROK_KINEMATIC_REVIEW_20261018/RESULT_ANALYSIS.md`
+- `GROK_KINEMATIC_REVIEW_20261018/NEXT_VALIDATION_DESIGN.md`（主合同）
+- `SAFE_REPAIR_COOPERATION_AUDIT_DESIGN_20261018`（W0 不挡本分支）
+
+本目录为**新执行**，不改写旧 UNION_SELECTOR / KIN / P1 结果。
+
+优先级：固定互补池 + 保留原生关键支撑；锁方法、补产物、尾部误差与分组运动学审核。

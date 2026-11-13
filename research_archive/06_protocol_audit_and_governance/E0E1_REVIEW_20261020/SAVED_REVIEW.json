@@ -1,0 +1,800 @@
+{
+  "scope": "Independent saved coverage, teacher occupancy, JSON aggregation and exploratory shared-track bootstrap; no model, full motion, clusters or W-gate replay.",
+  "E0": [
+    {
+      "seed": 42,
+      "pop": "clean",
+      "N": 443,
+      "native": 146,
+      "oracle": 182,
+      "rescue": 36,
+      "lost": 0
+    },
+    {
+      "seed": 42,
+      "pop": "dropped",
+      "N": 257,
+      "native": 97,
+      "oracle": 117,
+      "rescue": 20,
+      "lost": 0
+    },
+    {
+      "seed": 43,
+      "pop": "clean",
+      "N": 443,
+      "native": 146,
+      "oracle": 180,
+      "rescue": 34,
+      "lost": 0
+    },
+    {
+      "seed": 43,
+      "pop": "dropped",
+      "N": 257,
+      "native": 97,
+      "oracle": 117,
+      "rescue": 20,
+      "lost": 0
+    },
+    {
+      "seed": 44,
+      "pop": "clean",
+      "N": 443,
+      "native": 146,
+      "oracle": 186,
+      "rescue": 40,
+      "lost": 0
+    },
+    {
+      "seed": 44,
+      "pop": "dropped",
+      "N": 257,
+      "native": 97,
+      "oracle": 116,
+      "rescue": 19,
+      "lost": 0
+    }
+  ],
+  "teachers": [
+    {
+      "seed": 42,
+      "failed_windows": 8051,
+      "teachable_failed_windows": 1943,
+      "teachable_fraction": 0.24133647994038007,
+      "complement_path_count": 2064,
+      "mean_paths_per_failed": 0.25636566886101103,
+      "change_failed": 2788,
+      "change_teachable": 448
+    },
+    {
+      "seed": 43,
+      "failed_windows": 8051,
+      "teachable_failed_windows": 1952,
+      "teachable_fraction": 0.24245435349646008,
+      "complement_path_count": 2045,
+      "mean_paths_per_failed": 0.2540057135759533,
+      "change_failed": 2788,
+      "change_teachable": 481
+    },
+    {
+      "seed": 44,
+      "failed_windows": 8051,
+      "teachable_failed_windows": 1899,
+      "teachable_fraction": 0.23587132033287792,
+      "complement_path_count": 2012,
+      "mean_paths_per_failed": 0.24990684387032666,
+      "change_failed": 2788,
+      "change_teachable": 483
+    }
+  ],
+  "E1": [
+    {
+      "seed": 42,
+      "arm": "A",
+      "eval": {
+        "overall": {
+          "N": 1856,
+          "good_count": 693,
+          "coverage": 0.3733836206896552,
+          "minADE": 0.3384906325541786,
+          "minFDE": 0.6871322009287091,
+          "rescue": 117,
+          "lost": 356,
+          "motion_gate": "FAIL"
+        },
+        "stable": {
+          "N": 978,
+          "good_count": 426,
+          "coverage": 0.43558282208588955,
+          "minADE": 0.28661095851451585,
+          "minFDE": 0.5992952099403516,
+          "rescue": 44,
+          "lost": 219,
+          "motion_gate": "FAIL"
+        },
+        "transition": {
+          "N": 381,
+          "good_count": 127,
+          "coverage": 0.3333333333333333,
+          "minADE": 0.37496274908450866,
+          "minFDE": 0.7514646470301131,
+          "rescue": 36,
+          "lost": 74,
+          "motion_gate": "FAIL"
+        },
+        "change": {
+          "N": 497,
+          "good_count": 140,
+          "coverage": 0.28169014084507044,
+          "minADE": 0.4126203001854349,
+          "minFDE": 0.8106612053994909,
+          "rescue": 37,
+          "lost": 63,
+          "motion_gate": "FAIL"
+        }
+      },
+      "history_last_two": [
+        {
+          "epoch": 7,
+          "loss": 0.6651315633955218
+        },
+        {
+          "epoch": 8,
+          "loss": 0.6415677177476709
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "arm": "B",
+      "eval": {
+        "overall": {
+          "N": 1856,
+          "good_count": 785,
+          "coverage": 0.4229525862068966,
+          "minADE": 0.2652675480970543,
+          "minFDE": 0.4794738938054221,
+          "rescue": 186,
+          "lost": 333,
+          "motion_gate": "FAIL"
+        },
+        "stable": {
+          "N": 978,
+          "good_count": 487,
+          "coverage": 0.49795501022494887,
+          "minADE": 0.19827499351393157,
+          "minFDE": 0.3323179884092802,
+          "rescue": 101,
+          "lost": 215,
+          "motion_gate": "FAIL"
+        },
+        "transition": {
+          "N": 381,
+          "good_count": 153,
+          "coverage": 0.4015748031496063,
+          "minADE": 0.2801037375337779,
+          "minFDE": 0.5030530740662095,
+          "rescue": 51,
+          "lost": 63,
+          "motion_gate": "FAIL"
+        },
+        "change": {
+          "N": 497,
+          "good_count": 145,
+          "coverage": 0.2917505030181087,
+          "minADE": 0.3857225384529946,
+          "minFDE": 0.7509725010449931,
+          "rescue": 34,
+          "lost": 55,
+          "motion_gate": "FAIL"
+        }
+      },
+      "history_last_two": [
+        {
+          "epoch": 7,
+          "loss": 0.8873137343004862
+        },
+        {
+          "epoch": 8,
+          "loss": 0.7344059528947173
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "arm": "C",
+      "eval": {
+        "overall": {
+          "N": 1856,
+          "good_count": 672,
+          "coverage": 0.3620689655172414,
+          "minADE": 0.34750880511437776,
+          "minFDE": 0.6993985465579704,
+          "rescue": 107,
+          "lost": 367,
+          "motion_gate": "FAIL"
+        },
+        "stable": {
+          "N": 978,
+          "good_count": 405,
+          "coverage": 0.41411042944785276,
+          "minADE": 0.3077150293423942,
+          "minFDE": 0.635127009894859,
+          "rescue": 44,
+          "lost": 240,
+          "motion_gate": "FAIL"
+        },
+        "transition": {
+          "N": 381,
+          "good_count": 129,
+          "coverage": 0.33858267716535434,
+          "minADE": 0.37692779686441347,
+          "minFDE": 0.7572692313812168,
+          "rescue": 33,
+          "lost": 69,
+          "motion_gate": "FAIL"
+        },
+        "change": {
+          "N": 497,
+          "good_count": 138,
+          "coverage": 0.2776659959758551,
+          "minADE": 0.40326268207259985,
+          "minFDE": 0.7815088723906989,
+          "rescue": 30,
+          "lost": 58,
+          "motion_gate": "FAIL"
+        }
+      },
+      "history_last_two": [
+        {
+          "epoch": 7,
+          "loss": 0.9110337654863031
+        },
+        {
+          "epoch": 8,
+          "loss": 0.8859819862092214
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "arm": "D",
+      "eval": {
+        "overall": {
+          "N": 1856,
+          "good_count": 811,
+          "coverage": 0.4369612068965517,
+          "minADE": 0.26676243756846896,
+          "minFDE": 0.49521366851701987,
+          "rescue": 174,
+          "lost": 295,
+          "motion_gate": "FAIL"
+        },
+        "stable": {
+          "N": 978,
+          "good_count": 511,
+          "coverage": 0.5224948875255624,
+          "minADE": 0.1895886586473427,
+          "minFDE": 0.32133736924136036,
+          "rescue": 93,
+          "lost": 183,
+          "motion_gate": "FAIL"
+        },
+        "transition": {
+          "N": 381,
+          "good_count": 158,
+          "coverage": 0.4146981627296588,
+          "minADE": 0.2661892385782582,
+          "minFDE": 0.4685946735498555,
+          "rescue": 43,
+          "lost": 50,
+          "motion_gate": "FAIL"
+        },
+        "change": {
+          "N": 497,
+          "good_count": 142,
+          "coverage": 0.2857142857142857,
+          "minADE": 0.41906494179408615,
+          "minFDE": 0.8577747505574317,
+          "rescue": 38,
+          "lost": 62,
+          "motion_gate": "FAIL"
+        }
+      },
+      "history_last_two": [
+        {
+          "epoch": 7,
+          "loss": 1.0446973068205128
+        },
+        {
+          "epoch": 8,
+          "loss": 0.8511244553880138
+        }
+      ]
+    },
+    {
+      "seed": 42,
+      "arm": "E",
+      "eval": {
+        "overall": {
+          "N": 1856,
+          "good_count": 700,
+          "coverage": 0.3771551724137931,
+          "minADE": 0.2650225662825373,
+          "minFDE": 0.507502802135837,
+          "rescue": 152,
+          "lost": 384,
+          "motion_gate": "FAIL"
+        },
+        "stable": {
+          "N": 978,
+          "good_count": 374,
+          "coverage": 0.3824130879345603,
+          "minADE": 0.2128716702069854,
+          "minFDE": 0.4025310791836529,
+          "rescue": 57,
+          "lost": 284,
+          "motion_gate": "FAIL"
+        },
+        "transition": {
+          "N": 381,
+          "good_count": 165,
+          "coverage": 0.4330708661417323,
+          "minADE": 0.2661862228417389,
+          "minFDE": 0.49850964075173904,
+          "rescue": 50,
+          "lost": 50,
+          "motion_gate": "FAIL"
+        },
+        "change": {
+          "N": 497,
+          "good_count": 161,
+          "coverage": 0.323943661971831,
+          "minADE": 0.36675339769669013,
+          "minFDE": 0.7209610305756307,
+          "rescue": 45,
+          "lost": 50,
+          "motion_gate": "FAIL"
+        }
+      },
+      "history_last_two": [
+        {
+          "epoch": 7,
+          "loss": 1.2220704247480068
+        },
+        {
+          "epoch": 8,
+          "loss": 0.9762759823859403
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "arm": "A",
+      "eval": {
+        "overall": {
+          "N": 1856,
+          "good_count": 644,
+          "coverage": 0.34698275862068967,
+          "native_good_count": 932,
+          "native_coverage": 0.5021551724137931,
+          "minADE": 0.3647645016818308,
+          "minFDE": 0.7238842366059761,
+          "rescue": 98,
+          "lost": 386,
+          "motion_gate": "FAIL"
+        },
+        "stable": {
+          "N": 978,
+          "good_count": 390,
+          "coverage": 0.3987730061349693,
+          "native_good_count": 601,
+          "native_coverage": 0.614519427402863,
+          "minADE": 0.32842996258780355,
+          "minFDE": 0.668840140453669,
+          "rescue": 48,
+          "lost": 259,
+          "motion_gate": "FAIL"
+        },
+        "transition": {
+          "N": 381,
+          "good_count": 117,
+          "coverage": 0.30708661417322836,
+          "native_good_count": 165,
+          "native_coverage": 0.4330708661417323,
+          "minADE": 0.39964728427034507,
+          "minFDE": 0.7938475640396238,
+          "rescue": 24,
+          "lost": 72,
+          "motion_gate": "FAIL"
+        },
+        "change": {
+          "N": 497,
+          "good_count": 137,
+          "coverage": 0.27565392354124746,
+          "native_good_count": 166,
+          "native_coverage": 0.33400402414486924,
+          "minADE": 0.4095227291823028,
+          "minFDE": 0.778566526917317,
+          "rescue": 26,
+          "lost": 55,
+          "motion_gate": "FAIL"
+        }
+      },
+      "history_last_two": [
+        {
+          "epoch": 7,
+          "loss": 0.6752115260180996
+        },
+        {
+          "epoch": 8,
+          "loss": 0.6711452642395707
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "arm": "B",
+      "eval": {
+        "overall": {
+          "N": 1856,
+          "good_count": 659,
+          "coverage": 0.3550646551724138,
+          "native_good_count": 932,
+          "native_coverage": 0.5021551724137931,
+          "minADE": 0.36415670132138866,
+          "minFDE": 0.7143197684152915,
+          "rescue": 112,
+          "lost": 385,
+          "motion_gate": "FAIL"
+        },
+        "stable": {
+          "N": 978,
+          "good_count": 404,
+          "coverage": 0.4130879345603272,
+          "native_good_count": 601,
+          "native_coverage": 0.614519427402863,
+          "minADE": 0.3252455199433519,
+          "minFDE": 0.6499919150469139,
+          "rescue": 53,
+          "lost": 250,
+          "motion_gate": "FAIL"
+        },
+        "transition": {
+          "N": 381,
+          "good_count": 122,
+          "coverage": 0.32020997375328086,
+          "native_good_count": 165,
+          "native_coverage": 0.4330708661417323,
+          "minADE": 0.39449847168250707,
+          "minFDE": 0.7723228569849454,
+          "rescue": 28,
+          "lost": 71,
+          "motion_gate": "FAIL"
+        },
+        "change": {
+          "N": 497,
+          "good_count": 133,
+          "coverage": 0.2676056338028169,
+          "native_good_count": 166,
+          "native_coverage": 0.33400402414486924,
+          "minADE": 0.4174664012814166,
+          "minFDE": 0.7964394139871933,
+          "rescue": 31,
+          "lost": 64,
+          "motion_gate": "FAIL"
+        }
+      },
+      "history_last_two": [
+        {
+          "epoch": 7,
+          "loss": 0.9476659757720655
+        },
+        {
+          "epoch": 8,
+          "loss": 0.9251413719910924
+        }
+      ]
+    },
+    {
+      "seed": 43,
+      "arm": "E",
+      "eval": {
+        "overall": {
+          "N": 1856,
+          "good_count": 641,
+          "coverage": 0.3453663793103448,
+          "native_good_count": 932,
+          "native_coverage": 0.5021551724137931,
+          "minADE": 0.35560387906937785,
+          "minFDE": 0.7086340569219425,
+          "rescue": 103,
+          "lost": 394,
+          "motion_gate": "FAIL"
+        },
+        "stable": {
+          "N": 978,
+          "good_count": 395,
+          "coverage": 0.40388548057259716,
+          "native_good_count": 601,
+          "native_coverage": 0.614519427402863,
+          "minADE": 0.30050515265682437,
+          "minFDE": 0.6125410098256344,
+          "rescue": 43,
+          "lost": 249,
+          "motion_gate": "FAIL"
+        },
+        "transition": {
+          "N": 381,
+          "good_count": 117,
+          "coverage": 0.30708661417322836,
+          "native_good_count": 165,
+          "native_coverage": 0.4330708661417323,
+          "minADE": 0.3841038667140787,
+          "minFDE": 0.7593498231435338,
+          "rescue": 30,
+          "lost": 78,
+          "motion_gate": "FAIL"
+        },
+        "change": {
+          "N": 497,
+          "good_count": 129,
+          "coverage": 0.2595573440643863,
+          "native_good_count": 166,
+          "native_coverage": 0.33400402414486924,
+          "minADE": 0.4421794507773183,
+          "minFDE": 0.8588479263983272,
+          "rescue": 30,
+          "lost": 67,
+          "motion_gate": "FAIL"
+        }
+      },
+      "history_last_two": [
+        {
+          "epoch": 7,
+          "loss": 1.5520703971111716
+        },
+        {
+          "epoch": 8,
+          "loss": 1.5168992162059707
+        }
+      ]
+    },
+    {
+      "seed": 44,
+      "arm": "A",
+      "eval": {
+        "overall": {
+          "N": 1856,
+          "good_count": 664,
+          "coverage": 0.3577586206896552,
+          "native_good_count": 932,
+          "native_coverage": 0.5021551724137931,
+          "minADE": 0.36019106908925963,
+          "minFDE": 0.7178966730527101,
+          "rescue": 108,
+          "lost": 376,
+          "motion_gate": "FAIL"
+        },
+        "stable": {
+          "N": 978,
+          "good_count": 392,
+          "coverage": 0.40081799591002043,
+          "native_good_count": 601,
+          "native_coverage": 0.614519427402863,
+          "minADE": 0.3272371404353498,
+          "minFDE": 0.6650711027734543,
+          "rescue": 44,
+          "lost": 253,
+          "motion_gate": "FAIL"
+        },
+        "transition": {
+          "N": 381,
+          "good_count": 124,
+          "coverage": 0.32545931758530183,
+          "native_good_count": 165,
+          "native_coverage": 0.4330708661417323,
+          "minADE": 0.39611986680527234,
+          "minFDE": 0.793758434787753,
+          "rescue": 22,
+          "lost": 63,
+          "motion_gate": "FAIL"
+        },
+        "change": {
+          "N": 497,
+          "good_count": 148,
+          "coverage": 0.2977867203219316,
+          "native_good_count": 166,
+          "native_coverage": 0.33400402414486924,
+          "minADE": 0.3974950334629477,
+          "minFDE": 0.7636915956121885,
+          "rescue": 42,
+          "lost": 60,
+          "motion_gate": "FAIL"
+        }
+      },
+      "history_last_two": [
+        {
+          "epoch": 7,
+          "loss": 0.6719065577924973
+        },
+        {
+          "epoch": 8,
+          "loss": 0.6637896336305777
+        }
+      ]
+    },
+    {
+      "seed": 44,
+      "arm": "B",
+      "eval": {
+        "overall": {
+          "N": 1856,
+          "good_count": 665,
+          "coverage": 0.3582974137931034,
+          "native_good_count": 932,
+          "native_coverage": 0.5021551724137931,
+          "minADE": 0.3574901118416261,
+          "minFDE": 0.7062165609254929,
+          "rescue": 114,
+          "lost": 381,
+          "motion_gate": "FAIL"
+        },
+        "stable": {
+          "N": 978,
+          "good_count": 401,
+          "coverage": 0.4100204498977505,
+          "native_good_count": 601,
+          "native_coverage": 0.614519427402863,
+          "minADE": 0.3104782694779922,
+          "minFDE": 0.618837435720877,
+          "rescue": 48,
+          "lost": 248,
+          "motion_gate": "FAIL"
+        },
+        "transition": {
+          "N": 381,
+          "good_count": 127,
+          "coverage": 0.3333333333333333,
+          "native_good_count": 165,
+          "native_coverage": 0.4330708661417323,
+          "minADE": 0.38503698036491363,
+          "minFDE": 0.7612003832222282,
+          "rescue": 34,
+          "lost": 72,
+          "motion_gate": "FAIL"
+        },
+        "change": {
+          "N": 497,
+          "good_count": 137,
+          "coverage": 0.27565392354124746,
+          "native_good_count": 166,
+          "native_coverage": 0.33400402414486924,
+          "minADE": 0.4288829185302809,
+          "minFDE": 0.8360112252213842,
+          "rescue": 32,
+          "lost": 61,
+          "motion_gate": "FAIL"
+        }
+      },
+      "history_last_two": [
+        {
+          "epoch": 7,
+          "loss": 0.9398053377508973
+        },
+        {
+          "epoch": 8,
+          "loss": 0.9159375339536855
+        }
+      ]
+    },
+    {
+      "seed": 44,
+      "arm": "E",
+      "eval": {
+        "overall": {
+          "N": 1856,
+          "good_count": 646,
+          "coverage": 0.3480603448275862,
+          "native_good_count": 932,
+          "native_coverage": 0.5021551724137931,
+          "minADE": 0.35742506125113266,
+          "minFDE": 0.6976894731714771,
+          "rescue": 108,
+          "lost": 394,
+          "motion_gate": "FAIL"
+        },
+        "stable": {
+          "N": 978,
+          "good_count": 389,
+          "coverage": 0.39775051124744376,
+          "native_good_count": 601,
+          "native_coverage": 0.614519427402863,
+          "minADE": 0.309207002941155,
+          "minFDE": 0.6074736202141878,
+          "rescue": 38,
+          "lost": 250,
+          "motion_gate": "FAIL"
+        },
+        "transition": {
+          "N": 381,
+          "good_count": 119,
+          "coverage": 0.3123359580052493,
+          "native_good_count": 165,
+          "native_coverage": 0.4330708661417323,
+          "minADE": 0.39188106266395123,
+          "minFDE": 0.7643530886474611,
+          "rescue": 32,
+          "lost": 78,
+          "motion_gate": "FAIL"
+        },
+        "change": {
+          "N": 497,
+          "good_count": 138,
+          "coverage": 0.2776659959758551,
+          "native_good_count": 166,
+          "native_coverage": 0.33400402414486924,
+          "minADE": 0.4258949294380026,
+          "minFDE": 0.8241125449941712,
+          "rescue": 38,
+          "lost": 66,
+          "motion_gate": "FAIL"
+        }
+      },
+      "history_last_two": [
+        {
+          "epoch": 7,
+          "loss": 1.5229181168767687
+        },
+        {
+          "epoch": 8,
+          "loss": 1.4868374219670277
+        }
+      ]
+    }
+  ],
+  "exploratory_bootstrap": {
+    "point_pp": 8.276899924755456,
+    "shared_track_fixed_three_seed_ci_pp": [
+      5.841095254889119,
+      10.956803473023195
+    ],
+    "shared_track_resampled_seed_ci_pp": [
+      5.555555555555556,
+      11.271012175766632
+    ],
+    "note": "Post-hoc sensitivity, not preregistered confirmation; 50 tracks / 3 seeds, no causal exposure conclusion."
+  },
+  "inputs_sha_before": {
+    "qoder_work\\E0_CALV11_ORACLE_OPPORTUNITY_20261020\\RESULT.json": "b78e2d4fcecee16f00fe72a12fc2d8fb4689722ac391efaf136345795e4af02c",
+    "REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES\\results\\cache\\train_dev\\eth_train.npz": "f8e6769c7e28b0d5ad4c108989246d6e724c078190102ae90443e62600d5a3ea",
+    "F16_OBSERVABLE_CUE_DIAGNOSIS_20261003\\labels\\train.npz": "01c8226f6bc3e7103c61f52294ac109ad2d585be2500a25d1601e08efe487efc",
+    "GENERATION_GROUPED_TRANSFER_SERIES_20261006\\identity_audit\\splits.npz": "349659306a435a3a70e65d75d08d618a2aa8bc76fca38142c3433ab5678e12e7",
+    "qoder_work\\v1_1\\cal_v11_index.npy": "fee09cf79559af13b694b96c3c0aafcd87e8d6146b9ec491a89d6dea93aea590",
+    "qoder_work\\v1_1\\cal_v11_windows.csv": "59dbfbcc39c46c9a1af77dc8d45605b8aaec3d01441bbd25e71f9e4f9b86e137",
+    "COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_original_CAL_seed42.npy": "5f9a91b99e4ffbc9f897425d97fb44062d0c288b30370d9662191485b4122e0b",
+    "qoder_work\\E0_CALV11_ORACLE_OPPORTUNITY_20261020\\k0c_indices_clean_seed42.npy": "870662e3e4b365a208e55a65532ccbc200abb18ec26c7ff5984a6fce7a4a18ce",
+    "qoder_work\\E0_CALV11_ORACLE_OPPORTUNITY_20261020\\delta_change_clean_seed42.npy": "5f5f841e263d7e2c2732e7b8046693304ad28d6cd5f5f79bf2e84171ea10a1a3",
+    "qoder_work\\E0_CALV11_ORACLE_OPPORTUNITY_20261020\\k0c_indices_dropped_seed42.npy": "9cff977b16bb7e8b13172873e71221802449eca0d0e2464ebf33cd9179b10ce7",
+    "qoder_work\\E0_CALV11_ORACLE_OPPORTUNITY_20261020\\delta_change_dropped_seed42.npy": "2bd1118f1b14ff3e5728f811ff0c4544100893667bea449444636738f727d295",
+    "UNION_SELECTOR_K40_TO_K20_20261018\\results\\cache_pred\\kin_FIT_seed42.npy": "795ce65f440dc2506f14daa8c2f5dc3a33eb24cd4c9cfae0062f364eaaa70351",
+    "qoder_work\\E1_STUDENT_DISTILL_SCREENING_20261020\\RESULT.json": "14bbd12e7a8749d6c15a7654c8f3ce2801d278fb8ce1883f47d8425885870087",
+    "COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_original_CAL_seed43.npy": "9f570eccbd196be84dd8a61817ce2aabd640309b8e7272c59dd30b97deb1d01e",
+    "qoder_work\\E0_CALV11_ORACLE_OPPORTUNITY_20261020\\k0c_indices_clean_seed43.npy": "3337e2c00221e5aa0a0e5959b524befc34f58ad49ccdca0e66a197bc7613b282",
+    "qoder_work\\E0_CALV11_ORACLE_OPPORTUNITY_20261020\\delta_change_clean_seed43.npy": "306cad11fbea262b77866a259e3b48a05fec3588ba3e770a458a99c7f8064374",
+    "qoder_work\\E0_CALV11_ORACLE_OPPORTUNITY_20261020\\k0c_indices_dropped_seed43.npy": "97042e33a7efc3961e3db3fe37e5f9c629cff6dd0c58e32e2d2685c8f4bbbf77",
+    "qoder_work\\E0_CALV11_ORACLE_OPPORTUNITY_20261020\\delta_change_dropped_seed43.npy": "24cb036bba556453d1631d76b8cf8431ea4c3ea31a96a3653b20a18ba5e8398a",
+    "UNION_SELECTOR_K40_TO_K20_20261018\\results\\cache_pred\\kin_FIT_seed43.npy": "b518e051d19ea08165b8e723852b00dac142ec28dd45894bdc6fe2eab6507292",
+    "qoder_work\\E1_STUDENT_DISTILL_SCREENING_20261020\\RESULT_seed43.json": "534f515b71b6550a4128cf1902e5bbe629ecaa47cebf9294221077030282818c",
+    "COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_original_CAL_seed44.npy": "d43b2878fd0a84c461649dad0d72d4f4db5c35e8260bd90628693fbddf5069bf",
+    "qoder_work\\E0_CALV11_ORACLE_OPPORTUNITY_20261020\\k0c_indices_clean_seed44.npy": "f7a1fbb703ea1b0a8292af6b8297ecb94a94b8738fcf7e6f2c0d6f48eb633869",
+    "qoder_work\\E0_CALV11_ORACLE_OPPORTUNITY_20261020\\delta_change_clean_seed44.npy": "85977126f5a56ccb5f2f5fdd5fc7aacc1eadacbbfb00eb2d7c6327947bb23923",
+    "qoder_work\\E0_CALV11_ORACLE_OPPORTUNITY_20261020\\k0c_indices_dropped_seed44.npy": "295e9b38a37f2324d5947a27195a2377bc81fde905983bcf42dbf0bffd8d928d",
+    "qoder_work\\E0_CALV11_ORACLE_OPPORTUNITY_20261020\\delta_change_dropped_seed44.npy": "5f0214dc096fb4174451a36ed71839e838a2ed1049823306364bcd7aef29b049",
+    "UNION_SELECTOR_K40_TO_K20_20261018\\results\\cache_pred\\kin_FIT_seed44.npy": "deef585429d9d46014debdf5f94f7a38df8d1e44de89e889961eaa4138a2644f",
+    "qoder_work\\E1_STUDENT_DISTILL_SCREENING_20261020\\RESULT_seed44.json": "8f9e7021deb38b641634e782b5177d7d58b39a0568565f41f1076ec98c4cbc25"
+  },
+  "inputs_unchanged": true,
+  "review_script_sha": "47842f99c2025f556568998dc2c9537e44aa80b8d5b581824624fb07e00c499a"
+}

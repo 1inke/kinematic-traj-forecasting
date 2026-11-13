@@ -1,0 +1,1482 @@
+{
+  "status": "SUCCESS_EXECUTION_REVIEW_REQUIRED",
+  "finished_at": "2026-10-24T00:52:31.155617+09:00",
+  "elapsed_seconds": 1965.0227454999695,
+  "A_screen": {
+    "knot3": {
+      "passed": true,
+      "oracle_good": 1.0,
+      "netgain_retention": [
+        0.9,
+        1.0,
+        0.8846153846153846
+      ],
+      "mean_acceleration_ratio": 0.5414704190081988
+    },
+    "svd4": {
+      "passed": true,
+      "oracle_good": 1.0,
+      "netgain_retention": [
+        1.0,
+        1.0,
+        0.9615384615384616
+      ],
+      "mean_acceleration_ratio": 0.7403503712366818
+    }
+  },
+  "A_selected_basis": "svd4",
+  "B_decision": {
+    "static": {
+      "passed": false,
+      "gates": {
+        "B1": false,
+        "B2": false,
+        "B3": false
+      },
+      "relative_gain": -0.2630922628210451,
+      "advantage_ratio": null,
+      "no_gain_over_M0": true,
+      "paired_track_CI": {
+        "status": "OK",
+        "tracks": 35,
+        "valid": 20000,
+        "point": 1.067621819596199,
+        "CI95": [
+          0.6631660889631978,
+          1.3704061305584814
+        ],
+        "resample_seeds": true,
+        "seed": 20261023
+      }
+    },
+    "causal": {
+      "passed": false,
+      "gates": {
+        "B1": false,
+        "B2": false,
+        "B3": false
+      },
+      "relative_gain": -0.24440086212313122,
+      "advantage_ratio": null,
+      "no_gain_over_M0": true,
+      "paired_track_CI": {
+        "status": "OK",
+        "tracks": 35,
+        "valid": 20000,
+        "point": 0.9917725832487118,
+        "CI95": [
+          0.45579559847897855,
+          1.3176942433602647
+        ],
+        "resample_seeds": true,
+        "seed": 20261023
+      }
+    }
+  },
+  "B_conclusion": "SCENE_HISTOGRAM_PRIOR_FALSIFIED",
+  "training_decisions": {
+    "A": {
+      "local_gates": {
+        "coverage": false,
+        "acceleration": false,
+        "errors": false
+      },
+      "mechanism_supported": false,
+      "baseline_ready": false,
+      "conclusion": "TIME_BASIS_NOT_SUPPORTED",
+      "primary_and_secondary_unadjusted_CI": {
+        "coverage": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": -0.0013413816230717639,
+          "CI95": [
+            -0.04789833822091886,
+            0.03505501325014249
+          ],
+          "resample_seeds": true,
+          "seed": 20261023
+        },
+        "ADE": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": -0.006984422850679168,
+          "CI95": [
+            -0.017760717076842368,
+            0.0037987660896802084
+          ],
+          "resample_seeds": true,
+          "seed": 20261023
+        },
+        "FDE": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": -0.01636601150934647,
+          "CI95": [
+            -0.05090459358924568,
+            0.01432460896094027
+          ],
+          "resample_seeds": true,
+          "seed": 20261023
+        },
+        "accel": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": -0.021748167672054838,
+          "CI95": [
+            -0.028868613075959212,
+            -0.0166303121088776
+          ],
+          "resample_seeds": true,
+          "seed": 20261023
+        }
+      },
+      "fixed_seed_sensitivity": {
+        "coverage": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": -0.0013413816230717639,
+          "CI95": [
+            -0.036059998372987914,
+            0.02826555023923441
+          ],
+          "resample_seeds": false,
+          "seed": 20261023
+        },
+        "ADE": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": -0.006984422850679168,
+          "CI95": [
+            -0.013023794064056701,
+            -0.00021297770881617672
+          ],
+          "resample_seeds": false,
+          "seed": 20261023
+        },
+        "FDE": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": -0.01636601150934647,
+          "CI95": [
+            -0.03533341808452967,
+            0.004019569743088323
+          ],
+          "resample_seeds": false,
+          "seed": 20261023
+        },
+        "accel": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": -0.021748167672054838,
+          "CI95": [
+            -0.025685777660776052,
+            -0.01819358010102477
+          ],
+          "resample_seeds": false,
+          "seed": 20261023
+        }
+      },
+      "native_coverage_CI": {
+        "status": "OK",
+        "tracks": 35,
+        "valid": 20000,
+        "point": 0.009389671361502348,
+        "CI95": [
+          -0.043097788227098574,
+          0.05518763796909492
+        ],
+        "resample_seeds": true,
+        "seed": 20261023
+      },
+      "baseline_all_24_groups_per_arm": {
+        "A_cv_free": [
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          }
+        ],
+        "A_cv_basis": [
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": true
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          }
+        ]
+      },
+      "automatic_next": false,
+      "interpretation": "Fixed encoder/repeated inner exploratory mechanisms; not independent whole-model generalization"
+    },
+    "C1": {
+      "local_gates": {
+        "coverage": false,
+        "retention": false,
+        "errors": false
+      },
+      "mechanism_supported": false,
+      "baseline_ready": false,
+      "conclusion": "AWTA_SCHEDULE_NOT_SUPPORTED",
+      "primary_and_secondary_unadjusted_CI": {
+        "coverage": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": -0.0744466800804829,
+          "CI95": [
+            -0.12249869582763273,
+            -0.03512396694214876
+          ],
+          "resample_seeds": true,
+          "seed": 20261023
+        },
+        "ADE": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": 0.07696232490245337,
+          "CI95": [
+            0.052045315143376146,
+            0.1078869360618263
+          ],
+          "resample_seeds": true,
+          "seed": 20261023
+        },
+        "FDE": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": 0.20623010612528284,
+          "CI95": [
+            0.14226198305355575,
+            0.28057261804093164
+          ],
+          "resample_seeds": true,
+          "seed": 20261023
+        },
+        "accel": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": 0.01781012196550165,
+          "CI95": [
+            -0.002354458146491614,
+            0.03724188646392966
+          ],
+          "resample_seeds": true,
+          "seed": 20261023
+        }
+      },
+      "fixed_seed_sensitivity": {
+        "coverage": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": -0.0744466800804829,
+          "CI95": [
+            -0.11155239092191158,
+            -0.04409121811356452
+          ],
+          "resample_seeds": false,
+          "seed": 20261023
+        },
+        "ADE": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": 0.07696232490245337,
+          "CI95": [
+            0.059259443720577794,
+            0.09750923631777834
+          ],
+          "resample_seeds": false,
+          "seed": 20261023
+        },
+        "FDE": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": 0.20623010612528284,
+          "CI95": [
+            0.15361740954729022,
+            0.2593601766960956
+          ],
+          "resample_seeds": false,
+          "seed": 20261023
+        },
+        "accel": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": 0.01781012196550165,
+          "CI95": [
+            0.011020558855473183,
+            0.024778082126750856
+          ],
+          "resample_seeds": false,
+          "seed": 20261023
+        }
+      },
+      "native_coverage_CI": {
+        "status": "OK",
+        "tracks": 35,
+        "valid": 20000,
+        "point": -0.02682763246143528,
+        "CI95": [
+          -0.09148105908543484,
+          0.02738031968434175
+        ],
+        "resample_seeds": true,
+        "seed": 20261023
+      },
+      "baseline_all_24_groups_per_arm": {
+        "C1_hard": [
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          }
+        ],
+        "C1_awta": [
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          }
+        ]
+      },
+      "automatic_next": false,
+      "interpretation": "Fixed encoder/repeated inner exploratory mechanisms; not independent whole-model generalization"
+    },
+    "C2": {
+      "local_gates": {
+        "coverage": false,
+        "old_baseline": false,
+        "effective_good": true,
+        "errors_retention": false
+      },
+      "mechanism_supported": false,
+      "baseline_ready": false,
+      "conclusion": "SETMIX_RESIDUAL_NOT_SUPPORTED",
+      "primary_and_secondary_unadjusted_CI": {
+        "coverage": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": 0.01341381623071764,
+          "CI95": [
+            -0.03798301122431885,
+            0.06570833333333305
+          ],
+          "resample_seeds": true,
+          "seed": 20261023
+        },
+        "ADE": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": 0.016756602628414916,
+          "CI95": [
+            -0.010645952288828258,
+            0.06054080888020478
+          ],
+          "resample_seeds": true,
+          "seed": 20261023
+        },
+        "FDE": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": 0.040590130834226135,
+          "CI95": [
+            -0.03703664242427793,
+            0.1584885084974853
+          ],
+          "resample_seeds": true,
+          "seed": 20261023
+        },
+        "accel": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": 0.0031457537035760176,
+          "CI95": [
+            -0.012021830726652773,
+            0.016421475188253563
+          ],
+          "resample_seeds": true,
+          "seed": 20261023
+        }
+      },
+      "fixed_seed_sensitivity": {
+        "coverage": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": 0.01341381623071764,
+          "CI95": [
+            -0.009644412529145321,
+            0.034210526315789476
+          ],
+          "resample_seeds": false,
+          "seed": 20261023
+        },
+        "ADE": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": 0.016756602628414916,
+          "CI95": [
+            0.006980809226921429,
+            0.03331041804407416
+          ],
+          "resample_seeds": false,
+          "seed": 20261023
+        },
+        "FDE": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": 0.040590130834226135,
+          "CI95": [
+            0.01403050603823042,
+            0.08135908262888314
+          ],
+          "resample_seeds": false,
+          "seed": 20261023
+        },
+        "accel": {
+          "status": "OK",
+          "tracks": 35,
+          "valid": 20000,
+          "point": 0.0031457537035760176,
+          "CI95": [
+            0.0011365288116432536,
+            0.005286148485411344
+          ],
+          "resample_seeds": false,
+          "seed": 20261023
+        }
+      },
+      "native_coverage_CI": {
+        "status": "OK",
+        "tracks": 35,
+        "valid": 20000,
+        "point": 0.022803487592219986,
+        "CI95": [
+          -0.04230258668237186,
+          0.07022361745634335
+        ],
+        "resample_seeds": true,
+        "seed": 20261023
+      },
+      "baseline_all_24_groups_per_arm": {
+        "C2_isomlp": [
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          }
+        ],
+        "C2_setmix": [
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "FIT",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 42,
+            "split": "inner",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "FIT",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 43,
+            "split": "inner",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "FIT",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "overall",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "stable",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "transition",
+            "passed": false,
+            "motion_pass": false
+          },
+          {
+            "seed": 44,
+            "split": "inner",
+            "group": "change",
+            "passed": false,
+            "motion_pass": false
+          }
+        ]
+      },
+      "automatic_next": false,
+      "interpretation": "Fixed encoder/repeated inner exploratory mechanisms; not independent whole-model generalization"
+    }
+  },
+  "source_digest": "96a5c99f3501d81b60d7d81823eb9b448c4bef9d77f943a9352a0d9eacec40f0",
+  "formal_experiments_completed": 3,
+  "no_baseline_reset": true,
+  "no_further_variants_or_automatic_training": true
+}

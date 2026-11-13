@@ -1,0 +1,3294 @@
+{
+  "created_at": "2026-10-19T05:36:14+09:00",
+  "timezone": "Asia/Tokyo",
+  "BREAKTHROUGH": false,
+  "seeds": [
+    {
+      "seed": 42,
+      "split": "original_CAL",
+      "N": 2879,
+      "kin_src": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_original_CAL_seed42.npy",
+      "kin_sha": "4da3d161734ac7a3d98d5de41d5e7964301ab2bd90163bc1f1783e14871b5842",
+      "identity": {
+        "N": 2879,
+        "n_unique_track_key": 1,
+        "n_unique_sequence": 1,
+        "n_unique_pedestrian_id": 1,
+        "all_track_placeholder": true,
+        "track_ci_status": "BLOCKED_IDENTITY",
+        "note": "original_CAL rows sit past n_id=25912; loader fills sequence='?', ped=-1. Cannot forge track/hierarchical CI. Point metrics still valid under GT."
+      },
+      "ports": {
+        "native20": {
+          "eval": {
+            "overall": {
+              "N": 2879,
+              "good_count": 1490,
+              "native_good_count": 1490,
+              "coverage": 0.5175408127822161,
+              "native_coverage": 0.5175408127822161,
+              "minADE": 0.18057557270224198,
+              "minFDE": 0.30325341374023596,
+              "native_minADE": 0.18057557270224198,
+              "native_minFDE": 0.30325341374023596,
+              "mean_minJ": 1.0126210984655022,
+              "native_mean_minJ": 1.0126210984655022,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              }
+            },
+            "stable": {
+              "N": 1535,
+              "good_count": 994,
+              "native_good_count": 994,
+              "coverage": 0.647557003257329,
+              "native_coverage": 0.647557003257329,
+              "minADE": 0.13141074819410864,
+              "minFDE": 0.21371347398562054,
+              "native_minADE": 0.13141074819410864,
+              "native_minFDE": 0.21371347398562054,
+              "mean_minJ": 0.7312347886074627,
+              "native_mean_minJ": 0.7312347886074627,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              }
+            },
+            "transition": {
+              "N": 644,
+              "good_count": 253,
+              "native_good_count": 253,
+              "coverage": 0.39285714285714285,
+              "native_coverage": 0.39285714285714285,
+              "minADE": 0.2267221025231059,
+              "minFDE": 0.3767711638589841,
+              "native_minADE": 0.2267221025231059,
+              "native_minFDE": 0.3767711638589841,
+              "mean_minJ": 1.2639272633717755,
+              "native_mean_minJ": 1.2639272633717755,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              }
+            },
+            "change": {
+              "N": 700,
+              "good_count": 243,
+              "native_good_count": 243,
+              "coverage": 0.34714285714285714,
+              "native_coverage": 0.34714285714285714,
+              "minADE": 0.24593220186702508,
+              "minFDE": 0.4319653800928944,
+              "native_minADE": 0.24593220186702508,
+              "native_minFDE": 0.4319653800928944,
+              "mean_minJ": 1.3984594062261457,
+              "native_mean_minJ": 1.3984594062261457,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              }
+            }
+          },
+          "W": {
+            "pass_": false,
+            "clauses": {
+              "change_cov": {
+                "need": 257,
+                "got": 243,
+                "pass_": false
+              },
+              "overall_cov_ge_native": {
+                "pass_": true,
+                "good": 1490,
+                "native": 1490
+              },
+              "overall_lost": {
+                "pass_": true,
+                "frac": 0.0,
+                "lost": 0,
+                "native_good": 1490
+              },
+              "stable_cov_ge_native": {
+                "pass_": true,
+                "good": 994,
+                "native": 994
+              },
+              "stable_lost": {
+                "pass_": true,
+                "frac": 0.0,
+                "lost": 0,
+                "native_good": 994
+              },
+              "transition_cov_ge_native": {
+                "pass_": true,
+                "good": 253,
+                "native": 253
+              },
+              "transition_lost": {
+                "pass_": true,
+                "frac": 0.0,
+                "lost": 0,
+                "native_good": 253
+              },
+              "change_lost": {
+                "pass_": true,
+                "frac": 0.0
+              },
+              "change_ade": {
+                "pass_": false,
+                "got": 0.24593220186702508,
+                "need": 0.23363559177367382
+              },
+              "change_fde": {
+                "pass_": false,
+                "got": 0.4319653800928944,
+                "need": 0.4103671110882497
+              },
+              "overall_ade_protect": {
+                "pass_": true,
+                "got": 0.18057557270224198,
+                "lim": 0.1823813284292644
+              },
+              "overall_fde_protect": {
+                "pass_": true,
+                "got": 0.30325341374023596,
+                "lim": 0.3062859478776383
+              },
+              "stable_ade_protect": {
+                "pass_": true,
+                "got": 0.13141074819410864,
+                "lim": 0.13272485567604972
+              },
+              "stable_fde_protect": {
+                "pass_": true,
+                "got": 0.21371347398562054,
+                "lim": 0.21585060872547676
+              },
+              "transition_ade_protect": {
+                "pass_": true,
+                "got": 0.2267221025231059,
+                "lim": 0.22898932354833695
+              },
+              "transition_fde_protect": {
+                "pass_": true,
+                "got": 0.3767711638589841,
+                "lim": 0.380538875497574
+              },
+              "overall_minJ": {
+                "pass_": true,
+                "got": 1.0126210984655022,
+                "native": 1.0126210984655022
+              },
+              "overall_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              },
+              "stable_minJ": {
+                "pass_": true,
+                "got": 0.7312347886074627,
+                "native": 0.7312347886074627
+              },
+              "stable_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              },
+              "transition_minJ": {
+                "pass_": true,
+                "got": 1.2639272633717755,
+                "native": 1.2639272633717755
+              },
+              "transition_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              },
+              "change_minJ": {
+                "pass_": true,
+                "got": 1.3984594062261457,
+                "native": 1.3984594062261457
+              },
+              "change_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              }
+            }
+          },
+          "W_pass": false,
+          "wall_s": 0.2794473171234131
+        },
+        "v1_cond_boost_11_9": {
+          "eval": {
+            "overall": {
+              "N": 2879,
+              "good_count": 1597,
+              "native_good_count": 1490,
+              "coverage": 0.5547064953108718,
+              "native_coverage": 0.5175408127822161,
+              "minADE": 0.21396326011182165,
+              "minFDE": 0.38412978332751746,
+              "native_minADE": 0.18057557270224198,
+              "native_minFDE": 0.30325341374023596,
+              "mean_minJ": 1.2006059129877067,
+              "native_mean_minJ": 1.0126210984655022,
+              "conditional_lost_frac": 0.049664429530201344,
+              "motion_gate": {
+                "status": "FAIL",
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.0128787871747729,
+                  "accel_mean": 0.6107943979065116,
+                  "accel_p95": 0.41188087630969417,
+                  "jerk_mean": 0.4153988578966955,
+                  "jerk_p95": 0.45793144256845814
+                }
+              }
+            },
+            "stable": {
+              "N": 1535,
+              "good_count": 1094,
+              "native_good_count": 994,
+              "coverage": 0.7127035830618893,
+              "native_coverage": 0.647557003257329,
+              "minADE": 0.13247461528733923,
+              "minFDE": 0.21542294849368196,
+              "native_minADE": 0.13141074819410864,
+              "native_minFDE": 0.21371347398562054,
+              "mean_minJ": 0.7333029299119806,
+              "native_mean_minJ": 0.7312347886074627,
+              "conditional_lost_frac": 0.029175050301810865,
+              "motion_gate": {
+                "status": "FAIL",
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.0117698359834617,
+                  "accel_mean": 0.60799233526179,
+                  "accel_p95": 0.4138235936301726,
+                  "jerk_mean": 0.415600769400339,
+                  "jerk_p95": 0.44998038968479126
+                }
+              }
+            },
+            "transition": {
+              "N": 644,
+              "good_count": 258,
+              "native_good_count": 253,
+              "coverage": 0.40062111801242234,
+              "native_coverage": 0.39285714285714285,
+              "minADE": 0.28044241911340323,
+              "minFDE": 0.5106590321983564,
+              "native_minADE": 0.2267221025231059,
+              "native_minFDE": 0.3767711638589841,
+              "mean_minJ": 1.5717275504070554,
+              "native_mean_minJ": 1.2639272633717755,
+              "conditional_lost_frac": 0.09090909090909091,
+              "motion_gate": {
+                "status": "FAIL",
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.015634729542947,
+                  "accel_mean": 0.618231052208534,
+                  "accel_p95": 0.41154954433581964,
+                  "jerk_mean": 0.41492506137721685,
+                  "jerk_p95": 0.475467574239435
+                }
+              }
+            },
+            "change": {
+              "N": 700,
+              "good_count": 245,
+              "native_good_count": 243,
+              "coverage": 0.35,
+              "native_coverage": 0.34714285714285714,
+              "minADE": 0.33149539069548145,
+              "minFDE": 0.6376728621805422,
+              "native_minADE": 0.24593220186702508,
+              "native_minFDE": 0.4319653800928944,
+              "mean_minJ": 1.8839026908779624,
+              "native_mean_minJ": 1.3984594062261457,
+              "conditional_lost_frac": 0.09053497942386832,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.00457506330285,
+                  "accel_mean": 0.6101908918241177,
+                  "accel_p95": 0.4061620836210639,
+                  "jerk_mean": 0.4153848450204391,
+                  "jerk_p95": 0.46181839684158804
+                }
+              }
+            }
+          },
+          "W": {
+            "pass_": false,
+            "clauses": {
+              "change_cov": {
+                "need": 257,
+                "got": 245,
+                "pass_": false
+              },
+              "overall_cov_ge_native": {
+                "pass_": true,
+                "good": 1597,
+                "native": 1490
+              },
+              "overall_lost": {
+                "pass_": false,
+                "frac": 0.049664429530201344,
+                "lost": 74,
+                "native_good": 1490
+              },
+              "stable_cov_ge_native": {
+                "pass_": true,
+                "good": 1094,
+                "native": 994
+              },
+              "stable_lost": {
+                "pass_": false,
+                "frac": 0.029175050301810865,
+                "lost": 29,
+                "native_good": 994
+              },
+              "transition_cov_ge_native": {
+                "pass_": true,
+                "good": 258,
+                "native": 253
+              },
+              "transition_lost": {
+                "pass_": false,
+                "frac": 0.09090909090909091,
+                "lost": 23,
+                "native_good": 253
+              },
+              "change_lost": {
+                "pass_": false,
+                "frac": 0.09053497942386832
+              },
+              "change_ade": {
+                "pass_": false,
+                "got": 0.33149539069548145,
+                "need": 0.23363559177367382
+              },
+              "change_fde": {
+                "pass_": false,
+                "got": 0.6376728621805422,
+                "need": 0.4103671110882497
+              },
+              "overall_ade_protect": {
+                "pass_": false,
+                "got": 0.21396326011182165,
+                "lim": 0.1823813284292644
+              },
+              "overall_fde_protect": {
+                "pass_": false,
+                "got": 0.38412978332751746,
+                "lim": 0.3062859478776383
+              },
+              "stable_ade_protect": {
+                "pass_": true,
+                "got": 0.13247461528733923,
+                "lim": 0.13272485567604972
+              },
+              "stable_fde_protect": {
+                "pass_": true,
+                "got": 0.21542294849368196,
+                "lim": 0.21585060872547676
+              },
+              "transition_ade_protect": {
+                "pass_": false,
+                "got": 0.28044241911340323,
+                "lim": 0.22898932354833695
+              },
+              "transition_fde_protect": {
+                "pass_": false,
+                "got": 0.5106590321983564,
+                "lim": 0.380538875497574
+              },
+              "overall_minJ": {
+                "pass_": false,
+                "got": 1.2006059129877067,
+                "native": 1.0126210984655022
+              },
+              "overall_motion": {
+                "pass_": false,
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.0128787871747729,
+                  "accel_mean": 0.6107943979065116,
+                  "accel_p95": 0.41188087630969417,
+                  "jerk_mean": 0.4153988578966955,
+                  "jerk_p95": 0.45793144256845814
+                }
+              },
+              "stable_minJ": {
+                "pass_": false,
+                "got": 0.7333029299119806,
+                "native": 0.7312347886074627
+              },
+              "stable_motion": {
+                "pass_": false,
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.0117698359834617,
+                  "accel_mean": 0.60799233526179,
+                  "accel_p95": 0.4138235936301726,
+                  "jerk_mean": 0.415600769400339,
+                  "jerk_p95": 0.44998038968479126
+                }
+              },
+              "transition_minJ": {
+                "pass_": false,
+                "got": 1.5717275504070554,
+                "native": 1.2639272633717755
+              },
+              "transition_motion": {
+                "pass_": false,
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.015634729542947,
+                  "accel_mean": 0.618231052208534,
+                  "accel_p95": 0.41154954433581964,
+                  "jerk_mean": 0.41492506137721685,
+                  "jerk_p95": 0.475467574239435
+                }
+              },
+              "change_minJ": {
+                "pass_": false,
+                "got": 1.8839026908779624,
+                "native": 1.3984594062261457
+              },
+              "change_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.00457506330285,
+                  "accel_mean": 0.6101908918241177,
+                  "accel_p95": 0.4061620836210639,
+                  "jerk_mean": 0.4153848450204391,
+                  "jerk_p95": 0.46181839684158804
+                }
+              }
+            }
+          },
+          "W_pass": false,
+          "wall_s": 0.27375268936157227,
+          "src": "<WORKSPACE_ROOT>\\ORIGINAL_CAL_TRANSFER_EVAL_20261019\\indices\\v1_seed42_indices.npy",
+          "indices_sha": "dae6c07cb08b8ad4e661ba85f0cbb2548806cf78bd3b167bc3e2bc7884c3b10f",
+          "v1_meta": {
+            "seed": 42,
+            "status": "OK",
+            "wall_s": 1.1529083251953125,
+            "hgb": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\hgb_seed42.joblib",
+            "hgb_sha": "a229cfd962d4799f9144972ba4b6d940e706cf4dc34c5f62a3b7707ae353a4e3",
+            "kin_src": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_original_CAL_seed42.npy",
+            "indices_sha": "dae6c07cb08b8ad4e661ba85f0cbb2548806cf78bd3b167bc3e2bc7884c3b10f",
+            "sklearn_note": "astra2 sklearn for V1 HGB load only",
+            "finished_at": "2026-10-19T04:53:25+09:00"
+          },
+          "note": "V1 indices selected under astra2 (sklearn 1.4) then evaluated here; no GT in select"
+        },
+        "K1_S": {
+          "eval": {
+            "overall": {
+              "N": 2879,
+              "good_count": 1512,
+              "native_good_count": 1490,
+              "coverage": 0.5251823549843696,
+              "native_coverage": 0.5175408127822161,
+              "minADE": 0.18243186441100284,
+              "minFDE": 0.3063098182094206,
+              "native_minADE": 0.18057557270224198,
+              "native_minFDE": 0.30325341374023596,
+              "mean_minJ": 1.0213488946079718,
+              "native_mean_minJ": 1.0126210984655022,
+              "conditional_lost_frac": 0.006040268456375839,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0071965404641243,
+                  "accel_mean": 0.8731189361960399,
+                  "accel_p95": 0.7754673306581664,
+                  "jerk_mean": 0.7959733315814772,
+                  "jerk_p95": 0.8526175259147842
+                }
+              }
+            },
+            "stable": {
+              "N": 1535,
+              "good_count": 1010,
+              "native_good_count": 994,
+              "coverage": 0.6579804560260586,
+              "native_coverage": 0.647557003257329,
+              "minADE": 0.1292203965051693,
+              "minFDE": 0.20859461836894214,
+              "native_minADE": 0.13141074819410864,
+              "native_minFDE": 0.21371347398562054,
+              "mean_minJ": 0.718292389598133,
+              "native_mean_minJ": 0.7312347886074627,
+              "conditional_lost_frac": 0.0030181086519114686,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0053412007464304,
+                  "accel_mean": 0.8457243206527983,
+                  "accel_p95": 0.7119377918910179,
+                  "jerk_mean": 0.7488450306127282,
+                  "jerk_p95": 0.8189409419873832
+                }
+              }
+            },
+            "transition": {
+              "N": 644,
+              "good_count": 254,
+              "native_good_count": 253,
+              "coverage": 0.3944099378881988,
+              "native_coverage": 0.39285714285714285,
+              "minADE": 0.22873701795355272,
+              "minFDE": 0.3819940950249196,
+              "native_minADE": 0.2267221025231059,
+              "native_minFDE": 0.3767711638589841,
+              "mean_minJ": 1.276505668333729,
+              "native_mean_minJ": 1.2639272633717755,
+              "conditional_lost_frac": 0.003952569169960474,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0088951220167945,
+                  "accel_mean": 0.9174293258032675,
+                  "accel_p95": 0.8747990172743989,
+                  "jerk_mean": 0.8714353618391174,
+                  "jerk_p95": 0.8988060066462923
+                }
+              }
+            },
+            "change": {
+              "N": 700,
+              "good_count": 248,
+              "native_good_count": 243,
+              "coverage": 0.35428571428571426,
+              "native_coverage": 0.34714285714285714,
+              "minADE": 0.2565162706310777,
+              "minFDE": 0.45095575747506783,
+              "native_minADE": 0.24593220186702508,
+              "native_minFDE": 0.4319653800928944,
+              "mean_minJ": 1.451164284480422,
+              "native_mean_minJ": 1.3984594062261457,
+              "conditional_lost_frac": 0.0205761316872428,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0043092500158837,
+                  "accel_mean": 0.8935205572028404,
+                  "accel_p95": 0.8077457149197136,
+                  "jerk_mean": 0.8317820740744866,
+                  "jerk_p95": 0.8892464985858782
+                }
+              }
+            }
+          },
+          "W": {
+            "pass_": false,
+            "clauses": {
+              "change_cov": {
+                "need": 257,
+                "got": 248,
+                "pass_": false
+              },
+              "overall_cov_ge_native": {
+                "pass_": true,
+                "good": 1512,
+                "native": 1490
+              },
+              "overall_lost": {
+                "pass_": true,
+                "frac": 0.006040268456375839,
+                "lost": 9,
+                "native_good": 1490
+              },
+              "stable_cov_ge_native": {
+                "pass_": true,
+                "good": 1010,
+                "native": 994
+              },
+              "stable_lost": {
+                "pass_": true,
+                "frac": 0.0030181086519114686,
+                "lost": 3,
+                "native_good": 994
+              },
+              "transition_cov_ge_native": {
+                "pass_": true,
+                "good": 254,
+                "native": 253
+              },
+              "transition_lost": {
+                "pass_": true,
+                "frac": 0.003952569169960474,
+                "lost": 1,
+                "native_good": 253
+              },
+              "change_lost": {
+                "pass_": false,
+                "frac": 0.0205761316872428
+              },
+              "change_ade": {
+                "pass_": false,
+                "got": 0.2565162706310777,
+                "need": 0.23363559177367382
+              },
+              "change_fde": {
+                "pass_": false,
+                "got": 0.45095575747506783,
+                "need": 0.4103671110882497
+              },
+              "overall_ade_protect": {
+                "pass_": false,
+                "got": 0.18243186441100284,
+                "lim": 0.1823813284292644
+              },
+              "overall_fde_protect": {
+                "pass_": false,
+                "got": 0.3063098182094206,
+                "lim": 0.3062859478776383
+              },
+              "stable_ade_protect": {
+                "pass_": true,
+                "got": 0.1292203965051693,
+                "lim": 0.13272485567604972
+              },
+              "stable_fde_protect": {
+                "pass_": true,
+                "got": 0.20859461836894214,
+                "lim": 0.21585060872547676
+              },
+              "transition_ade_protect": {
+                "pass_": true,
+                "got": 0.22873701795355272,
+                "lim": 0.22898932354833695
+              },
+              "transition_fde_protect": {
+                "pass_": false,
+                "got": 0.3819940950249196,
+                "lim": 0.380538875497574
+              },
+              "overall_minJ": {
+                "pass_": false,
+                "got": 1.0213488946079718,
+                "native": 1.0126210984655022
+              },
+              "overall_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0071965404641243,
+                  "accel_mean": 0.8731189361960399,
+                  "accel_p95": 0.7754673306581664,
+                  "jerk_mean": 0.7959733315814772,
+                  "jerk_p95": 0.8526175259147842
+                }
+              },
+              "stable_minJ": {
+                "pass_": true,
+                "got": 0.718292389598133,
+                "native": 0.7312347886074627
+              },
+              "stable_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0053412007464304,
+                  "accel_mean": 0.8457243206527983,
+                  "accel_p95": 0.7119377918910179,
+                  "jerk_mean": 0.7488450306127282,
+                  "jerk_p95": 0.8189409419873832
+                }
+              },
+              "transition_minJ": {
+                "pass_": false,
+                "got": 1.276505668333729,
+                "native": 1.2639272633717755
+              },
+              "transition_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0088951220167945,
+                  "accel_mean": 0.9174293258032675,
+                  "accel_p95": 0.8747990172743989,
+                  "jerk_mean": 0.8714353618391174,
+                  "jerk_p95": 0.8988060066462923
+                }
+              },
+              "change_minJ": {
+                "pass_": false,
+                "got": 1.451164284480422,
+                "native": 1.3984594062261457
+              },
+              "change_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0043092500158837,
+                  "accel_mean": 0.8935205572028404,
+                  "accel_p95": 0.8077457149197136,
+                  "jerk_mean": 0.8317820740744866,
+                  "jerk_p95": 0.8892464985858782
+                }
+              }
+            }
+          },
+          "W_pass": false,
+          "wall_s": 340.4596598148346,
+          "models_dir": "<WORKSPACE_ROOT>\\CANDIDATE_SET_JOINT_FEASIBILITY_EXEC_20261018\\k1_exec\\seed42\\models",
+          "indices_sha": "b9141dbfd02dc0beb1397c29f64d1a8cd4445901186847be3bbd304d1b22f1ef",
+          "rejects": {
+            "motion": 5432,
+            "pred_gate": 788590,
+            "no_candidate": 166
+          },
+          "n_swaps_mean": 3.223688780826676,
+          "note": "frozen K1-S arm; same deploy as outer contract"
+        },
+        "K0_C": {
+          "eval": {
+            "overall": {
+              "N": 2879,
+              "good_count": 1771,
+              "native_good_count": 1490,
+              "coverage": 0.6151441472733588,
+              "native_coverage": 0.5175408127822161,
+              "minADE": 0.16356251029283886,
+              "minFDE": 0.25986356888873374,
+              "native_minADE": 0.18057557270224198,
+              "native_minFDE": 0.30325341374023596,
+              "mean_minJ": 0.8968609030396989,
+              "native_mean_minJ": 1.0126210984655022,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.001528169747128,
+                  "accel_mean": 0.9935120255762908,
+                  "accel_p95": 0.9747492383759317,
+                  "jerk_mean": 0.9821686888765624,
+                  "jerk_p95": 0.9906704122625073
+                }
+              }
+            },
+            "stable": {
+              "N": 1535,
+              "good_count": 1150,
+              "native_good_count": 994,
+              "coverage": 0.749185667752443,
+              "native_coverage": 0.647557003257329,
+              "minADE": 0.11622511297845248,
+              "minFDE": 0.17657532427633515,
+              "native_minADE": 0.13141074819410864,
+              "native_minFDE": 0.21371347398562054,
+              "mean_minJ": 0.6305534096165217,
+              "native_mean_minJ": 0.7312347886074627,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0029290780617193,
+                  "accel_mean": 0.991942105988359,
+                  "accel_p95": 0.9704889236187405,
+                  "jerk_mean": 0.9843926002572605,
+                  "jerk_p95": 0.9920960914563516
+                }
+              }
+            },
+            "transition": {
+              "N": 644,
+              "good_count": 322,
+              "native_good_count": 253,
+              "coverage": 0.5,
+              "native_coverage": 0.39285714285714285,
+              "minADE": 0.20396837603938944,
+              "minFDE": 0.3228716287109502,
+              "native_minADE": 0.2267221025231059,
+              "native_minFDE": 0.3767711638589841,
+              "mean_minJ": 1.1131123079477907,
+              "native_mean_minJ": 1.2639272633717755,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0011327297419803,
+                  "accel_mean": 0.9934098452451808,
+                  "accel_p95": 0.9755848553380602,
+                  "jerk_mean": 0.9773804975262445,
+                  "jerk_p95": 0.9862449224900114
+                }
+              }
+            },
+            "change": {
+              "N": 700,
+              "good_count": 299,
+              "native_good_count": 243,
+              "coverage": 0.42714285714285716,
+              "native_coverage": 0.34714285714285714,
+              "minADE": 0.2301932636311311,
+              "minFDE": 0.38453537596662574,
+              "native_minADE": 0.24593220186702508,
+              "native_minFDE": 0.4319653800928944,
+              "mean_minJ": 1.28188389967365,
+              "native_mean_minJ": 1.3984594062261457,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 0.9981849016798512,
+                  "accel_mean": 0.9971280001199548,
+                  "accel_p95": 0.977687201240624,
+                  "jerk_mean": 0.9816157266870988,
+                  "jerk_p95": 0.9899310302888604
+                }
+              }
+            }
+          },
+          "W": {
+            "pass_": true,
+            "clauses": {
+              "change_cov": {
+                "need": 257,
+                "got": 299,
+                "pass_": true
+              },
+              "overall_cov_ge_native": {
+                "pass_": true,
+                "good": 1771,
+                "native": 1490
+              },
+              "overall_lost": {
+                "pass_": true,
+                "frac": 0.0,
+                "lost": 0,
+                "native_good": 1490
+              },
+              "stable_cov_ge_native": {
+                "pass_": true,
+                "good": 1150,
+                "native": 994
+              },
+              "stable_lost": {
+                "pass_": true,
+                "frac": 0.0,
+                "lost": 0,
+                "native_good": 994
+              },
+              "transition_cov_ge_native": {
+                "pass_": true,
+                "good": 322,
+                "native": 253
+              },
+              "transition_lost": {
+                "pass_": true,
+                "frac": 0.0,
+                "lost": 0,
+                "native_good": 253
+              },
+              "change_lost": {
+                "pass_": true,
+                "frac": 0.0
+              },
+              "change_ade": {
+                "pass_": true,
+                "got": 0.2301932636311311,
+                "need": 0.23363559177367382
+              },
+              "change_fde": {
+                "pass_": true,
+                "got": 0.38453537596662574,
+                "need": 0.4103671110882497
+              },
+              "overall_ade_protect": {
+                "pass_": true,
+                "got": 0.16356251029283886,
+                "lim": 0.1823813284292644
+              },
+              "overall_fde_protect": {
+                "pass_": true,
+                "got": 0.25986356888873374,
+                "lim": 0.3062859478776383
+              },
+              "stable_ade_protect": {
+                "pass_": true,
+                "got": 0.11622511297845248,
+                "lim": 0.13272485567604972
+              },
+              "stable_fde_protect": {
+                "pass_": true,
+                "got": 0.17657532427633515,
+                "lim": 0.21585060872547676
+              },
+              "transition_ade_protect": {
+                "pass_": true,
+                "got": 0.20396837603938944,
+                "lim": 0.22898932354833695
+              },
+              "transition_fde_protect": {
+                "pass_": true,
+                "got": 0.3228716287109502,
+                "lim": 0.380538875497574
+              },
+              "overall_minJ": {
+                "pass_": true,
+                "got": 0.8968609030396989,
+                "native": 1.0126210984655022
+              },
+              "overall_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.001528169747128,
+                  "accel_mean": 0.9935120255762908,
+                  "accel_p95": 0.9747492383759317,
+                  "jerk_mean": 0.9821686888765624,
+                  "jerk_p95": 0.9906704122625073
+                }
+              },
+              "stable_minJ": {
+                "pass_": true,
+                "got": 0.6305534096165217,
+                "native": 0.7312347886074627
+              },
+              "stable_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0029290780617193,
+                  "accel_mean": 0.991942105988359,
+                  "accel_p95": 0.9704889236187405,
+                  "jerk_mean": 0.9843926002572605,
+                  "jerk_p95": 0.9920960914563516
+                }
+              },
+              "transition_minJ": {
+                "pass_": true,
+                "got": 1.1131123079477907,
+                "native": 1.2639272633717755
+              },
+              "transition_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0011327297419803,
+                  "accel_mean": 0.9934098452451808,
+                  "accel_p95": 0.9755848553380602,
+                  "jerk_mean": 0.9773804975262445,
+                  "jerk_p95": 0.9862449224900114
+                }
+              },
+              "change_minJ": {
+                "pass_": true,
+                "got": 1.28188389967365,
+                "native": 1.3984594062261457
+              },
+              "change_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 0.9981849016798512,
+                  "accel_mean": 0.9971280001199548,
+                  "accel_p95": 0.977687201240624,
+                  "jerk_mean": 0.9816157266870988,
+                  "jerk_p95": 0.9899310302888604
+                }
+              }
+            }
+          },
+          "W_pass": true,
+          "wall_s": 504.2476124763489,
+          "tag": "ORACLE_DIAGNOSTIC_ONLY",
+          "n_swaps_mean": 0.3900659951372004,
+          "reject_totals": {
+            "motion": 512322,
+            "monotone": 36365,
+            "no_positive": 987686
+          },
+          "indices_sha": "3433fd91cd06894ca642260b1290bfe5bed46503f1c93cf5779eed3bb5dbfca2",
+          "note": "GT-using greedy policy upper bound; NOT deployable; ORACLE_DIAGNOSTIC_ONLY"
+        }
+      },
+      "finished_at": "2026-10-19T05:08:10+09:00",
+      "BREAKTHROUGH": false,
+      "note": "Transfer point-metrics only; track CI BLOCKED by identity placeholder"
+    },
+    {
+      "seed": 43,
+      "split": "original_CAL",
+      "N": 2879,
+      "kin_src": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_original_CAL_seed43.npy",
+      "kin_sha": "3de273ec5422244287bb85030df459aec71ba5b02189d1a712913db6d5941fc0",
+      "identity": {
+        "N": 2879,
+        "n_unique_track_key": 1,
+        "n_unique_sequence": 1,
+        "n_unique_pedestrian_id": 1,
+        "all_track_placeholder": true,
+        "track_ci_status": "BLOCKED_IDENTITY",
+        "note": "original_CAL rows sit past n_id=25912; loader fills sequence='?', ped=-1. Cannot forge track/hierarchical CI. Point metrics still valid under GT."
+      },
+      "ports": {
+        "native20": {
+          "eval": {
+            "overall": {
+              "N": 2879,
+              "good_count": 1490,
+              "native_good_count": 1490,
+              "coverage": 0.5175408127822161,
+              "native_coverage": 0.5175408127822161,
+              "minADE": 0.18057557270224198,
+              "minFDE": 0.30325341374023596,
+              "native_minADE": 0.18057557270224198,
+              "native_minFDE": 0.30325341374023596,
+              "mean_minJ": 1.0126210984655022,
+              "native_mean_minJ": 1.0126210984655022,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              }
+            },
+            "stable": {
+              "N": 1535,
+              "good_count": 994,
+              "native_good_count": 994,
+              "coverage": 0.647557003257329,
+              "native_coverage": 0.647557003257329,
+              "minADE": 0.13141074819410864,
+              "minFDE": 0.21371347398562054,
+              "native_minADE": 0.13141074819410864,
+              "native_minFDE": 0.21371347398562054,
+              "mean_minJ": 0.7312347886074627,
+              "native_mean_minJ": 0.7312347886074627,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              }
+            },
+            "transition": {
+              "N": 644,
+              "good_count": 253,
+              "native_good_count": 253,
+              "coverage": 0.39285714285714285,
+              "native_coverage": 0.39285714285714285,
+              "minADE": 0.2267221025231059,
+              "minFDE": 0.3767711638589841,
+              "native_minADE": 0.2267221025231059,
+              "native_minFDE": 0.3767711638589841,
+              "mean_minJ": 1.2639272633717755,
+              "native_mean_minJ": 1.2639272633717755,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              }
+            },
+            "change": {
+              "N": 700,
+              "good_count": 243,
+              "native_good_count": 243,
+              "coverage": 0.34714285714285714,
+              "native_coverage": 0.34714285714285714,
+              "minADE": 0.24593220186702508,
+              "minFDE": 0.4319653800928944,
+              "native_minADE": 0.24593220186702508,
+              "native_minFDE": 0.4319653800928944,
+              "mean_minJ": 1.3984594062261457,
+              "native_mean_minJ": 1.3984594062261457,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              }
+            }
+          },
+          "W": {
+            "pass_": false,
+            "clauses": {
+              "change_cov": {
+                "need": 257,
+                "got": 243,
+                "pass_": false
+              },
+              "overall_cov_ge_native": {
+                "pass_": true,
+                "good": 1490,
+                "native": 1490
+              },
+              "overall_lost": {
+                "pass_": true,
+                "frac": 0.0,
+                "lost": 0,
+                "native_good": 1490
+              },
+              "stable_cov_ge_native": {
+                "pass_": true,
+                "good": 994,
+                "native": 994
+              },
+              "stable_lost": {
+                "pass_": true,
+                "frac": 0.0,
+                "lost": 0,
+                "native_good": 994
+              },
+              "transition_cov_ge_native": {
+                "pass_": true,
+                "good": 253,
+                "native": 253
+              },
+              "transition_lost": {
+                "pass_": true,
+                "frac": 0.0,
+                "lost": 0,
+                "native_good": 253
+              },
+              "change_lost": {
+                "pass_": true,
+                "frac": 0.0
+              },
+              "change_ade": {
+                "pass_": false,
+                "got": 0.24593220186702508,
+                "need": 0.23363559177367382
+              },
+              "change_fde": {
+                "pass_": false,
+                "got": 0.4319653800928944,
+                "need": 0.4103671110882497
+              },
+              "overall_ade_protect": {
+                "pass_": true,
+                "got": 0.18057557270224198,
+                "lim": 0.1823813284292644
+              },
+              "overall_fde_protect": {
+                "pass_": true,
+                "got": 0.30325341374023596,
+                "lim": 0.3062859478776383
+              },
+              "stable_ade_protect": {
+                "pass_": true,
+                "got": 0.13141074819410864,
+                "lim": 0.13272485567604972
+              },
+              "stable_fde_protect": {
+                "pass_": true,
+                "got": 0.21371347398562054,
+                "lim": 0.21585060872547676
+              },
+              "transition_ade_protect": {
+                "pass_": true,
+                "got": 0.2267221025231059,
+                "lim": 0.22898932354833695
+              },
+              "transition_fde_protect": {
+                "pass_": true,
+                "got": 0.3767711638589841,
+                "lim": 0.380538875497574
+              },
+              "overall_minJ": {
+                "pass_": true,
+                "got": 1.0126210984655022,
+                "native": 1.0126210984655022
+              },
+              "overall_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              },
+              "stable_minJ": {
+                "pass_": true,
+                "got": 0.7312347886074627,
+                "native": 0.7312347886074627
+              },
+              "stable_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              },
+              "transition_minJ": {
+                "pass_": true,
+                "got": 1.2639272633717755,
+                "native": 1.2639272633717755
+              },
+              "transition_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              },
+              "change_minJ": {
+                "pass_": true,
+                "got": 1.3984594062261457,
+                "native": 1.3984594062261457
+              },
+              "change_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              }
+            }
+          },
+          "W_pass": false,
+          "wall_s": 0.2796926498413086
+        },
+        "v1_cond_boost_11_9": {
+          "eval": {
+            "overall": {
+              "N": 2879,
+              "good_count": 1605,
+              "native_good_count": 1490,
+              "coverage": 0.5574852379298367,
+              "native_coverage": 0.5175408127822161,
+              "minADE": 0.21291036162864088,
+              "minFDE": 0.3830449421273546,
+              "native_minADE": 0.18057557270224198,
+              "native_minFDE": 0.30325341374023596,
+              "mean_minJ": 1.1936765556440923,
+              "native_mean_minJ": 1.0126210984655022,
+              "conditional_lost_frac": 0.04697986577181208,
+              "motion_gate": {
+                "status": "FAIL",
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.021948605666153,
+                  "accel_mean": 0.6282350275551002,
+                  "accel_p95": 0.4112405991151673,
+                  "jerk_mean": 0.41813903561614385,
+                  "jerk_p95": 0.45765409259819917
+                }
+              }
+            },
+            "stable": {
+              "N": 1535,
+              "good_count": 1090,
+              "native_good_count": 994,
+              "coverage": 0.7100977198697068,
+              "native_coverage": 0.647557003257329,
+              "minADE": 0.13282804267174866,
+              "minFDE": 0.21992525648025238,
+              "native_minADE": 0.13141074819410864,
+              "native_minFDE": 0.21371347398562054,
+              "mean_minJ": 0.736051722442556,
+              "native_mean_minJ": 0.7312347886074627,
+              "conditional_lost_frac": 0.025150905432595575,
+              "motion_gate": {
+                "status": "FAIL",
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.0197244023303076,
+                  "accel_mean": 0.6263299489411539,
+                  "accel_p95": 0.41149889026354086,
+                  "jerk_mean": 0.41902181293669555,
+                  "jerk_p95": 0.4500778130847259
+                }
+              }
+            },
+            "transition": {
+              "N": 644,
+              "good_count": 268,
+              "native_good_count": 253,
+              "coverage": 0.4161490683229814,
+              "native_coverage": 0.39285714285714285,
+              "minADE": 0.2776732382344982,
+              "minFDE": 0.50449133176214,
+              "native_minADE": 0.2267221025231059,
+              "native_minFDE": 0.3767711638589841,
+              "mean_minJ": 1.5518543339156252,
+              "native_mean_minJ": 1.2639272633717755,
+              "conditional_lost_frac": 0.07509881422924901,
+              "motion_gate": {
+                "status": "FAIL",
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.019429068111641,
+                  "accel_mean": 0.6349581708089578,
+                  "accel_p95": 0.41407907174821196,
+                  "jerk_mean": 0.4168199224595439,
+                  "jerk_p95": 0.4751209460975395
+                }
+              }
+            },
+            "change": {
+              "N": 700,
+              "good_count": 247,
+              "native_good_count": 243,
+              "coverage": 0.35285714285714287,
+              "native_coverage": 0.34714285714285714,
+              "minADE": 0.32893760029243724,
+              "minFDE": 0.6290124314752117,
+              "native_minADE": 0.24593220186702508,
+              "native_minFDE": 0.4319653800928944,
+              "mean_minJ": 1.8676588838690784,
+              "native_mean_minJ": 1.3984594062261457,
+              "conditional_lost_frac": 0.10699588477366255,
+              "motion_gate": {
+                "status": "FAIL",
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.0159627655044245,
+                  "accel_mean": 0.626280509342527,
+                  "accel_p95": 0.4060810295328118,
+                  "jerk_mean": 0.4173808530729243,
+                  "jerk_p95": 0.46074084976564245
+                }
+              }
+            }
+          },
+          "W": {
+            "pass_": false,
+            "clauses": {
+              "change_cov": {
+                "need": 257,
+                "got": 247,
+                "pass_": false
+              },
+              "overall_cov_ge_native": {
+                "pass_": true,
+                "good": 1605,
+                "native": 1490
+              },
+              "overall_lost": {
+                "pass_": false,
+                "frac": 0.04697986577181208,
+                "lost": 70,
+                "native_good": 1490
+              },
+              "stable_cov_ge_native": {
+                "pass_": true,
+                "good": 1090,
+                "native": 994
+              },
+              "stable_lost": {
+                "pass_": false,
+                "frac": 0.025150905432595575,
+                "lost": 25,
+                "native_good": 994
+              },
+              "transition_cov_ge_native": {
+                "pass_": true,
+                "good": 268,
+                "native": 253
+              },
+              "transition_lost": {
+                "pass_": false,
+                "frac": 0.07509881422924901,
+                "lost": 19,
+                "native_good": 253
+              },
+              "change_lost": {
+                "pass_": false,
+                "frac": 0.10699588477366255
+              },
+              "change_ade": {
+                "pass_": false,
+                "got": 0.32893760029243724,
+                "need": 0.23363559177367382
+              },
+              "change_fde": {
+                "pass_": false,
+                "got": 0.6290124314752117,
+                "need": 0.4103671110882497
+              },
+              "overall_ade_protect": {
+                "pass_": false,
+                "got": 0.21291036162864088,
+                "lim": 0.1823813284292644
+              },
+              "overall_fde_protect": {
+                "pass_": false,
+                "got": 0.3830449421273546,
+                "lim": 0.3062859478776383
+              },
+              "stable_ade_protect": {
+                "pass_": false,
+                "got": 0.13282804267174866,
+                "lim": 0.13272485567604972
+              },
+              "stable_fde_protect": {
+                "pass_": false,
+                "got": 0.21992525648025238,
+                "lim": 0.21585060872547676
+              },
+              "transition_ade_protect": {
+                "pass_": false,
+                "got": 0.2776732382344982,
+                "lim": 0.22898932354833695
+              },
+              "transition_fde_protect": {
+                "pass_": false,
+                "got": 0.50449133176214,
+                "lim": 0.380538875497574
+              },
+              "overall_minJ": {
+                "pass_": false,
+                "got": 1.1936765556440923,
+                "native": 1.0126210984655022
+              },
+              "overall_motion": {
+                "pass_": false,
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.021948605666153,
+                  "accel_mean": 0.6282350275551002,
+                  "accel_p95": 0.4112405991151673,
+                  "jerk_mean": 0.41813903561614385,
+                  "jerk_p95": 0.45765409259819917
+                }
+              },
+              "stable_minJ": {
+                "pass_": false,
+                "got": 0.736051722442556,
+                "native": 0.7312347886074627
+              },
+              "stable_motion": {
+                "pass_": false,
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.0197244023303076,
+                  "accel_mean": 0.6263299489411539,
+                  "accel_p95": 0.41149889026354086,
+                  "jerk_mean": 0.41902181293669555,
+                  "jerk_p95": 0.4500778130847259
+                }
+              },
+              "transition_minJ": {
+                "pass_": false,
+                "got": 1.5518543339156252,
+                "native": 1.2639272633717755
+              },
+              "transition_motion": {
+                "pass_": false,
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.019429068111641,
+                  "accel_mean": 0.6349581708089578,
+                  "accel_p95": 0.41407907174821196,
+                  "jerk_mean": 0.4168199224595439,
+                  "jerk_p95": 0.4751209460975395
+                }
+              },
+              "change_minJ": {
+                "pass_": false,
+                "got": 1.8676588838690784,
+                "native": 1.3984594062261457
+              },
+              "change_motion": {
+                "pass_": false,
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.0159627655044245,
+                  "accel_mean": 0.626280509342527,
+                  "accel_p95": 0.4060810295328118,
+                  "jerk_mean": 0.4173808530729243,
+                  "jerk_p95": 0.46074084976564245
+                }
+              }
+            }
+          },
+          "W_pass": false,
+          "wall_s": 0.2769286632537842,
+          "src": "<WORKSPACE_ROOT>\\ORIGINAL_CAL_TRANSFER_EVAL_20261019\\indices\\v1_seed43_indices.npy",
+          "indices_sha": "c681db099b99cc90a48b46d717ae04c56a0d34eabd7847762f622b82583969e3",
+          "v1_meta": {
+            "seed": 43,
+            "status": "OK",
+            "wall_s": 1.1630687713623047,
+            "hgb": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\hgb_seed43.joblib",
+            "hgb_sha": "4e98f4d9d20bdfed730110c1b89770929f44aa34d7a17e96ee0d719f2abbfee6",
+            "kin_src": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_original_CAL_seed43.npy",
+            "indices_sha": "c681db099b99cc90a48b46d717ae04c56a0d34eabd7847762f622b82583969e3",
+            "sklearn_note": "astra2 sklearn for V1 HGB load only",
+            "finished_at": "2026-10-19T04:53:26+09:00"
+          },
+          "note": "V1 indices selected under astra2 (sklearn 1.4) then evaluated here; no GT in select"
+        },
+        "K1_S": {
+          "eval": {
+            "overall": {
+              "N": 2879,
+              "good_count": 1517,
+              "native_good_count": 1490,
+              "coverage": 0.5269190691212227,
+              "native_coverage": 0.5175408127822161,
+              "minADE": 0.180793349693702,
+              "minFDE": 0.3039985378461132,
+              "native_minADE": 0.18057557270224198,
+              "native_minFDE": 0.30325341374023596,
+              "mean_minJ": 1.0143539091862541,
+              "native_mean_minJ": 1.0126210984655022,
+              "conditional_lost_frac": 0.004697986577181208,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.009579576719475,
+                  "accel_mean": 0.9139545151728098,
+                  "accel_p95": 0.8426746788097425,
+                  "jerk_mean": 0.8629138611725199,
+                  "jerk_p95": 0.9020221975464064
+                }
+              }
+            },
+            "stable": {
+              "N": 1535,
+              "good_count": 1011,
+              "native_good_count": 994,
+              "coverage": 0.6586319218241042,
+              "native_coverage": 0.647557003257329,
+              "minADE": 0.1279428974162512,
+              "minFDE": 0.20695531730376004,
+              "native_minADE": 0.13141074819410864,
+              "native_minFDE": 0.21371347398562054,
+              "mean_minJ": 0.7127672016821152,
+              "native_mean_minJ": 0.7312347886074627,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0091954300371402,
+                  "accel_mean": 0.9070503922244739,
+                  "accel_p95": 0.8206862852388809,
+                  "jerk_mean": 0.8503106625709953,
+                  "jerk_p95": 0.8946803893730898
+                }
+              }
+            },
+            "transition": {
+              "N": 644,
+              "good_count": 254,
+              "native_good_count": 253,
+              "coverage": 0.3944099378881988,
+              "native_coverage": 0.39285714285714285,
+              "minADE": 0.22676823668767204,
+              "minFDE": 0.38010724116568806,
+              "native_minADE": 0.2267221025231059,
+              "native_minFDE": 0.3767711638589841,
+              "mean_minJ": 1.2697944138499417,
+              "native_mean_minJ": 1.2639272633717755,
+              "conditional_lost_frac": 0.007905138339920948,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0094457180595717,
+                  "accel_mean": 0.9300107272995423,
+                  "accel_p95": 0.8905652793618383,
+                  "jerk_mean": 0.8902845249800098,
+                  "jerk_p95": 0.9107841442560701
+                }
+              }
+            },
+            "change": {
+              "N": 700,
+              "good_count": 252,
+              "native_good_count": 243,
+              "coverage": 0.36,
+              "native_coverage": 0.34714285714285714,
+              "minADE": 0.25438994543908805,
+              "minFDE": 0.44678045012426437,
+              "native_minADE": 0.24593220186702508,
+              "native_minFDE": 0.4319653800928944,
+              "mean_minJ": 1.4406852106368808,
+              "native_mean_minJ": 1.3984594062261457,
+              "conditional_lost_frac": 0.0205761316872428,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0064886304726761,
+                  "accel_mean": 0.9145676784120661,
+                  "accel_p95": 0.8404212075049757,
+                  "jerk_mean": 0.8658295650937105,
+                  "jerk_p95": 0.9099767179415107
+                }
+              }
+            }
+          },
+          "W": {
+            "pass_": false,
+            "clauses": {
+              "change_cov": {
+                "need": 257,
+                "got": 252,
+                "pass_": false
+              },
+              "overall_cov_ge_native": {
+                "pass_": true,
+                "good": 1517,
+                "native": 1490
+              },
+              "overall_lost": {
+                "pass_": true,
+                "frac": 0.004697986577181208,
+                "lost": 7,
+                "native_good": 1490
+              },
+              "stable_cov_ge_native": {
+                "pass_": true,
+                "good": 1011,
+                "native": 994
+              },
+              "stable_lost": {
+                "pass_": true,
+                "frac": 0.0,
+                "lost": 0,
+                "native_good": 994
+              },
+              "transition_cov_ge_native": {
+                "pass_": true,
+                "good": 254,
+                "native": 253
+              },
+              "transition_lost": {
+                "pass_": true,
+                "frac": 0.007905138339920948,
+                "lost": 2,
+                "native_good": 253
+              },
+              "change_lost": {
+                "pass_": false,
+                "frac": 0.0205761316872428
+              },
+              "change_ade": {
+                "pass_": false,
+                "got": 0.25438994543908805,
+                "need": 0.23363559177367382
+              },
+              "change_fde": {
+                "pass_": false,
+                "got": 0.44678045012426437,
+                "need": 0.4103671110882497
+              },
+              "overall_ade_protect": {
+                "pass_": true,
+                "got": 0.180793349693702,
+                "lim": 0.1823813284292644
+              },
+              "overall_fde_protect": {
+                "pass_": true,
+                "got": 0.3039985378461132,
+                "lim": 0.3062859478776383
+              },
+              "stable_ade_protect": {
+                "pass_": true,
+                "got": 0.1279428974162512,
+                "lim": 0.13272485567604972
+              },
+              "stable_fde_protect": {
+                "pass_": true,
+                "got": 0.20695531730376004,
+                "lim": 0.21585060872547676
+              },
+              "transition_ade_protect": {
+                "pass_": true,
+                "got": 0.22676823668767204,
+                "lim": 0.22898932354833695
+              },
+              "transition_fde_protect": {
+                "pass_": true,
+                "got": 0.38010724116568806,
+                "lim": 0.380538875497574
+              },
+              "overall_minJ": {
+                "pass_": false,
+                "got": 1.0143539091862541,
+                "native": 1.0126210984655022
+              },
+              "overall_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.009579576719475,
+                  "accel_mean": 0.9139545151728098,
+                  "accel_p95": 0.8426746788097425,
+                  "jerk_mean": 0.8629138611725199,
+                  "jerk_p95": 0.9020221975464064
+                }
+              },
+              "stable_minJ": {
+                "pass_": true,
+                "got": 0.7127672016821152,
+                "native": 0.7312347886074627
+              },
+              "stable_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0091954300371402,
+                  "accel_mean": 0.9070503922244739,
+                  "accel_p95": 0.8206862852388809,
+                  "jerk_mean": 0.8503106625709953,
+                  "jerk_p95": 0.8946803893730898
+                }
+              },
+              "transition_minJ": {
+                "pass_": false,
+                "got": 1.2697944138499417,
+                "native": 1.2639272633717755
+              },
+              "transition_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0094457180595717,
+                  "accel_mean": 0.9300107272995423,
+                  "accel_p95": 0.8905652793618383,
+                  "jerk_mean": 0.8902845249800098,
+                  "jerk_p95": 0.9107841442560701
+                }
+              },
+              "change_minJ": {
+                "pass_": false,
+                "got": 1.4406852106368808,
+                "native": 1.3984594062261457
+              },
+              "change_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0064886304726761,
+                  "accel_mean": 0.9145676784120661,
+                  "accel_p95": 0.8404212075049757,
+                  "jerk_mean": 0.8658295650937105,
+                  "jerk_p95": 0.9099767179415107
+                }
+              }
+            }
+          },
+          "W_pass": false,
+          "wall_s": 306.4801781177521,
+          "models_dir": "<WORKSPACE_ROOT>\\CANDIDATE_SET_JOINT_FEASIBILITY_EXEC_20261018\\k1_exec\\seed43\\models",
+          "indices_sha": "75687758175ef5442c5b60c0e3b3d1290573a152c11bcf3e061f4cc1838af7f6",
+          "rejects": {
+            "motion": 4143,
+            "pred_gate": 877808,
+            "no_candidate": 126
+          },
+          "n_swaps_mean": 2.2483501215699895,
+          "note": "frozen K1-S arm; same deploy as outer contract"
+        },
+        "K0_C": {
+          "eval": {
+            "overall": {
+              "N": 2879,
+              "good_count": 1753,
+              "native_good_count": 1490,
+              "coverage": 0.6088919763806877,
+              "native_coverage": 0.5175408127822161,
+              "minADE": 0.16303032294829384,
+              "minFDE": 0.25948358923158094,
+              "native_minADE": 0.18057557270224198,
+              "native_minFDE": 0.30325341374023596,
+              "mean_minJ": 0.8957244271506761,
+              "native_mean_minJ": 1.0126210984655022,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0017224248875953,
+                  "accel_mean": 0.9937455570631416,
+                  "accel_p95": 0.975746050046286,
+                  "jerk_mean": 0.9829004988706485,
+                  "jerk_p95": 0.9912673596389341
+                }
+              }
+            },
+            "stable": {
+              "N": 1535,
+              "good_count": 1135,
+              "native_good_count": 994,
+              "coverage": 0.739413680781759,
+              "native_coverage": 0.647557003257329,
+              "minADE": 0.1149669717351168,
+              "minFDE": 0.1737604516595297,
+              "native_minADE": 0.13141074819410864,
+              "native_minFDE": 0.21371347398562054,
+              "mean_minJ": 0.6243278258023888,
+              "native_mean_minJ": 0.7312347886074627,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.003280982379132,
+                  "accel_mean": 0.9920871331383654,
+                  "accel_p95": 0.9725484798396385,
+                  "jerk_mean": 0.9848230136962165,
+                  "jerk_p95": 0.9921111021768221
+                }
+              }
+            },
+            "transition": {
+              "N": 644,
+              "good_count": 321,
+              "native_good_count": 253,
+              "coverage": 0.4984472049689441,
+              "native_coverage": 0.39285714285714285,
+              "minADE": 0.2039844628022081,
+              "minFDE": 0.32918660400931987,
+              "native_minADE": 0.2267221025231059,
+              "native_minFDE": 0.3767711638589841,
+              "mean_minJ": 1.121882282369537,
+              "native_mean_minJ": 1.2639272633717755,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0009390368564293,
+                  "accel_mean": 0.9938692428672395,
+                  "accel_p95": 0.9764155603680496,
+                  "jerk_mean": 0.9790837664016466,
+                  "jerk_p95": 0.986995234618314
+                }
+              }
+            },
+            "change": {
+              "N": 700,
+              "good_count": 297,
+              "native_good_count": 243,
+              "coverage": 0.42428571428571427,
+              "native_coverage": 0.34714285714285714,
+              "minADE": 0.23074857730015944,
+              "minFDE": 0.38333541016905914,
+              "native_minADE": 0.24593220186702508,
+              "native_minFDE": 0.4319653800928944,
+              "mean_minJ": 1.2827931761630689,
+              "native_mean_minJ": 1.3984594062261457,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 0.998977220578139,
+                  "accel_mean": 0.9973508282480192,
+                  "accel_p95": 0.9771547317573038,
+                  "jerk_mean": 0.9821237135036907,
+                  "jerk_p95": 0.9914335113652241
+                }
+              }
+            }
+          },
+          "W": {
+            "pass_": true,
+            "clauses": {
+              "change_cov": {
+                "need": 257,
+                "got": 297,
+                "pass_": true
+              },
+              "overall_cov_ge_native": {
+                "pass_": true,
+                "good": 1753,
+                "native": 1490
+              },
+              "overall_lost": {
+                "pass_": true,
+                "frac": 0.0,
+                "lost": 0,
+                "native_good": 1490
+              },
+              "stable_cov_ge_native": {
+                "pass_": true,
+                "good": 1135,
+                "native": 994
+              },
+              "stable_lost": {
+                "pass_": true,
+                "frac": 0.0,
+                "lost": 0,
+                "native_good": 994
+              },
+              "transition_cov_ge_native": {
+                "pass_": true,
+                "good": 321,
+                "native": 253
+              },
+              "transition_lost": {
+                "pass_": true,
+                "frac": 0.0,
+                "lost": 0,
+                "native_good": 253
+              },
+              "change_lost": {
+                "pass_": true,
+                "frac": 0.0
+              },
+              "change_ade": {
+                "pass_": true,
+                "got": 0.23074857730015944,
+                "need": 0.23363559177367382
+              },
+              "change_fde": {
+                "pass_": true,
+                "got": 0.38333541016905914,
+                "need": 0.4103671110882497
+              },
+              "overall_ade_protect": {
+                "pass_": true,
+                "got": 0.16303032294829384,
+                "lim": 0.1823813284292644
+              },
+              "overall_fde_protect": {
+                "pass_": true,
+                "got": 0.25948358923158094,
+                "lim": 0.3062859478776383
+              },
+              "stable_ade_protect": {
+                "pass_": true,
+                "got": 0.1149669717351168,
+                "lim": 0.13272485567604972
+              },
+              "stable_fde_protect": {
+                "pass_": true,
+                "got": 0.1737604516595297,
+                "lim": 0.21585060872547676
+              },
+              "transition_ade_protect": {
+                "pass_": true,
+                "got": 0.2039844628022081,
+                "lim": 0.22898932354833695
+              },
+              "transition_fde_protect": {
+                "pass_": true,
+                "got": 0.32918660400931987,
+                "lim": 0.380538875497574
+              },
+              "overall_minJ": {
+                "pass_": true,
+                "got": 0.8957244271506761,
+                "native": 1.0126210984655022
+              },
+              "overall_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0017224248875953,
+                  "accel_mean": 0.9937455570631416,
+                  "accel_p95": 0.975746050046286,
+                  "jerk_mean": 0.9829004988706485,
+                  "jerk_p95": 0.9912673596389341
+                }
+              },
+              "stable_minJ": {
+                "pass_": true,
+                "got": 0.6243278258023888,
+                "native": 0.7312347886074627
+              },
+              "stable_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.003280982379132,
+                  "accel_mean": 0.9920871331383654,
+                  "accel_p95": 0.9725484798396385,
+                  "jerk_mean": 0.9848230136962165,
+                  "jerk_p95": 0.9921111021768221
+                }
+              },
+              "transition_minJ": {
+                "pass_": true,
+                "got": 1.121882282369537,
+                "native": 1.2639272633717755
+              },
+              "transition_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0009390368564293,
+                  "accel_mean": 0.9938692428672395,
+                  "accel_p95": 0.9764155603680496,
+                  "jerk_mean": 0.9790837664016466,
+                  "jerk_p95": 0.986995234618314
+                }
+              },
+              "change_minJ": {
+                "pass_": true,
+                "got": 1.2827931761630689,
+                "native": 1.3984594062261457
+              },
+              "change_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 0.998977220578139,
+                  "accel_mean": 0.9973508282480192,
+                  "accel_p95": 0.9771547317573038,
+                  "jerk_mean": 0.9821237135036907,
+                  "jerk_p95": 0.9914335113652241
+                }
+              }
+            }
+          },
+          "W_pass": true,
+          "wall_s": 533.054075717926,
+          "tag": "ORACLE_DIAGNOSTIC_ONLY",
+          "n_swaps_mean": 0.48072247308093086,
+          "reject_totals": {
+            "motion": 563365,
+            "monotone": 33912,
+            "no_positive": 1029024
+          },
+          "indices_sha": "9feac4f0945f8df0fd80f7800f2695c9b492b19eaba9becf0c2419643229abea",
+          "note": "GT-using greedy policy upper bound; NOT deployable; ORACLE_DIAGNOSTIC_ONLY"
+        }
+      },
+      "finished_at": "2026-10-19T05:22:11+09:00",
+      "BREAKTHROUGH": false,
+      "note": "Transfer point-metrics only; track CI BLOCKED by identity placeholder"
+    },
+    {
+      "seed": 44,
+      "split": "original_CAL",
+      "N": 2879,
+      "kin_src": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_original_CAL_seed44.npy",
+      "kin_sha": "c615e23364f14489dab5ae75a152e27a646b872a254ff8a210fc2133fa2c7c7a",
+      "identity": {
+        "N": 2879,
+        "n_unique_track_key": 1,
+        "n_unique_sequence": 1,
+        "n_unique_pedestrian_id": 1,
+        "all_track_placeholder": true,
+        "track_ci_status": "BLOCKED_IDENTITY",
+        "note": "original_CAL rows sit past n_id=25912; loader fills sequence='?', ped=-1. Cannot forge track/hierarchical CI. Point metrics still valid under GT."
+      },
+      "ports": {
+        "native20": {
+          "eval": {
+            "overall": {
+              "N": 2879,
+              "good_count": 1490,
+              "native_good_count": 1490,
+              "coverage": 0.5175408127822161,
+              "native_coverage": 0.5175408127822161,
+              "minADE": 0.18057557270224198,
+              "minFDE": 0.30325341374023596,
+              "native_minADE": 0.18057557270224198,
+              "native_minFDE": 0.30325341374023596,
+              "mean_minJ": 1.0126210984655022,
+              "native_mean_minJ": 1.0126210984655022,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              }
+            },
+            "stable": {
+              "N": 1535,
+              "good_count": 994,
+              "native_good_count": 994,
+              "coverage": 0.647557003257329,
+              "native_coverage": 0.647557003257329,
+              "minADE": 0.13141074819410864,
+              "minFDE": 0.21371347398562054,
+              "native_minADE": 0.13141074819410864,
+              "native_minFDE": 0.21371347398562054,
+              "mean_minJ": 0.7312347886074627,
+              "native_mean_minJ": 0.7312347886074627,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              }
+            },
+            "transition": {
+              "N": 644,
+              "good_count": 253,
+              "native_good_count": 253,
+              "coverage": 0.39285714285714285,
+              "native_coverage": 0.39285714285714285,
+              "minADE": 0.2267221025231059,
+              "minFDE": 0.3767711638589841,
+              "native_minADE": 0.2267221025231059,
+              "native_minFDE": 0.3767711638589841,
+              "mean_minJ": 1.2639272633717755,
+              "native_mean_minJ": 1.2639272633717755,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              }
+            },
+            "change": {
+              "N": 700,
+              "good_count": 243,
+              "native_good_count": 243,
+              "coverage": 0.34714285714285714,
+              "native_coverage": 0.34714285714285714,
+              "minADE": 0.24593220186702508,
+              "minFDE": 0.4319653800928944,
+              "native_minADE": 0.24593220186702508,
+              "native_minFDE": 0.4319653800928944,
+              "mean_minJ": 1.3984594062261457,
+              "native_mean_minJ": 1.3984594062261457,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              }
+            }
+          },
+          "W": {
+            "pass_": false,
+            "clauses": {
+              "change_cov": {
+                "need": 257,
+                "got": 243,
+                "pass_": false
+              },
+              "overall_cov_ge_native": {
+                "pass_": true,
+                "good": 1490,
+                "native": 1490
+              },
+              "overall_lost": {
+                "pass_": true,
+                "frac": 0.0,
+                "lost": 0,
+                "native_good": 1490
+              },
+              "stable_cov_ge_native": {
+                "pass_": true,
+                "good": 994,
+                "native": 994
+              },
+              "stable_lost": {
+                "pass_": true,
+                "frac": 0.0,
+                "lost": 0,
+                "native_good": 994
+              },
+              "transition_cov_ge_native": {
+                "pass_": true,
+                "good": 253,
+                "native": 253
+              },
+              "transition_lost": {
+                "pass_": true,
+                "frac": 0.0,
+                "lost": 0,
+                "native_good": 253
+              },
+              "change_lost": {
+                "pass_": true,
+                "frac": 0.0
+              },
+              "change_ade": {
+                "pass_": false,
+                "got": 0.24593220186702508,
+                "need": 0.23363559177367382
+              },
+              "change_fde": {
+                "pass_": false,
+                "got": 0.4319653800928944,
+                "need": 0.4103671110882497
+              },
+              "overall_ade_protect": {
+                "pass_": true,
+                "got": 0.18057557270224198,
+                "lim": 0.1823813284292644
+              },
+              "overall_fde_protect": {
+                "pass_": true,
+                "got": 0.30325341374023596,
+                "lim": 0.3062859478776383
+              },
+              "stable_ade_protect": {
+                "pass_": true,
+                "got": 0.13141074819410864,
+                "lim": 0.13272485567604972
+              },
+              "stable_fde_protect": {
+                "pass_": true,
+                "got": 0.21371347398562054,
+                "lim": 0.21585060872547676
+              },
+              "transition_ade_protect": {
+                "pass_": true,
+                "got": 0.2267221025231059,
+                "lim": 0.22898932354833695
+              },
+              "transition_fde_protect": {
+                "pass_": true,
+                "got": 0.3767711638589841,
+                "lim": 0.380538875497574
+              },
+              "overall_minJ": {
+                "pass_": true,
+                "got": 1.0126210984655022,
+                "native": 1.0126210984655022
+              },
+              "overall_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              },
+              "stable_minJ": {
+                "pass_": true,
+                "got": 0.7312347886074627,
+                "native": 0.7312347886074627
+              },
+              "stable_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              },
+              "transition_minJ": {
+                "pass_": true,
+                "got": 1.2639272633717755,
+                "native": 1.2639272633717755
+              },
+              "transition_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              },
+              "change_minJ": {
+                "pass_": true,
+                "got": 1.3984594062261457,
+                "native": 1.3984594062261457
+              },
+              "change_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0,
+                  "accel_mean": 1.0,
+                  "accel_p95": 1.0,
+                  "jerk_mean": 1.0,
+                  "jerk_p95": 1.0
+                }
+              }
+            }
+          },
+          "W_pass": false,
+          "wall_s": 0.30452609062194824
+        },
+        "v1_cond_boost_11_9": {
+          "eval": {
+            "overall": {
+              "N": 2879,
+              "good_count": 1611,
+              "native_good_count": 1490,
+              "coverage": 0.5595692948940605,
+              "native_coverage": 0.5175408127822161,
+              "minADE": 0.2126711101642693,
+              "minFDE": 0.3824560665041742,
+              "native_minADE": 0.18057557270224198,
+              "native_minFDE": 0.30325341374023596,
+              "mean_minJ": 1.1927010084588308,
+              "native_mean_minJ": 1.0126210984655022,
+              "conditional_lost_frac": 0.04832214765100671,
+              "motion_gate": {
+                "status": "FAIL",
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.0175719274221153,
+                  "accel_mean": 0.6313290236706675,
+                  "accel_p95": 0.4167151345155691,
+                  "jerk_mean": 0.41883130129363266,
+                  "jerk_p95": 0.4573351546153714
+                }
+              }
+            },
+            "stable": {
+              "N": 1535,
+              "good_count": 1091,
+              "native_good_count": 994,
+              "coverage": 0.7107491856677525,
+              "native_coverage": 0.647557003257329,
+              "minADE": 0.13388490891484517,
+              "minFDE": 0.221359294340337,
+              "native_minADE": 0.13141074819410864,
+              "native_minFDE": 0.21371347398562054,
+              "mean_minJ": 0.7428312540365793,
+              "native_mean_minJ": 0.7312347886074627,
+              "conditional_lost_frac": 0.026156941649899398,
+              "motion_gate": {
+                "status": "FAIL",
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.0145066066948778,
+                  "accel_mean": 0.6304388238501305,
+                  "accel_p95": 0.41916685510754664,
+                  "jerk_mean": 0.418544501154159,
+                  "jerk_p95": 0.4498541791836492
+                }
+              }
+            },
+            "transition": {
+              "N": 644,
+              "good_count": 268,
+              "native_good_count": 253,
+              "coverage": 0.4161490683229814,
+              "native_coverage": 0.39285714285714285,
+              "minADE": 0.27504761159723895,
+              "minFDE": 0.49681049185907744,
+              "native_minADE": 0.2267221025231059,
+              "native_minFDE": 0.3767711638589841,
+              "mean_minJ": 1.5341809750653008,
+              "native_mean_minJ": 1.2639272633717755,
+              "conditional_lost_frac": 0.08300395256916997,
+              "motion_gate": {
+                "status": "FAIL",
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.0191862911391703,
+                  "accel_mean": 0.6355674683172756,
+                  "accel_p95": 0.41820301255220477,
+                  "jerk_mean": 0.4187257223876419,
+                  "jerk_p95": 0.4738282013920705
+                }
+              }
+            },
+            "change": {
+              "N": 700,
+              "good_count": 252,
+              "native_good_count": 243,
+              "coverage": 0.36,
+              "native_coverage": 0.34714285714285714,
+              "minADE": 0.3280516130143171,
+              "minFDE": 0.6305122027083633,
+              "native_minADE": 0.24593220186702508,
+              "native_minFDE": 0.4319653800928944,
+              "mean_minJ": 1.8650395435211011,
+              "native_mean_minJ": 1.3984594062261457,
+              "conditional_lost_frac": 0.102880658436214,
+              "motion_gate": {
+                "status": "FAIL",
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.011437451411576,
+                  "accel_mean": 0.629399695388799,
+                  "accel_p95": 0.4066027222910959,
+                  "jerk_mean": 0.41957238994968793,
+                  "jerk_p95": 0.461237747577381
+                }
+              }
+            }
+          },
+          "W": {
+            "pass_": false,
+            "clauses": {
+              "change_cov": {
+                "need": 257,
+                "got": 252,
+                "pass_": false
+              },
+              "overall_cov_ge_native": {
+                "pass_": true,
+                "good": 1611,
+                "native": 1490
+              },
+              "overall_lost": {
+                "pass_": false,
+                "frac": 0.04832214765100671,
+                "lost": 72,
+                "native_good": 1490
+              },
+              "stable_cov_ge_native": {
+                "pass_": true,
+                "good": 1091,
+                "native": 994
+              },
+              "stable_lost": {
+                "pass_": false,
+                "frac": 0.026156941649899398,
+                "lost": 26,
+                "native_good": 994
+              },
+              "transition_cov_ge_native": {
+                "pass_": true,
+                "good": 268,
+                "native": 253
+              },
+              "transition_lost": {
+                "pass_": false,
+                "frac": 0.08300395256916997,
+                "lost": 21,
+                "native_good": 253
+              },
+              "change_lost": {
+                "pass_": false,
+                "frac": 0.102880658436214
+              },
+              "change_ade": {
+                "pass_": false,
+                "got": 0.3280516130143171,
+                "need": 0.23363559177367382
+              },
+              "change_fde": {
+                "pass_": false,
+                "got": 0.6305122027083633,
+                "need": 0.4103671110882497
+              },
+              "overall_ade_protect": {
+                "pass_": false,
+                "got": 0.2126711101642693,
+                "lim": 0.1823813284292644
+              },
+              "overall_fde_protect": {
+                "pass_": false,
+                "got": 0.3824560665041742,
+                "lim": 0.3062859478776383
+              },
+              "stable_ade_protect": {
+                "pass_": false,
+                "got": 0.13388490891484517,
+                "lim": 0.13272485567604972
+              },
+              "stable_fde_protect": {
+                "pass_": false,
+                "got": 0.221359294340337,
+                "lim": 0.21585060872547676
+              },
+              "transition_ade_protect": {
+                "pass_": false,
+                "got": 0.27504761159723895,
+                "lim": 0.22898932354833695
+              },
+              "transition_fde_protect": {
+                "pass_": false,
+                "got": 0.49681049185907744,
+                "lim": 0.380538875497574
+              },
+              "overall_minJ": {
+                "pass_": false,
+                "got": 1.1927010084588308,
+                "native": 1.0126210984655022
+              },
+              "overall_motion": {
+                "pass_": false,
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.0175719274221153,
+                  "accel_mean": 0.6313290236706675,
+                  "accel_p95": 0.4167151345155691,
+                  "jerk_mean": 0.41883130129363266,
+                  "jerk_p95": 0.4573351546153714
+                }
+              },
+              "stable_minJ": {
+                "pass_": false,
+                "got": 0.7428312540365793,
+                "native": 0.7312347886074627
+              },
+              "stable_motion": {
+                "pass_": false,
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.0145066066948778,
+                  "accel_mean": 0.6304388238501305,
+                  "accel_p95": 0.41916685510754664,
+                  "jerk_mean": 0.418544501154159,
+                  "jerk_p95": 0.4498541791836492
+                }
+              },
+              "transition_minJ": {
+                "pass_": false,
+                "got": 1.5341809750653008,
+                "native": 1.2639272633717755
+              },
+              "transition_motion": {
+                "pass_": false,
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.0191862911391703,
+                  "accel_mean": 0.6355674683172756,
+                  "accel_p95": 0.41820301255220477,
+                  "jerk_mean": 0.4187257223876419,
+                  "jerk_p95": 0.4738282013920705
+                }
+              },
+              "change_minJ": {
+                "pass_": false,
+                "got": 1.8650395435211011,
+                "native": 1.3984594062261457
+              },
+              "change_motion": {
+                "pass_": false,
+                "fails": [
+                  "speed_p95"
+                ],
+                "ratios": {
+                  "speed_p95": 1.011437451411576,
+                  "accel_mean": 0.629399695388799,
+                  "accel_p95": 0.4066027222910959,
+                  "jerk_mean": 0.41957238994968793,
+                  "jerk_p95": 0.461237747577381
+                }
+              }
+            }
+          },
+          "W_pass": false,
+          "wall_s": 0.30063486099243164,
+          "src": "<WORKSPACE_ROOT>\\ORIGINAL_CAL_TRANSFER_EVAL_20261019\\indices\\v1_seed44_indices.npy",
+          "indices_sha": "04f6143c95c3c970463ce32e7c05817a8a0628060b75756b87103925893fe786",
+          "v1_meta": {
+            "seed": 44,
+            "status": "OK",
+            "wall_s": 1.1701455116271973,
+            "hgb": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\hgb_seed44.joblib",
+            "hgb_sha": "cb61fa481322b72fa6b63ebd1e3760c2505bbdde78d5f37f1e1431ed371e2797",
+            "kin_src": "<WORKSPACE_ROOT>\\COMPLEMENTARY_POOL_VALIDATION_20261018\\artifacts\\v1\\kin_original_CAL_seed44.npy",
+            "indices_sha": "04f6143c95c3c970463ce32e7c05817a8a0628060b75756b87103925893fe786",
+            "sklearn_note": "astra2 sklearn for V1 HGB load only",
+            "finished_at": "2026-10-19T04:53:27+09:00"
+          },
+          "note": "V1 indices selected under astra2 (sklearn 1.4) then evaluated here; no GT in select"
+        },
+        "K1_S": {
+          "eval": {
+            "overall": {
+              "N": 2879,
+              "good_count": 1511,
+              "native_good_count": 1490,
+              "coverage": 0.5248350121569989,
+              "native_coverage": 0.5175408127822161,
+              "minADE": 0.18212929307302086,
+              "minFDE": 0.3059278717739273,
+              "native_minADE": 0.18057557270224198,
+              "native_minFDE": 0.30325341374023596,
+              "mean_minJ": 1.0187869503639648,
+              "native_mean_minJ": 1.0126210984655022,
+              "conditional_lost_frac": 0.004697986577181208,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0091632432494584,
+                  "accel_mean": 0.8898974736297661,
+                  "accel_p95": 0.808864493600568,
+                  "jerk_mean": 0.827249319021316,
+                  "jerk_p95": 0.8711304999906351
+                }
+              }
+            },
+            "stable": {
+              "N": 1535,
+              "good_count": 1011,
+              "native_good_count": 994,
+              "coverage": 0.6586319218241042,
+              "native_coverage": 0.647557003257329,
+              "minADE": 0.1290082608971514,
+              "minFDE": 0.2098049643842752,
+              "native_minADE": 0.13141074819410864,
+              "native_minFDE": 0.21371347398562054,
+              "mean_minJ": 0.7178524115965179,
+              "native_mean_minJ": 0.7312347886074627,
+              "conditional_lost_frac": 0.001006036217303823,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0095163424198723,
+                  "accel_mean": 0.8742152945085149,
+                  "accel_p95": 0.7758011006706916,
+                  "jerk_mean": 0.8020945877184733,
+                  "jerk_p95": 0.8518447299120057
+                }
+              }
+            },
+            "transition": {
+              "N": 644,
+              "good_count": 255,
+              "native_good_count": 253,
+              "coverage": 0.39596273291925466,
+              "native_coverage": 0.39285714285714285,
+              "minADE": 0.22797390324374403,
+              "minFDE": 0.38108438247115134,
+              "native_minADE": 0.2267221025231059,
+              "native_minFDE": 0.3767711638589841,
+              "mean_minJ": 1.2730936985341452,
+              "native_mean_minJ": 1.2639272633717755,
+              "conditional_lost_frac": 0.007905138339920948,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0092857315036803,
+                  "accel_mean": 0.9196704843226243,
+                  "accel_p95": 0.8765616296018034,
+                  "jerk_mean": 0.8755383627510154,
+                  "jerk_p95": 0.9027040785436745
+                }
+              }
+            },
+            "change": {
+              "N": 700,
+              "good_count": 245,
+              "native_good_count": 243,
+              "coverage": 0.35,
+              "native_coverage": 0.34714285714285714,
+              "minADE": 0.256439086558755,
+              "minFDE": 0.447567685994075,
+              "native_minADE": 0.24593220186702508,
+              "native_minFDE": 0.4319653800928944,
+              "mean_minJ": 1.444731194916015,
+              "native_mean_minJ": 1.3984594062261457,
+              "conditional_lost_frac": 0.01646090534979424,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.005802253514039,
+                  "accel_mean": 0.8974940112797362,
+                  "accel_p95": 0.8127023840631872,
+                  "jerk_mean": 0.8389415397203597,
+                  "jerk_p95": 0.8892464985858782
+                }
+              }
+            }
+          },
+          "W": {
+            "pass_": false,
+            "clauses": {
+              "change_cov": {
+                "need": 257,
+                "got": 245,
+                "pass_": false
+              },
+              "overall_cov_ge_native": {
+                "pass_": true,
+                "good": 1511,
+                "native": 1490
+              },
+              "overall_lost": {
+                "pass_": true,
+                "frac": 0.004697986577181208,
+                "lost": 7,
+                "native_good": 1490
+              },
+              "stable_cov_ge_native": {
+                "pass_": true,
+                "good": 1011,
+                "native": 994
+              },
+              "stable_lost": {
+                "pass_": true,
+                "frac": 0.001006036217303823,
+                "lost": 1,
+                "native_good": 994
+              },
+              "transition_cov_ge_native": {
+                "pass_": true,
+                "good": 255,
+                "native": 253
+              },
+              "transition_lost": {
+                "pass_": true,
+                "frac": 0.007905138339920948,
+                "lost": 2,
+                "native_good": 253
+              },
+              "change_lost": {
+                "pass_": false,
+                "frac": 0.01646090534979424
+              },
+              "change_ade": {
+                "pass_": false,
+                "got": 0.256439086558755,
+                "need": 0.23363559177367382
+              },
+              "change_fde": {
+                "pass_": false,
+                "got": 0.447567685994075,
+                "need": 0.4103671110882497
+              },
+              "overall_ade_protect": {
+                "pass_": true,
+                "got": 0.18212929307302086,
+                "lim": 0.1823813284292644
+              },
+              "overall_fde_protect": {
+                "pass_": true,
+                "got": 0.3059278717739273,
+                "lim": 0.3062859478776383
+              },
+              "stable_ade_protect": {
+                "pass_": true,
+                "got": 0.1290082608971514,
+                "lim": 0.13272485567604972
+              },
+              "stable_fde_protect": {
+                "pass_": true,
+                "got": 0.2098049643842752,
+                "lim": 0.21585060872547676
+              },
+              "transition_ade_protect": {
+                "pass_": true,
+                "got": 0.22797390324374403,
+                "lim": 0.22898932354833695
+              },
+              "transition_fde_protect": {
+                "pass_": false,
+                "got": 0.38108438247115134,
+                "lim": 0.380538875497574
+              },
+              "overall_minJ": {
+                "pass_": false,
+                "got": 1.0187869503639648,
+                "native": 1.0126210984655022
+              },
+              "overall_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0091632432494584,
+                  "accel_mean": 0.8898974736297661,
+                  "accel_p95": 0.808864493600568,
+                  "jerk_mean": 0.827249319021316,
+                  "jerk_p95": 0.8711304999906351
+                }
+              },
+              "stable_minJ": {
+                "pass_": true,
+                "got": 0.7178524115965179,
+                "native": 0.7312347886074627
+              },
+              "stable_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0095163424198723,
+                  "accel_mean": 0.8742152945085149,
+                  "accel_p95": 0.7758011006706916,
+                  "jerk_mean": 0.8020945877184733,
+                  "jerk_p95": 0.8518447299120057
+                }
+              },
+              "transition_minJ": {
+                "pass_": false,
+                "got": 1.2730936985341452,
+                "native": 1.2639272633717755
+              },
+              "transition_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0092857315036803,
+                  "accel_mean": 0.9196704843226243,
+                  "accel_p95": 0.8765616296018034,
+                  "jerk_mean": 0.8755383627510154,
+                  "jerk_p95": 0.9027040785436745
+                }
+              },
+              "change_minJ": {
+                "pass_": false,
+                "got": 1.444731194916015,
+                "native": 1.3984594062261457
+              },
+              "change_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.005802253514039,
+                  "accel_mean": 0.8974940112797362,
+                  "accel_p95": 0.8127023840631872,
+                  "jerk_mean": 0.8389415397203597,
+                  "jerk_p95": 0.8892464985858782
+                }
+              }
+            }
+          },
+          "W_pass": false,
+          "wall_s": 333.1500961780548,
+          "models_dir": "<WORKSPACE_ROOT>\\CANDIDATE_SET_JOINT_FEASIBILITY_EXEC_20261018\\k1_exec\\seed44\\models",
+          "indices_sha": "fda3771f756b25cab81b7e10d58ea489b054820d1c50d875ef43983a154f5d6d",
+          "rejects": {
+            "motion": 5033,
+            "pred_gate": 826681,
+            "no_candidate": 181
+          },
+          "n_swaps_mean": 2.6054185481069814,
+          "note": "frozen K1-S arm; same deploy as outer contract"
+        },
+        "K0_C": {
+          "eval": {
+            "overall": {
+              "N": 2879,
+              "good_count": 1767,
+              "native_good_count": 1490,
+              "coverage": 0.6137547759638764,
+              "native_coverage": 0.5175408127822161,
+              "minADE": 0.16308517489744806,
+              "minFDE": 0.25912248249488645,
+              "native_minADE": 0.18057557270224198,
+              "native_minFDE": 0.30325341374023596,
+              "mean_minJ": 0.8949512481659715,
+              "native_mean_minJ": 1.0126210984655022,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0013597211462064,
+                  "accel_mean": 0.9942230930860152,
+                  "accel_p95": 0.9760696528475779,
+                  "jerk_mean": 0.9829245617913314,
+                  "jerk_p95": 0.9906997722076343
+                }
+              }
+            },
+            "stable": {
+              "N": 1535,
+              "good_count": 1137,
+              "native_good_count": 994,
+              "coverage": 0.7407166123778501,
+              "native_coverage": 0.647557003257329,
+              "minADE": 0.11630116276275523,
+              "minFDE": 0.18037011854627277,
+              "native_minADE": 0.13141074819410864,
+              "native_minFDE": 0.21371347398562054,
+              "mean_minJ": 0.6358597146963886,
+              "native_mean_minJ": 0.7312347886074627,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.002738939067719,
+                  "accel_mean": 0.9930265417730911,
+                  "accel_p95": 0.9733138779687392,
+                  "jerk_mean": 0.9857700416200713,
+                  "jerk_p95": 0.9929905550810867
+                }
+              }
+            },
+            "transition": {
+              "N": 644,
+              "good_count": 328,
+              "native_good_count": 253,
+              "coverage": 0.5093167701863354,
+              "native_coverage": 0.39285714285714285,
+              "minADE": 0.2047456526365986,
+              "minFDE": 0.32041564851104287,
+              "native_minADE": 0.2267221025231059,
+              "native_minFDE": 0.3767711638589841,
+              "mean_minJ": 1.115435534879699,
+              "native_mean_minJ": 1.2639272633717755,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0011249626505707,
+                  "accel_mean": 0.9939267930099022,
+                  "accel_p95": 0.9753047680947188,
+                  "jerk_mean": 0.9779618383081043,
+                  "jerk_p95": 0.9840520201040261
+                }
+              }
+            },
+            "change": {
+              "N": 700,
+              "good_count": 302,
+              "native_good_count": 243,
+              "coverage": 0.43142857142857144,
+              "native_coverage": 0.34714285714285714,
+              "minADE": 0.22734819055850608,
+              "minFDE": 0.3754254535616254,
+              "native_minADE": 0.24593220186702508,
+              "native_minFDE": 0.4319653800928944,
+              "mean_minJ": 1.2602564242119276,
+              "native_mean_minJ": 1.3984594062261457,
+              "conditional_lost_frac": 0.0,
+              "motion_gate": {
+                "status": "PASS",
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 0.9980336983477889,
+                  "accel_mean": 0.9971814154371528,
+                  "accel_p95": 0.9774046283366029,
+                  "jerk_mean": 0.9811390913783642,
+                  "jerk_p95": 0.9899310302888604
+                }
+              }
+            }
+          },
+          "W": {
+            "pass_": true,
+            "clauses": {
+              "change_cov": {
+                "need": 257,
+                "got": 302,
+                "pass_": true
+              },
+              "overall_cov_ge_native": {
+                "pass_": true,
+                "good": 1767,
+                "native": 1490
+              },
+              "overall_lost": {
+                "pass_": true,
+                "frac": 0.0,
+                "lost": 0,
+                "native_good": 1490
+              },
+              "stable_cov_ge_native": {
+                "pass_": true,
+                "good": 1137,
+                "native": 994
+              },
+              "stable_lost": {
+                "pass_": true,
+                "frac": 0.0,
+                "lost": 0,
+                "native_good": 994
+              },
+              "transition_cov_ge_native": {
+                "pass_": true,
+                "good": 328,
+                "native": 253
+              },
+              "transition_lost": {
+                "pass_": true,
+                "frac": 0.0,
+                "lost": 0,
+                "native_good": 253
+              },
+              "change_lost": {
+                "pass_": true,
+                "frac": 0.0
+              },
+              "change_ade": {
+                "pass_": true,
+                "got": 0.22734819055850608,
+                "need": 0.23363559177367382
+              },
+              "change_fde": {
+                "pass_": true,
+                "got": 0.3754254535616254,
+                "need": 0.4103671110882497
+              },
+              "overall_ade_protect": {
+                "pass_": true,
+                "got": 0.16308517489744806,
+                "lim": 0.1823813284292644
+              },
+              "overall_fde_protect": {
+                "pass_": true,
+                "got": 0.25912248249488645,
+                "lim": 0.3062859478776383
+              },
+              "stable_ade_protect": {
+                "pass_": true,
+                "got": 0.11630116276275523,
+                "lim": 0.13272485567604972
+              },
+              "stable_fde_protect": {
+                "pass_": true,
+                "got": 0.18037011854627277,
+                "lim": 0.21585060872547676
+              },
+              "transition_ade_protect": {
+                "pass_": true,
+                "got": 0.2047456526365986,
+                "lim": 0.22898932354833695
+              },
+              "transition_fde_protect": {
+                "pass_": true,
+                "got": 0.32041564851104287,
+                "lim": 0.380538875497574
+              },
+              "overall_minJ": {
+                "pass_": true,
+                "got": 0.8949512481659715,
+                "native": 1.0126210984655022
+              },
+              "overall_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0013597211462064,
+                  "accel_mean": 0.9942230930860152,
+                  "accel_p95": 0.9760696528475779,
+                  "jerk_mean": 0.9829245617913314,
+                  "jerk_p95": 0.9906997722076343
+                }
+              },
+              "stable_minJ": {
+                "pass_": true,
+                "got": 0.6358597146963886,
+                "native": 0.7312347886074627
+              },
+              "stable_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.002738939067719,
+                  "accel_mean": 0.9930265417730911,
+                  "accel_p95": 0.9733138779687392,
+                  "jerk_mean": 0.9857700416200713,
+                  "jerk_p95": 0.9929905550810867
+                }
+              },
+              "transition_minJ": {
+                "pass_": true,
+                "got": 1.115435534879699,
+                "native": 1.2639272633717755
+              },
+              "transition_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 1.0011249626505707,
+                  "accel_mean": 0.9939267930099022,
+                  "accel_p95": 0.9753047680947188,
+                  "jerk_mean": 0.9779618383081043,
+                  "jerk_p95": 0.9840520201040261
+                }
+              },
+              "change_minJ": {
+                "pass_": true,
+                "got": 1.2602564242119276,
+                "native": 1.3984594062261457
+              },
+              "change_motion": {
+                "pass_": true,
+                "fails": [],
+                "ratios": {
+                  "speed_p95": 0.9980336983477889,
+                  "accel_mean": 0.9971814154371528,
+                  "accel_p95": 0.9774046283366029,
+                  "jerk_mean": 0.9811390913783642,
+                  "jerk_p95": 0.9899310302888604
+                }
+              }
+            }
+          },
+          "W_pass": true,
+          "wall_s": 509.70707726478577,
+          "tag": "ORACLE_DIAGNOSTIC_ONLY",
+          "n_swaps_mean": 0.4112539076068079,
+          "reject_totals": {
+            "motion": 560276,
+            "monotone": 33692,
+            "no_positive": 963936
+          },
+          "indices_sha": "c15a7a5678a156da8cfa19c795ba66f6c8ccaba94ae08b1fc92129f56173261b",
+          "note": "GT-using greedy policy upper bound; NOT deployable; ORACLE_DIAGNOSTIC_ONLY"
+        }
+      },
+      "finished_at": "2026-10-19T05:36:14+09:00",
+      "BREAKTHROUGH": false,
+      "note": "Transfer point-metrics only; track CI BLOCKED by identity placeholder"
+    }
+  ]
+}

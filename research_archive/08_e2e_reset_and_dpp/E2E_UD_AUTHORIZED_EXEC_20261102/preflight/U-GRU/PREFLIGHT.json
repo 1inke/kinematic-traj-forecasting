@@ -1,0 +1,92 @@
+{
+  "status": "PASS_ACTUAL_GPU_MATH_RESUME_SAVED_QA",
+  "parameters": 301618,
+  "initial_B0_all_original_weights_buffers_RNG_and_paths_exact": true,
+  "actual_production_first3_batchIDs_exact": true,
+  "three_stage_gradient_norms": [
+    {
+      "step": 1,
+      "norms": {
+        "init.weight": 0.0,
+        "cell.weight_ih": 0.0,
+        "cell.weight_hh": 0.0,
+        "cell.bias_ih": 0.0,
+        "cell.bias_hh": 0.0,
+        "norm.weight": 0.0,
+        "norm.bias": 0.0,
+        "out.weight": 0.0
+      }
+    },
+    {
+      "step": 2,
+      "norms": {
+        "init.weight": 0.0,
+        "cell.weight_ih": 0.0,
+        "cell.weight_hh": 0.0,
+        "cell.bias_ih": 0.0,
+        "cell.bias_hh": 0.0,
+        "norm.weight": 0.0,
+        "norm.bias": 0.0,
+        "out.weight": 3.655874024843797e-05
+      }
+    },
+    {
+      "step": 3,
+      "norms": {
+        "init.weight": 1.1230311125487447e-09,
+        "cell.weight_ih": 1.3723872038795548e-09,
+        "cell.weight_hh": 5.784623891003093e-10,
+        "cell.bias_ih": 1.1116959575119267e-09,
+        "cell.bias_hh": 5.522707846594699e-10,
+        "norm.weight": 7.019181347267534e-10,
+        "norm.bias": 7.015120706554967e-10,
+        "out.weight": 0.00010275979002472013
+      }
+    }
+  ],
+  "branch_math": {
+    "numpy64_value_error": 6.245004513516506e-17,
+    "functional_torch_all_parameter_gradient_error": 6.938893903907228e-18,
+    "fixed_two_epsilon_parameter_FD": [
+      {
+        "direction": 0,
+        "eps": 0.0001,
+        "error": 6.526463397493742e-13
+      },
+      {
+        "direction": 0,
+        "eps": 1e-05,
+        "error": 5.151087889565531e-14
+      },
+      {
+        "direction": 1,
+        "eps": 0.0001,
+        "error": 2.40692882291782e-14
+      },
+      {
+        "direction": 1,
+        "eps": 1e-05,
+        "error": 7.391006209833684e-14
+      }
+    ],
+    "permutation_error": null,
+    "fixture_not_production_initialization": true
+  },
+  "unchanged_full_loss_value_path_score_gradient_errors": [
+    4.440892098500626e-16,
+    6.938893903907228e-18,
+    7.806255641895632e-18
+  ],
+  "arbitrary_GT_forward_independent": true,
+  "actual_resume": {
+    "real_fit_windows": 513,
+    "epochs": 2,
+    "updates": 18,
+    "interrupt_after": 11,
+    "all_states_exact": true,
+    "not_full_fit_two_epochs": true
+  },
+  "completed_model_source_output_readers_passed": true,
+  "bad_contracts_rejected": true,
+  "saved128_complete_quality_full_original_cluster_pdist_motion": "PASS"
+}

@@ -1,0 +1,94 @@
+{
+  "status": "PARTIAL_CODE_AND_GPU8_VERIFIED_NOT_FORMAL_PREFLIGHT",
+  "at": "2026-10-26T14:45:13.025520+09:00",
+  "source_e0_digest": "52c8b317d3515d2c4dafafa1aac8cec06d1cf72ddd255592990376eecf490de8",
+  "real_windows": 256,
+  "fixture_stats_only": true,
+  "full4096_stats_NOT_CREATED": true,
+  "synthetic_loss_scoregradient": [
+    {
+      "arm": "I",
+      "scalar_error": 5.551115123125783e-17,
+      "gradient_error": 2.710505431213761e-20
+    },
+    {
+      "arm": "S",
+      "scalar_error": 0.0,
+      "gradient_error": 0.0
+    }
+  ],
+  "actual_GPU": [
+    {
+      "arm": "I",
+      "actual_GPU_batches": 8,
+      "windows": 256,
+      "initial_allzero_scores_STOP": true,
+      "first_front_zero_expected": true,
+      "all_parameter_tensors_connected": [
+        "net.0.bias",
+        "net.0.weight",
+        "net.2.bias",
+        "net.2.weight",
+        "net.4.weight"
+      ]
+    },
+    {
+      "arm": "S",
+      "actual_GPU_batches": 8,
+      "windows": 256,
+      "initial_allzero_scores_STOP": true,
+      "first_front_zero_expected": true,
+      "all_parameter_tensors_connected": [
+        "net.0.bias",
+        "net.0.weight",
+        "net.2.bias",
+        "net.2.weight",
+        "net.4.weight"
+      ]
+    }
+  ],
+  "resource": [
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 8375186227.200001,
+      "required_commit": 8375186227.200001,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 16694923264,
+        "commit": 17267974144,
+        "rss": 502628352,
+        "private": 1674342400,
+        "peak_rss": 502628352,
+        "peak_private": 1674342400
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5849803980.8,
+      "required_commit": 3712956416.0,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 15421956096,
+        "commit": 15548174336,
+        "rss": 1942601728,
+        "private": 3586330624,
+        "peak_rss": 1959235584,
+        "peak_private": 3603062784
+      }
+    }
+  ],
+  "formal_training_started": false,
+  "missing_gates": [
+    "full4096 opt-only common stats and independent statistics",
+    "fixed double FD twoeps all activity faces",
+    "I/S513 real subset2epochs full optimizer/buffers/ALLRNG EXACT",
+    "actual completed badsplit/stat/checkpoint/output branch contracts",
+    "128 actual saved fullquality cluster motion and all current sources lock",
+    "4warm32 benchmark whole pipeline RAM disk estimate"
+  ],
+  "no_old_files_deleted": true
+}

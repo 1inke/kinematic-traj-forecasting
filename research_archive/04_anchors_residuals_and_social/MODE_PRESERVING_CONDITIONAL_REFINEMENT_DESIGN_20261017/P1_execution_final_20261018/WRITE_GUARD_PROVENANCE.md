@@ -1,0 +1,3 @@
+# Pre-seal worker I/O hardening
+Before this recovery source was sealed, the independent OS worker and actual production-branch review install a bounded40x50ms PermissionError-only wrapper around owned-process os.replace. This covers report/checkpoint atomic replacements without altering values/order/RNG/loss/optimizer. It addresses the independently observed W0 transient Windows handle issue. Actual injected-transient write test is required; no persistent permission bypass, no numerical retry. Core8 science modules remain ASTexact to parent. The preflight numerical modules are unaffected; the worker is not executed during preflight.
+

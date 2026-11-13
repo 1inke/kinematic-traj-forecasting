@@ -1,0 +1,436 @@
+{
+  "experiment": "E1_student_distill_screening",
+  "created_at": "2026-10-20T22:22:46+09:00",
+  "wall_s": 17.23359203338623,
+  "seed": 42,
+  "epochs": 8,
+  "batch": 256,
+  "lr": 0.001,
+  "lambda_teach": 1.0,
+  "teacher_stats": {
+    "native_covered_frac": 0.5742239145380507,
+    "teachers_all_mean": 1.67047437728066,
+    "teachers_retain_mean": 1.017927970807552,
+    "teachers_complement_mean": 0.10915437093447565,
+    "complement_windows": 8051
+  },
+  "kin_src": "<WORKSPACE_ROOT>\\UNION_SELECTOR_K40_TO_K20_20261018\\results\\cache_pred\\kin_FIT_seed42.npy",
+  "results": {
+    "A": {
+      "eval": {
+        "overall": {
+          "N": 1856,
+          "good_count": 693,
+          "coverage": 0.3733836206896552,
+          "minADE": 0.3384906325541786,
+          "minFDE": 0.6871322009287091,
+          "rescue": 117,
+          "lost": 356,
+          "motion_gate": "FAIL"
+        },
+        "stable": {
+          "N": 978,
+          "good_count": 426,
+          "coverage": 0.43558282208588955,
+          "minADE": 0.28661095851451585,
+          "minFDE": 0.5992952099403516,
+          "rescue": 44,
+          "lost": 219,
+          "motion_gate": "FAIL"
+        },
+        "transition": {
+          "N": 381,
+          "good_count": 127,
+          "coverage": 0.3333333333333333,
+          "minADE": 0.37496274908450866,
+          "minFDE": 0.7514646470301131,
+          "rescue": 36,
+          "lost": 74,
+          "motion_gate": "FAIL"
+        },
+        "change": {
+          "N": 497,
+          "good_count": 140,
+          "coverage": 0.28169014084507044,
+          "minADE": 0.4126203001854349,
+          "minFDE": 0.8106612053994909,
+          "rescue": 37,
+          "lost": 63,
+          "motion_gate": "FAIL"
+        }
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 1.4773661068111328
+        },
+        {
+          "epoch": 2,
+          "loss": 0.6993333239748021
+        },
+        {
+          "epoch": 3,
+          "loss": 0.6816183794647404
+        },
+        {
+          "epoch": 4,
+          "loss": 0.6789886829551584
+        },
+        {
+          "epoch": 5,
+          "loss": 0.6772166254456238
+        },
+        {
+          "epoch": 6,
+          "loss": 0.6751528753470981
+        },
+        {
+          "epoch": 7,
+          "loss": 0.6651315633955218
+        },
+        {
+          "epoch": 8,
+          "loss": 0.6415677177476709
+        }
+      ],
+      "elapsed_s": 2.453498125076294,
+      "params": 57432
+    },
+    "B": {
+      "eval": {
+        "overall": {
+          "N": 1856,
+          "good_count": 785,
+          "coverage": 0.4229525862068966,
+          "minADE": 0.2652675480970543,
+          "minFDE": 0.4794738938054221,
+          "rescue": 186,
+          "lost": 333,
+          "motion_gate": "FAIL"
+        },
+        "stable": {
+          "N": 978,
+          "good_count": 487,
+          "coverage": 0.49795501022494887,
+          "minADE": 0.19827499351393157,
+          "minFDE": 0.3323179884092802,
+          "rescue": 101,
+          "lost": 215,
+          "motion_gate": "FAIL"
+        },
+        "transition": {
+          "N": 381,
+          "good_count": 153,
+          "coverage": 0.4015748031496063,
+          "minADE": 0.2801037375337779,
+          "minFDE": 0.5030530740662095,
+          "rescue": 51,
+          "lost": 63,
+          "motion_gate": "FAIL"
+        },
+        "change": {
+          "N": 497,
+          "good_count": 145,
+          "coverage": 0.2917505030181087,
+          "minADE": 0.3857225384529946,
+          "minFDE": 0.7509725010449931,
+          "rescue": 34,
+          "lost": 55,
+          "motion_gate": "FAIL"
+        }
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 2.2409239728369195
+        },
+        {
+          "epoch": 2,
+          "loss": 0.9783213696012517
+        },
+        {
+          "epoch": 3,
+          "loss": 0.9583493303859232
+        },
+        {
+          "epoch": 4,
+          "loss": 0.9567099999471119
+        },
+        {
+          "epoch": 5,
+          "loss": 0.9414593694236405
+        },
+        {
+          "epoch": 6,
+          "loss": 0.9119638447040568
+        },
+        {
+          "epoch": 7,
+          "loss": 0.8873137343004862
+        },
+        {
+          "epoch": 8,
+          "loss": 0.7344059528947173
+        }
+      ],
+      "elapsed_s": 2.7685956954956055,
+      "params": 57432
+    },
+    "C": {
+      "eval": {
+        "overall": {
+          "N": 1856,
+          "good_count": 672,
+          "coverage": 0.3620689655172414,
+          "minADE": 0.34750880511437776,
+          "minFDE": 0.6993985465579704,
+          "rescue": 107,
+          "lost": 367,
+          "motion_gate": "FAIL"
+        },
+        "stable": {
+          "N": 978,
+          "good_count": 405,
+          "coverage": 0.41411042944785276,
+          "minADE": 0.3077150293423942,
+          "minFDE": 0.635127009894859,
+          "rescue": 44,
+          "lost": 240,
+          "motion_gate": "FAIL"
+        },
+        "transition": {
+          "N": 381,
+          "good_count": 129,
+          "coverage": 0.33858267716535434,
+          "minADE": 0.37692779686441347,
+          "minFDE": 0.7572692313812168,
+          "rescue": 33,
+          "lost": 69,
+          "motion_gate": "FAIL"
+        },
+        "change": {
+          "N": 497,
+          "good_count": 138,
+          "coverage": 0.2776659959758551,
+          "minADE": 0.40326268207259985,
+          "minFDE": 0.7815088723906989,
+          "rescue": 30,
+          "lost": 58,
+          "motion_gate": "FAIL"
+        }
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 2.1389695228050827
+        },
+        {
+          "epoch": 2,
+          "loss": 0.9467894590741343
+        },
+        {
+          "epoch": 3,
+          "loss": 0.9282475688322701
+        },
+        {
+          "epoch": 4,
+          "loss": 0.9255673113785413
+        },
+        {
+          "epoch": 5,
+          "loss": 0.9241219764472227
+        },
+        {
+          "epoch": 6,
+          "loss": 0.9186269568895145
+        },
+        {
+          "epoch": 7,
+          "loss": 0.9110337654863031
+        },
+        {
+          "epoch": 8,
+          "loss": 0.8859819862092214
+        }
+      ],
+      "elapsed_s": 2.809648275375366,
+      "params": 57432
+    },
+    "D": {
+      "eval": {
+        "overall": {
+          "N": 1856,
+          "good_count": 811,
+          "coverage": 0.4369612068965517,
+          "minADE": 0.26676243756846896,
+          "minFDE": 0.49521366851701987,
+          "rescue": 174,
+          "lost": 295,
+          "motion_gate": "FAIL"
+        },
+        "stable": {
+          "N": 978,
+          "good_count": 511,
+          "coverage": 0.5224948875255624,
+          "minADE": 0.1895886586473427,
+          "minFDE": 0.32133736924136036,
+          "rescue": 93,
+          "lost": 183,
+          "motion_gate": "FAIL"
+        },
+        "transition": {
+          "N": 381,
+          "good_count": 158,
+          "coverage": 0.4146981627296588,
+          "minADE": 0.2661892385782582,
+          "minFDE": 0.4685946735498555,
+          "rescue": 43,
+          "lost": 50,
+          "motion_gate": "FAIL"
+        },
+        "change": {
+          "N": 497,
+          "good_count": 142,
+          "coverage": 0.2857142857142857,
+          "minADE": 0.41906494179408615,
+          "minFDE": 0.8577747505574317,
+          "rescue": 38,
+          "lost": 62,
+          "motion_gate": "FAIL"
+        }
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 3.1110570966374698
+        },
+        {
+          "epoch": 2,
+          "loss": 1.3839462389301174
+        },
+        {
+          "epoch": 3,
+          "loss": 1.328147950748139
+        },
+        {
+          "epoch": 4,
+          "loss": 1.3206369877050703
+        },
+        {
+          "epoch": 5,
+          "loss": 1.2653134182056913
+        },
+        {
+          "epoch": 6,
+          "loss": 1.2102135182612224
+        },
+        {
+          "epoch": 7,
+          "loss": 1.0446973068205128
+        },
+        {
+          "epoch": 8,
+          "loss": 0.8511244553880138
+        }
+      ],
+      "elapsed_s": 2.744920253753662,
+      "params": 57432
+    },
+    "E": {
+      "eval": {
+        "overall": {
+          "N": 1856,
+          "good_count": 700,
+          "coverage": 0.3771551724137931,
+          "minADE": 0.2650225662825373,
+          "minFDE": 0.507502802135837,
+          "rescue": 152,
+          "lost": 384,
+          "motion_gate": "FAIL"
+        },
+        "stable": {
+          "N": 978,
+          "good_count": 374,
+          "coverage": 0.3824130879345603,
+          "minADE": 0.2128716702069854,
+          "minFDE": 0.4025310791836529,
+          "rescue": 57,
+          "lost": 284,
+          "motion_gate": "FAIL"
+        },
+        "transition": {
+          "N": 381,
+          "good_count": 165,
+          "coverage": 0.4330708661417323,
+          "minADE": 0.2661862228417389,
+          "minFDE": 0.49850964075173904,
+          "rescue": 50,
+          "lost": 50,
+          "motion_gate": "FAIL"
+        },
+        "change": {
+          "N": 497,
+          "good_count": 161,
+          "coverage": 0.323943661971831,
+          "minADE": 0.36675339769669013,
+          "minFDE": 0.7209610305756307,
+          "rescue": 45,
+          "lost": 50,
+          "motion_gate": "FAIL"
+        }
+      },
+      "history": [
+        {
+          "epoch": 1,
+          "loss": 3.796712506005914
+        },
+        {
+          "epoch": 2,
+          "loss": 1.6181702683809047
+        },
+        {
+          "epoch": 3,
+          "loss": 1.573182745180085
+        },
+        {
+          "epoch": 4,
+          "loss": 1.56488721597276
+        },
+        {
+          "epoch": 5,
+          "loss": 1.5152248230078313
+        },
+        {
+          "epoch": 6,
+          "loss": 1.4389539011202217
+        },
+        {
+          "epoch": 7,
+          "loss": 1.2220704247480068
+        },
+        {
+          "epoch": 8,
+          "loss": 0.9762759823859403
+        }
+      ],
+      "elapsed_s": 3.31913161277771,
+      "params": 57432
+    }
+  },
+  "inputs_unchanged": true,
+  "inputs_sha_before": {
+    "REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES\\results\\cache\\train_dev\\eth_train.npz": "f8e6769c7e28b0d5ad4c108989246d6e724c078190102ae90443e62600d5a3ea",
+    "F16_OBSERVABLE_CUE_DIAGNOSIS_20261003\\labels\\train.npz": "01c8226f6bc3e7103c61f52294ac109ad2d585be2500a25d1601e08efe487efc",
+    "GENERATION_GROUPED_TRANSFER_SERIES_20261006\\identity_audit\\splits.npz": "349659306a435a3a70e65d75d08d618a2aa8bc76fca38142c3433ab5678e12e7",
+    "GENERATION_NATIVE_DECODER_SERIES\\train_encoder.npz": "f6c232e4b05e4e8db2a01c7fd0880beecd835b59352b81ba08132c8b610e87f0",
+    "UNION_SELECTOR_K40_TO_K20_20261018\\results\\cache_pred\\kin_FIT_seed42.npy": "795ce65f440dc2506f14daa8c2f5dc3a33eb24cd4c9cfae0062f364eaaa70351"
+  },
+  "inputs_sha_after": {
+    "REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES\\results\\cache\\train_dev\\eth_train.npz": "f8e6769c7e28b0d5ad4c108989246d6e724c078190102ae90443e62600d5a3ea",
+    "F16_OBSERVABLE_CUE_DIAGNOSIS_20261003\\labels\\train.npz": "01c8226f6bc3e7103c61f52294ac109ad2d585be2500a25d1601e08efe487efc",
+    "GENERATION_GROUPED_TRANSFER_SERIES_20261006\\identity_audit\\splits.npz": "349659306a435a3a70e65d75d08d618a2aa8bc76fca38142c3433ab5678e12e7",
+    "GENERATION_NATIVE_DECODER_SERIES\\train_encoder.npz": "f6c232e4b05e4e8db2a01c7fd0880beecd835b59352b81ba08132c8b610e87f0",
+    "UNION_SELECTOR_K40_TO_K20_20261018\\results\\cache_pred\\kin_FIT_seed42.npy": "795ce65f440dc2506f14daa8c2f5dc3a33eb24cd4c9cfae0062f364eaaa70351"
+  },
+  "note": "Screening on inner only; point estimates; no outer/CAL consumed."
+}

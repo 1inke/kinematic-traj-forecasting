@@ -1,0 +1,330 @@
+{
+  "status": "PASS_REAL_CURRENT_DSF_PAIRED_GRAD_RESUME_SAVED_AUDIT",
+  "at": "2026-11-06T15:37:29.370961+09:00",
+  "elapsed_seconds": 12.574759200011613,
+  "pre_source_sha": "ec48e5287e58b689dc68a27a73250f0bfa52bea237c5c318678252b552e39a37",
+  "phased_gradients": {
+    "uniform": {
+      "steps": 8,
+      "batch": 32,
+      "all_parameter_tensors_nonzero_after_phases": [
+        "net.0.bias",
+        "net.0.weight",
+        "net.2.bias",
+        "net.2.weight"
+      ]
+    },
+    "kin": {
+      "steps": 8,
+      "batch": 32,
+      "all_parameter_tensors_nonzero_after_phases": [
+        "net.0.bias",
+        "net.0.weight",
+        "net.2.bias",
+        "net.2.weight"
+      ]
+    }
+  },
+  "paired_initial_exact": true,
+  "resume": {
+    "uniform": {
+      "N": 513,
+      "epochs": 2,
+      "updates": 34,
+      "interrupt_after": 19,
+      "ALL_DSF_params_optimizer_CPU_CUDA_loader_Python_NumPy_rng_order_history_EXACT": true,
+      "not_full21719_two_epochs": true
+    },
+    "kin": {
+      "N": 513,
+      "epochs": 2,
+      "updates": 34,
+      "interrupt_after": 19,
+      "ALL_DSF_params_optimizer_CPU_CUDA_loader_Python_NumPy_rng_order_history_EXACT": true,
+      "not_full21719_two_epochs": true
+    }
+  },
+  "independent_objective": {
+    "uniform": {
+      "scalar_error": 8.881784197001252e-16,
+      "all_path_gradient_error": 8.456776945386935e-18,
+      "full_parameter_chain_error": 6.938893903907228e-18
+    },
+    "kin": {
+      "scalar_error": 8.881784197001252e-16,
+      "all_path_gradient_error": 5.551115123125783e-16,
+      "full_parameter_chain_error": 1.0408340855860843e-17
+    }
+  },
+  "fixed_FD": [
+    {
+      "arm": "uniform",
+      "direction": 0,
+      "eps": 0.0001,
+      "error": 1.0704588799571868e-12,
+      "active_faces_exact": true
+    },
+    {
+      "arm": "uniform",
+      "direction": 0,
+      "eps": 1e-05,
+      "error": 4.9920271963464075e-11,
+      "active_faces_exact": true
+    },
+    {
+      "arm": "uniform",
+      "direction": 1,
+      "eps": 0.0001,
+      "error": 1.9107534293943268e-12,
+      "active_faces_exact": true
+    },
+    {
+      "arm": "uniform",
+      "direction": 1,
+      "eps": 1e-05,
+      "error": 1.523342975200126e-11,
+      "active_faces_exact": true
+    },
+    {
+      "arm": "kin",
+      "direction": 0,
+      "eps": 0.0001,
+      "error": 1.1349834537922182e-11,
+      "active_faces_exact": true
+    },
+    {
+      "arm": "kin",
+      "direction": 0,
+      "eps": 1e-05,
+      "error": 7.352232397114106e-11,
+      "active_faces_exact": true
+    },
+    {
+      "arm": "kin",
+      "direction": 1,
+      "eps": 0.0001,
+      "error": 2.2243108654322434e-11,
+      "active_faces_exact": true
+    },
+    {
+      "arm": "kin",
+      "direction": 1,
+      "eps": 1e-05,
+      "error": 8.920432358820556e-12,
+      "active_faces_exact": true
+    }
+  ],
+  "saved128": {
+    "uniform": {
+      "review": {
+        "status": "PASS_ALL_SAVED_QKIN_EC_MARGINAL_AND_CONTROL_RECONSTRUCTION",
+        "N": 128,
+        "score_error": 0.0,
+        "EC_error": 5.329070518200751e-15,
+        "marginal_error": 3.0253577421035516e-15,
+        "raw_penalty_logq_scaled_error": 1.2362745927512523e-05,
+        "decoder64_vs_production32_max_path_error": 2.0168813925636186e-06,
+        "arithmetic_tolerance_not_scientific_threshold": true,
+        "not_whole_model_or_gradient_replay": true
+      },
+      "elapsed": 1.6636975999863353
+    },
+    "kin": {
+      "review": {
+        "status": "PASS_ALL_SAVED_QKIN_EC_MARGINAL_AND_CONTROL_RECONSTRUCTION",
+        "N": 128,
+        "score_error": 1.1102230246251565e-16,
+        "EC_error": 4.440892098500626e-15,
+        "marginal_error": 2.8033131371785203e-15,
+        "raw_penalty_logq_scaled_error": 1.269301818505805e-05,
+        "decoder64_vs_production32_max_path_error": 1.75467977658883e-06,
+        "arithmetic_tolerance_not_scientific_threshold": true,
+        "not_whole_model_or_gradient_replay": true
+      },
+      "elapsed": 1.692953399993712
+    }
+  },
+  "bad_source_split_normalization_ID_checkpoint_output_rejected": true,
+  "benchmark": {
+    "uniform": {
+      "warmup": 4,
+      "measured": 32,
+      "batch": 32,
+      "mean": 0.011896468749910127,
+      "max": 0.016283200006000698
+    },
+    "kin": {
+      "warmup": 4,
+      "measured": 32,
+      "batch": 32,
+      "mean": 0.016693853121978464,
+      "max": 0.02136019998579286
+    }
+  },
+  "planning_seconds": 5010.609308207222,
+  "ETA_seconds": [
+    3507.4265157450554,
+    7515.913962310833
+  ],
+  "all_old_parameters_buffers_exact": true,
+  "old_generator_no_grad": true,
+  "new_scientific_training_runs": 0,
+  "resource": {
+    "physical": 15264305152,
+    "commit": 5820731392,
+    "physical_total": 33943089152,
+    "commit_total": 30269841408,
+    "commit_limit": 36090572800,
+    "rss": 2068783104,
+    "private": 4518703104,
+    "peak_rss": 2070888448,
+    "peak_private": 4520878080
+  },
+  "observations": [
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "startup",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "remaining_physical": 4294967296,
+      "remaining_commit": 4294967296,
+      "warning_physical": 5583457484.8,
+      "warning_commit": 5583457484.8,
+      "admission_physical": 4634398187,
+      "admission_commit": 4634398187,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 16695672832,
+        "commit": 7754833920,
+        "physical_total": 33943089152,
+        "commit_total": 28335738880,
+        "commit_limit": 36090572800,
+        "rss": 675966976,
+        "private": 2619019264,
+        "peak_rss": 675966976,
+        "peak_private": 2619019264
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "remaining_physical": 2398040064,
+      "remaining_commit": 115748864,
+      "warning_physical": 3117452083.2000003,
+      "warning_commit": 150473523.20000002,
+      "admission_physical": 2737470955,
+      "admission_commit": 455179755,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15287635968,
+        "commit": 6112210944,
+        "physical_total": 33943089152,
+        "commit_total": 29978361856,
+        "commit_limit": 36090572800,
+        "rss": 1896927232,
+        "private": 4179218432,
+        "peak_rss": 1896927232,
+        "peak_private": 4179218432
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "remaining_physical": 2352435200,
+      "remaining_commit": 0,
+      "warning_physical": 3058165760.0,
+      "warning_commit": 0.0,
+      "admission_physical": 2691866091,
+      "admission_commit": 339430891,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15535939584,
+        "commit": 6054137856,
+        "physical_total": 33943089152,
+        "commit_total": 30036434944,
+        "commit_limit": 36090572800,
+        "rss": 1942532096,
+        "private": 4339245056,
+        "peak_rss": 1960615936,
+        "peak_private": 4341542912
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "remaining_physical": 2260054016,
+      "remaining_commit": 0,
+      "warning_physical": 2938070220.8,
+      "warning_commit": 0.0,
+      "admission_physical": 2599484907,
+      "admission_commit": 339430891,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15155105792,
+        "commit": 5770969088,
+        "physical_total": 33943089152,
+        "commit_total": 30319603712,
+        "commit_limit": 36090572800,
+        "rss": 2034913280,
+        "private": 4464463872,
+        "peak_rss": 2053894144,
+        "peak_private": 4483538944
+      }
+    },
+    {
+      "status": "PASS",
+      "severity": "NORMAL",
+      "policy": "warning_first_remaining_v3",
+      "mode": "runtime",
+      "estimate": 4294967296,
+      "factor": 1.3,
+      "remaining_physical": 2226184192,
+      "remaining_commit": 0,
+      "warning_physical": 2894039449.6,
+      "warning_commit": 0.0,
+      "admission_physical": 2565615083,
+      "admission_commit": 339430891,
+      "adaptive_system_reserve": 339430891,
+      "pressure": false,
+      "emergency": false,
+      "warnings": [],
+      "snapshot": {
+        "physical": 15264579584,
+        "commit": 5820731392,
+        "physical_total": 33943089152,
+        "commit_total": 30269841408,
+        "commit_limit": 36090572800,
+        "rss": 2068783104,
+        "private": 4518703104,
+        "peak_rss": 2070888448,
+        "peak_private": 4520878080
+      }
+    }
+  ]
+}

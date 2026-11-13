@@ -1,0 +1,31 @@
+"""Frozen paths and W-gate constants. ORACLE_DIAGNOSTIC_ONLY for K0 GT use."""
+from __future__ import annotations
+from pathlib import Path
+
+ROOT = Path(r"<WORKSPACE_ROOT>")
+EXEC = ROOT / "CANDIDATE_SET_JOINT_FEASIBILITY_EXEC_20261018"
+DESIGN = ROOT / "CANDIDATE_SET_JOINT_FEASIBILITY_DESIGN_20261018"
+CPV = ROOT / "COMPLEMENTARY_POOL_VALIDATION_20261018"
+SEL = ROOT / "UNION_SELECTOR_K40_TO_K20_20261018"
+CLAMP = ROOT / "KINEMATIC_DECODER_SPEED_CLAMP_20261018"
+
+CACHE = ROOT / "REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES/results/cache/train_dev/eth_train.npz"
+LABELS = ROOT / "F16_OBSERVABLE_CUE_DIAGNOSIS_20261003/labels/train.npz"
+SPLITS = ROOT / "GENERATION_GROUPED_TRANSFER_SERIES_20261006/identity_audit/splits.npz"
+ENCODER = ROOT / "GENERATION_NATIVE_DECODER_SERIES/train_encoder.npz"
+
+SEEDS = (42, 43, 44)
+SIZES = dict(FIT=18909, outer=1035, inner=1856, original_CAL=2879)
+N_NAT, N_KIN, K_SELECT = 20, 20, 20
+DT = 0.4
+QUALITY = (0.2, 0.4)
+MOTION_FACTOR = 1.01
+GROUPS = ("overall", "stable", "transition", "change")
+MOTION_KEYS = ("speed_p95", "accel_mean", "accel_p95", "jerk_mean", "jerk_p95")
+ORACLE_TAG = "ORACLE_DIAGNOSTIC_ONLY"
+
+# W screening (00 §5)
+W_CHANGE_COV_PP = 0.02
+W_CHANGE_ERR_IMPROVE = 0.05  # new <= native * (1 - 0.05)
+W_PROTECT_ERR_FACTOR = 1.01
+W_LOST_FRAC = 0.01

@@ -1,0 +1,41 @@
+{
+  "experiment_id": "EXP03_KINEMATIC_DAMPING_FACTORIAL",
+  "created_at": "2026-10-20T01:28:00+09:00",
+  "arms": ["A", "B"],
+  "arm_descriptions": {
+    "A": "Control: standard refiner without control damping or smoothness penalty",
+    "B": "Treatment: refiner with control energy damping (lambda=0.05) and smoothness penalty (lambda=0.10)"
+  },
+  "seeds": [42, 43, 44],
+  "epochs": 25,
+  "batch_size": 256,
+  "optimizer": {
+    "type": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "betas": [0.9, 0.999],
+    "eps": 1e-8,
+    "foreach": false
+  },
+  "loss_weights": {
+    "task": 1.0,
+    "diversity": 0.05,
+    "ctrl_energy": {
+      "A": 0.0,
+      "B": 0.05
+    },
+    "smoothness": {
+      "A": 0.0,
+      "B": 0.10
+    }
+  },
+  "splits": {
+    "FIT": 18909,
+    "outer": 1035,
+    "inner": 1856,
+    "original_CAL": 2879
+  },
+  "primary_population": "outer_change",
+  "bootstrap_draws": 20000,
+  "bootstrap_seed": 20261019
+}

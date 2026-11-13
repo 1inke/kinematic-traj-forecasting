@@ -1,0 +1,101 @@
+{
+  "status": "PASS_ACTUAL_GPU_MATH_RESUME_SAVED_QA",
+  "parameters": 302514,
+  "initial_B0_all_original_weights_buffers_RNG_and_paths_exact": true,
+  "actual_production_first3_batchIDs_exact": true,
+  "three_stage_gradient_norms": [
+    {
+      "step": 1,
+      "norms": {
+        "init.weight": 0.0,
+        "u.weight": 0.0,
+        "predict.weight": 0.0,
+        "error.weight": 0.0,
+        "alpha.weight": 0.0,
+        "alpha.bias": 0.0,
+        "beta.weight": 0.0,
+        "beta.bias": 0.0,
+        "norm.weight": 0.0,
+        "norm.bias": 0.0,
+        "out.weight": 0.0
+      }
+    },
+    {
+      "step": 2,
+      "norms": {
+        "init.weight": 0.0,
+        "u.weight": 0.0,
+        "predict.weight": 0.0,
+        "error.weight": 0.0,
+        "alpha.weight": 0.0,
+        "alpha.bias": 0.0,
+        "beta.weight": 0.0,
+        "beta.bias": 0.0,
+        "norm.weight": 0.0,
+        "norm.bias": 0.0,
+        "out.weight": 3.6861154512735084e-05
+      }
+    },
+    {
+      "step": 3,
+      "norms": {
+        "init.weight": 8.441985444029854e-10,
+        "u.weight": 1.063755195040983e-09,
+        "predict.weight": 1.5326429014805854e-09,
+        "error.weight": 1.6288431714528429e-09,
+        "alpha.weight": 3.1114985588054367e-10,
+        "alpha.bias": 1.160185558735094e-10,
+        "beta.weight": 4.3959386131220413e-10,
+        "beta.bias": 1.7889734138520907e-10,
+        "norm.weight": 7.228573295492424e-10,
+        "norm.bias": 6.911809458109985e-10,
+        "out.weight": 0.00010592179751256481
+      }
+    }
+  ],
+  "branch_math": {
+    "numpy64_value_error": 6.245004513516506e-17,
+    "functional_torch_all_parameter_gradient_error": 0.0,
+    "fixed_two_epsilon_parameter_FD": [
+      {
+        "direction": 0,
+        "eps": 0.0001,
+        "error": 6.147686526514207e-13
+      },
+      {
+        "direction": 0,
+        "eps": 1e-05,
+        "error": 1.2955608807985186e-13
+      },
+      {
+        "direction": 1,
+        "eps": 0.0001,
+        "error": 4.0320524696824123e-13
+      },
+      {
+        "direction": 1,
+        "eps": 1e-05,
+        "error": 1.1557074741652684e-13
+      }
+    ],
+    "permutation_error": null,
+    "fixture_not_production_initialization": true
+  },
+  "unchanged_full_loss_value_path_score_gradient_errors": [
+    8.881784197001252e-16,
+    6.938893903907228e-18,
+    4.9873299934333204e-18
+  ],
+  "arbitrary_GT_forward_independent": true,
+  "actual_resume": {
+    "real_fit_windows": 513,
+    "epochs": 2,
+    "updates": 18,
+    "interrupt_after": 11,
+    "all_states_exact": true,
+    "not_full_fit_two_epochs": true
+  },
+  "completed_model_source_output_readers_passed": true,
+  "bad_contracts_rejected": true,
+  "saved128_complete_quality_full_original_cluster_pdist_motion": "PASS"
+}

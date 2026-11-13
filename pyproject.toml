@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "f16-research"
+version = "0.1.0"
+description = "Versioned F16 research contracts and independently auditable evaluation"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "scipy>=1.10,<2", "psutil>=5.9"]
+
+[project.optional-dependencies]
+test = ["pytest==8.3.5"]
+training = ["torch>=2.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "."]
+addopts = "-ra"
+markers = ["integration: reads immutable local experiment assets"]

@@ -1,0 +1,12 @@
+﻿claim_id,original_claim,corrected_claim,evidence_path,verification_level,unresolved
+C01,干净的+8pp上界已证明,现有有限native/KIN池上的GT贪心可达见证；cal_v11只隔离当前划分，native上游仍暴露。,E0_STATISTICS_CORRECTED.json;EXPOSURE_AUDIT.csv,COVERAGE_RECOMPUTED_SOURCE_BOUNDED,底座逐checkpoint同期cache生产来源不完整
+C02,K0-C是数学最优上界,K0-C没有最优性证明；只能称已找到可行见证，非所有可能学生上界。,original k0/k0c_greedy.py,SOURCE_METHOD_CHECK,无全局最优性证书
+C03,clean/dropped增益接近证明污染无影响,两组组成不匹配、不随机化，不作污染因果解释。,E0_STATISTICS_CORRECTED.json,DESIGN_BOUNDARY,不能从两组点估计消除混杂
+C04,"三seed原CI[6.47,10.15]直接联合引用","共享track固定三seed95%[5.8411,10.9568]pp；paired-seed敏感性[5.5556,11.2710]pp。",E0_STATISTICS_CORRECTED.json,20K_SHARED_TRACK_POSTHOC_RECOMPUTE,事后探索非新确认性
+C05,seed42全部筛选门满足后晋级,E42运动学FAIL，后续43/44是筛选失败后的探索追加，不是合规成功晋级。,frozen_eval/checkpoint_replay_manifest.json;original DESIGN.md,OLD_JSON_AND_FROZEN_REPLAY,原DESIGN为DRAFT，未见同期锁源
+C06,学生容量不足已证实,当前history-only、57432参数、8epoch配置未可靠成功；信息/优化/容量/预算未分离。,frozen_eval/assignment_stats.json;original models.py,SOURCE_AND_FROZEN_FINAL_DIAGNOSTICS,没有收敛或容量上限证明
+C07,26%失败窗口可教,按窗口而非路径计数：1943/8051、1952/8051、1899/8051=24.13/24.25/23.59%。,frozen_eval/assignment_stats.json,FROZEN_TEACHER_SUBSET_RECOMPUTE,有限稀疏线索非唯一根因
+C08,B/E仅改变是否显式分解,B额外包含native成功窗KIN好教师；E两组各均值相加，也改变目标集合及尺度。,frozen_eval/assignment_stats.json;ALGEBRA_ALL_PARAMETER_FIXTURE.json,SOURCE_AND_ALL_PARAMETER_IDENTITY_FIXTURE,新重加权训练需另冻结，不能把恒等式当新机制
+C09,输入全锁源且能完整续训,当前补SHA不能追溯旧训练锁源；旧state_dict/arm/seed不含optimizer/全部RNG。,CACHE_LINEAGE.json;RUN_INVENTORY.csv,POSTHOC_INVENTORY,旧权重只用于冻结评价
+C10,旧FATAL表示当前全部训练失败,旧FIT-local索引错误与后续11权重分列；本轮也保留自己的数值/reader失败及修复。,original FATAL.txt;IMPLEMENTATION_TRANSITION_V2.json;IMPLEMENTATION_TRANSITION_V3.json,TIME_AND_SOURCE_SEPARATED,没有删除失败或改原结果
+C11,原W=True等于本轮全部独立核验,本轮E0只复核覆盖/索引/关联CI；P2学生22套完整聚簇五motion已独立审核，两范围不混。,E0_STATISTICS_CORRECTED.json;completion_review/REVIEW.json,EXPLICIT_REVIEW_SCOPE,E0全W未新增完整审核

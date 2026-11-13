@@ -1,0 +1,79 @@
+{
+  "status": "PASS_ACTUAL_GPU8_PAIRED_PHASED_AND_ALL_PARAMETER_GRADIENTS",
+  "arms": [
+    {
+      "arm": "G",
+      "phase_zero_last": {
+        "layers.0.weight": 0.0,
+        "layers.0.bias": 0.0,
+        "layers.2.weight": 0.0,
+        "layers.2.bias": 0.0,
+        "layers.4.weight": 0.18682803213596344,
+        "layers.4.bias": 0.15937501192092896
+      },
+      "phase_nonzero_last": {
+        "layers.0.weight": 0.0015302944229915738,
+        "layers.0.bias": 0.0010282284347340465,
+        "layers.2.weight": 0.0037017003633081913,
+        "layers.2.bias": 0.002692348789423704,
+        "layers.4.weight": 0.1808469295501709,
+        "layers.4.bias": 0.1727159172296524
+      },
+      "independent": {
+        "status": "PASS_ISOLATED_DOUBLE_GRADIENT_CHECK",
+        "device": "cuda:0",
+        "max_gradient_error": 2.7755575615628914e-17,
+        "finite_difference": [
+          {
+            "epsilon": 0.0001,
+            "numeric": -0.0015947158316098609,
+            "analytic": -0.0015947158314712933
+          },
+          {
+            "epsilon": 1e-05,
+            "numeric": -0.0015947158316098606,
+            "analytic": -0.0015947158314712933
+          }
+        ],
+        "not_float32_quantization_proof": true
+      }
+    },
+    {
+      "arm": "H",
+      "phase_zero_last": {
+        "layers.0.weight": 0.0,
+        "layers.0.bias": 0.0,
+        "layers.2.weight": 0.0,
+        "layers.2.bias": 0.0,
+        "layers.4.weight": 0.19690167903900146,
+        "layers.4.bias": 0.15937501192092896
+      },
+      "phase_nonzero_last": {
+        "layers.0.weight": 0.0018066067714244127,
+        "layers.0.bias": 0.0009734259801916778,
+        "layers.2.weight": 0.004181130789220333,
+        "layers.2.bias": 0.0026969551108777523,
+        "layers.4.weight": 0.1869915872812271,
+        "layers.4.bias": 0.17211374640464783
+      },
+      "independent": {
+        "status": "PASS_ISOLATED_DOUBLE_GRADIENT_CHECK",
+        "device": "cuda:0",
+        "max_gradient_error": 5.551115123125783e-17,
+        "finite_difference": [
+          {
+            "epsilon": 0.0001,
+            "numeric": 0.0021779055567328065,
+            "analytic": 0.0021779055570537555
+          },
+          {
+            "epsilon": 1e-05,
+            "numeric": 0.0021779055614512544,
+            "analytic": 0.0021779055570537555
+          }
+        ],
+        "not_float32_quantization_proof": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,340 @@
+{
+  "status": "COMPLETE_CPU_ENGINEERING_CALIBRATION_NOT_NEW_S3",
+  "historical_replay": [
+    {
+      "arm": "A",
+      "seed": 42,
+      "independent_audit": "PASS",
+      "historical_common_fields": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "n_fields": 326,
+        "mismatches": []
+      },
+      "new_Q_winner_error_fields": true
+    },
+    {
+      "arm": "A",
+      "seed": 43,
+      "independent_audit": "PASS",
+      "historical_common_fields": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "n_fields": 332,
+        "mismatches": []
+      },
+      "new_Q_winner_error_fields": true
+    },
+    {
+      "arm": "A",
+      "seed": 44,
+      "independent_audit": "PASS",
+      "historical_common_fields": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "n_fields": 338,
+        "mismatches": []
+      },
+      "new_Q_winner_error_fields": true
+    },
+    {
+      "arm": "B",
+      "seed": 42,
+      "independent_audit": "PASS",
+      "historical_common_fields": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "n_fields": 250,
+        "mismatches": []
+      },
+      "new_Q_winner_error_fields": true
+    },
+    {
+      "arm": "B",
+      "seed": 43,
+      "independent_audit": "PASS",
+      "historical_common_fields": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "n_fields": 238,
+        "mismatches": []
+      },
+      "new_Q_winner_error_fields": true
+    },
+    {
+      "arm": "B",
+      "seed": 44,
+      "independent_audit": "PASS",
+      "historical_common_fields": {
+        "status": "PASS",
+        "max_abs_diff": 0.0,
+        "n_fields": 234,
+        "mismatches": []
+      },
+      "new_Q_winner_error_fields": true
+    }
+  ],
+  "calibration": {
+    "A-native": {
+      "point": -0.006587615283267456,
+      "CI95": [
+        -0.05633889119027893,
+        0.03866666666666666
+      ],
+      "standard_error": 0.024353024638199113,
+      "n_tracks": 68,
+      "n_windows": 253,
+      "n_model_seeds": 3,
+      "draws": 20000,
+      "valid_draws": 20000,
+      "seed": 20261020,
+      "order": "track_then_seed",
+      "per_seed": [
+        -0.01185770750988141,
+        -0.01976284584980237,
+        0.01185770750988141
+      ],
+      "independent_full_draw_maxdiff": 9.367506770274758e-17,
+      "normal_approx_MDE80_pp": 6.822707384271955,
+      "power_method": "two-sided normal approximation, alpha .05, power .80; NOT empirical power or confirmatory effect"
+    },
+    "B-native": {
+      "point": 0.006587615283267456,
+      "CI95": [
+        -0.0246378221395139,
+        0.03930926799440941
+      ],
+      "standard_error": 0.01635605639325453,
+      "n_tracks": 68,
+      "n_windows": 253,
+      "n_model_seeds": 3,
+      "draws": 20000,
+      "valid_draws": 20000,
+      "seed": 20261020,
+      "order": "track_then_seed",
+      "per_seed": [
+        -0.007905138339920958,
+        0.007905138339920958,
+        0.01976284584980237
+      ],
+      "independent_full_draw_maxdiff": 9.71445146547012e-17,
+      "normal_approx_MDE80_pp": 4.5822885817964,
+      "power_method": "two-sided normal approximation, alpha .05, power .80; NOT empirical power or confirmatory effect"
+    },
+    "B-A": {
+      "point": 0.013175230566534912,
+      "CI95": [
+        -0.02544552394170715,
+        0.054688093655015146
+      ],
+      "standard_error": 0.020479793622363247,
+      "n_tracks": 68,
+      "n_windows": 253,
+      "n_model_seeds": 3,
+      "draws": 20000,
+      "valid_draws": 20000,
+      "seed": 20261020,
+      "order": "track_then_seed",
+      "per_seed": [
+        0.0039525691699604515,
+        0.027667984189723327,
+        0.007905138339920958
+      ],
+      "independent_full_draw_maxdiff": 9.71445146547012e-17,
+      "normal_approx_MDE80_pp": 5.737588708241711,
+      "power_method": "two-sided normal approximation, alpha .05, power .80; NOT empirical power or confirmatory effect"
+    }
+  },
+  "native_counts": {
+    "overall": {
+      "n": 1035,
+      "tracks": 191,
+      "good": 625,
+      "coverage": 0.6038647342995169
+    },
+    "stable": {
+      "n": 604,
+      "tracks": 171,
+      "good": 434,
+      "coverage": 0.7185430463576159
+    },
+    "transition": {
+      "n": 178,
+      "tracks": 91,
+      "good": 81,
+      "coverage": 0.4550561797752809
+    },
+    "change": {
+      "n": 253,
+      "tracks": 68,
+      "good": 110,
+      "coverage": 0.43478260869565216
+    }
+  },
+  "historical_inputs_sha256": {
+    "REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES/results/cache/train_dev/eth_train.npz": "f8e6769c7e28b0d5ad4c108989246d6e724c078190102ae90443e62600d5a3ea",
+    "F16_OBSERVABLE_CUE_DIAGNOSIS_20261003/labels/train.npz": "01c8226f6bc3e7103c61f52294ac109ad2d585be2500a25d1601e08efe487efc",
+    "F16_OBSERVABLE_CUE_DIAGNOSIS_20261003/metadata.npz": "9e0e2f581d05487e4905fc2fe34c963458cace0254daf5289e12aaea9ac49591",
+    "GENERATION_GROUPED_TRANSFER_SERIES_20261006/identity_audit/splits.npz": "349659306a435a3a70e65d75d08d618a2aa8bc76fca38142c3433ab5678e12e7",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/A_seed42/outer_predictions.npz": "78ddeff8d44f9aaf92bacfcf84f3a6d0ec1db3652787ad09fb27dc56f171fe8f",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/A_seed42/metrics.json": "8317eadc8c1b2e9dce4062eaf70fcf3dab5c7598708772d8cf9bdf4f1a4bed72",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/A_seed42/checkpoint.pt": "b5dd5a8a6c64cc2e79f6ffc04240c98475e5322ea1b204de567b95619850546f",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/A_seed42/history.json": "d5a47142b9509fe32b2101ccecffb47f46831637861f8baecd505c4367d2b6c5",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/A_seed43/outer_predictions.npz": "084cef1c5910a059715484053c9331277061bc6a327b3e7baf68e67a654eb271",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/A_seed43/metrics.json": "b984a07cfeb3a044c25155eb06904857a4bd88d52ffea7b4d066c38e855e29e9",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/A_seed43/checkpoint.pt": "e9fbe989b66f072fc0c0f023a9c3f6528ace30a5efdfca0768c9196e12228305",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/A_seed43/history.json": "689c8a084e6ce3e786d53d4e74ea08463eace8ef7e3dc9849b311e6a3f03e8ad",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/A_seed44/outer_predictions.npz": "9371595d23ccaaab41299c0329c19446010687227f15b51c5125389311d799b3",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/A_seed44/metrics.json": "78feeb42379037c11d658adff1d3a7ab49e03554ea122df03f89c8d2b950f52e",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/A_seed44/checkpoint.pt": "30844d3e7f5bed40f888a93a9ae7771bcaabc6aeb561750189f41edfee27741c",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/A_seed44/history.json": "f5d202d04d37bfa292da3a70734be5d62310011a75148e7d6f12b9b869d717b4",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/B_seed42/outer_predictions.npz": "499609e23313f1916c6de77f4ca59c8eba9db7dce867d89b684702c73de79b23",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/B_seed42/metrics.json": "92f5f8496ddc4f7f6cdb4cb32d5933dd2117de001ec186340debdaa3b7f74c61",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/B_seed42/checkpoint.pt": "6614d8666942652ab27bcbbf21fcf662baf18f4dc23d49d669b10af9907d885a",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/B_seed42/history.json": "d3a7c2919fa99d4d698181158beaa9aacad3c908d34059962ab1b396408b63f1",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/B_seed43/outer_predictions.npz": "46b493d3ba6b3a10c5db962627ab580a73b1a86b37320372e5bc3af11772ae9f",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/B_seed43/metrics.json": "7464b4c138e86a1f31188c87613ef8ff59bcc660f694f4748e92677fa0f3bd40",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/B_seed43/checkpoint.pt": "e7aeb76a7328ed2ad35abae398f6907dc4a47dc8bcf47db1cb094e882600cdeb",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/B_seed43/history.json": "6a43ad8311e1022e70e540d31a7fdeba13a1dc4eaf712747e07a50fa3c6a082a",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/B_seed44/outer_predictions.npz": "ef4df2fc8a94ffcd18a80327734fc001a2772d51dba4631be910e381f4b40a10",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/B_seed44/metrics.json": "22d6eaabd385d452a413de2a6c4d809028f5f135dcbf3d290bf58becc0fd5a6b",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/B_seed44/checkpoint.pt": "3bc829d89d206eeff7a3417e99703a7496aeb3f73c3470109e58cf4cde139a44",
+    "GEMINI_EXP/EXP03_KINEMATIC_DAMPING_FACTORIAL/runs/B_seed44/history.json": "35d285de95d95662832fc68496136e2ed4cb9d642c8d6a1e6643fc114753c3be"
+  },
+  "preservation": true,
+  "formal_training_runs": 0,
+  "gpu_training_hours": 0,
+  "author_MDE_confirmation": "OPEN",
+  "protocol_freeze": "BLOCKED_BY_C3_AND_C6",
+  "duration_seconds": 55.35899999999674,
+  "resource_observations": [
+    {
+      "status": "PASS",
+      "estimate": 2147483648,
+      "factor": 1.3,
+      "required_physical": 2791728742.4,
+      "required_commit": 2791728742.4,
+      "retained_peak_limit": 2791728742.4,
+      "snapshot": {
+        "physical": 14780887040,
+        "commit": 16103235584,
+        "rss": 63467520,
+        "private": 1591312384,
+        "peak_rss": 67174400,
+        "peak_private": 1594920960
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 2147483648,
+      "factor": 1.3,
+      "required_physical": 2696840806.4,
+      "required_commit": 711558348.8000001,
+      "retained_peak_limit": 2791728742.4,
+      "snapshot": {
+        "physical": 14441275392,
+        "commit": 15884177408,
+        "rss": 72990720,
+        "private": 1600131072,
+        "peak_rss": 153468928,
+        "peak_private": 1681502208
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 2147483648,
+      "factor": 1.3,
+      "required_physical": 2689817395.2000003,
+      "required_commit": 702591385.6,
+      "retained_peak_limit": 2791728742.4,
+      "snapshot": {
+        "physical": 14694264832,
+        "commit": 15990964224,
+        "rss": 78393344,
+        "private": 1607028736,
+        "peak_rss": 158154752,
+        "peak_private": 1686024192
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 2147483648,
+      "factor": 1.3,
+      "required_physical": 2690174156.8,
+      "required_commit": 703954534.4,
+      "retained_peak_limit": 2791728742.4,
+      "snapshot": {
+        "physical": 14730375168,
+        "commit": 16015400960,
+        "rss": 78118912,
+        "private": 1605980160,
+        "peak_rss": 158154752,
+        "peak_private": 1686155264
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 2147483648,
+      "factor": 1.3,
+      "required_physical": 2689375436.8,
+      "required_commit": 702873600.0,
+      "retained_peak_limit": 2791728742.4,
+      "snapshot": {
+        "physical": 14671949824,
+        "commit": 15961436160,
+        "rss": 78733312,
+        "private": 1606811648,
+        "peak_rss": 158740480,
+        "peak_private": 1686155264
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 2147483648,
+      "factor": 1.3,
+      "required_physical": 2687804620.8,
+      "required_commit": 701302784.0,
+      "retained_peak_limit": 2791728742.4,
+      "snapshot": {
+        "physical": 14795825152,
+        "commit": 16047542272,
+        "rss": 79941632,
+        "private": 1608019968,
+        "peak_rss": 159727616,
+        "peak_private": 1686745088
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 2147483648,
+      "factor": 1.3,
+      "required_physical": 2686159257.6,
+      "required_commit": 701276160.0,
+      "retained_peak_limit": 2791728742.4,
+      "snapshot": {
+        "physical": 14777479168,
+        "commit": 16045273088,
+        "rss": 81207296,
+        "private": 1608040448,
+        "peak_rss": 160800768,
+        "peak_private": 1687838720
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 2147483648,
+      "factor": 1.3,
+      "required_physical": 2685813145.6,
+      "required_commit": 699982233.6,
+      "retained_peak_limit": 2791728742.4,
+      "snapshot": {
+        "physical": 14893424640,
+        "commit": 16177192960,
+        "rss": 81473536,
+        "private": 1609035776,
+        "peak_rss": 160845824,
+        "peak_private": 1688117248
+      }
+    }
+  ]
+}

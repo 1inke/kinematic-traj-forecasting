@@ -1,0 +1,157 @@
+{
+  "version": "1.1",
+  "state": "DRAFT_NOT_FROZEN",
+  "proposal_only": true,
+  "supersedes": "1.0",
+  "effective_for": "new_experiments_only",
+  "author_signed_freeze": false,
+  "author_reviewed_split": false,
+  "guardrails_source": "author-confirmed v1.0 (2026-10-20), unchanged in this draft",
+
+  "changes_from_v1_0": [
+    "original_CAL replaced by CAL_v1_1: 1,620 windows / 443 change / 77 tracks / 50 change tracks (was 2,879 / 700 / 111 / 73)",
+    "CAL_v1_1 rule 1: drop every CAL window whose track appears in FIT, inner or outer (32 tracks)",
+    "CAL_v1_1 rule 2: drop every CAL window before the per-sequence FIT cutoff; students003 cutoff = 258 (max FIT end 257 + 1)",
+    "FIT / inner / outer are unchanged, window for window",
+    "4,112 registered-but-unassigned windows (935 change) are explicitly excluded from every train and eval population",
+    "new audit items C7 (same-frame co-occurrence with FIT) and C8 (unassigned population)"
+  ],
+
+  "population": {
+    "FIT": {"windows": 18909, "change": 4725, "tracks": 689, "change_tracks": 337, "changed_in_v1_1": false},
+    "inner": {"windows": 1856, "change": 497, "tracks": 76, "change_tracks": 35, "changed_in_v1_1": false},
+    "outer": {"windows": 1035, "change": 253, "tracks": 191, "change_tracks": 68, "changed_in_v1_1": false},
+    "original_CAL": {"windows": 2879, "change": 700, "tracks": 111, "change_tracks": 73, "status": "RETIRED_FROM_V1_1"},
+    "CAL_v1_1": {"windows": 1620, "change": 443, "tracks": 77, "change_tracks": 50, "status": "PROPOSED"},
+    "unassigned": {"windows": 4112, "change": 935, "rule": "excluded from every train and eval population"}
+  },
+
+  "splits": {
+    "frozen_registry": {
+      "file": "GENERATION_GROUPED_TRANSFER_SERIES_20261006/identity_audit/splits.npz",
+      "sha256": "349659306a435a3a70e65d75d08d618a2aa8bc76fca38142c3433ab5678e12e7"
+    },
+    "cache": {
+      "file": "REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES/results/cache/train_dev/eth_train.npz",
+      "sha256": "f8e6769c7e28b0d5ad4c108989246d6e724c078190102ae90443e62600d5a3ea"
+    },
+    "metadata": {
+      "file": "F16_OBSERVABLE_CUE_DIAGNOSIS_20261003/metadata.npz",
+      "sha256": "9e0e2f581d05487e4905fc2fe34c963458cace0254daf5289e12aaea9ac49591"
+    },
+    "CAL_v1_1": {
+      "index_file": "qoder_work/v1_1/cal_v11_index.npy",
+      "index_sha256": "fee09cf79559af13b694b96c3c0aafcd87e8d6146b9ec491a89d6dea93aea590",
+      "windows_csv": "qoder_work/v1_1/cal_v11_windows.csv",
+      "windows_csv_sha256": "59dbfbcc39c46c9a1af77dc8d45605b8aaec3d01441bbd25e71f9e4f9b86e137",
+      "builder": "qoder_work/v1_1/build_v11.py",
+      "builder_sha256": "fe0a5cbb2059712077070b7ae65df4c86f7f9e7926b419975925574e443e53b2",
+      "contract": "subset of original_CAL registry indices 25912..28790; sample_id is the primary key; never rewrite splits.npz"
+    }
+  },
+
+  "split_invariants": {
+    "C1_sample_id": {"FIT": 0, "inner": 0, "outer": 0},
+    "C2_track": {"FIT": 0, "inner": 0, "outer": 0},
+    "C3_interval_same_sequence": {"FIT": 0, "inner": 0, "outer": 0},
+    "C7_same_frame_cooccurrence": {"FIT": 0},
+    "unknown_time_windows_in_CAL_v1_1": 0,
+    "duplicate_sample_ids": 0,
+    "evidence": "qoder_work/v1_1/SPLIT_V1_1.json"
+  },
+
+  "audit_baseline_kept_for_the_record": {
+    "original_CAL_vs_FIT": {
+      "shared_tracks": 29,
+      "cal_windows_on_shared_tracks": 1149,
+      "full_interval_overlap": 457,
+      "change_full_interval_overlap": 130,
+      "future_intersection": 295,
+      "change_future_intersection": 86,
+      "entire_future12_contained": 0,
+      "note": "contained=0 is a one-frame artifact (CAL future ends 258, FIT last interval ends 257); do not read it as a safety margin"
+    },
+    "C7_same_frame_cooccurrence": {
+      "inner": {"hit": 1761, "n": 1856},
+      "outer": {"hit": 1009, "n": 1035, "change_hit": 250, "change_n": 253},
+      "original_CAL": {"hit": 0, "n": 2879},
+      "meaning": "outer is a same-time, different-track holdout; C2=0 does not isolate it from FIT context"
+    },
+    "C8_unassigned": {"windows": 4112, "change": 935, "assigned": 24679, "registry": 28791},
+    "evidence": "qoder_work/v1_1/CONTEXT_AUDIT.json"
+  },
+
+  "thresholds": {"ADE": 0.2, "FDE": 0.4, "dt": 0.4, "K": 20},
+  "guardrails": {
+    "G1_motion_factor": 1.01,
+    "G2_overall_min": -0.01,
+    "G2_overall_ci_low": -0.03,
+    "G3_Q_winner_relative_harm": 0.03,
+    "G4_native_good_lost_max": 0.1,
+    "G5_parameters_max": 305000
+  },
+  "noninferior_margin": -0.02,
+  "bootstrap": {
+    "draws": 20000,
+    "rng": "PCG64",
+    "seed": 20261020,
+    "order": "track_then_seed_per_draw",
+    "primary_tracks": "change_tracks_only",
+    "point": "window_weighted_within_seed_then_seed_mean",
+    "interval": "percentile95",
+    "multiplicity": "Holm adjusted p; no fictitious Holm percentile CI"
+  },
+  "seeds": {"S2": [42], "S3": [42, 43, 44], "S4": [42, 43, 44, 45, 46]},
+  "MDE_pp": null,
+
+  "source_disposition_C6": {
+    "status": "OPEN_AUTHOR_DECISION",
+    "facts": [
+      "EXP_156B h3/v2/m2 split_indices.npz: train = 28,791 unique ids, validation = 1,516",
+      "split.json: strategy = scene_tail_holdout_within_training_scenes, train_samples = 28,791",
+      "GENERATION_NATIVE_DECODER_SERIES/encoder_audit.json: train.n = 28,791, dev.n = 1,516, reused = true",
+      "outer 1,035/1,035 and original_CAL 2,879/2,879 sample_ids are present in the native train manifest",
+      "native validation 1,516 is disjoint from train and is the temporal tail of each sequence"
+    ],
+    "options": [
+      {
+        "id": "C6-1",
+        "action": "control arm = same-batch FIT-only retrain (B0/CTRL); old native demoted to historical reference",
+        "status": "PROPOSED",
+        "requires": ["FIT-only loader", "per-checkpoint train-id manifest", "D-0 seed-variance re-estimate"]
+      },
+      {
+        "id": "C6-2",
+        "action": "clean encoder retrained on FIT only, then frozen",
+        "status": "OPTIONAL",
+        "requires": ["same as C6-1", "one encoder retrain per seed"]
+      },
+      {
+        "id": "C6-3",
+        "action": "narrow the claim to head/prior gains on a fixed exposed representation",
+        "status": "FALLBACK_ONLY",
+        "note": "cannot support any generalization claim"
+      }
+    ],
+    "rejected": "external dataset substitution: the upstream model has seen all six sequences used by the internal protocol",
+    "gates_before_S0": [
+      "C6-1 loader and manifest landed",
+      "D-0 re-run with a per-seed control; old 4.58-6.82 pp MDE not reused",
+      "author decision on the expected effect vs the new MDE"
+    ]
+  },
+
+  "freeze_blockers": [
+    "C3_FIT_CAL_interval_overlap: CLOSED_BY_CAL_v1_1_PENDING_AUTHOR_REVIEW",
+    "C6_upstream_native_outer_exposure: OPEN_SOURCE_DISPOSITION",
+    "C6_native_CAL_exposure: OPEN_SAME_AS_ABOVE",
+    "C7_outer_same_frame_cooccurrence: OPEN_METHOD_LEVEL_NOT_SPLIT_LEVEL",
+    "C1_C6_audit_author_review",
+    "D0_MDE_author_decision: INVALIDATED_BY_CONTROL_CHANGE_PENDING_RERUN",
+    "Holm_interval_convention",
+    "guardrail_seed_aggregation",
+    "A_B_S0_fields_and_teacher_training_provenance"
+  ],
+
+  "review_needed": "The v1.1 CAL index is a proposal, not an author-frozen split. C6 has no split-level fix; the control-arm decision and the D-0 re-estimate must be made before S0. Do not mark this protocol FROZEN or set formal_freeze_allowed=true from an agent run."
+}

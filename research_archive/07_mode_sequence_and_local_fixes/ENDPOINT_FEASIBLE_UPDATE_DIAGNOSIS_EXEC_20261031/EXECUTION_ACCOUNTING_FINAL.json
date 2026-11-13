@@ -1,0 +1,72 @@
+{
+  "scientific": {
+    "scientific_proposals": 768,
+    "scientific_accepted_optimizer_updates": 20,
+    "scientific_rejected_proposals": 748,
+    "new_models": 3,
+    "preflight_fixture_proposals_v1": {
+      "first_equivalence": 2,
+      "real_resume": 16,
+      "synthetic_resume": 16,
+      "benchmark": 12
+    },
+    "preflight_fixture_proposals_v2": {
+      "first_equivalence": 2,
+      "real_resume": 16,
+      "synthetic_resume": 16,
+      "benchmark": 12,
+      "actual_forced_worst8": 3
+    },
+    "formal_models": 0,
+    "preflight_fixed_math_has_no_optimizer_update": true,
+    "O0_U2_CPU_no_training": true
+  },
+  "fixtures": [
+    {
+      "stage": "preflight",
+      "Adam_proposals": 46,
+      "committed_optimizer_steps_across_all_fixture_runs": 34
+    },
+    {
+      "stage": "preflight_v2",
+      "Adam_proposals": 49,
+      "committed_optimizer_steps_across_all_fixture_runs": 34
+    }
+  ],
+  "total_actual_Adam_step_calls": 863,
+  "scientific_accepted": 20,
+  "resources": [
+    {
+      "stage": "RESOURCE_PREFLIGHT.json",
+      "own_process_lifetime_private_peak": 4416495616,
+      "own_process_lifetime_RSS_peak": 2039480320,
+      "warnings": [],
+      "resource_STOP": false
+    },
+    {
+      "stage": "RESOURCE_PREFLIGHT_V2.json",
+      "own_process_lifetime_private_peak": 4420538368,
+      "own_process_lifetime_RSS_peak": 2039549952,
+      "warnings": [],
+      "resource_STOP": false
+    },
+    {
+      "stage": "RESOURCE_SCIENCE.json",
+      "own_process_lifetime_private_peak": 4741091328,
+      "own_process_lifetime_RSS_peak": 2382344192,
+      "warnings": [],
+      "resource_STOP": false
+    },
+    {
+      "stage": "RESOURCE_REVIEW.json",
+      "own_process_lifetime_private_peak": 2894262272,
+      "own_process_lifetime_RSS_peak": 912924672,
+      "warnings": [
+        "ESTIMATE_UNDERSHOOT_REVIEW_NO_AUTOMATIC_KILL_OR_INFLATION"
+      ],
+      "resource_STOP": false
+    }
+  ],
+  "independent_inference_subprocess_memory_not_separately_profiled": true,
+  "inference_fixture_note": "deliberately changed GT payload was loaded in the container but never read by prediction/decode; observed_only docstring describes inference data dependence, not archive IO"
+}

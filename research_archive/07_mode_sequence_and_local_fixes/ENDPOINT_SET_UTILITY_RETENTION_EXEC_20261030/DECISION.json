@@ -1,0 +1,71 @@
+{
+  "status": "ANALYZED_TINY_UTILITY_STOP_NO_FORMAL",
+  "execution_status": "PASS_NINE_TINY_AND_INDEPENDENT_AUDIT",
+  "scientific_screen": "FAIL_TINY_JOINT_GATE",
+  "gate": {
+    "status": "STOP_TINY_UTILITY_NO_FORMAL",
+    "checks": {
+      "R_lost_eachseed": true,
+      "R_atleast1_strict": true,
+      "RS_rescue_ge_R_eachseed": true,
+      "RS_atleast1_strict_rescue": true,
+      "RS_relative_M_and_nontrivial": false,
+      "RS_zero_lost_eachseed": false,
+      "RS_all_protected_errors": false,
+      "RS_all_motion_junction": true,
+      "all_actual_preflight_source_audit": true
+    },
+    "perseed": [
+      {
+        "seed": 42,
+        "R_lost_le_M": true,
+        "R_lost_strict": false,
+        "RS_rescue_ge_R": true,
+        "RS_rescue_strict": true,
+        "RS_lost_le_M": false,
+        "RS_rescue_ge_M": true,
+        "RS_coverage_gt_native": true,
+        "RS_zero_lost": false,
+        "RS_protected_errors": false,
+        "RS_all_motion_junction": true
+      },
+      {
+        "seed": 43,
+        "R_lost_le_M": true,
+        "R_lost_strict": true,
+        "RS_rescue_ge_R": true,
+        "RS_rescue_strict": true,
+        "RS_lost_le_M": true,
+        "RS_rescue_ge_M": true,
+        "RS_coverage_gt_native": true,
+        "RS_zero_lost": false,
+        "RS_protected_errors": false,
+        "RS_all_motion_junction": true
+      },
+      {
+        "seed": 44,
+        "R_lost_le_M": true,
+        "R_lost_strict": true,
+        "RS_rescue_ge_R": true,
+        "RS_rescue_strict": true,
+        "RS_lost_le_M": true,
+        "RS_rescue_ge_M": true,
+        "RS_coverage_gt_native": true,
+        "RS_zero_lost": false,
+        "RS_protected_errors": false,
+        "RS_all_motion_junction": true
+      }
+    ],
+    "models_completed": 9,
+    "updates": 2304,
+    "formal_models": 0,
+    "primary_family6": "NOT_RUN_IF_TINY_STOP",
+    "old90_gate_unchanged": true,
+    "no_select_R_if_RS_fails": true
+  },
+  "interpretation": "Retention reduces lost in2/3 seeds; rescue term increases rescues in3/3 vs R, but RS retains6-8 losses and harms protected transition FDE/change ADE. Partial training-set effects, not usable support-preserving solution.",
+  "no_formal_or_held": true,
+  "no_fourth_variant": true,
+  "no_posthoc_select_R": true,
+  "no_coefficient_epoch_or_width_retry": true
+}

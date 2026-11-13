@@ -1,0 +1,255 @@
+{
+  "status": "PASS",
+  "source": "e534ae96e75b943cad4dc7ba43bf42e78d634c071266eea9d744839323da0ff1",
+  "seconds": 35.68128479993902,
+  "analytic": {
+    "independent_scalar_error": 0.0,
+    "full_path_gradient_error": 1.1934897514720433e-15,
+    "native_good_and_failure_keep_masks": true,
+    "copy_surrogate_not_coverage_proven": true
+  },
+  "parameter_FD": [
+    {
+      "arm": "B1",
+      "chain_error": 3.885780586188048e-16,
+      "FD": [
+        {
+          "direction": 0,
+          "eps": 0.0001,
+          "error": 2.379754813347512e-12,
+          "reference": -0.0032466175635198573
+        },
+        {
+          "direction": 0,
+          "eps": 1e-05,
+          "error": 1.1261538576667895e-11,
+          "reference": -0.0032466175635198573
+        },
+        {
+          "direction": 1,
+          "eps": 0.0001,
+          "error": 1.104955103109484e-12,
+          "reference": -0.0019271064977174845
+        },
+        {
+          "direction": 1,
+          "eps": 1e-05,
+          "error": 1.1154911629812636e-12,
+          "reference": -0.0019271064977174845
+        },
+        {
+          "direction": 2,
+          "eps": 0.0001,
+          "error": 6.004080045640681e-12,
+          "reference": -0.006524364863267345
+        },
+        {
+          "direction": 2,
+          "eps": 1e-05,
+          "error": 5.172751636750572e-11,
+          "reference": -0.006524364863267345
+        },
+        {
+          "direction": 3,
+          "eps": 0.0001,
+          "error": 1.1089506049555276e-11,
+          "reference": 0.015324444757590138
+        },
+        {
+          "direction": 3,
+          "eps": 1e-05,
+          "error": 2.2191738030530317e-11,
+          "reference": 0.015324444757590138
+        }
+      ],
+      "all_active_masks_EXACT": [
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          false
+        ],
+        [
+          [
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true
+          ]
+        ]
+      ],
+      "fixed_nonzero_fixture_no_epsilon_search": true
+    },
+    {
+      "arm": "B2",
+      "chain_error": 2.7755575615628914e-16,
+      "FD": [
+        {
+          "direction": 0,
+          "eps": 0.0001,
+          "error": 5.2498500338615806e-12,
+          "reference": -0.0026090136725816443
+        },
+        {
+          "direction": 0,
+          "eps": 1e-05,
+          "error": 2.1395502557142176e-11,
+          "reference": -0.0026090136725816443
+        },
+        {
+          "direction": 1,
+          "eps": 0.0001,
+          "error": 1.3965731782833446e-12,
+          "reference": -0.001313791061783222
+        },
+        {
+          "direction": 1,
+          "eps": 1e-05,
+          "error": 3.0262371818537415e-11,
+          "reference": -0.001313791061783222
+        },
+        {
+          "direction": 2,
+          "eps": 0.0001,
+          "error": 2.475126006928896e-12,
+          "reference": -0.006593510702123545
+        },
+        {
+          "direction": 2,
+          "eps": 1e-05,
+          "error": 1.3067995470461558e-11,
+          "reference": -0.006593510702123545
+        },
+        {
+          "direction": 3,
+          "eps": 0.0001,
+          "error": 7.1065046208795835e-12,
+          "reference": 0.014462802371718564
+        },
+        {
+          "direction": 3,
+          "eps": 1e-05,
+          "error": 1.5988290552604312e-11,
+          "reference": 0.014462802371718564
+        }
+      ],
+      "all_active_masks_EXACT": [
+        [
+          false,
+          false,
+          false,
+          false
+        ],
+        [
+          false,
+          true,
+          true,
+          false
+        ],
+        [
+          [
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true
+          ],
+          [
+            true,
+            true,
+            true
+          ]
+        ]
+      ],
+      "fixed_nonzero_fixture_no_epsilon_search": true
+    }
+  ],
+  "resume": [
+    {
+      "arm": "B1",
+      "actual513train_34updates_interrupt19_ALLstate_RNG_history_EXACT": true
+    },
+    {
+      "arm": "B2",
+      "actual513train_34updates_interrupt19_ALLstate_RNG_history_EXACT": true
+    }
+  ],
+  "reader_rejections": [
+    "source",
+    "split",
+    "stats",
+    "arm",
+    "prepared",
+    "output",
+    "checkpoint_embedded",
+    "resume"
+  ],
+  "completed_SHA_skip_actual": true,
+  "paired_all_init_params_buffers": true,
+  "dependency": [
+    {
+      "arm": "B1",
+      "actualGPU8batch32": true,
+      "native_initial_identity": true,
+      "phased_active_tensors_positivefinite": true,
+      "B1_QK_structurally_zero_expected": true,
+      "cross_candidate_dependency": 0.0,
+      "permutation_error": 0.0
+    },
+    {
+      "arm": "B2",
+      "actualGPU8batch32": true,
+      "native_initial_identity": true,
+      "phased_active_tensors_positivefinite": true,
+      "B1_QK_structurally_zero_expected": false,
+      "cross_candidate_dependency": 7.55698890816392e-05,
+      "permutation_error": 2.2778195163386528e-09
+    }
+  ],
+  "benchmark": {
+    "B1": {
+      "warm": 4,
+      "measured": 32,
+      "mean_seconds": 0.02659072499591275
+    },
+    "B2": {
+      "warm": 4,
+      "measured": 32,
+      "mean_seconds": 0.026585749994410435
+    }
+  },
+  "saved128_folder": "gpu_fixture_1793093156347500800\\saved128",
+  "saved128_GPU_seconds": 0.4809767999686301,
+  "parameters": 17223,
+  "train_count": 3103,
+  "steps_per_run": 776,
+  "not_formal_or_fulltrain_twoepoch": true
+}

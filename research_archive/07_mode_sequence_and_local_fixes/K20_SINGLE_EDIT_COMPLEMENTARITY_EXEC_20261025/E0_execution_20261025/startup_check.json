@@ -1,0 +1,50 @@
+{
+  "checked_at": "2026-10-25T12:42:11.6460205+09:00",
+  "task": "Trajectory-K20SingleEdit-E0-20261025",
+  "task_state": "Running",
+  "triggers": 0,
+  "worker": {
+    "status": "RUNNING",
+    "pid": 38480,
+    "parent_pid": 5840,
+    "started_at": "2026-10-25T12:41:58.729681+09:00"
+  },
+  "exit": null,
+  "stderr_bytes": 0,
+  "progress": {
+    "stage": "E0_ENUMERATE_SAVE",
+    "at": "2026-10-25T12:42:11.294047+09:00",
+    "seed": 42,
+    "completed_windows": 640,
+    "total_windows": 4096,
+    "completed_nonSTOP_actions": 256000
+  },
+  "processes": [
+    {
+      "ProcessId": 11824,
+      "ParentProcessId": 2804,
+      "CreationDate": "2026-10-25T12:41:58.109923+09:00",
+      "CommandLine": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\K20_SINGLE_EDIT_COMPLEMENTARITY_EXEC_20261025\\E0_execution_20261025\\launch_worker.py\""
+    },
+    {
+      "ProcessId": 54320,
+      "ParentProcessId": 11824,
+      "CreationDate": "2026-10-25T12:41:58.499082+09:00",
+      "CommandLine": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\K20_SINGLE_EDIT_COMPLEMENTARITY_EXEC_20261025\\E0_execution_20261025\\launch_worker.py\""
+    },
+    {
+      "ProcessId": 5840,
+      "ParentProcessId": 54320,
+      "CreationDate": "2026-10-25T12:41:58.548109+09:00",
+      "CommandLine": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\K20_SINGLE_EDIT_COMPLEMENTARITY_EXEC_20261025\\E0_execution_20261025\\worker.py\""
+    },
+    {
+      "ProcessId": 38480,
+      "ParentProcessId": 5840,
+      "CreationDate": "2026-10-25T12:41:58.555473+09:00",
+      "CommandLine": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\K20_SINGLE_EDIT_COMPLEMENTARITY_EXEC_20261025\\E0_execution_20261025\\worker.py\""
+    }
+  ],
+  "no_repeat_startup": true,
+  "result_present": false
+}

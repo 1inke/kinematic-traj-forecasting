@@ -1,0 +1,87 @@
+{
+  "checked_at": "2026-10-23T14:14:49.5607512+09:00",
+  "task": "Trajectory-F16ContextTail-T1-20261023",
+  "task_state": "Running",
+  "triggers": 0,
+  "processes": [
+    {
+      "ProcessId": 29624,
+      "ParentProcessId": 2804,
+      "CreationDate": "2026-10-23T14:05:49.36778+09:00",
+      "CommandLine": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\F16_CONTEXT_TAIL_RETENTION_DESIGN_20261023\\T1_execution_20261023\\worker.py\""
+    },
+    {
+      "ProcessId": 47824,
+      "ParentProcessId": 29624,
+      "CreationDate": "2026-10-23T14:05:49.787331+09:00",
+      "CommandLine": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\F16_CONTEXT_TAIL_RETENTION_DESIGN_20261023\\T1_execution_20261023\\worker.py\""
+    }
+  ],
+  "worker": {
+    "status": "RUNNING",
+    "pid": 47824,
+    "parent": 29624,
+    "started_at": "2026-10-23T14:05:49.945917+09:00",
+    "stage": "IMPORT_T1"
+  },
+  "exit": null,
+  "progress": {
+    "stage": "EVALUATE_SAVE_AUDIT",
+    "at": "2026-10-23T14:11:27.075675+09:00",
+    "status": "RUNNING",
+    "active_worker": true,
+    "completed_scientific_jobs": 6,
+    "arm": "P_relative",
+    "seed": 42,
+    "epoch": 7,
+    "split": "FIT"
+  },
+  "stderr_bytes": 0,
+  "completed_runs": 3,
+  "histories": [
+    {
+      "arm": "A_replay",
+      "epochs": 8,
+      "seed": 42
+    },
+    {
+      "arm": "A_replay",
+      "epochs": 8,
+      "seed": 43
+    },
+    {
+      "arm": "A_replay",
+      "epochs": 8,
+      "seed": 44
+    },
+    {
+      "arm": "P_relative",
+      "epochs": 8,
+      "seed": 42
+    },
+    {
+      "arm": "P_relative",
+      "epochs": 0,
+      "seed": 43
+    },
+    {
+      "arm": "P_relative",
+      "epochs": 0,
+      "seed": 44
+    }
+  ],
+  "scheduled_half_at": "2026-10-23T14:13:52.559+09:00",
+  "first_progress_query_count": 1,
+  "total_epoch_rows": 32,
+  "planned_epoch_rows": 48,
+  "epoch_fraction_not_total_work_fraction": true,
+  "control_reproduction_three_seeds": "ALL_FINAL_PATHS_BITWISE_AND_COMMON_HISTORY_EXACT",
+  "observed_scientific_population_jobs_complete_lower_bound": 6,
+  "current_saved_stage": "P_relative42 FIT native-quality metrics saved, independent complete-link/motion audit pending; no repeated process check",
+  "remaining_minutes_estimate": [
+    9,
+    13
+  ],
+  "next_completion_at": "2026-10-23T14:28:00+09:00",
+  "no_scientific_or_protocol_changes": true
+}

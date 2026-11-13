@@ -1,0 +1,15 @@
+{
+  "authorization":"2026-10-29 human: 按照文档执行实验",
+  "design":"docs/ENDPOINT_LEARNABILITY_CONTINUATION_DESIGN_20261029.md",
+  "branch":"END","TIME":"STOP_LOW_SAFE_OPPORTUNITY_IN_THIS_ACTION_CLASS","P3":"NOT_TRIGGERED_TIME_P0_STOP",
+  "amendment":"END_TINY_SAMPLING_AMENDMENT_V2_20261029",
+  "tiny":{"arm":"H","seed":42,"first_active_train":64,"second_unselected_train":64,"tag":"endpoint-temporal-tiny-v1|","hash":"SHA256_UTF8_ASCENDING_THEN_INTEGER_ID","unique_train_windows":128,"updates":256,"window_batch":32,"active_candidate_MSE_relative_drop":0.9,"readouts":[0,256]},
+  "train":3103,"val":993,"hold":3825,"inner":1856,
+  "formal":{"arms":["G","H"],"seeds":[42,43,44],"epochs":8,"updates_per_model":776,"total_models":6,"total_updates":4656},
+  "network":"40-64-32-2 GELU tanh zero-last","parameters":4770,
+  "AdamW":{"lr":0.001,"weight_decay":0.0001,"clip_norm":5},
+  "safe_ratio":1.01,"quality_ADE":0.2,"quality_FDE":0.4,
+  "bootstrap":{"draws":20000,"seed":20261028,"family":6},
+  "resource_policy":"warning_first_remaining_v3","no_deletion":true,
+  "held_GT_release":"all six formal finals, stats and decoder/evaluation/audit sources sealed"
+}

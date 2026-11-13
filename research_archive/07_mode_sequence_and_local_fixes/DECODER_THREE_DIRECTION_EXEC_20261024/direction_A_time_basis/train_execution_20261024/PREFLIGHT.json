@@ -1,0 +1,346 @@
+{
+  "status": "PASS",
+  "scope": "ACTUAL_GPU8_SUBSET2EPOCH_SAVED128",
+  "package": "A",
+  "source_digest": "3aa899f672c5aaf1286c09f93637326b7e9c5ea4124851e2b84c66fd3ec78821",
+  "execution_inputs": {
+    "statistics.npz": "17e60fe86136beb3e6617ef24d345dd9ca7d176886c9c167fa2658bec6b40bfd",
+    "split_ids.npz": "e0c0b5802b8f821b656ed698249fab9ed7a9227c73ea356109acfe3ef4fdcbab",
+    "protocol.json": "b86fb8e916736064198c09be4e3d8d683656bdf814c00fdaceda9826b1685984",
+    "projection.npy": "39d08474af51199b4e447884be1d391d3a55ae954045e07768c21267798a836b"
+  },
+  "reports": {
+    "A_cv_free": {
+      "gradient_all_parameters": {
+        "queries": true,
+        "trunk.0.weight": true,
+        "trunk.0.bias": true,
+        "trunk.2.weight": true,
+        "trunk.2.bias": true,
+        "fuse.0.weight": true,
+        "fuse.0.bias": true,
+        "fuse.2.weight": true,
+        "fuse.2.bias": true,
+        "head.weight": true,
+        "head.bias": true
+      },
+      "resume": "EXACT_ALL_STATE",
+      "saved128_audit": {
+        "status": "PASS",
+        "max_abs_diff": 4.440892098500626e-16,
+        "n_fields": 254,
+        "mismatches": []
+      }
+    },
+    "A_cv_basis": {
+      "gradient_all_parameters": {
+        "queries": true,
+        "trunk.0.weight": true,
+        "trunk.0.bias": true,
+        "trunk.2.weight": true,
+        "trunk.2.bias": true,
+        "fuse.0.weight": true,
+        "fuse.0.bias": true,
+        "fuse.2.weight": true,
+        "fuse.2.bias": true,
+        "head.weight": true,
+        "head.bias": true
+      },
+      "resume": "EXACT_ALL_STATE",
+      "saved128_audit": {
+        "status": "PASS",
+        "max_abs_diff": 4.440892098500626e-16,
+        "n_fields": 254,
+        "mismatches": []
+      }
+    }
+  },
+  "kernel_tests": {
+    "status": "PASS_SYNTHETIC_ONLY",
+    "test_groups": 18,
+    "actual_GPU_preflight": false,
+    "production_started": false
+  },
+  "full_pipeline_profile_SHA": null,
+  "benchmark_step_seconds": {
+    "A_cv_free": 0.005991565623844508,
+    "A_cv_basis": 0.005926146877754945
+  },
+  "estimate_bytes": 6442450944,
+  "resource_observations": [
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 8375186227.200001,
+      "required_commit": 8375186227.200001,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 19042226176,
+        "commit": 18203090944,
+        "rss": 627613696,
+        "private": 2629963776,
+        "peak_rss": 627613696,
+        "peak_private": 2629963776
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 7281637376.0,
+      "required_commit": 4553737011.2,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18971377664,
+        "commit": 17940021248,
+        "rss": 841191424,
+        "private": 2939576320,
+        "peak_rss": 881426432,
+        "peak_private": 2966216704
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5980080537.6,
+      "required_commit": 2912947814.4,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 17987198976,
+        "commit": 16680611840,
+        "rss": 1842388992,
+        "private": 4201721856,
+        "peak_rss": 1842388992,
+        "peak_private": 4201721856
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5979777024.0,
+      "required_commit": 2909933977.6,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 17986220032,
+        "commit": 16677904384,
+        "rss": 1842622464,
+        "private": 4204040192,
+        "peak_rss": 1842622464,
+        "peak_private": 4204040192
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5979729100.8,
+      "required_commit": 2909646438.4,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 17986482176,
+        "commit": 16676732928,
+        "rss": 1842659328,
+        "private": 4204261376,
+        "peak_rss": 1842659328,
+        "peak_private": 4204261376
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5979729100.8,
+      "required_commit": 2909646438.4,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 17986424832,
+        "commit": 16676732928,
+        "rss": 1842659328,
+        "private": 4204261376,
+        "peak_rss": 1842659328,
+        "peak_private": 4204261376
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5979729100.8,
+      "required_commit": 2909646438.4,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 17986969600,
+        "commit": 16676732928,
+        "rss": 1842659328,
+        "private": 4204261376,
+        "peak_rss": 1842659328,
+        "peak_private": 4204261376
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5979723776.0,
+      "required_commit": 2909646438.4,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 17987301376,
+        "commit": 16676732928,
+        "rss": 1842663424,
+        "private": 4204261376,
+        "peak_rss": 1842663424,
+        "peak_private": 4204261376
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5979723776.0,
+      "required_commit": 2909646438.4,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 17987956736,
+        "commit": 16676732928,
+        "rss": 1842663424,
+        "private": 4204261376,
+        "peak_rss": 1842663424,
+        "peak_private": 4204261376
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5938919833.6,
+      "required_commit": 2857553920.0,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18057654272,
+        "commit": 16760524800,
+        "rss": 1874051072,
+        "private": 4244332544,
+        "peak_rss": 1874051072,
+        "peak_private": 4244332544
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5938919833.6,
+      "required_commit": 2857553920.0,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18057633792,
+        "commit": 16760524800,
+        "rss": 1874051072,
+        "private": 4244332544,
+        "peak_rss": 1874051072,
+        "peak_private": 4244332544
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5938919833.6,
+      "required_commit": 2857553920.0,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18057605120,
+        "commit": 16760524800,
+        "rss": 1874051072,
+        "private": 4244332544,
+        "peak_rss": 1874051072,
+        "peak_private": 4244332544
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5938919833.6,
+      "required_commit": 2857553920.0,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18057584640,
+        "commit": 16760524800,
+        "rss": 1874051072,
+        "private": 4244332544,
+        "peak_rss": 1874051072,
+        "peak_private": 4244332544
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5938919833.6,
+      "required_commit": 2857553920.0,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18057547776,
+        "commit": 16760643584,
+        "rss": 1874051072,
+        "private": 4244332544,
+        "peak_rss": 1874051072,
+        "peak_private": 4244332544
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5938919833.6,
+      "required_commit": 2857553920.0,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18057494528,
+        "commit": 16760643584,
+        "rss": 1874051072,
+        "private": 4244332544,
+        "peak_rss": 1874051072,
+        "peak_private": 4244332544
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5938919833.6,
+      "required_commit": 2857553920.0,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18057469952,
+        "commit": 16760643584,
+        "rss": 1874051072,
+        "private": 4244332544,
+        "peak_rss": 1874051072,
+        "peak_private": 4244332544
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 6442450944,
+      "factor": 1.3,
+      "required_physical": 5938919833.6,
+      "required_commit": 2857553920.0,
+      "retained_peak_limit": 8375186227.200001,
+      "snapshot": {
+        "physical": 18057453568,
+        "commit": 16774406144,
+        "rss": 1874051072,
+        "private": 4244332544,
+        "peak_rss": 1874051072,
+        "peak_private": 4244332544
+      }
+    }
+  ],
+  "full_FIT_twice_replayed": false,
+  "production_started": false
+}

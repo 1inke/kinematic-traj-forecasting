@@ -1,0 +1,96 @@
+{
+  "name": "E2E_DGEO_EXEC_V1_20261102",
+  "authorization": "Direct user execute supplied two direction documents; resolve protocol conflicts in favour of prior actual confirmed settings",
+  "original_design": "0f0c5844bdd98507b5b3d0b0811d093257a2e8bf42b47539bc7bdaf0757bae7b",
+  "supplied_analysis": "90cdc3615d721af149ccc70df8915ce33083baccb7b1f96d8a80fda1fdf79551",
+  "actual_alignment": "1b21c6424d1976260ba8fab5f13036127614047251b994c9033974373ce8c6a7",
+  "original_B0_invariants": {
+    "optimizer": {
+      "name": "AdamW",
+      "lr": 0.00025,
+      "weight_decay": 0.0005,
+      "betas": [
+        0.9,
+        0.999
+      ],
+      "eps": 1e-08,
+      "foreach": false
+    },
+    "scheduler": "monotonic cosine; warmup1epoch(340updates); total2720; per-update step",
+    "EMA": 0.995,
+    "clip": 5.0,
+    "drop_last": false,
+    "selection": "FIXED_FINAL_EPOCH8_EMA; no dev best checkpoint or earlystop",
+    "normalization": "Past-only focal heading lag3 speed>.03 else[1,0], peragent eight-observation mean; no fitted input stats",
+    "data_neighbor": "Full8 observed only, closest t0 stableID tie, focal+8, no neighbor future-life mask",
+    "augmentation": {
+      "reflection": true,
+      "rotation": false,
+      "speed": [
+        0.9,
+        1.1
+      ],
+      "probability": 0.5,
+      "curvature": 0
+    },
+    "base_loss": "Existing locked ModeQueryLoss smoothL1 exp weights1..2, winner ADE+.25FDE, classification.5*(softCE temp.5 gapscale>=.05+.25hardCE), endpoint.25, endpoint190pair relu(.4-distance)linear*.05, shortfirst2smoothL1*.2",
+    "oracle_coverage": {
+      "weight": 0.2,
+      "responsibility": "detach softmax(-(ADE+.25FDE)/.10)",
+      "normalized": false,
+      "warmup": 0
+    },
+    "additional_auxiliary_losses": 0,
+    "GT_in_prediction_forward": false
+  },
+  "arms": [
+    "DG-Base",
+    "DG-GeoGate",
+    "DG-GeoDiff",
+    "DG-GeoScore"
+  ],
+  "seed": 42,
+  "batch": 64,
+  "epochs_per_model": 8,
+  "updates_per_model": 2720,
+  "total_updates": 10880,
+  "fit": 21719,
+  "dev": 4753,
+  "context_dim": 64,
+  "mode_dim": 64,
+  "proj_dim": 16,
+  "heads": 4,
+  "coord_output_gain": 0.1,
+  "architecture": "Supplied geo_modules reference: target a0 only, DGBase no geo; GeoGate adds12D+QK centering; GeoDiff A1-.5A2; GeoScore adds exact1418 post-relational scorer. Original B0 children/params/buffers preserved.",
+  "geometry_units": "Coordinates meters, u/junc/turn per-source-sample displacement, radius meter and angle/pi; no GT; tail evaluation dt.4 world float64 unchanged",
+  "initial": "Fresh seed42 original weights/buffers EXACT B0; new constructor fork_rng seed20261102+seed, original RNG restored",
+  "paired": "Every epoch all RNG states and full batchID order EXACT against B0",
+  "model_parameters": {
+    "DG-Base": 301922,
+    "DG-GeoGate": 302754,
+    "DG-GeoDiff": 304802,
+    "DG-GeoScore": 304172
+  },
+  "gradient_gate": "Actual initial exactness and finite connected new tensors by third backward per prior; all4 actually connected on second. Advertised numeric norm/cos/negative% not hard gates.",
+  "comparator": "Existing matched B0 outputs only, no old trained warmstart or test effects",
+  "screening": "Reuse exact old compare_ud.pilot_screen: overall/changeADE and protectedFDE plus all-group allK20 five tails, zero-positive-excess or small-track NOT_ESTIMABLE, no floor; new allgroupADE/estimable-tail summaries are diagnostic only",
+  "mechanism_gain_rules": {
+    "GeoGate_vs_Base": "overall ADE lower and change ADE <=1.01 control",
+    "GeoDiff_vs_GeoGate": "overall ADE lower and change ADE <=1.01 control",
+    "GeoScore_vs_GeoGate": "common-covered change Top1 numerator higher, overall/change coverage nonlower and their ADEFDE<=1.01 control"
+  },
+  "promotion": "Full prior screen AND prospective adjacent point gain; only eligible to request own three-seed admission, never automatic",
+  "empirical_causality": "Base engineering bundle, Geo feature+centering bundle, same nominal capacity not equal effective capacity. Signed attention not probability/intent. One seed not significance.",
+  "evaluation_contract": "f5db8a47ce38b89c919fb266377f38c9d646fe1f9046f9a8c7cf4762aafd98c9",
+  "mechanism_contract": "ddb604d55af3223a13d4b1a161bb23bbe7c641988903035a00ef23c6f1dd4838",
+  "full_workflow_planning_budget_seconds": 2700,
+  "updated_planning": "45min explicitly supplied current direction; oldUD30min deviation unchanged; no scientific gate relaxed",
+  "resource": "warning_first_remaining_v3; 1.3remaining warning, current low-reserve persistent emergency checkpoint stop",
+  "no_delete": true,
+  "old_PAUSED_untouched": true,
+  "no_following_seeds_V_F": true,
+  "runtime": {
+    "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+    "torch": "2.11.0+cu128"
+  }
+}

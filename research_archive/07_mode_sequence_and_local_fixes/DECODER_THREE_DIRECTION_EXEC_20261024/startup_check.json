@@ -1,0 +1,61 @@
+{
+  "checked_at": "2026-10-24T00:19:54.6759130+09:00",
+  "task": "Trajectory-DecoderThreeDirections-20261024",
+  "task_state": "Running",
+  "triggers": 0,
+  "processes": [
+    {
+      "ProcessId": 13632,
+      "ParentProcessId": 2804,
+      "CreationDate": "2026-10-24T00:19:45.156613+09:00",
+      "CommandLine": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\DECODER_THREE_DIRECTION_EXEC_20261024\\series_worker.py\""
+    },
+    {
+      "ProcessId": 12276,
+      "ParentProcessId": 13632,
+      "CreationDate": "2026-10-24T00:19:45.795724+09:00",
+      "CommandLine": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\DECODER_THREE_DIRECTION_EXEC_20261024\\series_worker.py\""
+    },
+    {
+      "ProcessId": 23996,
+      "ParentProcessId": 12276,
+      "CreationDate": "2026-10-24T00:19:48.707419+09:00",
+      "CommandLine": "\"<WORKSPACE_ROOT>\\.venv-governance\\Scripts\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\DECODER_THREE_DIRECTION_EXEC_20261024\\direction_A_time_basis\\screen.py\" --output \"<WORKSPACE_ROOT>\\qoder_work\\DECODER_THREE_DIRECTION_EXEC_20261024\\direction_A_time_basis\\screen_execution_20261024\" --estimated-peak-gib 3"
+    },
+    {
+      "ProcessId": 3424,
+      "ParentProcessId": 23996,
+      "CreationDate": "2026-10-24T00:19:48.727842+09:00",
+      "CommandLine": "\"<PYTHON_ENV_ROOT>\\envs\\astra2\\python.exe\" -B -u \"<WORKSPACE_ROOT>\\qoder_work\\DECODER_THREE_DIRECTION_EXEC_20261024\\direction_A_time_basis\\screen.py\" --output \"<WORKSPACE_ROOT>\\qoder_work\\DECODER_THREE_DIRECTION_EXEC_20261024\\direction_A_time_basis\\screen_execution_20261024\" --estimated-peak-gib 3"
+    }
+  ],
+  "worker": {
+    "status": "RUNNING",
+    "pid": 12276,
+    "parent_pid": 13632,
+    "started_at": "2026-10-24T00:19:46.133524+09:00"
+  },
+  "exit": null,
+  "progress": {
+    "stage": "A_SCREEN",
+    "at": "2026-10-24T00:19:48.710483+09:00",
+    "status": "RUNNING",
+    "active_worker": true,
+    "started_at": "2026-10-24T00:19:46.133524+09:00",
+    "query_at": "2026-10-24T00:54:46.133524+09:00",
+    "initial_completion_at": "2026-10-24T01:29:46.133524+09:00",
+    "completed_stages": [],
+    "first_progress_query_count": 0,
+    "source_digest": "96a5c99f3501d81b60d7d81823eb9b448c4bef9d77f943a9352a0d9eacec40f0",
+    "active_child_pid": 23996,
+    "child_args": [
+      "<WORKSPACE_ROOT>\\qoder_work\\DECODER_THREE_DIRECTION_EXEC_20261024\\direction_A_time_basis\\screen.py",
+      "--output",
+      "<WORKSPACE_ROOT>\\qoder_work\\DECODER_THREE_DIRECTION_EXEC_20261024\\direction_A_time_basis\\screen_execution_20261024",
+      "--estimated-peak-gib",
+      "3"
+    ]
+  },
+  "stderr_bytes": 0,
+  "result_present": false
+}

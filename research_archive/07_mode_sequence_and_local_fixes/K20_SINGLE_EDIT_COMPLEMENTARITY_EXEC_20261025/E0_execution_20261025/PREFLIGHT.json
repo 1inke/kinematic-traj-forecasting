@@ -1,0 +1,188 @@
+{
+  "status": "PASS",
+  "at": "2026-10-25T12:41:09.187218+09:00",
+  "source_digest": "52c8b317d3515d2c4dafafa1aac8cec06d1cf72ddd255592990376eecf490de8",
+  "source_count": 514,
+  "actual_128_windows": 128,
+  "actual_nonSTOP_actions": 51200,
+  "actual_seed42_first128_not_GT_selected": true,
+  "synthetic": [
+    {
+      "name": "general",
+      "max_error": 1.7763568394002505e-15
+    },
+    {
+      "name": "zero_native",
+      "max_error": 1.6653345369377348e-16
+    },
+    {
+      "name": "identical_copies",
+      "max_error": 0.0
+    },
+    {
+      "name": "duplicate_pool",
+      "max_error": 1.7763568394002505e-15
+    },
+    {
+      "name": "unique_good_deleted",
+      "max_error": 4.440892098500626e-15
+    },
+    {
+      "name": "ADE_FDE_different_slots",
+      "max_error": 1.7763568394002505e-15
+    }
+  ],
+  "max_abs_error": 3.3306690738754696e-16,
+  "contract": {
+    "valid_SHA_skip": true,
+    "actual_bad_reader_rejection": [
+      "source",
+      "output"
+    ]
+  },
+  "no_forward_training": true,
+  "identity": {
+    "status": "PASS_EXPLICIT_ID_AND_HISTORICAL_SHA",
+    "n_FIT": 18909,
+    "FIT_opt": 4096,
+    "FIT_hold": 3825,
+    "FIT_opt_pool": 15084,
+    "unused_pool": 10988,
+    "hold_change_tracks": 74,
+    "inner_n": 1856,
+    "inner_change": 497,
+    "inner_change_tracks": 35,
+    "track_key": "sequence|decimal_pedestrian_id",
+    "fit_id_sha": "2d3e196b06f4420a216eaebf3af3f66531783b85f08ec3825c3d8d3cc7f8b2a6",
+    "opt_id_sha": "81f13d055416a3a3e60230f00edade801104b131278ddcae6b1e040a0371cf62",
+    "opt_tracks": 509,
+    "opt_change": 977,
+    "opt_change_tracks": 216,
+    "source_row_space": "KIN cache row i = original grouped_train_index[i], original loader + current IDs + historical full array SHA; not shape-only",
+    "context": "train_encoder tokens decoder-prehook target8x96; recent last token and mean8tokens; original native_alignment0 recorded; no new forward",
+    "historical_training_lock_claim": false,
+    "no_outer_CAL_evaluation": true,
+    "inputs": {
+      "REGIME_ADAPTIVE_SELECTION_FORMAL_SERIES/results/cache/train_dev/eth_train.npz": {
+        "sha256": "f8e6769c7e28b0d5ad4c108989246d6e724c078190102ae90443e62600d5a3ea",
+        "size": 87254814
+      },
+      "F16_OBSERVABLE_CUE_DIAGNOSIS_20261003/labels/train.npz": {
+        "sha256": "01c8226f6bc3e7103c61f52294ac109ad2d585be2500a25d1601e08efe487efc",
+        "size": 4222064
+      },
+      "GENERATION_NATIVE_DECODER_SERIES/train_encoder.npz": {
+        "sha256": "f6c232e4b05e4e8db2a01c7fd0880beecd835b59352b81ba08132c8b610e87f0",
+        "size": 83228717
+      },
+      "GENERATION_GROUPED_TRANSFER_SERIES_20261006/identity_audit/splits.npz": {
+        "sha256": "349659306a435a3a70e65d75d08d618a2aa8bc76fca38142c3433ab5678e12e7",
+        "size": 240544
+      },
+      "UNION_SELECTOR_K40_TO_K20_20261018/results/cache_pred/kin_FIT_seed42.npy": {
+        "sha256": "795ce65f440dc2506f14daa8c2f5dc3a33eb24cd4c9cfae0062f364eaaa70351",
+        "size": 36305408
+      },
+      "KINEMATIC_DECODER_SPEED_CLAMP_20261018/results/short/KIN_seed42.pt": {
+        "sha256": "029fda98741cbbd57c7867bc6ca40b573e58c4dd4d109bbaef9cc9e07fe88e20",
+        "size": 259381
+      },
+      "UNION_SELECTOR_K40_TO_K20_20261018/results/cache_pred/kin_FIT_seed43.npy": {
+        "sha256": "b518e051d19ea08165b8e723852b00dac142ec28dd45894bdc6fe2eab6507292",
+        "size": 36305408
+      },
+      "KINEMATIC_DECODER_SPEED_CLAMP_20261018/results/short/KIN_seed43.pt": {
+        "sha256": "acd3d051e355c8c9b3e34f0998db42412343d0dbf2b07d3fde602811d133f31b",
+        "size": 259381
+      },
+      "UNION_SELECTOR_K40_TO_K20_20261018/results/cache_pred/kin_FIT_seed44.npy": {
+        "sha256": "deef585429d9d46014debdf5f94f7a38df8d1e44de89e889961eaa4138a2644f",
+        "size": 36305408
+      },
+      "KINEMATIC_DECODER_SPEED_CLAMP_20261018/results/short/KIN_seed44.pt": {
+        "sha256": "78305212770cd47b0af33d8e1b2def703c1d0ab362eb1d83487e58634261461a",
+        "size": 259381
+      }
+    }
+  },
+  "benchmark": {
+    "enumeration128_seconds": 1.6014983999775723,
+    "independent51200action_seconds": 4.201690300018527,
+    "population128_seconds": 0.15395669999998063,
+    "planning_seconds": 789.8574479995295,
+    "ETA_seconds": [
+      552.9002135996707,
+      1184.7861719992943
+    ],
+    "not_production_guarantee": true
+  },
+  "resource": {
+    "status": "PASS",
+    "estimate": 3221225472,
+    "factor": 1.3,
+    "required_physical": 3795325747.2000003,
+    "required_commit": 1808712089.6000001,
+    "retained_peak_limit": 4187593113.6000004,
+    "snapshot": {
+      "physical": 16937816064,
+      "commit": 20378419200,
+      "rss": 301744128,
+      "private": 1829908480,
+      "peak_rss": 381538304,
+      "peak_private": 1873031168
+    }
+  },
+  "observations": [
+    {
+      "status": "PASS",
+      "estimate": 3221225472,
+      "factor": 1.3,
+      "required_physical": 4187593113.6000004,
+      "required_commit": 4187593113.6000004,
+      "retained_peak_limit": 4187593113.6000004,
+      "snapshot": {
+        "physical": 17104707584,
+        "commit": 20539994112,
+        "rss": 53641216,
+        "private": 1581350912,
+        "peak_rss": 53641216,
+        "peak_private": 1581350912
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 3221225472,
+      "factor": 1.3,
+      "required_physical": 4087332454.4,
+      "required_commit": 2101714534.4,
+      "retained_peak_limit": 4187593113.6000004,
+      "snapshot": {
+        "physical": 17548099584,
+        "commit": 20896915456,
+        "rss": 77123584,
+        "private": 1604521984,
+        "peak_rss": 381538304,
+        "peak_private": 1873031168
+      }
+    },
+    {
+      "status": "PASS",
+      "estimate": 3221225472,
+      "factor": 1.3,
+      "required_physical": 3795325747.2000003,
+      "required_commit": 1808712089.6000001,
+      "retained_peak_limit": 4187593113.6000004,
+      "snapshot": {
+        "physical": 16937816064,
+        "commit": 20378419200,
+        "rss": 301744128,
+        "private": 1829908480,
+        "peak_rss": 381538304,
+        "peak_private": 1873031168
+      }
+    }
+  ],
+  "disk_free_bytes": 33869262848,
+  "estimated_new_outputs_bytes": 2147483648,
+  "elapsed_seconds": 13.642371700028889
+}

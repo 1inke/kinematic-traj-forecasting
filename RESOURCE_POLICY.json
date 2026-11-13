@@ -1,0 +1,19 @@
+{
+  "status": "HUMAN_APPROVED_DEFAULT_FOR_NEW_EXECUTIONS",
+  "version": "task_memory_1p3_v1",
+  "approved_date": "2026-10-15",
+  "safety_factor": 1.3,
+  "fixed_6GiB_system_reserve": false,
+  "fixed_6GiB_process_cap": false,
+  "required_before_start": "available physical and available commit each >= 1.3 * conservatively estimated task peak memory",
+  "required_while_running": {
+    "physical": "available_physical >= 1.3 * max(estimated_task_peak - current_task_RSS, 0)",
+    "commit": "available_commit >= 1.3 * max(estimated_task_peak - current_task_private, 0)",
+    "estimate_overrun": "stop if task process RSS or private exceeds 1.3*estimated_peak; review estimate instead of silent inflation"
+  },
+  "estimation": "Estimate each new task/stage from its measured runs, array/model/temp sizes and resource evidence. Do not reuse a single permanent GiB threshold. At launch use full peak; while running subtract memory already charged to this task.",
+  "legacy_locked_sources": "Keep original scientific code and failure evidence unchanged. Implement approved resource changes only through versioned new execution/recovery adapters.",
+  "current_validated_implementation": "GENERATION_UNPROJECTED_TIME_COUPLED_REFINEMENT_20261015/U0_execution_20261015/audit_memory_policy_20261015",
+  "auto_start_on_policy_change": false,
+  "no_OS_pagefile_or_user_program_modifications": true
+}

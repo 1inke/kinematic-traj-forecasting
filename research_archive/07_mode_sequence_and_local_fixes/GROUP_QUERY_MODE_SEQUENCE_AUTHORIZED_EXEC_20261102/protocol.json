@@ -1,0 +1,19 @@
+{
+ "stage":"Q","design":"docs/GROUP_QUERY_MODE_SEQUENCE_DESIGN_20261101/DESIGN.md",
+ "authorization":"2026-11-01 human execute directory experiments",
+ "arms":{"Q1":1,"Q3":3},"seeds":[42,43,44],"epochs":8,"batch_size":256,
+ "train":"FIT18909","development":"inner1856","infer":"fixed main group0 K20 T12",
+ "features":210,"new_parameters":{"Q1":82008,"Q3":82648,"export":82008},
+ "objective":"mean_g(mean_i min_k(ADE+.5FDE)+.05 mean_i_190pairs relu(.3-endpoint_distance))",
+ "optimizer":{"type":"AdamW","lr":0.001,"weight_decay":0.0001,"betas":[0.9,0.999],"eps":1e-8,"foreach":"torch original default","clip_norm":5},
+ "initialization":"original ContextK20 group0 exact; independent CPU subRNG 2026110100+seed auxiliaries; zero head NOT native identity",
+ "scientific_updates":3552,"scientific_epochs":48,"final_epoch_only":true,
+ "coverage":{"ADE":0.2,"FDE":0.4,"same_candidate":true},
+ "clustering":{"method":"complete","distance":"max(meanpath/.10,endpoint/.20)","cut":1},
+ "dt":0.4,"motion_literal_ratio":1.01,"junction_preserved":true,
+ "mechanism_gate":{"inner_change_all_seeds_positive":true,"mean_coverage_delta":0.02,"corrected_CI_lower_gt":0,"inner_error_ratio_max":1.01,"inner_coverage_ratio_min":0.99,"inner_lost_reference_success_max":0.01,"FIT_inner_all_group_five_motion_ratio_max":1.01},
+ "statistics":{"draws":20000,"RNG":20261101,"resample":"whole sequence|targettrack then paired3seed; window weighted then seedmean","family":3,"quantiles":[0.0083333333,0.9916666667],"fixed_seed_sensitivity":true,"min_valid_draws":19000,"min_tracks":20},
+ "original_budget_conservative_seconds_max":1800,"budget_conservative_seconds_max":null,"budget_authorization":"2026-11-02 human directly start then exit; authorization.json","resource_policy":"warning_first_remaining_v3",
+ "no_delete":true,"no_old_process_queries":true,"baseline_promoted":false,
+ "M":"own preflight only if Q mechanism gate PASS","E":"own preflight only if M causal mechanism and native safety PASS"
+}

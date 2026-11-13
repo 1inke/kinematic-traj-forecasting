@@ -1,0 +1,79 @@
+{
+  "at": "2026-10-27T17:01:52.5754949+09:00",
+  "task": "Trajectory-K20CollaborativeRefinement-20261027",
+  "task_state": "Ready",
+  "triggers": 0,
+  "processes": [],
+  "parents": [],
+  "worker": {
+    "status": "FAILURE",
+    "pid": 34104,
+    "started": "2026-10-27T17:01:30.306669+09:00",
+    "finished": "2026-10-27T17:01:47.226676+09:00",
+    "error": "Current child train_B1_42 failed; inspect its new stderr, preserve evidence",
+    "traceback": "Traceback (most recent call last):\n  File \"<WORKSPACE_ROOT>\\qoder_work\\K20_COLLABORATIVE_REFINEMENT_EXEC_20261027\\worker.py\", line 14, in main\n    for arm in ARMS:child(f'train_{arm}_{seed}','train.py',seed,arm)\n  File \"<WORKSPACE_ROOT>\\qoder_work\\K20_COLLABORATIVE_REFINEMENT_EXEC_20261027\\worker.py\", line 8, in child\n    if code:raise RuntimeError('Current child '+label+' failed; inspect its new stderr, preserve evidence')\nRuntimeError: Current child train_B1_42 failed; inspect its new stderr, preserve evidence\n"
+  },
+  "exit": {
+    "status": "FAILURE",
+    "pid": 34104,
+    "started": "2026-10-27T17:01:30.306669+09:00",
+    "finished": "2026-10-27T17:01:47.226676+09:00",
+    "error": "Current child train_B1_42 failed; inspect its new stderr, preserve evidence",
+    "traceback": "Traceback (most recent call last):\n  File \"<WORKSPACE_ROOT>\\qoder_work\\K20_COLLABORATIVE_REFINEMENT_EXEC_20261027\\worker.py\", line 14, in main\n    for arm in ARMS:child(f'train_{arm}_{seed}','train.py',seed,arm)\n  File \"<WORKSPACE_ROOT>\\qoder_work\\K20_COLLABORATIVE_REFINEMENT_EXEC_20261027\\worker.py\", line 8, in child\n    if code:raise RuntimeError('Current child '+label+' failed; inspect its new stderr, preserve evidence')\nRuntimeError: Current child train_B1_42 failed; inspect its new stderr, preserve evidence\n"
+  },
+  "stage": {
+    "stage": "train_B1_42",
+    "at": "2026-10-27T17:01:43.456341+09:00",
+    "args": [
+      "train.py",
+      42,
+      "B1"
+    ]
+  },
+  "child": {
+    "pid": 49184,
+    "stage": "train_B1_42",
+    "finished": "2026-10-27T17:01:47.207932+09:00",
+    "exit_code": 1
+  },
+  "histories": [
+    {
+      "arm": "B1",
+      "seed": 42,
+      "epochs": 0,
+      "done": false
+    },
+    {
+      "arm": "B2",
+      "seed": 42,
+      "epochs": 0,
+      "done": false
+    },
+    {
+      "arm": "B1",
+      "seed": 43,
+      "epochs": 0,
+      "done": false
+    },
+    {
+      "arm": "B2",
+      "seed": 43,
+      "epochs": 0,
+      "done": false
+    },
+    {
+      "arm": "B1",
+      "seed": 44,
+      "epochs": 0,
+      "done": false
+    },
+    {
+      "arm": "B2",
+      "seed": 44,
+      "epochs": 0,
+      "done": false
+    }
+  ],
+  "result": null,
+  "stderr_bytes": 733
+}

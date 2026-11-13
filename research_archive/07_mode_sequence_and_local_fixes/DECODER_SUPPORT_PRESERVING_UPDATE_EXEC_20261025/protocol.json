@@ -1,0 +1,21 @@
+{
+  "authorization":"2026-10-25 human: 按指定目录推进实验",
+  "design":"docs/DECODER_SUPPORT_PRESERVING_UPDATE_DESIGN_20261025",
+  "version":"support-preserving-update-v1",
+  "seeds":[42,43,44],"arms":["U","N","P"],"parameters":82008,
+  "input_dimension":210,"K":20,"T":12,"dt":0.4,
+  "FIT":18909,"inner":1856,"inner_change":497,
+  "task_loss":"original_A hard min(ADE+.5FDE) + .05 mean190 relu(.3-endpoint_distance), linear hinge, original A plus-zero graph",
+  "optimizer":{"type":"original torch AdamW","lr":0.001,"weight_decay":0.0001,"betas":[0.9,0.999],"eps":1e-8,"clip_norm":5.0,"moments":"clipped task only"},
+  "start":{"parent_epoch":8,"parent_steps":592,"all_model_buffers_optimizer_RNG":"exact parent resume, new loader explicitly reset","loader_seed_offset":2026102500},
+  "protection":"FIT-only fixed shared(native_good&A0_good), rescued(~native_good&A0_good); float64 same-candidate labels; current float32 R minslot max(ADE/.2,FDE/.4)",
+  "projection":{"all_parameters":true,"row_normalization":"L2, exactzero omitted","active_sets":[[],[0],[1],[0,1]],"SVD_rcond":1e-12,"normalized_KKT_tolerance":"1e-10*max(1,norm(d0))","float32_actual_bound":"norm(actual_increment-ideal_increment); normalized dot error <= this bound + solver arithmetic tolerance; report raw positives"},
+  "G0":{"hash_prefix":"support-step-v1|","canonical_id":"int(sample_id) rendered as decimal UTF8","windows":4096,"batches_per_seed":16,"batch":256,"reset_parent_each_batch":true,"valid_each_group_min":8,"valid_batches_per_seed_min":12,"conflict_seed_min":2,"conflict_fraction_min":0.2,"mean_h_P_max_U_ratio":0.5,"mean_h_P_strict_less_N":true,"each_seed_P_le_U":true,"median_norm_ratio_min":0.25,"exact_zero_fraction_max":0.1,"U_h_zero":"STOP_NO_OBSERVED_HARM"},
+  "G1":{"conditional_G0_all":true,"new_epochs":8,"steps_per_run":592,"runs":9,"epoch_end_population":"FIT and inner diagnostics; inner never selects","full_vector_samples":"G0 all48; G1 first2 predetermined batch hashes per run"},
+  "quality":{"ADE":0.2,"FDE":0.4,"same_candidate":true,"no_evaluation_epsilon":true,"cluster":"complete-link max(meanpath/.10,endpoint/.20) cut1"},
+  "G1_gate":{"coverage_comparisons":["P-U","P-N"],"each_seed_strict_positive":true,"mean_delta_pp_min":2,"A0_coverage_each_seed_nonnegative":true,"A0_lost_rate_mean_relative_reduction":0.2,"each_seed_A0_lost_nonincrease":true,"native_lost_each_seed_nonincrease_vs_U_N_A0":true,"bootstrap":20000,"rng":20261025,"percentiles":[0.0125,0.9875],"shared_entire_inner_tracks":true,"paired_model_seeds":true,"fixed_seed_sensitivity_same_gate":true,"min_tracks":20,"invalid_max_fraction":0.05},
+  "all_original_major_and_motion_gates_unchanged":true,
+  "estimated_peak_bytes":6442450944,"resource_factor":1.3,
+  "resource_inventory_GiB":{"torch_runtime":1.8,"input_features_native_labels":0.8,"model_moments_multigrad_and_copies":0.8,"full_saved_quality_and_two_distance_audits":1.1,"output_and_epoch_diagnostics":0.6,"IO_margin":0.9},
+  "no_external_data_or_maps":true,"no_old_F16_decoder_scorer_instantiation":true,"no_new_loss_or_scientific_sweep":true,"no_fixed_time_budget":true
+}

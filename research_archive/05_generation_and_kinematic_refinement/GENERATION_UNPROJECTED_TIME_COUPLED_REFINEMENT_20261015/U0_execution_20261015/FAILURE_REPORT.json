@@ -1,0 +1,86 @@
+{
+  "status": "STOP_RESOURCE_WAIT_HUMAN",
+  "worker_status": "FAILURE",
+  "scientific_results_complete": false,
+  "detected_at": "2026-10-15T20:25:21.8393464+09:00",
+  "scheduled_first_check": "2026-10-15T16:41:51.356+09:00",
+  "first_progress_query_done": true,
+  "first_progress_query_count": 1,
+  "check_late_not_on_time": true,
+  "worker_pid": 8528,
+  "worker_started_at": "2026-10-15T16:33:05.04348+09:00",
+  "worker_finished_at": "2026-10-15T16:47:20.871703+09:00",
+  "training_histories": [
+    {
+      "arm": "free_position",
+      "seed": 42,
+      "epochs": 25,
+      "last_epoch": 25
+    },
+    {
+      "arm": "free_position",
+      "seed": 43,
+      "epochs": 25,
+      "last_epoch": 25
+    },
+    {
+      "arm": "free_position",
+      "seed": 44,
+      "epochs": 25,
+      "last_epoch": 25
+    },
+    {
+      "arm": "integrated_acceleration",
+      "seed": 42,
+      "epochs": 25,
+      "last_epoch": 25
+    },
+    {
+      "arm": "integrated_acceleration",
+      "seed": 43,
+      "epochs": 25,
+      "last_epoch": 25
+    },
+    {
+      "arm": "integrated_acceleration",
+      "seed": 44,
+      "epochs": 25,
+      "last_epoch": 25
+    }
+  ],
+  "saved_jobs": 28,
+  "primary_output_entries_registered": 84,
+  "model_checkpoints_registered": 6,
+  "checkpoint_and_output_digests_rehashed_this_check": false,
+  "last_saved_progress": {
+    "stage": "U0_INDEPENDENT_SAVED_AUDIT",
+    "at": "2026-10-15T16:46:52.992648+09:00",
+    "job": "free_position/seed44/FIT",
+    "done": 20,
+    "total": 28
+  },
+  "resource_failure_at": "2026-10-15T16:47:20.582854+09:00",
+  "resource_failure": {
+    "private_GiB": 2.964710235595703,
+    "RSS_GiB": 0.7980232238769531,
+    "physical_available_GiB": 4.892677307128906,
+    "commit_available_GiB": 24.081172943115234
+  },
+  "lifecycle": {
+    "peak_private_GiB": 4.283550262451172,
+    "peak_RSS_GiB": 3.2813072204589844,
+    "min_physical_GiB": 4.892677307128906,
+    "min_commit_GiB": 20.574085235595703
+  },
+  "source_final_SHA_not_completed": true,
+  "ARITHMETIC_AUDIT_complete": false,
+  "RESULT_exists": false,
+  "PRESERVATION_exists": false,
+  "RESOURCE_final_exists": false,
+  "BOOTSTRAP_saved_but_not_finally_verified": true,
+  "failure_source": "failures/1792054040732607900",
+  "worker_stderr": "worker_stderr.log",
+  "resource_evidence": "RESOURCE_FAILURE.json",
+  "control_check_warnings": "Unused Join-Path $PSScriptRoot in interactive wrapper emitted six errors; check_once and all six history reads still returned; raw output retained. Not worker stderr or scientific failure.",
+  "next_action": "STOP, no automatic RAM poll/retry/relaunch. Human free memory then explicitly continue; only fresh resource check and exact-protocol saved-output audit recovery in new folder, no training rerun, no source/protocol/threshold edits."
+}

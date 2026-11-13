@@ -1,0 +1,138 @@
+{
+  "experiment": "EXP-179A",
+  "training": false,
+  "seed": 1,
+  "folds": [
+    "eth",
+    "hotel"
+  ],
+  "checkpoint": "EXP-173 final F16 + H3 + Joint-V2, fixed mode identity",
+  "primary_perturbations": [
+    "original",
+    "p1_plus",
+    "p1_minus",
+    "p3_plus",
+    "p3_minus"
+  ],
+  "p1": "symmetric Gaussian noise, sigma=0.01 * per-sample median observed step",
+  "p2": "drop first observation and linearly realign 7 to 8 steps; supplementary only",
+  "p3": "last two velocity magnitudes x0.98/x1.02 with headings preserved",
+  "score_control": "source-fold cross-fitted 25-bin native-score calibration",
+  "quality": "ADE + 0.25 * FDE",
+  "feature_summary": [
+    {
+      "feature": "trajectory_U",
+      "macro_spearman": -0.17333176691729324,
+      "abs_macro_spearman": 0.17333176691729324,
+      "positive_folds": 0,
+      "negative_folds": 2,
+      "stable_sign_folds": 2,
+      "cross_scene_gate": false
+    },
+    {
+      "feature": "endpoint_U",
+      "macro_spearman": -0.20112781954887216,
+      "abs_macro_spearman": 0.20112781954887216,
+      "positive_folds": 0,
+      "negative_folds": 2,
+      "stable_sign_folds": 2,
+      "cross_scene_gate": false
+    },
+    {
+      "feature": "teacher_U_0p7_0p3",
+      "macro_spearman": -0.1894736842105263,
+      "abs_macro_spearman": 0.1894736842105263,
+      "positive_folds": 0,
+      "negative_folds": 2,
+      "stable_sign_folds": 2,
+      "cross_scene_gate": false
+    },
+    {
+      "feature": "logit_variance",
+      "macro_spearman": 0.00372415413533835,
+      "abs_macro_spearman": 0.00372415413533835,
+      "positive_folds": 2,
+      "negative_folds": 0,
+      "stable_sign_folds": 2,
+      "cross_scene_gate": false
+    },
+    {
+      "feature": "rank_variance",
+      "macro_spearman": -0.04106481264091049,
+      "abs_macro_spearman": 0.04106481264091049,
+      "positive_folds": 0,
+      "negative_folds": 2,
+      "stable_sign_folds": 2,
+      "cross_scene_gate": false
+    },
+    {
+      "feature": "v2_correction_variance",
+      "macro_spearman": 0.034445488721804515,
+      "abs_macro_spearman": 0.034445488721804515,
+      "positive_folds": 1,
+      "negative_folds": 1,
+      "stable_sign_folds": 1,
+      "cross_scene_gate": false
+    },
+    {
+      "feature": "endpoint_direction_variance",
+      "macro_spearman": 0.16800986842105264,
+      "abs_macro_spearman": 0.16800986842105264,
+      "positive_folds": 2,
+      "negative_folds": 0,
+      "stable_sign_folds": 2,
+      "cross_scene_gate": false
+    },
+    {
+      "feature": "p2_trajectory_U",
+      "macro_spearman": -0.07036528822055138,
+      "abs_macro_spearman": 0.07036528822055138,
+      "positive_folds": 0,
+      "negative_folds": 2,
+      "stable_sign_folds": 2,
+      "cross_scene_gate": false
+    },
+    {
+      "feature": "p2_endpoint_U",
+      "macro_spearman": -0.10110338345864663,
+      "abs_macro_spearman": 0.10110338345864663,
+      "positive_folds": 0,
+      "negative_folds": 2,
+      "stable_sign_folds": 2,
+      "cross_scene_gate": false
+    }
+  ],
+  "top5_discrimination": [
+    {
+      "fold": "eth",
+      "samples": 64,
+      "winner_uncertainty": 0.020945411175489426,
+      "nonwinner_uncertainty": 0.0220964252948761,
+      "nonwinner_minus_winner": 0.001151014119386673,
+      "winner_lower_fraction": 0.484375
+    },
+    {
+      "fold": "hotel",
+      "samples": 64,
+      "winner_uncertainty": 0.024363553151488304,
+      "nonwinner_uncertainty": 0.028397466987371445,
+      "nonwinner_minus_winner": 0.004033914301544428,
+      "winner_lower_fraction": 0.65625
+    }
+  ],
+  "gate": {
+    "primary_feature": "trajectory_U",
+    "cross_scene_spearman_gate": false,
+    "macro_spearman": -0.17333176691729324,
+    "stable_sign_folds": 2,
+    "q1_quality": 0.9884048700332642,
+    "q4_quality": 1.4426398277282715,
+    "q4_vs_q1_relative_gap": 0.45956365803794585,
+    "q1_q4_gap_at_least_10_percent": false,
+    "top5_nonwinner_minus_winner_uncertainty": 0.0025924642104655504,
+    "top5_positive_folds": 2,
+    "top5_discrimination_gate": false,
+    "passed": false,
+    "decision": "STOP_UNCERTAINTY_SCORER"
+  }
+}

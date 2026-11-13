@@ -1,0 +1,8 @@
+# 预检阶段实现来源（生产前）
+
+1. AST发现cost报告字典字段以数字开头，运行前语法失败。原行与trace在failures/static_cost_keyword；仅改合法字段名parameter_budget_305000，计算未变。
+2. 首次GPU已走过独立损失/路径梯度、参数FD、513两epoch恢复及实际8batch与benchmark；进入同进程saved128测试时，evaluate错误新建Guard并再次以startup预留全E，违反同任务已占RSS/private应扣除的1.3 remaining语义。原实际snapshot physical11542925312、commit4546256896、currentprivate3106140160、peakprivate3140386816bytes，E4294967296；新的进程此时不应启动，但当前同一进程只需runtime检查1.3max(E-currentTASKRSS/private,0)，不能把已占内存再预留一遍。
+
+原failure GPU时间戳目录已保存全源/trace。修为保存夹具显式接收原Guard，CPU嵌套审核同样复用；正式独立进程仍各自startup检查，current/Windows retained峰<=1.3E与available remaining规则完全不变，估计未下调/膨胀，未OS/pagefile/userkill。生产数学、数据、损失与科学阈值无变化；候选来源重建后完整GPU+CPU重新预检，原失败不覆盖，不把之前部分通过称当前PASS。
+
+3. 修复后GPU全检查PASS35.603秒，但CPU入口在导入阶段误解析项目根audit包而非本execution的audit.py，未开始CPU科学审核。真实再次导入的trace及全源快照保留failures。core路径顺序明确本execution优先、项目根仅供src模块；不导入旧main/改变科学函数。旧GPU PASS按原digest存preflight_history，当前新源仍完整重检，新增FD活动mask明示证书而非放宽eps或标准。

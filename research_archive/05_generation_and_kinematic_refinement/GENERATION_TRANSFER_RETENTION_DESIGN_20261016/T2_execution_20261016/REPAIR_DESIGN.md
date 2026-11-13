@@ -1,0 +1,11 @@
+# Versioned resource repair; T1 evidence remains immutable
+
+Human continuation on 2026-10-16 permits correcting the guard before original T2, not rerunning or relabeling T1. T1 recorded private peak 4502712320 bytes above its 1.3E limit while its current-only guard returned PASS. Preserve the original report and deviation. New guard retains the same startup/remaining-demand 1.3 formulas and additionally rejects Windows retained lifetime private/RSS peaks above 1.3E. Observation time is not the peak occurrence time. Cache immutable policy values; keep at most 128 stage/16MiB-growth observations, and fail with readings. No OS/pagefile/user-process changes.
+
+Estimate is explicit: measured T1 production private peak plus one largest saved FIT float64 path payload, registered maximum trackdraw scratch and velocity batch temporary. This is new-task estimation, never retrospective T1 inflation. All components and source SHA are saved before the first startup check. Process-lifetime peaks include imports; preflight peak is not production peak.
+
+Primary field semantics: [Microsoft PROCESS_MEMORY_COUNTERS_EX](https://learn.microsoft.com/en-us/windows/win32/api/psapi/ns-psapi-process_memory_counters_ex): PeakPagefileUsage retains peak private commit, PeakWorkingSetSize retains peak RSS. Current values cannot substitute. Installed psutil field mapping is inspected and fixture-tested locally. Synthetic current-low/peak-high must reject, as must physical/commit shortage; exact threshold passes.
+
+Scientific T2 unchanged: fresh C only, paired A initialization and immutable certified A outputs. Lifetime-peak enforcement is infrastructure, not a new scientific factor. T1 resource deviation remains disclosed; its numerical A outputs can be reused only after all manifests/source/output SHA and identities pass. T1 mechanism gate false means D cannot trigger.
+
+Inline DA1 (same assistant, not external review): reversible representation does not isolate motion semantics or add information; standardization and optimization change. Peak repair cannot establish scientific success. T1 historical deviation cannot be erased. All original 24/9/3 statistical families, three seeds, 25 epochs and motion/protection gates remain unchanged.

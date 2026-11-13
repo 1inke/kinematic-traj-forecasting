@@ -1,0 +1,5547 @@
+{
+  "status": "ANALYZED_NO_PRIMARY_EFFECT",
+  "deployment": "NOT_DEPLOYABLE",
+  "scientific_execution": "PASS_EXECUTION_E1_E2_REVIEW_REQUIRED",
+  "E0": "ANALYZED_PASS",
+  "E1_formal_experiments_completed": 1,
+  "new_fresh_runs": 6,
+  "epochs": 48,
+  "optimizer_steps": 6144,
+  "E2_saved_audit": "PASS",
+  "E2_actual_cost": "MEASURED_GPU_CACHE_PARITY_PASS_CPU_PARITY_BLOCKED_PARAMETER_BUDGET_FAIL",
+  "primary": {
+    "status": "PASS_COMPLETE_PRIMARY_BOOTSTRAP",
+    "registered_primary": "innerchange S-I coverage",
+    "signal": false,
+    "per_seed_difference": [
+      0.0,
+      0.004024144869215263,
+      0.0020120724346076035
+    ],
+    "mean_difference": 0.002012072434607622,
+    "CI95": [
+      -0.0012821130378933847,
+      0.0072151374497944785
+    ],
+    "fixed_seed_CI95": [
+      -0.0009108091923048132,
+      0.005128205128205128
+    ],
+    "S_native_per_seed": [
+      0.0,
+      0.004024144869215263,
+      0.0020120724346076035
+    ],
+    "S_native_mean": 0.002012072434607622,
+    "n": 497,
+    "change_tracks": 35,
+    "all_inner_tracks": 76,
+    "draws": 20000,
+    "valid": 20000,
+    "rng": 20261025,
+    "draw_order": "wholeinner tracks then paired3seed",
+    "independent_all20000_maxerror": 6.938893903907228e-18,
+    "absolute_S_native_change_ADE_FDE_gain_perseed": [
+      [
+        -0.011734842424591108,
+        -0.019251059335885
+      ],
+      [
+        -0.010446232762676644,
+        -0.01911424580651233
+      ],
+      [
+        -0.0034373116483088495,
+        -0.007850363985282716
+      ]
+    ],
+    "absolute_ADE_FDE_joint_Bonferroni2_CI": [
+      [
+        -3.5202806929546476e-05,
+        0.00033295908490030296
+      ],
+      [
+        0.00634122092935103,
+        0.02016227272400715
+      ]
+    ],
+    "major_error_and_joint_signal": false,
+    "native_reference_not_three_independent_models": true
+  },
+  "motion_groups": 72,
+  "motion_items": 360,
+  "motion_failures": [],
+  "protected_error_failures": [
+    {
+      "n": 3825,
+      "tracks": 139,
+      "good": 1970,
+      "native_good": 1971,
+      "coverage": 0.515032679738562,
+      "rescue": 6,
+      "lost": 7,
+      "retained": 1964,
+      "lost_rate_native_good": 0.0035514967021816335,
+      "ADE": 0.1927247215632539,
+      "FDE": 0.33447440684404417,
+      "J": 1.092100998535153,
+      "Q_winner_ADE": 0.20035604046085748,
+      "Q_winner_FDE": 0.3457220977510729,
+      "motion_pass": true,
+      "correction_mean": 0.023433648973509986,
+      "correction_p95": 0.0,
+      "correction_max": 6.8692518630568395,
+      "distinct": 19.602875816993464,
+      "effective_good": 0.6755555555555556,
+      "seed": 43,
+      "split": "hold",
+      "arm": "S",
+      "group": "overall",
+      "native_ADE": 0.1913527460490587,
+      "native_FDE": 0.3305339656435055,
+      "native_J": 1.0826542544757334,
+      "protected_error_pass": false,
+      "change_5pct_each_error": false,
+      "lost_1pct_pass": true
+    },
+    {
+      "n": 778,
+      "tracks": 97,
+      "good": 301,
+      "native_good": 302,
+      "coverage": 0.38688946015424164,
+      "rescue": 0,
+      "lost": 1,
+      "retained": 301,
+      "lost_rate_native_good": 0.0033112582781456954,
+      "ADE": 0.22612940113517208,
+      "FDE": 0.37633293224314407,
+      "J": 1.2782534876331864,
+      "Q_winner_ADE": 0.23615597796362633,
+      "Q_winner_FDE": 0.3905184170747369,
+      "motion_pass": true,
+      "correction_mean": 0.02896045639945578,
+      "correction_p95": 0.0,
+      "correction_max": 6.585250535539624,
+      "distinct": 19.80077120822622,
+      "effective_good": 0.4961439588688946,
+      "seed": 43,
+      "split": "hold",
+      "arm": "S",
+      "group": "transition",
+      "native_ADE": 0.22397475595633792,
+      "native_FDE": 0.3725672041412181,
+      "native_J": 1.2659210661639595,
+      "protected_error_pass": false,
+      "change_5pct_each_error": false,
+      "lost_1pct_pass": true
+    }
+  ],
+  "native_success_lost_failures": [
+    {
+      "n": 1023,
+      "tracks": 74,
+      "good": 337,
+      "native_good": 340,
+      "coverage": 0.32942326490713586,
+      "rescue": 1,
+      "lost": 4,
+      "retained": 336,
+      "lost_rate_native_good": 0.011764705882352941,
+      "ADE": 0.2690240955733114,
+      "FDE": 0.47252591601247157,
+      "J": 1.5240432114532934,
+      "Q_winner_ADE": 0.27924532382685413,
+      "Q_winner_FDE": 0.4857377801735711,
+      "motion_pass": true,
+      "correction_mean": 0.02700407285808899,
+      "correction_p95": 0.0,
+      "correction_max": 6.8692518630568395,
+      "distinct": 19.613880742913,
+      "effective_good": 0.3939393939393939,
+      "seed": 43,
+      "split": "hold",
+      "arm": "S",
+      "group": "change",
+      "native_ADE": 0.26335374079034657,
+      "native_FDE": 0.45641655494122735,
+      "native_J": 1.487223205471217,
+      "protected_error_pass": false,
+      "change_5pct_each_error": false,
+      "lost_1pct_pass": false
+    }
+  ],
+  "source_count": 700,
+  "extension_count": 1,
+  "preservation_output_count": 837,
+  "extra_primary_output_SHA": {
+    "PRIMARY_COMPARISON.json": "9488635cfebe3fd8239e6a766dd050a46584416fd45c60f62941cd2be60150f0",
+    "BOOTSTRAP_DRAWS.npz": "554d3b74f7ec1721921f2162ec8607224b7158163d4c2261db974e0b4e3d27ad",
+    "COST_CACHED.json": "8641d0c238cbe7e501211b563fbb32ac924718951b62c0359d3919c1d7f55e20",
+    "ARITHMETIC_AUDIT.json": "9aa94cd21008fc69dde179ab945c8acdb7896f6dcd942613560fdd0d524e507c",
+    "ALL6_FINALS_LOCK.json": "a6fa9e3276ba3245b2c73a95a15886d539185ec80f299ab7afb57cc273d9fb74",
+    "RESOURCE.json": "939fa99336d722268747b38f0a975fbfc305539ab72547fcedfa2c2092109e9d",
+    "RESULT.json": "a4a34810ce7baef6725ac740163c23107a822ad9edf772ea767a4b6a04ddb67e",
+    "PRESERVATION.json": "7ef6e47dc508d1887a51e6405e4f09322d18bc69efaaf2449adcbe90d2379fd8",
+    "source_extension_prelaunch.json": "70b1e6421705915731b987139e29b9782f564af48e6e66502f1a97f32ffd3463",
+    "PRELAUNCH_REVIEW.json": "de7e5b9fd6811e1851bacd3779949a06396624d62efd6229dbe5cfaf10d84989",
+    "worker_state.json": "9e3cfb89fc7bf9ae3305f8b8731f85f284a124ca31ded13c980235b41e060537",
+    "exit_status.json": "356629f7306f0b1703b50f3ad2d06dc0154887d5540f42fb23e6e674d243f72e"
+  },
+  "all_seed_split_groups": [
+    {
+      "seed": 42,
+      "split": "opt",
+      "arm": "I",
+      "metrics": {
+        "overall": {
+          "n": 4096,
+          "tracks": 509,
+          "good": 2415,
+          "native_good": 2415,
+          "coverage": 0.589599609375,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 2415,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.16645364572424473,
+          "FDE": 0.2893717850995027,
+          "J": 0.9440074001027425,
+          "Q_winner_ADE": 0.1733693940890017,
+          "Q_winner_FDE": 0.29849267345819214,
+          "Q_segments": [
+            0.0829677394852688,
+            0.1858696816309399,
+            0.25127076115079666
+          ],
+          "J_segments": [
+            0.08187487299850431,
+            0.1818620500521103,
+            0.2532764085975073
+          ],
+          "motion": {
+            "speed_p95": 1.2723443194836297,
+            "accel_mean": 0.08816980154501701,
+            "accel_p95": 0.6314412766060497,
+            "jerk_mean": 0.48493149126474266,
+            "jerk_p95": 2.805629260514543
+          },
+          "native_motion": {
+            "speed_p95": 1.2723443194836297,
+            "accel_mean": 0.08816980154501701,
+            "accel_p95": 0.6314412766060497,
+            "jerk_mean": 0.48493149126474266,
+            "jerk_p95": 2.805629260514543
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.709716796875,
+          "effective_good": 0.831298828125
+        },
+        "stable": {
+          "n": 2405,
+          "tracks": 467,
+          "good": 1683,
+          "native_good": 1683,
+          "coverage": 0.6997920997920998,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 1683,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.12838086795578244,
+          "FDE": 0.222283028546245,
+          "J": 0.728609238514178,
+          "Q_winner_ADE": 0.13402172661686373,
+          "Q_winner_FDE": 0.229493131553082,
+          "Q_segments": [
+            0.06371417274442277,
+            0.14495358107442954,
+            0.19339742603173826
+          ],
+          "J_segments": [
+            0.06330271782543384,
+            0.14274193302118768,
+            0.19442055109812423
+          ],
+          "motion": {
+            "speed_p95": 1.3336156819562477,
+            "accel_mean": 0.09088295946174417,
+            "accel_p95": 0.6380672301450705,
+            "jerk_mean": 0.4998536393243012,
+            "jerk_p95": 2.9536133112654603
+          },
+          "native_motion": {
+            "speed_p95": 1.3336156819562477,
+            "accel_mean": 0.09088295946174417,
+            "accel_p95": 0.6380672301450705,
+            "jerk_mean": 0.4998536393243012,
+            "jerk_p95": 2.9536133112654603
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.63243243243243,
+          "effective_good": 1.0303534303534303
+        },
+        "transition": {
+          "n": 714,
+          "tracks": 250,
+          "good": 336,
+          "native_good": 336,
+          "coverage": 0.47058823529411764,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 336,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.2024182419907987,
+          "FDE": 0.35279784062320857,
+          "J": 1.1472231268666484,
+          "Q_winner_ADE": 0.21071081615462892,
+          "Q_winner_FDE": 0.3637423122947892,
+          "Q_segments": [
+            0.10150562808535409,
+            0.2253079996342942,
+            0.3053188207442388
+          ],
+          "J_segments": [
+            0.10047654676463216,
+            0.22135582177249405,
+            0.3083907783891654
+          ],
+          "motion": {
+            "speed_p95": 1.1847068482654521,
+            "accel_mean": 0.08342055467960917,
+            "accel_p95": 0.6085767374371328,
+            "jerk_mean": 0.4588104534226623,
+            "jerk_p95": 2.586210664787746
+          },
+          "native_motion": {
+            "speed_p95": 1.1847068482654521,
+            "accel_mean": 0.08342055467960917,
+            "accel_p95": 0.6085767374371328,
+            "jerk_mean": 0.4588104534226623,
+            "jerk_p95": 2.586210664787746
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.88235294117647,
+          "effective_good": 0.6190476190476191
+        },
+        "change": {
+          "n": 977,
+          "tracks": 216,
+          "good": 396,
+          "native_good": 396,
+          "coverage": 0.4053224155578301,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 396,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.2338910139932645,
+          "FDE": 0.40816631515749524,
+          "J": 1.3257234182307558,
+          "Q_winner_ADE": 0.24293885664338657,
+          "Q_winner_FDE": 0.4206581352314362,
+          "Q_segments": [
+            0.11681500207613217,
+            0.2577675964559254,
+            0.35423397139810214
+          ],
+          "J_segments": [
+            0.11399814640916862,
+            0.2492984148944995,
+            0.35787894417045596
+          ],
+          "motion": {
+            "speed_p95": 1.0846450184424274,
+            "accel_mean": 0.08496183580517296,
+            "accel_p95": 0.6370832497487955,
+            "jerk_mean": 0.46728835404468694,
+            "jerk_p95": 2.687441008571345
+          },
+          "native_motion": {
+            "speed_p95": 1.0846450184424274,
+            "accel_mean": 0.08496183580517296,
+            "accel_p95": 0.6370832497487955,
+            "jerk_mean": 0.46728835404468694,
+            "jerk_p95": 2.687441008571345
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.77379733879222,
+          "effective_good": 0.49641760491299897
+        }
+      },
+      "assignment": {
+        "overall": {
+          "n": 4096,
+          "B_nonempty": 2292,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 2292,
+          "correct_STOP_no_B": 1804,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 1036921,
+          "B_count_quantiles": [
+            0.0,
+            9.0,
+            37.0,
+            99.0
+          ]
+        },
+        "stable": {
+          "n": 2405,
+          "B_nonempty": 1394,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 1394,
+          "correct_STOP_no_B": 1011,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 615983,
+          "B_count_quantiles": [
+            0.0,
+            15.0,
+            38.0,
+            99.0
+          ]
+        },
+        "transition": {
+          "n": 714,
+          "B_nonempty": 399,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 399,
+          "correct_STOP_no_B": 315,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 168834,
+          "B_count_quantiles": [
+            0.0,
+            7.0,
+            37.0,
+            92.0
+          ]
+        },
+        "change": {
+          "n": 977,
+          "B_nonempty": 499,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 499,
+          "correct_STOP_no_B": 478,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 252104,
+          "B_count_quantiles": [
+            0.0,
+            1.0,
+            36.0,
+            94.0
+          ]
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "split": "opt",
+      "arm": "S",
+      "metrics": {
+        "overall": {
+          "n": 4096,
+          "tracks": 509,
+          "good": 2424,
+          "native_good": 2415,
+          "coverage": 0.591796875,
+          "rescue": 10,
+          "lost": 1,
+          "retained": 2414,
+          "lost_rate_native_good": 0.00041407867494824016,
+          "ADE": 0.16575678934421692,
+          "FDE": 0.28887897413862634,
+          "J": 0.9411608669475673,
+          "Q_winner_ADE": 0.1727158571693557,
+          "Q_winner_FDE": 0.2981029924431323,
+          "Q_segments": [
+            0.08236910868522075,
+            0.18503604888757672,
+            0.25074241393526947
+          ],
+          "J_segments": [
+            0.08121661940640988,
+            0.1809916704951114,
+            0.25279459405186616
+          ],
+          "motion": {
+            "speed_p95": 1.2723386126783474,
+            "accel_mean": 0.08722024180360391,
+            "accel_p95": 0.6161182045860565,
+            "jerk_mean": 0.4769559367975069,
+            "jerk_p95": 2.7774566141105033
+          },
+          "native_motion": {
+            "speed_p95": 1.2723443194836297,
+            "accel_mean": 0.08816980154501701,
+            "accel_p95": 0.6314412766060497,
+            "jerk_mean": 0.48493149126474266,
+            "jerk_p95": 2.805629260514543
+          },
+          "motion_pass": true,
+          "correction_mean": 0.01239147632369095,
+          "correction_p95": 0.0,
+          "correction_max": 5.908137391661677,
+          "rescue_IDs": [
+            1556,
+            1366,
+            7957,
+            25826,
+            17472,
+            17802,
+            3853,
+            18019,
+            21406,
+            17278
+          ],
+          "lost_IDs": [
+            9475
+          ],
+          "distinct": 19.585205078125,
+          "effective_good": 0.843994140625
+        },
+        "stable": {
+          "n": 2405,
+          "tracks": 467,
+          "good": 1689,
+          "native_good": 1683,
+          "coverage": 0.7022869022869023,
+          "rescue": 6,
+          "lost": 0,
+          "retained": 1683,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.1270836323369769,
+          "FDE": 0.22052096769139407,
+          "J": 0.7223448888622361,
+          "Q_winner_ADE": 0.13276486334668652,
+          "Q_winner_FDE": 0.22776609120207114,
+          "Q_segments": [
+            0.06288870749646844,
+            0.14358879636650893,
+            0.19181708617708193
+          ],
+          "J_segments": [
+            0.06238336360260521,
+            0.14120453373116879,
+            0.19302539527323767
+          ],
+          "motion": {
+            "speed_p95": 1.3336156819562477,
+            "accel_mean": 0.08985020209777544,
+            "accel_p95": 0.6217047983419041,
+            "jerk_mean": 0.4917222188869303,
+            "jerk_p95": 2.92368601110558
+          },
+          "native_motion": {
+            "speed_p95": 1.3336156819562477,
+            "accel_mean": 0.09088295946174417,
+            "accel_p95": 0.6380672301450705,
+            "jerk_mean": 0.4998536393243012,
+            "jerk_p95": 2.9536133112654603
+          },
+          "motion_pass": true,
+          "correction_mean": 0.011769892410345185,
+          "correction_p95": 0.0,
+          "correction_max": 5.908137391661677,
+          "rescue_IDs": [
+            1556,
+            7957,
+            25826,
+            17472,
+            17802,
+            3853
+          ],
+          "lost_IDs": [],
+          "distinct": 19.5010395010395,
+          "effective_good": 1.0444906444906445
+        },
+        "transition": {
+          "n": 714,
+          "tracks": 250,
+          "good": 337,
+          "native_good": 336,
+          "coverage": 0.47198879551820727,
+          "rescue": 1,
+          "lost": 0,
+          "retained": 336,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.20266090755104388,
+          "FDE": 0.35317338241505203,
+          "J": 1.1480248225909646,
+          "Q_winner_ADE": 0.211117129349887,
+          "Q_winner_FDE": 0.36427282589195903,
+          "Q_segments": [
+            0.10141890890838759,
+            0.2259429796266394,
+            0.30598949951463417
+          ],
+          "J_segments": [
+            0.1003369323528828,
+            0.2221059067135266,
+            0.30869074289170884
+          ],
+          "motion": {
+            "speed_p95": 1.1861989736845213,
+            "accel_mean": 0.08274592697715168,
+            "accel_p95": 0.5980979259513283,
+            "jerk_mean": 0.45206597218899297,
+            "jerk_p95": 2.563990774201631
+          },
+          "native_motion": {
+            "speed_p95": 1.1847068482654521,
+            "accel_mean": 0.08342055467960917,
+            "accel_p95": 0.6085767374371328,
+            "jerk_mean": 0.4588104534226623,
+            "jerk_p95": 2.586210664787746
+          },
+          "motion_pass": true,
+          "correction_mean": 0.011109107783780731,
+          "correction_p95": 0.0,
+          "correction_max": 5.530460691739018,
+          "rescue_IDs": [
+            17278
+          ],
+          "lost_IDs": [],
+          "distinct": 19.80952380952381,
+          "effective_good": 0.6302521008403361
+        },
+        "change": {
+          "n": 977,
+          "tracks": 216,
+          "good": 398,
+          "native_good": 396,
+          "coverage": 0.40736949846468784,
+          "rescue": 3,
+          "lost": 1,
+          "retained": 395,
+          "lost_rate_native_good": 0.0025252525252525255,
+          "ADE": 0.23398545075950644,
+          "FDE": 0.4101633119034429,
+          "J": 1.328624083903387,
+          "Q_winner_ADE": 0.242995930666408,
+          "Q_winner_FDE": 0.42288803482009213,
+          "Q_segments": [
+            0.1164006414381467,
+            0.2571681817079211,
+            0.35541896885315616
+          ],
+          "J_segments": [
+            0.11360359664732002,
+            0.24888573319453117,
+            0.35907409537320983
+          ],
+          "motion": {
+            "speed_p95": 1.085567966582074,
+            "accel_mean": 0.08401615406420222,
+            "accel_p95": 0.6209350692746103,
+            "jerk_mean": 0.4587968030261817,
+            "jerk_p95": 2.6620953644437324
+          },
+          "native_motion": {
+            "speed_p95": 1.0846450184424274,
+            "accel_mean": 0.08496183580517296,
+            "accel_p95": 0.6370832497487955,
+            "jerk_mean": 0.46728835404468694,
+            "jerk_p95": 2.687441008571345
+          },
+          "motion_pass": true,
+          "correction_mean": 0.014858743927675042,
+          "correction_p95": 0.0,
+          "correction_max": 5.089853711670124,
+          "rescue_IDs": [
+            1366,
+            18019,
+            21406
+          ],
+          "lost_IDs": [
+            9475
+          ],
+          "distinct": 19.62845445240532,
+          "effective_good": 0.5066530194472876
+        }
+      },
+      "assignment": {
+        "overall": {
+          "n": 4096,
+          "B_nonempty": 2292,
+          "chosen_in_B": 262,
+          "STOP_omitted_opportunity": 1557,
+          "correct_STOP_no_B": 1528,
+          "executed": 1011,
+          "harmful": 12,
+          "ineffective": 737,
+          "eligible_actions": 1036921,
+          "B_count_quantiles": [
+            0.0,
+            9.0,
+            37.0,
+            99.0
+          ]
+        },
+        "stable": {
+          "n": 2405,
+          "B_nonempty": 1394,
+          "chosen_in_B": 220,
+          "STOP_omitted_opportunity": 956,
+          "correct_STOP_no_B": 890,
+          "executed": 559,
+          "harmful": 0,
+          "ineffective": 339,
+          "eligible_actions": 615983,
+          "B_count_quantiles": [
+            0.0,
+            15.0,
+            38.0,
+            99.0
+          ]
+        },
+        "transition": {
+          "n": 714,
+          "B_nonempty": 399,
+          "chosen_in_B": 18,
+          "STOP_omitted_opportunity": 284,
+          "correct_STOP_no_B": 273,
+          "executed": 157,
+          "harmful": 4,
+          "ineffective": 135,
+          "eligible_actions": 168834,
+          "B_count_quantiles": [
+            0.0,
+            7.0,
+            37.0,
+            92.0
+          ]
+        },
+        "change": {
+          "n": 977,
+          "B_nonempty": 499,
+          "chosen_in_B": 24,
+          "STOP_omitted_opportunity": 317,
+          "correct_STOP_no_B": 365,
+          "executed": 295,
+          "harmful": 8,
+          "ineffective": 263,
+          "eligible_actions": 252104,
+          "B_count_quantiles": [
+            0.0,
+            1.0,
+            36.0,
+            94.0
+          ]
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "split": "hold",
+      "arm": "I",
+      "metrics": {
+        "overall": {
+          "n": 3825,
+          "tracks": 139,
+          "good": 1971,
+          "native_good": 1971,
+          "coverage": 0.5152941176470588,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 1971,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.191352746049059,
+          "FDE": 0.33053396564350634,
+          "J": 1.082654254475734,
+          "Q_winner_ADE": 0.19901128843845603,
+          "Q_winner_FDE": 0.34175244829820667,
+          "Q_segments": [
+            0.09667430576456619,
+            0.21302584298801766,
+            0.28733371656278406
+          ],
+          "J_segments": [
+            0.09578703044444198,
+            0.20973855745513204,
+            0.28936525970860577
+          ],
+          "motion": {
+            "speed_p95": 1.2606336101332751,
+            "accel_mean": 0.08744107653046461,
+            "accel_p95": 0.6291953267557858,
+            "jerk_mean": 0.4809234049263372,
+            "jerk_p95": 2.744336043995611
+          },
+          "native_motion": {
+            "speed_p95": 1.2606336101332751,
+            "accel_mean": 0.08744107653046461,
+            "accel_p95": 0.6291953267557858,
+            "jerk_mean": 0.4809234049263372,
+            "jerk_p95": 2.744336043995611
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.764183006535948,
+          "effective_good": 0.6815686274509803
+        },
+        "stable": {
+          "n": 2024,
+          "tracks": 135,
+          "good": 1329,
+          "native_good": 1329,
+          "coverage": 0.6566205533596838,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 1329,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.14242145092643027,
+          "FDE": 0.2507514812547771,
+          "J": 0.8077255902653507,
+          "Q_winner_ADE": 0.14787224036569674,
+          "Q_winner_FDE": 0.2596478100070676,
+          "Q_segments": [
+            0.07109429810389432,
+            0.15576461051631815,
+            0.21675781247687773
+          ],
+          "J_segments": [
+            0.0707883549547569,
+            0.15426017147203033,
+            0.21788540402052095
+          ],
+          "motion": {
+            "speed_p95": 1.3227925746497438,
+            "accel_mean": 0.08844693232767346,
+            "accel_p95": 0.622602060448094,
+            "jerk_mean": 0.48645543673532315,
+            "jerk_p95": 2.8310505296081003
+          },
+          "native_motion": {
+            "speed_p95": 1.3227925746497438,
+            "accel_mean": 0.08844693232767346,
+            "accel_p95": 0.622602060448094,
+            "jerk_mean": 0.48645543673532315,
+            "jerk_p95": 2.8310505296081003
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.684288537549406,
+          "effective_good": 0.9026679841897233
+        },
+        "transition": {
+          "n": 778,
+          "tracks": 97,
+          "good": 302,
+          "native_good": 302,
+          "coverage": 0.38817480719794345,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 302,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.223974755956338,
+          "FDE": 0.37256720414121824,
+          "J": 1.265921066163959,
+          "Q_winner_ADE": 0.2338427340945228,
+          "Q_winner_FDE": 0.3867675637804954,
+          "Q_segments": [
+            0.11597018772033896,
+            0.25706990156821746,
+            0.3284881129950116
+          ],
+          "J_segments": [
+            0.11517008377017958,
+            0.25210243231933416,
+            0.33183677351337987
+          ],
+          "motion": {
+            "speed_p95": 1.2135600148349053,
+            "accel_mean": 0.0840704973012825,
+            "accel_p95": 0.608183720606672,
+            "jerk_mean": 0.4623849397908075,
+            "jerk_p95": 2.5519927107851688
+          },
+          "native_motion": {
+            "speed_p95": 1.2135600148349053,
+            "accel_mean": 0.0840704973012825,
+            "accel_p95": 0.608183720606672,
+            "jerk_mean": 0.4623849397908075,
+            "jerk_p95": 2.5519927107851688
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.93573264781491,
+          "effective_good": 0.48586118251928023
+        },
+        "change": {
+          "n": 1023,
+          "tracks": 74,
+          "good": 340,
+          "native_good": 340,
+          "coverage": 0.33235581622678395,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 340,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.26335374079034674,
+          "FDE": 0.456416554941227,
+          "J": 1.4872232054712153,
+          "Q_winner_ADE": 0.2737000162770142,
+          "Q_winner_FDE": 0.4699616643842722,
+          "Q_segments": [
+            0.13260953483945254,
+            0.2928210110694674,
+            0.39566950292212205
+          ],
+          "J_segments": [
+            0.13050580239331677,
+            0.2872841670205734,
+            0.3984878307472864
+          ],
+          "motion": {
+            "speed_p95": 1.1284971710031189,
+            "accel_mean": 0.08801434975309712,
+            "accel_p95": 0.6581858071532203,
+            "jerk_mean": 0.4840769665041035,
+            "jerk_p95": 2.7555481425096953
+          },
+          "native_motion": {
+            "speed_p95": 1.1284971710031189,
+            "accel_mean": 0.08801434975309712,
+            "accel_p95": 0.6581858071532203,
+            "jerk_mean": 0.4840769665041035,
+            "jerk_p95": 2.7555481425096953
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.791788856304986,
+          "effective_good": 0.39296187683284456
+        }
+      },
+      "assignment": {
+        "overall": {
+          "n": 3825,
+          "B_nonempty": 2060,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 2060,
+          "correct_STOP_no_B": 1765,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 950666,
+          "B_count_quantiles": [
+            0.0,
+            5.0,
+            38.0,
+            135.0
+          ]
+        },
+        "stable": {
+          "n": 2024,
+          "B_nonempty": 1101,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 1101,
+          "correct_STOP_no_B": 923,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 501706,
+          "B_count_quantiles": [
+            0.0,
+            11.0,
+            38.0,
+            135.0
+          ]
+        },
+        "transition": {
+          "n": 778,
+          "B_nonempty": 478,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 478,
+          "correct_STOP_no_B": 300,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 181904,
+          "B_count_quantiles": [
+            0.0,
+            10.0,
+            39.0,
+            73.0
+          ]
+        },
+        "change": {
+          "n": 1023,
+          "B_nonempty": 481,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 481,
+          "correct_STOP_no_B": 542,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 267056,
+          "B_count_quantiles": [
+            0.0,
+            0.0,
+            33.89999999999998,
+            86.0
+          ]
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "split": "hold",
+      "arm": "S",
+      "metrics": {
+        "overall": {
+          "n": 3825,
+          "tracks": 139,
+          "good": 1976,
+          "native_good": 1971,
+          "coverage": 0.5166013071895424,
+          "rescue": 6,
+          "lost": 1,
+          "retained": 1970,
+          "lost_rate_native_good": 0.0005073566717402334,
+          "ADE": 0.19177458789111895,
+          "FDE": 0.33294988651439206,
+          "J": 1.0872633654719204,
+          "Q_winner_ADE": 0.1993926859229062,
+          "Q_winner_FDE": 0.3443258247590389,
+          "Q_segments": [
+            0.09632552119975887,
+            0.21282145529629046,
+            0.2890310812726691
+          ],
+          "J_segments": [
+            0.09553918132657993,
+            0.20980136713179776,
+            0.2910165753292275
+          ],
+          "motion": {
+            "speed_p95": 1.2614077045808234,
+            "accel_mean": 0.08666076339423305,
+            "accel_p95": 0.6154798902144033,
+            "jerk_mean": 0.47382662216275406,
+            "jerk_p95": 2.7178395812491623
+          },
+          "native_motion": {
+            "speed_p95": 1.2606336101332751,
+            "accel_mean": 0.08744107653046461,
+            "accel_p95": 0.6291953267557858,
+            "jerk_mean": 0.4809234049263372,
+            "jerk_p95": 2.744336043995611
+          },
+          "motion_pass": true,
+          "correction_mean": 0.01135786146167708,
+          "correction_p95": 0.0,
+          "correction_max": 6.335907640716209,
+          "rescue_IDs": [
+            11786,
+            17848,
+            18983,
+            20868,
+            22228,
+            24330
+          ],
+          "lost_IDs": [
+            5455
+          ],
+          "distinct": 19.657254901960783,
+          "effective_good": 0.687843137254902
+        },
+        "stable": {
+          "n": 2024,
+          "tracks": 135,
+          "good": 1332,
+          "native_good": 1329,
+          "coverage": 0.658102766798419,
+          "rescue": 3,
+          "lost": 0,
+          "retained": 1329,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.14153327296785348,
+          "FDE": 0.2487017558866564,
+          "J": 0.8031649560553556,
+          "Q_winner_ADE": 0.14702594761805013,
+          "Q_winner_FDE": 0.2578342372216143,
+          "Q_segments": [
+            0.07074050181670978,
+            0.15499639745857183,
+            0.2153409435788689
+          ],
+          "J_segments": [
+            0.07045246203290627,
+            0.153477543726999,
+            0.2164412731322402
+          ],
+          "motion": {
+            "speed_p95": 1.3226931934902837,
+            "accel_mean": 0.08775273922022482,
+            "accel_p95": 0.6100959088093512,
+            "jerk_mean": 0.48008915096615434,
+            "jerk_p95": 2.8037151914018286
+          },
+          "native_motion": {
+            "speed_p95": 1.3227925746497438,
+            "accel_mean": 0.08844693232767346,
+            "accel_p95": 0.622602060448094,
+            "jerk_mean": 0.48645543673532315,
+            "jerk_p95": 2.8310505296081003
+          },
+          "motion_pass": true,
+          "correction_mean": 0.009822636909273746,
+          "correction_p95": 0.0,
+          "correction_max": 6.335907640716209,
+          "rescue_IDs": [
+            18983,
+            22228,
+            24330
+          ],
+          "lost_IDs": [],
+          "distinct": 19.590415019762847,
+          "effective_good": 0.9095849802371542
+        },
+        "transition": {
+          "n": 778,
+          "tracks": 97,
+          "good": 303,
+          "native_good": 302,
+          "coverage": 0.38946015424164526,
+          "rescue": 1,
+          "lost": 0,
+          "retained": 302,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.2239954196454934,
+          "FDE": 0.37381211649608403,
+          "J": 1.267166257140306,
+          "Q_winner_ADE": 0.23400004965260673,
+          "Q_winner_FDE": 0.38804312885842546,
+          "Q_segments": [
+            0.11591911172009015,
+            0.25703274131311493,
+            0.3290482959246146
+          ],
+          "J_segments": [
+            0.1153003768713031,
+            0.2526767632913884,
+            0.3322281104133907
+          ],
+          "motion": {
+            "speed_p95": 1.215336164733838,
+            "accel_mean": 0.08335237768234918,
+            "accel_p95": 0.5973076047100002,
+            "jerk_mean": 0.454639227850723,
+            "jerk_p95": 2.519947223821538
+          },
+          "native_motion": {
+            "speed_p95": 1.2135600148349053,
+            "accel_mean": 0.0840704973012825,
+            "accel_p95": 0.608183720606672,
+            "jerk_mean": 0.4623849397908075,
+            "jerk_p95": 2.5519927107851688
+          },
+          "motion_pass": true,
+          "correction_mean": 0.012982591820145006,
+          "correction_p95": 0.0,
+          "correction_max": 6.001337372534543,
+          "rescue_IDs": [
+            11786
+          ],
+          "lost_IDs": [],
+          "distinct": 19.838046272493575,
+          "effective_good": 0.4897172236503856
+        },
+        "change": {
+          "n": 1023,
+          "tracks": 74,
+          "good": 341,
+          "native_good": 340,
+          "coverage": 0.3333333333333333,
+          "rescue": 2,
+          "lost": 1,
+          "retained": 339,
+          "lost_rate_native_good": 0.0029411764705882353,
+          "ADE": 0.26667254908348065,
+          "FDE": 0.46855829459335635,
+          "J": 1.5125328971836731,
+          "Q_winner_ADE": 0.27668080845205745,
+          "Q_winner_FDE": 0.48220159268320756,
+          "Q_segments": [
+            0.1320442561034479,
+            0.2936049709780615,
+            0.40439319827466264
+          ],
+          "J_segments": [
+            0.1301445671688097,
+            0.2886306538953842,
+            0.4072216949296414
+          ],
+          "motion": {
+            "speed_p95": 1.1287176216245534,
+            "accel_mean": 0.08701634991626472,
+            "accel_p95": 0.6448505086557127,
+            "jerk_mean": 0.476028415395089,
+            "jerk_p95": 2.7309731295316366
+          },
+          "native_motion": {
+            "speed_p95": 1.1284971710031189,
+            "accel_mean": 0.08801434975309712,
+            "accel_p95": 0.6581858071532203,
+            "jerk_mean": 0.4840769665041035,
+            "jerk_p95": 2.7555481425096953
+          },
+          "motion_pass": true,
+          "correction_mean": 0.013159674047382176,
+          "correction_p95": 0.0,
+          "correction_max": 6.242671484931437,
+          "rescue_IDs": [
+            17848,
+            20868
+          ],
+          "lost_IDs": [
+            5455
+          ],
+          "distinct": 19.652003910068427,
+          "effective_good": 0.3998044965786901
+        }
+      },
+      "assignment": {
+        "overall": {
+          "n": 3825,
+          "B_nonempty": 2060,
+          "chosen_in_B": 131,
+          "STOP_omitted_opportunity": 1521,
+          "correct_STOP_no_B": 1465,
+          "executed": 839,
+          "harmful": 25,
+          "ineffective": 683,
+          "eligible_actions": 950666,
+          "B_count_quantiles": [
+            0.0,
+            5.0,
+            38.0,
+            135.0
+          ]
+        },
+        "stable": {
+          "n": 2024,
+          "B_nonempty": 1101,
+          "chosen_in_B": 103,
+          "STOP_omitted_opportunity": 834,
+          "correct_STOP_no_B": 810,
+          "executed": 380,
+          "harmful": 1,
+          "ineffective": 276,
+          "eligible_actions": 501706,
+          "B_count_quantiles": [
+            0.0,
+            11.0,
+            38.0,
+            135.0
+          ]
+        },
+        "transition": {
+          "n": 778,
+          "B_nonempty": 478,
+          "chosen_in_B": 15,
+          "STOP_omitted_opportunity": 356,
+          "correct_STOP_no_B": 234,
+          "executed": 188,
+          "harmful": 5,
+          "ineffective": 168,
+          "eligible_actions": 181904,
+          "B_count_quantiles": [
+            0.0,
+            10.0,
+            39.0,
+            73.0
+          ]
+        },
+        "change": {
+          "n": 1023,
+          "B_nonempty": 481,
+          "chosen_in_B": 13,
+          "STOP_omitted_opportunity": 331,
+          "correct_STOP_no_B": 421,
+          "executed": 271,
+          "harmful": 19,
+          "ineffective": 239,
+          "eligible_actions": 267056,
+          "B_count_quantiles": [
+            0.0,
+            0.0,
+            33.89999999999998,
+            86.0
+          ]
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "split": "inner",
+      "arm": "I",
+      "metrics": {
+        "overall": {
+          "n": 1856,
+          "tracks": 76,
+          "good": 932,
+          "native_good": 932,
+          "coverage": 0.5021551724137931,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 932,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.1933621567440311,
+          "FDE": 0.3382179530656701,
+          "J": 1.0877257900154198,
+          "Q_winner_ADE": 0.20068052844496875,
+          "Q_winner_FDE": 0.34693968111433293,
+          "Q_segments": [
+            0.09466751823519923,
+            0.21331510979076185,
+            0.2940589573089452
+          ],
+          "J_segments": [
+            0.09352230481790727,
+            0.20930008269072434,
+            0.2956004403111171
+          ],
+          "motion": {
+            "speed_p95": 1.3467121592186422,
+            "accel_mean": 0.09237220182858123,
+            "accel_p95": 0.6569523212112709,
+            "jerk_mean": 0.5080442142947003,
+            "jerk_p95": 2.9314601623263985
+          },
+          "native_motion": {
+            "speed_p95": 1.3467121592186422,
+            "accel_mean": 0.09237220182858123,
+            "accel_p95": 0.6569523212112709,
+            "jerk_mean": 0.5080442142947003,
+            "jerk_p95": 2.9314601623263985
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.842672413793103,
+          "effective_good": 0.6648706896551724
+        },
+        "stable": {
+          "n": 978,
+          "tracks": 70,
+          "good": 601,
+          "native_good": 601,
+          "coverage": 0.614519427402863,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 601,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.15368667392817037,
+          "FDE": 0.2660315637405744,
+          "J": 0.8652214888220766,
+          "Q_winner_ADE": 0.16011929652674503,
+          "Q_winner_FDE": 0.27395261210214,
+          "Q_segments": [
+            0.07572213691650531,
+            0.17089041661478052,
+            0.23374533604894926
+          ],
+          "J_segments": [
+            0.07504161473410616,
+            0.16757768254578415,
+            0.234673560416793
+          ],
+          "motion": {
+            "speed_p95": 1.4150983711604135,
+            "accel_mean": 0.09543195396097365,
+            "accel_p95": 0.6568946247852062,
+            "jerk_mean": 0.52487241515463,
+            "jerk_p95": 3.0608990071518583
+          },
+          "native_motion": {
+            "speed_p95": 1.4150983711604135,
+            "accel_mean": 0.09543195396097365,
+            "accel_p95": 0.6568946247852062,
+            "jerk_mean": 0.52487241515463,
+            "jerk_p95": 3.0608990071518583
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.805725971370144,
+          "effective_good": 0.8333333333333334
+        },
+        "transition": {
+          "n": 381,
+          "tracks": 44,
+          "good": 165,
+          "native_good": 165,
+          "coverage": 0.4330708661417323,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 165,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.208777027476573,
+          "FDE": 0.36567033110284325,
+          "J": 1.1750699171013896,
+          "Q_winner_ADE": 0.21764938588793942,
+          "Q_winner_FDE": 0.37256586991489277,
+          "Q_segments": [
+            0.1013043461760853,
+            0.23304836995768835,
+            0.31859544153004465
+          ],
+          "J_segments": [
+            0.09929322000230428,
+            0.22608918732348354,
+            0.32063846688029046
+          ],
+          "motion": {
+            "speed_p95": 1.2740968148369605,
+            "accel_mean": 0.08789838717199353,
+            "accel_p95": 0.6355182101852146,
+            "jerk_mean": 0.48343830410461797,
+            "jerk_p95": 2.707293135949759
+          },
+          "native_motion": {
+            "speed_p95": 1.2740968148369605,
+            "accel_mean": 0.08789838717199353,
+            "accel_p95": 0.6355182101852146,
+            "jerk_mean": 0.48343830410461797,
+            "jerk_p95": 2.707293135949759
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.913385826771652,
+          "effective_good": 0.5826771653543307
+        },
+        "change": {
+          "n": 497,
+          "tracks": 35,
+          "good": 166,
+          "native_good": 166,
+          "coverage": 0.33400402414486924,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 166,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.2596188095504965,
+          "FDE": 0.459221841853961,
+          "J": 1.45861330339034,
+          "Q_winner_ADE": 0.26748887880764666,
+          "Q_winner_FDE": 0.47091910880228327,
+          "Q_segments": [
+            0.1268605795716283,
+            0.28167120194873135,
+            0.3939348549025807
+          ],
+          "J_segments": [
+            0.12546475193400888,
+            0.2785311862655138,
+            0.39629863027850887
+          ],
+          "motion": {
+            "speed_p95": 1.1721206160113342,
+            "accel_mean": 0.08978082516596568,
+            "accel_p95": 0.6750425248604182,
+            "jerk_mean": 0.49379244636997177,
+            "jerk_p95": 2.821205077980657
+          },
+          "native_motion": {
+            "speed_p95": 1.1721206160113342,
+            "accel_mean": 0.08978082516596568,
+            "accel_p95": 0.6750425248604182,
+            "jerk_mean": 0.49379244636997177,
+            "jerk_p95": 2.821205077980657
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.861167002012074,
+          "effective_good": 0.3963782696177062
+        }
+      },
+      "assignment": {
+        "overall": {
+          "n": 1856,
+          "B_nonempty": 1048,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 1048,
+          "correct_STOP_no_B": 808,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 472900,
+          "B_count_quantiles": [
+            0.0,
+            10.0,
+            38.0,
+            97.0
+          ]
+        },
+        "stable": {
+          "n": 978,
+          "B_nonempty": 562,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 562,
+          "correct_STOP_no_B": 416,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 248641,
+          "B_count_quantiles": [
+            0.0,
+            14.0,
+            38.14999999999998,
+            97.0
+          ]
+        },
+        "transition": {
+          "n": 381,
+          "B_nonempty": 246,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 246,
+          "correct_STOP_no_B": 135,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 92658,
+          "B_count_quantiles": [
+            0.0,
+            13.0,
+            38.0,
+            58.0
+          ]
+        },
+        "change": {
+          "n": 497,
+          "B_nonempty": 240,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 240,
+          "correct_STOP_no_B": 257,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 131601,
+          "B_count_quantiles": [
+            0.0,
+            0.0,
+            38.0,
+            73.0
+          ]
+        }
+      }
+    },
+    {
+      "seed": 42,
+      "split": "inner",
+      "arm": "S",
+      "metrics": {
+        "overall": {
+          "n": 1856,
+          "tracks": 76,
+          "good": 932,
+          "native_good": 932,
+          "coverage": 0.5021551724137931,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 932,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.1939277150413432,
+          "FDE": 0.3407824127541269,
+          "J": 1.0934183776644788,
+          "Q_winner_ADE": 0.2014074485726249,
+          "Q_winner_FDE": 0.3495839973254398,
+          "Q_segments": [
+            0.09462975900551104,
+            0.21358309512475634,
+            0.2960094915876075
+          ],
+          "J_segments": [
+            0.09349441474484459,
+            0.20972888999723668,
+            0.29765968104920476
+          ],
+          "motion": {
+            "speed_p95": 1.346705024611691,
+            "accel_mean": 0.09142794580324388,
+            "accel_p95": 0.6435105827231726,
+            "jerk_mean": 0.4994093645337645,
+            "jerk_p95": 2.900533807564658
+          },
+          "native_motion": {
+            "speed_p95": 1.3467121592186422,
+            "accel_mean": 0.09237220182858123,
+            "accel_p95": 0.6569523212112709,
+            "jerk_mean": 0.5080442142947003,
+            "jerk_p95": 2.9314601623263985
+          },
+          "motion_pass": true,
+          "correction_mean": 0.013330027466717829,
+          "correction_p95": 0.0,
+          "correction_max": 5.631312828155398,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.728987068965516,
+          "effective_good": 0.6751077586206896
+        },
+        "stable": {
+          "n": 978,
+          "tracks": 70,
+          "good": 601,
+          "native_good": 601,
+          "coverage": 0.614519427402863,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 601,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.1533324954420407,
+          "FDE": 0.2664405359913464,
+          "J": 0.8650131045394325,
+          "Q_winner_ADE": 0.15980592899843674,
+          "Q_winner_FDE": 0.2746159904242365,
+          "Q_segments": [
+            0.07528692309146487,
+            0.1702700635286312,
+            0.2338608003752141
+          ],
+          "J_segments": [
+            0.07464462859728342,
+            0.1668868317026536,
+            0.2346316438252889
+          ],
+          "motion": {
+            "speed_p95": 1.4150983711604135,
+            "accel_mean": 0.09446837145035278,
+            "accel_p95": 0.6441524625134265,
+            "jerk_mean": 0.5162652425486561,
+            "jerk_p95": 3.0435445127617724
+          },
+          "native_motion": {
+            "speed_p95": 1.4150983711604135,
+            "accel_mean": 0.09543195396097365,
+            "accel_p95": 0.6568946247852062,
+            "jerk_mean": 0.52487241515463,
+            "jerk_p95": 3.0608990071518583
+          },
+          "motion_pass": true,
+          "correction_mean": 0.012555471840278772,
+          "correction_p95": 0.0,
+          "correction_max": 5.631312828155398,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.694274028629856,
+          "effective_good": 0.843558282208589
+        },
+        "transition": {
+          "n": 381,
+          "tracks": 44,
+          "good": 165,
+          "native_good": 165,
+          "coverage": 0.4330708661417323,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 165,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.20846707893704583,
+          "FDE": 0.365580909523751,
+          "J": 1.1747475830095453,
+          "Q_winner_ADE": 0.2176279146920411,
+          "Q_winner_FDE": 0.3725185480230138,
+          "Q_segments": [
+            0.10128938149273715,
+            0.23302817367437056,
+            0.31856618890901556
+          ],
+          "J_segments": [
+            0.09918258993165671,
+            0.2259104143743323,
+            0.3207056714731075
+          ],
+          "motion": {
+            "speed_p95": 1.2735063499208799,
+            "accel_mean": 0.08726663081422928,
+            "accel_p95": 0.6249318188956341,
+            "jerk_mean": 0.47674183730191444,
+            "jerk_p95": 2.6747281021778027
+          },
+          "native_motion": {
+            "speed_p95": 1.2740968148369605,
+            "accel_mean": 0.08789838717199353,
+            "accel_p95": 0.6355182101852146,
+            "jerk_mean": 0.48343830410461797,
+            "jerk_p95": 2.707293135949759
+          },
+          "motion_pass": true,
+          "correction_mean": 0.010234050402088806,
+          "correction_p95": 0.0,
+          "correction_max": 5.176298577042484,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.832020997375327,
+          "effective_good": 0.5931758530183727
+        },
+        "change": {
+          "n": 497,
+          "tracks": 35,
+          "good": 166,
+          "native_good": 166,
+          "coverage": 0.33400402414486924,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 166,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.2626653953710316,
+          "FDE": 0.46806234877982605,
+          "J": 1.4805289005615105,
+          "Q_winner_ADE": 0.270836600588839,
+          "Q_winner_FDE": 0.47952493682966735,
+          "Q_segments": [
+            0.12758745992362805,
+            0.2839081856149123,
+            0.4010141562279771
+          ],
+          "J_segments": [
+            0.1262266000690692,
+            0.2816290353180192,
+            0.40401963689122206
+          ],
+          "motion": {
+            "speed_p95": 1.172228195347341,
+            "accel_mean": 0.08863503781117557,
+            "accel_p95": 0.6573381906932129,
+            "jerk_mean": 0.483617169718414,
+            "jerk_p95": 2.798645574381455
+          },
+          "native_motion": {
+            "speed_p95": 1.1721206160113342,
+            "accel_mean": 0.08978082516596568,
+            "accel_p95": 0.6750425248604182,
+            "jerk_mean": 0.49379244636997177,
+            "jerk_p95": 2.821205077980657
+          },
+          "motion_pass": true,
+          "correction_mean": 0.017227578099074055,
+          "correction_p95": 0.0,
+          "correction_max": 5.620107976014404,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.718309859154928,
+          "effective_good": 0.40643863179074446
+        }
+      },
+      "assignment": {
+        "overall": {
+          "n": 1856,
+          "B_nonempty": 1048,
+          "chosen_in_B": 74,
+          "STOP_omitted_opportunity": 748,
+          "correct_STOP_no_B": 636,
+          "executed": 472,
+          "harmful": 7,
+          "ineffective": 391,
+          "eligible_actions": 472900,
+          "B_count_quantiles": [
+            0.0,
+            10.0,
+            38.0,
+            97.0
+          ]
+        },
+        "stable": {
+          "n": 978,
+          "B_nonempty": 562,
+          "chosen_in_B": 59,
+          "STOP_omitted_opportunity": 404,
+          "correct_STOP_no_B": 344,
+          "executed": 230,
+          "harmful": 1,
+          "ineffective": 170,
+          "eligible_actions": 248641,
+          "B_count_quantiles": [
+            0.0,
+            14.0,
+            38.14999999999998,
+            97.0
+          ]
+        },
+        "transition": {
+          "n": 381,
+          "B_nonempty": 246,
+          "chosen_in_B": 9,
+          "STOP_omitted_opportunity": 191,
+          "correct_STOP_no_B": 112,
+          "executed": 78,
+          "harmful": 0,
+          "ineffective": 69,
+          "eligible_actions": 92658,
+          "B_count_quantiles": [
+            0.0,
+            13.0,
+            38.0,
+            58.0
+          ]
+        },
+        "change": {
+          "n": 497,
+          "B_nonempty": 240,
+          "chosen_in_B": 6,
+          "STOP_omitted_opportunity": 153,
+          "correct_STOP_no_B": 180,
+          "executed": 164,
+          "harmful": 6,
+          "ineffective": 152,
+          "eligible_actions": 131601,
+          "B_count_quantiles": [
+            0.0,
+            0.0,
+            38.0,
+            73.0
+          ]
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "split": "opt",
+      "arm": "I",
+      "metrics": {
+        "overall": {
+          "n": 4096,
+          "tracks": 509,
+          "good": 2415,
+          "native_good": 2415,
+          "coverage": 0.589599609375,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 2415,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.16645364572424473,
+          "FDE": 0.2893717850995027,
+          "J": 0.9440074001027425,
+          "Q_winner_ADE": 0.1733693940890017,
+          "Q_winner_FDE": 0.29849267345819214,
+          "Q_segments": [
+            0.0829677394852688,
+            0.1858696816309399,
+            0.25127076115079666
+          ],
+          "J_segments": [
+            0.08187487299850431,
+            0.1818620500521103,
+            0.2532764085975073
+          ],
+          "motion": {
+            "speed_p95": 1.2723443194836297,
+            "accel_mean": 0.08816980154501701,
+            "accel_p95": 0.6314412766060497,
+            "jerk_mean": 0.48493149126474266,
+            "jerk_p95": 2.805629260514543
+          },
+          "native_motion": {
+            "speed_p95": 1.2723443194836297,
+            "accel_mean": 0.08816980154501701,
+            "accel_p95": 0.6314412766060497,
+            "jerk_mean": 0.48493149126474266,
+            "jerk_p95": 2.805629260514543
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.709716796875,
+          "effective_good": 0.831298828125
+        },
+        "stable": {
+          "n": 2405,
+          "tracks": 467,
+          "good": 1683,
+          "native_good": 1683,
+          "coverage": 0.6997920997920998,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 1683,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.12838086795578244,
+          "FDE": 0.222283028546245,
+          "J": 0.728609238514178,
+          "Q_winner_ADE": 0.13402172661686373,
+          "Q_winner_FDE": 0.229493131553082,
+          "Q_segments": [
+            0.06371417274442277,
+            0.14495358107442954,
+            0.19339742603173826
+          ],
+          "J_segments": [
+            0.06330271782543384,
+            0.14274193302118768,
+            0.19442055109812423
+          ],
+          "motion": {
+            "speed_p95": 1.3336156819562477,
+            "accel_mean": 0.09088295946174417,
+            "accel_p95": 0.6380672301450705,
+            "jerk_mean": 0.4998536393243012,
+            "jerk_p95": 2.9536133112654603
+          },
+          "native_motion": {
+            "speed_p95": 1.3336156819562477,
+            "accel_mean": 0.09088295946174417,
+            "accel_p95": 0.6380672301450705,
+            "jerk_mean": 0.4998536393243012,
+            "jerk_p95": 2.9536133112654603
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.63243243243243,
+          "effective_good": 1.0303534303534303
+        },
+        "transition": {
+          "n": 714,
+          "tracks": 250,
+          "good": 336,
+          "native_good": 336,
+          "coverage": 0.47058823529411764,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 336,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.2024182419907987,
+          "FDE": 0.35279784062320857,
+          "J": 1.1472231268666484,
+          "Q_winner_ADE": 0.21071081615462892,
+          "Q_winner_FDE": 0.3637423122947892,
+          "Q_segments": [
+            0.10150562808535409,
+            0.2253079996342942,
+            0.3053188207442388
+          ],
+          "J_segments": [
+            0.10047654676463216,
+            0.22135582177249405,
+            0.3083907783891654
+          ],
+          "motion": {
+            "speed_p95": 1.1847068482654521,
+            "accel_mean": 0.08342055467960917,
+            "accel_p95": 0.6085767374371328,
+            "jerk_mean": 0.4588104534226623,
+            "jerk_p95": 2.586210664787746
+          },
+          "native_motion": {
+            "speed_p95": 1.1847068482654521,
+            "accel_mean": 0.08342055467960917,
+            "accel_p95": 0.6085767374371328,
+            "jerk_mean": 0.4588104534226623,
+            "jerk_p95": 2.586210664787746
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.88235294117647,
+          "effective_good": 0.6190476190476191
+        },
+        "change": {
+          "n": 977,
+          "tracks": 216,
+          "good": 396,
+          "native_good": 396,
+          "coverage": 0.4053224155578301,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 396,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.2338910139932645,
+          "FDE": 0.40816631515749524,
+          "J": 1.3257234182307558,
+          "Q_winner_ADE": 0.24293885664338657,
+          "Q_winner_FDE": 0.4206581352314362,
+          "Q_segments": [
+            0.11681500207613217,
+            0.2577675964559254,
+            0.35423397139810214
+          ],
+          "J_segments": [
+            0.11399814640916862,
+            0.2492984148944995,
+            0.35787894417045596
+          ],
+          "motion": {
+            "speed_p95": 1.0846450184424274,
+            "accel_mean": 0.08496183580517296,
+            "accel_p95": 0.6370832497487955,
+            "jerk_mean": 0.46728835404468694,
+            "jerk_p95": 2.687441008571345
+          },
+          "native_motion": {
+            "speed_p95": 1.0846450184424274,
+            "accel_mean": 0.08496183580517296,
+            "accel_p95": 0.6370832497487955,
+            "jerk_mean": 0.46728835404468694,
+            "jerk_p95": 2.687441008571345
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.77379733879222,
+          "effective_good": 0.49641760491299897
+        }
+      },
+      "assignment": {
+        "overall": {
+          "n": 4096,
+          "B_nonempty": 2486,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 2486,
+          "correct_STOP_no_B": 1610,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 1003313,
+          "B_count_quantiles": [
+            0.0,
+            12.0,
+            36.0,
+            118.0
+          ]
+        },
+        "stable": {
+          "n": 2405,
+          "B_nonempty": 1550,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 1550,
+          "correct_STOP_no_B": 855,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 599371,
+          "B_count_quantiles": [
+            0.0,
+            18.0,
+            37.0,
+            118.0
+          ]
+        },
+        "transition": {
+          "n": 714,
+          "B_nonempty": 414,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 414,
+          "correct_STOP_no_B": 300,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 161290,
+          "B_count_quantiles": [
+            0.0,
+            8.0,
+            35.0,
+            116.0
+          ]
+        },
+        "change": {
+          "n": 977,
+          "B_nonempty": 522,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 522,
+          "correct_STOP_no_B": 455,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 242652,
+          "B_count_quantiles": [
+            0.0,
+            2.0,
+            33.0,
+            73.0
+          ]
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "split": "opt",
+      "arm": "S",
+      "metrics": {
+        "overall": {
+          "n": 4096,
+          "tracks": 509,
+          "good": 2425,
+          "native_good": 2415,
+          "coverage": 0.592041015625,
+          "rescue": 14,
+          "lost": 4,
+          "retained": 2411,
+          "lost_rate_native_good": 0.0016563146997929607,
+          "ADE": 0.16495145423644755,
+          "FDE": 0.2868454633319894,
+          "J": 0.9367394573216092,
+          "Q_winner_ADE": 0.17191225151630862,
+          "Q_winner_FDE": 0.2960528124554164,
+          "Q_segments": [
+            0.0821298497132044,
+            0.18454902266977527,
+            0.24905788216594563
+          ],
+          "J_segments": [
+            0.08095954271896103,
+            0.18061834458158987,
+            0.2511002365671588
+          ],
+          "motion": {
+            "speed_p95": 1.27218336741037,
+            "accel_mean": 0.0867517078700767,
+            "accel_p95": 0.6093437366717627,
+            "jerk_mean": 0.47324082714469656,
+            "jerk_p95": 2.764178623296509
+          },
+          "native_motion": {
+            "speed_p95": 1.2723443194836297,
+            "accel_mean": 0.08816980154501701,
+            "accel_p95": 0.6314412766060497,
+            "jerk_mean": 0.48493149126474266,
+            "jerk_p95": 2.805629260514543
+          },
+          "motion_pass": true,
+          "correction_mean": 0.02204659090719334,
+          "correction_p95": 0.0,
+          "correction_max": 7.47226230486517,
+          "rescue_IDs": [
+            24006,
+            21116,
+            25555,
+            17472,
+            3853,
+            12758,
+            22565,
+            21406,
+            9468,
+            22421,
+            15573,
+            23932,
+            24096,
+            24423
+          ],
+          "lost_IDs": [
+            17949,
+            11356,
+            4170,
+            1958
+          ],
+          "distinct": 19.541259765625,
+          "effective_good": 0.839111328125
+        },
+        "stable": {
+          "n": 2405,
+          "tracks": 467,
+          "good": 1689,
+          "native_good": 1683,
+          "coverage": 0.7022869022869023,
+          "rescue": 8,
+          "lost": 2,
+          "retained": 1681,
+          "lost_rate_native_good": 0.0011883541295306002,
+          "ADE": 0.1254438834401806,
+          "FDE": 0.2168369416930518,
+          "J": 0.7136850752872034,
+          "Q_winner_ADE": 0.1312369014941382,
+          "Q_winner_FDE": 0.22423607684874994,
+          "Q_segments": [
+            0.06229920956988973,
+            0.14246887853016652,
+            0.18894261638235804
+          ],
+          "J_segments": [
+            0.061673438596839214,
+            0.13989839936571896,
+            0.19011939602597974
+          ],
+          "motion": {
+            "speed_p95": 1.3335758595431402,
+            "accel_mean": 0.08954018031544367,
+            "accel_p95": 0.6158610538989892,
+            "jerk_mean": 0.4892165680539825,
+            "jerk_p95": 2.912107796160115
+          },
+          "native_motion": {
+            "speed_p95": 1.3336156819562477,
+            "accel_mean": 0.09088295946174417,
+            "accel_p95": 0.6380672301450705,
+            "jerk_mean": 0.4998536393243012,
+            "jerk_p95": 2.9536133112654603
+          },
+          "motion_pass": true,
+          "correction_mean": 0.019724474497877807,
+          "correction_p95": 0.0,
+          "correction_max": 6.537216236651884,
+          "rescue_IDs": [
+            24006,
+            25555,
+            17472,
+            3853,
+            12758,
+            22421,
+            15573,
+            23932
+          ],
+          "lost_IDs": [
+            4170,
+            1958
+          ],
+          "distinct": 19.476091476091476,
+          "effective_good": 1.0374220374220373
+        },
+        "transition": {
+          "n": 714,
+          "tracks": 250,
+          "good": 340,
+          "native_good": 336,
+          "coverage": 0.47619047619047616,
+          "rescue": 4,
+          "lost": 0,
+          "retained": 336,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.20166381855799337,
+          "FDE": 0.3517521257951175,
+          "J": 1.1451861347348367,
+          "Q_winner_ADE": 0.20980298491515745,
+          "Q_winner_FDE": 0.3627157445409135,
+          "Q_segments": [
+            0.10127733758925497,
+            0.22443956142127078,
+            0.30369205573494684
+          ],
+          "J_segments": [
+            0.10041510122338096,
+            0.2212347410988017,
+            0.30650698619446365
+          ],
+          "motion": {
+            "speed_p95": 1.1884239578430036,
+            "accel_mean": 0.08178075704715058,
+            "accel_p95": 0.5869180160768998,
+            "jerk_mean": 0.4446161167013616,
+            "jerk_p95": 2.5271821532677716
+          },
+          "native_motion": {
+            "speed_p95": 1.1847068482654521,
+            "accel_mean": 0.08342055467960917,
+            "accel_p95": 0.6085767374371328,
+            "jerk_mean": 0.4588104534226623,
+            "jerk_p95": 2.586210664787746
+          },
+          "motion_pass": true,
+          "correction_mean": 0.02716258075094985,
+          "correction_p95": 0.0,
+          "correction_max": 7.47226230486517,
+          "rescue_IDs": [
+            21116,
+            22565,
+            9468,
+            24096
+          ],
+          "lost_IDs": [],
+          "distinct": 19.735294117647058,
+          "effective_good": 0.6358543417366946
+        },
+        "change": {
+          "n": 977,
+          "tracks": 216,
+          "good": 396,
+          "native_good": 396,
+          "coverage": 0.4053224155578301,
+          "rescue": 2,
+          "lost": 2,
+          "retained": 394,
+          "lost_rate_native_good": 0.005050505050505051,
+          "ADE": 0.2353742583709801,
+          "FDE": 0.4117452970504863,
+          "J": 1.3334793356426962,
+          "Q_winner_ADE": 0.2443485188208551,
+          "Q_winner_FDE": 0.4241202798300203,
+          "Q_segments": [
+            0.1169521457225924,
+            0.2589818803844032,
+            0.35711153035556953
+          ],
+          "J_segments": [
+            0.11421625883108723,
+            0.2511724501403208,
+            0.3607199932382345
+          ],
+          "motion": {
+            "speed_p95": 1.085832625850334,
+            "accel_mean": 0.0835203697497712,
+            "accel_p95": 0.6134068160320899,
+            "jerk_mean": 0.45483385311164487,
+            "jerk_p95": 2.6525265220884595
+          },
+          "native_motion": {
+            "speed_p95": 1.0846450184424274,
+            "accel_mean": 0.08496183580517296,
+            "accel_p95": 0.6370832497487955,
+            "jerk_mean": 0.46728835404468694,
+            "jerk_p95": 2.687441008571345
+          },
+          "motion_pass": true,
+          "correction_mean": 0.02402394322649906,
+          "correction_p95": 0.0,
+          "correction_max": 6.181545797971176,
+          "rescue_IDs": [
+            21406,
+            24423
+          ],
+          "lost_IDs": [
+            17949,
+            11356
+          ],
+          "distinct": 19.559877175025587,
+          "effective_good": 0.49948822927328557
+        }
+      },
+      "assignment": {
+        "overall": {
+          "n": 4096,
+          "B_nonempty": 2486,
+          "chosen_in_B": 642,
+          "STOP_omitted_opportunity": 1040,
+          "correct_STOP_no_B": 895,
+          "executed": 2161,
+          "harmful": 125,
+          "ineffective": 1394,
+          "eligible_actions": 1003313,
+          "B_count_quantiles": [
+            0.0,
+            12.0,
+            36.0,
+            118.0
+          ]
+        },
+        "stable": {
+          "n": 2405,
+          "B_nonempty": 1550,
+          "chosen_in_B": 575,
+          "STOP_omitted_opportunity": 602,
+          "correct_STOP_no_B": 504,
+          "executed": 1299,
+          "harmful": 90,
+          "ineffective": 634,
+          "eligible_actions": 599371,
+          "B_count_quantiles": [
+            0.0,
+            18.0,
+            37.0,
+            118.0
+          ]
+        },
+        "transition": {
+          "n": 714,
+          "B_nonempty": 414,
+          "chosen_in_B": 43,
+          "STOP_omitted_opportunity": 212,
+          "correct_STOP_no_B": 147,
+          "executed": 355,
+          "harmful": 14,
+          "ineffective": 298,
+          "eligible_actions": 161290,
+          "B_count_quantiles": [
+            0.0,
+            8.0,
+            35.0,
+            116.0
+          ]
+        },
+        "change": {
+          "n": 977,
+          "B_nonempty": 522,
+          "chosen_in_B": 24,
+          "STOP_omitted_opportunity": 226,
+          "correct_STOP_no_B": 244,
+          "executed": 507,
+          "harmful": 21,
+          "ineffective": 462,
+          "eligible_actions": 242652,
+          "B_count_quantiles": [
+            0.0,
+            2.0,
+            33.0,
+            73.0
+          ]
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "split": "hold",
+      "arm": "I",
+      "metrics": {
+        "overall": {
+          "n": 3825,
+          "tracks": 139,
+          "good": 1971,
+          "native_good": 1971,
+          "coverage": 0.5152941176470588,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 1971,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.191352746049059,
+          "FDE": 0.33053396564350634,
+          "J": 1.082654254475734,
+          "Q_winner_ADE": 0.19901128843845603,
+          "Q_winner_FDE": 0.34175244829820667,
+          "Q_segments": [
+            0.09667430576456619,
+            0.21302584298801766,
+            0.28733371656278406
+          ],
+          "J_segments": [
+            0.09578703044444198,
+            0.20973855745513204,
+            0.28936525970860577
+          ],
+          "motion": {
+            "speed_p95": 1.2606336101332751,
+            "accel_mean": 0.08744107653046461,
+            "accel_p95": 0.6291953267557858,
+            "jerk_mean": 0.4809234049263372,
+            "jerk_p95": 2.744336043995611
+          },
+          "native_motion": {
+            "speed_p95": 1.2606336101332751,
+            "accel_mean": 0.08744107653046461,
+            "accel_p95": 0.6291953267557858,
+            "jerk_mean": 0.4809234049263372,
+            "jerk_p95": 2.744336043995611
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.764183006535948,
+          "effective_good": 0.6815686274509803
+        },
+        "stable": {
+          "n": 2024,
+          "tracks": 135,
+          "good": 1329,
+          "native_good": 1329,
+          "coverage": 0.6566205533596838,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 1329,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.14242145092643027,
+          "FDE": 0.2507514812547771,
+          "J": 0.8077255902653507,
+          "Q_winner_ADE": 0.14787224036569674,
+          "Q_winner_FDE": 0.2596478100070676,
+          "Q_segments": [
+            0.07109429810389432,
+            0.15576461051631815,
+            0.21675781247687773
+          ],
+          "J_segments": [
+            0.0707883549547569,
+            0.15426017147203033,
+            0.21788540402052095
+          ],
+          "motion": {
+            "speed_p95": 1.3227925746497438,
+            "accel_mean": 0.08844693232767346,
+            "accel_p95": 0.622602060448094,
+            "jerk_mean": 0.48645543673532315,
+            "jerk_p95": 2.8310505296081003
+          },
+          "native_motion": {
+            "speed_p95": 1.3227925746497438,
+            "accel_mean": 0.08844693232767346,
+            "accel_p95": 0.622602060448094,
+            "jerk_mean": 0.48645543673532315,
+            "jerk_p95": 2.8310505296081003
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.684288537549406,
+          "effective_good": 0.9026679841897233
+        },
+        "transition": {
+          "n": 778,
+          "tracks": 97,
+          "good": 302,
+          "native_good": 302,
+          "coverage": 0.38817480719794345,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 302,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.223974755956338,
+          "FDE": 0.37256720414121824,
+          "J": 1.265921066163959,
+          "Q_winner_ADE": 0.2338427340945228,
+          "Q_winner_FDE": 0.3867675637804954,
+          "Q_segments": [
+            0.11597018772033896,
+            0.25706990156821746,
+            0.3284881129950116
+          ],
+          "J_segments": [
+            0.11517008377017958,
+            0.25210243231933416,
+            0.33183677351337987
+          ],
+          "motion": {
+            "speed_p95": 1.2135600148349053,
+            "accel_mean": 0.0840704973012825,
+            "accel_p95": 0.608183720606672,
+            "jerk_mean": 0.4623849397908075,
+            "jerk_p95": 2.5519927107851688
+          },
+          "native_motion": {
+            "speed_p95": 1.2135600148349053,
+            "accel_mean": 0.0840704973012825,
+            "accel_p95": 0.608183720606672,
+            "jerk_mean": 0.4623849397908075,
+            "jerk_p95": 2.5519927107851688
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.93573264781491,
+          "effective_good": 0.48586118251928023
+        },
+        "change": {
+          "n": 1023,
+          "tracks": 74,
+          "good": 340,
+          "native_good": 340,
+          "coverage": 0.33235581622678395,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 340,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.26335374079034674,
+          "FDE": 0.456416554941227,
+          "J": 1.4872232054712153,
+          "Q_winner_ADE": 0.2737000162770142,
+          "Q_winner_FDE": 0.4699616643842722,
+          "Q_segments": [
+            0.13260953483945254,
+            0.2928210110694674,
+            0.39566950292212205
+          ],
+          "J_segments": [
+            0.13050580239331677,
+            0.2872841670205734,
+            0.3984878307472864
+          ],
+          "motion": {
+            "speed_p95": 1.1284971710031189,
+            "accel_mean": 0.08801434975309712,
+            "accel_p95": 0.6581858071532203,
+            "jerk_mean": 0.4840769665041035,
+            "jerk_p95": 2.7555481425096953
+          },
+          "native_motion": {
+            "speed_p95": 1.1284971710031189,
+            "accel_mean": 0.08801434975309712,
+            "accel_p95": 0.6581858071532203,
+            "jerk_mean": 0.4840769665041035,
+            "jerk_p95": 2.7555481425096953
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.791788856304986,
+          "effective_good": 0.39296187683284456
+        }
+      },
+      "assignment": {
+        "overall": {
+          "n": 3825,
+          "B_nonempty": 2291,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 2291,
+          "correct_STOP_no_B": 1534,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 917014,
+          "B_count_quantiles": [
+            0.0,
+            11.0,
+            36.0,
+            98.0
+          ]
+        },
+        "stable": {
+          "n": 2024,
+          "B_nonempty": 1305,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 1305,
+          "correct_STOP_no_B": 719,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 485537,
+          "B_count_quantiles": [
+            0.0,
+            17.0,
+            38.0,
+            96.0
+          ]
+        },
+        "transition": {
+          "n": 778,
+          "B_nonempty": 463,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 463,
+          "correct_STOP_no_B": 315,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 173720,
+          "B_count_quantiles": [
+            0.0,
+            8.5,
+            36.0,
+            92.0
+          ]
+        },
+        "change": {
+          "n": 1023,
+          "B_nonempty": 523,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 523,
+          "correct_STOP_no_B": 500,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 257757,
+          "B_count_quantiles": [
+            0.0,
+            1.0,
+            31.0,
+            98.0
+          ]
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "split": "hold",
+      "arm": "S",
+      "metrics": {
+        "overall": {
+          "n": 3825,
+          "tracks": 139,
+          "good": 1970,
+          "native_good": 1971,
+          "coverage": 0.515032679738562,
+          "rescue": 6,
+          "lost": 7,
+          "retained": 1964,
+          "lost_rate_native_good": 0.0035514967021816335,
+          "ADE": 0.1927247215632539,
+          "FDE": 0.33447440684404417,
+          "J": 1.092100998535153,
+          "Q_winner_ADE": 0.20035604046085748,
+          "Q_winner_FDE": 0.3457220977510729,
+          "Q_segments": [
+            0.09649938064524125,
+            0.21396287636775593,
+            0.2906058643695754
+          ],
+          "J_segments": [
+            0.09565608337712697,
+            0.211165827001507,
+            0.29286760039534804
+          ],
+          "motion": {
+            "speed_p95": 1.2633864472218195,
+            "accel_mean": 0.08606488957827871,
+            "accel_p95": 0.6073811816518047,
+            "jerk_mean": 0.4687349226015024,
+            "jerk_p95": 2.698598099448469
+          },
+          "native_motion": {
+            "speed_p95": 1.2606336101332751,
+            "accel_mean": 0.08744107653046461,
+            "accel_p95": 0.6291953267557858,
+            "jerk_mean": 0.4809234049263372,
+            "jerk_p95": 2.744336043995611
+          },
+          "motion_pass": true,
+          "correction_mean": 0.023433648973509986,
+          "correction_p95": 0.0,
+          "correction_max": 6.8692518630568395,
+          "rescue_IDs": [
+            9575,
+            11493,
+            15839,
+            21215,
+            22144,
+            24406
+          ],
+          "lost_IDs": [
+            1951,
+            5436,
+            5443,
+            13421,
+            13708,
+            15225,
+            22484
+          ],
+          "distinct": 19.602875816993464,
+          "effective_good": 0.6755555555555556
+        },
+        "stable": {
+          "n": 2024,
+          "tracks": 135,
+          "good": 1332,
+          "native_good": 1329,
+          "coverage": 0.658102766798419,
+          "rescue": 5,
+          "lost": 2,
+          "retained": 1327,
+          "lost_rate_native_good": 0.0015048908954100827,
+          "ADE": 0.14132002772963673,
+          "FDE": 0.24860848459117807,
+          "J": 0.8022277177379558,
+          "Q_winner_ADE": 0.14672160950207844,
+          "Q_winner_FDE": 0.2577341631897951,
+          "Q_segments": [
+            0.07061780514784007,
+            0.15475027279336415,
+            0.21479675056503095
+          ],
+          "J_segments": [
+            0.07014483350060532,
+            0.1535405216667489,
+            0.21629980356476064
+          ],
+          "motion": {
+            "speed_p95": 1.322783468712121,
+            "accel_mean": 0.08719456530149967,
+            "accel_p95": 0.6029217795805527,
+            "jerk_mean": 0.47593581047446704,
+            "jerk_p95": 2.78004272256009
+          },
+          "native_motion": {
+            "speed_p95": 1.3227925746497438,
+            "accel_mean": 0.08844693232767346,
+            "accel_p95": 0.622602060448094,
+            "jerk_mean": 0.48645543673532315,
+            "jerk_p95": 2.8310505296081003
+          },
+          "motion_pass": true,
+          "correction_mean": 0.01950459768333698,
+          "correction_p95": 0.0,
+          "correction_max": 6.593016011289894,
+          "rescue_IDs": [
+            9575,
+            11493,
+            21215,
+            22144,
+            24406
+          ],
+          "lost_IDs": [
+            1951,
+            13421
+          ],
+          "distinct": 19.52124505928854,
+          "effective_good": 0.8868577075098815
+        },
+        "transition": {
+          "n": 778,
+          "tracks": 97,
+          "good": 301,
+          "native_good": 302,
+          "coverage": 0.38688946015424164,
+          "rescue": 0,
+          "lost": 1,
+          "retained": 301,
+          "lost_rate_native_good": 0.0033112582781456954,
+          "ADE": 0.22612940113517208,
+          "FDE": 0.37633293224314407,
+          "J": 1.2782534876331864,
+          "Q_winner_ADE": 0.23615597796362633,
+          "Q_winner_FDE": 0.3905184170747369,
+          "Q_segments": [
+            0.1158769252821812,
+            0.2598349893188388,
+            0.3327560192898588
+          ],
+          "J_segments": [
+            0.11529191543658485,
+            0.25490782082131735,
+            0.33605149156860015
+          ],
+          "motion": {
+            "speed_p95": 1.2176162797701304,
+            "accel_mean": 0.08252907435581834,
+            "accel_p95": 0.588956397661025,
+            "jerk_mean": 0.4476747871374512,
+            "jerk_p95": 2.4877233639981076
+          },
+          "native_motion": {
+            "speed_p95": 1.2135600148349053,
+            "accel_mean": 0.0840704973012825,
+            "accel_p95": 0.608183720606672,
+            "jerk_mean": 0.4623849397908075,
+            "jerk_p95": 2.5519927107851688
+          },
+          "motion_pass": true,
+          "correction_mean": 0.02896045639945578,
+          "correction_p95": 0.0,
+          "correction_max": 6.585250535539624,
+          "rescue_IDs": [],
+          "lost_IDs": [
+            22484
+          ],
+          "distinct": 19.80077120822622,
+          "effective_good": 0.4961439588688946
+        },
+        "change": {
+          "n": 1023,
+          "tracks": 74,
+          "good": 337,
+          "native_good": 340,
+          "coverage": 0.32942326490713586,
+          "rescue": 1,
+          "lost": 4,
+          "retained": 336,
+          "lost_rate_native_good": 0.011764705882352941,
+          "ADE": 0.2690240955733114,
+          "FDE": 0.47252591601247157,
+          "J": 1.5240432114532934,
+          "Q_winner_ADE": 0.27924532382685413,
+          "Q_winner_FDE": 0.4857377801735711,
+          "Q_segments": [
+            0.13296915491620986,
+            0.2962285711464703,
+            0.408538245417882
+          ],
+          "J_segments": [
+            0.1311967406672752,
+            0.29191103404523655,
+            0.41151486672215004
+          ],
+          "motion": {
+            "speed_p95": 1.1293565919530528,
+            "accel_mean": 0.08651884908881138,
+            "accel_p95": 0.6360617198088057,
+            "jerk_mean": 0.47050441266616755,
+            "jerk_p95": 2.7163238616010488
+          },
+          "native_motion": {
+            "speed_p95": 1.1284971710031189,
+            "accel_mean": 0.08801434975309712,
+            "accel_p95": 0.6581858071532203,
+            "jerk_mean": 0.4840769665041035,
+            "jerk_p95": 2.7555481425096953
+          },
+          "motion_pass": true,
+          "correction_mean": 0.02700407285808899,
+          "correction_p95": 0.0,
+          "correction_max": 6.8692518630568395,
+          "rescue_IDs": [
+            15839
+          ],
+          "lost_IDs": [
+            5436,
+            5443,
+            13708,
+            15225
+          ],
+          "distinct": 19.613880742913,
+          "effective_good": 0.3939393939393939
+        }
+      },
+      "assignment": {
+        "overall": {
+          "n": 3825,
+          "B_nonempty": 2291,
+          "chosen_in_B": 456,
+          "STOP_omitted_opportunity": 1041,
+          "correct_STOP_no_B": 840,
+          "executed": 1944,
+          "harmful": 119,
+          "ineffective": 1369,
+          "eligible_actions": 917014,
+          "B_count_quantiles": [
+            0.0,
+            11.0,
+            36.0,
+            98.0
+          ]
+        },
+        "stable": {
+          "n": 2024,
+          "B_nonempty": 1305,
+          "chosen_in_B": 414,
+          "STOP_omitted_opportunity": 570,
+          "correct_STOP_no_B": 422,
+          "executed": 1032,
+          "harmful": 64,
+          "ineffective": 554,
+          "eligible_actions": 485537,
+          "B_count_quantiles": [
+            0.0,
+            17.0,
+            38.0,
+            96.0
+          ]
+        },
+        "transition": {
+          "n": 778,
+          "B_nonempty": 463,
+          "chosen_in_B": 19,
+          "STOP_omitted_opportunity": 247,
+          "correct_STOP_no_B": 163,
+          "executed": 368,
+          "harmful": 14,
+          "ineffective": 335,
+          "eligible_actions": 173720,
+          "B_count_quantiles": [
+            0.0,
+            8.5,
+            36.0,
+            92.0
+          ]
+        },
+        "change": {
+          "n": 1023,
+          "B_nonempty": 523,
+          "chosen_in_B": 23,
+          "STOP_omitted_opportunity": 224,
+          "correct_STOP_no_B": 255,
+          "executed": 544,
+          "harmful": 41,
+          "ineffective": 480,
+          "eligible_actions": 257757,
+          "B_count_quantiles": [
+            0.0,
+            1.0,
+            31.0,
+            98.0
+          ]
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "split": "inner",
+      "arm": "I",
+      "metrics": {
+        "overall": {
+          "n": 1856,
+          "tracks": 76,
+          "good": 932,
+          "native_good": 932,
+          "coverage": 0.5021551724137931,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 932,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.1933621567440311,
+          "FDE": 0.3382179530656701,
+          "J": 1.0877257900154198,
+          "Q_winner_ADE": 0.20068052844496875,
+          "Q_winner_FDE": 0.34693968111433293,
+          "Q_segments": [
+            0.09466751823519923,
+            0.21331510979076185,
+            0.2940589573089452
+          ],
+          "J_segments": [
+            0.09352230481790727,
+            0.20930008269072434,
+            0.2956004403111171
+          ],
+          "motion": {
+            "speed_p95": 1.3467121592186422,
+            "accel_mean": 0.09237220182858123,
+            "accel_p95": 0.6569523212112709,
+            "jerk_mean": 0.5080442142947003,
+            "jerk_p95": 2.9314601623263985
+          },
+          "native_motion": {
+            "speed_p95": 1.3467121592186422,
+            "accel_mean": 0.09237220182858123,
+            "accel_p95": 0.6569523212112709,
+            "jerk_mean": 0.5080442142947003,
+            "jerk_p95": 2.9314601623263985
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.842672413793103,
+          "effective_good": 0.6648706896551724
+        },
+        "stable": {
+          "n": 978,
+          "tracks": 70,
+          "good": 601,
+          "native_good": 601,
+          "coverage": 0.614519427402863,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 601,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.15368667392817037,
+          "FDE": 0.2660315637405744,
+          "J": 0.8652214888220766,
+          "Q_winner_ADE": 0.16011929652674503,
+          "Q_winner_FDE": 0.27395261210214,
+          "Q_segments": [
+            0.07572213691650531,
+            0.17089041661478052,
+            0.23374533604894926
+          ],
+          "J_segments": [
+            0.07504161473410616,
+            0.16757768254578415,
+            0.234673560416793
+          ],
+          "motion": {
+            "speed_p95": 1.4150983711604135,
+            "accel_mean": 0.09543195396097365,
+            "accel_p95": 0.6568946247852062,
+            "jerk_mean": 0.52487241515463,
+            "jerk_p95": 3.0608990071518583
+          },
+          "native_motion": {
+            "speed_p95": 1.4150983711604135,
+            "accel_mean": 0.09543195396097365,
+            "accel_p95": 0.6568946247852062,
+            "jerk_mean": 0.52487241515463,
+            "jerk_p95": 3.0608990071518583
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.805725971370144,
+          "effective_good": 0.8333333333333334
+        },
+        "transition": {
+          "n": 381,
+          "tracks": 44,
+          "good": 165,
+          "native_good": 165,
+          "coverage": 0.4330708661417323,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 165,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.208777027476573,
+          "FDE": 0.36567033110284325,
+          "J": 1.1750699171013896,
+          "Q_winner_ADE": 0.21764938588793942,
+          "Q_winner_FDE": 0.37256586991489277,
+          "Q_segments": [
+            0.1013043461760853,
+            0.23304836995768835,
+            0.31859544153004465
+          ],
+          "J_segments": [
+            0.09929322000230428,
+            0.22608918732348354,
+            0.32063846688029046
+          ],
+          "motion": {
+            "speed_p95": 1.2740968148369605,
+            "accel_mean": 0.08789838717199353,
+            "accel_p95": 0.6355182101852146,
+            "jerk_mean": 0.48343830410461797,
+            "jerk_p95": 2.707293135949759
+          },
+          "native_motion": {
+            "speed_p95": 1.2740968148369605,
+            "accel_mean": 0.08789838717199353,
+            "accel_p95": 0.6355182101852146,
+            "jerk_mean": 0.48343830410461797,
+            "jerk_p95": 2.707293135949759
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.913385826771652,
+          "effective_good": 0.5826771653543307
+        },
+        "change": {
+          "n": 497,
+          "tracks": 35,
+          "good": 166,
+          "native_good": 166,
+          "coverage": 0.33400402414486924,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 166,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.2596188095504965,
+          "FDE": 0.459221841853961,
+          "J": 1.45861330339034,
+          "Q_winner_ADE": 0.26748887880764666,
+          "Q_winner_FDE": 0.47091910880228327,
+          "Q_segments": [
+            0.1268605795716283,
+            0.28167120194873135,
+            0.3939348549025807
+          ],
+          "J_segments": [
+            0.12546475193400888,
+            0.2785311862655138,
+            0.39629863027850887
+          ],
+          "motion": {
+            "speed_p95": 1.1721206160113342,
+            "accel_mean": 0.08978082516596568,
+            "accel_p95": 0.6750425248604182,
+            "jerk_mean": 0.49379244636997177,
+            "jerk_p95": 2.821205077980657
+          },
+          "native_motion": {
+            "speed_p95": 1.1721206160113342,
+            "accel_mean": 0.08978082516596568,
+            "accel_p95": 0.6750425248604182,
+            "jerk_mean": 0.49379244636997177,
+            "jerk_p95": 2.821205077980657
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.861167002012074,
+          "effective_good": 0.3963782696177062
+        }
+      },
+      "assignment": {
+        "overall": {
+          "n": 1856,
+          "B_nonempty": 1091,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 1091,
+          "correct_STOP_no_B": 765,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 460690,
+          "B_count_quantiles": [
+            0.0,
+            10.0,
+            38.0,
+            96.0
+          ]
+        },
+        "stable": {
+          "n": 978,
+          "B_nonempty": 602,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 602,
+          "correct_STOP_no_B": 376,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 243715,
+          "B_count_quantiles": [
+            0.0,
+            16.0,
+            39.0,
+            96.0
+          ]
+        },
+        "transition": {
+          "n": 381,
+          "B_nonempty": 226,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 226,
+          "correct_STOP_no_B": 155,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 89393,
+          "B_count_quantiles": [
+            0.0,
+            10.0,
+            36.0,
+            73.0
+          ]
+        },
+        "change": {
+          "n": 497,
+          "B_nonempty": 263,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 263,
+          "correct_STOP_no_B": 234,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 127582,
+          "B_count_quantiles": [
+            0.0,
+            2.0,
+            34.0,
+            58.0
+          ]
+        }
+      }
+    },
+    {
+      "seed": 43,
+      "split": "inner",
+      "arm": "S",
+      "metrics": {
+        "overall": {
+          "n": 1856,
+          "tracks": 76,
+          "good": 937,
+          "native_good": 932,
+          "coverage": 0.5048491379310345,
+          "rescue": 6,
+          "lost": 1,
+          "retained": 931,
+          "lost_rate_native_good": 0.001072961373390558,
+          "ADE": 0.19352610220303035,
+          "FDE": 0.34064331005569726,
+          "J": 1.0920768972436838,
+          "Q_winner_ADE": 0.2011522001499142,
+          "Q_winner_FDE": 0.3495433294374528,
+          "Q_segments": [
+            0.09420345360455776,
+            0.2132940100255144,
+            0.29595913681967073
+          ],
+          "J_segments": [
+            0.09304630479655103,
+            0.20932790121757652,
+            0.2977314664633949
+          ],
+          "motion": {
+            "speed_p95": 1.346630264629039,
+            "accel_mean": 0.09080585128144704,
+            "accel_p95": 0.636083602274402,
+            "jerk_mean": 0.4955841116012489,
+            "jerk_p95": 2.8819840229653964
+          },
+          "native_motion": {
+            "speed_p95": 1.3467121592186422,
+            "accel_mean": 0.09237220182858123,
+            "accel_p95": 0.6569523212112709,
+            "jerk_mean": 0.5080442142947003,
+            "jerk_p95": 2.9314601623263985
+          },
+          "motion_pass": true,
+          "correction_mean": 0.023218207226482795,
+          "correction_p95": 0.0,
+          "correction_max": 6.341008687994992,
+          "rescue_IDs": [
+            16203,
+            16343,
+            18328,
+            20512,
+            23672,
+            25466
+          ],
+          "lost_IDs": [
+            775
+          ],
+          "distinct": 19.677801724137932,
+          "effective_good": 0.6810344827586207
+        },
+        "stable": {
+          "n": 978,
+          "tracks": 70,
+          "good": 602,
+          "native_good": 601,
+          "coverage": 0.6155419222903885,
+          "rescue": 1,
+          "lost": 0,
+          "retained": 601,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.15244845796403875,
+          "FDE": 0.26545106439936933,
+          "J": 0.8620346995405681,
+          "Q_winner_ADE": 0.15926901089709666,
+          "Q_winner_FDE": 0.27358210849350584,
+          "Q_segments": [
+            0.07473624272843832,
+            0.16972600646892613,
+            0.2333447834939257
+          ],
+          "J_segments": [
+            0.07395919647445627,
+            0.1662688239595644,
+            0.23433624779248924
+          ],
+          "motion": {
+            "speed_p95": 1.4150480567974841,
+            "accel_mean": 0.09382716284183025,
+            "accel_p95": 0.6363850129529925,
+            "jerk_mean": 0.5128969190696574,
+            "jerk_p95": 3.036834837328745
+          },
+          "native_motion": {
+            "speed_p95": 1.4150983711604135,
+            "accel_mean": 0.09543195396097365,
+            "accel_p95": 0.6568946247852062,
+            "jerk_mean": 0.52487241515463,
+            "jerk_p95": 3.0608990071518583
+          },
+          "motion_pass": true,
+          "correction_mean": 0.02178166337318813,
+          "correction_p95": 0.0,
+          "correction_max": 5.688667267623294,
+          "rescue_IDs": [
+            20512
+          ],
+          "lost_IDs": [],
+          "distinct": 19.627811860940696,
+          "effective_good": 0.8517382413087935
+        },
+        "transition": {
+          "n": 381,
+          "tracks": 44,
+          "good": 167,
+          "native_good": 165,
+          "coverage": 0.43832020997375326,
+          "rescue": 2,
+          "lost": 0,
+          "retained": 165,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.20921633152722674,
+          "FDE": 0.3675251457596037,
+          "J": 1.1795668241814845,
+          "Q_winner_ADE": 0.21868703898978398,
+          "Q_winner_FDE": 0.3740056260152654,
+          "Q_segments": [
+            0.10199088396212223,
+            0.23406028249431987,
+            0.3200099505129099
+          ],
+          "J_segments": [
+            0.09990252933701783,
+            0.22674409855601224,
+            0.32216897672100664
+          ],
+          "motion": {
+            "speed_p95": 1.2740968148369605,
+            "accel_mean": 0.08619664010236613,
+            "accel_p95": 0.6128887141523318,
+            "jerk_mean": 0.4690967197459141,
+            "jerk_p95": 2.6386865113076667
+          },
+          "native_motion": {
+            "speed_p95": 1.2740968148369605,
+            "accel_mean": 0.08789838717199353,
+            "accel_p95": 0.6355182101852146,
+            "jerk_mean": 0.48343830410461797,
+            "jerk_p95": 2.707293135949759
+          },
+          "motion_pass": true,
+          "correction_mean": 0.027116036945791414,
+          "correction_p95": 0.0,
+          "correction_max": 6.341008687994992,
+          "rescue_IDs": [
+            18328,
+            25466
+          ],
+          "lost_IDs": [],
+          "distinct": 19.766404199475065,
+          "effective_good": 0.6010498687664042
+        },
+        "change": {
+          "n": 497,
+          "tracks": 35,
+          "good": 168,
+          "native_good": 166,
+          "coverage": 0.3380281690140845,
+          "rescue": 3,
+          "lost": 1,
+          "retained": 165,
+          "lost_rate_native_good": 0.006024096385542169,
+          "ADE": 0.2623308480646299,
+          "FDE": 0.4679995210188771,
+          "J": 1.4776857648298911,
+          "Q_winner_ADE": 0.27012802608807335,
+          "Q_winner_FDE": 0.4802675529526107,
+          "Q_segments": [
+            0.12654132336434246,
+            0.28310800935695996,
+            0.40073474554291816
+          ],
+          "J_segments": [
+            0.12535006815488323,
+            0.2807085981439181,
+            0.4037472259241499
+          ],
+          "motion": {
+            "speed_p95": 1.1744418739223381,
+            "accel_mean": 0.08839391315906293,
+            "accel_p95": 0.6537444397913047,
+            "jerk_mean": 0.4818210745645868,
+            "jerk_p95": 2.7825420760960897
+          },
+          "native_motion": {
+            "speed_p95": 1.1721206160113342,
+            "accel_mean": 0.08978082516596568,
+            "accel_p95": 0.6750425248604182,
+            "jerk_mean": 0.49379244636997177,
+            "jerk_p95": 2.821205077980657
+          },
+          "motion_pass": true,
+          "correction_mean": 0.02305697335418019,
+          "correction_p95": 0.0,
+          "correction_max": 6.199565493760693,
+          "rescue_IDs": [
+            16203,
+            16343,
+            23672
+          ],
+          "lost_IDs": [
+            775
+          ],
+          "distinct": 19.708249496981892,
+          "effective_good": 0.40643863179074446
+        }
+      },
+      "assignment": {
+        "overall": {
+          "n": 1856,
+          "B_nonempty": 1091,
+          "chosen_in_B": 194,
+          "STOP_omitted_opportunity": 540,
+          "correct_STOP_no_B": 482,
+          "executed": 834,
+          "harmful": 35,
+          "ineffective": 605,
+          "eligible_actions": 460690,
+          "B_count_quantiles": [
+            0.0,
+            10.0,
+            38.0,
+            96.0
+          ]
+        },
+        "stable": {
+          "n": 978,
+          "B_nonempty": 602,
+          "chosen_in_B": 166,
+          "STOP_omitted_opportunity": 292,
+          "correct_STOP_no_B": 259,
+          "executed": 427,
+          "harmful": 17,
+          "ineffective": 244,
+          "eligible_actions": 243715,
+          "B_count_quantiles": [
+            0.0,
+            16.0,
+            39.0,
+            96.0
+          ]
+        },
+        "transition": {
+          "n": 381,
+          "B_nonempty": 226,
+          "chosen_in_B": 13,
+          "STOP_omitted_opportunity": 116,
+          "correct_STOP_no_B": 88,
+          "executed": 177,
+          "harmful": 3,
+          "ineffective": 161,
+          "eligible_actions": 89393,
+          "B_count_quantiles": [
+            0.0,
+            10.0,
+            36.0,
+            73.0
+          ]
+        },
+        "change": {
+          "n": 497,
+          "B_nonempty": 263,
+          "chosen_in_B": 15,
+          "STOP_omitted_opportunity": 132,
+          "correct_STOP_no_B": 135,
+          "executed": 230,
+          "harmful": 15,
+          "ineffective": 200,
+          "eligible_actions": 127582,
+          "B_count_quantiles": [
+            0.0,
+            2.0,
+            34.0,
+            58.0
+          ]
+        }
+      }
+    },
+    {
+      "seed": 44,
+      "split": "opt",
+      "arm": "I",
+      "metrics": {
+        "overall": {
+          "n": 4096,
+          "tracks": 509,
+          "good": 2415,
+          "native_good": 2415,
+          "coverage": 0.589599609375,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 2415,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.16645364572424473,
+          "FDE": 0.2893717850995027,
+          "J": 0.9440074001027425,
+          "Q_winner_ADE": 0.1733693940890017,
+          "Q_winner_FDE": 0.29849267345819214,
+          "Q_segments": [
+            0.0829677394852688,
+            0.1858696816309399,
+            0.25127076115079666
+          ],
+          "J_segments": [
+            0.08187487299850431,
+            0.1818620500521103,
+            0.2532764085975073
+          ],
+          "motion": {
+            "speed_p95": 1.2723443194836297,
+            "accel_mean": 0.08816980154501701,
+            "accel_p95": 0.6314412766060497,
+            "jerk_mean": 0.48493149126474266,
+            "jerk_p95": 2.805629260514543
+          },
+          "native_motion": {
+            "speed_p95": 1.2723443194836297,
+            "accel_mean": 0.08816980154501701,
+            "accel_p95": 0.6314412766060497,
+            "jerk_mean": 0.48493149126474266,
+            "jerk_p95": 2.805629260514543
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.709716796875,
+          "effective_good": 0.831298828125
+        },
+        "stable": {
+          "n": 2405,
+          "tracks": 467,
+          "good": 1683,
+          "native_good": 1683,
+          "coverage": 0.6997920997920998,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 1683,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.12838086795578244,
+          "FDE": 0.222283028546245,
+          "J": 0.728609238514178,
+          "Q_winner_ADE": 0.13402172661686373,
+          "Q_winner_FDE": 0.229493131553082,
+          "Q_segments": [
+            0.06371417274442277,
+            0.14495358107442954,
+            0.19339742603173826
+          ],
+          "J_segments": [
+            0.06330271782543384,
+            0.14274193302118768,
+            0.19442055109812423
+          ],
+          "motion": {
+            "speed_p95": 1.3336156819562477,
+            "accel_mean": 0.09088295946174417,
+            "accel_p95": 0.6380672301450705,
+            "jerk_mean": 0.4998536393243012,
+            "jerk_p95": 2.9536133112654603
+          },
+          "native_motion": {
+            "speed_p95": 1.3336156819562477,
+            "accel_mean": 0.09088295946174417,
+            "accel_p95": 0.6380672301450705,
+            "jerk_mean": 0.4998536393243012,
+            "jerk_p95": 2.9536133112654603
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.63243243243243,
+          "effective_good": 1.0303534303534303
+        },
+        "transition": {
+          "n": 714,
+          "tracks": 250,
+          "good": 336,
+          "native_good": 336,
+          "coverage": 0.47058823529411764,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 336,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.2024182419907987,
+          "FDE": 0.35279784062320857,
+          "J": 1.1472231268666484,
+          "Q_winner_ADE": 0.21071081615462892,
+          "Q_winner_FDE": 0.3637423122947892,
+          "Q_segments": [
+            0.10150562808535409,
+            0.2253079996342942,
+            0.3053188207442388
+          ],
+          "J_segments": [
+            0.10047654676463216,
+            0.22135582177249405,
+            0.3083907783891654
+          ],
+          "motion": {
+            "speed_p95": 1.1847068482654521,
+            "accel_mean": 0.08342055467960917,
+            "accel_p95": 0.6085767374371328,
+            "jerk_mean": 0.4588104534226623,
+            "jerk_p95": 2.586210664787746
+          },
+          "native_motion": {
+            "speed_p95": 1.1847068482654521,
+            "accel_mean": 0.08342055467960917,
+            "accel_p95": 0.6085767374371328,
+            "jerk_mean": 0.4588104534226623,
+            "jerk_p95": 2.586210664787746
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.88235294117647,
+          "effective_good": 0.6190476190476191
+        },
+        "change": {
+          "n": 977,
+          "tracks": 216,
+          "good": 396,
+          "native_good": 396,
+          "coverage": 0.4053224155578301,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 396,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.2338910139932645,
+          "FDE": 0.40816631515749524,
+          "J": 1.3257234182307558,
+          "Q_winner_ADE": 0.24293885664338657,
+          "Q_winner_FDE": 0.4206581352314362,
+          "Q_segments": [
+            0.11681500207613217,
+            0.2577675964559254,
+            0.35423397139810214
+          ],
+          "J_segments": [
+            0.11399814640916862,
+            0.2492984148944995,
+            0.35787894417045596
+          ],
+          "motion": {
+            "speed_p95": 1.0846450184424274,
+            "accel_mean": 0.08496183580517296,
+            "accel_p95": 0.6370832497487955,
+            "jerk_mean": 0.46728835404468694,
+            "jerk_p95": 2.687441008571345
+          },
+          "native_motion": {
+            "speed_p95": 1.0846450184424274,
+            "accel_mean": 0.08496183580517296,
+            "accel_p95": 0.6370832497487955,
+            "jerk_mean": 0.46728835404468694,
+            "jerk_p95": 2.687441008571345
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.77379733879222,
+          "effective_good": 0.49641760491299897
+        }
+      },
+      "assignment": {
+        "overall": {
+          "n": 4096,
+          "B_nonempty": 2310,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 2310,
+          "correct_STOP_no_B": 1786,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 986101,
+          "B_count_quantiles": [
+            0.0,
+            9.0,
+            37.0,
+            116.0
+          ]
+        },
+        "stable": {
+          "n": 2405,
+          "B_nonempty": 1404,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 1404,
+          "correct_STOP_no_B": 1001,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 587204,
+          "B_count_quantiles": [
+            0.0,
+            15.0,
+            38.0,
+            116.0
+          ]
+        },
+        "transition": {
+          "n": 714,
+          "B_nonempty": 392,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 392,
+          "correct_STOP_no_B": 322,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 159232,
+          "B_count_quantiles": [
+            0.0,
+            3.0,
+            35.0,
+            98.0
+          ]
+        },
+        "change": {
+          "n": 977,
+          "B_nonempty": 514,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 514,
+          "correct_STOP_no_B": 463,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 239665,
+          "B_count_quantiles": [
+            0.0,
+            2.0,
+            33.0,
+            95.0
+          ]
+        }
+      }
+    },
+    {
+      "seed": 44,
+      "split": "opt",
+      "arm": "S",
+      "metrics": {
+        "overall": {
+          "n": 4096,
+          "tracks": 509,
+          "good": 2421,
+          "native_good": 2415,
+          "coverage": 0.591064453125,
+          "rescue": 6,
+          "lost": 0,
+          "retained": 2415,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.16624353220111682,
+          "FDE": 0.2893684382345787,
+          "J": 0.9434521250763286,
+          "Q_winner_ADE": 0.17321922985365806,
+          "Q_winner_FDE": 0.2985651390026803,
+          "Q_segments": [
+            0.08272682831654411,
+            0.1856560318151567,
+            0.2512748294292732
+          ],
+          "J_segments": [
+            0.08168935846707091,
+            0.1818130127951938,
+            0.2532857649843219
+          ],
+          "motion": {
+            "speed_p95": 1.2721141602325345,
+            "accel_mean": 0.08745381387641864,
+            "accel_p95": 0.6213683981770729,
+            "jerk_mean": 0.4792611863391819,
+            "jerk_p95": 2.778139206024663
+          },
+          "native_motion": {
+            "speed_p95": 1.2723443194836297,
+            "accel_mean": 0.08816980154501701,
+            "accel_p95": 0.6314412766060497,
+            "jerk_mean": 0.48493149126474266,
+            "jerk_p95": 2.805629260514543
+          },
+          "motion_pass": true,
+          "correction_mean": 0.009443369774082938,
+          "correction_p95": 0.0,
+          "correction_max": 5.783640790915979,
+          "rescue_IDs": [
+            6628,
+            26312,
+            19341,
+            1821,
+            5279,
+            5395
+          ],
+          "lost_IDs": [],
+          "distinct": 19.638671875,
+          "effective_good": 0.84130859375
+        },
+        "stable": {
+          "n": 2405,
+          "tracks": 467,
+          "good": 1687,
+          "native_good": 1683,
+          "coverage": 0.7014553014553014,
+          "rescue": 4,
+          "lost": 0,
+          "retained": 1683,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.12772298739369436,
+          "FDE": 0.22125805466822251,
+          "J": 0.7255068123715097,
+          "Q_winner_ADE": 0.13340927014358078,
+          "Q_winner_FDE": 0.22858162272849175,
+          "Q_segments": [
+            0.06331061795126061,
+            0.14430026109400518,
+            0.1926169313854762
+          ],
+          "J_segments": [
+            0.0628874130952127,
+            0.14211505041586725,
+            0.19358733135163758
+          ],
+          "motion": {
+            "speed_p95": 1.3335455988384852,
+            "accel_mean": 0.09015762519339761,
+            "accel_p95": 0.6275866253780298,
+            "jerk_mean": 0.4942652944755824,
+            "jerk_p95": 2.9250834040065263
+          },
+          "native_motion": {
+            "speed_p95": 1.3336156819562477,
+            "accel_mean": 0.09088295946174417,
+            "accel_p95": 0.6380672301450705,
+            "jerk_mean": 0.4998536393243012,
+            "jerk_p95": 2.9536133112654603
+          },
+          "motion_pass": true,
+          "correction_mean": 0.009129692215769588,
+          "correction_p95": 0.0,
+          "correction_max": 5.783640790915979,
+          "rescue_IDs": [
+            19341,
+            1821,
+            5279,
+            5395
+          ],
+          "lost_IDs": [],
+          "distinct": 19.55883575883576,
+          "effective_good": 1.0428274428274429
+        },
+        "transition": {
+          "n": 714,
+          "tracks": 250,
+          "good": 337,
+          "native_good": 336,
+          "coverage": 0.47198879551820727,
+          "rescue": 1,
+          "lost": 0,
+          "retained": 336,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.20156941714400353,
+          "FDE": 0.35162185698586523,
+          "J": 1.1438798604641667,
+          "Q_winner_ADE": 0.20987947875249144,
+          "Q_winner_FDE": 0.36279277455173764,
+          "Q_segments": [
+            0.10128444578240492,
+            0.2242478850028126,
+            0.30410610547225714
+          ],
+          "J_segments": [
+            0.10025121362371994,
+            0.22058717647049927,
+            0.3072539020373866
+          ],
+          "motion": {
+            "speed_p95": 1.1864028443939483,
+            "accel_mean": 0.08279633110268998,
+            "accel_p95": 0.6006887401297853,
+            "jerk_mean": 0.45331222952322264,
+            "jerk_p95": 2.563378970235286
+          },
+          "native_motion": {
+            "speed_p95": 1.1847068482654521,
+            "accel_mean": 0.08342055467960917,
+            "accel_p95": 0.6085767374371328,
+            "jerk_mean": 0.4588104534226623,
+            "jerk_p95": 2.586210664787746
+          },
+          "motion_pass": true,
+          "correction_mean": 0.009341944770492432,
+          "correction_p95": 0.0,
+          "correction_max": 5.635872647498652,
+          "rescue_IDs": [
+            6628
+          ],
+          "lost_IDs": [],
+          "distinct": 19.824929971988794,
+          "effective_good": 0.6302521008403361
+        },
+        "change": {
+          "n": 977,
+          "tracks": 216,
+          "good": 397,
+          "native_good": 396,
+          "coverage": 0.406345957011259,
+          "rescue": 1,
+          "lost": 0,
+          "retained": 396,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.23524990723963257,
+          "FDE": 0.4115347959507181,
+          "J": 1.3334757422597197,
+          "Q_winner_ADE": 0.24442448613714718,
+          "Q_winner_FDE": 0.4238996577922363,
+          "Q_segments": [
+            0.11696003922532845,
+            0.25925485004277493,
+            0.3570585691433381
+          ],
+          "J_segments": [
+            0.11440738716458554,
+            0.25119770742990477,
+            0.3608000771959047
+          ],
+          "motion": {
+            "speed_p95": 1.084046908503576,
+            "accel_mean": 0.0842017939000706,
+            "accel_p95": 0.6273734963235756,
+            "jerk_mean": 0.46129053649123053,
+            "jerk_p95": 2.6620953644437324
+          },
+          "native_motion": {
+            "speed_p95": 1.0846450184424274,
+            "accel_mean": 0.08496183580517296,
+            "accel_p95": 0.6370832497487955,
+            "jerk_mean": 0.46728835404468694,
+            "jerk_p95": 2.687441008571345
+          },
+          "motion_pass": true,
+          "correction_mean": 0.010289646110118988,
+          "correction_p95": 0.0,
+          "correction_max": 5.549346703846204,
+          "rescue_IDs": [
+            26312
+          ],
+          "lost_IDs": [],
+          "distinct": 19.699078812691916,
+          "effective_good": 0.49948822927328557
+        }
+      },
+      "assignment": {
+        "overall": {
+          "n": 4096,
+          "B_nonempty": 2310,
+          "chosen_in_B": 164,
+          "STOP_omitted_opportunity": 1854,
+          "correct_STOP_no_B": 1604,
+          "executed": 638,
+          "harmful": 8,
+          "ineffective": 466,
+          "eligible_actions": 986101,
+          "B_count_quantiles": [
+            0.0,
+            9.0,
+            37.0,
+            116.0
+          ]
+        },
+        "stable": {
+          "n": 2405,
+          "B_nonempty": 1404,
+          "chosen_in_B": 144,
+          "STOP_omitted_opportunity": 1110,
+          "correct_STOP_no_B": 937,
+          "executed": 358,
+          "harmful": 1,
+          "ineffective": 213,
+          "eligible_actions": 587204,
+          "B_count_quantiles": [
+            0.0,
+            15.0,
+            38.0,
+            116.0
+          ]
+        },
+        "transition": {
+          "n": 714,
+          "B_nonempty": 392,
+          "chosen_in_B": 14,
+          "STOP_omitted_opportunity": 329,
+          "correct_STOP_no_B": 278,
+          "executed": 107,
+          "harmful": 0,
+          "ineffective": 93,
+          "eligible_actions": 159232,
+          "B_count_quantiles": [
+            0.0,
+            3.0,
+            35.0,
+            98.0
+          ]
+        },
+        "change": {
+          "n": 977,
+          "B_nonempty": 514,
+          "chosen_in_B": 6,
+          "STOP_omitted_opportunity": 415,
+          "correct_STOP_no_B": 389,
+          "executed": 173,
+          "harmful": 7,
+          "ineffective": 160,
+          "eligible_actions": 239665,
+          "B_count_quantiles": [
+            0.0,
+            2.0,
+            33.0,
+            95.0
+          ]
+        }
+      }
+    },
+    {
+      "seed": 44,
+      "split": "hold",
+      "arm": "I",
+      "metrics": {
+        "overall": {
+          "n": 3825,
+          "tracks": 139,
+          "good": 1971,
+          "native_good": 1971,
+          "coverage": 0.5152941176470588,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 1971,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.191352746049059,
+          "FDE": 0.33053396564350634,
+          "J": 1.082654254475734,
+          "Q_winner_ADE": 0.19901128843845603,
+          "Q_winner_FDE": 0.34175244829820667,
+          "Q_segments": [
+            0.09667430576456619,
+            0.21302584298801766,
+            0.28733371656278406
+          ],
+          "J_segments": [
+            0.09578703044444198,
+            0.20973855745513204,
+            0.28936525970860577
+          ],
+          "motion": {
+            "speed_p95": 1.2606336101332751,
+            "accel_mean": 0.08744107653046461,
+            "accel_p95": 0.6291953267557858,
+            "jerk_mean": 0.4809234049263372,
+            "jerk_p95": 2.744336043995611
+          },
+          "native_motion": {
+            "speed_p95": 1.2606336101332751,
+            "accel_mean": 0.08744107653046461,
+            "accel_p95": 0.6291953267557858,
+            "jerk_mean": 0.4809234049263372,
+            "jerk_p95": 2.744336043995611
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.764183006535948,
+          "effective_good": 0.6815686274509803
+        },
+        "stable": {
+          "n": 2024,
+          "tracks": 135,
+          "good": 1329,
+          "native_good": 1329,
+          "coverage": 0.6566205533596838,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 1329,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.14242145092643027,
+          "FDE": 0.2507514812547771,
+          "J": 0.8077255902653507,
+          "Q_winner_ADE": 0.14787224036569674,
+          "Q_winner_FDE": 0.2596478100070676,
+          "Q_segments": [
+            0.07109429810389432,
+            0.15576461051631815,
+            0.21675781247687773
+          ],
+          "J_segments": [
+            0.0707883549547569,
+            0.15426017147203033,
+            0.21788540402052095
+          ],
+          "motion": {
+            "speed_p95": 1.3227925746497438,
+            "accel_mean": 0.08844693232767346,
+            "accel_p95": 0.622602060448094,
+            "jerk_mean": 0.48645543673532315,
+            "jerk_p95": 2.8310505296081003
+          },
+          "native_motion": {
+            "speed_p95": 1.3227925746497438,
+            "accel_mean": 0.08844693232767346,
+            "accel_p95": 0.622602060448094,
+            "jerk_mean": 0.48645543673532315,
+            "jerk_p95": 2.8310505296081003
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.684288537549406,
+          "effective_good": 0.9026679841897233
+        },
+        "transition": {
+          "n": 778,
+          "tracks": 97,
+          "good": 302,
+          "native_good": 302,
+          "coverage": 0.38817480719794345,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 302,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.223974755956338,
+          "FDE": 0.37256720414121824,
+          "J": 1.265921066163959,
+          "Q_winner_ADE": 0.2338427340945228,
+          "Q_winner_FDE": 0.3867675637804954,
+          "Q_segments": [
+            0.11597018772033896,
+            0.25706990156821746,
+            0.3284881129950116
+          ],
+          "J_segments": [
+            0.11517008377017958,
+            0.25210243231933416,
+            0.33183677351337987
+          ],
+          "motion": {
+            "speed_p95": 1.2135600148349053,
+            "accel_mean": 0.0840704973012825,
+            "accel_p95": 0.608183720606672,
+            "jerk_mean": 0.4623849397908075,
+            "jerk_p95": 2.5519927107851688
+          },
+          "native_motion": {
+            "speed_p95": 1.2135600148349053,
+            "accel_mean": 0.0840704973012825,
+            "accel_p95": 0.608183720606672,
+            "jerk_mean": 0.4623849397908075,
+            "jerk_p95": 2.5519927107851688
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.93573264781491,
+          "effective_good": 0.48586118251928023
+        },
+        "change": {
+          "n": 1023,
+          "tracks": 74,
+          "good": 340,
+          "native_good": 340,
+          "coverage": 0.33235581622678395,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 340,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.26335374079034674,
+          "FDE": 0.456416554941227,
+          "J": 1.4872232054712153,
+          "Q_winner_ADE": 0.2737000162770142,
+          "Q_winner_FDE": 0.4699616643842722,
+          "Q_segments": [
+            0.13260953483945254,
+            0.2928210110694674,
+            0.39566950292212205
+          ],
+          "J_segments": [
+            0.13050580239331677,
+            0.2872841670205734,
+            0.3984878307472864
+          ],
+          "motion": {
+            "speed_p95": 1.1284971710031189,
+            "accel_mean": 0.08801434975309712,
+            "accel_p95": 0.6581858071532203,
+            "jerk_mean": 0.4840769665041035,
+            "jerk_p95": 2.7555481425096953
+          },
+          "native_motion": {
+            "speed_p95": 1.1284971710031189,
+            "accel_mean": 0.08801434975309712,
+            "accel_p95": 0.6581858071532203,
+            "jerk_mean": 0.4840769665041035,
+            "jerk_p95": 2.7555481425096953
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.791788856304986,
+          "effective_good": 0.39296187683284456
+        }
+      },
+      "assignment": {
+        "overall": {
+          "n": 3825,
+          "B_nonempty": 2117,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 2117,
+          "correct_STOP_no_B": 1708,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 902251,
+          "B_count_quantiles": [
+            0.0,
+            6.0,
+            37.0,
+            94.0
+          ]
+        },
+        "stable": {
+          "n": 2024,
+          "B_nonempty": 1131,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 1131,
+          "correct_STOP_no_B": 893,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 475468,
+          "B_count_quantiles": [
+            0.0,
+            13.0,
+            38.0,
+            94.0
+          ]
+        },
+        "transition": {
+          "n": 778,
+          "B_nonempty": 483,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 483,
+          "correct_STOP_no_B": 295,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 171661,
+          "B_count_quantiles": [
+            0.0,
+            10.0,
+            36.0,
+            75.0
+          ]
+        },
+        "change": {
+          "n": 1023,
+          "B_nonempty": 503,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 503,
+          "correct_STOP_no_B": 520,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 255122,
+          "B_count_quantiles": [
+            0.0,
+            0.0,
+            31.0,
+            76.0
+          ]
+        }
+      }
+    },
+    {
+      "seed": 44,
+      "split": "hold",
+      "arm": "S",
+      "metrics": {
+        "overall": {
+          "n": 3825,
+          "tracks": 139,
+          "good": 1971,
+          "native_good": 1971,
+          "coverage": 0.5152941176470588,
+          "rescue": 2,
+          "lost": 2,
+          "retained": 1969,
+          "lost_rate_native_good": 0.0010147133434804667,
+          "ADE": 0.19181240808993666,
+          "FDE": 0.33162490300342196,
+          "J": 1.085135957642953,
+          "Q_winner_ADE": 0.1995218138132433,
+          "Q_winner_FDE": 0.34282539425575914,
+          "Q_segments": [
+            0.09663688161277059,
+            0.21353559547094417,
+            0.2883929643560149
+          ],
+          "J_segments": [
+            0.09578025813501748,
+            0.21025784717130114,
+            0.29037407365239704
+          ],
+          "motion": {
+            "speed_p95": 1.2623186514490987,
+            "accel_mean": 0.0868210921007388,
+            "accel_p95": 0.620526166604628,
+            "jerk_mean": 0.4756551108915994,
+            "jerk_p95": 2.716582198552295
+          },
+          "native_motion": {
+            "speed_p95": 1.2606336101332751,
+            "accel_mean": 0.08744107653046461,
+            "accel_p95": 0.6291953267557858,
+            "jerk_mean": 0.4809234049263372,
+            "jerk_p95": 2.744336043995611
+          },
+          "motion_pass": true,
+          "correction_mean": 0.008831685879313803,
+          "correction_p95": 0.0,
+          "correction_max": 6.445235760317786,
+          "rescue_IDs": [
+            1543,
+            2491
+          ],
+          "lost_IDs": [
+            9222,
+            22431
+          ],
+          "distinct": 19.70901960784314,
+          "effective_good": 0.6847058823529412
+        },
+        "stable": {
+          "n": 2024,
+          "tracks": 135,
+          "good": 1331,
+          "native_good": 1329,
+          "coverage": 0.657608695652174,
+          "rescue": 2,
+          "lost": 0,
+          "retained": 1329,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.14202801840314444,
+          "FDE": 0.2505424743210821,
+          "J": 0.8058901639186684,
+          "Q_winner_ADE": 0.14746321081027472,
+          "Q_winner_FDE": 0.25947882495245567,
+          "Q_segments": [
+            0.07077503247312251,
+            0.15518127900221043,
+            0.21643332095549123
+          ],
+          "J_segments": [
+            0.0705384391883335,
+            0.1538623423153416,
+            0.21747352736668582
+          ],
+          "motion": {
+            "speed_p95": 1.3227448641369917,
+            "accel_mean": 0.08796702945290479,
+            "accel_p95": 0.6146931275632741,
+            "jerk_mean": 0.482205687889614,
+            "jerk_p95": 2.80455587643416
+          },
+          "native_motion": {
+            "speed_p95": 1.3227925746497438,
+            "accel_mean": 0.08844693232767346,
+            "accel_p95": 0.622602060448094,
+            "jerk_mean": 0.48645543673532315,
+            "jerk_p95": 2.8310505296081003
+          },
+          "motion_pass": true,
+          "correction_mean": 0.007012938287037839,
+          "correction_p95": 0.0,
+          "correction_max": 5.545057285375983,
+          "rescue_IDs": [
+            1543,
+            2491
+          ],
+          "lost_IDs": [],
+          "distinct": 19.641304347826086,
+          "effective_good": 0.9085968379446641
+        },
+        "transition": {
+          "n": 778,
+          "tracks": 97,
+          "good": 300,
+          "native_good": 302,
+          "coverage": 0.3856041131105398,
+          "rescue": 0,
+          "lost": 2,
+          "retained": 300,
+          "lost_rate_native_good": 0.006622516556291391,
+          "ADE": 0.2252469556948163,
+          "FDE": 0.37540436543598965,
+          "J": 1.2730331046478993,
+          "Q_winner_ADE": 0.23539311339653965,
+          "Q_winner_FDE": 0.3894381850688111,
+          "Q_segments": [
+            0.1160682466441159,
+            0.25870192094551114,
+            0.33140917259999153
+          ],
+          "J_segments": [
+            0.11521551653197651,
+            0.2532778621581988,
+            0.3346387173178626
+          ],
+          "motion": {
+            "speed_p95": 1.2170041723151905,
+            "accel_mean": 0.08350183331940822,
+            "accel_p95": 0.6008824051369887,
+            "jerk_mean": 0.45683919527740524,
+            "jerk_p95": 2.5293599697603284
+          },
+          "native_motion": {
+            "speed_p95": 1.2135600148349053,
+            "accel_mean": 0.0840704973012825,
+            "accel_p95": 0.608183720606672,
+            "jerk_mean": 0.4623849397908075,
+            "jerk_p95": 2.5519927107851688
+          },
+          "motion_pass": true,
+          "correction_mean": 0.009521911141527143,
+          "correction_p95": 0.0,
+          "correction_max": 6.445235760317786,
+          "rescue_IDs": [],
+          "lost_IDs": [
+            9222,
+            22431
+          ],
+          "distinct": 19.894601542416453,
+          "effective_good": 0.48586118251928023
+        },
+        "change": {
+          "n": 1023,
+          "tracks": 74,
+          "good": 340,
+          "native_good": 340,
+          "coverage": 0.33235581622678395,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 340,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.2648833041695761,
+          "FDE": 0.4587514072854534,
+          "J": 1.494724917689975,
+          "Q_winner_ADE": 0.27523905858568115,
+          "Q_winner_FDE": 0.4722767188083807,
+          "Q_segments": [
+            0.13302669653384686,
+            0.29463993106576597,
+            0.3980505481574303
+          ],
+          "J_segments": [
+            0.13094038571591107,
+            0.2891189714808357,
+            0.40094378324237606
+          ],
+          "motion": {
+            "speed_p95": 1.1291374850176372,
+            "accel_mean": 0.08707818509300773,
+            "accel_p95": 0.6475619900284123,
+            "jerk_mean": 0.47700448968325354,
+            "jerk_p95": 2.7216602241790713
+          },
+          "native_motion": {
+            "speed_p95": 1.1284971710031189,
+            "accel_mean": 0.08801434975309712,
+            "accel_p95": 0.6581858071532203,
+            "jerk_mean": 0.4840769665041035,
+            "jerk_p95": 2.7555481425096953
+          },
+          "motion_pass": true,
+          "correction_mean": 0.01190514616549617,
+          "correction_p95": 0.0,
+          "correction_max": 5.38274014627794,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.701857282502445,
+          "effective_good": 0.39296187683284456
+        }
+      },
+      "assignment": {
+        "overall": {
+          "n": 3825,
+          "B_nonempty": 2117,
+          "chosen_in_B": 58,
+          "STOP_omitted_opportunity": 1822,
+          "correct_STOP_no_B": 1467,
+          "executed": 536,
+          "harmful": 14,
+          "ineffective": 464,
+          "eligible_actions": 902251,
+          "B_count_quantiles": [
+            0.0,
+            6.0,
+            37.0,
+            94.0
+          ]
+        },
+        "stable": {
+          "n": 2024,
+          "B_nonempty": 1131,
+          "chosen_in_B": 46,
+          "STOP_omitted_opportunity": 987,
+          "correct_STOP_no_B": 811,
+          "executed": 226,
+          "harmful": 4,
+          "ineffective": 176,
+          "eligible_actions": 475468,
+          "B_count_quantiles": [
+            0.0,
+            13.0,
+            38.0,
+            94.0
+          ]
+        },
+        "transition": {
+          "n": 778,
+          "B_nonempty": 483,
+          "chosen_in_B": 7,
+          "STOP_omitted_opportunity": 421,
+          "correct_STOP_no_B": 241,
+          "executed": 116,
+          "harmful": 4,
+          "ineffective": 105,
+          "eligible_actions": 171661,
+          "B_count_quantiles": [
+            0.0,
+            10.0,
+            36.0,
+            75.0
+          ]
+        },
+        "change": {
+          "n": 1023,
+          "B_nonempty": 503,
+          "chosen_in_B": 5,
+          "STOP_omitted_opportunity": 414,
+          "correct_STOP_no_B": 415,
+          "executed": 194,
+          "harmful": 6,
+          "ineffective": 183,
+          "eligible_actions": 255122,
+          "B_count_quantiles": [
+            0.0,
+            0.0,
+            31.0,
+            76.0
+          ]
+        }
+      }
+    },
+    {
+      "seed": 44,
+      "split": "inner",
+      "arm": "I",
+      "metrics": {
+        "overall": {
+          "n": 1856,
+          "tracks": 76,
+          "good": 932,
+          "native_good": 932,
+          "coverage": 0.5021551724137931,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 932,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.1933621567440311,
+          "FDE": 0.3382179530656701,
+          "J": 1.0877257900154198,
+          "Q_winner_ADE": 0.20068052844496875,
+          "Q_winner_FDE": 0.34693968111433293,
+          "Q_segments": [
+            0.09466751823519923,
+            0.21331510979076185,
+            0.2940589573089452
+          ],
+          "J_segments": [
+            0.09352230481790727,
+            0.20930008269072434,
+            0.2956004403111171
+          ],
+          "motion": {
+            "speed_p95": 1.3467121592186422,
+            "accel_mean": 0.09236869610011741,
+            "accel_p95": 0.6569489389591384,
+            "jerk_mean": 0.508018430553068,
+            "jerk_p95": 2.9311029676886853
+          },
+          "native_motion": {
+            "speed_p95": 1.3467121592186422,
+            "accel_mean": 0.09237220182858123,
+            "accel_p95": 0.6569523212112709,
+            "jerk_mean": 0.5080442142947003,
+            "jerk_p95": 2.9314601623263985
+          },
+          "motion_pass": true,
+          "correction_mean": 3.129754206475516e-05,
+          "correction_p95": 0.0,
+          "correction_max": 2.7862037911284987,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.842133620689655,
+          "effective_good": 0.6648706896551724
+        },
+        "stable": {
+          "n": 978,
+          "tracks": 70,
+          "good": 601,
+          "native_good": 601,
+          "coverage": 0.614519427402863,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 601,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.15368667392817037,
+          "FDE": 0.2660315637405744,
+          "J": 0.8652214888220766,
+          "Q_winner_ADE": 0.16011929652674503,
+          "Q_winner_FDE": 0.27395261210214,
+          "Q_segments": [
+            0.07572213691650531,
+            0.17089041661478052,
+            0.23374533604894926
+          ],
+          "J_segments": [
+            0.07504161473410616,
+            0.16757768254578415,
+            0.234673560416793
+          ],
+          "motion": {
+            "speed_p95": 1.4150983711604135,
+            "accel_mean": 0.09543195396097365,
+            "accel_p95": 0.6568946247852062,
+            "jerk_mean": 0.52487241515463,
+            "jerk_p95": 3.0608990071518583
+          },
+          "native_motion": {
+            "speed_p95": 1.4150983711604135,
+            "accel_mean": 0.09543195396097365,
+            "accel_p95": 0.6568946247852062,
+            "jerk_mean": 0.52487241515463,
+            "jerk_p95": 3.0608990071518583
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.805725971370144,
+          "effective_good": 0.8333333333333334
+        },
+        "transition": {
+          "n": 381,
+          "tracks": 44,
+          "good": 165,
+          "native_good": 165,
+          "coverage": 0.4330708661417323,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 165,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.208777027476573,
+          "FDE": 0.36567033110284325,
+          "J": 1.1750699171013896,
+          "Q_winner_ADE": 0.21764938588793942,
+          "Q_winner_FDE": 0.37256586991489277,
+          "Q_segments": [
+            0.1013043461760853,
+            0.23304836995768835,
+            0.31859544153004465
+          ],
+          "J_segments": [
+            0.09929322000230428,
+            0.22608918732348354,
+            0.32063846688029046
+          ],
+          "motion": {
+            "speed_p95": 1.2740968148369605,
+            "accel_mean": 0.08788130939763966,
+            "accel_p95": 0.635465644356275,
+            "jerk_mean": 0.48331270141572136,
+            "jerk_p95": 2.706456638318814
+          },
+          "native_motion": {
+            "speed_p95": 1.2740968148369605,
+            "accel_mean": 0.08789838717199353,
+            "accel_p95": 0.6355182101852146,
+            "jerk_mean": 0.48343830410461797,
+            "jerk_p95": 2.707293135949759
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0001524625671185973,
+          "correction_p95": 0.0,
+          "correction_max": 2.7862037911284987,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.910761154855642,
+          "effective_good": 0.5826771653543307
+        },
+        "change": {
+          "n": 497,
+          "tracks": 35,
+          "good": 166,
+          "native_good": 166,
+          "coverage": 0.33400402414486924,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 166,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.2596188095504965,
+          "FDE": 0.459221841853961,
+          "J": 1.45861330339034,
+          "Q_winner_ADE": 0.26748887880764666,
+          "Q_winner_FDE": 0.47091910880228327,
+          "Q_segments": [
+            0.1268605795716283,
+            0.28167120194873135,
+            0.3939348549025807
+          ],
+          "J_segments": [
+            0.12546475193400888,
+            0.2785311862655138,
+            0.39629863027850887
+          ],
+          "motion": {
+            "speed_p95": 1.1721206160113342,
+            "accel_mean": 0.08978082516596568,
+            "accel_p95": 0.6750425248604182,
+            "jerk_mean": 0.49379244636997177,
+            "jerk_p95": 2.821205077980657
+          },
+          "native_motion": {
+            "speed_p95": 1.1721206160113342,
+            "accel_mean": 0.08978082516596568,
+            "accel_p95": 0.6750425248604182,
+            "jerk_mean": 0.49379244636997177,
+            "jerk_p95": 2.821205077980657
+          },
+          "motion_pass": true,
+          "correction_mean": 0.0,
+          "correction_p95": 0.0,
+          "correction_max": 0.0,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.861167002012074,
+          "effective_good": 0.3963782696177062
+        }
+      },
+      "assignment": {
+        "overall": {
+          "n": 1856,
+          "B_nonempty": 1008,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 1007,
+          "correct_STOP_no_B": 848,
+          "executed": 1,
+          "harmful": 0,
+          "ineffective": 1,
+          "eligible_actions": 450512,
+          "B_count_quantiles": [
+            0.0,
+            4.0,
+            38.0,
+            95.0
+          ]
+        },
+        "stable": {
+          "n": 978,
+          "B_nonempty": 531,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 531,
+          "correct_STOP_no_B": 447,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 237034,
+          "B_count_quantiles": [
+            0.0,
+            9.0,
+            38.0,
+            95.0
+          ]
+        },
+        "transition": {
+          "n": 381,
+          "B_nonempty": 221,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 220,
+          "correct_STOP_no_B": 160,
+          "executed": 1,
+          "harmful": 0,
+          "ineffective": 1,
+          "eligible_actions": 87501,
+          "B_count_quantiles": [
+            0.0,
+            11.0,
+            37.0,
+            72.0
+          ]
+        },
+        "change": {
+          "n": 497,
+          "B_nonempty": 256,
+          "chosen_in_B": 0,
+          "STOP_omitted_opportunity": 256,
+          "correct_STOP_no_B": 241,
+          "executed": 0,
+          "harmful": 0,
+          "ineffective": 0,
+          "eligible_actions": 125977,
+          "B_count_quantiles": [
+            0.0,
+            1.0,
+            34.0,
+            56.0
+          ]
+        }
+      }
+    },
+    {
+      "seed": 44,
+      "split": "inner",
+      "arm": "S",
+      "metrics": {
+        "overall": {
+          "n": 1856,
+          "tracks": 76,
+          "good": 933,
+          "native_good": 932,
+          "coverage": 0.5026939655172413,
+          "rescue": 1,
+          "lost": 0,
+          "retained": 932,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.19325882442828035,
+          "FDE": 0.33873329294376575,
+          "J": 1.088818754143694,
+          "Q_winner_ADE": 0.20063966787576257,
+          "Q_winner_FDE": 0.3475876784985518,
+          "Q_segments": [
+            0.09460985913859259,
+            0.21300795935928724,
+            0.29430118512940795
+          ],
+          "J_segments": [
+            0.09336876790084989,
+            0.20894888666933803,
+            0.2960032298665055
+          ],
+          "motion": {
+            "speed_p95": 1.3465915151474661,
+            "accel_mean": 0.09154273293711657,
+            "accel_p95": 0.6467981480262324,
+            "jerk_mean": 0.5012961000589895,
+            "jerk_p95": 2.8916992008802693
+          },
+          "native_motion": {
+            "speed_p95": 1.3467121592186422,
+            "accel_mean": 0.09237220182858123,
+            "accel_p95": 0.6569523212112709,
+            "jerk_mean": 0.5080442142947003,
+            "jerk_p95": 2.9314601623263985
+          },
+          "motion_pass": true,
+          "correction_mean": 0.011223179856426877,
+          "correction_p95": 0.0,
+          "correction_max": 6.3544661162392515,
+          "rescue_IDs": [
+            22424
+          ],
+          "lost_IDs": [],
+          "distinct": 19.754310344827587,
+          "effective_good": 0.671875
+        },
+        "stable": {
+          "n": 978,
+          "tracks": 70,
+          "good": 601,
+          "native_good": 601,
+          "coverage": 0.614519427402863,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 601,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.15324626069659691,
+          "FDE": 0.26517753172145225,
+          "J": 0.8632449571452223,
+          "Q_winner_ADE": 0.15962759773206145,
+          "Q_winner_FDE": 0.27332051226659426,
+          "Q_segments": [
+            0.0754437033770162,
+            0.17038412489703536,
+            0.23305496492213268
+          ],
+          "J_segments": [
+            0.07479057673149755,
+            0.16700994106435424,
+            0.23381298640209197
+          ],
+          "motion": {
+            "speed_p95": 1.4150983711604135,
+            "accel_mean": 0.09464520673994398,
+            "accel_p95": 0.6475516998708415,
+            "jerk_mean": 0.5189538883782687,
+            "jerk_p95": 3.0416083807986496
+          },
+          "native_motion": {
+            "speed_p95": 1.4150983711604135,
+            "accel_mean": 0.09543195396097365,
+            "accel_p95": 0.6568946247852062,
+            "jerk_mean": 0.52487241515463,
+            "jerk_p95": 3.0608990071518583
+          },
+          "motion_pass": true,
+          "correction_mean": 0.009727582068376569,
+          "correction_p95": 0.0,
+          "correction_max": 6.3544661162392515,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.722903885480573,
+          "effective_good": 0.8425357873210634
+        },
+        "transition": {
+          "n": 381,
+          "tracks": 44,
+          "good": 165,
+          "native_good": 165,
+          "coverage": 0.4330708661417323,
+          "rescue": 0,
+          "lost": 0,
+          "retained": 165,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.20824007512913484,
+          "FDE": 0.36567033110284325,
+          "J": 1.174836447571468,
+          "Q_winner_ADE": 0.21764938588793942,
+          "Q_winner_FDE": 0.37256586991489277,
+          "Q_segments": [
+            0.1013043461760853,
+            0.23304836995768835,
+            0.31859544153004465
+          ],
+          "J_segments": [
+            0.09895267564187586,
+            0.22518062871659617,
+            0.3207473867957
+          ],
+          "motion": {
+            "speed_p95": 1.273476240275535,
+            "accel_mean": 0.0872252712719206,
+            "accel_p95": 0.625954017930494,
+            "jerk_mean": 0.4768377723518808,
+            "jerk_p95": 2.6703977561811505
+          },
+          "native_motion": {
+            "speed_p95": 1.2740968148369605,
+            "accel_mean": 0.08789838717199353,
+            "accel_p95": 0.6355182101852146,
+            "jerk_mean": 0.48343830410461797,
+            "jerk_p95": 2.707293135949759
+          },
+          "motion_pass": true,
+          "correction_mean": 0.010730170502359013,
+          "correction_p95": 0.0,
+          "correction_max": 4.720332873935538,
+          "rescue_IDs": [],
+          "lost_IDs": [],
+          "distinct": 19.84514435695538,
+          "effective_good": 0.5905511811023622
+        },
+        "change": {
+          "n": 497,
+          "tracks": 35,
+          "good": 167,
+          "native_good": 166,
+          "coverage": 0.33601609657947684,
+          "rescue": 1,
+          "lost": 0,
+          "retained": 166,
+          "lost_rate_native_good": 0.0,
+          "ADE": 0.26051120030868447,
+          "FDE": 0.46282690046250635,
+          "J": 1.4667632858711053,
+          "Q_winner_ADE": 0.2683038570868297,
+          "Q_winner_FDE": 0.4745828447867384,
+          "Q_segments": [
+            0.12719316049379817,
+            0.281520461705548,
+            0.3961979490611433
+          ],
+          "J_segments": [
+            0.12564643815094217,
+            0.2790333838155531,
+            0.3994127556575983
+          ],
+          "motion": {
+            "speed_p95": 1.1747897178603022,
+            "accel_mean": 0.08874742813887594,
+            "accel_p95": 0.6610968296817024,
+            "jerk_mean": 0.4852987275844489,
+            "jerk_p95": 2.783847397716085
+          },
+          "native_motion": {
+            "speed_p95": 1.1721206160113342,
+            "accel_mean": 0.08978082516596568,
+            "accel_p95": 0.6750425248604182,
+            "jerk_mean": 0.49379244636997177,
+            "jerk_p95": 2.821205077980657
+          },
+          "motion_pass": true,
+          "correction_mean": 0.01454416818764028,
+          "correction_p95": 0.0,
+          "correction_max": 6.0109851117627064,
+          "rescue_IDs": [
+            22424
+          ],
+          "lost_IDs": [],
+          "distinct": 19.746478873239436,
+          "effective_good": 0.3983903420523139
+        }
+      },
+      "assignment": {
+        "overall": {
+          "n": 1856,
+          "B_nonempty": 1008,
+          "chosen_in_B": 41,
+          "STOP_omitted_opportunity": 824,
+          "correct_STOP_no_B": 695,
+          "executed": 337,
+          "harmful": 3,
+          "ineffective": 293,
+          "eligible_actions": 450512,
+          "B_count_quantiles": [
+            0.0,
+            4.0,
+            38.0,
+            95.0
+          ]
+        },
+        "stable": {
+          "n": 978,
+          "B_nonempty": 531,
+          "chosen_in_B": 31,
+          "STOP_omitted_opportunity": 446,
+          "correct_STOP_no_B": 379,
+          "executed": 153,
+          "harmful": 0,
+          "ineffective": 122,
+          "eligible_actions": 237034,
+          "B_count_quantiles": [
+            0.0,
+            9.0,
+            38.0,
+            95.0
+          ]
+        },
+        "transition": {
+          "n": 381,
+          "B_nonempty": 221,
+          "chosen_in_B": 5,
+          "STOP_omitted_opportunity": 182,
+          "correct_STOP_no_B": 132,
+          "executed": 67,
+          "harmful": 0,
+          "ineffective": 62,
+          "eligible_actions": 87501,
+          "B_count_quantiles": [
+            0.0,
+            11.0,
+            37.0,
+            72.0
+          ]
+        },
+        "change": {
+          "n": 497,
+          "B_nonempty": 256,
+          "chosen_in_B": 5,
+          "STOP_omitted_opportunity": 196,
+          "correct_STOP_no_B": 184,
+          "executed": 117,
+          "harmful": 3,
+          "ineffective": 109,
+          "eligible_actions": 125977,
+          "B_count_quantiles": [
+            0.0,
+            1.0,
+            34.0,
+            56.0
+          ]
+        }
+      }
+    }
+  ],
+  "cost_review": {
+    "status": "COST_NOT_DEPLOYABLE_PARAMETER_BUDGET_AND_CPU_PARITY",
+    "actual_benchmark": "MEASURED_RAW_COST_CACHE_PARITY_BLOCKED",
+    "parameter_counts": {
+      "F16": 321988,
+      "KIN": 63624,
+      "editor": 11488
+    },
+    "total_unique_parameters": 397100,
+    "budget": 305000,
+    "budget_pass": false,
+    "timing": [
+      {
+        "device": "cpu",
+        "batch": 1,
+        "CPU_threads": 1,
+        "warm": 50,
+        "measure": 500,
+        "mean_seconds": 0.012927412000950426,
+        "p50_seconds": 0.012786250037606806,
+        "p95_seconds": 0.013949275040067731,
+        "scope": "real raw memory-map observation slice+existing neighbor valid sidecar+normalization+fullF16+KIN+400physicalchecks+324features+CPU/GPUtransfers+editor+chosenK20",
+        "disk_cold_start_excluded": true
+      },
+      {
+        "device": "cuda",
+        "batch": 1,
+        "CPU_threads": 1,
+        "warm": 50,
+        "measure": 500,
+        "mean_seconds": 0.026445555600570516,
+        "p50_seconds": 0.02458955004112795,
+        "p95_seconds": 0.03816783993970603,
+        "scope": "real raw memory-map observation slice+existing neighbor valid sidecar+normalization+fullF16+KIN+400physicalchecks+324features+CPU/GPUtransfers+editor+chosenK20",
+        "disk_cold_start_excluded": true
+      }
+    ],
+    "per_device_parity": {
+      "cpu": {
+        "n": 32,
+        "failures": 32,
+        "tolerance": 2e-05,
+        "max_errors": {
+          "past": 0.0,
+          "tokens": 0.0008262991905212402,
+          "native": 0.0005409717559814453,
+          "kin": 1.9073486328125e-06
+        }
+      },
+      "cuda": {
+        "n": 32,
+        "failures": 0,
+        "tolerance": 2e-05,
+        "max_errors": {
+          "past": 0.0,
+          "tokens": 1.6689300537109375e-06,
+          "native": 1.9073486328125e-06,
+          "kin": 1.9073486328125e-06
+        }
+      }
+    },
+    "source_SHA": {
+      "benchmark_raw.py": "95ec9b77e807cf9fb225d6bf6e71da7e7c638ba808625e0f585798568ba1a64c",
+      "benchmark_raw_v2.py": "5e8e6b250e30de56644a077d527ad793e0c4b7cdfbdc77d725e4d2d638ef23b7",
+      "benchmark_raw_v3.py": "da914e3a64f9cd6fa9424dfd55bfe426b3bcbbb3edd3539aff8fe4ddc12aaa0a",
+      "COST_END_TO_END_V3.json": "5f814d802dc40f52a2b021daf8c703b28f1c48fed1f2a0c3468422eb792c1c5a",
+      "FAILURE_1793000280747120000.json": "97e5e6787471e3e15d9104d7a023dce207158724cad548533eef70d939a14894",
+      "FAILURE_1793000344443293900.json": "b9a2a64e816d4570dea34265cad58fbdea673f71c1e145f6daac7ae5964d245f",
+      "REPAIR_DESIGN.md": "6b68e63fee9144c86f3d89a7daad3e29d9b99d1f26e66473eb1e764be20b497e"
+    },
+    "all_old_weights_bool_buffers_exact": true,
+    "no_backward_optimizer": true,
+    "CPU_numerical_gate_not_relaxed": true,
+    "source_changes": "new helper versions only; V2 descriptive parity failure retained, V3 device attribute adapter; no old model source/equation/cache change"
+  },
+  "worker": {
+    "status": "SUCCESS",
+    "pid": 17400,
+    "parent_pid": 5576,
+    "started_at": "2026-10-26T15:21:31.012885+09:00",
+    "finished_at": "2026-10-26T15:31:10.910488+09:00"
+  },
+  "halfway": {
+    "checked_at": "2026-10-26T15:33:48.8378868+09:00",
+    "task": "Trajectory-K20SingleEdit-E1-20261026",
+    "task_state": "Ready",
+    "triggers": 0,
+    "processes": [],
+    "worker": {
+      "status": "SUCCESS",
+      "pid": 17400,
+      "parent_pid": 5576,
+      "started_at": "2026-10-26T15:21:31.012885+09:00",
+      "finished_at": "2026-10-26T15:31:10.910488+09:00"
+    },
+    "exit": {
+      "status": "SUCCESS",
+      "at": "2026-10-26T15:31:10.910488+09:00"
+    },
+    "progress": {
+      "status": "COMPLETED_REVIEW_REQUIRED",
+      "stage": "E1_E2_SAVED_COMPLETE_REAL_COST_PENDING",
+      "active_worker": false,
+      "finished_at": "2026-10-26T15:31:10.910488+09:00"
+    },
+    "histories": [
+      {
+        "arm": "I",
+        "epochs": 8,
+        "seed": 42
+      },
+      {
+        "arm": "S",
+        "epochs": 8,
+        "seed": 42
+      },
+      {
+        "arm": "I",
+        "epochs": 8,
+        "seed": 43
+      },
+      {
+        "arm": "S",
+        "epochs": 8,
+        "seed": 43
+      },
+      {
+        "arm": "I",
+        "epochs": 8,
+        "seed": 44
+      },
+      {
+        "arm": "S",
+        "epochs": 8,
+        "seed": 44
+      }
+    ],
+    "stderr_bytes": 0,
+    "result_present": true,
+    "scheduled_at": "2026-10-26T15:32:30.762+09:00",
+    "scheduled_ceil": "2026-10-26T15:32:31+09:00",
+    "first_progress_query_done": true,
+    "first_progress_query_count": 1,
+    "population_checks": [
+      {
+        "seed": 42,
+        "split": "opt",
+        "aux_chunks": 32,
+        "done": true,
+        "audit": {
+          "status": "PASS_SAVED_POPULATION",
+          "n": 4096,
+          "arms": [
+            "I",
+            "S"
+          ],
+          "allK20_clusters_physics": true,
+          "direct_new_action_audits": 0,
+          "opt_actions_reuse_complete_E0_by_source_SHA": true,
+          "max_abs_error": 0,
+          "no_model_replay": true
+        }
+      },
+      {
+        "seed": 42,
+        "split": "hold",
+        "aux_chunks": 30,
+        "done": true,
+        "audit": {
+          "status": "PASS_SAVED_POPULATION",
+          "n": 3825,
+          "arms": [
+            "I",
+            "S"
+          ],
+          "allK20_clusters_physics": true,
+          "direct_new_action_audits": 1530000,
+          "opt_actions_reuse_complete_E0_by_source_SHA": false,
+          "max_abs_error": 4.440892098500626e-16,
+          "no_model_replay": true
+        }
+      },
+      {
+        "seed": 42,
+        "split": "inner",
+        "aux_chunks": 15,
+        "done": true,
+        "audit": {
+          "status": "PASS_SAVED_POPULATION",
+          "n": 1856,
+          "arms": [
+            "I",
+            "S"
+          ],
+          "allK20_clusters_physics": true,
+          "direct_new_action_audits": 742400,
+          "opt_actions_reuse_complete_E0_by_source_SHA": false,
+          "max_abs_error": 6.661338147750939e-16,
+          "no_model_replay": true
+        }
+      },
+      {
+        "seed": 43,
+        "split": "opt",
+        "aux_chunks": 32,
+        "done": true,
+        "audit": {
+          "status": "PASS_SAVED_POPULATION",
+          "n": 4096,
+          "arms": [
+            "I",
+            "S"
+          ],
+          "allK20_clusters_physics": true,
+          "direct_new_action_audits": 0,
+          "opt_actions_reuse_complete_E0_by_source_SHA": true,
+          "max_abs_error": 0,
+          "no_model_replay": true
+        }
+      },
+      {
+        "seed": 43,
+        "split": "hold",
+        "aux_chunks": 30,
+        "done": true,
+        "audit": {
+          "status": "PASS_SAVED_POPULATION",
+          "n": 3825,
+          "arms": [
+            "I",
+            "S"
+          ],
+          "allK20_clusters_physics": true,
+          "direct_new_action_audits": 1530000,
+          "opt_actions_reuse_complete_E0_by_source_SHA": false,
+          "max_abs_error": 4.440892098500626e-16,
+          "no_model_replay": true
+        }
+      },
+      {
+        "seed": 43,
+        "split": "inner",
+        "aux_chunks": 15,
+        "done": true,
+        "audit": {
+          "status": "PASS_SAVED_POPULATION",
+          "n": 1856,
+          "arms": [
+            "I",
+            "S"
+          ],
+          "allK20_clusters_physics": true,
+          "direct_new_action_audits": 742400,
+          "opt_actions_reuse_complete_E0_by_source_SHA": false,
+          "max_abs_error": 6.661338147750939e-16,
+          "no_model_replay": true
+        }
+      },
+      {
+        "seed": 44,
+        "split": "opt",
+        "aux_chunks": 32,
+        "done": true,
+        "audit": {
+          "status": "PASS_SAVED_POPULATION",
+          "n": 4096,
+          "arms": [
+            "I",
+            "S"
+          ],
+          "allK20_clusters_physics": true,
+          "direct_new_action_audits": 0,
+          "opt_actions_reuse_complete_E0_by_source_SHA": true,
+          "max_abs_error": 0,
+          "no_model_replay": true
+        }
+      },
+      {
+        "seed": 44,
+        "split": "hold",
+        "aux_chunks": 30,
+        "done": true,
+        "audit": {
+          "status": "PASS_SAVED_POPULATION",
+          "n": 3825,
+          "arms": [
+            "I",
+            "S"
+          ],
+          "allK20_clusters_physics": true,
+          "direct_new_action_audits": 1530000,
+          "opt_actions_reuse_complete_E0_by_source_SHA": false,
+          "max_abs_error": 4.440892098500626e-16,
+          "no_model_replay": true
+        }
+      },
+      {
+        "seed": 44,
+        "split": "inner",
+        "aux_chunks": 15,
+        "done": true,
+        "audit": {
+          "status": "PASS_SAVED_POPULATION",
+          "n": 1856,
+          "arms": [
+            "I",
+            "S"
+          ],
+          "allK20_clusters_physics": true,
+          "direct_new_action_audits": 742400,
+          "opt_actions_reuse_complete_E0_by_source_SHA": false,
+          "max_abs_error": 5.551115123125783e-16,
+          "no_model_replay": true
+        }
+      }
+    ],
+    "completed_before_half_check": true,
+    "completion_OS_check_not_needed": true,
+    "no_duplicate_process_query": true
+  },
+  "automatic_next_training": false,
+  "no_delete": true,
+  "baseline_historycycle11_unfinishedgoal_unchanged": true,
+  "limitations": [
+    "F16/KIN pre-exposure",
+    "target disjoint not context disjoint",
+    "three seeds and correlated windows",
+    "adaptive reuse of inner",
+    "legacy neighbor sidecar future-availability curation",
+    "CPU raw-cache numerical parity unresolved"
+  ],
+  "ARS": {
+    "DA2": "PASS_LIMITED_NEGATIVE_CLAIM_WITH_POSITIVE_COUNTEREXAMPLES",
+    "DA3": "PASS_NO_DEPLOYMENT_OR_GENERALIZATION_OVERCLAIM",
+    "same_assistant_not_external_review": true
+  }
+}

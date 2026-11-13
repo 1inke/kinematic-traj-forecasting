@@ -1,0 +1,5 @@
+{
+  "status": "FAILED",
+  "traceback": "Traceback (most recent call last):\n  File \"<WORKSPACE_ROOT>\\SAFE_REPAIR_COOPERATION_AUDIT_EXEC_20261018\\run_audit.py\", line 948, in <module>\n    sys.exit(main())\n             ^^^^^^\n  File \"<WORKSPACE_ROOT>\\SAFE_REPAIR_COOPERATION_AUDIT_EXEC_20261018\\run_audit.py\", line 217, in main\n    preflight = run_preflight(optimals)\n                ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<WORKSPACE_ROOT>\\SAFE_REPAIR_COOPERATION_AUDIT_EXEC_20261018\\run_audit.py\", line 499, in run_preflight\n    slot_p95.append(ImplA.motion(p[k])[\"accel_p95\"])\n                    ^^^^^^^^^^^^^^^^^^\n  File \"<WORKSPACE_ROOT>\\SAFE_REPAIR_COOPERATION_AUDIT_EXEC_20261018\\metrics_dual.py\", line 47, in motion\n    v = np.diff(p, axis=2, prepend=np.zeros_like(p[:, :, :1])) / DT\n                                                 ~^^^^^^^^^^\nIndexError: too many indices for array: array is 2-dimensional, but 3 were indexed\n",
+  "at": "2026-10-18T18:15:37.670456+09:00"
+}

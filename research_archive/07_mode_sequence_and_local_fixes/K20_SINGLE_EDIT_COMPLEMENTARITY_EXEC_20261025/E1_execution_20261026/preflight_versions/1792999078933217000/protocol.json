@@ -1,0 +1,23 @@
+{
+ "version":"single_edit_I_vs_S_e1_v1","stage":"E1_E2","human_no_deletion":true,
+ "E0_required":"ANALYZED_E0_PASS_ALLOW_E1_OWN_PREFLIGHT","seeds":[42,43,44],"arms":["I","S"],
+ "FIT_opt":4096,"FIT_hold":3825,"inner":1856,"inner_change":497,
+ "features":324,"parameters":11488,"MLP":[324,32,32,1],"activation":"GELU","last_bias":false,"last_weight_zero":true,
+ "actions":401,"index":"STOP0;1+20*r+l","only_one_edit":true,"final_K":20,
+ "dt":0.4,"motion_axes":[12,11,10],"prepend_origin":true,"motion_factor":1.01,"scientific_epsilon":0,
+ "statistics":"perseed FIT_opt only; equal windows/equal eligible actions includingSTOP; float64 stable ddof0; std<1e-6=>1; float32buffers",
+ "context_mean":"original float32 tokens.mean(axis=0)","raw_feature_cache":"float32; normalize float32 buffers; STOP replacement not reset after normalization",
+ "loss_I":"mean_windows .5mean_positive softplus(-s)+.5mean_negative softplus(s); no-negative0",
+ "loss_S":"mean_windows softplus(1+firstmax_negative-firstmax_positive); no-negative0",
+ "epochs":8,"window_batch":32,"steps_per_run":1024,"total_steps":6144,"history_rows":48,
+ "optimizer":{"name":"AdamW","lr":0.001,"weight_decay":0.0001,"betas":[0.9,0.999],"eps":1e-8,"foreach":false,"clip":5},
+ "selector":false,"drop_last":false,"hold_inner_GT_unlock":"all6finalSHA_locked",
+ "preflight":{"actual_GPU_batches_each":8,"real_subset":513,"resume_epochs":2,"scalar_absolute_tolerance":1e-10,"FD_eps":[0.0001,0.00001],"FD_absolute":1e-6,"FD_relative":0.001,"FD_directions":4,"FD_seed":20261025,"FD_fixture":"fixed nonzero synthetic 4windows401actions with separatedmax; no eps search; active face switch STOP","statistics_absolute_tolerance":1e-10,"saved_geometry_absolute_tolerance":2e-12,"actual_saved_windows":128},
+ "resource_estimate_bytes":6442450944,"resource_factor":1.3,
+ "resource_inventory_GiB":{"one_feature_memmap_resident":2,"torch_runtime_and_private":1.8,"raw_IO_labels_graph":0.7,"allocator_transfer_reserve":1.5},
+ "bootstrap":{"draws":20000,"seed":20261025,"unit":"wholeinner sequence|pedestrian track then paired3modelseed; change mask after draw; window weighted","invalid_denominator_fraction_max":0.05,"change_tracks_min":20,"primary":"S-I innerchange coverage","CI":[0.025,0.975],"fixed_seed_sensitivity":true},
+ "mechanism":{"all_seeds_S_minus_I_positive":true,"mean_S_minus_I_min":0.02,"both_primary_and_fixedseed_CI_lower_positive":true,"S_minus_native_each_nonnegative":true,"mean_S_minus_native_min":0.02},
+ "protect":{"native_good_lost_max":0.01,"overall_stable_transition_error_factor":1.01,"all_groups_five_motion_factor":1.01,"change_ADE_FDE_gain_each_seed":0.05},
+ "benchmark":{"step_warm":4,"step_measure":32,"cost_warm":50,"cost_measure":500,"cached_not_end_to_end":true,"unique_parameter_budget":305000},
+ "no_new_generator_or_old_unfreeze":true,"no_outer_CAL_evaluation":true
+}
