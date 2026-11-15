@@ -1,0 +1,674 @@
+{
+  "overall": {
+    "n": 4753,
+    "target_tracks": 248,
+    "good": 2806,
+    "coverage": 0.5903639806438039,
+    "minADE": 0.17397167703762262,
+    "minFDE": 0.3101220245603869,
+    "minJ": 0.9834466497842927,
+    "distinct": 19.55396591626341,
+    "effective_good": 0.8451504313065432,
+    "motion": {
+      "speed_p95": 1.3470523527726446,
+      "accel_mean": 0.09200886993630351,
+      "accel_p95": 0.6572300555639157,
+      "jerk_mean": 0.5060417369419175,
+      "jerk_p95": 2.7359617776764904,
+      "junction_accel_mean": 0.38281714308327347,
+      "junction_accel_p95": 0.9254812548937482,
+      "junction_jerk_mean": 1.0798494985856324,
+      "junction_jerk_p95": 2.652462024357779
+    },
+    "tail_risk": {
+      "allK20": {
+        "speed": {
+          "denominator": 1140720,
+          "threshold": 1.714512642689928,
+          "exceedance_count": 5588,
+          "exceedance_rate": 0.004898660495125886,
+          "positive_excess_p95": 0.37441671605599103,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "acceleration": {
+          "denominator": 1045660,
+          "threshold": 1.4725614318714917,
+          "exceedance_count": 9135,
+          "exceedance_rate": 0.008736109251573169,
+          "positive_excess_p95": 0.7022051941750337,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "jerk": {
+          "denominator": 950600,
+          "threshold": 4.518733357296489,
+          "exceedance_count": 4928,
+          "exceedance_rate": 0.005184094256259205,
+          "positive_excess_p95": 1.4405753968408526,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_acceleration": {
+          "denominator": 95060,
+          "threshold": 1.4596548450114308,
+          "exceedance_count": 341,
+          "exceedance_rate": 0.0035872080791079317,
+          "positive_excess_p95": 0.5078109622898856,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_jerk": {
+          "denominator": 95060,
+          "threshold": 4.453203889616524,
+          "exceedance_count": 359,
+          "exceedance_rate": 0.0037765621712602566,
+          "positive_excess_p95": 2.7540208714992,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        }
+      },
+      "score_top1_not_probability": {
+        "speed": {
+          "denominator": 57036,
+          "threshold": 1.714512642689928,
+          "exceedance_count": 100,
+          "exceedance_rate": 0.001753278631040045,
+          "positive_excess_p95": 0.11276619017202405,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "acceleration": {
+          "denominator": 52283,
+          "threshold": 1.4725614318714917,
+          "exceedance_count": 4,
+          "exceedance_rate": 7.650670389992923e-05,
+          "positive_excess_p95": 0.3230238299084075,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "jerk": {
+          "denominator": 47530,
+          "threshold": 4.518733357296489,
+          "exceedance_count": 2,
+          "exceedance_rate": 4.2078687144961075e-05,
+          "positive_excess_p95": 0.0729306451798557,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_acceleration": {
+          "denominator": 4753,
+          "threshold": 1.4596548450114308,
+          "exceedance_count": 2,
+          "exceedance_rate": 0.00042078687144961075,
+          "positive_excess_p95": 0.45681986505600136,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_jerk": {
+          "denominator": 4753,
+          "threshold": 4.453203889616524,
+          "exceedance_count": 8,
+          "exceedance_rate": 0.001683147485798443,
+          "positive_excess_p95": 2.5552465178122126,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        }
+      },
+      "GT_oracle_J_slot_not_deployable": {
+        "speed": {
+          "denominator": 57036,
+          "threshold": 1.714512642689928,
+          "exceedance_count": 224,
+          "exceedance_rate": 0.0039273441335297005,
+          "positive_excess_p95": 0.2182012244885829,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "acceleration": {
+          "denominator": 52283,
+          "threshold": 1.4725614318714917,
+          "exceedance_count": 79,
+          "exceedance_rate": 0.0015110074020236023,
+          "positive_excess_p95": 0.8015983018952715,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "jerk": {
+          "denominator": 47530,
+          "threshold": 4.518733357296489,
+          "exceedance_count": 30,
+          "exceedance_rate": 0.0006311803071744162,
+          "positive_excess_p95": 1.9500022543038324,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_acceleration": {
+          "denominator": 4753,
+          "threshold": 1.4596548450114308,
+          "exceedance_count": 3,
+          "exceedance_rate": 0.0006311803071744162,
+          "positive_excess_p95": 0.2120838639051418,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_jerk": {
+          "denominator": 4753,
+          "threshold": 4.453203889616524,
+          "exceedance_count": 7,
+          "exceedance_rate": 0.0014727540500736377,
+          "positive_excess_p95": 1.7564792523995703,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        }
+      }
+    },
+    "J_segments": [
+      0.08283404790869357,
+      0.18794446756057434,
+      0.27026869599137887
+    ],
+    "Q_segments": [
+      0.08346286637464487,
+      0.19019818623545987,
+      0.268412595194374
+    ],
+    "score_top1_ADE": 0.42172742324672474,
+    "score_top1_FDE": 0.9161635206101657,
+    "LEGACY_SHADOW": {
+      "old_native_comparator": "NOT_COMPARABLE_NO_MATCHED_OUTPUT_ON_NEW_IDS",
+      "B0_self_support_loss": 0,
+      "self_comparison_is_not_learned_retention": true,
+      "old_major": "NOT_ASSESSED_NOT_UPGRADED"
+    }
+  },
+  "stable": {
+    "n": 2941,
+    "target_tracks": 233,
+    "good": 2079,
+    "coverage": 0.7069024141448487,
+    "minADE": 0.13379311243961733,
+    "minFDE": 0.23524973718871825,
+    "minJ": 0.7535428004641473,
+    "distinct": 19.392723563413806,
+    "effective_good": 1.0608636518191092,
+    "motion": {
+      "speed_p95": 1.4033827718488323,
+      "accel_mean": 0.0938458643492348,
+      "accel_p95": 0.6582020132655456,
+      "jerk_mean": 0.5161453493451365,
+      "jerk_p95": 2.736601430497959,
+      "junction_accel_mean": 0.3658969034948489,
+      "junction_accel_p95": 0.8878660443102375,
+      "junction_jerk_mean": 1.0311233149106684,
+      "junction_jerk_p95": 2.581813212132028
+    },
+    "tail_risk": {
+      "allK20": {
+        "speed": {
+          "denominator": 705840,
+          "threshold": 1.714512642689928,
+          "exceedance_count": 4540,
+          "exceedance_rate": 0.006432052589822056,
+          "positive_excess_p95": 0.36337454706399325,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "acceleration": {
+          "denominator": 647020,
+          "threshold": 1.4725614318714917,
+          "exceedance_count": 5802,
+          "exceedance_rate": 0.008967265308645792,
+          "positive_excess_p95": 0.6439349101014661,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "jerk": {
+          "denominator": 588200,
+          "threshold": 4.518733357296489,
+          "exceedance_count": 2950,
+          "exceedance_rate": 0.005015300918055084,
+          "positive_excess_p95": 1.262973514623053,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_acceleration": {
+          "denominator": 58820,
+          "threshold": 1.4596548450114308,
+          "exceedance_count": 167,
+          "exceedance_rate": 0.0028391703502210134,
+          "positive_excess_p95": 0.32756443317493733,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_jerk": {
+          "denominator": 58820,
+          "threshold": 4.453203889616524,
+          "exceedance_count": 205,
+          "exceedance_rate": 0.0034852091125467527,
+          "positive_excess_p95": 3.1004310714018297,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        }
+      },
+      "score_top1_not_probability": {
+        "speed": {
+          "denominator": 35292,
+          "threshold": 1.714512642689928,
+          "exceedance_count": 88,
+          "exceedance_rate": 0.002493482942309872,
+          "positive_excess_p95": 0.10832481254040771,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "acceleration": {
+          "denominator": 32351,
+          "threshold": 1.4725614318714917,
+          "exceedance_count": 1,
+          "exceedance_rate": 3.091094556582486e-05,
+          "positive_excess_p95": 0.36410707271957055,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "jerk": {
+          "denominator": 29410,
+          "threshold": 4.518733357296489,
+          "exceedance_count": 2,
+          "exceedance_rate": 6.80040802448147e-05,
+          "positive_excess_p95": 0.0729306451798557,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_acceleration": {
+          "denominator": 2941,
+          "threshold": 1.4596548450114308,
+          "exceedance_count": 1,
+          "exceedance_rate": 0.00034002040122407346,
+          "positive_excess_p95": 0.32999816893799183,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_jerk": {
+          "denominator": 2941,
+          "threshold": 4.453203889616524,
+          "exceedance_count": 6,
+          "exceedance_rate": 0.002040122407344441,
+          "positive_excess_p95": 2.6368847025547884,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        }
+      },
+      "GT_oracle_J_slot_not_deployable": {
+        "speed": {
+          "denominator": 35292,
+          "threshold": 1.714512642689928,
+          "exceedance_count": 208,
+          "exceedance_rate": 0.0058936869545506065,
+          "positive_excess_p95": 0.2212305211504344,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "acceleration": {
+          "denominator": 32351,
+          "threshold": 1.4725614318714917,
+          "exceedance_count": 15,
+          "exceedance_rate": 0.0004636641834873729,
+          "positive_excess_p95": 0.17882918666616995,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "jerk": {
+          "denominator": 29410,
+          "threshold": 4.518733357296489,
+          "exceedance_count": 0,
+          "exceedance_rate": 0.0,
+          "positive_excess_p95": 0.0,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_acceleration": {
+          "denominator": 2941,
+          "threshold": 1.4596548450114308,
+          "exceedance_count": 0,
+          "exceedance_rate": 0.0,
+          "positive_excess_p95": 0.0,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_jerk": {
+          "denominator": 2941,
+          "threshold": 4.453203889616524,
+          "exceedance_count": 6,
+          "exceedance_rate": 0.002040122407344441,
+          "positive_excess_p95": 0.9476181425821073,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        }
+      }
+    },
+    "J_segments": [
+      0.06504334594809248,
+      0.14659738313046186,
+      0.20450259824281058
+    ],
+    "Q_segments": [
+      0.06564458502111359,
+      0.14902323744199597,
+      0.20306962388006702
+    ],
+    "score_top1_ADE": 0.31180497719309525,
+    "score_top1_FDE": 0.6567096138735676,
+    "LEGACY_SHADOW": {
+      "old_native_comparator": "NOT_COMPARABLE_NO_MATCHED_OUTPUT_ON_NEW_IDS",
+      "B0_self_support_loss": 0,
+      "self_comparison_is_not_learned_retention": true,
+      "old_major": "NOT_ASSESSED_NOT_UPGRADED"
+    }
+  },
+  "transition": {
+    "n": 852,
+    "target_tracks": 140,
+    "good": 365,
+    "coverage": 0.4284037558685446,
+    "minADE": 0.22609653289978038,
+    "minFDE": 0.40915886077337627,
+    "minJ": 1.2795043301575826,
+    "distinct": 19.90962441314554,
+    "effective_good": 0.5469483568075117,
+    "motion": {
+      "speed_p95": 1.2365676291004242,
+      "accel_mean": 0.08605678843787475,
+      "accel_p95": 0.6257325529247046,
+      "jerk_mean": 0.4733048723147033,
+      "jerk_p95": 2.592287523657893,
+      "junction_accel_mean": 0.4074821228090422,
+      "junction_accel_p95": 0.9356444560864156,
+      "junction_jerk_mean": 1.1434158920227555,
+      "junction_jerk_p95": 2.660731576371872
+    },
+    "tail_risk": {
+      "allK20": {
+        "speed": {
+          "denominator": 204480,
+          "threshold": 1.714512642689928,
+          "exceedance_count": 508,
+          "exceedance_rate": 0.0024843505477308296,
+          "positive_excess_p95": 0.37557047512802244,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "acceleration": {
+          "denominator": 187440,
+          "threshold": 1.4725614318714917,
+          "exceedance_count": 1344,
+          "exceedance_rate": 0.007170294494238156,
+          "positive_excess_p95": 0.7930264446953724,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "jerk": {
+          "denominator": 170400,
+          "threshold": 4.518733357296489,
+          "exceedance_count": 836,
+          "exceedance_rate": 0.004906103286384977,
+          "positive_excess_p95": 1.6704647691796077,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_acceleration": {
+          "denominator": 17040,
+          "threshold": 1.4596548450114308,
+          "exceedance_count": 57,
+          "exceedance_rate": 0.003345070422535211,
+          "positive_excess_p95": 0.5441784265314106,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_jerk": {
+          "denominator": 17040,
+          "threshold": 4.453203889616524,
+          "exceedance_count": 52,
+          "exceedance_rate": 0.003051643192488263,
+          "positive_excess_p95": 1.6818133442377827,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        }
+      },
+      "score_top1_not_probability": {
+        "speed": {
+          "denominator": 10224,
+          "threshold": 1.714512642689928,
+          "exceedance_count": 4,
+          "exceedance_rate": 0.0003912363067292645,
+          "positive_excess_p95": 0.012886526925618558,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "acceleration": {
+          "denominator": 9372,
+          "threshold": 1.4725614318714917,
+          "exceedance_count": 2,
+          "exceedance_rate": 0.0002134016218523261,
+          "positive_excess_p95": 0.08192948325475742,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "jerk": {
+          "denominator": 8520,
+          "threshold": 4.518733357296489,
+          "exceedance_count": 0,
+          "exceedance_rate": 0.0,
+          "positive_excess_p95": 0.0,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_acceleration": {
+          "denominator": 852,
+          "threshold": 1.4596548450114308,
+          "exceedance_count": 0,
+          "exceedance_rate": 0.0,
+          "positive_excess_p95": 0.0,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_jerk": {
+          "denominator": 852,
+          "threshold": 4.453203889616524,
+          "exceedance_count": 1,
+          "exceedance_rate": 0.0011737089201877935,
+          "positive_excess_p95": 0.809295331620068,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        }
+      },
+      "GT_oracle_J_slot_not_deployable": {
+        "speed": {
+          "denominator": 10224,
+          "threshold": 1.714512642689928,
+          "exceedance_count": 12,
+          "exceedance_rate": 0.0011737089201877935,
+          "positive_excess_p95": 0.09389545639722696,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "acceleration": {
+          "denominator": 9372,
+          "threshold": 1.4725614318714917,
+          "exceedance_count": 18,
+          "exceedance_rate": 0.0019206145966709346,
+          "positive_excess_p95": 1.0937749948750073,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "jerk": {
+          "denominator": 8520,
+          "threshold": 4.518733357296489,
+          "exceedance_count": 8,
+          "exceedance_rate": 0.0009389671361502347,
+          "positive_excess_p95": 2.0095144444802933,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_acceleration": {
+          "denominator": 852,
+          "threshold": 1.4596548450114308,
+          "exceedance_count": 0,
+          "exceedance_rate": 0.0,
+          "positive_excess_p95": 0.0,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_jerk": {
+          "denominator": 852,
+          "threshold": 4.453203889616524,
+          "exceedance_count": 0,
+          "exceedance_rate": 0.0,
+          "positive_excess_p95": 0.0,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        }
+      }
+    },
+    "J_segments": [
+      0.10536335433862995,
+      0.24026645224127635,
+      0.3555411372314213
+    ],
+    "Q_segments": [
+      0.10635597915064973,
+      0.2440576110768005,
+      0.35323299506803046
+    ],
+    "score_top1_ADE": 0.5423127031644762,
+    "score_top1_FDE": 1.1995681149123807,
+    "LEGACY_SHADOW": {
+      "old_native_comparator": "NOT_COMPARABLE_NO_MATCHED_OUTPUT_ON_NEW_IDS",
+      "B0_self_support_loss": 0,
+      "self_comparison_is_not_learned_retention": true,
+      "old_major": "NOT_ASSESSED_NOT_UPGRADED"
+    }
+  },
+  "change": {
+    "n": 960,
+    "target_tracks": 102,
+    "good": 362,
+    "coverage": 0.3770833333333333,
+    "minADE": 0.2507995742128051,
+    "minFDE": 0.45160120446310614,
+    "minJ": 1.4250154801723185,
+    "distinct": 19.732291666666665,
+    "effective_good": 0.44895833333333335,
+    "motion": {
+      "speed_p95": 1.1422567591678021,
+      "accel_mean": 0.0916636333407102,
+      "accel_p95": 0.6874178388781201,
+      "jerk_mean": 0.5041428667174567,
+      "jerk_p95": 2.8540901213093233,
+      "junction_accel_mean": 0.41276283256577545,
+      "junction_accel_p95": 0.9920811296012889,
+      "junction_jerk_mean": 1.1727090183560909,
+      "junction_jerk_p95": 2.8370652459449825
+    },
+    "tail_risk": {
+      "allK20": {
+        "speed": {
+          "denominator": 230400,
+          "threshold": 1.714512642689928,
+          "exceedance_count": 540,
+          "exceedance_rate": 0.00234375,
+          "positive_excess_p95": 0.4368484231031724,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "acceleration": {
+          "denominator": 211200,
+          "threshold": 1.4725614318714917,
+          "exceedance_count": 1989,
+          "exceedance_rate": 0.009417613636363637,
+          "positive_excess_p95": 0.7419458470627919,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "jerk": {
+          "denominator": 192000,
+          "threshold": 4.518733357296489,
+          "exceedance_count": 1142,
+          "exceedance_rate": 0.0059479166666666665,
+          "positive_excess_p95": 1.6960807912072602,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_acceleration": {
+          "denominator": 19200,
+          "threshold": 1.4596548450114308,
+          "exceedance_count": 117,
+          "exceedance_rate": 0.00609375,
+          "positive_excess_p95": 0.5430868895306614,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_jerk": {
+          "denominator": 19200,
+          "threshold": 4.453203889616524,
+          "exceedance_count": 102,
+          "exceedance_rate": 0.0053125,
+          "positive_excess_p95": 2.283453465187913,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        }
+      },
+      "score_top1_not_probability": {
+        "speed": {
+          "denominator": 11520,
+          "threshold": 1.714512642689928,
+          "exceedance_count": 8,
+          "exceedance_rate": 0.0006944444444444445,
+          "positive_excess_p95": 0.13562664960773663,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "acceleration": {
+          "denominator": 10560,
+          "threshold": 1.4725614318714917,
+          "exceedance_count": 1,
+          "exceedance_rate": 9.46969696969697e-05,
+          "positive_excess_p95": 0.09021878731181743,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "jerk": {
+          "denominator": 9600,
+          "threshold": 4.518733357296489,
+          "exceedance_count": 0,
+          "exceedance_rate": 0.0,
+          "positive_excess_p95": 0.0,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_acceleration": {
+          "denominator": 960,
+          "threshold": 1.4596548450114308,
+          "exceedance_count": 1,
+          "exceedance_rate": 0.0010416666666666667,
+          "positive_excess_p95": 0.46349469116747555,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_jerk": {
+          "denominator": 960,
+          "threshold": 4.453203889616524,
+          "exceedance_count": 1,
+          "exceedance_rate": 0.0010416666666666667,
+          "positive_excess_p95": 1.7849873827453377,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        }
+      },
+      "GT_oracle_J_slot_not_deployable": {
+        "speed": {
+          "denominator": 11520,
+          "threshold": 1.714512642689928,
+          "exceedance_count": 4,
+          "exceedance_rate": 0.00034722222222222224,
+          "positive_excess_p95": 0.007649517373639758,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "acceleration": {
+          "denominator": 10560,
+          "threshold": 1.4725614318714917,
+          "exceedance_count": 46,
+          "exceedance_rate": 0.004356060606060606,
+          "positive_excess_p95": 0.7726779303646031,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "jerk": {
+          "denominator": 9600,
+          "threshold": 4.518733357296489,
+          "exceedance_count": 22,
+          "exceedance_rate": 0.0022916666666666667,
+          "positive_excess_p95": 1.7842634253031517,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_acceleration": {
+          "denominator": 960,
+          "threshold": 1.4596548450114308,
+          "exceedance_count": 3,
+          "exceedance_rate": 0.003125,
+          "positive_excess_p95": 0.2120838639051418,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        },
+        "junction_jerk": {
+          "denominator": 960,
+          "threshold": 4.453203889616524,
+          "exceedance_count": 1,
+          "exceedance_rate": 0.0010416666666666667,
+          "positive_excess_p95": 2.073608860668254,
+          "relative_inference": "DESCRIPTIVE_PILOT_ONLY"
+        }
+      }
+    },
+    "J_segments": [
+      0.11734184518767467,
+      0.2681772221032845,
+      0.39606658509765674
+    ],
+    "Q_segments": [
+      0.11773227614087299,
+      0.26853911794041324,
+      0.3933154055516924
+    ],
+    "score_top1_ADE": 0.6514599809069336,
+    "score_top1_FDE": 1.4594897970339653,
+    "LEGACY_SHADOW": {
+      "old_native_comparator": "NOT_COMPARABLE_NO_MATCHED_OUTPUT_ON_NEW_IDS",
+      "B0_self_support_loss": 0,
+      "self_comparison_is_not_learned_retention": true,
+      "old_major": "NOT_ASSESSED_NOT_UPGRADED"
+    }
+  }
+}

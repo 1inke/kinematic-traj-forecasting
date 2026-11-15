@@ -1,0 +1,37 @@
+{
+  "name": "E3_set_s42",
+  "arm": "E3_set",
+  "at": "2026-11-15T13:20:31.341602+08:00",
+  "latency": {
+    "cpu_batch1": {
+      "warmup": 50,
+      "measure": 500,
+      "p50_ms": 12.800800002878532,
+      "p95_ms": 14.410634998785095,
+      "batch_latency_not_per_window": true,
+      "raw_neighbor_heading_full_encoder_decoder_score_inverse_top1": true,
+      "excludes": "One-time raw label parsing and offline GT evaluation",
+      "cpu_threads": 1
+    },
+    "cuda_batch1": {
+      "warmup": 50,
+      "measure": 500,
+      "p50_ms": 24.916500002291286,
+      "p95_ms": 27.760594999199384,
+      "batch_latency_not_per_window": true,
+      "raw_neighbor_heading_full_encoder_decoder_score_inverse_top1": true,
+      "excludes": "One-time raw label parsing and offline GT evaluation",
+      "cpu_threads": 1
+    },
+    "cuda_batch64": {
+      "warmup": 50,
+      "measure": 500,
+      "p50_ms": 29.398350001429208,
+      "p95_ms": 32.86978000069211,
+      "batch_latency_not_per_window": true,
+      "raw_neighbor_heading_full_encoder_decoder_score_inverse_top1": true,
+      "excludes": "One-time raw label parsing and offline GT evaluation",
+      "cpu_threads": 1
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "E2_clamped_launch_s42",
+  "arm": "E2_clamped_launch",
+  "at": "2026-11-15T13:19:03.975110+08:00",
+  "latency": {
+    "cpu_batch1": {
+      "warmup": 50,
+      "measure": 500,
+      "p50_ms": 11.016849999577971,
+      "p95_ms": 13.401804998648002,
+      "batch_latency_not_per_window": true,
+      "raw_neighbor_heading_full_encoder_decoder_score_inverse_top1": true,
+      "excludes": "One-time raw label parsing and offline GT evaluation",
+      "cpu_threads": 1
+    },
+    "cuda_batch1": {
+      "warmup": 50,
+      "measure": 500,
+      "p50_ms": 22.97425000142539,
+      "p95_ms": 27.14222500289906,
+      "batch_latency_not_per_window": true,
+      "raw_neighbor_heading_full_encoder_decoder_score_inverse_top1": true,
+      "excludes": "One-time raw label parsing and offline GT evaluation",
+      "cpu_threads": 1
+    },
+    "cuda_batch64": {
+      "warmup": 50,
+      "measure": 500,
+      "p50_ms": 27.79240000018035,
+      "p95_ms": 31.369825003639555,
+      "batch_latency_not_per_window": true,
+      "raw_neighbor_heading_full_encoder_decoder_score_inverse_top1": true,
+      "excludes": "One-time raw label parsing and offline GT evaluation",
+      "cpu_threads": 1
+    }
+  }
+}

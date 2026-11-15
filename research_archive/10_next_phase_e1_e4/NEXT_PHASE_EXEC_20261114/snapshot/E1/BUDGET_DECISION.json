@@ -1,0 +1,44 @@
+{
+  "E_star": 64,
+  "calibration_only": true,
+  "rows": {
+    "8": {
+      "overall_minADE": 0.2397723688579799,
+      "change_coverage": 0.2454308093994778
+    },
+    "16": {
+      "overall_minADE": 0.22877367072804536,
+      "change_coverage": 0.239556135770235
+    },
+    "32": {
+      "overall_minADE": 0.21505368179588746,
+      "change_coverage": 0.2695822454308094
+    },
+    "64": {
+      "overall_minADE": 0.20845638938246486,
+      "change_coverage": 0.29503916449086165
+    }
+  },
+  "comparisons": [
+    {
+      "E": 8,
+      "minADE_relative_improvement": 0.045871416219978256,
+      "change_coverage_improvement_pp": -0.5874673629242821,
+      "qualifies": false
+    },
+    {
+      "E": 16,
+      "minADE_relative_improvement": 0.059971887885942654,
+      "change_coverage_improvement_pp": 3.0026109660574396,
+      "qualifies": false
+    },
+    {
+      "E": 32,
+      "minADE_relative_improvement": 0.030677421369071256,
+      "change_coverage_improvement_pp": 2.545691906005226,
+      "qualifies": false
+    }
+  ],
+  "possibly_not_saturated": true,
+  "rule": "smallest E with both doubling gains <1% minADE and <1pp change coverage; else64"
+}

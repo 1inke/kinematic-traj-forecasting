@@ -2,7 +2,15 @@
 
 Versioned research codebase, protocol governance, independent audit suite, and phase-organized experimental archive for multimodal kinematic pedestrian trajectory forecasting.
 
-> **1:1 Repository Sync Policy**: All tracked code, configuration manifests, documentation, and lightweight metric/summary archives under this directory mirror the remote private GitHub repository (`1inke/kinematic-traj-forecasting`) identically, excluding raw datasets and binary model weights.
+> **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. The NEXT_PHASE archive additionally retains compact, checksum-verified analysis arrays for independent CPU reanalysis.
+
+## Latest completed experiment: NEXT_PHASE E1–E4 (2026-11-15)
+
+[Code, analysis inputs and reproducibility instructions](research_archive/10_next_phase_e1_e4/NEXT_PHASE_EXEC_20261114/) · [Results interpretation (中文)](research_archive/10_next_phase_e1_e4/NEXT_PHASE_EXEC_20261114/RESULTS_REVIEW_ZH.md) · [Original final report](research_archive/10_next_phase_e1_e4/NEXT_PHASE_EXEC_20261114/snapshot/RESULT_ANALYSIS.md)
+
+The finite study completed successfully at 13:32:29 Asia/Shanghai: 47 new training runs, including 27 E2/E3/E4 method models, fixed 64-epoch method budgets, paired evaluation, geometry diagnostics, latency measurements and final bootstrap analysis. **None of the nine methods passed the full prespecified success screen; B0 remains the baseline.** E3_self shows promising overall coverage/error improvements with a stable-group kinematic tradeoff. No official test, five-fold study, factor combination or baseline upgrade was performed.
+
+The publication includes compact saved-output statistics and a NumPy-only verifier that reconstructs all 11 comparisons and all saved 20,000-draw bootstrap interval endpoints without model weights or raw datasets.
 
 ---
 
@@ -18,7 +26,7 @@ Versioned research codebase, protocol governance, independent audit suite, and p
 | `reviews/` | Governance verification snapshots (`governance_20261020/`) |
 | `archive/` | Historical migration notes (`MIGRATION_PLAN.md`), directory index (`INDEX.csv`, `build_index.py`), and legacy root readme snapshot |
 | `docs/` | Organized architectural design specs (`docs/architecture/`), multi-series synthesis reviews (`docs/synthesis/`), and detailed study design notes |
-| `research_archive/` | Complete chronological/thematic archive of experimental series (`01_` through `09_`), preserving scripts, configs, negative & positive reports, and aggregate metric summaries |
+| `research_archive/` | Chronological/thematic archive of experimental series (`01_` through `10_`), preserving scripts, configs, negative & positive reports, aggregate metrics, and the Phase10 compact reanalysis inputs |
 | `RESEARCH_INDEX.md` | Complete mapping from every legacy experiment folder to its phased path under `research_archive/` |
 
 ---
@@ -34,6 +42,7 @@ Versioned research codebase, protocol governance, independent audit suite, and p
 7. `07_mode_sequence_and_local_fixes/` — Late observability probes, endpoint discrete set utility, and Q-mode sequences
 8. `08_e2e_reset_and_dpp/` — End-to-end decoupled geometric optimization (`E2E_DGEO`/`UD`) and DPP conditional VAE feasibility studies
 9. `09_misc_studies/` — Supporting utilities and exploratory notes
+10. `10_next_phase_e1_e4/` — Completed E1 calibration, continuous-curve decoders, candidate refinement, training factors, compact reanalysis inputs and negative-result evidence
 
 ---
 

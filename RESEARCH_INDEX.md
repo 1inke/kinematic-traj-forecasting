@@ -1,7 +1,15 @@
 # Research Archive Index
 
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
-All weights (`.pth/.pt/.ckpt/.onnx/.joblib`), array dumps (`.npz/.npy/.parquet`), raw visual `.js` bundles, and bloated per-sample logs were stripped to preserve reproducible code, configs, evaluation reports, and aggregate metric JSONs.
+Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phase10 explicitly retains compact `.npz` statistics with checksums and a CPU-only reanalysis tool; these are saved-output metrics, not raw datasets or model predictions.
+
+## Phase 10: NEXT_PHASE E1–E4 (2026-11-14–15)
+
+| Experiment / Series | Original Location | Report | Execution / Scientific verdict |
+| :--- | :--- | :--- | :--- |
+| [NEXT_PHASE_EXEC_20261114](research_archive/10_next_phase_e1_e4/NEXT_PHASE_EXEC_20261114/) | `qoder_work/NEXT_PHASE_EXEC_20261114` | [中文解读](research_archive/10_next_phase_e1_e4/NEXT_PHASE_EXEC_20261114/RESULTS_REVIEW_ZH.md), [original report](research_archive/10_next_phase_e1_e4/NEXT_PHASE_EXEC_20261114/snapshot/RESULT_ANALYSIS.md) | COMPLETE, exit0 / all nine methods fail the full prespecified screen; B0 retained |
+
+Includes byte-preserved scientific/recovery source, sealed dependencies, all method results, 54 geometry diagnostics, 10 cost measurements, E1 budget/noise evidence, compact per-window analysis inputs and a verifier for all 11 comparisons and their bootstrap intervals. See the package README for included and omitted artifacts, historical failure records, and training-replay requirements.
 
 ## Phase 01: Early Encoders, Baselines & F16 Exploration (28 directories)
 

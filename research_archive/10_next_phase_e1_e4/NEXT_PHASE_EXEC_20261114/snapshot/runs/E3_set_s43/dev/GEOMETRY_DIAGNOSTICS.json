@@ -1,0 +1,93 @@
+{
+  "groups": {
+    "overall": {
+      "n": 4753,
+      "nearest_neighbor_meanpath_p10_p50_p90": [
+        0.19165864690519113,
+        0.3685660910251929,
+        0.6672343628978111
+      ],
+      "within_same_distance_cluster_pair_fraction": 0.0035335023863044945,
+      "anchor_polyline_deviation_p50_p95_max": [
+        8.919622871700675e-08,
+        4.7628033754251087e-07,
+        1.392895644084862e-06
+      ]
+    },
+    "stable": {
+      "n": 2941,
+      "nearest_neighbor_meanpath_p10_p50_p90": [
+        0.17387241149495344,
+        0.35509056574216347,
+        0.6576621166930395
+      ],
+      "within_same_distance_cluster_pair_fraction": 0.004830079278440916,
+      "anchor_polyline_deviation_p50_p95_max": [
+        8.284281968468098e-08,
+        4.610156227295768e-07,
+        1.3680580995602155e-06
+      ]
+    },
+    "transition": {
+      "n": 852,
+      "nearest_neighbor_meanpath_p10_p50_p90": [
+        0.2343245562938775,
+        0.3809930699009895,
+        0.6524431947791947
+      ],
+      "within_same_distance_cluster_pair_fraction": 0.0006856931060044478,
+      "anchor_polyline_deviation_p50_p95_max": [
+        9.943227707471573e-08,
+        4.976561971636748e-07,
+        1.392895644084862e-06
+      ]
+    },
+    "change": {
+      "n": 960,
+      "nearest_neighbor_meanpath_p10_p50_p90": [
+        0.20980655864109723,
+        0.39676756818363235,
+        0.7202533342327211
+      ],
+      "within_same_distance_cluster_pair_fraction": 0.002088815789473684,
+      "anchor_polyline_deviation_p50_p95_max": [
+        1.017696143403471e-07,
+        5.080039827021619e-07,
+        1.3573826173152342e-06
+      ]
+    }
+  },
+  "observation_strata": {
+    "stationary": {
+      "n": 1126,
+      "coverage": 0.9369449378330373,
+      "junction_accel_mean": 0.25349610624725216
+    },
+    "slow": {
+      "n": 1152,
+      "coverage": 0.5824652777777778,
+      "junction_accel_mean": 0.3641244288832192
+    },
+    "normal": {
+      "n": 2331,
+      "coverage": 0.4453024453024453,
+      "junction_accel_mean": 0.407855241371687
+    },
+    "fast": {
+      "n": 144,
+      "coverage": 0.2986111111111111,
+      "junction_accel_mean": 0.4907731581300178
+    },
+    "observed_turn": {
+      "n": 690,
+      "coverage": 0.5855072463768116,
+      "junction_accel_mean": 0.38929917642251194
+    },
+    "no_observed_turn": {
+      "n": 4063,
+      "coverage": 0.5914349003199606,
+      "junction_accel_mean": 0.35876776480050854
+    }
+  },
+  "thresholds": "m/s stationary<.05, slow<.5, normal<1.5, fast>=1.5; observed turn>10deg; descriptive predeclared engineering bins"
+}
