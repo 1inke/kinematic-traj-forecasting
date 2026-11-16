@@ -3,6 +3,14 @@
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
 Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phase10 explicitly retains compact `.npz` statistics with checksums and a CPU-only reanalysis tool; these are saved-output metrics, not raw datasets or model predictions.
 
+## Phase 11: FIVEFOLD B0 — PAUSED / INCOMPLETE (2026-11-15–16)
+
+| Experiment / Series | Original Location | Report | Execution / Scientific verdict |
+| :--- | :--- | :--- | :--- |
+| [FIVEFOLD_B0_20261115](research_archive/11_fivefold_b0_incomplete/FIVEFOLD_B0_20261115/) | `qoder_work/FIVEFOLD_B0_EXEC_20261115` + `FIVEFOLD_B0_PARALLEL_20261115` | [状态清单](research_archive/11_fivefold_b0_incomplete/FIVEFOLD_B0_20261115/RUN_STATUS.csv), [阶段结论](research_archive/11_fivefold_b0_incomplete/FIVEFOLD_B0_20261115/reference_analysis/PARTIAL_CONCLUSION.md) | **未执行完全 / PAUSED_INCOMPLETE**: 10/10 budget, 2/15 final complete; no final five-fold three-seed summary |
+
+Preserves frozen scientific/orchestration source, dependencies, 12 completed run receipts, two paused-checkpoint records, small historical logs and per-window metric `.npz` arrays for CPU aggregate reanalysis. A separate 95%-training single-seed test reference is explicitly diagnostic, not the unfinished 100%-training three-seed result. Recording-isolation amendments and prior C0 development overlap with benchmark test targets are disclosed. Raw data, weights and full prediction arrays are omitted; no baseline upgrade or automatic old-study resume.
+
 ## Phase 10: NEXT_PHASE E1–E4 (2026-11-14–15)
 
 | Experiment / Series | Original Location | Report | Execution / Scientific verdict |

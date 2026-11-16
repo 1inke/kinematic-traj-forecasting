@@ -1,0 +1,91 @@
+{
+  "at": "2026-11-15T23:50:03.512817+08:00",
+  "status": "PASS_PARALLEL_RESTORED",
+  "max_concurrency": 2,
+  "current_active_jobs": 1,
+  "reason_one_job": "Only final budget fold remains; final runs wait for the full ten-run budget decision seal",
+  "final_stage_will_use_limit_two": true,
+  "worker_service_ancestry": [
+    {
+      "create_time": 1794757706.006356,
+      "name": "python.exe",
+      "pid": 9220,
+      "ppid": 13864,
+      "cmdline": [
+        "C:\\coding_toobox\\envs\\astra2\\python.exe",
+        "-B",
+        "C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_PARALLEL_20261115\\standalone\\worker.py"
+      ]
+    },
+    {
+      "create_time": 1794757705.5539603,
+      "name": "python.exe",
+      "pid": 13864,
+      "ppid": 2720,
+      "cmdline": [
+        "C:\\Users\\linke\\Documents\\New project\\.venv-governance\\Scripts\\python.exe",
+        "-B",
+        "C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_PARALLEL_20261115\\standalone\\worker.py"
+      ]
+    },
+    {
+      "create_time": 1794745544.0161602,
+      "name": "svchost.exe",
+      "pid": 2720,
+      "ppid": 1772,
+      "cmdline": null
+    },
+    {
+      "create_time": 1794745543.63374,
+      "name": "services.exe",
+      "pid": 1772,
+      "ppid": 1656,
+      "cmdline": null
+    }
+  ],
+  "actual_training_processes": [
+    {
+      "create_time": 1794757709.3531072,
+      "name": "python.exe",
+      "pid": 41264,
+      "ppid": 35712,
+      "cmdline": [
+        "C:\\coding_toobox\\envs\\astra2\\python.exe",
+        "-B",
+        "C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_PARALLEL_20261115\\code\\parallel_child.py",
+        "budget_zara02",
+        "budget",
+        "--out",
+        "C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_EXEC_20261115\\FIVEFOLD_RUNS",
+        "--exec-dir",
+        "C:\\Users\\linke\\Documents\\New project\\qoder_work\\NEXT_PHASE_EXEC_20261114",
+        "--data-dir",
+        "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\processed_data_diverse",
+        "--audit",
+        "C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_EXEC_20261115\\F0\\AUDIT_RECORDING.json",
+        "--device",
+        "cuda:0",
+        "--folds",
+        "zara02"
+      ]
+    }
+  ],
+  "latest_checkpoint": {
+    "at": "2026-11-15T23:49:52.976364+08:00",
+    "file": "C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_EXEC_20261115\\FIVEFOLD_RUNS\\runs\\budget_zara02_E128_s42\\ckpt_epoch059.pt",
+    "sha256": "c6f0afce302788de4734538f780affe33990d00807410d346a995d8b4a78d957",
+    "epoch": 59,
+    "updates": 22892,
+    "order_hash": "0cddcc8851a5d2247575c76bc9ad71d963684980d05f7c65feec7b0ac47de984",
+    "epoch_wall_seconds": 23.16833979999865
+  },
+  "verified_skipped_fold_jobs": [
+    "budget_eth.json",
+    "budget_hotel.json",
+    "budget_univ.json",
+    "budget_zara01.json"
+  ],
+  "previous_single_task_disabled": true,
+  "stderr_empty": true,
+  "source_sha256": "0cd2412e3be5257ddc1e6f26afb971a148d9d3c72982c2fcfaac8b8ac40b7486"
+}

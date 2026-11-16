@@ -1,0 +1,95 @@
+{
+  "at": "2026-11-16T12:49:48.5868532+08:00",
+  "failure_exists": false,
+  "exit_exists": false,
+  "task_states": [
+    {
+      "TaskName": "Trajectory-Fivefold-B0-Parallel-20261115",
+      "State": "Disabled"
+    },
+    {
+      "TaskName": "Trajectory-Fivefold-B0-Recovery-Parallel-20261116",
+      "State": "Running"
+    },
+    {
+      "TaskName": "Trajectory-Fivefold-B0-Single-20261115",
+      "State": "Disabled"
+    },
+    {
+      "TaskName": "Trajectory-Fivefold-B0-Standalone-20261115",
+      "State": "Disabled"
+    }
+  ],
+  "active_alive": [
+    {
+      "label": "final_eth_s44",
+      "pid": 20552,
+      "alive": true,
+      "stderr_bytes": 0,
+      "stdout_tail": [
+        "[final_eth_E128_s44] epoch 6/128 loss 1.9563 lr 2.49e-04 370s",
+        "[final_eth_E128_s44] epoch 7/128 loss 1.9436 lr 2.49e-04 432s"
+      ]
+    },
+    {
+      "label": "final_hotel_s42",
+      "pid": 41060,
+      "alive": true,
+      "stderr_bytes": 0,
+      "stdout_tail": [
+        "[final_hotel_E128_s42] epoch 7/128 loss 1.8612 lr 2.49e-04 422s",
+        "[final_hotel_E128_s42] epoch 8/128 loss 1.7925 lr 2.48e-04 483s"
+      ]
+    }
+  ],
+  "owned_python": [
+    {
+      "ProcessId": 4984,
+      "ParentProcessId": 2548,
+      "CreationDate": "2026-11-16T11:35:41.419965+08:00",
+      "CommandLine": "\"C:\\Users\\linke\\Documents\\New project\\.venv-governance\\Scripts\\python.exe\" -B \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_PARALLEL_20261115\\recovery_20261116\\worker_recovery.py\""
+    },
+    {
+      "ProcessId": 23184,
+      "ParentProcessId": 4984,
+      "CreationDate": "2026-11-16T11:35:41.810687+08:00",
+      "CommandLine": "\"C:\\coding_toobox\\envs\\astra2\\python.exe\" -B \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_PARALLEL_20261115\\recovery_20261116\\worker_recovery.py\""
+    },
+    {
+      "ProcessId": 20552,
+      "ParentProcessId": 23184,
+      "CreationDate": "2026-11-16T12:41:12.203638+08:00",
+      "CommandLine": "\"C:\\Users\\linke\\Documents\\New project\\.venv-governance\\Scripts\\python.exe\" -B \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_PARALLEL_20261115\\recovery_20261116\\child_recovery.py\" final_eth_s44 final --out \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_EXEC_20261115\\FIVEFOLD_RUNS\" --exec-dir \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\NEXT_PHASE_EXEC_20261114\" --data-dir C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\processed_data_diverse --audit \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_EXEC_20261115\\F0\\AUDIT_RECORDING.json\" --device cuda:0 --folds eth --seeds 44"
+    },
+    {
+      "ProcessId": 41060,
+      "ParentProcessId": 23184,
+      "CreationDate": "2026-11-16T12:41:12.237506+08:00",
+      "CommandLine": "\"C:\\Users\\linke\\Documents\\New project\\.venv-governance\\Scripts\\python.exe\" -B \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_PARALLEL_20261115\\recovery_20261116\\child_recovery.py\" final_hotel_s42 final --out \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_EXEC_20261115\\FIVEFOLD_RUNS\" --exec-dir \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\NEXT_PHASE_EXEC_20261114\" --data-dir C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\processed_data_diverse --audit \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_EXEC_20261115\\F0\\AUDIT_RECORDING.json\" --device cuda:0 --folds hotel --seeds 42"
+    },
+    {
+      "ProcessId": 39020,
+      "ParentProcessId": 20552,
+      "CreationDate": "2026-11-16T12:41:12.24211+08:00",
+      "CommandLine": "\"C:\\coding_toobox\\envs\\astra2\\python.exe\" -B \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_PARALLEL_20261115\\recovery_20261116\\child_recovery.py\" final_eth_s44 final --out \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_EXEC_20261115\\FIVEFOLD_RUNS\" --exec-dir \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\NEXT_PHASE_EXEC_20261114\" --data-dir C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\processed_data_diverse --audit \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_EXEC_20261115\\F0\\AUDIT_RECORDING.json\" --device cuda:0 --folds eth --seeds 44"
+    },
+    {
+      "ProcessId": 41612,
+      "ParentProcessId": 41060,
+      "CreationDate": "2026-11-16T12:41:12.255369+08:00",
+      "CommandLine": "\"C:\\coding_toobox\\envs\\astra2\\python.exe\" -B \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_PARALLEL_20261115\\recovery_20261116\\child_recovery.py\" final_hotel_s42 final --out \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_EXEC_20261115\\FIVEFOLD_RUNS\" --exec-dir \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\NEXT_PHASE_EXEC_20261114\" --data-dir C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\processed_data_diverse --audit \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_EXEC_20261115\\F0\\AUDIT_RECORDING.json\" --device cuda:0 --folds hotel --seeds 42"
+    }
+  ],
+  "warnings": [
+    {
+      "Name": "23500.jsonl",
+      "Length": 805,
+      "LastWriteTime": "2026-11-16T11:34:13.2982254+08:00"
+    },
+    {
+      "Name": "34452.jsonl",
+      "Length": 805,
+      "LastWriteTime": "2026-11-16T11:35:13.84063+08:00"
+    }
+  ]
+}

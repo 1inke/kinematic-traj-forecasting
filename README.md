@@ -4,6 +4,14 @@ Versioned research codebase, protocol governance, independent audit suite, and p
 
 > **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. The NEXT_PHASE archive additionally retains compact, checksum-verified analysis arrays for independent CPU reanalysis.
 
+## Latest archived study: FIVEFOLD B0 — PAUSED / INCOMPLETE (2026-11-16)
+
+**未执行完全：预算比较 10/10 完成；最终评测仅 2/15 完成，另有 2 次中途暂停、11 次未开始。** The study was paused by user request to prioritize short exploratory experiments. No final five-fold three-seed mean/SD or study-completion seal exists, and the baseline has not been upgraded.
+
+[Incomplete study, code and CPU reanalysis](research_archive/11_fivefold_b0_incomplete/FIVEFOLD_B0_20261115/) · [All planned run statuses](research_archive/11_fivefold_b0_incomplete/FIVEFOLD_B0_20261115/RUN_STATUS.csv) · [Partial conclusions (中文)](research_archive/11_fivefold_b0_incomplete/FIVEFOLD_B0_20261115/reference_analysis/PARTIAL_CONCLUSION.md)
+
+The archive preserves budget selection (E*=128), two completed ETH final evaluations, partial-checkpoint metadata, per-window metric arrays, recording-isolation audits and execution/recovery history. A separately labeled single-seed reference reuses 95%-training budget models; it does not fill missing 100%-training final runs. The package discloses earlier C0 development-data overlap with four benchmark test folds. Weights, raw datasets and full trajectory predictions remain local. The current EXPLORE_FAST training is outside this snapshot.
+
 ## Latest completed experiment: NEXT_PHASE E1–E4 (2026-11-15)
 
 [Code, analysis inputs and reproducibility instructions](research_archive/10_next_phase_e1_e4/NEXT_PHASE_EXEC_20261114/) · [Results interpretation (中文)](research_archive/10_next_phase_e1_e4/NEXT_PHASE_EXEC_20261114/RESULTS_REVIEW_ZH.md) · [Original final report](research_archive/10_next_phase_e1_e4/NEXT_PHASE_EXEC_20261114/snapshot/RESULT_ANALYSIS.md)
@@ -26,7 +34,7 @@ The publication includes compact saved-output statistics and a NumPy-only verifi
 | `reviews/` | Governance verification snapshots (`governance_20261020/`) |
 | `archive/` | Historical migration notes (`MIGRATION_PLAN.md`), directory index (`INDEX.csv`, `build_index.py`), and legacy root readme snapshot |
 | `docs/` | Organized architectural design specs (`docs/architecture/`), multi-series synthesis reviews (`docs/synthesis/`), and detailed study design notes |
-| `research_archive/` | Chronological/thematic archive of experimental series (`01_` through `10_`), preserving scripts, configs, negative & positive reports, aggregate metrics, and the Phase10 compact reanalysis inputs |
+| `research_archive/` | Chronological/thematic archive of experimental series (`01_` through `11_`), preserving scripts, configs, negative & positive reports, aggregate metrics, Phase10 compact reanalysis inputs, and the explicitly incomplete Phase11 snapshot |
 | `RESEARCH_INDEX.md` | Complete mapping from every legacy experiment folder to its phased path under `research_archive/` |
 
 ---
@@ -43,6 +51,7 @@ The publication includes compact saved-output statistics and a NumPy-only verifi
 8. `08_e2e_reset_and_dpp/` — End-to-end decoupled geometric optimization (`E2E_DGEO`/`UD`) and DPP conditional VAE feasibility studies
 9. `09_misc_studies/` — Supporting utilities and exploratory notes
 10. `10_next_phase_e1_e4/` — Completed E1 calibration, continuous-curve decoders, candidate refinement, training factors, compact reanalysis inputs and negative-result evidence
+11. `11_fivefold_b0_incomplete/` — **PAUSED / INCOMPLETE** B0 five-fold study: 10/10 budget runs, 2/15 final runs, partial-checkpoint records and CPU aggregate reanalysis
 
 ---
 

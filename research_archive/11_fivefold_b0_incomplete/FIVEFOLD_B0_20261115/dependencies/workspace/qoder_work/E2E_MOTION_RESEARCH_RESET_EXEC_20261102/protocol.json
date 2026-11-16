@@ -1,0 +1,86 @@
+{
+  "name": "E2E_RESET_C0_B0_V1",
+  "authorization": "2026-11-02 user execute supplied 02 design, repeated path and continue",
+  "stage": "C0_COMPLETE_THEN_ONE_FRESH_B0",
+  "seed": 42,
+  "epochs": 8,
+  "batch": 64,
+  "fit": 21719,
+  "dev": 4753,
+  "official_test": "SHA_AND_SOURCE_INVENTORY_ONLY_NO_GT_PARSE",
+  "model": "Existing FrontEncoderASTRA(f16_temporal_social_cross) + h3_anchor_proposal",
+  "anchors": [
+    4,
+    8,
+    12
+  ],
+  "K": 20,
+  "use_refiner": false,
+  "whole_model_parameters": 295474,
+  "trainable_parameters": 294897,
+  "initialization": "All fresh seed42, no checkpoint or tokens. Temporary discarded linear constructor avoids unrelated PCA asset load.",
+  "normalization": "Past-only focal heading lag3 speed>.03 else[1,0], peragent eight-observation mean; no fitted input stats",
+  "data_neighbor": "Full8 observed only, closest t0 stableID tie, focal+8, no neighbor future-life mask",
+  "augmentation": {
+    "reflection": true,
+    "rotation": false,
+    "speed": [
+      0.9,
+      1.1
+    ],
+    "probability": 0.5,
+    "curvature": 0
+  },
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.00025,
+    "weight_decay": 0.0005,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "eps": 1e-08,
+    "foreach": false
+  },
+  "scheduler": "monotonic cosine; warmup1epoch(340updates); total2720; per-update step",
+  "EMA": 0.995,
+  "clip": 5.0,
+  "drop_last": false,
+  "selection": "FIXED_FINAL_EPOCH8_EMA; no dev best checkpoint or earlystop",
+  "base_loss": "Existing locked ModeQueryLoss smoothL1 exp weights1..2, winner ADE+.25FDE, classification.5*(softCE temp.5 gapscale>=.05+.25hardCE), endpoint.25, endpoint190pair relu(.4-distance)linear*.05, shortfirst2smoothL1*.2",
+  "oracle_coverage": {
+    "weight": 0.2,
+    "responsibility": "detach softmax(-(ADE+.25FDE)/.10)",
+    "normalized": false,
+    "warmup": 0
+  },
+  "additional_auxiliary_losses": 0,
+  "GT_in_prediction_forward": false,
+  "training_side_reference": "38a3ea47f6d00a79374f077fda58518898a842865cc3692fa3919aa6b91f0478",
+  "evaluation_contract": "f5db8a47ce38b89c919fb266377f38c9d646fe1f9046f9a8c7cf4762aafd98c9",
+  "later_U_D_V_F": "NOT_STARTED_BY_THIS_WORKER",
+  "old_Q_gates": "UNCHANGED",
+  "baseline_promoted": false,
+  "resource": "Latest warning_first_remaining_v3, measured E, no fixed6GiB hard gate, no OS/pagefile/userkill",
+  "no_delete": true,
+  "old_PAUSED_untouched": true,
+  "full_conservative_budget_seconds": 1800,
+  "statistical_inference": "Single seed development; no significance or fresh blind benchmark claim",
+  "runtime_versions": {
+    "python": "3.10.20 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:42:35) [MSC v.1942 64 bit (AMD64)]",
+    "torch": "2.11.0+cu128",
+    "numpy": "1.25.2"
+  },
+  "preflight_repairs": [
+    {
+      "issue": "motion history broadcast1->20 interface",
+      "source_preserved": "failures/preflight_v1",
+      "full_v2_recheck": "PASS"
+    },
+    {
+      "issue": "GraphStats dataclass serialization",
+      "source_preserved": "failures/cost_v1",
+      "recheck": "Full CPU/GPU50warm500 trace rerun, PASS"
+    }
+  ]
+}

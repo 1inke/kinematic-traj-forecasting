@@ -1,0 +1,92 @@
+{
+  "at": "2026-11-15T21:13:34.643597+08:00",
+  "status": "PASS_SINGLE_EXECUTION",
+  "active_training_processes": [
+    {
+      "pid": 31112,
+      "cmdline": [
+        "C:\\coding_toobox\\envs\\astra2\\python.exe",
+        "-B",
+        "C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_PARALLEL_20261115\\code\\parallel_child.py",
+        "budget_zara01",
+        "budget",
+        "--out",
+        "C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_EXEC_20261115\\FIVEFOLD_RUNS",
+        "--exec-dir",
+        "C:\\Users\\linke\\Documents\\New project\\qoder_work\\NEXT_PHASE_EXEC_20261114",
+        "--data-dir",
+        "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\processed_data_diverse",
+        "--audit",
+        "C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_EXEC_20261115\\F0\\AUDIT_RECORDING.json",
+        "--device",
+        "cuda:0",
+        "--folds",
+        "zara01"
+      ],
+      "create_time": 1794748266.0834658,
+      "exe": "C:\\coding_toobox\\envs\\astra2\\python.exe",
+      "ppid": 12652
+    }
+  ],
+  "worker_service_ancestry": [
+    {
+      "pid": 16764,
+      "cmdline": [
+        "C:\\coding_toobox\\envs\\astra2\\python.exe",
+        "-B",
+        "C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_PARALLEL_20261115\\single_mode_20261115\\worker_single.py"
+      ],
+      "create_time": 1794748261.9241035,
+      "ppid": 22644,
+      "name": "python.exe"
+    },
+    {
+      "pid": 22644,
+      "cmdline": [
+        "C:\\Users\\linke\\Documents\\New project\\.venv-governance\\Scripts\\python.exe",
+        "-B",
+        "C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_PARALLEL_20261115\\single_mode_20261115\\worker_single.py"
+      ],
+      "create_time": 1794748261.5261805,
+      "ppid": 2720,
+      "name": "python.exe"
+    },
+    {
+      "pid": 2720,
+      "cmdline": null,
+      "create_time": 1794745544.0161602,
+      "ppid": 1772,
+      "name": "svchost.exe"
+    },
+    {
+      "pid": 1772,
+      "cmdline": null,
+      "create_time": 1794745543.63374,
+      "ppid": 1656,
+      "name": "services.exe"
+    }
+  ],
+  "checkpoint": {
+    "at": "2026-11-15T21:13:08.954471+08:00",
+    "file": "C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_EXEC_20261115\\FIVEFOLD_RUNS\\runs\\budget_zara01_E128_s42\\ckpt_epoch058.pt",
+    "sha256": "18e315a91321a8aa308aeb69ff890cc5d6981834704a76365c945f7d20d4149c",
+    "epoch": 58,
+    "updates": 24650,
+    "order_hash": "5c5e56367c0704926ed40fd43b87183926d8c7a12839735a64a83d9319153c1e",
+    "epoch_wall_seconds": 25.77990680000039
+  },
+  "waiting_zara02_checkpoint_unchanged": {
+    "at": "2026-11-15T21:07:57.065388+08:00",
+    "file": "C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_EXEC_20261115\\FIVEFOLD_RUNS\\runs\\budget_zara02_E128_s42\\ckpt_epoch022.pt",
+    "sha256": "fa45ab7d98ae21ddd62eec1aa35dcade53fe4d15b18e2e9c95f2e507ea52b57a",
+    "epoch": 22,
+    "updates": 8536,
+    "order_hash": "a1751e2c9686fa1e8348441cdbf5c9be697d37b85fec057da6a7397ecbd9cbcd",
+    "epoch_wall_seconds": 30.983451499999774
+  },
+  "source_sha256": "cc7ca17557d8f337816204e6f13c7e2552a3ebf8195b9f0a20118ec5906bf1ce",
+  "only_one_active_job": true,
+  "stderr_empty": true,
+  "original_parallel_and_serial_tasks_disabled": true,
+  "user_exit_did_not_stop_experiment": true
+}

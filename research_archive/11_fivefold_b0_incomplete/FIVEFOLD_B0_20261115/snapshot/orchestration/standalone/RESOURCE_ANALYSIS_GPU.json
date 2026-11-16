@@ -1,0 +1,33 @@
+{
+  "at": "2026-11-15T20:37:05.209482+08:00",
+  "scope": "Read-only resource analysis; concurrent training unchanged",
+  "workers": [
+    {
+      "pid": 37532,
+      "fold": "zara01",
+      "windows_GPU_engine_percent": 41,
+      "dedicated_GPU_bytes": 429412352,
+      "shared_GPU_bytes": 81788928
+    },
+    {
+      "pid": 37340,
+      "fold": "zara02",
+      "windows_GPU_engine_percent": 39,
+      "dedicated_GPU_bytes": 416829440,
+      "shared_GPU_bytes": 81788928
+    }
+  ],
+  "nvidia_sample": {
+    "total_MiB": 8151,
+    "used_MiB": 1976,
+    "GPU_utilization_percent": 65,
+    "temperature_C": 68,
+    "power_W": 46.49
+  },
+  "RAM_available_GiB": 18.3404,
+  "RAM_used_percent": 42.0,
+  "total_CPU_percent": 31.3,
+  "source": "Windows GPUProcessMemory/GPUEngine formatted performance counters and nvidia-smi, psutil",
+  "limitation": "Different samples/time windows; GPU engine utilization is not VRAM percentage; process private committed bytes are not physical resident RAM.",
+  "conclusion": "Two independent GPU training workers share one RTX5070. GPU-intensive foreground apps may contend; current RAM and VRAM have headroom. Lower concurrency trades throughput for foreground responsiveness."
+}

@@ -1,0 +1,21 @@
+{
+  "at": "2026-11-16T00:57:15.254041+08:00",
+  "status": "FAILURE",
+  "controller": "PARALLEL",
+  "traceback": "Traceback (most recent call last):\n  File \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_PARALLEL_20261115\\standalone\\worker.py\", line 187, in main\n    pool(final, 'PARALLEL_FINAL')\n  File \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_PARALLEL_20261115\\standalone\\worker.py\", line 129, in pool\n    publish(stage, queued=[s['label'] for s in queue])\n  File \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_PARALLEL_20261115\\standalone\\worker.py\", line 53, in publish\n    rt.atomic(base / 'CHILD_STATE.json', dict(at=now(), state='RUNNING', active=active, attempt=str(ATTEMPT)))\n  File \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_EXEC_20261115\\code\\runtime.py\", line 37, in atomic\n    os.replace(temp, path)\nPermissionError: [WinError 5] 拒绝访问。: 'C:\\\\Users\\\\linke\\\\Documents\\\\New project\\\\qoder_work\\\\FIVEFOLD_B0_PARALLEL_20261115\\\\standalone\\\\CHILD_STATE.json.tmp' -> 'C:\\\\Users\\\\linke\\\\Documents\\\\New project\\\\qoder_work\\\\FIVEFOLD_B0_PARALLEL_20261115\\\\standalone\\\\CHILD_STATE.json'\n",
+  "stopped_children": [
+    {
+      "label": "final_eth_s42",
+      "pid": 6596,
+      "exit_code": 1,
+      "reason": "STOPPED_AFTER_CONTROLLER_FAILURE"
+    },
+    {
+      "label": "final_eth_s43",
+      "pid": 12760,
+      "exit_code": 1,
+      "reason": "STOPPED_AFTER_CONTROLLER_FAILURE"
+    }
+  ],
+  "attempt": "C:\\Users\\linke\\Documents\\New project\\qoder_work\\FIVEFOLD_B0_PARALLEL_20261115\\standalone\\attempts\\1794757707919525900"
+}
