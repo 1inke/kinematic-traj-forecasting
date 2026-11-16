@@ -4,7 +4,15 @@ Versioned research codebase, protocol governance, independent audit suite, and p
 
 > **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. Recent archives additionally retain compact, checksum-verified per-window analysis arrays for independent CPU aggregate reanalysis.
 
-## Latest completed study: EXPLORE_FAST — calibration not passed (2026-11-16)
+## Latest completed study: ETH-T1 — no help on primary errors (2026-11-16)
+
+**实验一已完成：ETH / T1 / 64轮 / seed42，复用同设置B0，约68分钟。主指标判定为无帮助，实验二暂不运行。** The single-seed exploratory result worsens ETH minADE20 by 6.70% and minFDE20 by 8.79%, despite a 5.77 percentage-point gain in joint coverage. This is a negative scientific result from a successful execution, not a program failure or proof that all seeds/combinations fail.
+
+[Experiment code, outputs and CPU reanalysis](research_archive/13_eth_t1/EXP_ETH_T1_20261116/) · [Detailed analysis and experiment-two decision (中文)](research_archive/13_eth_t1/EXP_ETH_T1_20261116/RESULT_ANALYSIS_ZH.md) · [Original primary result](research_archive/13_eth_t1/EXP_ETH_T1_20261116/snapshot/ETH_T1_RESULT.json)
+
+Change-group minADE/minFDE worsen by 11.61%/27.54%; error growth among 274 jointly uncovered windows outweighs gains in newly covered cases. Observed speed shift is a diagnostic clue, not an established cause. The current C0 combo experiment remains shelved because it does not directly resolve this ETH failure; it was not executed. No baseline upgrade, extra seed or old five-fold resume occurred.
+
+## Earlier completed study: EXPLORE_FAST — calibration not passed (2026-11-16)
 
 **本轮实验已完成：8/8 次训练和评价，约 80 分钟。16/32 轮均未通过预设预算校准，未选出正式预算，未升级 baseline。** Execution completed successfully; this is not a method-confirmation success. The 32-epoch E3_self change-group coverage gain missed its fixed threshold by one window (21 net windows versus 22 required).
 
@@ -42,7 +50,7 @@ The publication includes compact saved-output statistics and a NumPy-only verifi
 | `reviews/` | Governance verification snapshots (`governance_20261020/`) |
 | `archive/` | Historical migration notes (`MIGRATION_PLAN.md`), directory index (`INDEX.csv`, `build_index.py`), and legacy root readme snapshot |
 | `docs/` | Organized architectural design specs (`docs/architecture/`), multi-series synthesis reviews (`docs/synthesis/`), and detailed study design notes |
-| `research_archive/` | Chronological/thematic archive of experimental series (`01_` through `12_`), preserving scripts, configs, negative & positive reports, aggregate metrics, compact reanalysis inputs, the incomplete Phase11 snapshot, and completed Phase12 calibration |
+| `research_archive/` | Chronological/thematic archive of experimental series (`01_` through `13_`), preserving scripts, configs, negative & positive reports, compact reanalysis inputs, incomplete Phase11, Phase12 calibration and the completed Phase13 ETH-T1 negative result |
 | `RESEARCH_INDEX.md` | Complete mapping from every legacy experiment folder to its phased path under `research_archive/` |
 
 ---
@@ -61,6 +69,7 @@ The publication includes compact saved-output statistics and a NumPy-only verifi
 10. `10_next_phase_e1_e4/` — Completed E1 calibration, continuous-curve decoders, candidate refinement, training factors, compact reanalysis inputs and negative-result evidence
 11. `11_fivefold_b0_incomplete/` — **PAUSED / INCOMPLETE** B0 five-fold study: 10/10 budget runs, 2/15 final runs, partial-checkpoint records and CPU aggregate reanalysis
 12. `12_explore_fast/` — **Execution COMPLETE / calibration NOT_CALIBRATED**: eight short-budget B0/T1/E3_self runs, fixed 16/32-epoch decisions, analysis and compact CPU reanalysis inputs
+13. `13_eth_t1/` — **Execution COMPLETE / primary verdict NO_HELP (single seed)**: ETH T1@64 versus reused B0@64, diagnostic error decomposition, observed-speed summaries and CPU reanalysis; combo remains shelved
 
 ---
 

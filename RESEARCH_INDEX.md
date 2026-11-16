@@ -3,6 +3,14 @@
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
 Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phase10 explicitly retains compact `.npz` statistics with checksums and a CPU-only reanalysis tool; these are saved-output metrics, not raw datasets or model predictions.
 
+## Phase 13: ETH-T1 — execution COMPLETE / primary verdict NO_HELP (2026-11-16)
+
+| Experiment / Series | Original Location | Report | Execution / Scientific verdict |
+| :--- | :--- | :--- | :--- |
+| [EXP_ETH_T1_20261116](research_archive/13_eth_t1/EXP_ETH_T1_20261116/) | `qoder_work/EXP_ETH_T1_EXEC_20261116` | [中文分析与实验二取舍](research_archive/13_eth_t1/EXP_ETH_T1_20261116/RESULT_ANALYSIS_ZH.md), [原始主结果](research_archive/13_eth_t1/EXP_ETH_T1_20261116/snapshot/ETH_T1_RESULT.json) | **COMPLETE, exit0** / one new T1@64 seed42 versus reused matched B0; ETH primary ADE/FDE worsen 6.70%/8.79%; no_help |
+
+Preserves scientific and independent-execution source, source/output seals, matched-index/order evidence, two per-window metric arrays, derived observed speeds and a NumPy-only aggregate verifier. Coverage improves while error tails and change-group mean errors worsen. Combo experiment two remains shelved and was not run; neither a baseline upgrade nor a general rejection of all combinations is claimed. Raw targets, weights and complete predictions stay local; the local raw-coordinate recomputation receipt is retained.
+
 ## Phase 12: EXPLORE_FAST — execution COMPLETE / calibration NOT_CALIBRATED (2026-11-16)
 
 | Experiment / Series | Original Location | Report | Execution / Scientific verdict |

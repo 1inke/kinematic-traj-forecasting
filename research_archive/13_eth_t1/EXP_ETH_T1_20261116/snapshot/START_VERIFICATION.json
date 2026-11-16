@@ -1,0 +1,95 @@
+{
+  "at": "2026-11-16T18:59:51.488204+08:00",
+  "status": "PASS_RUNNING_WITH_DURABLE_CHECKPOINT",
+  "task": "Trajectory-ETH-T1-20261116",
+  "current": {
+    "at": "2026-11-16T18:59:51.016119+08:00",
+    "status": "RUNNING",
+    "stage": "TRAIN_T1_AND_EVALUATE_REUSED_B0",
+    "controller": "ETH_T1",
+    "concurrency_limit": 2,
+    "active": [
+      {
+        "label": "train",
+        "pid": 43708,
+        "started_at": "2026-11-16T18:58:13.916833+08:00",
+        "progress": {
+          "at": "2026-11-16T18:59:30.017994+08:00",
+          "status": "TRAIN",
+          "arm": "T1",
+          "seed": 42,
+          "epochs": 64,
+          "file": "C:\\Users\\linke\\Documents\\New project\\qoder_work\\EXP_ETH_T1_EXEC_20261116\\runs\\T1_eth_E64_s42\\ckpt_epoch001.pt",
+          "sha256": "16144563b5efdfae3867eb9b2ac94fe22cff38560d86f1c12f169967ad0d00ce",
+          "epoch": 1,
+          "updates": 450,
+          "order_hash": "20e58d8a308c48351d8755a157979e6a046eace4d682588d823bf86d977c496b",
+          "epoch_wall_seconds": 69.85074519999762
+        }
+      }
+    ],
+    "queued": [],
+    "new_training_runs_planned": 1,
+    "epochs": 64,
+    "seed": 42,
+    "automatic_seed43": false,
+    "COMBO_started": false,
+    "attempt": "C:\\Users\\linke\\Documents\\New project\\qoder_work\\EXP_ETH_T1_EXEC_20261116\\standalone\\attempts\\1794826693881067800"
+  },
+  "checkpoint": {
+    "at": "2026-11-16T18:59:30.003993+08:00",
+    "file": "C:\\Users\\linke\\Documents\\New project\\qoder_work\\EXP_ETH_T1_EXEC_20261116\\runs\\T1_eth_E64_s42\\ckpt_epoch001.pt",
+    "sha256": "16144563b5efdfae3867eb9b2ac94fe22cff38560d86f1c12f169967ad0d00ce",
+    "epoch": 1,
+    "updates": 450,
+    "order_hash": "20e58d8a308c48351d8755a157979e6a046eace4d682588d823bf86d977c496b",
+    "epoch_wall_seconds": 69.85074519999762
+  },
+  "checkpoint_hash_verified": true,
+  "source_manifest_sha256": "f40f99cac25c8b80dc7470565e9cb6b5496908ed739a1249d49304029ba659d0",
+  "source_files": 456,
+  "B0_reference_exit_code": 0,
+  "B0_prediction_metric_recompute": "PASS",
+  "B0_training_reused": true,
+  "formal_new_training_runs": 1,
+  "actual_worker_parent_chain": [
+    {
+      "pid": 38060,
+      "parent_pid": 37948,
+      "name": "python.exe",
+      "created": "2026-11-16T18:58:12.027416+08:00",
+      "command": "\"C:\\coding_toobox\\envs\\astra2\\python.exe\" -X utf8 -B \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\EXP_ETH_T1_EXEC_20261116\\standalone\\worker.py\""
+    },
+    {
+      "pid": 37948,
+      "parent_pid": 2548,
+      "name": "python.exe",
+      "created": "2026-11-16T18:58:11.622141+08:00",
+      "command": "\"C:\\Users\\linke\\Documents\\New project\\.venv-governance\\Scripts\\python.exe\" -X utf8 -B \"C:\\Users\\linke\\Documents\\New project\\qoder_work\\EXP_ETH_T1_EXEC_20261116\\standalone\\worker.py\""
+    },
+    {
+      "pid": 2548,
+      "parent_pid": 1728,
+      "name": "svchost.exe",
+      "created": "2026-11-16T11:29:17.454283+08:00",
+      "command": null
+    },
+    {
+      "pid": 1728,
+      "parent_pid": 1648,
+      "name": "services.exe",
+      "created": "2026-11-16T11:29:17.156315+08:00",
+      "command": null
+    },
+    {
+      "pid": 1648,
+      "parent_pid": 1528,
+      "name": "wininit.exe",
+      "created": "2026-11-16T11:29:14.046736+08:00",
+      "command": null
+    }
+  ],
+  "max_concurrency": 2,
+  "COMBO_started": false,
+  "automatic_seed43": false
+}
