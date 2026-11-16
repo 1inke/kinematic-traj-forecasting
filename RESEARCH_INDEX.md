@@ -3,6 +3,14 @@
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
 Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phase10 explicitly retains compact `.npz` statistics with checksums and a CPU-only reanalysis tool; these are saved-output metrics, not raw datasets or model predictions.
 
+## Phase 12: EXPLORE_FAST — execution COMPLETE / calibration NOT_CALIBRATED (2026-11-16)
+
+| Experiment / Series | Original Location | Report | Execution / Scientific verdict |
+| :--- | :--- | :--- | :--- |
+| [EXPLORE_FAST_20261116](research_archive/12_explore_fast/EXPLORE_FAST_20261116/) | `qoder_work/EXPLORE_FAST_EXEC_20261116` | [中文分析](research_archive/12_explore_fast/EXPLORE_FAST_20261116/RESULT_ANALYSIS.md), [原始决定](research_archive/12_explore_fast/EXPLORE_FAST_20261116/snapshot/EXPLORATION_BUDGET.json) | **8/8 runs COMPLETE, exit0** / neither 16 nor 32 epochs passed the fixed calibration; chosen budget remains null |
+
+Preserves execution and analysis source, sealed text dependencies, all eight run results, epoch records, fixed calibration decisions, paired coverage exchanges, original motion statistics and 13 per-window metric arrays (eight new development populations plus five separately labeled old-budget references). A NumPy-only verifier reconstructs aggregate metrics and calibration without raw targets or model weights. Original local coordinate/motion recomputation passed and its receipt is retained; the portable verifier does not repeat omitted-coordinate calculations. T1 is a stronger exploratory lead here, not a confirmed winner; no baseline upgrade, automatic long training or old-study resume.
+
 ## Phase 11: FIVEFOLD B0 — PAUSED / INCOMPLETE (2026-11-15–16)
 
 | Experiment / Series | Original Location | Report | Execution / Scientific verdict |

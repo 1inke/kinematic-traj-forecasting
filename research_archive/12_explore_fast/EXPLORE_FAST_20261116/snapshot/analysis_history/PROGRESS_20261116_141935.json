@@ -1,0 +1,135 @@
+{
+  "at": "2026-11-16T14:19:35.280355+08:00",
+  "study": "EXPLORE_FAST_20261116",
+  "status": "RUNNING",
+  "stage": "CALIBRATE_E32_B0",
+  "completed_runs": [
+    {
+      "run": "B0_E16_s42",
+      "epochs": 16,
+      "seed": 42,
+      "arm": "B0",
+      "status": "DONE",
+      "files_verified": 20
+    },
+    {
+      "run": "B0_E16_s43",
+      "epochs": 16,
+      "seed": 43,
+      "arm": "B0",
+      "status": "DONE",
+      "files_verified": 20
+    },
+    {
+      "run": "E3_self_E16_s42",
+      "epochs": 16,
+      "seed": 42,
+      "arm": "E3_self",
+      "status": "DONE",
+      "files_verified": 20
+    },
+    {
+      "run": "T1_E16_s42",
+      "epochs": 16,
+      "seed": 42,
+      "arm": "T1",
+      "status": "DONE",
+      "files_verified": 20
+    }
+  ],
+  "active_runs": [
+    {
+      "run": "B0_E32_s42",
+      "epoch": 23,
+      "epochs": 32,
+      "updates": 7820,
+      "checkpoint_sha256": "49d52da6934169b4f8bcff522e353957bf2d995aa874456cd886dc5fe94fe01d",
+      "checkpoint_hash_verified": true,
+      "saved_at": "2026-11-16T14:19:29.827072+08:00",
+      "recent5_epoch_seconds": 45.061686340000236,
+      "recent15_epoch_seconds": 44.87939802000001,
+      "recent_sample_count": 15,
+      "log_stderr_bytes": 0
+    },
+    {
+      "run": "B0_E32_s43",
+      "epoch": 23,
+      "epochs": 32,
+      "updates": 7820,
+      "checkpoint_sha256": "2ecd2eb875d055bc0f92efc1cd5241f248b6c7917683c3f46cfda25a970917f8",
+      "checkpoint_hash_verified": true,
+      "saved_at": "2026-11-16T14:19:29.830072+08:00",
+      "recent5_epoch_seconds": 45.06241176000003,
+      "recent15_epoch_seconds": 44.877086993333556,
+      "recent_sample_count": 15,
+      "log_stderr_bytes": 0
+    }
+  ],
+  "planned_runs": 8,
+  "completed_run_count": 4,
+  "not_started": [
+    "T1_E32_s42",
+    "E3_self_E32_s42"
+  ],
+  "saved_updates": 37400,
+  "total_planned_updates": 65280,
+  "training_progress_pct": 57.291666666666664,
+  "stage32_progress_pct": 35.9375,
+  "E16_calibration": {
+    "at": "2026-11-16T14:02:11.033508+08:00",
+    "epochs": 16,
+    "usable_as_initial_screen": false,
+    "controls": {
+      "T1": {
+        "diff_pp": {
+          "overall": 5.512308015989903,
+          "change": 7.3958333333333295
+        },
+        "half_reference_reproduced": true,
+        "exceeds_single_B0_pair_difference": true,
+        "known_full_screen_success": false
+      },
+      "E3_self": {
+        "diff_pp": {
+          "overall": 5.617504733852302,
+          "change": 1.1458333333333293
+        },
+        "half_reference_reproduced": false,
+        "exceeds_single_B0_pair_difference": true,
+        "known_full_screen_success": false
+      }
+    },
+    "B0_pair_difference_pp": {
+      "overall": -0.3997475278771312,
+      "change": 0.6250000000000033
+    },
+    "noise_estimate_is_reliable": false,
+    "meaning": "Heuristic reproduction of two known coverage signals, not proof of ranking or efficacy."
+  },
+  "control_E16_epoch_paces": {
+    "T1": {
+      "last5": 45.539553800000064,
+      "last15": 46.30623438666674
+    },
+    "E3_self": {
+      "last5": 53.82820370000009,
+      "last15": 53.896076006666775
+    }
+  },
+  "prior_B0_E16_epoch_pace": {
+    "last5": 45.120800160000364,
+    "last15": 45.300571546666774
+  },
+  "eta": {
+    "remaining_B0_seconds": 405.5617058400003,
+    "following_parallel_controls_seconds": 1722.5025184000028,
+    "training_only_seconds": 2128.064224240003,
+    "with_120s_output_allowance_seconds": 2248.064224240003,
+    "projected_end": "2026-11-16T14:57:03.344579+08:00",
+    "caveat": "Control paces extrapolated from the 16-epoch runs at current concurrency; actual GPU load can change. Both 32-epoch control runs are fresh trainings."
+  },
+  "current_failure_exists": false,
+  "current_worker_exit_exists": false,
+  "time_budget_pause_exists": false,
+  "old_fivefold_status": "PAUSED_BY_USER"
+}

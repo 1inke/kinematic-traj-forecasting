@@ -1,0 +1,42 @@
+{
+  "scope": "Read-only exact float32 target past+future position bytes; no model inference, no test metrics.",
+  "examples_ids": {
+    "fit": [
+      "biwi_hotel|5|0",
+      "biwi_hotel|5|1",
+      "biwi_hotel|5|2"
+    ],
+    "dev": [
+      "biwi_hotel|277|1177",
+      "biwi_hotel|278|1177",
+      "biwi_hotel|282|1179"
+    ]
+  },
+  "by_fold": {
+    "eth": {
+      "test_windows": 364,
+      "exact_focal_20frame_overlap_with_C0_fit": 0,
+      "exact_focal_20frame_overlap_with_C0_dev": 0
+    },
+    "hotel": {
+      "test_windows": 1197,
+      "exact_focal_20frame_overlap_with_C0_fit": 749,
+      "exact_focal_20frame_overlap_with_C0_dev": 126
+    },
+    "univ": {
+      "test_windows": 24334,
+      "exact_focal_20frame_overlap_with_C0_fit": 15116,
+      "exact_focal_20frame_overlap_with_C0_dev": 2696
+    },
+    "zara01": {
+      "test_windows": 2356,
+      "exact_focal_20frame_overlap_with_C0_fit": 1594,
+      "exact_focal_20frame_overlap_with_C0_dev": 284
+    },
+    "zara02": {
+      "test_windows": 5910,
+      "exact_focal_20frame_overlap_with_C0_fit": 2428,
+      "exact_focal_20frame_overlap_with_C0_dev": 1240
+    }
+  }
+}

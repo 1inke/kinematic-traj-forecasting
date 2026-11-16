@@ -2,17 +2,25 @@
 
 Versioned research codebase, protocol governance, independent audit suite, and phase-organized experimental archive for multimodal kinematic pedestrian trajectory forecasting.
 
-> **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. The NEXT_PHASE archive additionally retains compact, checksum-verified analysis arrays for independent CPU reanalysis.
+> **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. Recent archives additionally retain compact, checksum-verified per-window analysis arrays for independent CPU aggregate reanalysis.
 
-## Latest archived study: FIVEFOLD B0 — PAUSED / INCOMPLETE (2026-11-16)
+## Latest completed study: EXPLORE_FAST — calibration not passed (2026-11-16)
+
+**本轮实验已完成：8/8 次训练和评价，约 80 分钟。16/32 轮均未通过预设预算校准，未选出正式预算，未升级 baseline。** Execution completed successfully; this is not a method-confirmation success. The 32-epoch E3_self change-group coverage gain missed its fixed threshold by one window (21 net windows versus 22 required).
+
+[Code, results and CPU reanalysis](research_archive/12_explore_fast/EXPLORE_FAST_20261116/) · [Results analysis (中文)](research_archive/12_explore_fast/EXPLORE_FAST_20261116/RESULT_ANALYSIS.md) · [Original budget decision](research_archive/12_explore_fast/EXPLORE_FAST_20261116/snapshot/EXPLORATION_BUDGET.json)
+
+T1 shows a stronger change-group coverage signal and improved aggregate motion statistics at 32 epochs; E3_self gains mainly on stable windows. Both methods have only seed42, and their change-group Top1 good-trajectory rates decrease despite improved best-of-20 coverage. Reused development data do not establish stable rankings or independent generalization. No automatic 64/128 training or old five-fold resume occurred.
+
+## Paused study: FIVEFOLD B0 — INCOMPLETE (2026-11-16)
 
 **未执行完全：预算比较 10/10 完成；最终评测仅 2/15 完成，另有 2 次中途暂停、11 次未开始。** The study was paused by user request to prioritize short exploratory experiments. No final five-fold three-seed mean/SD or study-completion seal exists, and the baseline has not been upgraded.
 
 [Incomplete study, code and CPU reanalysis](research_archive/11_fivefold_b0_incomplete/FIVEFOLD_B0_20261115/) · [All planned run statuses](research_archive/11_fivefold_b0_incomplete/FIVEFOLD_B0_20261115/RUN_STATUS.csv) · [Partial conclusions (中文)](research_archive/11_fivefold_b0_incomplete/FIVEFOLD_B0_20261115/reference_analysis/PARTIAL_CONCLUSION.md)
 
-The archive preserves budget selection (E*=128), two completed ETH final evaluations, partial-checkpoint metadata, per-window metric arrays, recording-isolation audits and execution/recovery history. A separately labeled single-seed reference reuses 95%-training budget models; it does not fill missing 100%-training final runs. The package discloses earlier C0 development-data overlap with four benchmark test folds. Weights, raw datasets and full trajectory predictions remain local. The current EXPLORE_FAST training is outside this snapshot.
+The archive preserves budget selection (E*=128), two completed ETH final evaluations, partial-checkpoint metadata, per-window metric arrays, recording-isolation audits and execution/recovery history. A separately labeled single-seed reference reuses 95%-training budget models; it does not fill missing 100%-training final runs. The package discloses earlier C0 development-data overlap with four benchmark test folds. Weights, raw datasets and full trajectory predictions remain local. The completed EXPLORE_FAST study is archived separately in Phase12.
 
-## Latest completed experiment: NEXT_PHASE E1–E4 (2026-11-15)
+## Earlier completed experiment: NEXT_PHASE E1–E4 (2026-11-15)
 
 [Code, analysis inputs and reproducibility instructions](research_archive/10_next_phase_e1_e4/NEXT_PHASE_EXEC_20261114/) · [Results interpretation (中文)](research_archive/10_next_phase_e1_e4/NEXT_PHASE_EXEC_20261114/RESULTS_REVIEW_ZH.md) · [Original final report](research_archive/10_next_phase_e1_e4/NEXT_PHASE_EXEC_20261114/snapshot/RESULT_ANALYSIS.md)
 
@@ -34,7 +42,7 @@ The publication includes compact saved-output statistics and a NumPy-only verifi
 | `reviews/` | Governance verification snapshots (`governance_20261020/`) |
 | `archive/` | Historical migration notes (`MIGRATION_PLAN.md`), directory index (`INDEX.csv`, `build_index.py`), and legacy root readme snapshot |
 | `docs/` | Organized architectural design specs (`docs/architecture/`), multi-series synthesis reviews (`docs/synthesis/`), and detailed study design notes |
-| `research_archive/` | Chronological/thematic archive of experimental series (`01_` through `11_`), preserving scripts, configs, negative & positive reports, aggregate metrics, Phase10 compact reanalysis inputs, and the explicitly incomplete Phase11 snapshot |
+| `research_archive/` | Chronological/thematic archive of experimental series (`01_` through `12_`), preserving scripts, configs, negative & positive reports, aggregate metrics, compact reanalysis inputs, the incomplete Phase11 snapshot, and completed Phase12 calibration |
 | `RESEARCH_INDEX.md` | Complete mapping from every legacy experiment folder to its phased path under `research_archive/` |
 
 ---
@@ -52,6 +60,7 @@ The publication includes compact saved-output statistics and a NumPy-only verifi
 9. `09_misc_studies/` — Supporting utilities and exploratory notes
 10. `10_next_phase_e1_e4/` — Completed E1 calibration, continuous-curve decoders, candidate refinement, training factors, compact reanalysis inputs and negative-result evidence
 11. `11_fivefold_b0_incomplete/` — **PAUSED / INCOMPLETE** B0 five-fold study: 10/10 budget runs, 2/15 final runs, partial-checkpoint records and CPU aggregate reanalysis
+12. `12_explore_fast/` — **Execution COMPLETE / calibration NOT_CALIBRATED**: eight short-budget B0/T1/E3_self runs, fixed 16/32-epoch decisions, analysis and compact CPU reanalysis inputs
 
 ---
 
