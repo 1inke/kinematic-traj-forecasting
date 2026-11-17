@@ -4,7 +4,15 @@ Versioned research codebase, protocol governance, independent audit suite, and p
 
 > **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. Recent archives additionally retain compact, checksum-verified per-window analysis arrays for independent CPU aggregate reanalysis.
 
-## Latest completed study: ETH speed diagnostics and augmentation — promising with tradeoffs (2026-11-16)
+## Latest completed study: deceleration diagnosis — selection issue, subtype unresolved (2026-11-17)
+
+**零训练、零推理诊断已完成：ETH主判B（选择问题），B1/B2尚未满足，baseline不变。** Eight saved-output populations include three ETH models and five C0 seeds. In the ETH wide-speed model's 89 valid-heading deceleration windows, 78.7% have a longitudinally reachable candidate but 75.3% of Top1 trajectories overshoot; 48/70 reachable cases still select an overshooting Top1. Candidate counts and both error components also deteriorate after augmentation.
+
+[Code, per-window results and CPU reanalysis](research_archive/15_decel_diag/EXP_DECEL_DIAG_20261117/) · [结果解读](research_archive/15_decel_diag/EXP_DECEL_DIAG_20261117/RESULT_INTERPRETATION_ZH.md) · [Status](research_archive/15_decel_diag/EXP_DECEL_DIAG_20261117/STATUS.json)
+
+All five C0 seeds also meet the B main criterion; four meet the exploratory B2 conditions. This does not establish intrinsic unpredictability or a universal causal mechanism. No follow-up training, baseline upgrade or old five-fold resume occurred.
+
+## Earlier completed study: ETH speed diagnostics and augmentation — promising with tradeoffs (2026-11-16)
 
 **零训练诊断和一次条件增强训练均完成。ETH minADE/minFDE 改善11.40%/6.93%，但覆盖、Top1及减速/变化组存在代价，未升级baseline。** The fixed single-seed exploratory criterion passes; it does not establish broad generalization or a complete motion-state solution.
 
@@ -58,7 +66,7 @@ The publication includes compact saved-output statistics and a NumPy-only verifi
 | `reviews/` | Governance verification snapshots (`governance_20261020/`) |
 | `archive/` | Historical migration notes (`MIGRATION_PLAN.md`), directory index (`INDEX.csv`, `build_index.py`), and legacy root readme snapshot |
 | `docs/` | Organized architectural design specs (`docs/architecture/`), multi-series synthesis reviews (`docs/synthesis/`), and detailed study design notes |
-| `research_archive/` | Chronological/thematic archive of experimental series (`01_` through `14_`), preserving scripts, configs, negative & positive reports, compact reanalysis inputs, incomplete Phase11, Phase12 calibration, Phase13 ETH-T1 and Phase14 speed diagnostics/augmentation with tradeoffs |
+| `research_archive/` | Chronological/thematic archive of experimental series (`01_` through `15_`), preserving scripts, configs, negative & positive reports, compact reanalysis inputs, incomplete Phase11, Phase12 calibration, Phase13 ETH-T1 and Phase14 speed diagnostics/augmentation with tradeoffs |
 | `RESEARCH_INDEX.md` | Complete mapping from every legacy experiment folder to its phased path under `research_archive/` |
 
 ---
@@ -79,6 +87,7 @@ The publication includes compact saved-output statistics and a NumPy-only verifi
 12. `12_explore_fast/` — **Execution COMPLETE / calibration NOT_CALIBRATED**: eight short-budget B0/T1/E3_self runs, fixed 16/32-epoch decisions, analysis and compact CPU reanalysis inputs
 13. `13_eth_t1/` — **Execution COMPLETE / primary verdict NO_HELP (single seed)**: ETH T1@64 versus reused B0@64, diagnostic error decomposition, observed-speed summaries and CPU reanalysis; combo remains shelved
 14. `14_eth_speed/` — **Execution COMPLETE / PROMISING_SINGLE_SEED with tradeoffs**: ETH/HOTEL zero-training speed diagnostics, one conditional ETH wide-speed B0@64, paired error/coverage/maneuver analysis and CPU reanalysis; no baseline upgrade
+15. `15_decel_diag/` — **Execution COMPLETE / B, subtype B_UNRESOLVED**: zero-training/inference saved-output candidate-generation/selection diagnosis across three ETH models and five C0 seeds, with per-window CPU reanalysis
 
 ---
 

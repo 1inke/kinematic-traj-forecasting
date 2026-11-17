@@ -1,0 +1,29 @@
+{
+  "dt": 0.4,
+  "direction": "mean(last 3 observed displacements), norm > .03m",
+  "history_edges": [
+    0.85,
+    1.15
+  ],
+  "speed_denominator_floor": 0.1,
+  "decel_ratio_max": 0.8,
+  "speed_ratio_match_tolerance": 0.15,
+  "longitudinal_reach_m": 0.4,
+  "top1_overshoot_m": 0.4,
+  "calibration_edges": [
+    0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1
+  ],
+  "small_group_n_lt": 20,
+  "A": "all_overshoot >= .30 OR reach < .60",
+  "B": "reach >= .70 AND top1_overshoot >= .50",
+  "B1": "history-decel top1 overshoot >= history-steady OR unconditional history-decel actual-minus-predicted >= .20",
+  "B2": ">50% of deceleration overshoots are historical steady AND all nonempty calibration bin gaps < .10",
+  "unresolved_B": "B_UNRESOLVED",
+  "decision_population": "ETH/AUG_s42, maneuver deceleration, valid direction",
+  "notes": "IMPLEMENTATION_NOTES.md is fixed before formal computation"
+}

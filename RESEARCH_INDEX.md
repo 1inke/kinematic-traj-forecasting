@@ -1,7 +1,15 @@
 # Research Archive Index
 
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
-Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases10–14 retain selected compact `.npz` statistics and derived analysis metadata with checksums and CPU-only reanalysis tools; these are saved-output metrics, not raw datasets or complete coordinate predictions.
+Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases10–15 retain selected compact `.npz` statistics and derived analysis metadata with checksums and CPU-only reanalysis tools; these are saved-output metrics, not raw datasets or complete coordinate predictions.
+
+## Phase 15: deceleration diagnosis — COMPLETE / selection issue, subtype unresolved (2026-11-17)
+
+| Experiment / Series | Original Location | Report | Execution / Scientific verdict |
+| :--- | :--- | :--- | :--- |
+| [EXP_DECEL_DIAG_20261117](research_archive/15_decel_diag/EXP_DECEL_DIAG_20261117/) | `qoder_work/EXP_DECEL_DIAG_EXEC_20261117` | [结果解读](research_archive/15_decel_diag/EXP_DECEL_DIAG_20261117/RESULT_INTERPRETATION_ZH.md), [状态](research_archive/15_decel_diag/EXP_DECEL_DIAG_20261117/STATUS.json) | **COMPLETE, verified** / main B, B1/B2 unresolved; zero training/inference, baseline unchanged |
+
+Three ETH saved models and five C0 B0 seeds; eight per-window derived NPZ files, fixed rules, exact source/receipt copies and CPU aggregate reanalysis. ETH AUG deceleration: reach78.7%, Top1 overshoot75.3%; conditional overshoot48/70. All C0 seeds meet B. Generation quality also declines after wide augmentation; no causal or intrinsic-unpredictability proof, no additional training.
 
 ## Phase 14: ETH speed diagnostics and augmentation — COMPLETE / promising with tradeoffs (2026-11-16)
 
