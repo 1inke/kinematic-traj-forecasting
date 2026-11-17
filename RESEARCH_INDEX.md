@@ -1,7 +1,15 @@
 # Research Archive Index
 
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
-Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phase10 explicitly retains compact `.npz` statistics with checksums and a CPU-only reanalysis tool; these are saved-output metrics, not raw datasets or model predictions.
+Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases10–14 retain selected compact `.npz` statistics and derived analysis metadata with checksums and CPU-only reanalysis tools; these are saved-output metrics, not raw datasets or complete coordinate predictions.
+
+## Phase 14: ETH speed diagnostics and augmentation — COMPLETE / promising with tradeoffs (2026-11-16)
+
+| Experiment / Series | Original Location | Report | Execution / Scientific verdict |
+| :--- | :--- | :--- | :--- |
+| [EXP_ETH_SPEED_20261116](research_archive/14_eth_speed/EXP_ETH_SPEED_20261116/) | `qoder_work/EXP_ETH_SPEED_EXEC_20261116` | [完整结果分析](research_archive/14_eth_speed/EXP_ETH_SPEED_20261116/RESULT_ANALYSIS_ZH.md), [状态](research_archive/14_eth_speed/EXP_ETH_SPEED_20261116/STATUS.json) | **COMPLETE, exit0** / zero-training ETH/HOTEL diagnostics plus one ETH E64 seed42 wide-speed run; fixed `PROMISING_SINGLE_SEED`, substantial tradeoffs, baseline unchanged |
+
+Preserves original design/code, actual source dependencies and output seals, 13 per-window metric populations, evaluation-only speed/maneuver labels, derived endpoint-error statistics and a NumPy-only verifier. ETH minADE/minFDE improve 11.40%/6.93%; coverage falls 59→55, Top1 FDE worsens 8.52%, and deceleration/change FDE worsens 34.74%/15.54%. All 64 training orders match the reused B0. Raw data/weights/full predictions remain local; public saved-error reconstruction is distinguished from local raw-coordinate recomputation. Old five-fold remains paused and COMBO/extra seeds were not run.
 
 ## Phase 13: ETH-T1 — execution COMPLETE / primary verdict NO_HELP (2026-11-16)
 

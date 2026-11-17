@@ -1,0 +1,490 @@
+{
+  "input_contract_sha256": "cd8fbb2187616905b4bb899d9fcd58eba8fa9da298dc391870bfdbb9c83d97ae",
+  "pipeline_consistent": true,
+  "code_checks": {
+    "frame_skip_one": true,
+    "preprocessing_scale_one": true,
+    "video_frame_interval_ten": true
+  },
+  "source_literal_assignments": {
+    "data/eth.py": {
+      "past_length": [
+        8
+      ],
+      "future_length": [
+        12
+      ],
+      "scale": [
+        1
+      ],
+      "total_num": [
+        5
+      ],
+      "file_dir": [
+        "datasets/eth_ucy/processed_data_diverse"
+      ],
+      "frame_skip": [
+        1,
+        1
+      ],
+      "log": [
+        "log",
+        "log"
+      ],
+      "num_total_samples": [
+        0,
+        0
+      ],
+      "index": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "stack_size": [
+        16
+      ],
+      "max_scene_size": [
+        8
+      ],
+      "cnt": [
+        0
+      ],
+      "init_frame": [
+        0,
+        0
+      ],
+      "": [
+        1
+      ]
+    },
+    "data/process_eth.py": {
+      "past_length": [
+        8
+      ],
+      "future_length": [
+        12
+      ],
+      "scale": [
+        1
+      ],
+      "thres": [
+        5
+      ],
+      "data_name": [
+        "uni",
+        "uni"
+      ]
+    },
+    "utils/video2images.py": {
+      "name_count": [
+        0
+      ],
+      "path": [
+        "datasets/eth_ucy"
+      ],
+      "start_frame": [
+        0
+      ],
+      "frame_interval": [
+        10
+      ]
+    }
+  },
+  "videos": [
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\videos\\eth.avi",
+      "fps": 25.0,
+      "frame_count": 12974,
+      "implied_dt": 0.4
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\videos\\hotel.avi",
+      "fps": 25.0,
+      "frame_count": 19350,
+      "implied_dt": 0.4
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\videos\\students003.avi",
+      "fps": 25.0,
+      "frame_count": 5405,
+      "implied_dt": 0.4
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\videos\\zara01.avi",
+      "fps": 25.0,
+      "frame_count": 9031,
+      "implied_dt": 0.4
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\videos\\zara02.avi",
+      "fps": 25.0,
+      "frame_count": 10519,
+      "implied_dt": 0.4
+    }
+  ],
+  "populations": [
+    {
+      "fold": "eth",
+      "split": "train",
+      "n": 30307,
+      "passed": true,
+      "coordinate_match": "EXACT_FLOAT32_FULL_20_FOCAL_POINTS",
+      "unmatched": 0,
+      "first_unmatched": [],
+      "ambiguous_recordings": 0,
+      "assigned_recordings": {
+        "biwi_hotel": 877,
+        "crowds_zara01": 1976,
+        "crowds_zara02": 4477,
+        "crowds_zara03": 1760,
+        "students001": 11691,
+        "students003": 8988,
+        "uni_examples": 538
+      },
+      "processed_frame_increment_histogram": {
+        "1.0": 310042,
+        "sentinel_minus_one": 13989
+      },
+      "raw_window_label_increment": 1
+    },
+    {
+      "fold": "eth",
+      "split": "test",
+      "n": 364,
+      "passed": true,
+      "coordinate_match": "EXACT_FLOAT32_FULL_20_FOCAL_POINTS",
+      "unmatched": 0,
+      "first_unmatched": [],
+      "ambiguous_recordings": 0,
+      "assigned_recordings": {
+        "biwi_eth": 364
+      },
+      "processed_frame_increment_histogram": {
+        "1.0": 6916
+      },
+      "raw_window_label_increment": 1
+    },
+    {
+      "fold": "hotel",
+      "split": "train",
+      "n": 29676,
+      "passed": true,
+      "coordinate_match": "EXACT_FLOAT32_FULL_20_FOCAL_POINTS",
+      "unmatched": 0,
+      "first_unmatched": [],
+      "ambiguous_recordings": 0,
+      "assigned_recordings": {
+        "biwi_eth": 246,
+        "crowds_zara01": 1976,
+        "crowds_zara02": 4477,
+        "crowds_zara03": 1760,
+        "students001": 11691,
+        "students003": 8988,
+        "uni_examples": 538
+      },
+      "processed_frame_increment_histogram": {
+        "1.0": 298053,
+        "sentinel_minus_one": 13989
+      },
+      "raw_window_label_increment": 1
+    },
+    {
+      "fold": "hotel",
+      "split": "test",
+      "n": 1197,
+      "passed": true,
+      "coordinate_match": "EXACT_FLOAT32_FULL_20_FOCAL_POINTS",
+      "unmatched": 0,
+      "first_unmatched": [],
+      "ambiguous_recordings": 0,
+      "assigned_recordings": {
+        "biwi_hotel": 1197
+      },
+      "processed_frame_increment_histogram": {
+        "1.0": 22743
+      },
+      "raw_window_label_increment": 1
+    },
+    {
+      "fold": "univ",
+      "split": "test",
+      "n": 24334,
+      "passed": true,
+      "coordinate_match": "EXACT_FLOAT32_FULL_20_FOCAL_POINTS",
+      "unmatched": 0,
+      "first_unmatched": [],
+      "ambiguous_recordings": 0,
+      "assigned_recordings": {
+        "students001": 14295,
+        "students003": 10039
+      },
+      "processed_frame_increment_histogram": {
+        "sentinel_minus_one": 14295,
+        "1.0": 190741
+      },
+      "raw_window_label_increment": 1
+    },
+    {
+      "fold": "zara01",
+      "split": "test",
+      "n": 2356,
+      "passed": true,
+      "coordinate_match": "EXACT_FLOAT32_FULL_20_FOCAL_POINTS",
+      "unmatched": 0,
+      "first_unmatched": [],
+      "ambiguous_recordings": 0,
+      "assigned_recordings": {
+        "crowds_zara01": 2356
+      },
+      "processed_frame_increment_histogram": {
+        "1.0": 44764
+      },
+      "raw_window_label_increment": 1
+    },
+    {
+      "fold": "zara02",
+      "split": "test",
+      "n": 5910,
+      "passed": true,
+      "coordinate_match": "EXACT_FLOAT32_FULL_20_FOCAL_POINTS",
+      "unmatched": 0,
+      "first_unmatched": [],
+      "ambiguous_recordings": 0,
+      "assigned_recordings": {
+        "crowds_zara02": 5910
+      },
+      "processed_frame_increment_histogram": {
+        "1.0": 112290
+      },
+      "raw_window_label_increment": 1
+    }
+  ],
+  "raw_label_summaries": [
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\labels\\eth\\biwi_hotel_train.txt",
+      "sha256": "96d87e6f6afa542397a88ecccd06192a968ed555f0da936b3e50bc9fd0aaa2a3",
+      "n_rows": 4946,
+      "frame_min": 0,
+      "frame_max": 1439,
+      "track_label_frame_gap_histogram": {
+        "1": 4635
+      },
+      "conflicting_duplicate_rows": 0
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\labels\\eth\\crowds_zara01_train.txt",
+      "sha256": "63af0422336bcafcbcfb78538fcfb49cd043211f5fe7ac6a21e18a3c245d65a2",
+      "n_rows": 4307,
+      "frame_min": 0,
+      "frame_max": 710,
+      "track_label_frame_gap_histogram": {
+        "1": 4182
+      },
+      "conflicting_duplicate_rows": 0
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\labels\\eth\\crowds_zara02_train.txt",
+      "sha256": "4f524a0ac447567e942faa21d1aafbf363d12cb1a49fcbd6590035b003b3548a",
+      "n_rows": 7621,
+      "frame_min": 1,
+      "frame_max": 841,
+      "track_label_frame_gap_histogram": {
+        "1": 7450
+      },
+      "conflicting_duplicate_rows": 0
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\labels\\eth\\crowds_zara03_train.txt",
+      "sha256": "7e640fd562e4ad56ef27a0a8a555a43443824a0834b83e1c3bbaefad97790ede",
+      "n_rows": 3708,
+      "frame_min": 0,
+      "frame_max": 602,
+      "track_label_frame_gap_histogram": {
+        "1": 3602
+      },
+      "conflicting_duplicate_rows": 0
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\labels\\eth\\students001_train.txt",
+      "sha256": "2d4f442346b1c5f62a748a53c20918511faddeed4955ba73a4de95a2e04f0ae1",
+      "n_rows": 18353,
+      "frame_min": 0,
+      "frame_max": 354,
+      "track_label_frame_gap_histogram": {
+        "1": 17978
+      },
+      "conflicting_duplicate_rows": 0
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\labels\\eth\\students003_train.txt",
+      "sha256": "8d36ffdeae8f33e827bbaf4845cd0069e9c26af5057cf9b44ccf4424869ebfa8",
+      "n_rows": 15641,
+      "frame_min": 0,
+      "frame_max": 431,
+      "track_label_frame_gap_histogram": {
+        "1": 15277
+      },
+      "conflicting_duplicate_rows": 0
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\labels\\eth\\uni_examples_train.txt",
+      "sha256": "5124a997ccef4fe8589e510616d9d8c2adf6b3e254e34d1b5d2741879e8cec76",
+      "n_rows": 2266,
+      "frame_min": 0,
+      "frame_max": 593,
+      "track_label_frame_gap_histogram": {
+        "1": 2170
+      },
+      "conflicting_duplicate_rows": 0
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\labels\\eth\\biwi_eth.txt",
+      "sha256": "d7cdcedd6472ebaa794bc56e037542e350dfe2ee992f818ab8c417e9fc2a17ad",
+      "n_rows": 5492,
+      "frame_min": 78,
+      "frame_max": 1238,
+      "track_label_frame_gap_histogram": {
+        "1": 5132
+      },
+      "conflicting_duplicate_rows": 0
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\labels\\hotel\\biwi_eth_train.txt",
+      "sha256": "a3e5d7f7c741c4a4cfbd968136cef0b3945580921775c6af90424862bf1a3357",
+      "n_rows": 3666,
+      "frame_min": 78,
+      "frame_max": 1023,
+      "track_label_frame_gap_histogram": {
+        "1": 3416
+      },
+      "conflicting_duplicate_rows": 0
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\labels\\hotel\\crowds_zara01_train.txt",
+      "sha256": "63af0422336bcafcbcfb78538fcfb49cd043211f5fe7ac6a21e18a3c245d65a2",
+      "n_rows": 4307,
+      "frame_min": 0,
+      "frame_max": 710,
+      "track_label_frame_gap_histogram": {
+        "1": 4182
+      },
+      "conflicting_duplicate_rows": 0
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\labels\\hotel\\crowds_zara02_train.txt",
+      "sha256": "4f524a0ac447567e942faa21d1aafbf363d12cb1a49fcbd6590035b003b3548a",
+      "n_rows": 7621,
+      "frame_min": 1,
+      "frame_max": 841,
+      "track_label_frame_gap_histogram": {
+        "1": 7450
+      },
+      "conflicting_duplicate_rows": 0
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\labels\\hotel\\crowds_zara03_train.txt",
+      "sha256": "7e640fd562e4ad56ef27a0a8a555a43443824a0834b83e1c3bbaefad97790ede",
+      "n_rows": 3708,
+      "frame_min": 0,
+      "frame_max": 602,
+      "track_label_frame_gap_histogram": {
+        "1": 3602
+      },
+      "conflicting_duplicate_rows": 0
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\labels\\hotel\\students001_train.txt",
+      "sha256": "2d4f442346b1c5f62a748a53c20918511faddeed4955ba73a4de95a2e04f0ae1",
+      "n_rows": 18353,
+      "frame_min": 0,
+      "frame_max": 354,
+      "track_label_frame_gap_histogram": {
+        "1": 17978
+      },
+      "conflicting_duplicate_rows": 0
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\labels\\hotel\\students003_train.txt",
+      "sha256": "8d36ffdeae8f33e827bbaf4845cd0069e9c26af5057cf9b44ccf4424869ebfa8",
+      "n_rows": 15641,
+      "frame_min": 0,
+      "frame_max": 431,
+      "track_label_frame_gap_histogram": {
+        "1": 15277
+      },
+      "conflicting_duplicate_rows": 0
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\labels\\hotel\\uni_examples_train.txt",
+      "sha256": "5124a997ccef4fe8589e510616d9d8c2adf6b3e254e34d1b5d2741879e8cec76",
+      "n_rows": 2266,
+      "frame_min": 0,
+      "frame_max": 593,
+      "track_label_frame_gap_histogram": {
+        "1": 2170
+      },
+      "conflicting_duplicate_rows": 0
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\labels\\hotel\\biwi_hotel.txt",
+      "sha256": "90c4b0f7514b307b53481d8e2e23f9ba1ea9202d732634291c01267742d66746",
+      "n_rows": 6543,
+      "frame_min": 0,
+      "frame_max": 1806,
+      "track_label_frame_gap_histogram": {
+        "1": 6154
+      },
+      "conflicting_duplicate_rows": 0
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\labels\\univ\\students001.txt",
+      "sha256": "4071b40e8d23b485efc8376f697c66753df102903e2923092ab17694c0183249",
+      "n_rows": 21813,
+      "frame_min": 0,
+      "frame_max": 443,
+      "track_label_frame_gap_histogram": {
+        "1": 21398
+      },
+      "conflicting_duplicate_rows": 0
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\labels\\univ\\students003.txt",
+      "sha256": "3a46399a7c5dc27b95e69c8cc75fa824494e69c0c317c0790a69bca5d5ee3a14",
+      "n_rows": 17953,
+      "frame_min": 0,
+      "frame_max": 540,
+      "track_label_frame_gap_histogram": {
+        "1": 17519
+      },
+      "conflicting_duplicate_rows": 0
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\labels\\zara01\\crowds_zara01.txt",
+      "sha256": "7d2c9a70e33594dbaf3142ec97ade2bc07f41ea681cf0e399057c8fa1da0f5f8",
+      "n_rows": 5153,
+      "frame_min": 0,
+      "frame_max": 901,
+      "track_label_frame_gap_histogram": {
+        "1": 5005
+      },
+      "conflicting_duplicate_rows": 0
+    },
+    {
+      "file": "C:\\Users\\linke\\Desktop\\DRSE\\ASTRA\\datasets\\eth_ucy\\labels\\zara02\\crowds_zara02.txt",
+      "sha256": "d085bffb646ff89afe5af7964feade56834a81197ba04f567db5a02fd607d4cf",
+      "n_rows": 9722,
+      "frame_min": 1,
+      "frame_max": 1052,
+      "track_label_frame_gap_histogram": {
+        "1": 9518
+      },
+      "conflicting_duplicate_rows": 0
+    }
+  ],
+  "protocol_dt_seconds": 0.4,
+  "protocol_coordinate_unit": "metre",
+  "physical_calibration_independently_verified": false,
+  "annotation_video_alignment_independently_verified": false,
+  "conclusion_scope": "No extra coordinate scaling or focal frame skipping in this processing chain if PASS; upstream physical calibration remains an assumption."
+}

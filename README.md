@@ -4,7 +4,15 @@ Versioned research codebase, protocol governance, independent audit suite, and p
 
 > **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. Recent archives additionally retain compact, checksum-verified per-window analysis arrays for independent CPU aggregate reanalysis.
 
-## Latest completed study: ETH-T1 — no help on primary errors (2026-11-16)
+## Latest completed study: ETH speed diagnostics and augmentation — promising with tradeoffs (2026-11-16)
+
+**零训练诊断和一次条件增强训练均完成。ETH minADE/minFDE 改善11.40%/6.93%，但覆盖、Top1及减速/变化组存在代价，未升级baseline。** The fixed single-seed exploratory criterion passes; it does not establish broad generalization or a complete motion-state solution.
+
+[Code, outputs and CPU reanalysis](research_archive/14_eth_speed/EXP_ETH_SPEED_20261116/) · [Detailed analysis (中文)](research_archive/14_eth_speed/EXP_ETH_SPEED_20261116/RESULT_ANALYSIS_ZH.md) · [Publication status](research_archive/14_eth_speed/EXP_ETH_SPEED_20261116/STATUS.json)
+
+High-speed windows account for about 83% of aggregate ADE improvement, while deceleration-group FDE worsens 34.74%, change-group FDE worsens 15.54%, and overall Top1 FDE increases 8.52%. Joint coverage falls from 59 to 55 windows (13 rescued, 17 lost). Zero-training normalization already achieves similar aggregate errors. One ETH E64 seed42 run reuses the matched B0; all 64 epoch batch orders match. Raw coordinate-processing checks pass within the existing pipeline, without independent upstream physical calibration. Old five-fold training remains paused, and COMBO/extra seeds were not run.
+
+## Earlier completed study: ETH-T1 — no help on primary errors (2026-11-16)
 
 **实验一已完成：ETH / T1 / 64轮 / seed42，复用同设置B0，约68分钟。主指标判定为无帮助，实验二暂不运行。** The single-seed exploratory result worsens ETH minADE20 by 6.70% and minFDE20 by 8.79%, despite a 5.77 percentage-point gain in joint coverage. This is a negative scientific result from a successful execution, not a program failure or proof that all seeds/combinations fail.
 
@@ -50,7 +58,7 @@ The publication includes compact saved-output statistics and a NumPy-only verifi
 | `reviews/` | Governance verification snapshots (`governance_20261020/`) |
 | `archive/` | Historical migration notes (`MIGRATION_PLAN.md`), directory index (`INDEX.csv`, `build_index.py`), and legacy root readme snapshot |
 | `docs/` | Organized architectural design specs (`docs/architecture/`), multi-series synthesis reviews (`docs/synthesis/`), and detailed study design notes |
-| `research_archive/` | Chronological/thematic archive of experimental series (`01_` through `13_`), preserving scripts, configs, negative & positive reports, compact reanalysis inputs, incomplete Phase11, Phase12 calibration and the completed Phase13 ETH-T1 negative result |
+| `research_archive/` | Chronological/thematic archive of experimental series (`01_` through `14_`), preserving scripts, configs, negative & positive reports, compact reanalysis inputs, incomplete Phase11, Phase12 calibration, Phase13 ETH-T1 and Phase14 speed diagnostics/augmentation with tradeoffs |
 | `RESEARCH_INDEX.md` | Complete mapping from every legacy experiment folder to its phased path under `research_archive/` |
 
 ---
@@ -70,6 +78,7 @@ The publication includes compact saved-output statistics and a NumPy-only verifi
 11. `11_fivefold_b0_incomplete/` — **PAUSED / INCOMPLETE** B0 five-fold study: 10/10 budget runs, 2/15 final runs, partial-checkpoint records and CPU aggregate reanalysis
 12. `12_explore_fast/` — **Execution COMPLETE / calibration NOT_CALIBRATED**: eight short-budget B0/T1/E3_self runs, fixed 16/32-epoch decisions, analysis and compact CPU reanalysis inputs
 13. `13_eth_t1/` — **Execution COMPLETE / primary verdict NO_HELP (single seed)**: ETH T1@64 versus reused B0@64, diagnostic error decomposition, observed-speed summaries and CPU reanalysis; combo remains shelved
+14. `14_eth_speed/` — **Execution COMPLETE / PROMISING_SINGLE_SEED with tradeoffs**: ETH/HOTEL zero-training speed diagnostics, one conditional ETH wide-speed B0@64, paired error/coverage/maneuver analysis and CPU reanalysis; no baseline upgrade
 
 ---
 
