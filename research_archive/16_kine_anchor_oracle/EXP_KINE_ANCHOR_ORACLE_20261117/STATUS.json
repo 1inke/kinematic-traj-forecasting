@@ -1,0 +1,89 @@
+{
+  "study": "EXP_KINE_ANCHOR_ORACLE_20261117",
+  "execution_status": "COMPLETE",
+  "verification": "PASS",
+  "scientific_verdict": "NOT_SUPPORTED",
+  "checks": {
+    "C1_eth_speed_shift": true,
+    "C2_not_worse_than_aug_fivefold": false,
+    "C3_no_test_fold_worse": false,
+    "C4_in_distribution_ok": false,
+    "C5_decel_ok": false,
+    "C6_eth_all_seed_pairs_positive": true
+  },
+  "numbers": {
+    "eth_test_g_FDE": 0.21065329440866296,
+    "eth_test_g_ADE": 0.27731290432496036,
+    "eth_seed_pair_g_FDE": [
+      0.24161907999959573,
+      0.15479772833461686,
+      0.23136198521626838
+    ],
+    "per_fold_test": {
+      "eth": {
+        "g_ADE": 0.27731290432496036,
+        "g_FDE": 0.21065329440866296
+      },
+      "hotel": {
+        "g_ADE": -0.01898916365213201,
+        "g_FDE": -0.029387634425241053
+      },
+      "univ": {
+        "g_ADE": -0.10623750561301708,
+        "g_FDE": -0.20425082166300135
+      },
+      "zara01": {
+        "g_ADE": -0.17833173538355557,
+        "g_FDE": -0.285294206836339
+      },
+      "zara02": {
+        "g_ADE": -0.12409020850514473,
+        "g_FDE": -0.3042046399687057
+      }
+    },
+    "fivefold_val_g_ADE": -0.13299096346978292,
+    "fivefold_val_g_FDE": -0.25372953898228384,
+    "fivefold_test_minFDE_main": 0.5899424851442332,
+    "fivefold_test_minFDE_P_AUG": 0.5558477282858292,
+    "decel_stop_minFDE": {
+      "main": 0.486423549159491,
+      "P": 0.43187803579048306,
+      "P_AUG": 0.5046255049464827
+    }
+  },
+  "attribution": {
+    "K_vs_S": {
+      "label": "MIXED",
+      "eth_test_g_FDE": -0.03166875684458067,
+      "decel_stop_g_FDE": 0.058091619608696736
+    },
+    "S_vs_P": {
+      "label": "MIXED",
+      "eth_test_g_FDE": 0.23488358026310677,
+      "decel_stop_g_FDE": -0.19576218135565424
+    }
+  },
+  "folds": [
+    "eth",
+    "hotel",
+    "univ",
+    "zara01",
+    "zara02"
+  ],
+  "clustering_seeds": [
+    0,
+    1,
+    2
+  ],
+  "clustering_runs": 150,
+  "template_centers_per_run": 20,
+  "formal_seconds": 322.2,
+  "new_network_training_runs": 0,
+  "new_inference_runs": 0,
+  "GPU_used": false,
+  "baseline_upgraded": false,
+  "old_fivefold_resumed": false,
+  "COMBO_executed": false,
+  "independent_unopened_test_claim": false,
+  "published_at": "2026-11-17T12:53:39.597012+08:00"
+}

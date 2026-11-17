@@ -4,7 +4,15 @@ Versioned research codebase, protocol governance, independent audit suite, and p
 
 > **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. Recent archives additionally retain compact, checksum-verified per-window analysis arrays for independent CPU aggregate reanalysis.
 
-## Latest completed study: deceleration diagnosis — selection issue, subtype unresolved (2026-11-17)
+## Latest completed study: kinematic anchor oracle — NOT_SUPPORTED (2026-11-17)
+
+**零训练模板检验已完成：150次聚类，固定判定NOT_SUPPORTED，baseline不变。** K improves ETH ADE/FDE by 27.73%/21.07% versus P, but other-fold FDE, five-fold validation errors and pooled deceleration/stop constraints fail. C1 and C6 pass; C2–C5 fail. This rejects advancement of the tested fixed template design, not all kinematic decoders.
+
+[Code, templates and CPU reanalysis](research_archive/16_kine_anchor_oracle/EXP_KINE_ANCHOR_ORACLE_20261117/) · [结果解读](research_archive/16_kine_anchor_oracle/EXP_KINE_ANCHOR_ORACLE_20261117/RESULT_INTERPRETATION_ZH.md) · [Status](research_archive/16_kine_anchor_oracle/EXP_KINE_ANCHOR_ORACLE_20261117/STATUS.json)
+
+Five folds, four main arms, six fixed sensitivity variants and three clustering seeds; no network training or inference. Exact source/results, 21 compact template/metric arrays and independent local geometry-verification evidence are archived. Sensitivity outcomes do not replace the main configuration. No follow-up training or old five-fold resume occurred.
+
+## Earlier completed study: deceleration diagnosis — selection issue, subtype unresolved (2026-11-17)
 
 **零训练、零推理诊断已完成：ETH主判B（选择问题），B1/B2尚未满足，baseline不变。** Eight saved-output populations include three ETH models and five C0 seeds. In the ETH wide-speed model's 89 valid-heading deceleration windows, 78.7% have a longitudinally reachable candidate but 75.3% of Top1 trajectories overshoot; 48/70 reachable cases still select an overshooting Top1. Candidate counts and both error components also deteriorate after augmentation.
 
@@ -66,7 +74,7 @@ The publication includes compact saved-output statistics and a NumPy-only verifi
 | `reviews/` | Governance verification snapshots (`governance_20261020/`) |
 | `archive/` | Historical migration notes (`MIGRATION_PLAN.md`), directory index (`INDEX.csv`, `build_index.py`), and legacy root readme snapshot |
 | `docs/` | Organized architectural design specs (`docs/architecture/`), multi-series synthesis reviews (`docs/synthesis/`), and detailed study design notes |
-| `research_archive/` | Chronological/thematic archive of experimental series (`01_` through `15_`), preserving scripts, configs, negative & positive reports, compact reanalysis inputs, incomplete Phase11, Phase12 calibration, Phase13 ETH-T1 and Phase14 speed diagnostics/augmentation with tradeoffs |
+| `research_archive/` | Chronological/thematic archive of experimental series (`01_` through `16_`), preserving scripts, configs, negative & positive reports, compact reanalysis inputs, incomplete Phase11, Phase12 calibration, Phase13 ETH-T1 and Phase14 speed diagnostics/augmentation with tradeoffs, Phase15 deceleration diagnosis and Phase16 kinematic-template oracle |
 | `RESEARCH_INDEX.md` | Complete mapping from every legacy experiment folder to its phased path under `research_archive/` |
 
 ---
@@ -88,6 +96,7 @@ The publication includes compact saved-output statistics and a NumPy-only verifi
 13. `13_eth_t1/` — **Execution COMPLETE / primary verdict NO_HELP (single seed)**: ETH T1@64 versus reused B0@64, diagnostic error decomposition, observed-speed summaries and CPU reanalysis; combo remains shelved
 14. `14_eth_speed/` — **Execution COMPLETE / PROMISING_SINGLE_SEED with tradeoffs**: ETH/HOTEL zero-training speed diagnostics, one conditional ETH wide-speed B0@64, paired error/coverage/maneuver analysis and CPU reanalysis; no baseline upgrade
 15. `15_decel_diag/` — **Execution COMPLETE / B, subtype B_UNRESOLVED**: zero-training/inference saved-output candidate-generation/selection diagnosis across three ETH models and five C0 seeds, with per-window CPU reanalysis
+16. `16_kine_anchor_oracle/` — **Execution COMPLETE / NOT_SUPPORTED**: five-fold zero-network-training kinematic-template oracle comparison, fixed sensitivity analysis, 150 clustering runs and per-seed CPU reanalysis
 
 ---
 

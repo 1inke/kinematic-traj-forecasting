@@ -1,7 +1,15 @@
 # Research Archive Index
 
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
-Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases10–15 retain selected compact `.npz` statistics and derived analysis metadata with checksums and CPU-only reanalysis tools; these are saved-output metrics, not raw datasets or complete coordinate predictions.
+Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases10–16 retain selected compact `.npz` statistics and derived analysis metadata with checksums and CPU-only reanalysis tools; these are saved-output metrics, not raw datasets or complete coordinate predictions.
+
+## Phase 16: kinematic anchor oracle — COMPLETE / NOT_SUPPORTED (2026-11-17)
+
+| Experiment / Series | Original Location | Report | Execution / Scientific verdict |
+| :--- | :--- | :--- | :--- |
+| [EXP_KINE_ANCHOR_ORACLE_20261117](research_archive/16_kine_anchor_oracle/EXP_KINE_ANCHOR_ORACLE_20261117/) | `qoder_work/EXP_KINE_ANCHOR_ORACLE_EXEC_20261117` plus `_CONTROL_` | [结果解读](research_archive/16_kine_anchor_oracle/EXP_KINE_ANCHOR_ORACLE_20261117/RESULT_INTERPRETATION_ZH.md), [状态](research_archive/16_kine_anchor_oracle/EXP_KINE_ANCHOR_ORACLE_20261117/STATUS.json) | **COMPLETE, verified** / NOT_SUPPORTED; C1/C6 pass, C2–C5 fail |
+
+150 clustering runs over five folds, four main arms, six sensitivity configurations and three seeds. ETH improves, but other folds, validation and deceleration/stop guards fail. Includes exact code/evidence, templates, per-window/per-seed derived errors and CPU aggregate reanalysis. No network training, inference, baseline upgrade or automatic follow-up.
 
 ## Phase 15: deceleration diagnosis — COMPLETE / selection issue, subtype unresolved (2026-11-17)
 
