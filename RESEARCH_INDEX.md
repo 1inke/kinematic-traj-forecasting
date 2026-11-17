@@ -1,7 +1,15 @@
 # Research Archive Index
 
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
-Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases10–17 retain selected compact `.npz` statistics and derived analysis metadata with checksums and CPU-only reanalysis tools; these are saved-output metrics, not raw datasets or complete coordinate predictions.
+Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases10–18 retain selected compact `.npz` statistics and derived analysis metadata with checksums and CPU-only reanalysis tools; these are saved-output metrics, not raw datasets or complete coordinate predictions.
+
+## Phase 18: decoder information probe — COMPLETE / NO_INFO_GAIN (2026-11-17)
+
+| Experiment / Series | Original Location | Report | Execution / Scientific verdict |
+| :--- | :--- | :--- | :--- |
+| [EXP_DEC_INFO_PROBE_20261117](research_archive/18_dec_info_probe/EXP_DEC_INFO_PROBE_20261117/) | `qoder_work/EXP_DEC_INFO_PROBE_EXEC_20261117` | [结果解读](research_archive/18_dec_info_probe/EXP_DEC_INFO_PROBE_20261117/RESULT_INTERPRETATION_ZH.md), [状态](research_archive/18_dec_info_probe/EXP_DEC_INFO_PROBE_20261117/STATUS.json) | **COMPLETE, verified** / NO_INFO_GAIN |
+
+Six arms, three refiner seeds, one frozen B0 seed42 and C0 fit/dev. A1 replicates the prior gain; no extra token arm improves mean minFDE relative to A1. Path-risk neighbor selection fails the benefit and mechanism checks. Includes original evidence, 30 compact arrays, and NumPy-only reanalysis. The baseline and end-to-end training status are unchanged.
 
 ## Phase 17: frozen-cache set interaction probe — COMPLETE / NO_SET_GAIN (2026-11-17)
 

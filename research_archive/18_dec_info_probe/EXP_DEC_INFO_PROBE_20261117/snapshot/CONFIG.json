@@ -1,0 +1,28 @@
+{
+  "study": "EXP_DEC_INFO_PROBE_20261117",
+  "device": "cuda:0",
+  "arms": [
+    "A1",
+    "A1L",
+    "C1",
+    "C2",
+    "C3",
+    "C4"
+  ],
+  "base_seed": 42,
+  "refiner_seeds": [
+    0,
+    1,
+    2
+  ],
+  "epochs": 20,
+  "batch": 256,
+  "optim": "AdamW",
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "risk_k": 3,
+  "c4": "DISTANCE_SHARED_UP_TO_THREE_USER_CONFIRMED",
+  "only_C0_fit_dev": true,
+  "no_augmentation": true,
+  "no_automatic_B_stage": true
+}

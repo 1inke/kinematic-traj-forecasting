@@ -4,7 +4,13 @@ Versioned research codebase, protocol governance, independent audit suite, and p
 
 > **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. Recent archives additionally retain compact, checksum-verified per-window analysis arrays for independent CPU aggregate reanalysis.
 
-## Latest completed study: frozen-cache set interaction probe — NO_SET_GAIN (2026-11-17)
+## Latest completed study: decoder information probe — NO_INFO_GAIN (2026-11-17)
+
+**18 次训练全部完成，独立复算通过。** A1 reproduced the 1.29% minFDE improvement over B0, but reading extra target or neighbor tokens did not improve minFDE over A1. Candidate-path risk changed the neighbors read, but its 0.161% gain over distance selection fell below the 0.5% threshold and the mechanism check failed. This result is limited to the frozen B0 interface and C0 dev. B0 remains the baseline.
+
+[Code, derived metrics and CPU reanalysis](research_archive/18_dec_info_probe/EXP_DEC_INFO_PROBE_20261117/) · [中文结果解读](research_archive/18_dec_info_probe/EXP_DEC_INFO_PROBE_20261117/RESULT_INTERPRETATION_ZH.md)
+
+## Earlier completed study: frozen-cache set interaction probe — NO_SET_GAIN (2026-11-17)
 
 **18次探索训练全部完成并独立核验；未支持候选交互加再分配方案，baseline不变。** Self-only refinement improves minFDE by 1.29% over frozen B0, but generic interaction adds only 0.041%, below the fixed 0.5% threshold. Sparse interaction and reallocation comparisons fail. All mean protection checks pass; no end-to-end B stage follows.
 
@@ -82,7 +88,7 @@ The publication includes compact saved-output statistics and a NumPy-only verifi
 | `reviews/` | Governance verification snapshots (`governance_20261020/`) |
 | `archive/` | Historical migration notes (`MIGRATION_PLAN.md`), directory index (`INDEX.csv`, `build_index.py`), and legacy root readme snapshot |
 | `docs/` | Organized architectural design specs (`docs/architecture/`), multi-series synthesis reviews (`docs/synthesis/`), and detailed study design notes |
-| `research_archive/` | Chronological/thematic archive of experimental series (`01_` through `17_`), preserving scripts, configs, negative & positive reports, compact reanalysis inputs, incomplete Phase11, Phase12 calibration, Phase13 ETH-T1 and Phase14 speed diagnostics/augmentation with tradeoffs, Phase15 deceleration diagnosis, Phase16 kinematic-template oracle and Phase17 frozen-cache interaction probe |
+| `research_archive/` | Chronological/thematic archive of experimental series (`01_` through `18_`), preserving scripts, configs, complete and incomplete studies, negative and positive results, and compact reanalysis inputs |
 | `RESEARCH_INDEX.md` | Complete mapping from every legacy experiment folder to its phased path under `research_archive/` |
 
 ---
@@ -106,6 +112,7 @@ The publication includes compact saved-output statistics and a NumPy-only verifi
 15. `15_decel_diag/` — **Execution COMPLETE / B, subtype B_UNRESOLVED**: zero-training/inference saved-output candidate-generation/selection diagnosis across three ETH models and five C0 seeds, with per-window CPU reanalysis
 16. `16_kine_anchor_oracle/` — **Execution COMPLETE / NOT_SUPPORTED**: five-fold zero-network-training kinematic-template oracle comparison, fixed sensitivity analysis, 150 clustering runs and per-seed CPU reanalysis
 17. `17_set_interact_probe/` — **Execution COMPLETE / NO_SET_GAIN**: frozen B0 cache, six arms × three refiner seeds, complete training histories, fixed mechanism comparisons and CPU reanalysis
+18. `18_dec_info_probe/` — **Execution COMPLETE / NO_INFO_GAIN**: frozen candidate refinement with target and neighbor tokens, matched-count neighbor permutation, and CPU reanalysis
 
 ---
 

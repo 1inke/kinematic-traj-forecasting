@@ -1,0 +1,253 @@
+{
+  "study": "EXP_DEC_INFO_PROBE_20261117",
+  "execution_status": "COMPLETE",
+  "scientific_verdict": "NO_INFO_GAIN",
+  "protection_status": "NO_EFFECTIVE_ARM",
+  "independent_verification": "PASS",
+  "completed_runs": 18,
+  "complete_epochs": 360,
+  "optimizer_updates": 30600,
+  "formal_seconds": 1113.8280000000013,
+  "fit_n": 21719,
+  "dev_n": 4753,
+  "base_seed": 42,
+  "refiner_seeds": [
+    0,
+    1,
+    2
+  ],
+  "reference": "A1",
+  "P0": {
+    "P0": {
+      "minFDE": {
+        "by_seed": [
+          0.013603707641612409,
+          0.013063217718941452,
+          0.012018039801510014
+        ],
+        "mean": 0.012894988387354624
+      },
+      "minADE": {
+        "by_seed": [
+          0.010710917120106746,
+          0.011305459540501462,
+          0.011303894958838677
+        ],
+        "mean": 0.011106757206482293
+      }
+    },
+    "previous_reference": 0.0129,
+    "difference": -5.011612645376348e-06,
+    "sigma": 0.0008061088361929555,
+    "threshold": 0.005,
+    "passes": true
+  },
+  "comparisons": {
+    "C1": {
+      "minFDE": {
+        "by_seed": [
+          0.0012439022862606771,
+          -0.0009904433296672019,
+          -0.005308511797407298
+        ],
+        "mean": -0.0016850176136046077
+      },
+      "minADE": {
+        "by_seed": [
+          0.0023416344707354315,
+          0.00039102442736341475,
+          -0.0007858333654279521
+        ],
+        "mean": 0.0006489418442236314
+      }
+    },
+    "C2": {
+      "minFDE": {
+        "by_seed": [
+          -0.009713513395509932,
+          0.0015554894489800404,
+          -0.0015744031567316529
+        ],
+        "mean": -0.003244142367753848
+      },
+      "minADE": {
+        "by_seed": [
+          -0.004439760455458159,
+          -0.0007485398067356874,
+          -0.003632922738755485
+        ],
+        "mean": -0.00294040766698311
+      }
+    },
+    "C3": {
+      "minFDE": {
+        "by_seed": [
+          0.0011495046322371216,
+          -0.0017012585955815244,
+          -0.007241916614236829
+        ],
+        "mean": -0.0025978901925270774
+      },
+      "minADE": {
+        "by_seed": [
+          0.000393307416147527,
+          -0.0017086667723746735,
+          -0.00682475311255151
+        ],
+        "mean": -0.0027133708229262186
+      }
+    },
+    "C4": {
+      "minFDE": {
+        "by_seed": [
+          0.0002550496693880382,
+          -0.006364632270237839,
+          -0.006549409697894199
+        ],
+        "mean": -0.004219664099581333
+      },
+      "minADE": {
+        "by_seed": [
+          -0.0004907466645688823,
+          -0.005085047021373127,
+          -0.002296228989564785
+        ],
+        "mean": -0.0026240075585022647
+      }
+    }
+  },
+  "C3_vs_C4": {
+    "minFDE": {
+      "by_seed": [
+        0.0008946831514910782,
+        0.004633880727839474,
+        -0.0006880009164681541
+      ],
+      "mean": 0.0016135209876207996
+    },
+    "minADE": {
+      "by_seed": [
+        0.0008836204469293338,
+        0.003359298060402499,
+        -0.0045181494173155
+      ],
+      "mean": -9.174363666122232e-05
+    }
+  },
+  "mechanism_passes": false,
+  "guards": {
+    "C1": {
+      "passes": true,
+      "checks": {
+        "top1_vs_A0_relative_harm": {
+          "value": 0.012559691012452393,
+          "limit": 0.02,
+          "passes": true
+        },
+        "stable_vs_R_relative_harm": {
+          "value": 0.002247052264820322,
+          "limit": 0.01,
+          "passes": true
+        },
+        "decel_stop_vs_R_relative_harm": {
+          "value": 0.004879331672658961,
+          "limit": 0.01,
+          "passes": true
+        },
+        "registered_parameter_fraction": {
+          "value": 0.052278711494073926,
+          "limit": 0.1,
+          "passes": true
+        }
+      },
+      "examined_for_classification": false
+    },
+    "C2": {
+      "passes": false,
+      "checks": {
+        "top1_vs_A0_relative_harm": {
+          "value": 0.04069211197828083,
+          "limit": 0.02,
+          "passes": false
+        },
+        "stable_vs_R_relative_harm": {
+          "value": 0.008926597052795434,
+          "limit": 0.01,
+          "passes": true
+        },
+        "decel_stop_vs_R_relative_harm": {
+          "value": 0.006432750691782421,
+          "limit": 0.01,
+          "passes": true
+        },
+        "registered_parameter_fraction": {
+          "value": 0.052278711494073926,
+          "limit": 0.1,
+          "passes": true
+        }
+      },
+      "examined_for_classification": false
+    },
+    "C3": {
+      "passes": false,
+      "checks": {
+        "top1_vs_A0_relative_harm": {
+          "value": 0.03893463662511522,
+          "limit": 0.02,
+          "passes": false
+        },
+        "stable_vs_R_relative_harm": {
+          "value": 0.006519560765374533,
+          "limit": 0.01,
+          "passes": true
+        },
+        "decel_stop_vs_R_relative_harm": {
+          "value": -0.002379003141430438,
+          "limit": 0.01,
+          "passes": true
+        },
+        "registered_parameter_fraction": {
+          "value": 0.052278711494073926,
+          "limit": 0.1,
+          "passes": true
+        },
+        "incremental_cpu_ms_vs_A1": {
+          "value": 1.6244333346548956,
+          "limit": 2.0,
+          "passes": true
+        }
+      },
+      "examined_for_classification": false
+    },
+    "C4": {
+      "passes": false,
+      "checks": {
+        "top1_vs_A0_relative_harm": {
+          "value": 0.04939738580287856,
+          "limit": 0.02,
+          "passes": false
+        },
+        "stable_vs_R_relative_harm": {
+          "value": 0.006906391126402785,
+          "limit": 0.01,
+          "passes": true
+        },
+        "decel_stop_vs_R_relative_harm": {
+          "value": 0.010814066527257407,
+          "limit": 0.01,
+          "passes": false
+        },
+        "registered_parameter_fraction": {
+          "value": 0.052278711494073926,
+          "limit": 0.1,
+          "passes": true
+        }
+      },
+      "examined_for_classification": false
+    }
+  },
+  "independent_test_claim": false,
+  "baseline_upgraded": false,
+  "B_stage_started": false,
+  "publication_scope": "Code, derived statistics, reports and verification receipts"
+}
