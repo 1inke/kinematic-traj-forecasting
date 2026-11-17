@@ -1,0 +1,43 @@
+{
+  "status": "SEALED_BEFORE_B0_SCIENTIFIC_OUTPUT",
+  "ledger": [
+    "E2E_V1_EXPLORATORY",
+    "LEGACY_SHADOW"
+  ],
+  "pilot": {
+    "seed": 42,
+    "epochs": 8,
+    "batch": 64,
+    "selection": "FIXED_FINAL_EMA_0.995"
+  },
+  "main_future_candidate_quality": "J=max(ADE/.2,FDE/.4), good if J<=1 same physical slot",
+  "groups": {
+    "stable": "score<.25",
+    "transition": ".25<=score<.5",
+    "change": "score>=.5",
+    "source": "historical future_change_score formula; float64 world evaluation; never model input"
+  },
+  "cluster": "SciPy complete-link D=max(meanpath/.10,endpoint/.20), cut1, full20",
+  "motion": "12v11a10j float64 dt.4; pooled five: speedp95/accmean/accp95/jerkmean/jerkp95; junction separately",
+  "tail_thresholds": {
+    "speed": 1.714512642689928,
+    "acceleration": 1.4725614318714917,
+    "jerk": 4.518733357296489,
+    "junction_acceleration": 1.4596548450114308,
+    "junction_jerk": 4.453203889616524
+  },
+  "tail_noninferiority_later_vs_fresh_B0": {
+    "exceedance_rate_max_increase_pp": 1,
+    "positive_exceedance_magnitude_p95_max_relative_harm": 0.01,
+    "zero_reference_or_less_than20_tracks": "NOT_ESTIMABLE_NO_FLOOR"
+  },
+  "continuous_later_pilot_screen": {
+    "overall_or_change_ADE_improves": true,
+    "other_ADE_max_harm": 0.01,
+    "overall_stable_transition_FDE_max_harm": 0.01
+  },
+  "legacy_old_native_new_source": "NOT_COMPARABLE_NO_MATCHED_OLD_NATIVE_OUTPUT; do not rename CV to old native",
+  "single_seed_significance": "NOT_PERMITTED",
+  "later_family2": "overallADE UDelta-GRU and DDiff-DGate corrected97.5% wholetrack+seed",
+  "budget": "full conservative pilot <=1800 seconds; no automatic multi-day formal runs"
+}

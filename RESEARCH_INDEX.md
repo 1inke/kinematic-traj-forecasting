@@ -1,7 +1,15 @@
 # Research Archive Index
 
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
-Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases10–16 retain selected compact `.npz` statistics and derived analysis metadata with checksums and CPU-only reanalysis tools; these are saved-output metrics, not raw datasets or complete coordinate predictions.
+Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases10–17 retain selected compact `.npz` statistics and derived analysis metadata with checksums and CPU-only reanalysis tools; these are saved-output metrics, not raw datasets or complete coordinate predictions.
+
+## Phase 17: frozen-cache set interaction probe — COMPLETE / NO_SET_GAIN (2026-11-17)
+
+| Experiment / Series | Original Location | Report | Execution / Scientific verdict |
+| :--- | :--- | :--- | :--- |
+| [EXP_SET_INTERACT_PROBE_20261117](research_archive/17_set_interact_probe/EXP_SET_INTERACT_PROBE_20261117/) | `qoder_work/EXP_SET_INTERACT_PROBE_EXEC_20261117` | [结果解读](research_archive/17_set_interact_probe/EXP_SET_INTERACT_PROBE_20261117/RESULT_INTERPRETATION_ZH.md), [状态](research_archive/17_set_interact_probe/EXP_SET_INTERACT_PROBE_20261117/STATUS.json) | **COMPLETE, verified** / NO_SET_GAIN; Q1 passes, Q2–Q5 extra-benefit gates fail |
+
+Six arms × three refiner seeds, 360 total epochs, 30,600 updates on one frozen B0 seed42 C0 cache. Self-only minFDE improves 1.29%; interaction/reallocation adds no effective benefit. Includes source, 19 derived per-window arrays, complete training histories, independent geometry/cache-replay evidence and CPU aggregate reanalysis. No independent test claim, baseline upgrade, B stage or old five-fold resume.
 
 ## Phase 16: kinematic anchor oracle — COMPLETE / NOT_SUPPORTED (2026-11-17)
 
