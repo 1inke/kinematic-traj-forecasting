@@ -1,0 +1,4286 @@
+{
+  "experiment": "EXP-REFINE-ABL",
+  "contract": {
+    "protocol": "4fc649153279221784dc3b9fcbb9ba2acfbfafe143e1c5f25ff7c468d33eb8ba",
+    "source": "39c192581841530b35c7afe60b0a298819dc515e2f87d2da18458cda34e41bce",
+    "cache": "5c18d1e507b51ae661ebfd8ed16439b59d186e55c74f8eba1faf7362218771d9",
+    "speed_reference_mps": 0.6368451531593273,
+    "epochs": 20,
+    "batch": 256,
+    "device": "cuda:0"
+  },
+  "runs": {
+    "A1": {
+      "0": {
+        "arm": "A1",
+        "seed": 0,
+        "epochs": 20,
+        "updates": 1700,
+        "clean": {
+          "overall": {
+            "n": 4753,
+            "minADE": 0.17475158402366342,
+            "minFDE": 0.3073833532198618,
+            "top1FDE": 0.9306939685478979,
+            "uncovered": 0.25142015569114246,
+            "mean_shift": 0.0996100789979069,
+            "saturation_fraction": 0.0
+          },
+          "stable": {
+            "n": 2941,
+            "minADE": 0.13694686717859852,
+            "minFDE": 0.23660811449537988,
+            "top1FDE": 0.6712263498732902,
+            "uncovered": 0.16320979258755525,
+            "mean_shift": 0.12049129301360845,
+            "saturation_fraction": 0.0
+          },
+          "transition": {
+            "n": 852,
+            "minADE": 0.22288627436940778,
+            "minFDE": 0.39911805097519354,
+            "top1FDE": 1.2282663825700835,
+            "uncovered": 0.36971830985915494,
+            "mean_shift": 0.07152441447506794,
+            "saturation_fraction": 0.0
+          },
+          "change": {
+            "n": 960,
+            "minADE": 0.24784837159320666,
+            "minFDE": 0.44279170176273575,
+            "top1FDE": 1.4614883120636473,
+            "uncovered": 0.4166666666666667,
+            "mean_shift": 0.060565637074240786,
+            "saturation_fraction": 0.0
+          },
+          "acceleration": {
+            "n": 502,
+            "minADE": 0.2226165420786798,
+            "minFDE": 0.39898906076791096,
+            "top1FDE": 1.3146030745232111,
+            "uncovered": 0.38645418326693226,
+            "mean_shift": 0.05893431770057442,
+            "saturation_fraction": 0.0
+          },
+          "deceleration": {
+            "n": 642,
+            "minADE": 0.19827236227406422,
+            "minFDE": 0.30979530758216617,
+            "top1FDE": 1.117270171746567,
+            "uncovered": 0.2398753894080997,
+            "mean_shift": 0.0683893207118559,
+            "saturation_fraction": 0.0
+          },
+          "start": {
+            "n": 202,
+            "minADE": 0.2234805339667137,
+            "minFDE": 0.4252737068381563,
+            "top1FDE": 1.2836929248009725,
+            "uncovered": 0.504950495049505,
+            "mean_shift": 0.06595908400911878,
+            "saturation_fraction": 0.0
+          },
+          "stationary": {
+            "n": 990,
+            "minADE": 0.028718274517269424,
+            "minFDE": 0.05692379844259109,
+            "top1FDE": 0.06873264349407798,
+            "uncovered": 0.00202020202020202,
+            "mean_shift": 0.10802284392302666,
+            "saturation_fraction": 0.0
+          },
+          "steady": {
+            "n": 1704,
+            "minADE": 0.1897037107565072,
+            "minFDE": 0.32331279626340076,
+            "top1FDE": 0.9345574570630927,
+            "uncovered": 0.23591549295774647,
+            "mean_shift": 0.1391319759263286,
+            "saturation_fraction": 0.0
+          },
+          "stop": {
+            "n": 180,
+            "minADE": 0.08853815226802138,
+            "minFDE": 0.15354324311810694,
+            "top1FDE": 0.35112587360524217,
+            "uncovered": 0.06666666666666667,
+            "mean_shift": 0.0664125197821974,
+            "saturation_fraction": 0.0
+          },
+          "turn": {
+            "n": 236,
+            "minADE": 0.3813442643953888,
+            "minFDE": 0.7447098163734724,
+            "top1FDE": 2.401254455440221,
+            "uncovered": 0.6398305084745762,
+            "mean_shift": 0.06622446441386086,
+            "saturation_fraction": 0.0
+          },
+          "turn_and_speed": {
+            "n": 297,
+            "minADE": 0.29894451714817805,
+            "minFDE": 0.5563563211550676,
+            "top1FDE": 1.6721694794576827,
+            "uncovered": 0.5993265993265994,
+            "mean_shift": 0.05059013299590101,
+            "saturation_fraction": 0.0
+          },
+          "turn_any": {
+            "n": 533,
+            "minADE": 0.33542920823699934,
+            "minFDE": 0.6397548668802899,
+            "top1FDE": 1.9949913449959171,
+            "uncovered": 0.6172607879924953,
+            "mean_shift": 0.057512651222239704,
+            "saturation_fraction": 0.0
+          },
+          "decel_stop": {
+            "n": 822,
+            "minADE": 0.17424297322164609,
+            "minFDE": 0.2755795270425912,
+            "top1FDE": 0.9495013473360578,
+            "uncovered": 0.20194647201946472,
+            "mean_shift": 0.06795644459587229,
+            "saturation_fraction": 0.0
+          },
+          "obs_stationary": {
+            "n": 1109,
+            "minADE": 0.05782832221161496,
+            "minFDE": 0.11190079830735389,
+            "top1FDE": 0.24715360380848614,
+            "uncovered": 0.0793507664562669,
+            "mean_shift": 0.10338493547494629,
+            "saturation_fraction": 0.0
+          },
+          "obs_steady": {
+            "n": 1991,
+            "minADE": 0.20712149323187984,
+            "minFDE": 0.36209304420952243,
+            "top1FDE": 1.0990113274110505,
+            "uncovered": 0.27071823204419887,
+            "mean_shift": 0.13165002432208514,
+            "saturation_fraction": 0.0
+          },
+          "obs_other": {
+            "n": 1653,
+            "minADE": 0.21420676134731906,
+            "minFDE": 0.3726363227525643,
+            "top1FDE": 1.1865478118627624,
+            "uncovered": 0.34361766485178463,
+            "mean_shift": 0.05848615463403783,
+            "saturation_fraction": 0.0
+          }
+        },
+        "parameter_count": 7019,
+        "parameter_diff_vs_A1": 0.0,
+        "archived_A1_exact": "BITWISE_EQUAL",
+        "training_seconds": 26.219000000011874
+      },
+      "1": {
+        "arm": "A1",
+        "seed": 1,
+        "epochs": 20,
+        "updates": 1700,
+        "clean": {
+          "overall": {
+            "n": 4753,
+            "minADE": 0.17464656191078334,
+            "minFDE": 0.3075517820816684,
+            "top1FDE": 0.9285797124948052,
+            "uncovered": 0.2533136966126657,
+            "mean_shift": 0.08981742540718157,
+            "saturation_fraction": 0.0
+          },
+          "stable": {
+            "n": 2941,
+            "minADE": 0.13687916480633006,
+            "minFDE": 0.23683513170889026,
+            "top1FDE": 0.6774863756840781,
+            "uncovered": 0.1676300578034682,
+            "mean_shift": 0.11040087491950662,
+            "saturation_fraction": 0.0
+          },
+          "transition": {
+            "n": 852,
+            "minADE": 0.22332590121903634,
+            "minFDE": 0.40153786190898605,
+            "top1FDE": 1.2181736938490146,
+            "uncovered": 0.3685446009389671,
+            "mean_shift": 0.062270364780574156,
+            "saturation_fraction": 0.0
+          },
+          "change": {
+            "n": 960,
+            "minADE": 0.2471456429457475,
+            "minFDE": 0.44078254117902843,
+            "top1FDE": 1.440799953584974,
+            "uncovered": 0.41354166666666664,
+            "mean_shift": 0.05120718648855825,
+            "saturation_fraction": 0.0
+          },
+          "acceleration": {
+            "n": 502,
+            "minADE": 0.2225349753880199,
+            "minFDE": 0.40002186993237554,
+            "top1FDE": 1.3350121838470306,
+            "uncovered": 0.39243027888446214,
+            "mean_shift": 0.04937755095536476,
+            "saturation_fraction": 0.0
+          },
+          "deceleration": {
+            "n": 642,
+            "minADE": 0.19785564810193998,
+            "minFDE": 0.30878716915624116,
+            "top1FDE": 1.073938190676774,
+            "uncovered": 0.2383177570093458,
+            "mean_shift": 0.05801259259192016,
+            "saturation_fraction": 0.0
+          },
+          "start": {
+            "n": 202,
+            "minADE": 0.22381144724916718,
+            "minFDE": 0.4272588668899783,
+            "top1FDE": 1.2683623289865913,
+            "uncovered": 0.4900990099009901,
+            "mean_shift": 0.060040602815361915,
+            "saturation_fraction": 0.0
+          },
+          "stationary": {
+            "n": 990,
+            "minADE": 0.028458011161142695,
+            "minFDE": 0.05660401117292179,
+            "top1FDE": 0.0704775969396322,
+            "uncovered": 0.00202020202020202,
+            "mean_shift": 0.09423354203555775,
+            "saturation_fraction": 0.0
+          },
+          "steady": {
+            "n": 1704,
+            "minADE": 0.18973704118795373,
+            "minFDE": 0.32404997913555483,
+            "top1FDE": 0.9430609557851585,
+            "uncovered": 0.24237089201877934,
+            "mean_shift": 0.13068710594636715,
+            "saturation_fraction": 0.0
+          },
+          "stop": {
+            "n": 180,
+            "minADE": 0.08789480811193329,
+            "minFDE": 0.1537447017707585,
+            "top1FDE": 0.3611635271366927,
+            "uncovered": 0.07777777777777778,
+            "mean_shift": 0.059339702600514244,
+            "saturation_fraction": 0.0
+          },
+          "turn": {
+            "n": 236,
+            "minADE": 0.38156727271960067,
+            "minFDE": 0.742961619695684,
+            "top1FDE": 2.3942697306466862,
+            "uncovered": 0.6313559322033898,
+            "mean_shift": 0.05924698863326499,
+            "saturation_fraction": 0.0
+          },
+          "turn_and_speed": {
+            "n": 297,
+            "minADE": 0.2989664028135082,
+            "minFDE": 0.5562385984610733,
+            "top1FDE": 1.652794502967848,
+            "uncovered": 0.5959595959595959,
+            "mean_shift": 0.040730421665556446,
+            "saturation_fraction": 0.0
+          },
+          "turn_any": {
+            "n": 533,
+            "minADE": 0.33554014633665613,
+            "minFDE": 0.6389152082384992,
+            "top1FDE": 1.9811024837036937,
+            "uncovered": 0.6116322701688556,
+            "mean_shift": 0.048929126739438646,
+            "saturation_fraction": 0.0
+          },
+          "decel_stop": {
+            "n": 822,
+            "minADE": 0.1737766320457341,
+            "minFDE": 0.2748362638893471,
+            "top1FDE": 0.9178561475658071,
+            "uncovered": 0.20316301703163017,
+            "mean_shift": 0.05830320062299916,
+            "saturation_fraction": 0.0
+          },
+          "obs_stationary": {
+            "n": 1109,
+            "minADE": 0.057604964691553906,
+            "minFDE": 0.11170821889196801,
+            "top1FDE": 0.24615146732724089,
+            "uncovered": 0.07844905320108206,
+            "mean_shift": 0.0904883419648577,
+            "saturation_fraction": 0.0
+          },
+          "obs_steady": {
+            "n": 1991,
+            "minADE": 0.2069825271222559,
+            "minFDE": 0.36156480153702597,
+            "top1FDE": 1.100627688080651,
+            "uncovered": 0.27624309392265195,
+            "mean_shift": 0.12306725626950725,
+            "saturation_fraction": 0.0
+          },
+          "obs_other": {
+            "n": 1653,
+            "minADE": 0.21422201537725866,
+            "minFDE": 0.3738860772067504,
+            "top1FDE": 1.1791939922887618,
+            "uncovered": 0.3430127041742287,
+            "mean_shift": 0.04931865970279365,
+            "saturation_fraction": 0.0
+          }
+        },
+        "parameter_count": 7019,
+        "parameter_diff_vs_A1": 0.0,
+        "archived_A1_exact": "BITWISE_EQUAL",
+        "training_seconds": 25.95300000005227
+      },
+      "2": {
+        "arm": "A1",
+        "seed": 2,
+        "epochs": 20,
+        "updates": 1700,
+        "clean": {
+          "overall": {
+            "n": 4753,
+            "minADE": 0.17464683828411914,
+            "minFDE": 0.3078774831162934,
+            "top1FDE": 0.9276536354778596,
+            "uncovered": 0.2543656637912897,
+            "mean_shift": 0.10146051526671991,
+            "saturation_fraction": 0.0
+          },
+          "stable": {
+            "n": 2941,
+            "minADE": 0.13681696033833518,
+            "minFDE": 0.2367467118691474,
+            "top1FDE": 0.674479548324561,
+            "uncovered": 0.16729003740224413,
+            "mean_shift": 0.12401113662405043,
+            "saturation_fraction": 0.0
+          },
+          "transition": {
+            "n": 852,
+            "minADE": 0.22320730789281854,
+            "minFDE": 0.40213486536626825,
+            "top1FDE": 1.2224990639132687,
+            "uncovered": 0.3755868544600939,
+            "mean_shift": 0.06987621290857132,
+            "saturation_fraction": 0.0
+          },
+          "change": {
+            "n": 960,
+            "minADE": 0.2474428288382219,
+            "minFDE": 0.4421361378672078,
+            "top1FDE": 1.441587682655862,
+            "uncovered": 0.41354166666666664,
+            "mean_shift": 0.06040681547217154,
+            "saturation_fraction": 0.0
+          },
+          "acceleration": {
+            "n": 502,
+            "minADE": 0.2228318638052597,
+            "minFDE": 0.3991309469528503,
+            "top1FDE": 1.3262958612980404,
+            "uncovered": 0.38645418326693226,
+            "mean_shift": 0.0554620326589031,
+            "saturation_fraction": 0.0
+          },
+          "deceleration": {
+            "n": 642,
+            "minADE": 0.19793217592400275,
+            "minFDE": 0.30887045427177134,
+            "top1FDE": 1.0917789428715252,
+            "uncovered": 0.24610591900311526,
+            "mean_shift": 0.06610137919211372,
+            "saturation_fraction": 0.0
+          },
+          "start": {
+            "n": 202,
+            "minADE": 0.22513697559655146,
+            "minFDE": 0.43340866710879256,
+            "top1FDE": 1.269466573956744,
+            "uncovered": 0.5346534653465347,
+            "mean_shift": 0.07080467137479875,
+            "saturation_fraction": 0.0
+          },
+          "stationary": {
+            "n": 990,
+            "minADE": 0.028103655284043006,
+            "minFDE": 0.05726316038993756,
+            "top1FDE": 0.07043488756335714,
+            "uncovered": 0.00101010101010101,
+            "mean_shift": 0.11288673560743595,
+            "saturation_fraction": 0.0
+          },
+          "steady": {
+            "n": 1704,
+            "minADE": 0.18984061791376403,
+            "minFDE": 0.32384099435632097,
+            "top1FDE": 0.9390284246550876,
+            "uncovered": 0.23943661971830985,
+            "mean_shift": 0.14259986125350296,
+            "saturation_fraction": 0.0
+          },
+          "stop": {
+            "n": 180,
+            "minADE": 0.08715326818212973,
+            "minFDE": 0.15128155376410585,
+            "top1FDE": 0.34894895821741734,
+            "uncovered": 0.06666666666666667,
+            "mean_shift": 0.0718435842820753,
+            "saturation_fraction": 0.0
+          },
+          "turn": {
+            "n": 236,
+            "minADE": 0.38161761590535104,
+            "minFDE": 0.7465193478558325,
+            "top1FDE": 2.390280312540039,
+            "uncovered": 0.6313559322033898,
+            "mean_shift": 0.06487313818146531,
+            "saturation_fraction": 0.0
+          },
+          "turn_and_speed": {
+            "n": 297,
+            "minADE": 0.29839839541334,
+            "minFDE": 0.5562617189974198,
+            "top1FDE": 1.6472422129740452,
+            "uncovered": 0.6026936026936027,
+            "mean_shift": 0.049395023568936,
+            "saturation_fraction": 0.0
+          },
+          "turn_any": {
+            "n": 533,
+            "minADE": 0.33524593019029053,
+            "minFDE": 0.6405033707996438,
+            "top1FDE": 1.9762421970220272,
+            "uncovered": 0.6153846153846154,
+            "mean_shift": 0.056248372628142224,
+            "saturation_fraction": 0.0
+          },
+          "decel_stop": {
+            "n": 822,
+            "minADE": 0.17367402094403053,
+            "minFDE": 0.27436193591242847,
+            "top1FDE": 0.9291154425823045,
+            "uncovered": 0.20681265206812652,
+            "mean_shift": 0.067358796365098,
+            "saturation_fraction": 0.0
+          },
+          "obs_stationary": {
+            "n": 1109,
+            "minADE": 0.0574735248568164,
+            "minFDE": 0.11336081526487321,
+            "top1FDE": 0.24633677147157002,
+            "uncovered": 0.08385933273219116,
+            "mean_shift": 0.10811490825580697,
+            "saturation_fraction": 0.0
+          },
+          "obs_steady": {
+            "n": 1991,
+            "minADE": 0.20687073100553516,
+            "minFDE": 0.36148813984932876,
+            "top1FDE": 1.0985346684205592,
+            "uncovered": 0.27574083375188346,
+            "mean_shift": 0.13326519459796593,
+            "saturation_fraction": 0.0
+          },
+          "obs_other": {
+            "n": 1653,
+            "minADE": 0.21444564904185626,
+            "minFDE": 0.373806198840281,
+            "top1FDE": 1.1789278433387549,
+            "uncovered": 0.3430127041742287,
+            "mean_shift": 0.05868807825921336,
+            "saturation_fraction": 0.0
+          }
+        },
+        "parameter_count": 7019,
+        "parameter_diff_vs_A1": 0.0,
+        "archived_A1_exact": "BITWISE_EQUAL",
+        "training_seconds": 25.92000000005646
+      }
+    },
+    "R-centroid": {
+      "0": {
+        "arm": "R-centroid",
+        "seed": 0,
+        "epochs": 20,
+        "updates": 1700,
+        "clean": {
+          "overall": {
+            "n": 4753,
+            "minADE": 0.17470065984303867,
+            "minFDE": 0.3073716145118078,
+            "top1FDE": 0.9305363391325046,
+            "uncovered": 0.25120976225541763,
+            "mean_shift": 0.10120019144699656,
+            "saturation_fraction": 0.0
+          },
+          "stable": {
+            "n": 2941,
+            "minADE": 0.13680658438380686,
+            "minFDE": 0.23603880263887878,
+            "top1FDE": 0.670945454666312,
+            "uncovered": 0.16150969058143488,
+            "mean_shift": 0.12251177545911174,
+            "saturation_fraction": 0.0
+          },
+          "transition": {
+            "n": 852,
+            "minADE": 0.22295911318309736,
+            "minFDE": 0.40044888949542573,
+            "top1FDE": 1.231313170854337,
+            "uncovered": 0.3732394366197183,
+            "mean_shift": 0.07239795865007335,
+            "saturation_fraction": 0.0
+          },
+          "change": {
+            "n": 960,
+            "minADE": 0.24796136159290402,
+            "minFDE": 0.4432965743370596,
+            "top1FDE": 1.458864391828412,
+            "uncovered": 0.41770833333333335,
+            "mean_shift": 0.06147324745048383,
+            "saturation_fraction": 0.0
+          },
+          "acceleration": {
+            "n": 502,
+            "minADE": 0.22252766012147762,
+            "minFDE": 0.39896263423195855,
+            "top1FDE": 1.3171285494240441,
+            "uncovered": 0.3884462151394422,
+            "mean_shift": 0.059220274930863265,
+            "saturation_fraction": 0.0
+          },
+          "deceleration": {
+            "n": 642,
+            "minADE": 0.19843818025271187,
+            "minFDE": 0.3104395254091014,
+            "top1FDE": 1.1103331099580374,
+            "uncovered": 0.24766355140186916,
+            "mean_shift": 0.0686867574511658,
+            "saturation_fraction": 0.0
+          },
+          "start": {
+            "n": 202,
+            "minADE": 0.22393484185565787,
+            "minFDE": 0.42873308820453493,
+            "top1FDE": 1.28110143020697,
+            "uncovered": 0.5148514851485149,
+            "mean_shift": 0.06951802610733503,
+            "saturation_fraction": 0.0
+          },
+          "stationary": {
+            "n": 990,
+            "minADE": 0.029162390474323733,
+            "minFDE": 0.05654923312772735,
+            "top1FDE": 0.0684231023797361,
+            "uncovered": 0.00202020202020202,
+            "mean_shift": 0.10891770229938111,
+            "saturation_fraction": 0.0
+          },
+          "steady": {
+            "n": 1704,
+            "minADE": 0.18919142354897858,
+            "minFDE": 0.3226866754265125,
+            "top1FDE": 0.9363640942398267,
+            "uncovered": 0.2323943661971831,
+            "mean_shift": 0.14210215536251183,
+            "saturation_fraction": 0.0
+          },
+          "stop": {
+            "n": 180,
+            "minADE": 0.08846214458697618,
+            "minFDE": 0.15323249432314692,
+            "top1FDE": 0.3466719766545984,
+            "uncovered": 0.06666666666666667,
+            "mean_shift": 0.06854932837118416,
+            "saturation_fraction": 0.0
+          },
+          "turn": {
+            "n": 236,
+            "minADE": 0.3814176240929487,
+            "minFDE": 0.7458284139951169,
+            "top1FDE": 2.4105232167990085,
+            "uncovered": 0.635593220338983,
+            "mean_shift": 0.06699601909889184,
+            "saturation_fraction": 0.0
+          },
+          "turn_and_speed": {
+            "n": 297,
+            "minADE": 0.2990589342332173,
+            "minFDE": 0.5566080533871336,
+            "top1FDE": 1.6681367666264615,
+            "uncovered": 0.5925925925925926,
+            "mean_shift": 0.05055843349054559,
+            "saturation_fraction": 0.0
+          },
+          "turn_any": {
+            "n": 533,
+            "minADE": 0.33552544606604395,
+            "minFDE": 0.6403904269396364,
+            "top1FDE": 1.9968482154833491,
+            "uncovered": 0.6116322701688556,
+            "mean_shift": 0.05783661398504787,
+            "saturation_fraction": 0.0
+          },
+          "decel_stop": {
+            "n": 822,
+            "minADE": 0.17435583667627336,
+            "minFDE": 0.27601462809100924,
+            "top1FDE": 0.943108044271153,
+            "uncovered": 0.20802919708029197,
+            "mean_shift": 0.06865666349204573,
+            "saturation_fraction": 0.0
+          },
+          "obs_stationary": {
+            "n": 1109,
+            "minADE": 0.05830617509359483,
+            "minFDE": 0.11218848445701406,
+            "top1FDE": 0.24654669248613512,
+            "uncovered": 0.0829576194770063,
+            "mean_shift": 0.10456196118285084,
+            "saturation_fraction": 0.0
+          },
+          "obs_steady": {
+            "n": 1991,
+            "minADE": 0.20684186165113488,
+            "minFDE": 0.3618459754220617,
+            "top1FDE": 1.0976784355089295,
+            "uncovered": 0.2732295328980412,
+            "mean_shift": 0.134295687030979,
+            "saturation_fraction": 0.0
+          },
+          "obs_other": {
+            "n": 1653,
+            "minADE": 0.21407655263627132,
+            "minFDE": 0.3727071490904229,
+            "top1FDE": 1.1881071825961236,
+            "uncovered": 0.33756805807622503,
+            "mean_shift": 0.05908202184943367,
+            "saturation_fraction": 0.0
+          }
+        },
+        "parameter_count": 7187,
+        "parameter_diff_vs_A1": 0.023935033480552814,
+        "archived_A1_exact": null,
+        "training_seconds": 25.722000000008848
+      },
+      "1": {
+        "arm": "R-centroid",
+        "seed": 1,
+        "epochs": 20,
+        "updates": 1700,
+        "clean": {
+          "overall": {
+            "n": 4753,
+            "minADE": 0.17470042163630584,
+            "minFDE": 0.30779607981870344,
+            "top1FDE": 0.9263518794902869,
+            "uncovered": 0.250788975383968,
+            "mean_shift": 0.0878335262387464,
+            "saturation_fraction": 0.0
+          },
+          "stable": {
+            "n": 2941,
+            "minADE": 0.1368965544853269,
+            "minFDE": 0.23712255077777883,
+            "top1FDE": 0.6755928118057576,
+            "uncovered": 0.16456987419245156,
+            "mean_shift": 0.10782539474374704,
+            "saturation_fraction": 0.0
+          },
+          "transition": {
+            "n": 852,
+            "minADE": 0.22379730126693795,
+            "minFDE": 0.4020885515697098,
+            "top1FDE": 1.2148810124158538,
+            "uncovered": 0.3685446009389671,
+            "mean_shift": 0.06068792256457981,
+            "saturation_fraction": 0.0
+          },
+          "change": {
+            "n": 960,
+            "minADE": 0.24694066314227495,
+            "minFDE": 0.4406228120869347,
+            "top1FDE": 1.438493126164888,
+            "uncovered": 0.41041666666666665,
+            "mean_shift": 0.05067932733997876,
+            "saturation_fraction": 0.0
+          },
+          "acceleration": {
+            "n": 502,
+            "minADE": 0.22249214680613597,
+            "minFDE": 0.3992688125637544,
+            "top1FDE": 1.3326618855811991,
+            "uncovered": 0.3944223107569721,
+            "mean_shift": 0.04838180693801896,
+            "saturation_fraction": 0.0
+          },
+          "deceleration": {
+            "n": 642,
+            "minADE": 0.19813265474433678,
+            "minFDE": 0.3098187925851693,
+            "top1FDE": 1.0725698328112034,
+            "uncovered": 0.2398753894080997,
+            "mean_shift": 0.056303422152143755,
+            "saturation_fraction": 0.0
+          },
+          "start": {
+            "n": 202,
+            "minADE": 0.2238352714105608,
+            "minFDE": 0.4279366937432931,
+            "top1FDE": 1.2688333366497806,
+            "uncovered": 0.4900990099009901,
+            "mean_shift": 0.060042675908224825,
+            "saturation_fraction": 0.0
+          },
+          "stationary": {
+            "n": 990,
+            "minADE": 0.028202117590350056,
+            "minFDE": 0.05637379345621552,
+            "top1FDE": 0.07097829379704784,
+            "uncovered": 0.00101010101010101,
+            "mean_shift": 0.09619922157324778,
+            "saturation_fraction": 0.0
+          },
+          "steady": {
+            "n": 1704,
+            "minADE": 0.18985511481373102,
+            "minFDE": 0.324480973593873,
+            "top1FDE": 0.9387939580735561,
+            "uncovered": 0.2353286384976526,
+            "mean_shift": 0.1251385630109803,
+            "saturation_fraction": 0.0
+          },
+          "stop": {
+            "n": 180,
+            "minADE": 0.08821362531530164,
+            "minFDE": 0.15352552588633095,
+            "top1FDE": 0.36810338796187436,
+            "uncovered": 0.06666666666666667,
+            "mean_shift": 0.0589402526005062,
+            "saturation_fraction": 0.0
+          },
+          "turn": {
+            "n": 236,
+            "minADE": 0.38220566889996704,
+            "minFDE": 0.7455518728068573,
+            "top1FDE": 2.389734718755826,
+            "uncovered": 0.635593220338983,
+            "mean_shift": 0.05878607937150239,
+            "saturation_fraction": 0.0
+          },
+          "turn_and_speed": {
+            "n": 297,
+            "minADE": 0.298760790221189,
+            "minFDE": 0.5550992435282762,
+            "top1FDE": 1.6459617209144541,
+            "uncovered": 0.5959595959595959,
+            "mean_shift": 0.04024769241328963,
+            "saturation_fraction": 0.0
+          },
+          "turn_any": {
+            "n": 533,
+            "minADE": 0.33570824119340587,
+            "minFDE": 0.6394272369799557,
+            "top1FDE": 1.9752871008217037,
+            "uncovered": 0.6135084427767354,
+            "mean_shift": 0.048456058871335056,
+            "saturation_fraction": 0.0
+          },
+          "decel_stop": {
+            "n": 822,
+            "minADE": 0.17406279428542398,
+            "minFDE": 0.2755939896584164,
+            "top1FDE": 0.9183071076617153,
+            "uncovered": 0.20194647201946472,
+            "mean_shift": 0.056880830279522385,
+            "saturation_fraction": 0.0
+          },
+          "obs_stationary": {
+            "n": 1109,
+            "minADE": 0.05737510428493805,
+            "minFDE": 0.11157955938655503,
+            "top1FDE": 0.24655704065287373,
+            "uncovered": 0.07844905320108206,
+            "mean_shift": 0.0922380879786481,
+            "saturation_fraction": 0.0
+          },
+          "obs_steady": {
+            "n": 1991,
+            "minADE": 0.20732519369515123,
+            "minFDE": 0.3625722056381594,
+            "top1FDE": 1.0976458140870373,
+            "uncovered": 0.2737317930688096,
+            "mean_shift": 0.11763200408968517,
+            "saturation_fraction": 0.0
+          },
+          "obs_other": {
+            "n": 1653,
+            "minADE": 0.2141183622131392,
+            "minFDE": 0.37346144863462355,
+            "top1FDE": 1.1761076281222045,
+            "uncovered": 0.338777979431337,
+            "mean_shift": 0.048986927103374316,
+            "saturation_fraction": 0.0
+          }
+        },
+        "parameter_count": 7187,
+        "parameter_diff_vs_A1": 0.023935033480552814,
+        "archived_A1_exact": null,
+        "training_seconds": 26.121999999973923
+      },
+      "2": {
+        "arm": "R-centroid",
+        "seed": 2,
+        "epochs": 20,
+        "updates": 1700,
+        "clean": {
+          "overall": {
+            "n": 4753,
+            "minADE": 0.17455835876971112,
+            "minFDE": 0.30745293475983654,
+            "top1FDE": 0.9269590483745472,
+            "uncovered": 0.2533136966126657,
+            "mean_shift": 0.10234918991089614,
+            "saturation_fraction": 0.0
+          },
+          "stable": {
+            "n": 2941,
+            "minADE": 0.13662547524173183,
+            "minFDE": 0.23622067520539536,
+            "top1FDE": 0.6746022299846882,
+            "uncovered": 0.16592995579734784,
+            "mean_shift": 0.12528296463604593,
+            "saturation_fraction": 0.0
+          },
+          "transition": {
+            "n": 852,
+            "minADE": 0.2235099699743729,
+            "minFDE": 0.4023249936547055,
+            "top1FDE": 1.2202793428300691,
+            "uncovered": 0.3779342723004695,
+            "mean_shift": 0.0709165422996823,
+            "saturation_fraction": 0.0
+          },
+          "change": {
+            "n": 960,
+            "minADE": 0.24732277305035202,
+            "minFDE": 0.44147697764648586,
+            "top1FDE": 1.4397429150500374,
+            "uncovered": 0.41041666666666665,
+            "mean_shift": 0.059987090221405144,
+            "saturation_fraction": 0.0
+          },
+          "acceleration": {
+            "n": 502,
+            "minADE": 0.22269435447594993,
+            "minFDE": 0.3990326896644366,
+            "top1FDE": 1.3291049765627176,
+            "uncovered": 0.3884462151394422,
+            "mean_shift": 0.056571706465261065,
+            "saturation_fraction": 0.0
+          },
+          "deceleration": {
+            "n": 642,
+            "minADE": 0.19816886437439,
+            "minFDE": 0.3088946154646905,
+            "top1FDE": 1.0853210662522115,
+            "uncovered": 0.24922118380062305,
+            "mean_shift": 0.06738790417753474,
+            "saturation_fraction": 0.0
+          },
+          "start": {
+            "n": 202,
+            "minADE": 0.22488689124823302,
+            "minFDE": 0.43146367855437256,
+            "top1FDE": 1.2683276175115017,
+            "uncovered": 0.5198019801980198,
+            "mean_shift": 0.06890164856479243,
+            "saturation_fraction": 0.0
+          },
+          "stationary": {
+            "n": 990,
+            "minADE": 0.028045855212544924,
+            "minFDE": 0.05659154324137885,
+            "top1FDE": 0.0707491658181949,
+            "uncovered": 0.00101010101010101,
+            "mean_shift": 0.11204200579102194,
+            "saturation_fraction": 0.0
+          },
+          "steady": {
+            "n": 1704,
+            "minADE": 0.1894370105574969,
+            "minFDE": 0.3229257782870263,
+            "top1FDE": 0.939340915771004,
+            "uncovered": 0.23650234741784038,
+            "mean_shift": 0.14522396493632128,
+            "saturation_fraction": 0.0
+          },
+          "stop": {
+            "n": 180,
+            "minADE": 0.08719307712558338,
+            "minFDE": 0.1515770702852532,
+            "top1FDE": 0.3512180418458862,
+            "uncovered": 0.06666666666666667,
+            "mean_shift": 0.06983001571148198,
+            "saturation_fraction": 0.0
+          },
+          "turn": {
+            "n": 236,
+            "minADE": 0.3822085305717304,
+            "minFDE": 0.7477641638914491,
+            "top1FDE": 2.3863583423242396,
+            "uncovered": 0.6271186440677966,
+            "mean_shift": 0.0649149489848389,
+            "saturation_fraction": 0.0
+          },
+          "turn_and_speed": {
+            "n": 297,
+            "minADE": 0.29888794807098007,
+            "minFDE": 0.557225633555071,
+            "top1FDE": 1.645013281023273,
+            "uncovered": 0.6060606060606061,
+            "mean_shift": 0.04920196207330306,
+            "saturation_fraction": 0.0
+          },
+          "turn_any": {
+            "n": 533,
+            "minADE": 0.3357803635872597,
+            "minFDE": 0.6415916619966944,
+            "top1FDE": 1.9732636271152584,
+            "uncovered": 0.6153846153846154,
+            "mean_shift": 0.056159307122313304,
+            "saturation_fraction": 0.0
+          },
+          "decel_stop": {
+            "n": 822,
+            "minADE": 0.1738675970936294,
+            "minFDE": 0.27444551798014216,
+            "top1FDE": 0.9245685791559358,
+            "uncovered": 0.20924574209245742,
+            "mean_shift": 0.06792267312657428,
+            "saturation_fraction": 0.0
+          },
+          "obs_stationary": {
+            "n": 1109,
+            "minADE": 0.05739196254796813,
+            "minFDE": 0.11238513668724974,
+            "top1FDE": 0.24673880354574745,
+            "uncovered": 0.08205590622182146,
+            "mean_shift": 0.10712816655926673,
+            "saturation_fraction": 0.0
+          },
+          "obs_steady": {
+            "n": 1991,
+            "minADE": 0.20672901629469156,
+            "minFDE": 0.3615786017432179,
+            "top1FDE": 1.0975125008261237,
+            "uncovered": 0.2782521346057258,
+            "mean_shift": 0.13595768002253375,
+            "saturation_fraction": 0.0
+          },
+          "obs_other": {
+            "n": 1653,
+            "minADE": 0.21441664931881996,
+            "minFDE": 0.3731310866646076,
+            "top1FDE": 1.1778920959753039,
+            "uncovered": 0.33817301875378103,
+            "mean_shift": 0.05866232426339863,
+            "saturation_fraction": 0.0
+          }
+        },
+        "parameter_count": 7187,
+        "parameter_diff_vs_A1": 0.023935033480552814,
+        "archived_A1_exact": null,
+        "training_seconds": 28.252000000022235
+      }
+    },
+    "R-mode": {
+      "0": {
+        "arm": "R-mode",
+        "seed": 0,
+        "epochs": 20,
+        "updates": 1700,
+        "clean": {
+          "overall": {
+            "n": 4753,
+            "minADE": 0.17608983999384187,
+            "minFDE": 0.3106757786532356,
+            "top1FDE": 0.9357441678767262,
+            "uncovered": 0.265937302756154,
+            "mean_shift": 0.05706980101177572,
+            "saturation_fraction": 0.0
+          },
+          "stable": {
+            "n": 2941,
+            "minADE": 0.1388140197696289,
+            "minFDE": 0.24123169686306956,
+            "top1FDE": 0.6814063123679198,
+            "uncovered": 0.17579054743284597,
+            "mean_shift": 0.06623713123099174,
+            "saturation_fraction": 0.0
+          },
+          "transition": {
+            "n": 852,
+            "minADE": 0.22373106569249504,
+            "minFDE": 0.4013477494822195,
+            "top1FDE": 1.2305650657371314,
+            "uncovered": 0.38028169014084506,
+            "mean_shift": 0.04224280468472248,
+            "saturation_fraction": 0.0
+          },
+          "change": {
+            "n": 960,
+            "minADE": 0.24800428060233964,
+            "minFDE": 0.44294924261009394,
+            "top1FDE": 1.4532652387874916,
+            "uncovered": 0.440625,
+            "mean_shift": 0.042144262153374704,
+            "saturation_fraction": 0.0
+          },
+          "acceleration": {
+            "n": 502,
+            "minADE": 0.22255963004194357,
+            "minFDE": 0.4000652927037538,
+            "top1FDE": 1.3267636735167632,
+            "uncovered": 0.4043824701195219,
+            "mean_shift": 0.033811025992621306,
+            "saturation_fraction": 0.0
+          },
+          "deceleration": {
+            "n": 642,
+            "minADE": 0.2012215663536128,
+            "minFDE": 0.3207315763875137,
+            "top1FDE": 1.10299825942209,
+            "uncovered": 0.26791277258566976,
+            "mean_shift": 0.03801455907228363,
+            "saturation_fraction": 0.0
+          },
+          "start": {
+            "n": 202,
+            "minADE": 0.22301015018349898,
+            "minFDE": 0.4226031888800422,
+            "top1FDE": 1.2674167689175195,
+            "uncovered": 0.5247524752475248,
+            "mean_shift": 0.05151270733770467,
+            "saturation_fraction": 0.0
+          },
+          "stationary": {
+            "n": 990,
+            "minADE": 0.02779432812432077,
+            "minFDE": 0.05492237771056021,
+            "top1FDE": 0.06844509341142407,
+            "uncovered": 0.00202020202020202,
+            "mean_shift": 0.1022218331803419,
+            "saturation_fraction": 0.0
+          },
+          "steady": {
+            "n": 1704,
+            "minADE": 0.19309627872583696,
+            "minFDE": 0.3316478715972856,
+            "top1FDE": 0.9525463075457197,
+            "uncovered": 0.25821596244131456,
+            "mean_shift": 0.049733224144355,
+            "saturation_fraction": 0.0
+          },
+          "stop": {
+            "n": 180,
+            "minADE": 0.0908074557582515,
+            "minFDE": 0.15492825124017656,
+            "top1FDE": 0.35400915436708086,
+            "uncovered": 0.07222222222222222,
+            "mean_shift": 0.053191288673042555,
+            "saturation_fraction": 0.0
+          },
+          "turn": {
+            "n": 236,
+            "minADE": 0.3800366077171287,
+            "minFDE": 0.7304813823434341,
+            "top1FDE": 2.3971320506695495,
+            "uncovered": 0.635593220338983,
+            "mean_shift": 0.050454022353574275,
+            "saturation_fraction": 0.0
+          },
+          "turn_and_speed": {
+            "n": 297,
+            "minADE": 0.29768132667999014,
+            "minFDE": 0.5547200815336047,
+            "top1FDE": 1.6736337833772392,
+            "uncovered": 0.5993265993265994,
+            "mean_shift": 0.04054580918161978,
+            "saturation_fraction": 0.0
+          },
+          "turn_any": {
+            "n": 533,
+            "minADE": 0.33414632916547743,
+            "minFDE": 0.6325430965263248,
+            "top1FDE": 1.9939819842796502,
+            "uncovered": 0.6153846153846154,
+            "mean_shift": 0.044932935464136216,
+            "saturation_fraction": 0.0
+          },
+          "decel_stop": {
+            "n": 822,
+            "minADE": 0.177043293960468,
+            "minFDE": 0.2844242789099946,
+            "top1FDE": 0.9389860466363216,
+            "uncovered": 0.22506082725060828,
+            "mean_shift": 0.04133793051770529,
+            "saturation_fraction": 0.0
+          },
+          "obs_stationary": {
+            "n": 1109,
+            "minADE": 0.056846077545129006,
+            "minFDE": 0.10914050089332294,
+            "top1FDE": 0.24402357664901642,
+            "uncovered": 0.08205590622182146,
+            "mean_shift": 0.09633436138781547,
+            "saturation_fraction": 0.0
+          },
+          "obs_steady": {
+            "n": 1991,
+            "minADE": 0.20940684337395807,
+            "minFDE": 0.3680203934765442,
+            "top1FDE": 1.109583029471095,
+            "uncovered": 0.29532898041185335,
+            "mean_shift": 0.04915635002351104,
+            "saturation_fraction": 0.0
+          },
+          "obs_other": {
+            "n": 1653,
+            "minADE": 0.21596109155210633,
+            "minFDE": 0.37681582397842356,
+            "top1FDE": 1.1904356150861286,
+            "uncovered": 0.35390199637023595,
+            "mean_shift": 0.04025872022569399,
+            "saturation_fraction": 0.0
+          }
+        },
+        "parameter_count": 6707,
+        "parameter_diff_vs_A1": -0.044450776463883734,
+        "archived_A1_exact": null,
+        "training_seconds": 31.14000000001397
+      },
+      "1": {
+        "arm": "R-mode",
+        "seed": 1,
+        "epochs": 20,
+        "updates": 1700,
+        "clean": {
+          "overall": {
+            "n": 4753,
+            "minADE": 0.17583002981752013,
+            "minFDE": 0.3110773191146366,
+            "top1FDE": 0.9302379416200866,
+            "uncovered": 0.2606774668630339,
+            "mean_shift": 0.05631525806575436,
+            "saturation_fraction": 0.0
+          },
+          "stable": {
+            "n": 2941,
+            "minADE": 0.13851116476225264,
+            "minFDE": 0.24222117664458762,
+            "top1FDE": 0.6777373173116283,
+            "uncovered": 0.1727303638218293,
+            "mean_shift": 0.0653599582585956,
+            "saturation_fraction": 0.0
+          },
+          "transition": {
+            "n": 852,
+            "minADE": 0.2235792180129811,
+            "minFDE": 0.4016484267392629,
+            "top1FDE": 1.229434783600881,
+            "uncovered": 0.37089201877934275,
+            "mean_shift": 0.04124200257751088,
+            "saturation_fraction": 0.0
+          },
+          "change": {
+            "n": 960,
+            "minADE": 0.24778052334357115,
+            "minFDE": 0.44163912256071197,
+            "top1FDE": 1.4382469277904393,
+            "uncovered": 0.4322916666666667,
+            "mean_shift": 0.041983956408293256,
+            "saturation_fraction": 0.0
+          },
+          "acceleration": {
+            "n": 502,
+            "minADE": 0.22354384132255278,
+            "minFDE": 0.4030490600348641,
+            "top1FDE": 1.3411752702865214,
+            "uncovered": 0.4043824701195219,
+            "mean_shift": 0.03279546173620182,
+            "saturation_fraction": 0.0
+          },
+          "deceleration": {
+            "n": 642,
+            "minADE": 0.20050514842575864,
+            "minFDE": 0.31806355897105915,
+            "top1FDE": 1.0860514787423015,
+            "uncovered": 0.2632398753894081,
+            "mean_shift": 0.037799729384132355,
+            "saturation_fraction": 0.0
+          },
+          "start": {
+            "n": 202,
+            "minADE": 0.22304000018785322,
+            "minFDE": 0.4261490520288038,
+            "top1FDE": 1.2622879397702818,
+            "uncovered": 0.5198019801980198,
+            "mean_shift": 0.05692815668114692,
+            "saturation_fraction": 0.0
+          },
+          "stationary": {
+            "n": 990,
+            "minADE": 0.027495577179640532,
+            "minFDE": 0.05604898090257753,
+            "top1FDE": 0.07350962269957215,
+            "uncovered": 0.00101010101010101,
+            "mean_shift": 0.10571791905011015,
+            "saturation_fraction": 0.0
+          },
+          "steady": {
+            "n": 1704,
+            "minADE": 0.193039989421967,
+            "minFDE": 0.33267217535509314,
+            "top1FDE": 0.9424059448903522,
+            "uncovered": 0.24882629107981222,
+            "mean_shift": 0.04640298709388191,
+            "saturation_fraction": 0.0
+          },
+          "stop": {
+            "n": 180,
+            "minADE": 0.08923493330432848,
+            "minFDE": 0.15368394195583734,
+            "top1FDE": 0.35483481380243215,
+            "uncovered": 0.07222222222222222,
+            "mean_shift": 0.05266281391252965,
+            "saturation_fraction": 0.0
+          },
+          "turn": {
+            "n": 236,
+            "minADE": 0.3801226057675409,
+            "minFDE": 0.7326676837791009,
+            "top1FDE": 2.3770326877343515,
+            "uncovered": 0.6313559322033898,
+            "mean_shift": 0.04644382195135103,
+            "saturation_fraction": 0.0
+          },
+          "turn_and_speed": {
+            "n": 297,
+            "minADE": 0.2955917566083287,
+            "minFDE": 0.548843082230904,
+            "top1FDE": 1.6580454555380528,
+            "uncovered": 0.5892255892255892,
+            "mean_shift": 0.037928308176412545,
+            "saturation_fraction": 0.0
+          },
+          "turn_any": {
+            "n": 533,
+            "minADE": 0.33302005004467783,
+            "minFDE": 0.6302363392015877,
+            "top1FDE": 1.9763962750471082,
+            "uncovered": 0.6078799249530957,
+            "mean_shift": 0.0416987795664416,
+            "saturation_fraction": 0.0
+          },
+          "decel_stop": {
+            "n": 822,
+            "minADE": 0.1761394078882192,
+            "minFDE": 0.2820680223983828,
+            "top1FDE": 0.9259310411642278,
+            "uncovered": 0.22141119221411193,
+            "mean_shift": 0.04105441942684709,
+            "saturation_fraction": 0.0
+          },
+          "obs_stationary": {
+            "n": 1109,
+            "minADE": 0.05657338337330741,
+            "minFDE": 0.11069869594791343,
+            "top1FDE": 0.24819346088936492,
+            "uncovered": 0.08205590622182146,
+            "mean_shift": 0.10038799298534114,
+            "saturation_fraction": 0.0
+          },
+          "obs_steady": {
+            "n": 1991,
+            "minADE": 0.20897309019674654,
+            "minFDE": 0.3673963526718051,
+            "top1FDE": 1.0993367867703456,
+            "uncovered": 0.28679055750878957,
+            "mean_shift": 0.04572589036754265,
+            "saturation_fraction": 0.0
+          },
+          "obs_other": {
+            "n": 1653,
+            "minADE": 0.21591943555956017,
+            "minFDE": 0.3776766520121402,
+            "top1FDE": 1.1841469122408999,
+            "uncovered": 0.3490623109497883,
+            "mean_shift": 0.03950144564065926,
+            "saturation_fraction": 0.0
+          }
+        },
+        "parameter_count": 6707,
+        "parameter_diff_vs_A1": -0.044450776463883734,
+        "archived_A1_exact": null,
+        "training_seconds": 32.7329999999929
+      },
+      "2": {
+        "arm": "R-mode",
+        "seed": 2,
+        "epochs": 20,
+        "updates": 1700,
+        "clean": {
+          "overall": {
+            "n": 4753,
+            "minADE": 0.17569830429592453,
+            "minFDE": 0.31013922685495676,
+            "top1FDE": 0.9315573609968585,
+            "uncovered": 0.26362297496318116,
+            "mean_shift": 0.05990027896946748,
+            "saturation_fraction": 0.0
+          },
+          "stable": {
+            "n": 2941,
+            "minADE": 0.13847279295874726,
+            "minFDE": 0.24083564885503567,
+            "top1FDE": 0.6791211037250581,
+            "uncovered": 0.17477048622917374,
+            "mean_shift": 0.07108386958455025,
+            "saturation_fraction": 0.0
+          },
+          "transition": {
+            "n": 852,
+            "minADE": 0.22324319927905942,
+            "minFDE": 0.4006939280696646,
+            "top1FDE": 1.2320376281544703,
+            "uncovered": 0.3732394366197183,
+            "mean_shift": 0.04235213683827898,
+            "saturation_fraction": 0.0
+          },
+          "change": {
+            "n": 960,
+            "minADE": 0.24754411504280724,
+            "minFDE": 0.4420863283787453,
+            "top1FDE": 1.4382301162240259,
+            "uncovered": 0.43854166666666666,
+            "mean_shift": 0.041212859278648886,
+            "saturation_fraction": 0.0
+          },
+          "acceleration": {
+            "n": 502,
+            "minADE": 0.2235750130247097,
+            "minFDE": 0.40146314968648666,
+            "top1FDE": 1.3384463003469713,
+            "uncovered": 0.39641434262948205,
+            "mean_shift": 0.03187520886632774,
+            "saturation_fraction": 0.0
+          },
+          "deceleration": {
+            "n": 642,
+            "minADE": 0.20032942245467852,
+            "minFDE": 0.31888848345575965,
+            "top1FDE": 1.0862653866007141,
+            "uncovered": 0.26479750778816197,
+            "mean_shift": 0.039238203346992774,
+            "saturation_fraction": 0.0
+          },
+          "start": {
+            "n": 202,
+            "minADE": 0.2231672114189332,
+            "minFDE": 0.42391832958305187,
+            "top1FDE": 1.273505386224798,
+            "uncovered": 0.5198019801980198,
+            "mean_shift": 0.05523756895838857,
+            "saturation_fraction": 0.0
+          },
+          "stationary": {
+            "n": 990,
+            "minADE": 0.027176646771163368,
+            "minFDE": 0.05493066387405268,
+            "top1FDE": 0.06920517159628291,
+            "uncovered": 0.00101010101010101,
+            "mean_shift": 0.11849412869870389,
+            "saturation_fraction": 0.0
+          },
+          "steady": {
+            "n": 1704,
+            "minADE": 0.19296350823368386,
+            "minFDE": 0.33086195212100894,
+            "top1FDE": 0.9471312149796461,
+            "uncovered": 0.2546948356807512,
+            "mean_shift": 0.04892357300840831,
+            "saturation_fraction": 0.0
+          },
+          "stop": {
+            "n": 180,
+            "minADE": 0.08870037959281374,
+            "minFDE": 0.15342602807673136,
+            "top1FDE": 0.3451950754435676,
+            "uncovered": 0.07222222222222222,
+            "mean_shift": 0.052556421001679454,
+            "saturation_fraction": 0.0
+          },
+          "turn": {
+            "n": 236,
+            "minADE": 0.37911953175831975,
+            "minFDE": 0.7289226852109916,
+            "top1FDE": 2.3856795363675656,
+            "uncovered": 0.6271186440677966,
+            "mean_shift": 0.04712551174173395,
+            "saturation_fraction": 0.0
+          },
+          "turn_and_speed": {
+            "n": 297,
+            "minADE": 0.2963472784588482,
+            "minFDE": 0.5534908172777843,
+            "top1FDE": 1.6618903483521772,
+            "uncovered": 0.6161616161616161,
+            "mean_shift": 0.037370448630378576,
+            "saturation_fraction": 0.0
+          },
+          "turn_any": {
+            "n": 533,
+            "minADE": 0.3329969065614285,
+            "minFDE": 0.6311679670568403,
+            "top1FDE": 1.9823673621826305,
+            "uncovered": 0.6210131332082551,
+            "mean_shift": 0.04168976362902748,
+            "saturation_fraction": 0.0
+          },
+          "decel_stop": {
+            "n": 822,
+            "minADE": 0.17588510649952563,
+            "minFDE": 0.2826558289931987,
+            "top1FDE": 0.9239872162743318,
+            "uncovered": 0.22262773722627738,
+            "mean_shift": 0.0421546013735665,
+            "saturation_fraction": 0.0
+          },
+          "obs_stationary": {
+            "n": 1109,
+            "minADE": 0.056289472641743776,
+            "minFDE": 0.10921836046731057,
+            "top1FDE": 0.24590718682184068,
+            "uncovered": 0.08205590622182146,
+            "mean_shift": 0.11150617631431309,
+            "saturation_fraction": 0.0
+          },
+          "obs_steady": {
+            "n": 1991,
+            "minADE": 0.20885126404429233,
+            "minFDE": 0.36642930680763613,
+            "top1FDE": 1.1027300105479545,
+            "uncovered": 0.2968357609241587,
+            "mean_shift": 0.04850405265333849,
+            "saturation_fraction": 0.0
+          },
+          "obs_other": {
+            "n": 1653,
+            "minADE": 0.21587788774751931,
+            "minFDE": 0.3771372254261093,
+            "top1FDE": 1.1853875472665882,
+            "uncovered": 0.3454325468844525,
+            "mean_shift": 0.03900429980430052,
+            "saturation_fraction": 0.0
+          }
+        },
+        "parameter_count": 6707,
+        "parameter_diff_vs_A1": -0.044450776463883734,
+        "archived_A1_exact": null,
+        "training_seconds": 33.65500000002794
+      }
+    },
+    "R-geom": {
+      "0": {
+        "arm": "R-geom",
+        "seed": 0,
+        "epochs": 20,
+        "updates": 1700,
+        "clean": {
+          "overall": {
+            "n": 4753,
+            "minADE": 0.17579700257097491,
+            "minFDE": 0.31092592176665784,
+            "top1FDE": 0.9225657967087642,
+            "uncovered": 0.263833368398906,
+            "mean_shift": 0.044614896296162554,
+            "saturation_fraction": 0.0
+          },
+          "stable": {
+            "n": 2941,
+            "minADE": 0.13879414457341605,
+            "minFDE": 0.24152107025569416,
+            "top1FDE": 0.6662657884571409,
+            "uncovered": 0.17749064943896634,
+            "mean_shift": 0.04793564440459504,
+            "saturation_fraction": 0.0
+          },
+          "transition": {
+            "n": 852,
+            "minADE": 0.22268437726806556,
+            "minFDE": 0.39898237294247035,
+            "top1FDE": 1.2270402151543671,
+            "uncovered": 0.3720657276995305,
+            "mean_shift": 0.029895350557051056,
+            "saturation_fraction": 0.0
+          },
+          "change": {
+            "n": 960,
+            "minADE": 0.24754425478857858,
+            "minFDE": 0.44540047582077424,
+            "top1FDE": 1.4375305047841498,
+            "uncovered": 0.4322916666666667,
+            "mean_shift": 0.04750524294493659,
+            "saturation_fraction": 0.0
+          },
+          "acceleration": {
+            "n": 502,
+            "minADE": 0.22429389637099265,
+            "minFDE": 0.4030231668598842,
+            "top1FDE": 1.2972604980310498,
+            "uncovered": 0.40239043824701193,
+            "mean_shift": 0.026284431619716244,
+            "saturation_fraction": 0.0
+          },
+          "deceleration": {
+            "n": 642,
+            "minADE": 0.19821969130049144,
+            "minFDE": 0.312808906132136,
+            "top1FDE": 1.0972419274649783,
+            "uncovered": 0.2570093457943925,
+            "mean_shift": 0.02159781276660134,
+            "saturation_fraction": 0.0
+          },
+          "start": {
+            "n": 202,
+            "minADE": 0.2249471810502139,
+            "minFDE": 0.43494085879946526,
+            "top1FDE": 1.2601765449251847,
+            "uncovered": 0.5,
+            "mean_shift": 0.0847339910491265,
+            "saturation_fraction": 0.0
+          },
+          "stationary": {
+            "n": 990,
+            "minADE": 0.02706218146633173,
+            "minFDE": 0.05367834876706689,
+            "top1FDE": 0.07010595059037926,
+            "uncovered": 0.00101010101010101,
+            "mean_shift": 0.10079313675505253,
+            "saturation_fraction": 0.0
+          },
+          "steady": {
+            "n": 1704,
+            "minADE": 0.19347519165456786,
+            "minFDE": 0.3335812991069791,
+            "top1FDE": 0.9267460785548891,
+            "uncovered": 0.25821596244131456,
+            "mean_shift": 0.021705066486130405,
+            "saturation_fraction": 0.0
+          },
+          "stop": {
+            "n": 180,
+            "minADE": 0.08742101070040079,
+            "minFDE": 0.1546318528480916,
+            "top1FDE": 0.36357762508996955,
+            "uncovered": 0.07777777777777778,
+            "mean_shift": 0.07177251920442082,
+            "saturation_fraction": 0.0
+          },
+          "turn": {
+            "n": 236,
+            "minADE": 0.38111783190290965,
+            "minFDE": 0.731306427220048,
+            "top1FDE": 2.407653506435604,
+            "uncovered": 0.6483050847457628,
+            "mean_shift": 0.028101952195690453,
+            "saturation_fraction": 0.0
+          },
+          "turn_and_speed": {
+            "n": 297,
+            "minADE": 0.29669484299103044,
+            "minFDE": 0.5550362150998757,
+            "top1FDE": 1.6582999099688962,
+            "uncovered": 0.5993265993265994,
+            "mean_shift": 0.0389090995947291,
+            "saturation_fraction": 0.0
+          },
+          "turn_any": {
+            "n": 533,
+            "minADE": 0.3340753784191796,
+            "minFDE": 0.6330845641812277,
+            "top1FDE": 1.9900962491173821,
+            "uncovered": 0.6210131332082551,
+            "mean_shift": 0.03412394614975139,
+            "saturation_fraction": 0.0
+          },
+          "decel_stop": {
+            "n": 822,
+            "minADE": 0.17395720649755186,
+            "minFDE": 0.2781715951940241,
+            "top1FDE": 0.9365855108865093,
+            "uncovered": 0.21776155717761558,
+            "mean_shift": 0.032584974760284435,
+            "saturation_fraction": 0.0
+          },
+          "obs_stationary": {
+            "n": 1109,
+            "minADE": 0.056551669272701166,
+            "minFDE": 0.11004528858259173,
+            "top1FDE": 0.24539880644738823,
+            "uncovered": 0.0775473399458972,
+            "mean_shift": 0.09957511101539533,
+            "saturation_fraction": 0.0
+          },
+          "obs_steady": {
+            "n": 1991,
+            "minADE": 0.20969630008216697,
+            "minFDE": 0.3689184259220657,
+            "top1FDE": 1.0911071452492396,
+            "uncovered": 0.2968357609241587,
+            "mean_shift": 0.020527887551867144,
+            "saturation_fraction": 0.0
+          },
+          "obs_other": {
+            "n": 1653,
+            "minADE": 0.21496794829571922,
+            "minFDE": 0.3758463975244994,
+            "top1FDE": 1.1738739438689454,
+            "uncovered": 0.3490623109497883,
+            "mean_shift": 0.0367542527911795,
+            "saturation_fraction": 0.0
+          }
+        },
+        "parameter_count": 5483,
+        "parameter_diff_vs_A1": -0.2188345918221969,
+        "archived_A1_exact": null,
+        "training_seconds": 32.10899999999674
+      },
+      "1": {
+        "arm": "R-geom",
+        "seed": 1,
+        "epochs": 20,
+        "updates": 1700,
+        "clean": {
+          "overall": {
+            "n": 4753,
+            "minADE": 0.17618585573329654,
+            "minFDE": 0.31227067991949936,
+            "top1FDE": 0.9257418421257393,
+            "uncovered": 0.2663580896276036,
+            "mean_shift": 0.05072772689081322,
+            "saturation_fraction": 0.0
+          },
+          "stable": {
+            "n": 2941,
+            "minADE": 0.13958826050623907,
+            "minFDE": 0.2434375366028896,
+            "top1FDE": 0.6693201226175065,
+            "uncovered": 0.17953077184631078,
+            "mean_shift": 0.056135121655042856,
+            "saturation_fraction": 0.0
+          },
+          "transition": {
+            "n": 852,
+            "minADE": 0.22288551389155187,
+            "minFDE": 0.39985022101429724,
+            "top1FDE": 1.2304099291958144,
+            "uncovered": 0.3779342723004695,
+            "mean_shift": 0.032517560849250934,
+            "saturation_fraction": 0.0
+          },
+          "change": {
+            "n": 960,
+            "minADE": 0.24685816699573648,
+            "minFDE": 0.4454170397959384,
+            "top1FDE": 1.4409075368028317,
+            "uncovered": 0.43333333333333335,
+            "mean_shift": 0.050323470084367106,
+            "saturation_fraction": 0.0
+          },
+          "acceleration": {
+            "n": 502,
+            "minADE": 0.22441706380114285,
+            "minFDE": 0.4045072706019699,
+            "top1FDE": 1.3047068892494422,
+            "uncovered": 0.4063745019920319,
+            "mean_shift": 0.026805373925262856,
+            "saturation_fraction": 0.0
+          },
+          "deceleration": {
+            "n": 642,
+            "minADE": 0.19810397601553728,
+            "minFDE": 0.3120941827106811,
+            "top1FDE": 1.0990193911372552,
+            "uncovered": 0.2523364485981308,
+            "mean_shift": 0.022939438052886982,
+            "saturation_fraction": 0.0
+          },
+          "start": {
+            "n": 202,
+            "minADE": 0.22240745223266994,
+            "minFDE": 0.4329144519304887,
+            "top1FDE": 1.2672509257935665,
+            "uncovered": 0.5099009900990099,
+            "mean_shift": 0.09306497148378075,
+            "saturation_fraction": 0.0
+          },
+          "stationary": {
+            "n": 990,
+            "minADE": 0.029023003724303217,
+            "minFDE": 0.05809536832495524,
+            "top1FDE": 0.07409145246783229,
+            "uncovered": 0.00101010101010101,
+            "mean_shift": 0.1204725705866482,
+            "saturation_fraction": 0.0
+          },
+          "steady": {
+            "n": 1704,
+            "minADE": 0.19355490689414698,
+            "minFDE": 0.33383611861090784,
+            "top1FDE": 0.930360291826297,
+            "uncovered": 0.25938967136150237,
+            "mean_shift": 0.024292209532197045,
+            "saturation_fraction": 0.0
+          },
+          "stop": {
+            "n": 180,
+            "minADE": 0.08804401581051685,
+            "minFDE": 0.15439447707473958,
+            "top1FDE": 0.36151034682092165,
+            "uncovered": 0.07777777777777778,
+            "mean_shift": 0.07945850484704131,
+            "saturation_fraction": 0.0
+          },
+          "turn": {
+            "n": 236,
+            "minADE": 0.381521574546702,
+            "minFDE": 0.7356461629008074,
+            "top1FDE": 2.401974906787913,
+            "uncovered": 0.6610169491525424,
+            "mean_shift": 0.030288886629434904,
+            "saturation_fraction": 0.0
+          },
+          "turn_and_speed": {
+            "n": 297,
+            "minADE": 0.2969952823084475,
+            "minFDE": 0.557481636876227,
+            "top1FDE": 1.6596315335189333,
+            "uncovered": 0.6195286195286195,
+            "mean_shift": 0.040450729600055926,
+            "saturation_fraction": 0.0
+          },
+          "turn_any": {
+            "n": 533,
+            "minADE": 0.3344215580462112,
+            "minFDE": 0.6363687440841087,
+            "top1FDE": 1.988323908925086,
+            "uncovered": 0.6378986866791745,
+            "mean_shift": 0.03595130194327063,
+            "saturation_fraction": 0.0
+          },
+          "decel_stop": {
+            "n": 822,
+            "minADE": 0.17400325480275908,
+            "minFDE": 0.2775614004546355,
+            "top1FDE": 0.9375210602650652,
+            "uncovered": 0.2141119221411192,
+            "mean_shift": 0.03531587603700837,
+            "saturation_fraction": 0.0
+          },
+          "obs_stationary": {
+            "n": 1109,
+            "minADE": 0.05790584793612324,
+            "minFDE": 0.11364678863955434,
+            "top1FDE": 0.24939612790370402,
+            "uncovered": 0.0793507664562669,
+            "mean_shift": 0.11803642923670743,
+            "saturation_fraction": 0.0
+          },
+          "obs_steady": {
+            "n": 1991,
+            "minADE": 0.20976490303600337,
+            "minFDE": 0.36907647311938224,
+            "top1FDE": 1.0919927211113016,
+            "uncovered": 0.2983425414364641,
+            "mean_shift": 0.02303143515935626,
+            "saturation_fraction": 0.0
+          },
+          "obs_other": {
+            "n": 1653,
+            "minADE": 0.21509489715336658,
+            "minFDE": 0.3771064701000755,
+            "top1FDE": 1.1792578112799939,
+            "uncovered": 0.35329703569267995,
+            "mean_shift": 0.03892976314957556,
+            "saturation_fraction": 0.0
+          }
+        },
+        "parameter_count": 5483,
+        "parameter_diff_vs_A1": -0.2188345918221969,
+        "archived_A1_exact": null,
+        "training_seconds": 28.0339999999851
+      },
+      "2": {
+        "arm": "R-geom",
+        "seed": 2,
+        "epochs": 20,
+        "updates": 1700,
+        "clean": {
+          "overall": {
+            "n": 4753,
+            "minADE": 0.17557098194552984,
+            "minFDE": 0.31075690531454697,
+            "top1FDE": 0.9229129889524816,
+            "uncovered": 0.26783084367767723,
+            "mean_shift": 0.055091272964785006,
+            "saturation_fraction": 0.0
+          },
+          "stable": {
+            "n": 2941,
+            "minADE": 0.13862845518989309,
+            "minFDE": 0.24095482654699227,
+            "top1FDE": 0.6669767712192592,
+            "uncovered": 0.18021081264875893,
+            "mean_shift": 0.06149916098082494,
+            "saturation_fraction": 0.0
+          },
+          "transition": {
+            "n": 852,
+            "minADE": 0.2228250046634078,
+            "minFDE": 0.39970131642862966,
+            "top1FDE": 1.2273274932010145,
+            "uncovered": 0.3755868544600939,
+            "mean_shift": 0.03634343260158188,
+            "saturation_fraction": 0.0
+          },
+          "change": {
+            "n": 960,
+            "minADE": 0.2468080067712546,
+            "minFDE": 0.44566031717515137,
+            "top1FDE": 1.4368163834667085,
+            "uncovered": 0.440625,
+            "mean_shift": 0.05209914935465543,
+            "saturation_fraction": 0.0
+          },
+          "acceleration": {
+            "n": 502,
+            "minADE": 0.2244496461852526,
+            "minFDE": 0.4047551835023657,
+            "top1FDE": 1.3037965149817368,
+            "uncovered": 0.40836653386454186,
+            "mean_shift": 0.029260326575317082,
+            "saturation_fraction": 0.0
+          },
+          "deceleration": {
+            "n": 642,
+            "minADE": 0.19800440712538564,
+            "minFDE": 0.3107212766264387,
+            "top1FDE": 1.0954363884167355,
+            "uncovered": 0.2507788161993769,
+            "mean_shift": 0.026854135660969433,
+            "saturation_fraction": 0.0
+          },
+          "start": {
+            "n": 202,
+            "minADE": 0.2231920899462373,
+            "minFDE": 0.4387119373735523,
+            "top1FDE": 1.260550786771813,
+            "uncovered": 0.5148514851485149,
+            "mean_shift": 0.09408445602496426,
+            "saturation_fraction": 0.0
+          },
+          "stationary": {
+            "n": 990,
+            "minADE": 0.026628000853730547,
+            "minFDE": 0.052014070106207955,
+            "top1FDE": 0.06910724979500768,
+            "uncovered": 0.00101010101010101,
+            "mean_shift": 0.12541898855539155,
+            "saturation_fraction": 0.0
+          },
+          "steady": {
+            "n": 1704,
+            "minADE": 0.19321338478955696,
+            "minFDE": 0.3329170308860956,
+            "top1FDE": 0.928160358180699,
+            "uncovered": 0.26115023474178406,
+            "mean_shift": 0.030129113019959238,
+            "saturation_fraction": 0.0
+          },
+          "stop": {
+            "n": 180,
+            "minADE": 0.08767426375140841,
+            "minFDE": 0.15311388979539828,
+            "top1FDE": 0.36345276824796224,
+            "uncovered": 0.07777777777777778,
+            "mean_shift": 0.08077759292009053,
+            "saturation_fraction": 0.0
+          },
+          "turn": {
+            "n": 236,
+            "minADE": 0.3814374175466807,
+            "minFDE": 0.7382483659708879,
+            "top1FDE": 2.401568573815514,
+            "uncovered": 0.6610169491525424,
+            "mean_shift": 0.03496606051788422,
+            "saturation_fraction": 0.0
+          },
+          "turn_and_speed": {
+            "n": 297,
+            "minADE": 0.2970154771569044,
+            "minFDE": 0.55611425363929,
+            "top1FDE": 1.6565826812686888,
+            "uncovered": 0.6296296296296297,
+            "mean_shift": 0.04248470365570253,
+            "saturation_fraction": 0.0
+          },
+          "turn_any": {
+            "n": 533,
+            "minADE": 0.3343955483238598,
+            "minFDE": 0.6367590013133183,
+            "top1FDE": 1.9864451027340746,
+            "uncovered": 0.6435272045028143,
+            "mean_shift": 0.03915562339205315,
+            "saturation_fraction": 0.0
+          },
+          "decel_stop": {
+            "n": 822,
+            "minADE": 0.17384452171502568,
+            "minFDE": 0.2762087101670868,
+            "top1FDE": 0.935148004438172,
+            "uncovered": 0.21289537712895376,
+            "mean_shift": 0.03866219199508354,
+            "saturation_fraction": 0.0
+          },
+          "obs_stationary": {
+            "n": 1109,
+            "minADE": 0.05598495679886424,
+            "minFDE": 0.10940027531370006,
+            "top1FDE": 0.24398820940924645,
+            "uncovered": 0.0793507664562669,
+            "mean_shift": 0.12256879332008135,
+            "saturation_fraction": 0.0
+          },
+          "obs_steady": {
+            "n": 1991,
+            "minADE": 0.20950591687053965,
+            "minFDE": 0.3682667484953613,
+            "top1FDE": 1.0904475332869579,
+            "uncovered": 0.29984932194876945,
+            "mean_shift": 0.02883568375573645,
+            "saturation_fraction": 0.0
+          },
+          "obs_other": {
+            "n": 1653,
+            "minADE": 0.21492757387048908,
+            "minFDE": 0.3765780819013215,
+            "top1FDE": 1.1766131116043306,
+            "uncovered": 0.35571687840290384,
+            "mean_shift": 0.04144475635328594,
+            "saturation_fraction": 0.0
+          }
+        },
+        "parameter_count": 5483,
+        "parameter_diff_vs_A1": -0.2188345918221969,
+        "archived_A1_exact": null,
+        "training_seconds": 25.874999999985448
+      }
+    },
+    "R-lowspeed": {
+      "0": {
+        "arm": "R-lowspeed",
+        "seed": 0,
+        "epochs": 20,
+        "updates": 1700,
+        "clean": {
+          "overall": {
+            "n": 4753,
+            "minADE": 0.17469611076829752,
+            "minFDE": 0.30835016260298714,
+            "top1FDE": 0.9298556515830794,
+            "uncovered": 0.2535240900483905,
+            "mean_shift": 0.0699832262293302,
+            "saturation_fraction": 0.0
+          },
+          "stable": {
+            "n": 2941,
+            "minADE": 0.13708217929430488,
+            "minFDE": 0.23679881998923008,
+            "top1FDE": 0.6693118068876592,
+            "uncovered": 0.1676300578034682,
+            "mean_shift": 0.08417129545173245,
+            "saturation_fraction": 0.0
+          },
+          "transition": {
+            "n": 852,
+            "minADE": 0.22320940115448978,
+            "minFDE": 0.4026747885785941,
+            "top1FDE": 1.233645641549176,
+            "uncovered": 0.3685446009389671,
+            "mean_shift": 0.05775045164963566,
+            "saturation_fraction": 0.0
+          },
+          "change": {
+            "n": 960,
+            "minADE": 0.24687241186827305,
+            "minFDE": 0.4438375764528229,
+            "top1FDE": 1.4584289597061177,
+            "uncovered": 0.41458333333333336,
+            "mean_shift": 0.03737407243642889,
+            "saturation_fraction": 0.0
+          },
+          "acceleration": {
+            "n": 502,
+            "minADE": 0.22247374724283428,
+            "minFDE": 0.3993146456746011,
+            "top1FDE": 1.3022275897694264,
+            "uncovered": 0.3904382470119522,
+            "mean_shift": 0.04699116171777684,
+            "saturation_fraction": 0.0
+          },
+          "deceleration": {
+            "n": 642,
+            "minADE": 0.19741722593216912,
+            "minFDE": 0.31085589735984626,
+            "top1FDE": 1.1348433504017612,
+            "uncovered": 0.24299065420560748,
+            "mean_shift": 0.06329791141420837,
+            "saturation_fraction": 0.0
+          },
+          "start": {
+            "n": 202,
+            "minADE": 0.22354770698386348,
+            "minFDE": 0.4298531333850995,
+            "top1FDE": 1.2673659649250695,
+            "uncovered": 0.5,
+            "mean_shift": 0.008034291472153536,
+            "saturation_fraction": 0.0
+          },
+          "stationary": {
+            "n": 990,
+            "minADE": 0.02863807124062274,
+            "minFDE": 0.05754092709033309,
+            "top1FDE": 0.07142130444406235,
+            "uncovered": 0.00202020202020202,
+            "mean_shift": 0.009923547286523228,
+            "saturation_fraction": 0.0
+          },
+          "steady": {
+            "n": 1704,
+            "minADE": 0.18972108044428312,
+            "minFDE": 0.3238683840735946,
+            "top1FDE": 0.9320052792285932,
+            "uncovered": 0.24471830985915494,
+            "mean_shift": 0.13368530314590282,
+            "saturation_fraction": 0.0
+          },
+          "stop": {
+            "n": 180,
+            "minADE": 0.08966688883286061,
+            "minFDE": 0.15514291500978805,
+            "top1FDE": 0.3497829797216247,
+            "uncovered": 0.06666666666666667,
+            "mean_shift": 0.027184612180223847,
+            "saturation_fraction": 0.0
+          },
+          "turn": {
+            "n": 236,
+            "minADE": 0.38273984707930614,
+            "minFDE": 0.74685938278388,
+            "top1FDE": 2.4035082233644123,
+            "uncovered": 0.6271186440677966,
+            "mean_shift": 0.057050809805935104,
+            "saturation_fraction": 0.0
+          },
+          "turn_and_speed": {
+            "n": 297,
+            "minADE": 0.29847556229197375,
+            "minFDE": 0.5579487149998132,
+            "top1FDE": 1.6574927332265688,
+            "uncovered": 0.5824915824915825,
+            "mean_shift": 0.03636106195107203,
+            "saturation_fraction": 0.0
+          },
+          "turn_any": {
+            "n": 533,
+            "minADE": 0.335785827225952,
+            "minFDE": 0.641593963774747,
+            "top1FDE": 1.9878110365521426,
+            "uncovered": 0.6022514071294559,
+            "mean_shift": 0.045522000963731844,
+            "saturation_fraction": 0.0
+          },
+          "decel_stop": {
+            "n": 822,
+            "minADE": 0.1738222616038534,
+            "minFDE": 0.27675816399851966,
+            "top1FDE": 0.9629323203258191,
+            "uncovered": 0.20437956204379562,
+            "mean_shift": 0.055389889684138764,
+            "saturation_fraction": 0.0
+          },
+          "obs_stationary": {
+            "n": 1109,
+            "minADE": 0.05765578695295106,
+            "minFDE": 0.11267875058058155,
+            "top1FDE": 0.24751888405781133,
+            "uncovered": 0.08025247971145176,
+            "mean_shift": 0.009645874492427715,
+            "saturation_fraction": 0.0
+          },
+          "obs_steady": {
+            "n": 1991,
+            "minADE": 0.2067261172286954,
+            "minFDE": 0.36088720840838157,
+            "top1FDE": 1.09676648622574,
+            "uncovered": 0.27975891511803114,
+            "mean_shift": 0.1257715643459832,
+            "saturation_fraction": 0.0
+          },
+          "obs_other": {
+            "n": 1653,
+            "minADE": 0.2146392300959243,
+            "minFDE": 0.3763467371548974,
+            "top1FDE": 1.1865961255165247,
+            "uncovered": 0.33817301875378103,
+            "mean_shift": 0.043267885567484364,
+            "saturation_fraction": 0.0
+          }
+        },
+        "parameter_count": 7019,
+        "parameter_diff_vs_A1": 0.0,
+        "archived_A1_exact": null,
+        "training_seconds": 25.968000000022585
+      },
+      "1": {
+        "arm": "R-lowspeed",
+        "seed": 1,
+        "epochs": 20,
+        "updates": 1700,
+        "clean": {
+          "overall": {
+            "n": 4753,
+            "minADE": 0.1748008551281252,
+            "minFDE": 0.3083902721328464,
+            "top1FDE": 0.9317673724321743,
+            "uncovered": 0.25625920471281294,
+            "mean_shift": 0.061193785975586515,
+            "saturation_fraction": 0.0
+          },
+          "stable": {
+            "n": 2941,
+            "minADE": 0.13739095451969258,
+            "minFDE": 0.23723665240241676,
+            "top1FDE": 0.6794065862569221,
+            "uncovered": 0.1689901394083645,
+            "mean_shift": 0.0744286601668512,
+            "saturation_fraction": 0.0
+          },
+          "transition": {
+            "n": 852,
+            "minADE": 0.22338518973901875,
+            "minFDE": 0.40308265981973507,
+            "top1FDE": 1.2254543079974187,
+            "uncovered": 0.3744131455399061,
+            "mean_shift": 0.04964137892755125,
+            "saturation_fraction": 0.0
+          },
+          "change": {
+            "n": 960,
+            "minADE": 0.24628904742074914,
+            "minFDE": 0.44233285683905954,
+            "top1FDE": 1.444238000598663,
+            "uncovered": 0.41875,
+            "mean_shift": 0.03090095869268715,
+            "saturation_fraction": 0.0
+          },
+          "acceleration": {
+            "n": 502,
+            "minADE": 0.22234826043208913,
+            "minFDE": 0.3998956587352988,
+            "top1FDE": 1.323275377185678,
+            "uncovered": 0.398406374501992,
+            "mean_shift": 0.040267344044573314,
+            "saturation_fraction": 0.0
+          },
+          "deceleration": {
+            "n": 642,
+            "minADE": 0.19690904914274765,
+            "minFDE": 0.30809997100906195,
+            "top1FDE": 1.0923592866670884,
+            "uncovered": 0.24143302180685358,
+            "mean_shift": 0.05223309703137861,
+            "saturation_fraction": 0.0
+          },
+          "start": {
+            "n": 202,
+            "minADE": 0.22378629787908882,
+            "minFDE": 0.4300423126460311,
+            "top1FDE": 1.268518623588079,
+            "uncovered": 0.504950495049505,
+            "mean_shift": 0.00842417239355307,
+            "saturation_fraction": 0.0
+          },
+          "stationary": {
+            "n": 990,
+            "minADE": 0.02851659248166337,
+            "minFDE": 0.05725830164131057,
+            "top1FDE": 0.07743729477707212,
+            "uncovered": 0.00202020202020202,
+            "mean_shift": 0.009165974916198088,
+            "saturation_fraction": 0.0
+          },
+          "steady": {
+            "n": 1704,
+            "minADE": 0.19040878800797978,
+            "minFDE": 0.32546296973770217,
+            "top1FDE": 0.9462185614041463,
+            "uncovered": 0.24589201877934272,
+            "mean_shift": 0.11779854009910823,
+            "saturation_fraction": 0.0
+          },
+          "stop": {
+            "n": 180,
+            "minADE": 0.08859546110465345,
+            "minFDE": 0.15396552168049596,
+            "top1FDE": 0.3574581702197206,
+            "uncovered": 0.07222222222222222,
+            "mean_shift": 0.023295285424273074,
+            "saturation_fraction": 0.0
+          },
+          "turn": {
+            "n": 236,
+            "minADE": 0.38232961978566443,
+            "minFDE": 0.7431302235878208,
+            "top1FDE": 2.385379694759646,
+            "uncovered": 0.6440677966101694,
+            "mean_shift": 0.052714971663697804,
+            "saturation_fraction": 0.0
+          },
+          "turn_and_speed": {
+            "n": 297,
+            "minADE": 0.2987347521048875,
+            "minFDE": 0.5589073013226468,
+            "top1FDE": 1.6517145749261248,
+            "uncovered": 0.5892255892255892,
+            "mean_shift": 0.030193988986618625,
+            "saturation_fraction": 0.0
+          },
+          "turn_any": {
+            "n": 533,
+            "minADE": 0.3357486147177643,
+            "minFDE": 0.6404769254400596,
+            "top1FDE": 1.9765644216066331,
+            "uncovered": 0.6135084427767354,
+            "mean_shift": 0.04016575617571935,
+            "saturation_fraction": 0.0
+          },
+          "decel_stop": {
+            "n": 822,
+            "minADE": 0.17319074519280003,
+            "minFDE": 0.2743479018130256,
+            "top1FDE": 0.9314320348902925,
+            "uncovered": 0.20437956204379562,
+            "mean_shift": 0.04589634996412923,
+            "saturation_fraction": 0.0
+          },
+          "obs_stationary": {
+            "n": 1109,
+            "minADE": 0.05757713572215296,
+            "minFDE": 0.11237670818979183,
+            "top1FDE": 0.2533674369711063,
+            "uncovered": 0.08025247971145176,
+            "mean_shift": 0.009049971224854703,
+            "saturation_fraction": 0.0
+          },
+          "obs_steady": {
+            "n": 1991,
+            "minADE": 0.207041346709403,
+            "minFDE": 0.36089625213318116,
+            "top1FDE": 1.101979292461636,
+            "uncovered": 0.2802611752887996,
+            "mean_shift": 0.11035315796997384,
+            "saturation_fraction": 0.0
+          },
+          "obs_other": {
+            "n": 1653,
+            "minADE": 0.21461349038698727,
+            "minFDE": 0.3766538149230346,
+            "top1FDE": 1.181890539793134,
+            "uncovered": 0.3454325468844525,
+            "mean_shift": 0.03696582524826429,
+            "saturation_fraction": 0.0
+          }
+        },
+        "parameter_count": 7019,
+        "parameter_diff_vs_A1": 0.0,
+        "archived_A1_exact": null,
+        "training_seconds": 31.90700000002107
+      },
+      "2": {
+        "arm": "R-lowspeed",
+        "seed": 2,
+        "epochs": 20,
+        "updates": 1700,
+        "clean": {
+          "overall": {
+            "n": 4753,
+            "minADE": 0.17485139917289502,
+            "minFDE": 0.30835312148973704,
+            "top1FDE": 0.9258522481348926,
+            "uncovered": 0.25836313907006103,
+            "mean_shift": 0.06741926554580167,
+            "saturation_fraction": 0.0
+          },
+          "stable": {
+            "n": 2941,
+            "minADE": 0.1374913361881613,
+            "minFDE": 0.23706511348041448,
+            "top1FDE": 0.6746612547189287,
+            "uncovered": 0.17103026181570893,
+            "mean_shift": 0.08099097854001898,
+            "saturation_fraction": 0.0
+          },
+          "transition": {
+            "n": 852,
+            "minADE": 0.2231743229864881,
+            "minFDE": 0.4035440815311524,
+            "top1FDE": 1.2111912155999216,
+            "uncovered": 0.38028169014084506,
+            "mean_shift": 0.056774093314506606,
+            "saturation_fraction": 0.0
+          },
+          "change": {
+            "n": 960,
+            "minADE": 0.2464189139113539,
+            "minFDE": 0.4422649273232075,
+            "top1FDE": 1.4421479891308777,
+            "uncovered": 0.41770833333333335,
+            "mean_shift": 0.035289347655249936,
+            "saturation_fraction": 0.0
+          },
+          "acceleration": {
+            "n": 502,
+            "minADE": 0.22222562912651345,
+            "minFDE": 0.3988147848284035,
+            "top1FDE": 1.3250411609505628,
+            "uncovered": 0.3844621513944223,
+            "mean_shift": 0.045119126900647746,
+            "saturation_fraction": 0.0
+          },
+          "deceleration": {
+            "n": 642,
+            "minADE": 0.1969689489583475,
+            "minFDE": 0.3098529648676667,
+            "top1FDE": 1.0952714742323744,
+            "uncovered": 0.24922118380062305,
+            "mean_shift": 0.06251310174539909,
+            "saturation_fraction": 0.0
+          },
+          "start": {
+            "n": 202,
+            "minADE": 0.22364019605105218,
+            "minFDE": 0.43029896399916817,
+            "top1FDE": 1.2640289657104158,
+            "uncovered": 0.5148514851485149,
+            "mean_shift": 0.006742633840324161,
+            "saturation_fraction": 0.0
+          },
+          "stationary": {
+            "n": 990,
+            "minADE": 0.02845402928856954,
+            "minFDE": 0.055780815929259965,
+            "top1FDE": 0.06738519568734752,
+            "uncovered": 0.00202020202020202,
+            "mean_shift": 0.008508082780869763,
+            "saturation_fraction": 0.0
+          },
+          "steady": {
+            "n": 1704,
+            "minADE": 0.19071457458271118,
+            "minFDE": 0.32545402973575016,
+            "top1FDE": 0.9407142836361856,
+            "uncovered": 0.25234741784037557,
+            "mean_shift": 0.12852897968421684,
+            "saturation_fraction": 0.0
+          },
+          "stop": {
+            "n": 180,
+            "minADE": 0.08815830438927705,
+            "minFDE": 0.15406324212211506,
+            "top1FDE": 0.3522799252020114,
+            "uncovered": 0.07222222222222222,
+            "mean_shift": 0.0241873558903243,
+            "saturation_fraction": 0.0
+          },
+          "turn": {
+            "n": 236,
+            "minADE": 0.38220301098360787,
+            "minFDE": 0.7463485949780944,
+            "top1FDE": 2.365026916731802,
+            "uncovered": 0.6440677966101694,
+            "mean_shift": 0.058694044541670744,
+            "saturation_fraction": 0.0
+          },
+          "turn_and_speed": {
+            "n": 297,
+            "minADE": 0.29854047187496174,
+            "minFDE": 0.5585355011700031,
+            "top1FDE": 1.6352246233187635,
+            "uncovered": 0.5858585858585859,
+            "mean_shift": 0.03588095007312896,
+            "saturation_fraction": 0.0
+          },
+          "turn_any": {
+            "n": 533,
+            "minADE": 0.3355842978217544,
+            "minFDE": 0.641694769722929,
+            "top1FDE": 1.9583641003271628,
+            "uncovered": 0.6116322701688556,
+            "mean_shift": 0.04598205756764277,
+            "saturation_fraction": 0.0
+          },
+          "decel_stop": {
+            "n": 822,
+            "minADE": 0.17314180051256564,
+            "minFDE": 0.27573842704017365,
+            "top1FDE": 0.93257259488266,
+            "uncovered": 0.21046228710462286,
+            "mean_shift": 0.05412060265304695,
+            "saturation_fraction": 0.0
+          },
+          "obs_stationary": {
+            "n": 1109,
+            "minADE": 0.05751397165179993,
+            "minFDE": 0.11114587556973143,
+            "top1FDE": 0.2431690773559903,
+            "uncovered": 0.08205590622182146,
+            "mean_shift": 0.008239694540354687,
+            "saturation_fraction": 0.0
+          },
+          "obs_steady": {
+            "n": 1991,
+            "minADE": 0.20713631269894092,
+            "minFDE": 0.3616177583881464,
+            "top1FDE": 1.0972816059814334,
+            "uncovered": 0.28578603716725265,
+            "mean_shift": 0.12064621688846862,
+            "saturation_fraction": 0.0
+          },
+          "obs_other": {
+            "n": 1653,
+            "minADE": 0.21468681616656535,
+            "minFDE": 0.3765037226152984,
+            "top1FDE": 1.177382668534978,
+            "uncovered": 0.34361766485178463,
+            "mean_shift": 0.04301229889231761,
+            "saturation_fraction": 0.0
+          }
+        },
+        "parameter_count": 7019,
+        "parameter_diff_vs_A1": 0.0,
+        "archived_A1_exact": null,
+        "training_seconds": 31.06099999998696
+      }
+    }
+  },
+  "percent_threshold": 0.5,
+  "paired": {
+    "R-centroid": {
+      "overall": {
+        "minADE": {
+          "mean": 0.0001632119639647748,
+          "values": [
+            0.00029140897868973337,
+            -0.0003083927042892842,
+            0.0005066196174938753
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": 0.00020760366720532866,
+          "values": [
+            3.818914697584219e-05,
+            -0.000794330422608791,
+            0.0013789522772489349
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "stable": {
+        "minADE": {
+          "mean": 0.0007656288690347882,
+          "values": [
+            0.0010243592838726778,
+            -0.0001270440174108156,
+            0.0013995713406425025
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": 0.0011381646855750753,
+          "values": [
+            0.0024061383427838035,
+            -0.0012135829123605113,
+            0.0022219386263019336
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "transition": {
+        "minADE": {
+          "mean": -0.0012645277843753207,
+          "values": [
+            -0.0003267981121568564,
+            -0.002110816727161735,
+            -0.0013559685138073707
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.0017262323511305262,
+          "values": [
+            -0.00333444833422214,
+            -0.0013714513946596618,
+            -0.0004727973245097772
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "change": {
+        "minADE": {
+          "mean": 0.00028623036621070835,
+          "values": [
+            -0.0004558835669206118,
+            0.0008293886998346212,
+            0.0004851859657181157
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": 0.00023767545696392242,
+          "values": [
+            -0.0011402033333369754,
+            0.00036237617684775625,
+            0.0014908535273809864
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "acceleration": {
+        "minADE": {
+          "mean": 0.0004029390466592231,
+          "values": [
+            0.0003992603441427267,
+            0.00019245775550225108,
+            0.0006170990403326915
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": 0.0007316507683687116,
+          "values": [
+            6.623373558556356e-05,
+            0.001882540493969631,
+            0.0002461780755509402
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "deceleration": {
+        "minADE": {
+          "mean": -0.0011440547044925993,
+          "values": [
+            -0.0008363141324680967,
+            -0.0014000441486212711,
+            -0.0011958058323884302
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.0018328692429928257,
+          "values": [
+            -0.002079495109087004,
+            -0.0033408882621226432,
+            -7.822435776883019e-05
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "start": {
+        "minADE": {
+          "mean": -0.00034283741940499546,
+          "values": [
+            -0.0020328745456275055,
+            -0.00010644746587562537,
+            0.0011108097532881445
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.001744427300757893,
+          "values": [
+            -0.00813448212469714,
+            -0.001586454737027898,
+            0.004487654959451359
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "stationary": {
+        "minADE": {
+          "mean": -0.0014719775125992725,
+          "values": [
+            -0.015464576633503757,
+            0.00899196958436932,
+            0.0020566745113366203
+          ],
+          "same_direction": 1,
+          "within_band": false,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": 0.007458629481404448,
+          "values": [
+            0.006580118072083696,
+            0.004067162590350115,
+            0.011728607781779532
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": false,
+          "better": true
+        }
+      },
+      "steady": {
+        "minADE": {
+          "mean": 0.0014013969597160096,
+          "values": [
+            0.002700459603482086,
+            -0.0006223013969124391,
+            0.002126032672578382
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": 0.001144227485695722,
+          "values": [
+            0.0019365792017033145,
+            -0.0013300246445560049,
+            0.0028261278999398565
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "stop": {
+        "minADE": {
+          "mean": -0.0010751847527539955,
+          "values": [
+            0.0008584737663726028,
+            -0.003627258654030463,
+            -0.0004567693706041265
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": 0.0004986715287053448,
+          "values": [
+            0.002023851969317758,
+            0.0014255833332997847,
+            -0.0019534207165015083
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "turn": {
+        "minADE": {
+          "mean": -0.0011379692687556453,
+          "values": [
+            -0.00019237131487015446,
+            -0.0016730894550160968,
+            -0.0015484470363806846
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.00221864685688559,
+          "values": [
+            -0.0015020583817355604,
+            -0.0034863888557719047,
+            -0.0016674933331493058
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "turn_and_speed": {
+        "minADE": {
+          "mean": -0.0004451976280835194,
+          "values": [
+            -0.000382736857430066,
+            0.0006877448114043228,
+            -0.001640600838224815
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -4.5662974701691596e-05,
+          "values": [
+            -0.0004524658433706641,
+            0.0020483205156011097,
+            -0.0017328435963355204
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "turn_any": {
+        "minADE": {
+          "mean": -0.0007940102412165769,
+          "values": [
+            -0.00028690950782261915,
+            -0.0005009679425396207,
+            -0.0015941532732874908
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.0011646549961662849,
+          "values": [
+            -0.0009934431018019385,
+            -0.0008014032767638124,
+            -0.0016991186099331035
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "decel_stop": {
+        "minADE": {
+          "mean": -0.0011363517651869308,
+          "values": [
+            -0.0006477360466279336,
+            -0.0016467245125026952,
+            -0.0011145947364301634
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.0015468359960163862,
+          "values": [
+            -0.0015788583901255038,
+            -0.0027570079666574543,
+            -0.00030464163126620036
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "obs_stationary": {
+        "minADE": {
+          "mean": -0.0009512951229720216,
+          "values": [
+            -0.008263301851145322,
+            0.003990288126147545,
+            0.0014191283560817114
+          ],
+          "same_direction": 1,
+          "within_band": false,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": 0.0023958947373778163,
+          "values": [
+            -0.0025709034610279513,
+            0.0011517460996974815,
+            0.00860684157346392
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "obs_steady": {
+        "minADE": {
+          "mean": 0.00012653030597387094,
+          "values": [
+            0.0013500848047280911,
+            -0.0016555338156294397,
+            0.0006850399288229614
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.0007847157936187917,
+          "values": [
+            0.000682335083238339,
+            -0.0027862338835276113,
+            -0.00025024858056710286
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "obs_other": {
+        "minADE": {
+          "mean": 0.0004089847751286291,
+          "values": [
+            0.0006078646174787483,
+            0.0004838585984587862,
+            0.0001352311094483527
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": 0.0009172322785118888,
+          "values": [
+            -0.00019006826102030416,
+            0.0011357164602093794,
+            0.001806048636346591
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      }
+    },
+    "R-mode": {
+      "overall": {
+        "minADE": {
+          "mean": -0.006818311454040105,
+          "values": [
+            -0.0076580477233170186,
+            -0.006776359601864623,
+            -0.006020527036938672
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.009840204824866769,
+          "values": [
+            -0.010711137733665055,
+            -0.011463230709006345,
+            -0.007346246031928905
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      },
+      "stable": {
+        "minADE": {
+          "mean": -0.012553200830162906,
+          "values": [
+            -0.013634138768543913,
+            -0.011922924560737291,
+            -0.012102539161207515
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.019851401104438244,
+          "values": [
+            -0.01954109806229809,
+            -0.02274174822305386,
+            -0.017271357027962786
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      },
+      "transition": {
+        "minADE": {
+          "mean": -0.0016951084427116274,
+          "values": [
+            -0.003790234842757201,
+            -0.0011342920483563557,
+            -0.00016079843702132557
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.0007595661166030313,
+          "values": [
+            -0.005586563929088184,
+            -0.0002753534367871957,
+            0.003583219016066286
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "change": {
+        "minADE": {
+          "mean": -0.0012024109911687268,
+          "values": [
+            -0.0006290499636159019,
+            -0.002568851266226968,
+            -0.0004093317436633104
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.0007288177296470207,
+          "values": [
+            -0.0003557899724204727,
+            -0.0019433196682252518,
+            0.00011265645170466243
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "acceleration": {
+        "minADE": {
+          "mean": -0.002537629328287013,
+          "values": [
+            0.0002556505289535993,
+            -0.004533516283333983,
+            -0.0033350222304806554
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.00536938685578033,
+          "values": [
+            -0.0026973971009918163,
+            -0.007567561501075737,
+            -0.005843201965273437
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      },
+      "deceleration": {
+        "minADE": {
+          "mean": -0.013459013728203647,
+          "values": [
+            -0.014874509214108267,
+            -0.01339107753170432,
+            -0.012111454438798352
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.032592457007497876,
+          "values": [
+            -0.03530159604643757,
+            -0.030041370696087144,
+            -0.03243440427996891
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      },
+      "start": {
+        "minADE": {
+          "mean": 0.004766950459206794,
+          "values": [
+            0.002104808749404441,
+            0.0034468615023749427,
+            0.008749181125840999
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": 0.010258007675515138,
+          "values": [
+            0.0062795275493727765,
+            0.002597523298352611,
+            0.02189697217882003
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": false,
+          "better": true
+        }
+      },
+      "stationary": {
+        "minADE": {
+          "mean": 0.032992514555274556,
+          "values": [
+            0.03217276833234006,
+            0.03381943931543241,
+            0.0329853360180512
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": false,
+          "better": true
+        },
+        "minFDE": {
+          "mean": 0.028566025201268237,
+          "values": [
+            0.03515964828048779,
+            0.009805493618617822,
+            0.040732933704699104
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": false,
+          "better": true
+        }
+      },
+      "steady": {
+        "minADE": {
+          "mean": -0.01724720114935015,
+          "values": [
+            -0.017883508740028198,
+            -0.017408030679372688,
+            -0.01645006402864957
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.024689365268446634,
+          "values": [
+            -0.02578022098170929,
+            -0.02660761232739195,
+            -0.021680262496238667
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      },
+      "stop": {
+        "minADE": {
+          "mean": -0.01954311186496042,
+          "values": [
+            -0.025630797933985816,
+            -0.015246920963620125,
+            -0.01775161669727532
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.007600166318035395,
+          "values": [
+            -0.009020313065839503,
+            0.00039519940668752973,
+            -0.014175385294954213
+          ],
+          "same_direction": 2,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      },
+      "turn": {
+        "minADE": {
+          "mean": 0.004587083602908049,
+          "values": [
+            0.003429071315215304,
+            0.0037861395757633476,
+            0.006546039917745494
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": 0.018844297845051372,
+          "values": [
+            0.019106011116285293,
+            0.013855272794305984,
+            0.02357160962456284
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": false,
+          "better": true
+        }
+      },
+      "turn_and_speed": {
+        "minADE": {
+          "mean": 0.007462321725253296,
+          "values": [
+            0.004225501374764407,
+            0.011287710503325665,
+            0.006873753297669816
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": false,
+          "better": true
+        },
+        "minFDE": {
+          "mean": 0.007072622079962547,
+          "values": [
+            0.002940992236892037,
+            0.013295582598241595,
+            0.004981291404754007
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": false,
+          "better": true
+        }
+      },
+      "turn_any": {
+        "minADE": {
+          "mean": 0.00601457791094225,
+          "values": [
+            0.0038245896302968596,
+            0.007510565634223143,
+            0.006708578468306747
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": false,
+          "better": true
+        },
+        "minFDE": {
+          "mean": 0.013143856934209422,
+          "values": [
+            0.011272708856648106,
+            0.013583757163707744,
+            0.014575104782272419
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": false,
+          "better": true
+        }
+      },
+      "decel_stop": {
+        "minADE": {
+          "mean": -0.014133073555069172,
+          "values": [
+            -0.016071355343895366,
+            -0.013596625821723052,
+            -0.012731239499589098
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.029545939857241077,
+          "values": [
+            -0.03209509778292219,
+            -0.026312970518138412,
+            -0.03022975127066263
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      },
+      "obs_stationary": {
+        "minADE": {
+          "mean": 0.01849836065931128,
+          "values": [
+            0.016985529389761056,
+            0.017907854362381848,
+            0.020601698225790943
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": false,
+          "better": true
+        },
+        "minFDE": {
+          "mean": 0.02341557103736495,
+          "values": [
+            0.024667361232306284,
+            0.009037141170703644,
+            0.03654221070908492
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": false,
+          "better": true
+        }
+      },
+      "obs_steady": {
+        "minADE": {
+          "mean": -0.010074897496186322,
+          "values": [
+            -0.011033862813646822,
+            -0.009617058512938703,
+            -0.009573771161973443
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.015389097618891142,
+          "values": [
+            -0.01636968553196505,
+            -0.016128647230009507,
+            -0.013668960094698868
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      },
+      "obs_other": {
+        "minADE": {
+          "mean": -0.007597445745593771,
+          "values": [
+            -0.00818989183045793,
+            -0.007923649580610315,
+            -0.006678795825713069
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.010088484521957245,
+          "values": [
+            -0.0112160328198454,
+            -0.010138314947988114,
+            -0.008911105798038221
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      }
+    },
+    "R-geom": {
+      "overall": {
+        "minADE": {
+          "mean": -0.006695859064057341,
+          "values": [
+            -0.0059823122814721685,
+            -0.008813765388061556,
+            -0.005291499522638299
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.01207361301326674,
+          "values": [
+            -0.011524919972690117,
+            -0.015343425441696423,
+            -0.009352493625413683
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      },
+      "stable": {
+        "minADE": {
+          "mean": -0.015507055248369742,
+          "values": [
+            -0.013489008057470997,
+            -0.019791877775862332,
+            -0.013240279911775898
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.022138833695388122,
+          "values": [
+            -0.020764105114451592,
+            -0.027877641489924,
+            -0.01777475448178878
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      },
+      "transition": {
+        "minADE": {
+          "mean": 0.0015301837706156822,
+          "values": [
+            0.0009058301230679966,
+            0.0019719491786693855,
+            0.0017127720101096644
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": 0.0035314873636600463,
+          "values": [
+            0.00033994461636521756,
+            0.004202943370434475,
+            0.006051574104180446
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "change": {
+        "minADE": {
+          "mean": 0.0016519140969210404,
+          "values": [
+            0.0012270276486916476,
+            0.0011631843741389813,
+            0.002565530267932492
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.008125567943662038,
+          "values": [
+            -0.005891650741540744,
+            -0.010514251777108408,
+            -0.007970801312336961
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      },
+      "acceleration": {
+        "minADE": {
+          "mean": -0.007750774237103834,
+          "values": [
+            -0.007534724403903459,
+            -0.008457494871721982,
+            -0.0072601034356860605
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.011804971262665775,
+          "values": [
+            -0.010110818788387377,
+            -0.011212888611196625,
+            -0.014091206388413324
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      },
+      "deceleration": {
+        "minADE": {
+          "mean": -0.0004514586209783585,
+          "values": [
+            0.0002656495992112706,
+            -0.0012550964098299033,
+            -0.0003649290523164428
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.0088098743878721,
+          "values": [
+            -0.009727708832938164,
+            -0.010709685779614286,
+            -0.0059922285510638496
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      },
+      "start": {
+        "minADE": {
+          "mean": 0.0027830138469328025,
+          "values": [
+            -0.006562750936145001,
+            0.00627311531091701,
+            0.008638677166026398
+          ],
+          "same_direction": 2,
+          "within_band": false,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.01606823139419163,
+          "values": [
+            -0.022731600392563056,
+            -0.013236905021252188,
+            -0.012236188768759648
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      },
+      "stationary": {
+        "minADE": {
+          "mean": 0.030106961132637593,
+          "values": [
+            0.05766687166186879,
+            -0.019853550550713805,
+            0.05250756228675779
+          ],
+          "same_direction": 2,
+          "within_band": false,
+          "worse": false,
+          "better": true
+        },
+        "minFDE": {
+          "mean": 0.04077760980160309,
+          "values": [
+            0.05701393379075559,
+            -0.026347199096499407,
+            0.09166609471055309
+          ],
+          "same_direction": 2,
+          "within_band": false,
+          "worse": false,
+          "better": true
+        }
+      },
+      "steady": {
+        "minADE": {
+          "mean": -0.019256362866660954,
+          "values": [
+            -0.01988090208157045,
+            -0.020121878586750297,
+            -0.017766307931662118
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.02999532058602757,
+          "values": [
+            -0.031760273525371474,
+            -0.030199475715007917,
+            -0.02802621251770332
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      },
+      "stop": {
+        "minADE": {
+          "mean": 0.0016473781260787357,
+          "values": [
+            0.012617629112462114,
+            -0.001697571242132323,
+            -0.005977923492093584
+          ],
+          "same_direction": 1,
+          "within_band": false,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.007809446925646594,
+          "values": [
+            -0.00708992273367115,
+            -0.004226326478228293,
+            -0.01211209156504034
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      },
+      "turn": {
+        "minADE": {
+          "mean": 0.0003952449988859537,
+          "values": [
+            0.000593774480489917,
+            0.00011976439324312693,
+            0.0004721961229248173
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": 0.012974625387587055,
+          "values": [
+            0.017998136802728326,
+            0.009846345492076636,
+            0.0110793938679562
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": false,
+          "better": true
+        }
+      },
+      "turn_and_speed": {
+        "minADE": {
+          "mean": 0.006250992282093064,
+          "values": [
+            0.007525390258395381,
+            0.00659311710784527,
+            0.004634469480038539
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": false,
+          "better": true
+        },
+        "minFDE": {
+          "mean": 0.0001343833027428465,
+          "values": [
+            0.002372770839470739,
+            -0.0022347216079445786,
+            0.0002651006767023789
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "turn_any": {
+        "minADE": {
+          "mean": 0.003302132472719784,
+          "values": [
+            0.004036111896562056,
+            0.0033336943512047856,
+            0.0025365911703925104
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": 0.006752642207506117,
+          "values": [
+            0.010426341469802924,
+            0.0039856057917468934,
+            0.005845979360968534
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": false,
+          "better": true
+        }
+      },
+      "decel_stop": {
+        "minADE": {
+          "mean": -0.0002152617040080592,
+          "values": [
+            0.0016400473362602197,
+            -0.001304103747190366,
+            -0.0009817287010940312
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.008684177509068322,
+          "values": [
+            -0.009405880688053925,
+            -0.009915491233666085,
+            -0.006731160605484954
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      },
+      "obs_stationary": {
+        "minADE": {
+          "mean": 0.014251150575933217,
+          "values": [
+            0.022076603471946843,
+            -0.005223217237965816,
+            0.025900065493818625
+          ],
+          "same_direction": 2,
+          "within_band": false,
+          "worse": false,
+          "better": true
+        },
+        "minFDE": {
+          "mean": 0.01138844610987455,
+          "values": [
+            0.016581738046816175,
+            -0.017353868558777297,
+            0.03493746884158477
+          ],
+          "same_direction": 2,
+          "within_band": false,
+          "worse": false,
+          "better": true
+        }
+      },
+      "obs_steady": {
+        "minADE": {
+          "mean": -0.012870756602711234,
+          "values": [
+            -0.012431384160621839,
+            -0.013442564222360787,
+            -0.012738321425151078
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.019459068045790378,
+          "values": [
+            -0.018849800684361595,
+            -0.02077545034921502,
+            -0.018751953103794516
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      },
+      "obs_other": {
+        "minADE": {
+          "mean": -0.0032918265998261496,
+          "values": [
+            -0.0035535150413201766,
+            -0.004074659528203517,
+            -0.0022473052299547547
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.0082143640505948,
+          "values": [
+            -0.008614497771508578,
+            -0.008613299851613077,
+            -0.007415294528662741
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      }
+    },
+    "R-lowspeed": {
+      "overall": {
+        "minADE": {
+          "mean": -0.0005791007506970406,
+          "values": [
+            0.00031744064396221905,
+            -0.000883459803924902,
+            -0.001171283092128439
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.002472173819330218,
+          "values": [
+            -0.003145288685928893,
+            -0.002726337807255508,
+            -0.0015448949648062538
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "stable": {
+        "minADE": {
+          "mean": -0.003218696321640365,
+          "values": [
+            -0.0009880628779181944,
+            -0.0037389891594286073,
+            -0.004929036927574293
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.0012820869431057573,
+          "values": [
+            -0.0008059972679166361,
+            -0.0016953595128785803,
+            -0.0013449040485220554
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "transition": {
+        "minADE": {
+          "mean": -0.0005224803980364475,
+          "values": [
+            -0.0014497383744072057,
+            -0.00026547981966618117,
+            0.00014777699996404436
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.0054210111711302895,
+          "values": [
+            -0.008911492714273717,
+            -0.0038472036071637294,
+            -0.0035043371919534216
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      },
+      "change": {
+        "minADE": {
+          "mean": 0.0038472230878296245,
+          "values": [
+            0.003937729018189562,
+            0.0034659543853921004,
+            0.004137985859907212
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.0020568266840406877,
+          "values": [
+            -0.0023620015594771893,
+            -0.003517189351203154,
+            -0.0002912891414417196
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "acceleration": {
+        "minADE": {
+          "mean": 0.0014003558114776455,
+          "values": [
+            0.0006414385674675671,
+            0.0008390364508104042,
+            0.0027205924161549655
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": 9.720413590889414e-05,
+          "values": [
+            -0.0008160246450454878,
+            0.00031551074219537956,
+            0.0007921263105767906
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "deceleration": {
+        "minADE": {
+          "mean": 0.004654559375653437,
+          "values": [
+            0.004312937678692119,
+            0.004784290811372882,
+            0.004866449636895309
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.0014596741199944807,
+          "values": [
+            -0.003423517889788563,
+            0.00222547507092663,
+            -0.003180979541121509
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "start": {
+        "minADE": {
+          "mean": 0.002153366048538441,
+          "values": [
+            -0.00030057659142612714,
+            0.00011236856017626806,
+            0.006648306176865182
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.003369284884207661,
+          "values": [
+            -0.010768186401624913,
+            -0.00651465884444602,
+            0.00717499059344795
+          ],
+          "same_direction": 2,
+          "within_band": false,
+          "worse": false,
+          "better": false
+        }
+      },
+      "stationary": {
+        "minADE": {
+          "mean": -0.0039109869259341306,
+          "values": [
+            0.0027927609856382984,
+            -0.0020585177294702994,
+            -0.012467204033970392
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": 0.0011620446952568992,
+          "values": [
+            -0.010841311799745457,
+            -0.011559083090241895,
+            0.02588652897575805
+          ],
+          "same_direction": 1,
+          "within_band": false,
+          "worse": false,
+          "better": false
+        }
+      },
+      "steady": {
+        "minADE": {
+          "mean": -0.00274520179694678,
+          "values": [
+            -9.15621929937771e-05,
+            -0.0035404094836739564,
+            -0.004603633714172606
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.0036865933819157557,
+          "values": [
+            -0.0017184219635439923,
+            -0.004360409483489702,
+            -0.004980948698713572
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "stop": {
+        "minADE": {
+          "mean": -0.01075063629448425,
+          "values": [
+            -0.012748589573253533,
+            -0.007971494651059396,
+            -0.011531824659139822
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.010080716263098847,
+          "values": [
+            -0.010418380250380777,
+            -0.001436276549332538,
+            -0.018387491989583227
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      },
+      "turn": {
+        "minADE": {
+          "mean": -0.0023971864893181927,
+          "values": [
+            -0.003659639895541522,
+            -0.0019979361978037513,
+            -0.0015339833746093046
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.0009615503927994004,
+          "values": [
+            -0.002886448336179237,
+            -0.00022693486132685514,
+            0.0002287320191078912
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "turn_and_speed": {
+        "minADE": {
+          "mean": 0.000622470155630069,
+          "values": [
+            0.001568701980815601,
+            0.0007748385987211837,
+            -0.0004761301126465778
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.003915854002970971,
+          "values": [
+            -0.002862183432084775,
+            -0.0047977664062812675,
+            -0.004087612170546873
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "turn_any": {
+        "minADE": {
+          "mean": -0.0008979252442976963,
+          "values": [
+            -0.0010631721394420701,
+            -0.0006212919180734744,
+            -0.0010093116753775444
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.0023930380036720025,
+          "values": [
+            -0.0028746899627747347,
+            -0.002444326228931093,
+            -0.0018600978193101803
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "decel_stop": {
+        "minADE": {
+          "mean": 0.0029501614566250778,
+          "values": [
+            0.002414511242628592,
+            0.00337149388865976,
+            0.0030644792385868813
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.0025056941418634127,
+          "values": [
+            -0.0042769394685342466,
+            0.0017769200811074137,
+            -0.005017063038163405
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "obs_stationary": {
+        "minADE": {
+          "mean": 0.0009209769170532475,
+          "values": [
+            0.002983577113521152,
+            0.00048310019023467543,
+            -0.0007037465525960851
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": 0.002200814304879506,
+          "values": [
+            -0.006952160172181143,
+            -0.005984244529673388,
+            0.01953884761649305
+          ],
+          "same_direction": 1,
+          "within_band": false,
+          "worse": false,
+          "better": false
+        }
+      },
+      "obs_steady": {
+        "minADE": {
+          "mean": 0.00011364232138666441,
+          "values": [
+            0.0019089086169429281,
+            -0.0002841765822694242,
+            -0.0012838050705135107
+          ],
+          "same_direction": 1,
+          "within_band": false,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": 0.0016068857974205208,
+          "values": [
+            0.003330182173958307,
+            0.0018490444894049274,
+            -0.0003585692711016719
+          ],
+          "same_direction": 2,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        }
+      },
+      "obs_other": {
+        "minADE": {
+          "mean": -0.0016569883942970283,
+          "values": [
+            -0.002018931362787635,
+            -0.001827426602439619,
+            -0.001124607217663831
+          ],
+          "same_direction": 3,
+          "within_band": true,
+          "worse": false,
+          "better": false
+        },
+        "minFDE": {
+          "mean": -0.008192064321837242,
+          "values": [
+            -0.009957200025282775,
+            -0.007402623111728568,
+            -0.00721636982850038
+          ],
+          "same_direction": 3,
+          "within_band": false,
+          "worse": true,
+          "better": false
+        }
+      }
+    }
+  },
+  "decision": {
+    "E1_capacity": false,
+    "E2_geometry": false,
+    "mode_and_geometry_needed": true,
+    "E4_centroid_improves": false,
+    "centroid_within_band": true,
+    "S1_lowspeed": false
+  }
+}

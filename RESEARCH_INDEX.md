@@ -1,7 +1,17 @@
 # Research Archive Index
 
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
-Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases10–19 retain selected compact `.npz` statistics and derived analysis metadata with checksums and CPU-only reanalysis tools; these are saved-output metrics, not raw datasets or complete coordinate predictions.
+Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–20 retain compact `.npz` statistics and derived analysis metadata, with checksums and CPU-only reanalysis tools.
+
+## Phase 20: set calibration and refinement diagnostics — COMPLETE (2026-11-19)
+
+| Experiment | Report | Outcome |
+| :--- | :--- | :--- |
+| EXP-SET-CALIB-DIAG | [结果](research_archive/20_calibration_refinement/EXP_CALIBRATION_REFINEMENT_20261119/snapshot/SET_CALIB_DIAG/REPORT.md) | `RANGE_OK_PLACEMENT_BAD` under the specified coverage and placement criteria. |
+| EXP-REFINE-MECH-DIAG | [结果](research_archive/20_calibration_refinement/EXP_CALIBRATION_REFINEMENT_20261119/snapshot/REFINE/MECH_DIAG/REPORT.md) | Large shifts in near-stationary windows, reduced lateral deviation in turning windows, and strong dependence of the jointly trained model on its second pass. |
+| EXP-REFINE-ABL | [结果](research_archive/20_calibration_refinement/EXP_CALIBRATION_REFINEMENT_20261119/snapshot/REFINE/ABL/REPORT.md) | Both inputs retain more of A1's overall gain. The tested centroid and low-speed changes fall short of their improvement thresholds. |
+
+[Overview and CPU reanalysis](research_archive/20_calibration_refinement/EXP_CALIBRATION_REFINEMENT_20261119/). All three studies use C0. The independent 32/64/128-epoch budget experiment is marked `NOT_STARTED`.
 
 ## Phase 19: precision slot experiments — COMPLETE / pilot screen not passed (2026-11-19)
 
