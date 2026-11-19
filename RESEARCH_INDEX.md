@@ -1,7 +1,17 @@
 # Research Archive Index
 
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
-Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases10–18 retain selected compact `.npz` statistics and derived analysis metadata with checksums and CPU-only reanalysis tools; these are saved-output metrics, not raw datasets or complete coordinate predictions.
+Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases10–19 retain selected compact `.npz` statistics and derived analysis metadata with checksums and CPU-only reanalysis tools; these are saved-output metrics, not raw datasets or complete coordinate predictions.
+
+## Phase 19: precision slot experiments — COMPLETE / pilot screen not passed (2026-11-19)
+
+| Experiment | Report | Outcome |
+| :--- | :--- | :--- |
+| [PREC-DIAG](research_archive/19_precision_slot/EXP_PRECISION_SLOT_20261119/snapshot/PREC_DIAG/) | [结果](research_archive/19_precision_slot/EXP_PRECISION_SLOT_20261119/snapshot/PREC_DIAG/RESULT_INTERPRETATION_ZH.md) | CV closes a precision gap. Sparse but useful turning candidates are lost under replacement. |
+| [PREC-PILOT](research_archive/19_precision_slot/EXP_PRECISION_SLOT_20261119/snapshot/PREC_PILOT/) | [结果](research_archive/19_precision_slot/EXP_PRECISION_SLOT_20261119/snapshot/PREC_PILOT/RESULT_INTERPRETATION_ZH.md) | Two 32-epoch runs completed. Learned CV plus E3_self fails the joint gain and protection checks. |
+| [PREC-HISTORY-DIAG](research_archive/19_precision_slot/EXP_PRECISION_SLOT_20261119/snapshot/PREC_HISTORY_DIAG/) | [结果](research_archive/19_precision_slot/EXP_PRECISION_SLOT_20261119/snapshot/PREC_HISTORY_DIAG/RESULT_INTERPRETATION_ZH.md) | Near-stationary CV restoration helps relative to Prior_self, with zero joint coverage losses. The protection checks against E3_self still fail. |
+
+[Overview and CPU reanalysis](research_archive/19_precision_slot/EXP_PRECISION_SLOT_20261119/). All conclusions refer to the C0 development protocol. The 64-epoch confirmation, five-fold and transfer stages remain conditional.
 
 ## Phase 18: decoder information probe — COMPLETE / NO_INFO_GAIN (2026-11-17)
 

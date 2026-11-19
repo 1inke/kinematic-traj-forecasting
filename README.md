@@ -4,7 +4,13 @@ Versioned research codebase, protocol governance, independent audit suite, and p
 
 > **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. Recent archives additionally retain compact, checksum-verified per-window analysis arrays for independent CPU aggregate reanalysis.
 
-## Latest completed study: decoder information probe — NO_INFO_GAIN (2026-11-17)
+## Latest completed studies: precision slot diagnostics and pilot (2026-11-19)
+
+**三项实验已完成。32 轮学习型 CV 单槽组合未通过初筛。** Offline replacement with exact CV improved B0 minADE/minFDE by 3.25%/2.92% at K=20 across five seeds. The trained CV slot plus E3_self improved 1.54%/0.50% over E3_self and failed maneuver and motion protection. For the trained model, restoring CV in near-stationary histories improved minFDE by 1.12% without losing joint coverage. The protected groups still failed against E3_self, so the 64-epoch confirmation was not started.
+
+[Precision-slot archive and CPU reanalysis](research_archive/19_precision_slot/EXP_PRECISION_SLOT_20261119/) · [结论与状态](research_archive/19_precision_slot/EXP_PRECISION_SLOT_20261119/STATUS.json)
+
+## Earlier completed study: decoder information probe — NO_INFO_GAIN (2026-11-17)
 
 **18 次训练全部完成，独立复算通过。** A1 reproduced the 1.29% minFDE improvement over B0, but reading extra target or neighbor tokens did not improve minFDE over A1. Candidate-path risk changed the neighbors read, but its 0.161% gain over distance selection fell below the 0.5% threshold and the mechanism check failed. This result is limited to the frozen B0 interface and C0 dev. B0 remains the baseline.
 
@@ -88,7 +94,7 @@ The publication includes compact saved-output statistics and a NumPy-only verifi
 | `reviews/` | Governance verification snapshots (`governance_20261020/`) |
 | `archive/` | Historical migration notes (`MIGRATION_PLAN.md`), directory index (`INDEX.csv`, `build_index.py`), and legacy root readme snapshot |
 | `docs/` | Organized architectural design specs (`docs/architecture/`), multi-series synthesis reviews (`docs/synthesis/`), and detailed study design notes |
-| `research_archive/` | Chronological/thematic archive of experimental series (`01_` through `18_`), preserving scripts, configs, complete and incomplete studies, negative and positive results, and compact reanalysis inputs |
+| `research_archive/` | Chronological/thematic archive of experimental series (`01_` through `19_`), preserving scripts, configs, complete and incomplete studies, negative and positive results, and compact reanalysis inputs |
 | `RESEARCH_INDEX.md` | Complete mapping from every legacy experiment folder to its phased path under `research_archive/` |
 
 ---
@@ -113,6 +119,7 @@ The publication includes compact saved-output statistics and a NumPy-only verifi
 16. `16_kine_anchor_oracle/` — **Execution COMPLETE / NOT_SUPPORTED**: five-fold zero-network-training kinematic-template oracle comparison, fixed sensitivity analysis, 150 clustering runs and per-seed CPU reanalysis
 17. `17_set_interact_probe/` — **Execution COMPLETE / NO_SET_GAIN**: frozen B0 cache, six arms × three refiner seeds, complete training histories, fixed mechanism comparisons and CPU reanalysis
 18. `18_dec_info_probe/` — **Execution COMPLETE / NO_INFO_GAIN**: frozen candidate refinement with target and neighbor tokens, matched-count neighbor permutation, and CPU reanalysis
+19. `19_precision_slot/` — **Execution COMPLETE / pilot screen not passed**: saved-trajectory CV diagnostics, two 32-epoch precision-slot training runs, and observation-history interventions
 
 ---
 
