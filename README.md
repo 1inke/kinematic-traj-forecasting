@@ -4,7 +4,13 @@ Versioned research codebase, protocol governance, independent audit suite, and p
 
 > **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. Recent archives additionally retain compact, checksum-verified per-window analysis arrays for independent CPU aggregate reanalysis.
 
-## Latest completed study: score coupling (2026-11-20)
+## Latest completed study: adaptive width and energy score (2026-11-20)
+
+P1、P2 均已完成。按观测在 fit 上选择缩放倍数后，总体 minFDE 平均改善 0.32%。轨迹加权 ES 在五个 seed 上均选择将近静止候选缩到 0.6 倍。总体 minFDE 改善 0.57%，排除 zara02 后恶化 0.07%，转向难组保持原结果。E2、E3、E4 达到预设门槛。
+
+[实验报告、代码和复核](research_archive/23_adapt_es_precheck/EXP_ADAPT_ES_PRECHECK_20261120/) · [状态](research_archive/23_adapt_es_precheck/EXP_ADAPT_ES_PRECHECK_20261120/STATUS.json)
+
+## Earlier completed study: score coupling (2026-11-20)
 
 两阶段在 C0 上完成。诊断中 K1 达标，K2 的推离真值标记未达到。九组冻结编码器对照均已完成。切断评分几何输入的梯度后，三个 seed 的难组 J 覆盖率均下降，平均降低 1.50 个百分点。阶段二只有 S0 达标。
 

@@ -1,7 +1,11 @@
 # Research Archive Index
 
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
-Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–22 retain compact `.npz` statistics and derived analysis metadata, with checksums and CPU-only reanalysis tools.
+Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–23 retain compact `.npz` statistics and derived analysis metadata, with checksums and CPU-only reanalysis tools.
+
+## Phase 23: adaptive width and energy score — COMPLETE / E2, E3, E4 (2026-11-20)
+
+[EXP-ADAPT-ES-PRECHECK](research_archive/23_adapt_es_precheck/EXP_ADAPT_ES_PRECHECK_20261120/) archives P1 and P2. The fit-selected observation-only rule yields a 0.32% overall minFDE reduction. Weighted trajectory ES favors stronger contraction for near-stationary windows. Under that contraction, overall minFDE increases by 0.07% after excluding zara02. Forty sets of derived window metrics support ranking and gate reanalysis.
 
 ## Phase 22: score coupling — COMPLETE / K1 and S0 (2026-11-20)
 
