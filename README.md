@@ -4,9 +4,15 @@ Versioned research codebase, protocol governance, independent audit suite, and p
 
 > **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. Recent archives additionally retain compact, checksum-verified per-window analysis arrays for independent CPU aggregate reanalysis.
 
-## Latest completed study: adaptive width and energy score (2026-11-20)
+## Latest completed study: centered candidate spread (2026-11-20)
 
-P1、P2 均已完成。按观测在 fit 上选择缩放倍数后，总体 minFDE 平均改善 0.32%。轨迹加权 ES 在五个 seed 上均选择将近静止候选缩到 0.6 倍。总体 minFDE 改善 0.57%，排除 zara02 后恶化 0.07%，转向难组保持原结果。E2、E3、E4 达到预设门槛。
+固定均值路径后，按观测调节散布让总体 minFDE 平均改善 1.16%，转向难组退步 2.69%。两个留出 seed 复现了总体改善方向。C1H 和 C5 达标，主分析的收益和稳健性要求仍未达到。已知未来动作时，总体改善 4.43%，主要来自减速与稳定运动。保留 B0 基线。
+
+[结果解读、代码和复核](research_archive/24_adapt_width_centered/EXP_ADAPT_WIDTH_CENTERED_20261120/) · [状态](research_archive/24_adapt_width_centered/EXP_ADAPT_WIDTH_CENTERED_20261120/STATUS.json)
+
+## Earlier completed study: adaptive width and energy score (2026-11-20)
+
+P1、P2 均已完成。此阶段以末观测点为中心缩放，倍率选择以 Phase 24 的固定均值路径分析为准。P2 中不依赖缩放的模型排序保留。原始分析完整归档。
 
 [实验报告、代码和复核](research_archive/23_adapt_es_precheck/EXP_ADAPT_ES_PRECHECK_20261120/) · [状态](research_archive/23_adapt_es_precheck/EXP_ADAPT_ES_PRECHECK_20261120/STATUS.json)
 
