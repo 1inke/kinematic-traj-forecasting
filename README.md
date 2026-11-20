@@ -4,7 +4,13 @@ Versioned research codebase, protocol governance, independent audit suite, and p
 
 > **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. Recent archives additionally retain compact, checksum-verified per-window analysis arrays for independent CPU aggregate reanalysis.
 
-## Latest completed studies: set calibration and refinement (2026-11-19)
+## Latest completed study: width-cause diagnosis (2026-11-20)
+
+五个 B0@64 seed 的 C0 诊断已完成。整体缩到 0.8 倍时，近静止组的 dev minFDE 改善 7.03%，fit 原训练损失上升 1.84%。只有 M2 通过。非赢家仍有明显梯度，少胜候选直接内收未通过主判据。
+
+[实验报告、代码和复核](research_archive/21_width_cause_diag/EXP_WIDTH_CAUSE_DIAG_20261120/) · [执行状态](research_archive/21_width_cause_diag/EXP_WIDTH_CAUSE_DIAG_20261120/STATUS.json)
+
+## Earlier completed studies: set calibration and refinement (2026-11-19)
 
 三项 C0 实验已完成。B0 的名义 90% 总体覆盖为 92.3%，近静止组为 97.8%，近静止 minFDE 比量化参照高 8.4%。二次修正的总体收益集中于匀速直行，静止和转向均有损失。冻结消融中，mode 表征和候选自身几何合用的总体表现优于只保留其中一类输入。增加集合中心信息仅改善 0.02% minFDE，低速限幅未达到静止组改善门槛。
 

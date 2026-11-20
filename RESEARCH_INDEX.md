@@ -1,7 +1,11 @@
 # Research Archive Index
 
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
-Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–20 retain compact `.npz` statistics and derived analysis metadata, with checksums and CPU-only reanalysis tools.
+Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–21 retain compact `.npz` statistics and derived analysis metadata, with checksums and CPU-only reanalysis tools.
+
+## Phase 21: width-cause diagnosis — COMPLETE / M2 (2026-11-20)
+
+[EXP-WIDTH-CAUSE-DIAG](research_archive/21_width_cause_diag/EXP_WIDTH_CAUSE_DIAG_20261120/) studies five frozen B0 models on C0. Uniform compression raises the fit objective while reducing near-stationary dev minFDE. Direct contraction of low-win candidates misses the primary threshold. The budget comparison includes eight new dev forward passes from sealed historical weights.
 
 ## Phase 20: set calibration and refinement diagnostics — COMPLETE (2026-11-19)
 
