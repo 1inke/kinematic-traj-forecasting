@@ -1,7 +1,11 @@
 # Research Archive Index
 
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
-Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–21 retain compact `.npz` statistics and derived analysis metadata, with checksums and CPU-only reanalysis tools.
+Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–22 retain compact `.npz` statistics and derived analysis metadata, with checksums and CPU-only reanalysis tools.
+
+## Phase 22: score coupling — COMPLETE / K1 and S0 (2026-11-20)
+
+[EXP-SCORE-COUPLING](research_archive/22_score_coupling/EXP_SCORE_COUPLING_20261120/) combines five frozen-model gradient diagnoses and nine matched decoder-training runs. Removing the direct score-to-geometry gradient reduces hard-group same-candidate joint coverage by 1.50 percentage points on average. Both stages use C0 fit/dev.
 
 ## Phase 21: width-cause diagnosis — COMPLETE / M2 (2026-11-20)
 

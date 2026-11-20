@@ -4,7 +4,13 @@ Versioned research codebase, protocol governance, independent audit suite, and p
 
 > **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. Recent archives additionally retain compact, checksum-verified per-window analysis arrays for independent CPU aggregate reanalysis.
 
-## Latest completed study: width-cause diagnosis (2026-11-20)
+## Latest completed study: score coupling (2026-11-20)
+
+两阶段在 C0 上完成。诊断中 K1 达标，K2 的推离真值标记未达到。九组冻结编码器对照均已完成。切断评分几何输入的梯度后，三个 seed 的难组 J 覆盖率均下降，平均降低 1.50 个百分点。阶段二只有 S0 达标。
+
+[Analysis, code and reanalysis](research_archive/22_score_coupling/EXP_SCORE_COUPLING_20261120/) · [Status](research_archive/22_score_coupling/EXP_SCORE_COUPLING_20261120/STATUS.json)
+
+## Earlier completed study: width-cause diagnosis (2026-11-20)
 
 五个 B0@64 seed 的 C0 诊断已完成。整体缩到 0.8 倍时，近静止组的 dev minFDE 改善 7.03%，fit 原训练损失上升 1.84%。只有 M2 通过。非赢家仍有明显梯度，少胜候选直接内收未通过主判据。
 

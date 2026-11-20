@@ -1,0 +1,87 @@
+{
+  "task": "Trajectory-Score-Coupling-Probe-20261120",
+  "state": "Running",
+  "current": {
+    "at": "2026-11-20T13:13:56.869787+08:00",
+    "pid": 24860,
+    "phase": "TRAIN",
+    "arm": "R-couple",
+    "seed": 0,
+    "epoch": 2,
+    "epochs": 64,
+    "completed": 0,
+    "total": 9
+  },
+  "chain": [
+    {
+      "Name": "python.exe",
+      "ProcessId": 24860,
+      "ParentProcessId": 23492
+    },
+    {
+      "Name": "python.exe",
+      "ProcessId": 23492,
+      "ParentProcessId": 28828
+    },
+    {
+      "Name": "powershell.exe",
+      "ProcessId": 28828,
+      "ParentProcessId": 2696
+    },
+    {
+      "Name": "svchost.exe",
+      "ProcessId": 2696,
+      "ParentProcessId": 1720
+    },
+    {
+      "Name": "services.exe",
+      "ProcessId": 1720,
+      "ParentProcessId": 1648
+    },
+    {
+      "Name": "wininit.exe",
+      "ProcessId": 1648,
+      "ParentProcessId": 1524
+    }
+  ],
+  "cache": {
+    "fit": {
+      "windows": 21719,
+      "full_encoder": {
+        "world_path_max_abs": 0.0,
+        "logit_max_abs": 0.0
+      },
+      "archive18_roundtrip_fp16_equal": true,
+      "fp16_path_max_abs": 0.000499725341796875,
+      "fp16_logit_max_abs": 0.0007677078247070312,
+      "fp32_path_max_abs": 3.814697265625E-06,
+      "fp32_logit_max_abs": 2.86102294921875E-06
+    },
+    "dev": {
+      "windows": 4753,
+      "full_encoder": {
+        "world_path_max_abs": 0.0,
+        "logit_max_abs": 0.0
+      },
+      "archive18_roundtrip_fp16_equal": true,
+      "fp16_path_max_abs": 0.000457763671875,
+      "fp16_logit_max_abs": 0.000553131103515625,
+      "fp32_path_max_abs": 3.814697265625E-06,
+      "fp32_logit_max_abs": 3.337860107421875E-06
+    }
+  },
+  "intervention": {
+    "R-couple": {
+      "params": 28315,
+      "fixture_direct_cls_geom_grad_max": 0.05333902686834335
+    },
+    "R-detach": {
+      "params": 28315,
+      "fixture_direct_cls_geom_grad_max": 0.0
+    },
+    "R-nogeom": {
+      "params": 28315,
+      "fixture_direct_cls_geom_grad_max": 0.0
+    }
+  }
+}
