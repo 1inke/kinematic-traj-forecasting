@@ -1,0 +1,95 @@
+{
+  "status": "PASS",
+  "contract": {
+    "arm": "B0",
+    "seed": 42,
+    "order_seed": 42,
+    "fold": "zara02",
+    "epochs": 64,
+    "device": "cuda:0",
+    "torch": "2.14.1+cu130",
+    "cuda": "13.0",
+    "batch": 64,
+    "gradient_clip": 5,
+    "training_inputs": {
+      "train.npz": "8ec226d73cee1da4c00517a0390650e4f7d6d8bbbd3eadd3a4dd97aec388587a",
+      "test.npz": "d29df4150720d214b4804a4ee68e4cecc6768897f9cb754fbb5d408b553b4b31"
+    },
+    "source": {
+      "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+      "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+      "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+    },
+    "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+  },
+  "epochs": 64,
+  "updates": 26112,
+  "seconds": 1980.347627917,
+  "parameters": 295474,
+  "peak_reserved_bytes": 262144000,
+  "dev": {
+    "overall": {
+      "windows": 5910,
+      "minADE": 0.13991660724187927,
+      "minFDE": 0.25422961307178316,
+      "Top1_ADE": 0.3205428221765424,
+      "Top1_FDE": 0.7089470952844419,
+      "J": 0.677834179357022,
+      "rank": 4.235871404399323,
+      "ES": 1.1123371043323917,
+      "brier_minFDE": 0.9902260585024597
+    },
+    "hard": {
+      "windows": 237,
+      "minADE": 0.4049123600713329,
+      "minFDE": 0.7775398168018531,
+      "Top1_ADE": 1.1261173338676813,
+      "Top1_FDE": 2.493970023827822,
+      "J": 0.10126582278481013,
+      "rank": 11.168776371308017,
+      "ES": 3.6353853936494596,
+      "brier_minFDE": 1.6825438939421429
+    },
+    "stationary": {
+      "windows": 2660,
+      "minADE": 0.04792148970845301,
+      "minFDE": 0.09380872325282257,
+      "Top1_ADE": 0.07617960146648284,
+      "Top1_FDE": 0.18995324228224755,
+      "J": 0.9406015037593985,
+      "rank": 1.9402255639097745,
+      "ES": 0.4501163101578172,
+      "brier_minFDE": 0.7034611495618247
+    },
+    "steady": {
+      "windows": 2274,
+      "minADE": 0.2090767945655835,
+      "minFDE": 0.37453083570097934,
+      "Top1_ADE": 0.49314227897122614,
+      "Top1_FDE": 1.0759823031027065,
+      "J": 0.46701846965699206,
+      "rank": 6.103781882145999,
+      "ES": 1.5725616913401086,
+      "brier_minFDE": 1.223852750469868
+    },
+    "other": {
+      "windows": 976,
+      "minADE": 0.22950343784107022,
+      "minFDE": 0.4111502961246961,
+      "Top1_ADE": 0.5843901606372469,
+      "Top1_FDE": 1.2682560977507356,
+      "J": 0.45286885245901637,
+      "rank": 6.140368852459017,
+      "ES": 1.844874606021757,
+      "brier_minFDE": 1.2274469194125037
+    }
+  },
+  "compression": null,
+  "mechanism": null,
+  "artifacts": {
+    "dev_predictions.npz": "2a200621a68d2cd4aa2ccfa6a7314d7d288b22d7d0bfd9249fe8209973bb7e06",
+    "dev_metrics.npz": "2908a7234208f4874b09746dac9d5571e44a0f50583f7a8d974fd16ed1ae6daa",
+    "final_ema.pt": "a69283caf2d8cd092bc725025a569c9a0e2eac8302c4ce944ea658766b34bc82"
+  },
+  "pool60": null
+}

@@ -1,7 +1,15 @@
 # Research Archive Index
 
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
-Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–24 retain derived analysis data with checksums and CPU reanalysis tools.
+Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–26 retain derived analysis data with checksums and CPU reanalysis tools.
+
+## Phase 26: three decoder directions — COMPLETE / F-PASS false (2026-11-22)
+
+[EXP-ADVISOR-3DIR](research_archive/26_advisor_3dir/EXP_ADVISOR_3DIR_20261121/) archives the Z2 pool diagnostic, all 33 C0 training runs, and all 30 five-fold runs. R2 reduces five-fold mean minFDE by 3.33% and increases ETH minFDE by 2.85%, failing its registered ETH requirement. Five-fold mean Top-1 FDE increases by 4.89%. B0 remains the baseline. The archive includes coordinate-free window metrics, the training and evaluation sources, and a CPU reanalysis tool.
+
+## Phase 25: conditional bias diagnosis — COMPLETE / P1 only (2026-11-20)
+
+[EXP-COND-BIAS-DIAG](research_archive/25_cond_bias_diag/EXP_COND_BIAS_DIAG_20261120/) compares longitudinal bias across observed speed groups and evaluates observation-conditioned shifts and probability tilts. The probability-weighted center has a consistent low-minus-high speed bias. The tested interventions fail their registered benefit and protection gates. The archive includes the complete conditional tables and decision reanalysis.
 
 ## Phase 24: centered candidate spread — COMPLETE / C1H and C5 (2026-11-20)
 

@@ -1,0 +1,1057 @@
+{
+  "binding": {
+    "inputs": {
+      "c0_inputs": "bf95f511920485b101208a2bfc1a881368595cfc2422c1657f7093580e69834f",
+      "baseline_sources": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+    },
+    "code": {
+      "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+      "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+      "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+      "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+      "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+      "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+      "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693"
+    },
+    "fivefold_manifest": "63a99c32086c9db13e24cb86d0c90146a2594debda204a417db9427702bbc6cf"
+  },
+  "PF1": "VERIFIED",
+  "PF4_causality": true,
+  "PF5_EMTA": true,
+  "PF9_deterministic_compression": true,
+  "CPU": {
+    "B0": {
+      "parameters": 295474,
+      "windows": 4,
+      "CPU_single_sample_ms": 10.838238500014086,
+      "loss": 1.9004629850387573
+    },
+    "R1": {
+      "parameters": 340741,
+      "windows": 4,
+      "CPU_single_sample_ms": 11.506717499969454,
+      "loss": 1.9004629850387573
+    },
+    "R2": {
+      "parameters": 340741,
+      "windows": 4,
+      "CPU_single_sample_ms": 11.670053500040467,
+      "loss": 3.8009259700775146
+    },
+    "R3": {
+      "parameters": 335154,
+      "windows": 4,
+      "CPU_single_sample_ms": 11.265160999982982,
+      "loss": 1.9004629850387573
+    },
+    "S1": {
+      "parameters": 295474,
+      "windows": 4,
+      "CPU_single_sample_ms": 10.737106499959737,
+      "loss": 1.9004628658294678
+    },
+    "S2": {
+      "parameters": 358789,
+      "windows": 4,
+      "CPU_single_sample_ms": 12.061047000031522,
+      "loss": 3.900925874710083
+    },
+    "S3": {
+      "parameters": 357509,
+      "windows": 4,
+      "CPU_single_sample_ms": 11.807951999969646,
+      "loss": 3.900925874710083
+    },
+    "S4": {
+      "parameters": 358789,
+      "windows": 4,
+      "CPU_single_sample_ms": 12.095224500001223,
+      "loss": 2.091409683227539
+    },
+    "G1": {
+      "parameters": 298274,
+      "windows": 4,
+      "CPU_single_sample_ms": 10.450372000036623,
+      "loss": 2.5904645919799805
+    },
+    "G2": {
+      "parameters": 376693,
+      "windows": 4,
+      "CPU_single_sample_ms": 12.6172610000026,
+      "loss": 4.490927219390869
+    },
+    "G2-intra": {
+      "parameters": 359925,
+      "windows": 4,
+      "CPU_single_sample_ms": 12.225565999926857,
+      "loss": 4.49092960357666
+    },
+    "R2-half": {
+      "parameters": 340741,
+      "windows": 4,
+      "CPU_single_sample_ms": 11.815252999952008,
+      "loss": 2.850694417953491
+    },
+    "S4-wide": {
+      "parameters": 358789,
+      "windows": 4,
+      "CPU_single_sample_ms": 12.079657500009944,
+      "loss": 2.091409683227539
+    }
+  },
+  "GPU": {
+    "B0": {
+      "parameters": 295474,
+      "windows": 16,
+      "CPU_single_sample_ms": null,
+      "loss": 1.8997273445129395
+    },
+    "R1": {
+      "parameters": 340741,
+      "windows": 16,
+      "CPU_single_sample_ms": null,
+      "loss": 1.8997273445129395
+    },
+    "R2": {
+      "parameters": 340741,
+      "windows": 16,
+      "CPU_single_sample_ms": null,
+      "loss": 3.799454689025879
+    },
+    "R3": {
+      "parameters": 335154,
+      "windows": 16,
+      "CPU_single_sample_ms": null,
+      "loss": 1.8997273445129395
+    },
+    "S1": {
+      "parameters": 295474,
+      "windows": 16,
+      "CPU_single_sample_ms": null,
+      "loss": 1.8997273445129395
+    },
+    "S2": {
+      "parameters": 358789,
+      "windows": 16,
+      "CPU_single_sample_ms": null,
+      "loss": 3.8994545936584473
+    },
+    "S3": {
+      "parameters": 357509,
+      "windows": 16,
+      "CPU_single_sample_ms": null,
+      "loss": 3.8994545936584473
+    },
+    "S4": {
+      "parameters": 358789,
+      "windows": 16,
+      "CPU_single_sample_ms": null,
+      "loss": 2.0899384021759033
+    },
+    "G1": {
+      "parameters": 298274,
+      "windows": 16,
+      "CPU_single_sample_ms": null,
+      "loss": 2.589913845062256
+    },
+    "G2": {
+      "parameters": 376693,
+      "windows": 16,
+      "CPU_single_sample_ms": null,
+      "loss": 4.489641189575195
+    },
+    "G2-intra": {
+      "parameters": 359925,
+      "windows": 16,
+      "CPU_single_sample_ms": null,
+      "loss": 4.489643096923828
+    },
+    "R2-half": {
+      "parameters": 340741,
+      "windows": 16,
+      "CPU_single_sample_ms": null,
+      "loss": 2.849591016769409
+    },
+    "S4-wide": {
+      "parameters": 358789,
+      "windows": 16,
+      "CPU_single_sample_ms": null,
+      "loss": 2.0899384021759033
+    }
+  },
+  "PF2": {
+    "archive10": 0.3116225713964022,
+    "L4": 0.3149852914891754,
+    "relative_delta": 0.010791002967803776,
+    "within_1_5_percent": true,
+    "controls": "Three matched L4 B0 runs for all comparisons"
+  },
+  "PF6": {
+    "chosen": 6,
+    "B0": {
+      "1": {
+        "seconds": 26.516677540000046,
+        "completed": 1,
+        "failed": [],
+        "measurements": [
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 42,
+              "order_seed": 42,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 17.537850098000035,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          }
+        ]
+      },
+      "2": {
+        "seconds": 25.517433063999988,
+        "completed": 2,
+        "failed": [],
+        "measurements": [
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 42,
+              "order_seed": 42,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 17.718648469000073,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          },
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 43,
+              "order_seed": 43,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 17.846393052000053,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          }
+        ]
+      },
+      "3": {
+        "seconds": 26.01947196699996,
+        "completed": 3,
+        "failed": [],
+        "measurements": [
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 42,
+              "order_seed": 42,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 18.257174805999966,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          },
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 43,
+              "order_seed": 43,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 18.106947704999925,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          },
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 44,
+              "order_seed": 44,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 18.230048355999998,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          }
+        ]
+      },
+      "4": {
+        "seconds": 29.024391596999976,
+        "completed": 4,
+        "failed": [],
+        "measurements": [
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 42,
+              "order_seed": 42,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 20.939190973999985,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          },
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 43,
+              "order_seed": 43,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 20.621658484000022,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          },
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 44,
+              "order_seed": 44,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 20.780702505000022,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          },
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 42,
+              "order_seed": 42,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 20.710231590000035,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          }
+        ]
+      },
+      "5": {
+        "seconds": 32.028300227000045,
+        "completed": 5,
+        "failed": [],
+        "measurements": [
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 42,
+              "order_seed": 42,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 23.411352985000008,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          },
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 43,
+              "order_seed": 43,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 23.983335216,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          },
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 44,
+              "order_seed": 44,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 23.761780369000007,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          },
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 42,
+              "order_seed": 42,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 23.49611427900004,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          },
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 43,
+              "order_seed": 43,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 23.286433756000065,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          }
+        ]
+      },
+      "6": {
+        "seconds": 35.53053503800004,
+        "completed": 6,
+        "failed": [],
+        "measurements": [
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 42,
+              "order_seed": 42,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 27.25512368400007,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          },
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 43,
+              "order_seed": 43,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 26.60240222699997,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          },
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 44,
+              "order_seed": 44,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 27.151347642999895,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          },
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 42,
+              "order_seed": 42,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 27.38539958299998,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          },
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 43,
+              "order_seed": 43,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 26.965941026999985,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          },
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "B0",
+              "seed": 44,
+              "order_seed": 44,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 27.093078848999994,
+            "parameters": 295474,
+            "peak_reserved_bytes": 255852544
+          }
+        ]
+      }
+    },
+    "mixed": {
+      "6": {
+        "seconds": 44.05195608700001,
+        "completed": 6,
+        "failed": [],
+        "measurements": [
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "G2",
+              "seed": 42,
+              "order_seed": 42,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 35.730716564999966,
+            "parameters": 376693,
+            "peak_reserved_bytes": 299892736
+          },
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "S4",
+              "seed": 43,
+              "order_seed": 43,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 33.514596858000004,
+            "parameters": 358789,
+            "peak_reserved_bytes": 255852544
+          },
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "R2",
+              "seed": 44,
+              "order_seed": 44,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 32.574563663999925,
+            "parameters": 340741,
+            "peak_reserved_bytes": 253755392
+          },
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "G2",
+              "seed": 42,
+              "order_seed": 42,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 35.24783526300007,
+            "parameters": 376693,
+            "peak_reserved_bytes": 299892736
+          },
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "S4",
+              "seed": 43,
+              "order_seed": 43,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 33.23608957500005,
+            "parameters": 358789,
+            "peak_reserved_bytes": 255852544
+          },
+          {
+            "status": "PASS",
+            "contract": {
+              "arm": "R2",
+              "seed": 44,
+              "order_seed": 44,
+              "fold": "C0",
+              "epochs": 1,
+              "device": "cuda:0",
+              "torch": "2.14.1+cu130",
+              "cuda": "13.0",
+              "batch": 64,
+              "gradient_clip": 5,
+              "training_inputs": {
+                "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+              },
+              "source": {
+                "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+              },
+              "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+            },
+            "epochs": 1,
+            "updates": 340,
+            "seconds": 31.730184237999993,
+            "parameters": 340741,
+            "peak_reserved_bytes": 253755392
+          }
+        ]
+      }
+    },
+    "min_free_bytes": 23297261568
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "contract": {
+    "arm": "R1",
+    "seed": 43,
+    "order_seed": 43,
+    "fold": "C0",
+    "epochs": 64,
+    "device": "cuda:0",
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "batch": 64,
+    "gradient_clip": 5,
+    "training_inputs": {
+      "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+      "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+    },
+    "source": {
+      "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+      "advisor_train.py": "c9c58a9b22d42147fb645ac27b6fe111a5b0ff72eac0644cc60202b00b49e13a",
+      "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd"
+    },
+    "baseline_source": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785",
+    "gpu_name": "NVIDIA GeForce RTX 5070 Laptop GPU"
+  },
+  "epochs": 64,
+  "updates": 21760,
+  "seconds": 1141.5,
+  "parameters": 340741,
+  "peak_reserved_bytes": 255852544,
+  "dev": {
+    "overall": {
+      "windows": 4753,
+      "minADE": 0.1744043704483201,
+      "minFDE": 0.30775551304585524,
+      "Top1_ADE": 0.4329110741606615,
+      "Top1_FDE": 0.9444234393932979,
+      "J": 0.5939406690511256,
+      "rank": 5.707132337471071,
+      "ES": 1.307064585715963,
+      "brier_minFDE": 1.1266113779765965
+    },
+    "hard": {
+      "windows": 533,
+      "minADE": 0.33241202090507294,
+      "minFDE": 0.6305351843215734,
+      "Top1_ADE": 0.8790575230604634,
+      "Top1_FDE": 1.9711979519917884,
+      "J": 0.23452157598499063,
+      "rank": 9.883677298311445,
+      "ES": 2.7604828270631,
+      "brier_minFDE": 1.523259338399945
+    },
+    "stationary": {
+      "windows": 1109,
+      "minADE": 0.05916292267891219,
+      "minFDE": 0.1153590121054876,
+      "Top1_ADE": 0.10802394216419445,
+      "Top1_FDE": 0.261214493974786,
+      "J": 0.9134355275022543,
+      "rank": 2.599639314697926,
+      "ES": 0.43804346795983173,
+      "brier_minFDE": 0.8035096396025293
+    },
+    "steady": {
+      "windows": 1991,
+      "minADE": 0.20722357970579514,
+      "minFDE": 0.3690037605956577,
+      "Top1_ADE": 0.5112450523401885,
+      "Top1_FDE": 1.1051619519136002,
+      "J": 0.5057759919638373,
+      "rank": 6.573078854846811,
+      "ES": 1.5271661339414937,
+      "brier_minFDE": 1.228939040006374
+    },
+    "other": {
+      "windows": 1653,
+      "minADE": 0.21219004494598534,
+      "minFDE": 0.3630625055874227,
+      "Top1_ADE": 0.5565268508265075,
+      "Top1_FDE": 1.209183476925789,
+      "J": 0.48578342407743497,
+      "rank": 6.7489413188142775,
+      "ES": 1.6249848743272863,
+      "brier_minFDE": 1.2201294982158917
+    },
+    "without_zara02": {
+      "windows": 3513,
+      "minADE": 0.18940753920232356,
+      "minFDE": 0.33379451198264465,
+      "Top1_ADE": 0.47536058078718807,
+      "Top1_FDE": 1.035745087275209,
+      "J": 0.5584970111016225,
+      "rank": 6.152576145744378,
+      "ES": 1.4236877904070193,
+      "brier_minFDE": 1.1756094228859035
+    }
+  },
+  "compression": null,
+  "mechanism": {
+    "first_pass_minFDE": 0.39369918428317036,
+    "median_shift_m": 0.3373462180405137,
+    "hard_first_winner_peak_lateral_before_m": 1.6357495006258518,
+    "hard_first_winner_peak_lateral_after_m": 1.5817540080575085
+  },
+  "artifacts": {
+    "dev_predictions.npz": "b996c2eb816b6425c8c16d11299120c756d221d2604483bca0d1ed0472896470",
+    "dev_metrics.npz": "6a55017152a08c741ea25cc99ce3c7bf7d9cb86ac9b6ab0f6f78ccabe10e3715",
+    "final_ema.pt": "f10ad5dc6510ddcc6b8e33891e720e9b1cf86fecc7f0ef44a9ddbd4ff42a5a26"
+  },
+  "pool60": null
+}

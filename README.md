@@ -4,7 +4,19 @@ Versioned research codebase, protocol governance, independent audit suite, and p
 
 > **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. Recent archives additionally retain compact, checksum-verified per-window analysis arrays for independent CPU aggregate reanalysis.
 
-## Latest completed study: centered candidate spread (2026-11-20)
+## Latest completed study: three decoder directions (2026-11-22)
+
+Z2 候选池诊断、33 组 C0 筛选和 30 组正式五折已完成。R2 的五折平均 minFDE 改善 3.33%，ETH 折退步 2.85%，未通过预设泛化判据。五折 Top-1 FDE 平均退步 4.89%，保留 B0 为主基线。
+
+[实验结果、代码和复核](research_archive/26_advisor_3dir/EXP_ADVISOR_3DIR_20261121/) · [状态](research_archive/26_advisor_3dir/EXP_ADVISOR_3DIR_20261121/STATUS.json)
+
+## Earlier completed study: conditional bias diagnosis (2026-11-20)
+
+低速组与高速组的概率加权中心存在方向一致的纵向偏差。P1 达标，观测特征驱动的线性平移和概率倾斜均未通过修正判据。
+
+[实验结果、代码和复核](research_archive/25_cond_bias_diag/EXP_COND_BIAS_DIAG_20261120/)
+
+## Earlier completed study: centered candidate spread (2026-11-20)
 
 固定均值路径后，按观测调节散布让总体 minFDE 平均改善 1.16%，转向难组退步 2.69%。两个留出 seed 复现了总体改善方向。C1H 和 C5 达标，主分析的收益和稳健性要求仍未达到。已知未来动作时，总体改善 4.43%，主要来自减速与稳定运动。保留 B0 基线。
 
