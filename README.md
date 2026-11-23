@@ -4,6 +4,12 @@ Versioned research codebase, protocol governance, independent audit suite, and p
 
 > **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. Recent archives additionally retain compact, checksum-verified per-window analysis arrays for independent CPU aggregate reanalysis.
 
+## Latest local diagnostics (2026-11-23)
+
+QRANK 冻结重放发现，ETH 与 ZARA01 的高速减速组在末层误差上升。后续诊断显示，Top-1 在初层已常有纵向过冲，ZARA01 最佳候选的误差增长主要来自横向。E-A 等邻居数比较中，UNIV 的冲突选邻未改善预测。
+
+[三项诊断的结果、代码与复算](research_archive/28_qrank_followups_and_ea/) · [状态](research_archive/28_qrank_followups_and_ea/STATUS.json)
+
 ## Latest completed study: quality-aware trajectory confidence (2026-11-23)
 
 33 组 C0 筛选和 51 组正式五折已完成。QFL 和 E0 的五折平均 minFDE 分别改善 6.36% 和 5.70%，ETH 分别退步 2.63% 和 3.75%，两臂均未通过 ETH 保护。保留 B0 为主基线，P2 备用消融暂缓。

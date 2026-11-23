@@ -1,7 +1,11 @@
 # Research Archive Index
 
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
-Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–27 retain derived analysis data with checksums and CPU reanalysis tools.
+Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–28 retain derived analysis data with checksums and CPU reanalysis tools.
+
+## Phase 28: QRANK follow-ups and E-A neighbor selection (2026-11-23)
+
+[Three local diagnostics](research_archive/28_qrank_followups_and_ea/) cover the initial versus final QRANK decoder layers, longitudinal overshoot and observed deceleration, and the E-A frozen B0 neighbor-selection comparison. The archive includes 34 derived arrays, source code, and NumPy reanalysis.
 
 ## Phase 27: quality-aware trajectory confidence — COMPLETE / F-PASS false (2026-11-23)
 
