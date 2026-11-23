@@ -1,7 +1,11 @@
 # Research Archive Index
 
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
-Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–26 retain derived analysis data with checksums and CPU reanalysis tools.
+Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–27 retain derived analysis data with checksums and CPU reanalysis tools.
+
+## Phase 27: quality-aware trajectory confidence — COMPLETE / F-PASS false (2026-11-23)
+
+[EXP-QRANK-ML](research_archive/27_qrank_mldec/EXP_QRANK_MLDEC_L4_20261122/) archives all 33 C0 screening runs and all 51 five-fold results. QFL and E0 reduce five-fold mean minFDE by 6.36% and 5.70%, respectively. Both fail the registered ETH protection, and B0 remains the baseline. The optional P2 ablation was deferred before training. The archive retains all 84 coordinate-free metric arrays and a CPU reanalysis tool.
 
 ## Phase 26: three decoder directions — COMPLETE / F-PASS false (2026-11-22)
 

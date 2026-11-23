@@ -1,0 +1,2583 @@
+{
+  "status": "PASS",
+  "runtime": {
+    "gpu": "NVIDIA L4",
+    "torch": "2.14.1+cu130",
+    "cuda": "13.0",
+    "data": {
+      "c0_inputs": "bf95f511920485b101208a2bfc1a881368595cfc2422c1657f7093580e69834f",
+      "baseline_sources": "6884b7afadb13ddf47c2174057d725a67f081c0910ae975f559b3797cca59785"
+    },
+    "fivefold": "63a99c32086c9db13e24cb86d0c90146a2594debda204a417db9427702bbc6cf",
+    "code": {
+      "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+      "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+      "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+      "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+      "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+      "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+      "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+      "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+      "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+      "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+      "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+      "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+      "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+      "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+      "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+      "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+      "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+      "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+      "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+      "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+      "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+    }
+  },
+  "structural": {
+    "PF-R1": 6753,
+    "PF-R2": true,
+    "PF-2": true,
+    "PF-3": true,
+    "PF-L1": true,
+    "PF-Q1": true,
+    "PF-R3": true,
+    "PF-Q2": true,
+    "PF-E1": true,
+    "PF-QFL": true,
+    "PF-K1": true,
+    "PF-LAT": {
+      "ms": {
+        "B0": 10.275473000021407,
+        "D3-full": 14.866635999993605,
+        "O-conf": 15.475326000000678,
+        "O-risk": 21.456378000010545
+      },
+      "risk_over_16_3_ms": true
+    }
+  },
+  "PF_T": {
+    "chosen": 6,
+    "measurements": {
+      "6": {
+        "wall": 65.605522501,
+        "epochs_per_hour": 329.24057574072003,
+        "max_slowdown": 1.4116930727675177,
+        "valid": true,
+        "receipt": {
+          "seconds": 65.605522501,
+          "completed": 6,
+          "failed": [],
+          "runs": [
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "B0",
+                "fold": "C0",
+                "seed": 42,
+                "order_seed": 42,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 24.23579762899999,
+              "total_training_seconds": 24.20247544299997,
+              "parameters": 295474,
+              "inference_parameters": 295474,
+              "peak_reserved_bytes": 255852544,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 24.20247544299997,
+                "updates": 340,
+                "loss": 2.356074518666548,
+                "grad_norm": 2.5916882171350366,
+                "hinge": 0.0,
+                "layers": [
+                  [
+                    2.356074518666548,
+                    0.3081718851976535,
+                    3.733117004001842,
+                    0.0
+                  ]
+                ]
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "D3-full",
+                "fold": "C0",
+                "seed": 43,
+                "order_seed": 43,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 42.96641146000002,
+              "total_training_seconds": 42.94451745800001,
+              "parameters": 492519,
+              "inference_parameters": 469163,
+              "peak_reserved_bytes": 281018368,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 42.94451745800001,
+                "updates": 340,
+                "loss": 12.165658566531013,
+                "grad_norm": 9.204740878413705,
+                "hinge": 0.0890751138658208,
+                "layers": [
+                  [
+                    2.351888592102948,
+                    0.31426442719119435,
+                    3.710285497412962,
+                    1.3588778625516331
+                  ],
+                  [
+                    2.323042323659448,
+                    0.3019466068376513,
+                    3.686642514958101,
+                    1.4075731494847465
+                  ],
+                  [
+                    2.305980984954273,
+                    0.2914551295997465,
+                    3.679507107594434,
+                    1.4065113821450401
+                  ],
+                  [
+                    2.2945739623378305,
+                    0.282995192618931,
+                    3.67754784822464,
+                    1.4292326807975768
+                  ]
+                ]
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "O-conf",
+                "fold": "C0",
+                "seed": 44,
+                "order_seed": 44,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 42.97577607299996,
+              "total_training_seconds": 42.94192399599996,
+              "parameters": 492519,
+              "inference_parameters": 473003,
+              "peak_reserved_bytes": 285212672,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 42.94192399599996,
+                "updates": 340,
+                "loss": 12.22718526054831,
+                "grad_norm": 9.638929624767865,
+                "hinge": 0.08995201353202847,
+                "layers": [
+                  [
+                    2.356708995033713,
+                    0.3129773999838268,
+                    3.722649579889634,
+                    1.449424264010261
+                  ],
+                  [
+                    2.325880008935928,
+                    0.2995062701842364,
+                    3.6982412331244525,
+                    1.3719342217725865
+                  ],
+                  [
+                    2.30591886008487,
+                    0.28805078397340633,
+                    3.6883571281152614,
+                    1.4432973277919432
+                  ],
+                  [
+                    2.2929024903213278,
+                    0.27945819977013503,
+                    3.6835672659032483,
+                    1.4469899892807008
+                  ]
+                ]
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "O-risk",
+                "fold": "C0",
+                "seed": 42,
+                "order_seed": 42,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 57.18471578500004,
+              "total_training_seconds": 57.16250498699998,
+              "parameters": 492519,
+              "inference_parameters": 492519,
+              "peak_reserved_bytes": 283115520,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 57.16250498699998,
+                "updates": 340,
+                "loss": 12.213456442776849,
+                "grad_norm": 9.846481584450778,
+                "hinge": 0.0878221794086344,
+                "layers": [
+                  [
+                    2.368062881161185,
+                    0.31833500539993537,
+                    3.7306361934717964,
+                    1.4050603195148357
+                  ],
+                  [
+                    2.337669905844857,
+                    0.30667144713156363,
+                    3.7020070419592015,
+                    1.3773273112142788
+                  ],
+                  [
+                    2.3114618385539334,
+                    0.29488951121183005,
+                    3.6803147989160876,
+                    1.3492488606887705
+                  ],
+                  [
+                    2.2964549099697784,
+                    0.28678828208323787,
+                    3.6700975207721487,
+                    1.4923329037778519
+                  ]
+                ]
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "O-risk+QFL",
+                "fold": "C0",
+                "seed": 43,
+                "order_seed": 43,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 57.452638733000015,
+              "total_training_seconds": 57.41818406600004,
+              "parameters": 492519,
+              "inference_parameters": 492519,
+              "peak_reserved_bytes": 283115520,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 57.41818406600004,
+                "updates": 340,
+                "loss": 6.6737330997691435,
+                "grad_norm": 9.0379380986971,
+                "hinge": 0.09500247669570586,
+                "layers": [
+                  [
+                    2.3644145604442146,
+                    0.31606589292778686,
+                    3.729688006288865,
+                    1.354149030937868
+                  ],
+                  [
+                    0.5192471764543477,
+                    0.3049660649369745,
+                    0.07077102517325651,
+                    1.3701175249674742
+                  ],
+                  [
+                    0.5021867393132519,
+                    0.29452484775992,
+                    0.0638214128831511,
+                    1.316234159118989
+                  ],
+                  [
+                    0.4900612844702075,
+                    0.2859635716632885,
+                    0.06030425360864576,
+                    1.3651409874944125
+                  ]
+                ],
+                "emta_counts": {
+                  "overall": [
+                    4337,
+                    21719
+                  ],
+                  "slow": [
+                    4178,
+                    17000
+                  ],
+                  "mid": [
+                    116,
+                    3116
+                  ],
+                  "fast": [
+                    43,
+                    1603
+                  ]
+                }
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "B0",
+                "fold": "C0",
+                "seed": 44,
+                "order_seed": 44,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 24.367276174999972,
+              "total_training_seconds": 24.34186934600001,
+              "parameters": 295474,
+              "inference_parameters": 295474,
+              "peak_reserved_bytes": 255852544,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 24.34186934600001,
+                "updates": 340,
+                "loss": 2.352882817913504,
+                "grad_norm": 2.6424541570684488,
+                "hinge": 0.0,
+                "layers": [
+                  [
+                    2.352882817913504,
+                    0.30309734909850006,
+                    3.7413394023390376,
+                    0.0
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "8": {
+        "wall": 81.1430126009999,
+        "epochs_per_hour": 354.9288974716365,
+        "max_slowdown": 1.784704947251347,
+        "valid": true,
+        "receipt": {
+          "seconds": 81.1430126009999,
+          "completed": 8,
+          "failed": [],
+          "runs": [
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "B0",
+                "fold": "C0",
+                "seed": 42,
+                "order_seed": 42,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 30.813178991999962,
+              "total_training_seconds": 30.773725171000024,
+              "parameters": 295474,
+              "inference_parameters": 295474,
+              "peak_reserved_bytes": 255852544,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 30.773725171000024,
+                "updates": 340,
+                "loss": 2.356074518666548,
+                "grad_norm": 2.5916882171350366,
+                "hinge": 0.0,
+                "layers": [
+                  [
+                    2.356074518666548,
+                    0.3081718851976535,
+                    3.733117004001842,
+                    0.0
+                  ]
+                ]
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "D3-full",
+                "fold": "C0",
+                "seed": 43,
+                "order_seed": 43,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 54.290397864000056,
+              "total_training_seconds": 54.26541303500005,
+              "parameters": 492519,
+              "inference_parameters": 469163,
+              "peak_reserved_bytes": 281018368,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 54.26541303500005,
+                "updates": 340,
+                "loss": 12.165658566531013,
+                "grad_norm": 9.204740878413705,
+                "hinge": 0.0890751138658208,
+                "layers": [
+                  [
+                    2.351888592102948,
+                    0.31426442719119435,
+                    3.710285497412962,
+                    1.3588778625516331
+                  ],
+                  [
+                    2.323042323659448,
+                    0.3019466068376513,
+                    3.686642514958101,
+                    1.4075731494847465
+                  ],
+                  [
+                    2.305980984954273,
+                    0.2914551295997465,
+                    3.679507107594434,
+                    1.4065113821450401
+                  ],
+                  [
+                    2.2945739623378305,
+                    0.282995192618931,
+                    3.67754784822464,
+                    1.4292326807975768
+                  ]
+                ]
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "O-conf",
+                "fold": "C0",
+                "seed": 44,
+                "order_seed": 44,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 54.05974934400001,
+              "total_training_seconds": 54.03627856700007,
+              "parameters": 492519,
+              "inference_parameters": 473003,
+              "peak_reserved_bytes": 285212672,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 54.03627856700007,
+                "updates": 340,
+                "loss": 12.22718526054831,
+                "grad_norm": 9.638929624767865,
+                "hinge": 0.08995201353202847,
+                "layers": [
+                  [
+                    2.356708995033713,
+                    0.3129773999838268,
+                    3.722649579889634,
+                    1.449424264010261
+                  ],
+                  [
+                    2.325880008935928,
+                    0.2995062701842364,
+                    3.6982412331244525,
+                    1.3719342217725865
+                  ],
+                  [
+                    2.30591886008487,
+                    0.28805078397340633,
+                    3.6883571281152614,
+                    1.4432973277919432
+                  ],
+                  [
+                    2.2929024903213278,
+                    0.27945819977013503,
+                    3.6835672659032483,
+                    1.4469899892807008
+                  ]
+                ]
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "O-risk",
+                "fold": "C0",
+                "seed": 42,
+                "order_seed": 42,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 69.73383398499993,
+              "total_training_seconds": 69.70522374799998,
+              "parameters": 492519,
+              "inference_parameters": 492519,
+              "peak_reserved_bytes": 283115520,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 69.70522374799998,
+                "updates": 340,
+                "loss": 12.213456442776849,
+                "grad_norm": 9.846481584450778,
+                "hinge": 0.0878221794086344,
+                "layers": [
+                  [
+                    2.368062881161185,
+                    0.31833500539993537,
+                    3.7306361934717964,
+                    1.4050603195148357
+                  ],
+                  [
+                    2.337669905844857,
+                    0.30667144713156363,
+                    3.7020070419592015,
+                    1.3773273112142788
+                  ],
+                  [
+                    2.3114618385539334,
+                    0.29488951121183005,
+                    3.6803147989160876,
+                    1.3492488606887705
+                  ],
+                  [
+                    2.2964549099697784,
+                    0.28678828208323787,
+                    3.6700975207721487,
+                    1.4923329037778519
+                  ]
+                ]
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "O-risk+QFL",
+                "fold": "C0",
+                "seed": 43,
+                "order_seed": 43,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 69.31390917299996,
+              "total_training_seconds": 69.29448793400002,
+              "parameters": 492519,
+              "inference_parameters": 492519,
+              "peak_reserved_bytes": 283115520,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 69.29448793400002,
+                "updates": 340,
+                "loss": 6.6737330997691435,
+                "grad_norm": 9.0379380986971,
+                "hinge": 0.09500247669570586,
+                "layers": [
+                  [
+                    2.3644145604442146,
+                    0.31606589292778686,
+                    3.729688006288865,
+                    1.354149030937868
+                  ],
+                  [
+                    0.5192471764543477,
+                    0.3049660649369745,
+                    0.07077102517325651,
+                    1.3701175249674742
+                  ],
+                  [
+                    0.5021867393132519,
+                    0.29452484775992,
+                    0.0638214128831511,
+                    1.316234159118989
+                  ],
+                  [
+                    0.4900612844702075,
+                    0.2859635716632885,
+                    0.06030425360864576,
+                    1.3651409874944125
+                  ]
+                ],
+                "emta_counts": {
+                  "overall": [
+                    4337,
+                    21719
+                  ],
+                  "slow": [
+                    4178,
+                    17000
+                  ],
+                  "mid": [
+                    116,
+                    3116
+                  ],
+                  "fast": [
+                    43,
+                    1603
+                  ]
+                }
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "B0",
+                "fold": "C0",
+                "seed": 44,
+                "order_seed": 44,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 29.012714820000042,
+              "total_training_seconds": 28.982856322999965,
+              "parameters": 295474,
+              "inference_parameters": 295474,
+              "peak_reserved_bytes": 255852544,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 28.982856322999965,
+                "updates": 340,
+                "loss": 2.352882817913504,
+                "grad_norm": 2.6424541570684488,
+                "hinge": 0.0,
+                "layers": [
+                  [
+                    2.352882817913504,
+                    0.30309734909850006,
+                    3.7413394023390376,
+                    0.0
+                  ]
+                ]
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "D3-full",
+                "fold": "C0",
+                "seed": 42,
+                "order_seed": 42,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 54.389126186,
+              "total_training_seconds": 54.35858825399998,
+              "parameters": 492519,
+              "inference_parameters": 469163,
+              "peak_reserved_bytes": 281018368,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 54.35858825399998,
+                "updates": 340,
+                "loss": 12.21356224452748,
+                "grad_norm": 10.258706830529606,
+                "hinge": 0.0872777708203477,
+                "layers": [
+                  [
+                    2.3686490234206703,
+                    0.31732130585347906,
+                    3.7342097443692825,
+                    1.405627613207873
+                  ],
+                  [
+                    2.3392113633015574,
+                    0.30583309395348324,
+                    3.707100474834442,
+                    1.3720425178022946
+                  ],
+                  [
+                    2.3098147714839263,
+                    0.29423969635630354,
+                    3.6785854297525744,
+                    1.3585643137202543
+                  ],
+                  [
+                    2.294925199536716,
+                    0.28623654456699593,
+                    3.6685027781654806,
+                    1.491133800850195
+                  ]
+                ]
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "O-conf",
+                "fold": "C0",
+                "seed": 43,
+                "order_seed": 43,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 54.47676120299991,
+              "total_training_seconds": 54.43939667299992,
+              "parameters": 492519,
+              "inference_parameters": 473003,
+              "peak_reserved_bytes": 285212672,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 54.43939667299992,
+                "updates": 340,
+                "loss": 12.120407474742215,
+                "grad_norm": 9.362304821435142,
+                "hinge": 0.08879746840718915,
+                "layers": [
+                  [
+                    2.3519054549581866,
+                    0.3153189840781338,
+                    3.707048270281623,
+                    1.356795715233859
+                  ],
+                  [
+                    2.323229840222527,
+                    0.30206515740822343,
+                    3.686865178276511,
+                    1.3707254357197705
+                  ],
+                  [
+                    2.3047842667383307,
+                    0.29098681277211974,
+                    3.678901355406817,
+                    1.3686391248422511
+                  ],
+                  [
+                    2.2928862417445464,
+                    0.2825145191129516,
+                    3.675586034269894,
+                    1.4214483194491443
+                  ]
+                ]
+              }
+            }
+          ]
+        }
+      },
+      "10": {
+        "wall": 97.72541467100007,
+        "epochs_per_hour": 368.3790968930313,
+        "max_slowdown": 2.08727859897263,
+        "valid": false,
+        "receipt": {
+          "seconds": 97.72541467100007,
+          "completed": 10,
+          "failed": [],
+          "runs": [
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "B0",
+                "fold": "C0",
+                "seed": 42,
+                "order_seed": 42,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 34.392409283000006,
+              "total_training_seconds": 34.35043282799995,
+              "parameters": 295474,
+              "inference_parameters": 295474,
+              "peak_reserved_bytes": 255852544,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 34.35043282799995,
+                "updates": 340,
+                "loss": 2.356074518666548,
+                "grad_norm": 2.5916882171350366,
+                "hinge": 0.0,
+                "layers": [
+                  [
+                    2.356074518666548,
+                    0.3081718851976535,
+                    3.733117004001842,
+                    0.0
+                  ]
+                ]
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "D3-full",
+                "fold": "C0",
+                "seed": 43,
+                "order_seed": 43,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 63.14450035200002,
+              "total_training_seconds": 63.11671198300007,
+              "parameters": 492519,
+              "inference_parameters": 469163,
+              "peak_reserved_bytes": 281018368,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 63.11671198300007,
+                "updates": 340,
+                "loss": 12.165658566531013,
+                "grad_norm": 9.204740878413705,
+                "hinge": 0.0890751138658208,
+                "layers": [
+                  [
+                    2.351888592102948,
+                    0.31426442719119435,
+                    3.710285497412962,
+                    1.3588778625516331
+                  ],
+                  [
+                    2.323042323659448,
+                    0.3019466068376513,
+                    3.686642514958101,
+                    1.4075731494847465
+                  ],
+                  [
+                    2.305980984954273,
+                    0.2914551295997465,
+                    3.679507107594434,
+                    1.4065113821450401
+                  ],
+                  [
+                    2.2945739623378305,
+                    0.282995192618931,
+                    3.67754784822464,
+                    1.4292326807975768
+                  ]
+                ]
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "O-conf",
+                "fold": "C0",
+                "seed": 44,
+                "order_seed": 44,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 64.12441106100005,
+              "total_training_seconds": 64.08221454099998,
+              "parameters": 492519,
+              "inference_parameters": 473003,
+              "peak_reserved_bytes": 285212672,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 64.08221454099998,
+                "updates": 340,
+                "loss": 12.22718526054831,
+                "grad_norm": 9.638929624767865,
+                "hinge": 0.08995201353202847,
+                "layers": [
+                  [
+                    2.356708995033713,
+                    0.3129773999838268,
+                    3.722649579889634,
+                    1.449424264010261
+                  ],
+                  [
+                    2.325880008935928,
+                    0.2995062701842364,
+                    3.6982412331244525,
+                    1.3719342217725865
+                  ],
+                  [
+                    2.30591886008487,
+                    0.28805078397340633,
+                    3.6883571281152614,
+                    1.4432973277919432
+                  ],
+                  [
+                    2.2929024903213278,
+                    0.27945819977013503,
+                    3.6835672659032483,
+                    1.4469899892807008
+                  ]
+                ]
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "O-risk",
+                "fold": "C0",
+                "seed": 42,
+                "order_seed": 42,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 85.68677173100002,
+              "total_training_seconds": 85.66512382100007,
+              "parameters": 492519,
+              "inference_parameters": 492519,
+              "peak_reserved_bytes": 283115520,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 85.66512382100007,
+                "updates": 340,
+                "loss": 12.213456442776849,
+                "grad_norm": 9.846481584450778,
+                "hinge": 0.0878221794086344,
+                "layers": [
+                  [
+                    2.368062881161185,
+                    0.31833500539993537,
+                    3.7306361934717964,
+                    1.4050603195148357
+                  ],
+                  [
+                    2.337669905844857,
+                    0.30667144713156363,
+                    3.7020070419592015,
+                    1.3773273112142788
+                  ],
+                  [
+                    2.3114618385539334,
+                    0.29488951121183005,
+                    3.6803147989160876,
+                    1.3492488606887705
+                  ],
+                  [
+                    2.2964549099697784,
+                    0.28678828208323787,
+                    3.6700975207721487,
+                    1.4923329037778519
+                  ]
+                ]
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "O-risk+QFL",
+                "fold": "C0",
+                "seed": 43,
+                "order_seed": 43,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 84.99446476599996,
+              "total_training_seconds": 84.95656658300004,
+              "parameters": 492519,
+              "inference_parameters": 492519,
+              "peak_reserved_bytes": 283115520,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 84.95656658300004,
+                "updates": 340,
+                "loss": 6.6737330997691435,
+                "grad_norm": 9.0379380986971,
+                "hinge": 0.09500247669570586,
+                "layers": [
+                  [
+                    2.3644145604442146,
+                    0.31606589292778686,
+                    3.729688006288865,
+                    1.354149030937868
+                  ],
+                  [
+                    0.5192471764543477,
+                    0.3049660649369745,
+                    0.07077102517325651,
+                    1.3701175249674742
+                  ],
+                  [
+                    0.5021867393132519,
+                    0.29452484775992,
+                    0.0638214128831511,
+                    1.316234159118989
+                  ],
+                  [
+                    0.4900612844702075,
+                    0.2859635716632885,
+                    0.06030425360864576,
+                    1.3651409874944125
+                  ]
+                ],
+                "emta_counts": {
+                  "overall": [
+                    4337,
+                    21719
+                  ],
+                  "slow": [
+                    4178,
+                    17000
+                  ],
+                  "mid": [
+                    116,
+                    3116
+                  ],
+                  "fast": [
+                    43,
+                    1603
+                  ]
+                }
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "B0",
+                "fold": "C0",
+                "seed": 44,
+                "order_seed": 44,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 35.16247162100001,
+              "total_training_seconds": 35.13077632400007,
+              "parameters": 295474,
+              "inference_parameters": 295474,
+              "peak_reserved_bytes": 255852544,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 35.13077632400007,
+                "updates": 340,
+                "loss": 2.352882817913504,
+                "grad_norm": 2.6424541570684488,
+                "hinge": 0.0,
+                "layers": [
+                  [
+                    2.352882817913504,
+                    0.30309734909850006,
+                    3.7413394023390376,
+                    0.0
+                  ]
+                ]
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "D3-full",
+                "fold": "C0",
+                "seed": 42,
+                "order_seed": 42,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 62.04418895899994,
+              "total_training_seconds": 62.01909586800002,
+              "parameters": 492519,
+              "inference_parameters": 469163,
+              "peak_reserved_bytes": 281018368,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 62.01909586800002,
+                "updates": 340,
+                "loss": 12.21356224452748,
+                "grad_norm": 10.258706830529606,
+                "hinge": 0.0872777708203477,
+                "layers": [
+                  [
+                    2.3686490234206703,
+                    0.31732130585347906,
+                    3.7342097443692825,
+                    1.405627613207873
+                  ],
+                  [
+                    2.3392113633015574,
+                    0.30583309395348324,
+                    3.707100474834442,
+                    1.3720425178022946
+                  ],
+                  [
+                    2.3098147714839263,
+                    0.29423969635630354,
+                    3.6785854297525744,
+                    1.3585643137202543
+                  ],
+                  [
+                    2.294925199536716,
+                    0.28623654456699593,
+                    3.6685027781654806,
+                    1.491133800850195
+                  ]
+                ]
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "O-conf",
+                "fold": "C0",
+                "seed": 43,
+                "order_seed": 43,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 63.19064417800007,
+              "total_training_seconds": 63.16627754600006,
+              "parameters": 492519,
+              "inference_parameters": 473003,
+              "peak_reserved_bytes": 285212672,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 63.16627754600006,
+                "updates": 340,
+                "loss": 12.120407474742215,
+                "grad_norm": 9.362304821435142,
+                "hinge": 0.08879746840718915,
+                "layers": [
+                  [
+                    2.3519054549581866,
+                    0.3153189840781338,
+                    3.707048270281623,
+                    1.356795715233859
+                  ],
+                  [
+                    2.323229840222527,
+                    0.30206515740822343,
+                    3.686865178276511,
+                    1.3707254357197705
+                  ],
+                  [
+                    2.3047842667383307,
+                    0.29098681277211974,
+                    3.678901355406817,
+                    1.3686391248422511
+                  ],
+                  [
+                    2.2928862417445464,
+                    0.2825145191129516,
+                    3.675586034269894,
+                    1.4214483194491443
+                  ]
+                ]
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "O-risk",
+                "fold": "C0",
+                "seed": 44,
+                "order_seed": 44,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 85.58919856299997,
+              "total_training_seconds": 85.56734591099996,
+              "parameters": 492519,
+              "inference_parameters": 492519,
+              "peak_reserved_bytes": 283115520,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 85.56734591099996,
+                "updates": 340,
+                "loss": 12.194479611340691,
+                "grad_norm": 9.703846428324194,
+                "hinge": 0.08896997636731933,
+                "layers": [
+                  [
+                    2.356531223830055,
+                    0.3133774707203402,
+                    3.720882537785698,
+                    1.45367672197959
+                  ],
+                  [
+                    2.32127750971738,
+                    0.3003178437843042,
+                    3.687034412692575,
+                    1.366448335261906
+                  ],
+                  [
+                    2.3030911431593055,
+                    0.28904242033467575,
+                    3.680083935401019,
+                    1.4284924910349004
+                  ],
+                  [
+                    2.292067468516967,
+                    0.2811477707370239,
+                    3.677388768336352,
+                    1.4164669394493103
+                  ]
+                ]
+              }
+            },
+            {
+              "status": "PASS",
+              "contract": {
+                "arm": "O-risk+QFL",
+                "fold": "C0",
+                "seed": 42,
+                "order_seed": 42,
+                "epochs": 1,
+                "batch": 64,
+                "gradient_clip": 5,
+                "ema": 0.995,
+                "device": "cuda:0",
+                "use_kin": true,
+                "torch": "2.14.1+cu130",
+                "cuda": "13.0",
+                "gpu": "NVIDIA L4",
+                "data": {
+                  "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+                  "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+                },
+                "code": {
+                  "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+                  "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+                  "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+                  "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+                  "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+                  "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+                  "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+                  "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+                  "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+                  "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+                  "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+                  "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+                  "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+                  "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+                  "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+                  "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+                  "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+                  "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+                  "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+                  "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+                  "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+                }
+              },
+              "epochs": 1,
+              "updates": 340,
+              "seconds": 84.95102711100003,
+              "total_training_seconds": 84.92059248499993,
+              "parameters": 492519,
+              "inference_parameters": 492519,
+              "peak_reserved_bytes": 283115520,
+              "final_epoch": {
+                "epoch": 1,
+                "seconds": 84.92059248499993,
+                "updates": 340,
+                "loss": 6.73085691648371,
+                "grad_norm": 9.7512397219153,
+                "hinge": 0.09745719058110433,
+                "layers": [
+                  [
+                    2.3719809588264016,
+                    0.31823326504844074,
+                    3.738599535296945,
+                    1.4093454196172601
+                  ],
+                  [
+                    0.5236504046794246,
+                    0.3075111376888612,
+                    0.07175623780828627,
+                    1.3407306897289613
+                  ],
+                  [
+                    0.5044472637421945,
+                    0.29556704807807416,
+                    0.06436442090472316,
+                    1.3084769887082717
+                  ],
+                  [
+                    0.49292177084614247,
+                    0.28784687536604264,
+                    0.060299874628510546,
+                    1.422245549103793
+                  ]
+                ],
+                "emta_counts": {
+                  "overall": [
+                    4308,
+                    21719
+                  ],
+                  "slow": [
+                    4125,
+                    16987
+                  ],
+                  "mid": [
+                    130,
+                    3126
+                  ],
+                  "fast": [
+                    53,
+                    1606
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    },
+    "epoch_seconds": {
+      "B0": 24.34186934600001,
+      "D3-full": 42.94451745800001,
+      "O-conf": 42.94192399599996,
+      "O-risk": 57.16250498699998,
+      "O-risk+QFL": 57.41818406600004
+    },
+    "solo": {
+      "seconds": 207.63332241999998,
+      "completed": 5,
+      "failed": [],
+      "runs": [
+        {
+          "status": "PASS",
+          "contract": {
+            "arm": "B0",
+            "fold": "C0",
+            "seed": 42,
+            "order_seed": 42,
+            "epochs": 1,
+            "batch": 64,
+            "gradient_clip": 5,
+            "ema": 0.995,
+            "device": "cuda:0",
+            "use_kin": true,
+            "torch": "2.14.1+cu130",
+            "cuda": "13.0",
+            "gpu": "NVIDIA L4",
+            "data": {
+              "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+              "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+            },
+            "code": {
+              "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+              "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+              "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+              "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+              "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+              "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+              "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+              "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+              "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+              "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+              "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+              "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+              "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+              "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+              "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+              "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+              "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+              "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+              "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+              "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+              "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+            }
+          },
+          "epochs": 1,
+          "updates": 340,
+          "seconds": 17.262545381000024,
+          "total_training_seconds": 17.243032367000012,
+          "parameters": 295474,
+          "inference_parameters": 295474,
+          "peak_reserved_bytes": 255852544,
+          "final_epoch": {
+            "epoch": 1,
+            "seconds": 17.243032367000012,
+            "updates": 340,
+            "loss": 2.356074518666548,
+            "grad_norm": 2.5916882171350366,
+            "hinge": 0.0,
+            "layers": [
+              [
+                2.356074518666548,
+                0.3081718851976535,
+                3.733117004001842,
+                0.0
+              ]
+            ]
+          }
+        },
+        {
+          "status": "PASS",
+          "contract": {
+            "arm": "D3-full",
+            "fold": "C0",
+            "seed": 43,
+            "order_seed": 43,
+            "epochs": 1,
+            "batch": 64,
+            "gradient_clip": 5,
+            "ema": 0.995,
+            "device": "cuda:0",
+            "use_kin": true,
+            "torch": "2.14.1+cu130",
+            "cuda": "13.0",
+            "gpu": "NVIDIA L4",
+            "data": {
+              "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+              "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+            },
+            "code": {
+              "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+              "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+              "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+              "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+              "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+              "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+              "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+              "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+              "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+              "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+              "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+              "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+              "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+              "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+              "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+              "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+              "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+              "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+              "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+              "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+              "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+            }
+          },
+          "epochs": 1,
+          "updates": 340,
+          "seconds": 35.08335350499999,
+          "total_training_seconds": 35.06069043400004,
+          "parameters": 492519,
+          "inference_parameters": 469163,
+          "peak_reserved_bytes": 281018368,
+          "final_epoch": {
+            "epoch": 1,
+            "seconds": 35.06069043400004,
+            "updates": 340,
+            "loss": 12.165658566531013,
+            "grad_norm": 9.204740878413705,
+            "hinge": 0.0890751138658208,
+            "layers": [
+              [
+                2.351888592102948,
+                0.31426442719119435,
+                3.710285497412962,
+                1.3588778625516331
+              ],
+              [
+                2.323042323659448,
+                0.3019466068376513,
+                3.686642514958101,
+                1.4075731494847465
+              ],
+              [
+                2.305980984954273,
+                0.2914551295997465,
+                3.679507107594434,
+                1.4065113821450401
+              ],
+              [
+                2.2945739623378305,
+                0.282995192618931,
+                3.67754784822464,
+                1.4292326807975768
+              ]
+            ]
+          }
+        },
+        {
+          "status": "PASS",
+          "contract": {
+            "arm": "O-conf",
+            "fold": "C0",
+            "seed": 44,
+            "order_seed": 44,
+            "epochs": 1,
+            "batch": 64,
+            "gradient_clip": 5,
+            "ema": 0.995,
+            "device": "cuda:0",
+            "use_kin": true,
+            "torch": "2.14.1+cu130",
+            "cuda": "13.0",
+            "gpu": "NVIDIA L4",
+            "data": {
+              "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+              "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+            },
+            "code": {
+              "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+              "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+              "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+              "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+              "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+              "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+              "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+              "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+              "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+              "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+              "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+              "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+              "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+              "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+              "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+              "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+              "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+              "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+              "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+              "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+              "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+            }
+          },
+          "epochs": 1,
+          "updates": 340,
+          "seconds": 35.62405765599999,
+          "total_training_seconds": 35.60489827599997,
+          "parameters": 492519,
+          "inference_parameters": 473003,
+          "peak_reserved_bytes": 285212672,
+          "final_epoch": {
+            "epoch": 1,
+            "seconds": 35.60489827599997,
+            "updates": 340,
+            "loss": 12.22718526054831,
+            "grad_norm": 9.638929624767865,
+            "hinge": 0.08995201353202847,
+            "layers": [
+              [
+                2.356708995033713,
+                0.3129773999838268,
+                3.722649579889634,
+                1.449424264010261
+              ],
+              [
+                2.325880008935928,
+                0.2995062701842364,
+                3.6982412331244525,
+                1.3719342217725865
+              ],
+              [
+                2.30591886008487,
+                0.28805078397340633,
+                3.6883571281152614,
+                1.4432973277919432
+              ],
+              [
+                2.2929024903213278,
+                0.27945819977013503,
+                3.6835672659032483,
+                1.4469899892807008
+              ]
+            ]
+          }
+        },
+        {
+          "status": "PASS",
+          "contract": {
+            "arm": "O-risk",
+            "fold": "C0",
+            "seed": 42,
+            "order_seed": 42,
+            "epochs": 1,
+            "batch": 64,
+            "gradient_clip": 5,
+            "ema": 0.995,
+            "device": "cuda:0",
+            "use_kin": true,
+            "torch": "2.14.1+cu130",
+            "cuda": "13.0",
+            "gpu": "NVIDIA L4",
+            "data": {
+              "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+              "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+            },
+            "code": {
+              "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+              "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+              "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+              "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+              "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+              "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+              "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+              "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+              "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+              "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+              "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+              "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+              "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+              "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+              "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+              "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+              "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+              "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+              "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+              "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+              "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+            }
+          },
+          "epochs": 1,
+          "updates": 340,
+          "seconds": 41.63596106599999,
+          "total_training_seconds": 41.61412465000001,
+          "parameters": 492519,
+          "inference_parameters": 492519,
+          "peak_reserved_bytes": 283115520,
+          "final_epoch": {
+            "epoch": 1,
+            "seconds": 41.61412465000001,
+            "updates": 340,
+            "loss": 12.213456442776849,
+            "grad_norm": 9.846481584450778,
+            "hinge": 0.0878221794086344,
+            "layers": [
+              [
+                2.368062881161185,
+                0.31833500539993537,
+                3.7306361934717964,
+                1.4050603195148357
+              ],
+              [
+                2.337669905844857,
+                0.30667144713156363,
+                3.7020070419592015,
+                1.3773273112142788
+              ],
+              [
+                2.3114618385539334,
+                0.29488951121183005,
+                3.6803147989160876,
+                1.3492488606887705
+              ],
+              [
+                2.2964549099697784,
+                0.28678828208323787,
+                3.6700975207721487,
+                1.4923329037778519
+              ]
+            ]
+          }
+        },
+        {
+          "status": "PASS",
+          "contract": {
+            "arm": "O-risk+QFL",
+            "fold": "C0",
+            "seed": 43,
+            "order_seed": 43,
+            "epochs": 1,
+            "batch": 64,
+            "gradient_clip": 5,
+            "ema": 0.995,
+            "device": "cuda:0",
+            "use_kin": true,
+            "torch": "2.14.1+cu130",
+            "cuda": "13.0",
+            "gpu": "NVIDIA L4",
+            "data": {
+              "fit.npz": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+              "dev.npz": "fda7ebd59e0d2f2bfb7d6b5d10656d6e2ee39fce2636fd70cc2504f7da31b864"
+            },
+            "code": {
+              "advisor_decisions.py": "ebaba75a0fcb7c002835357f21e2d27139f3ab32b0e1236a44534a618036d648",
+              "advisor_eval.py": "ee81983e00c15edbe60a088a2891082daabd08bf067c1f54f119d4f5ab4ad4fd",
+              "advisor_model.py": "dce8e2f9d16d2f655dd0bc65d4dea4af64885646ee0852a5835568806555d581",
+              "advisor_preflight.py": "fe302fb90c888241442a5c89428e76a164f9554e39437df467eb877355746f87",
+              "advisor_study.py": "dafbeb01f8f05e08e138a1ba756622c04b7f9a69084aec0715946d6126e98b2d",
+              "advisor_train.py": "7768beb8b2749d52edff7e5617ac76f62025acf2912f797d3832d7ec7f2ae52f",
+              "check_b0.py": "639b218cf2b0645eaaeaebf653207874aa75cc6b5078ec9dbdd82fcb2b7ca09d",
+              "coupling_analysis.py": "c45a94d9a7c34ba7a4cc401c6a6d2eb3fbf9700ccb71daaad1006a50e4bab586",
+              "eth_speed_math.py": "68368aecd5bd65567b5559d6b5732713a02cc85a030f642baa909c5e8bf23d57",
+              "order_numpy.py": "58af36af04044f6cbf9c0b3168fc45b0485bf4d3dd7ae8a5cb8d0637a42f32ff",
+              "pool_select.py": "af0dbced5601a824736fc9d023288adbda998275c79887a0eeff2e717a980bd0",
+              "prepare_inputs.py": "12183d66e58c0a2d48baa7bfcb8fcf65c96e1e5d447da88545644057096d40f7",
+              "qrank_decisions.py": "846175e8c97ae5f1ec3fcf10384c47000dc5660ca2689d4ddf0279fcb73cd8cd",
+              "qrank_eval.py": "78094dfb248ad632be6b3f959ba9f17165f2d5341c9da10052e82ddcbda2062c",
+              "qrank_model.py": "c7b301f4f9a56c0804183ebce1394026ad4c57e9e22a423caca68ac2a17230b5",
+              "qrank_preflight.py": "e37bc5fd6ae2a5c01b86ac09e18fd7531b5783f45aa400086ed19e1c19aa8cc8",
+              "qrank_study.py": "612e51046af0c78e87b0d16fd79c78f618cfc38661f4b4c86ba06c944c54b49b",
+              "qrank_train.py": "519ff41f58be34262e362757f6f21576e7abf84d198efa3c5d6b254fbb8334ef",
+              "qrank_z0.py": "7419ed8431468fcc07264b3d4f144d62328ef4aa74cd6baa2ce695b55e4eec01",
+              "run_b0.py": "665985289945f60449af897898a725a85b02f7df4f7b52a157f230206241a693",
+              "z0_posthoc.py": "205dd08bcd85edd25c54016930edc9d10361ea01923cc0d6b4f261623c1788d2"
+            }
+          },
+          "epochs": 1,
+          "updates": 340,
+          "seconds": 40.72175694499998,
+          "total_training_seconds": 40.702073324000025,
+          "parameters": 492519,
+          "inference_parameters": 492519,
+          "peak_reserved_bytes": 283115520,
+          "final_epoch": {
+            "epoch": 1,
+            "seconds": 40.702073324000025,
+            "updates": 340,
+            "loss": 6.6737330997691435,
+            "grad_norm": 9.0379380986971,
+            "hinge": 0.09500247669570586,
+            "layers": [
+              [
+                2.3644145604442146,
+                0.31606589292778686,
+                3.729688006288865,
+                1.354149030937868
+              ],
+              [
+                0.5192471764543477,
+                0.3049660649369745,
+                0.07077102517325651,
+                1.3701175249674742
+              ],
+              [
+                0.5021867393132519,
+                0.29452484775992,
+                0.0638214128831511,
+                1.316234159118989
+              ],
+              [
+                0.4900612844702075,
+                0.2859635716632885,
+                0.06030425360864576,
+                1.3651409874944125
+              ]
+            ],
+            "emta_counts": {
+              "overall": [
+                4337,
+                21719
+              ],
+              "slow": [
+                4178,
+                17000
+              ],
+              "mid": [
+                116,
+                3116
+              ],
+              "fast": [
+                43,
+                1603
+              ]
+            }
+          }
+        }
+      ]
+    }
+  },
+  "PF_1": {
+    "observed": 0.3149852914891754,
+    "reference": 0.3149852914891754,
+    "delta": 0.0
+  },
+  "MC5": {
+    "share": 0.15065572620800896,
+    "use_kinematic_term": true
+  }
+}

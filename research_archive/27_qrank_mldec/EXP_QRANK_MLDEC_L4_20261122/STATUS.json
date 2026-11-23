@@ -1,0 +1,42 @@
+{
+  "experiment": "EXP-QRANK-ML",
+  "status": "COMPLETE",
+  "date": "2026-11-23",
+  "groups": {
+    "stage1": 33,
+    "stage2": 51
+  },
+  "origin": {
+    "stage1": {
+      "cloud": 33,
+      "local": 0,
+      "reused": 0
+    },
+    "stage2": {
+      "cloud": 41,
+      "local": 2,
+      "reused": 8
+    }
+  },
+  "baseline": "B0",
+  "optional": {
+    "status": "DEFERRED_BEFORE_TRAINING",
+    "initialized": 0
+  },
+  "F_PASS": {
+    "O-conf+QFL": false,
+    "O-conf+E0": false
+  },
+  "baseline_changed": false,
+  "mixed_hardware": [
+    {
+      "fold": "zara02",
+      "seed": 44,
+      "devices": {
+        "B0": "L4 (verified reused baseline)",
+        "O-conf+QFL": "NVIDIA GeForce RTX 5070 Laptop GPU",
+        "O-conf+E0": "NVIDIA GeForce RTX 5070 Laptop GPU"
+      }
+    }
+  ]
+}
