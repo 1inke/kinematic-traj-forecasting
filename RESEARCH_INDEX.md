@@ -1,7 +1,11 @@
 # Research Archive Index
 
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
-Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–28 retain derived analysis data with checksums and CPU reanalysis tools.
+Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–29 retain derived analysis data with checksums and CPU reanalysis tools.
+
+## Phase 29: frozen refinement diagnosis — COMPLETE / STOP (2026-11-23)
+
+[EXP-REFINE-PRED](research_archive/29_refine_pred/) contains 34 frozen replays across five folds. The deceleration penalty misses the confirmation criterion in all three confirmation folds. Observed turning angle reaches the harm-detection criterion in HOTEL and ZARA02. The archive contains the prespecified design, paired track-bootstrap results, derived window metrics, and NumPy reanalysis.
 
 ## Phase 28: QRANK follow-ups and E-A neighbor selection (2026-11-23)
 

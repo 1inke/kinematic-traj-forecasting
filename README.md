@@ -4,7 +4,13 @@ Versioned research codebase, protocol governance, independent audit suite, and p
 
 > **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. Recent archives additionally retain compact, checksum-verified per-window analysis arrays for independent CPU aggregate reanalysis.
 
-## Latest local diagnostics (2026-11-23)
+## Latest five-fold diagnostic: EXP-REFINE-PRED (2026-11-23)
+
+34 组冻结重放全部完成，预设判定为 `STOP`。E0 的匀速组在五折均有改善。HOTEL、ZARA02 和 UNIV 的减速组 minFDE 变化区间均跨零，纵向散布收缩也未达到减速组的预设判据。
+
+[实验设计、结果和复算](research_archive/29_refine_pred/) · [状态](research_archive/29_refine_pred/STATUS.json)
+
+## Earlier local diagnostics (2026-11-23)
 
 QRANK 冻结重放发现，ETH 与 ZARA01 的高速减速组在末层误差上升。后续诊断显示，Top-1 在初层已常有纵向过冲，ZARA01 最佳候选的误差增长主要来自横向。E-A 等邻居数比较中，UNIV 的冲突选邻未改善预测。
 
