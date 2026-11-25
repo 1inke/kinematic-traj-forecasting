@@ -4,7 +4,13 @@ Versioned research codebase, protocol governance, independent audit suite, and p
 
 > **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. Recent archives additionally retain compact, checksum-verified per-window analysis arrays for independent CPU aggregate reanalysis.
 
-## Latest five-fold diagnostic: EXP-REFINE-PRED (2026-11-23)
+## Latest local decoder studies (2026-11-24)
+
+新增六项本机实验，包括 LAYER-POOL、四个单层解码探针和 MCUS 配对消融。固定 20 条的跨层混合未通过机会判据。MCUS 的部分设置改善 UNIV，ETH 仍有退步。各项结果按原评估范围报告。
+
+[代码、结果和复核](research_archive/30_local_decoder_followups/) · [状态](research_archive/30_local_decoder_followups/STATUS.json)
+
+## Five-fold diagnostic: EXP-REFINE-PRED (2026-11-23)
 
 34 组冻结重放全部完成，预设判定为 `STOP`。E0 的匀速组在五折均有改善。HOTEL、ZARA02 和 UNIV 的减速组 minFDE 变化区间均跨零，纵向散布收缩也未达到减速组的预设判据。
 

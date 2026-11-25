@@ -1,7 +1,11 @@
 # Research Archive Index
 
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
-Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–29 retain derived analysis data with checksums and CPU reanalysis tools.
+Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–30 retain derived analysis data with checksums and CPU reanalysis tools.
+
+## Phase 30: local decoder follow-ups — six studies (2026-11-24)
+
+[LAYER-POOL and MCUS](research_archive/30_local_decoder_followups/) includes the five-fold frozen LAYER-POOL diagnostic, ES-Calib-1L, Decoupled-Calib-1L, MCUS and MCUS-V2 exploratory probes, and the 12-run MCUS paired ablation. It retains coordinate-free metric arrays and separate development and test records for the ablation. LAYER-POOL returned `NO_FIXED_K_SIGNAL`.
 
 ## Phase 29: frozen refinement diagnosis — COMPLETE / STOP (2026-11-23)
 
