@@ -4,6 +4,12 @@ Versioned research codebase, protocol governance, independent audit suite, and p
 
 > **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. Recent archives additionally retain compact, checksum-verified per-window analysis arrays for independent CPU aggregate reanalysis.
 
+## Prefix-cover training screening (2026-11-25)
+
+Colab L4 上 15 组 C0 筛选全部完成，判定为 `STOP`。前缀训练相对同样使用覆盖重排的 B0，minFDE@3 改善 0.86%，minFDE@20 变差 1.84%。五折未启动。
+
+[实验设计、结果与复算](research_archive/31_prefix_cover/) · [状态](research_archive/31_prefix_cover/STATUS.json)
+
 ## Latest local decoder studies (2026-11-24)
 
 新增六项本机实验，包括 LAYER-POOL、四个单层解码探针和 MCUS 配对消融。固定 20 条的跨层混合未通过机会判据。MCUS 的部分设置改善 UNIV，ETH 仍有退步。各项结果按原评估范围报告。

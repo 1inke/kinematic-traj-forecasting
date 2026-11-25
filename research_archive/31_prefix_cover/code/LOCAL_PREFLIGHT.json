@@ -1,0 +1,144 @@
+{
+  "status": "PASS",
+  "device": "cpu",
+  "torch": "2.11.0+cu128",
+  "PF-0": {
+    "A": [
+      {
+        "loss": 1.8999708890914917,
+        "grad_norm": 0.5818145871162415,
+        "regression": 0.0030851976480334997,
+        "classification": 3.7446653842926025,
+        "windows": 8
+      },
+      {
+        "loss": 1.8987655639648438,
+        "grad_norm": 0.5799300670623779,
+        "regression": 0.002911145566031337,
+        "classification": 3.743216037750244,
+        "windows": 8
+      }
+    ],
+    "N-cov": [
+      {
+        "loss": 1.96498441696167,
+        "grad_norm": 0.7000128030776978,
+        "regression": 0.0030851976480334997,
+        "classification": 3.7446653842926025,
+        "windows": 8,
+        "distinct1": 1.0,
+        "distinct3": 0.0,
+        "distinct5": 0.0
+      },
+      {
+        "loss": 1.963262677192688,
+        "grad_norm": 0.6950379610061646,
+        "regression": 0.002911096438765526,
+        "classification": 3.743216037750244,
+        "windows": 8,
+        "distinct1": 1.0,
+        "distinct3": 0.0,
+        "distinct5": 0.0
+      }
+    ],
+    "N-conf": [
+      {
+        "loss": 1.9018208980560303,
+        "grad_norm": 0.6068675518035889,
+        "regression": 0.0030851976480334997,
+        "classification": 3.7446653842926025,
+        "windows": 8,
+        "distinct1": 0.0,
+        "distinct3": 0.0,
+        "distinct5": 0.0
+      },
+      {
+        "loss": 1.9026129245758057,
+        "grad_norm": 0.5863626003265381,
+        "regression": 0.0029113367199897766,
+        "classification": 3.743216037750244,
+        "windows": 8,
+        "distinct1": 1.0,
+        "distinct3": 0.0,
+        "distinct5": 0.0
+      }
+    ],
+    "N-rand": [
+      {
+        "loss": 2.093069553375244,
+        "grad_norm": 0.7697214484214783,
+        "regression": 0.0030851976480334997,
+        "classification": 3.7446653842926025,
+        "windows": 8,
+        "distinct1": 1.0,
+        "distinct3": 0.75,
+        "distinct5": 0.5
+      },
+      {
+        "loss": 2.1180202960968018,
+        "grad_norm": 0.7865360379219055,
+        "regression": 0.0029141141567379236,
+        "classification": 3.743215799331665,
+        "windows": 8,
+        "distinct1": 1.0,
+        "distinct3": 1.0,
+        "distinct5": 1.0
+      }
+    ],
+    "N-win": [
+      {
+        "loss": 1.9018208980560303,
+        "grad_norm": 0.6068675518035889,
+        "regression": 0.0030851976480334997,
+        "classification": 3.7446653842926025,
+        "windows": 8,
+        "distinct1": 0.0,
+        "distinct3": 0.0,
+        "distinct5": 0.0
+      },
+      {
+        "loss": 1.9005290269851685,
+        "grad_norm": 0.6039018630981445,
+        "regression": 0.0029113367199897766,
+        "classification": 3.743216037750244,
+        "windows": 8,
+        "distinct1": 0.0,
+        "distinct3": 0.0,
+        "distinct5": 0.0
+      }
+    ]
+  },
+  "PF-1": {
+    "synthetic": 2000,
+    "real": 64,
+    "match": 1.0
+  },
+  "PF-2": {
+    "steps": 50,
+    "device": "cpu",
+    "bitwise_equal": true
+  },
+  "PF-3": {
+    "arms": [
+      "A",
+      "N-cov",
+      "N-conf",
+      "N-rand",
+      "N-win"
+    ],
+    "batches": 10,
+    "bitwise_equal": true
+  },
+  "PF-5": {
+    "score_head_grad_norm": 0,
+    "proposal_grad_norm": 0.5563179701566696
+  },
+  "PF-LAT": {
+    "ms": {
+      "conf": 49.264950004726416,
+      "riskp": 60.59904999710852
+    },
+    "flag_over_12_3_ms": true,
+    "repetitions": 60
+  }
+}

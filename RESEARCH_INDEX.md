@@ -1,7 +1,11 @@
 # Research Archive Index
 
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
-Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–30 retain derived analysis data with checksums and CPU reanalysis tools.
+Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–31 retain derived analysis data with checksums and CPU reanalysis tools.
+
+## Phase 31: prefix-cover training — C0 complete / STOP (2026-11-25)
+
+[EXP-PREFIX-COVER](research_archive/31_prefix_cover/) archives the 15-run Colab L4 screen. Relative to B0 with the same coverage ordering at inference, prefix training reduces minFDE@3 by 0.86% and increases minFDE@20 by 1.84%. It misses the screening gates and does not enter five-fold training. The archive includes anonymized per-window metrics and NumPy reanalysis.
 
 ## Phase 30: local decoder follow-ups — six studies (2026-11-24)
 
