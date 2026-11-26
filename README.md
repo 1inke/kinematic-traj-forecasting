@@ -4,6 +4,12 @@ Versioned research codebase, protocol governance, independent audit suite, and p
 
 > **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. Recent archives additionally retain compact, checksum-verified per-window analysis arrays for independent CPU aggregate reanalysis.
 
+## Collision-time sparse attention screening (2026-11-26)
+
+Kaggle 双 T4 完成 EXP-TAU 的 12 组 C0 筛选。T2 的 minFDE 退步 1.76%，超过 1% 的晋级上限，判定为 `STOP`。仅加能量偏置的 T3 小幅改善 0.19%，95% 区间跨零。
+
+[设计、结果和复算](research_archive/32_tau_sparse_attention/) · [状态](research_archive/32_tau_sparse_attention/STATUS.json)
+
 ## Prefix-cover training screening (2026-11-25)
 
 Colab L4 上 15 组 C0 筛选全部完成，判定为 `STOP`。前缀训练相对同样使用覆盖重排的 B0，minFDE@3 改善 0.86%，minFDE@20 变差 1.84%。五折未启动。

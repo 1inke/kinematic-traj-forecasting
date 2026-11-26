@@ -1,7 +1,11 @@
 # Research Archive Index
 
 Complete inventory of historical experimental series organized by research phase under [`research_archive/`](research_archive/).
-Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–31 retain derived analysis data with checksums and CPU reanalysis tools.
+Weights (`.pth/.pt/.ckpt/.onnx/.joblib`), raw/large array dumps, raw visual `.js` bundles, and bloated logs are excluded. Phases 10–32 retain derived analysis data with checksums and CPU reanalysis tools.
+
+## Phase 32: collision-time sparse attention — C0 complete / STOP (2026-11-26)
+
+[EXP-TAU](research_archive/32_tau_sparse_attention/) archives 12 C0 runs on Kaggle dual T4. Collision-time neighbor selection with the energy bias (T2) increased minFDE by 1.76%, above the 1% advancement limit. Five-fold training did not start. The archive includes the original implementation, anonymized metrics, the R-τ2 fit report and NumPy reanalysis.
 
 ## Phase 31: prefix-cover training — C0 complete / STOP (2026-11-25)
 
