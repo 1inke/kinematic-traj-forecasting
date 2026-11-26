@@ -1,0 +1,46 @@
+{
+  "contract": {
+    "name": "top_p_25",
+    "seed": 44,
+    "settings": {
+      "arm": "top_p",
+      "pct": 25,
+      "cutoff": 2.4,
+      "radius": 0.6
+    },
+    "fit_windows": 5430,
+    "fit_sha256": "72192458e6a696b8ea762c624e1b141ad43395a16eb238a366d15b2e3a4ec9d5",
+    "fit_indices_sha256": "435576875234f99001e66e48e7b4b13f07497c19183e6373f96be02730342c84",
+    "protocol": "fec770aab08fd843a996ebc8d7f2c8f9ed99a69cfa7c265848c87c08c20595d7",
+    "epochs": 64,
+    "batch": 64,
+    "gpu": "NVIDIA L4",
+    "torch": "2.14.1+cu130",
+    "cuda": "13.0"
+  },
+  "windows": 4753,
+  "tracks": 248,
+  "updates": 5440,
+  "parameters": 295478,
+  "metrics": {
+    "minADE": 0.19753076399613692,
+    "minFDE": 0.35446888521838327,
+    "Top1_ADE": 0.46098599018984493,
+    "Top1_FDE": 0.9939991985402387,
+    "J": 0.476751525352409,
+    "rank": 4.678308436776772,
+    "ES": 1.4605400946911238,
+    "brier_minFDE": 1.122311663707114
+  },
+  "bias": [
+    -0.23254799842834473,
+    -0.012305494397878647,
+    0.035015713423490524,
+    -0.13270850479602814
+  ],
+  "first_64_graph_degree": 5.262537002563477,
+  "first_64_pruned_attention_degree": 3.1622419357299805,
+  "checkpoint_sha256": "a227165e3f35db9a8a1b12b8e60a66c826942a720a03ca77ba6d8410671c8a49",
+  "metrics_sha256": "e67fe0d32595b8326e44e30e7353349d1f30ceb5d3fd5a4aec88d7e147ac9ea4",
+  "public_metrics_sha256": "752ad717847409151d1c82567c04c82c34880b74e0e2092d7e895eb1a9a6c449"
+}

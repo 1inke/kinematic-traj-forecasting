@@ -10,6 +10,12 @@ Kaggle 双 T4 完成 EXP-TAU 的 12 组 C0 筛选。T2 的 minFDE 退步 1.76%�
 
 [设计、结果和复算](research_archive/32_tau_sparse_attention/) · [状态](research_archive/32_tau_sparse_attention/STATUS.json)
 
+## Collision-time selection follow-ups (2026-11-26)
+
+Colab L4 完成 E-1/E-2 的 30 组 C0 补充实验。全量数据下，T2 的三项对照均未达到预设判据。训练数据降到 25% 后，T2 的 minFDE 比同邻居数的距离 top-k 低 1.24%，比 ART 式 top-p 高 1.27%。
+
+[分析、逐窗指标和复算](research_archive/33_tau_selection_followups/) · [状态](research_archive/33_tau_selection_followups/STATUS.json)
+
 ## Prefix-cover training screening (2026-11-25)
 
 Colab L4 上 15 组 C0 筛选全部完成，判定为 `STOP`。前缀训练相对同样使用覆盖重排的 B0，minFDE@3 改善 0.86%，minFDE@20 变差 1.84%。五折未启动。
