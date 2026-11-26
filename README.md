@@ -10,6 +10,12 @@ Kaggle 双 T4 完成 EXP-TAU 的 12 组 C0 筛选。T2 的 minFDE 退步 1.76%�
 
 [设计、结果和复算](research_archive/32_tau_sparse_attention/) · [状态](research_archive/32_tau_sparse_attention/STATUS.json)
 
+## Encoder ablation and collision-time sensitivity (2026-11-26)
+
+Kaggle E-3/E-5 的逐样本复算完成。稀疏因子化编码器单独使用时，C0 minFDE 改善 4.22%；状态模块单独使用时退步 2.10%。碰撞参数网格的 minFDE 范围为基准的 1.51%，超过预设 1% 稳定性门槛。
+
+[分析、逐窗指标和复算](research_archive/34_tau_encoder_sensitivity/) · [状态](research_archive/34_tau_encoder_sensitivity/STATUS.json)
+
 ## Collision-time selection follow-ups (2026-11-26)
 
 Colab L4 完成 E-1/E-2 的 30 组 C0 补充实验。全量数据下，T2 的三项对照均未达到预设判据。训练数据降到 25% 后，T2 的 minFDE 比同邻居数的距离 top-k 低 1.24%，比 ART 式 top-p 高 1.27%。
