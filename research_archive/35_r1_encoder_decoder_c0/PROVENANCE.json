@@ -1,0 +1,43 @@
+{
+  "study": "R1-ENC-DEC-C0",
+  "scope": "ETH/UCY_ONLY_NO_SDD",
+  "protocol": "c1eb3a6cca5e68b2050060158c44a47cbd57fcc63187de12a3a7958a29726b2c",
+  "assets_sha256": "45242ba1d12c3a5b28537bfe41c9ea3db3a70d0f5d596dc299fd03a63d9ce951",
+  "dataset_source": "sky0911/eth-ucy-tau-research-inputs",
+  "kaggle_kernels": {
+    "encoder": {
+      "slug": "sky0911/r1-encoder-c1-c2-c0-t4",
+      "kernel_id": 147848188,
+      "version": 1,
+      "runtime": {
+        "study": "encoder",
+        "devices": [
+          "Tesla T4",
+          "Tesla T4"
+        ],
+        "protocol": "c1eb3a6cca5e68b2050060158c44a47cbd57fcc63187de12a3a7958a29726b2c",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0"
+      }
+    },
+    "decoder": {
+      "slug": "sky0911/r1-decoder-cascade-cover-c0-t4",
+      "version": 1,
+      "runtime": {
+        "study": "decoder",
+        "devices": [
+          "Tesla T4",
+          "Tesla T4"
+        ],
+        "protocol": "c1eb3a6cca5e68b2050060158c44a47cbd57fcc63187de12a3a7958a29726b2c",
+        "torch": "2.11.0+cu130",
+        "cuda": "13.0"
+      }
+    }
+  },
+  "excluded_artifacts": [
+    "Raw datasets and packaged ZIP archives",
+    "Per-run model checkpoints (*.pt) and per-window binary arrays (*.npz)",
+    "Raw training logs (*.log)"
+  ]
+}

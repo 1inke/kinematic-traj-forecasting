@@ -4,6 +4,12 @@ Versioned research codebase, protocol governance, independent audit suite, and p
 
 > **Repository Sync Policy**: Tracked code, configuration manifests, documentation, and metric archives mirror the GitHub repository (`1inke/kinematic-traj-forecasting`), excluding raw datasets and binary model weights. Recent archives additionally retain compact, checksum-verified per-window analysis arrays for independent CPU aggregate reanalysis.
 
+## R1 encoder C1/C2 and cascade cover-order decoder screening (2026-11-28)
+
+Kaggle 双 T4 完成研究一编码端（`E0..E6` + `V2` 稀疏缩放，21 组）与解码/联合端（`M0..M6, JM4`，24 组）的 `C0` 筛选（仅 ETH/UCY）。编码端关系令牌（`E0 vs E1`）带来 `minFDE +1.28%`（CI `[+0.10%, +2.42%]`），`C2` 物理时间偏置未带来精度收益（`-0.76%`），`V2` 证实 `N=128` 提速 `6.93×` 且 `N=256` 稀疏零 `OOM`。解码端 `M4` 较 `M0` 使 `J_cov +5.37 pp`、`minFDE@20 +5.51%`、`cov_sel@3/5 +5.96%/+5.09%`、`fast J_cov +12.18 pp`（`JM4 +14.29 pp`），且 `M4 vs M5` 证实冗余特征显著有效（`G4=true`），但伴随 `Top1_FDE -4.66%` 代价且 `G1–G3/G5` 未同时达标（`DECODER_STAGE1_PASS=false`），暂未启动五折。
+
+[设计、结果与复核](research_archive/35_r1_encoder_decoder_c0/) · [状态](research_archive/35_r1_encoder_decoder_c0/STATUS.json)
+
 ## Collision-time sparse attention screening (2026-11-26)
 
 Kaggle 双 T4 完成 EXP-TAU 的 12 组 C0 筛选。T2 的 minFDE 退步 1.76%，超过 1% 的晋级上限，判定为 `STOP`。仅加能量偏置的 T3 小幅改善 0.19%，95% 区间跨零。
